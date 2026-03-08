@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#FFF3E8"/>
+      <stop offset="1" stop-color="#FBE9DA"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bg)"/>
+  <rect x="70" y="80" width="1060" height="110" rx="24" fill="#5A3E36"/>
+  <rect x="70" y="220" width="340" height="320" rx="20" fill="#FFFDF9" stroke="#DCC8B7"/>
+  <rect x="430" y="220" width="340" height="320" rx="20" fill="#FFFDF9" stroke="#DCC8B7"/>
+  <rect x="790" y="220" width="340" height="320" rx="20" fill="#FFFDF9" stroke="#DCC8B7"/>
+  <rect x="95" y="115" width="190" height="42" rx="21" fill="#C8553D"/>
+  <rect x="300" y="115" width="190" height="42" rx="21" fill="#E07A5F"/>
+  <rect x="505" y="115" width="190" height="42" rx="21" fill="#F2CC8F"/>
+  <rect x="710" y="115" width="190" height="42" rx="21" fill="#81B29A"/>
+  <rect x="915" y="115" width="190" height="42" rx="21" fill="#3D405B"/>
+  <text x="85" y="62" font-size="34" font-family="Arial" fill="#1E1A15">Option 3 · Sunset Fairway</text>
+</svg>

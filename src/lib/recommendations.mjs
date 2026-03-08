@@ -63,6 +63,22 @@ function buildReasonText(candidate, eventTier) {
   return pieces.join(" ");
 }
 
+function buildRecentSummary(candidate) {
+  const finishes = Array.isArray(candidate.last4Finishes) ? candidate.last4Finishes.filter(Number.isFinite) : [];
+  if (finishes.length === 0) return "Recent: Limited recent starts in the last month; form signal is neutral.";
+  const avgFinish = finishes.reduce((sum, v) => sum + v, 0) / finishes.length;
+  const momentum = avgFinish <= 12 ? "strong momentum" : avgFinish <= 22 ? "steady momentum" : "mixed momentum";
+  return `Recent: Last four starts finished ${finishes.join(", ")} with ${momentum} entering this event.`;
+}
+
+function buildHistoricalSummary(candidate) {
+  const past = Array.isArray(candidate.courseHistoryResults) ? candidate.courseHistoryResults.slice(0, 3) : [];
+  if (!past.length) return "Historical: Limited course/event history available; baseline course-fit assumptions applied.";
+  const lines = past.map((r) => `${r.year}: ${r.finish}`).join(" | ");
+  const quality = (candidate.courseHistoryScore ?? 0.5) >= 0.75 ? "strong" : "solid";
+  return `Historical: ${lines}. Overall, historical performance at this event/course has been ${quality}.`;
+}
+
 export function scoreCandidate(candidate, context = {}, weights = {}) {
   const eventTier = context.eventTier || "regular";
 
@@ -96,6 +112,9 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
   return {
     ...candidate,
     score,
+    reasoning: `Reasoning: ${buildReasonText(candidate, eventTier)}`,
+    recentSummary: buildRecentSummary(candidate),
+    historicalSummary: buildHistoricalSummary(candidate),
     rationale: {
       expected,
       uniqueness,

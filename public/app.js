@@ -3,40 +3,28 @@ const MEMBERS = ["Andrew", "Paul", "Dakota", "Mike"];
 const state = {
   seasonSort: { key: "groupRank", dir: "asc" },
   weeklySort: { key: "earnings", dir: "desc" },
-  poolSort: { key: "golfer", dir: "asc" },
+  availabilitySort: { key: "worldRank", dir: "asc" },
   selectedEventId: "",
-  seasonFilter: "",
-  weeklyTierFilter: "all",
-  poolTierFilter: "all",
   poolSearch: "",
+  scope: "all",
 };
 
 const tabButtons = [...document.querySelectorAll(".tab")];
-const performancePanel = document.getElementById("performancePanel");
-const poolPanel = document.getElementById("poolPanel");
-
-tabButtons.forEach((btn) => {
-  btn.addEventListener("click", () => {
-    tabButtons.forEach((b) => b.classList.remove("active"));
-    btn.classList.add("active");
-    const showPool = btn.dataset.tab === "pool";
-    performancePanel.classList.toggle("hidden", showPool);
-    poolPanel.classList.toggle("hidden", !showPool);
-  });
-});
+const standingsPanel = document.getElementById("standingsPanel");
+const availabilityPanel = document.getElementById("availabilityPanel");
 
 function formatCurrency(value) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value || 0);
 }
 
-function bySort(sort) {
+function sortComparator(sort) {
   return (a, b) => {
     const av = a[sort.key];
     const bv = b[sort.key];
     const factor = sort.dir === "asc" ? 1 : -1;
 
     if (typeof av === "number" && typeof bv === "number") return (av - bv) * factor;
-    return String(av).localeCompare(String(bv)) * factor;
+    return String(av ?? "").localeCompare(String(bv ?? "")) * factor;
   };
 }
 
@@ -61,36 +49,64 @@ function bindSort(tableId, sortState, renderFn) {
   });
 }
 
-function renderLeagueContext(snapshot) {
-  const context = document.getElementById("leagueContext");
-  const league = snapshot.league || {};
-  context.innerHTML = `
-    <p><strong>${league.name || "League"}</strong></p>
-    <p>Full League Rank: ${league.yourRank || "-"} / ${league.totalEntrants || 150}</p>
-    <p>Percentile: ${(league.yourPercentile || 0).toFixed(1)}%</p>
-    <p>Latest Event: ${snapshot.event?.name || "N/A"}</p>
+tabButtons.forEach((btn) => {
+  btn.addEventListener("click", () => {
+    tabButtons.forEach((b) => b.classList.remove("active"));
+    btn.classList.add("active");
+    const showAvailability = btn.dataset.tab === "availability";
+    standingsPanel.classList.toggle("hidden", showAvailability);
+    availabilityPanel.classList.toggle("hidden", !showAvailability);
+  });
+});
+
+function renderNextTournament(snapshot) {
+  const next = snapshot.nextTournament || snapshot.event || {};
+  const html = `
+    <div class="next-head">
+      <div>
+        <p class="kicker">Upcoming Event</p>
+        <p class="event-title">${next.name || "TBD"}</p>
+      </div>
+      <span class="tier-pill">${next.tier || "-"}</span>
+    </div>
+    <div class="next-grid">
+      <div><span class="stat-label">Purse:</span><strong>${formatCurrency(next.totalPurse)}</strong></div>
+      <div><span class="stat-label">1st Place:</span><strong>${formatCurrency(next.firstPrize)}</strong></div>
+      <div><span class="stat-label">Last Year's Winner:</span><strong>${next.lastYearWinner || "-"}</strong></div>
+    </div>
   `;
+
+  document.getElementById("nextTournament").innerHTML = html;
+  document.getElementById("availabilityTournament").innerHTML = html;
 }
 
-function renderTeamComparison(snapshot) {
-  const el = document.getElementById("teamComparison");
-  const teams = snapshot.teams || [];
-  el.innerHTML = teams
-    .map(
-      (team) => `
-      <p><strong>${team.teamName}</strong> (${team.members.join(" + ")})</p>
-      <p>Rank #${team.rank} | Season ${formatCurrency(team.seasonEarnings)} | Weekly ${formatCurrency(team.weeklyEarnings)} | To lead ${formatCurrency(team.toLeader)}</p>
-    `
-    )
-    .join("<hr />");
+function renderUltimateChampionship(snapshot) {
+  const teams = [...(snapshot.teams || [])].sort((a, b) => b.seasonEarnings - a.seasonEarnings);
+  const leader = teams[0];
+  const trailer = teams[1];
+
+  if (!leader) {
+    document.getElementById("ultimateChampionship").innerHTML = "No team data yet.";
+    return;
+  }
+
+  const behind = trailer ? leader.seasonEarnings - trailer.seasonEarnings : 0;
+  document.getElementById("ultimateChampionship").innerHTML = `
+    <div class="championship-row first">
+      <span>#1 ${leader.teamName}</span>
+      <strong>${formatCurrency(leader.seasonEarnings)}</strong>
+    </div>
+    <div class="championship-row second">
+      <span>#2 ${trailer?.teamName || "N/A"}</span>
+      <strong>${formatCurrency(trailer?.seasonEarnings || 0)}</strong>
+    </div>
+    <div class="gap-line">Gap: ${formatCurrency(behind)}</div>
+  `;
 }
 
 function renderSeasonTable(snapshot) {
   const table = document.getElementById("seasonTable");
-  const filter = state.seasonFilter.trim().toLowerCase();
-  const rows = (snapshot.subgroupStandings || [])
-    .filter((row) => row.member.toLowerCase().includes(filter))
-    .sort(bySort(state.seasonSort));
+  const rows = [...(snapshot.subgroupStandings || [])].sort(sortComparator(state.seasonSort));
 
   table.innerHTML = `
     <thead>
@@ -99,23 +115,23 @@ function renderSeasonTable(snapshot) {
         <th>${sortHeader("League Rank", "leagueRank", state.seasonSort)}</th>
         <th>${sortHeader("Group Rank", "groupRank", state.seasonSort)}</th>
         <th>${sortHeader("Season Earnings", "seasonEarnings", state.seasonSort)}</th>
-        <th>${sortHeader("Weekly Earnings", "weeklyEarnings", state.seasonSort)}</th>
-        <th>${sortHeader("To Leader", "toLeader", state.seasonSort)}</th>
+        <th>${sortHeader("Last Week's Earnings", "weeklyEarnings", state.seasonSort)}</th>
+        <th>${sortHeader("$ Behind", "toLeader", state.seasonSort)}</th>
       </tr>
     </thead>
     <tbody>
       ${rows
         .map(
           (row) => `
-            <tr>
-              <td>${row.member}</td>
-              <td>${row.leagueRank ?? "-"}</td>
-              <td>${row.groupRank}</td>
-              <td>${formatCurrency(row.seasonEarnings)}</td>
-              <td>${formatCurrency(row.weeklyEarnings)}</td>
-              <td>${formatCurrency(row.toLeader)}</td>
-            </tr>
-          `
+        <tr>
+          <td>${row.member}</td>
+          <td>${row.leagueRank ?? "-"}</td>
+          <td>${row.groupRank}</td>
+          <td>${formatCurrency(row.seasonEarnings)}</td>
+          <td>${formatCurrency(row.weeklyEarnings)}</td>
+          <td>${formatCurrency(row.toLeader)}</td>
+        </tr>
+      `
         )
         .join("")}
     </tbody>
@@ -127,14 +143,12 @@ function renderSeasonTable(snapshot) {
 function renderEventSelect(snapshot) {
   const select = document.getElementById("eventSelect");
   const events = snapshot.weeklyComparison || [];
+
   if (!state.selectedEventId && events.length) {
     state.selectedEventId = events.at(-1).eventId;
   }
 
-  select.innerHTML = events
-    .filter((event) => state.weeklyTierFilter === "all" || event.tier === state.weeklyTierFilter)
-    .map((event) => `<option value="${event.eventId}">${event.eventName} (${event.tier})</option>`)
-    .join("");
+  select.innerHTML = events.map((event) => `<option value="${event.eventId}">${event.eventName}</option>`).join("");
 
   if (![...select.options].some((o) => o.value === state.selectedEventId) && select.options.length) {
     state.selectedEventId = select.options[0].value;
@@ -149,14 +163,14 @@ function renderEventSelect(snapshot) {
 
 function renderWeeklyTable(snapshot) {
   const table = document.getElementById("weeklyTable");
-  const event = (snapshot.weeklyComparison || []).find((row) => row.eventId === state.selectedEventId);
+  const event = (snapshot.weeklyComparison || []).find((e) => e.eventId === state.selectedEventId);
 
   if (!event) {
-    table.innerHTML = "<tbody><tr><td>No weekly data</td></tr></tbody>";
+    table.innerHTML = "<tbody><tr><td>No event data found.</td></tr></tbody>";
     return;
   }
 
-  const rows = [...event.rows].sort(bySort(state.weeklySort));
+  const rows = [...event.rows].sort(sortComparator(state.weeklySort));
 
   table.innerHTML = `
     <thead>
@@ -171,13 +185,13 @@ function renderWeeklyTable(snapshot) {
       ${rows
         .map(
           (row) => `
-            <tr>
-              <td>${row.member}</td>
-              <td>${row.pick || "-"}</td>
-              <td>${row.finish ?? "-"}</td>
-              <td>${formatCurrency(row.earnings)}</td>
-            </tr>
-          `
+        <tr>
+          <td>${row.member}</td>
+          <td>${row.pick || ""}</td>
+          <td>${row.finish ?? ""}</td>
+          <td>${row.earnings ? formatCurrency(row.earnings) : ""}</td>
+        </tr>
+      `
         )
         .join("")}
     </tbody>
@@ -186,152 +200,154 @@ function renderWeeklyTable(snapshot) {
   bindSort("weeklyTable", state.weeklySort, () => renderWeeklyTable(snapshot));
 }
 
-function computeCommonRemaining(poolData) {
-  const sets = MEMBERS.map((m) => new Set(poolData.members?.[m]?.available || []));
-  if (sets.length === 0) return [];
-  const base = [...sets[0]];
-  return base.filter((golfer) => sets.every((s) => s.has(golfer))).slice(0, 30);
-}
+function renderSeasonWeeklyTable(snapshot) {
+  const table = document.getElementById("seasonWeeklyTable");
+  const events = [...(snapshot.weeklyComparison || [])];
+  events.sort((a, b) => String(a.startDate || "").localeCompare(String(b.startDate || "")));
 
-function renderCommonRemaining(poolData) {
-  const common = computeCommonRemaining(poolData);
-  const el = document.getElementById("commonRemaining");
-  el.innerHTML = common.length ? common.map((g) => `<span class="status-pill available">${g}</span>`).join(" ") : "No shared remaining golfers.";
-}
-
-function renderEventPurse(snapshot) {
-  const weekly = (snapshot.weeklyComparison || []).find((w) => w.eventId === state.selectedEventId) || snapshot.weeklyComparison?.at(-1);
-  const el = document.getElementById("eventPurse");
-  el.innerHTML = weekly
-    ? `<p><strong>${weekly.eventName}</strong></p><p>Total purse: ${formatCurrency(weekly.totalPurse)}</p><p>First place: ${formatCurrency(weekly.firstPrize)}</p>`
-    : "No event selected.";
-}
-
-function renderMatrix(poolData) {
-  const table = document.getElementById("availabilityMatrix");
-  if (state.poolTierFilter !== "all" && poolData.eventTier !== state.poolTierFilter) {
-    table.innerHTML = "<tbody><tr><td>No golfers for selected tier in current dataset.</td></tr></tbody>";
-    return;
-  }
-  const allGolfers = new Set();
-
-  for (const member of MEMBERS) {
-    (poolData.members?.[member]?.available || []).forEach((g) => allGolfers.add(g));
-    (poolData.members?.[member]?.used || []).forEach((g) => allGolfers.add(g));
+  function parseFinishRank(finish) {
+    if (finish === null || finish === undefined || finish === "") return null;
+    const raw = String(finish).trim().toUpperCase();
+    if (!raw) return null;
+    if (raw === "MC" || raw === "MDF") return 999;
+    const cleaned = raw.startsWith("T") ? raw.slice(1) : raw;
+    const n = Number(cleaned);
+    return Number.isFinite(n) ? n : null;
   }
 
-  let rows = [...allGolfers].map((golfer) => {
-    let availableCount = 0;
-    for (const member of MEMBERS) {
-      const data = poolData.members?.[member] || { available: [] };
-      if (data.available.includes(golfer)) availableCount += 1;
-    }
-    return { golfer, availableCount };
-  });
+  function weekClass(entry) {
+    const finishRank = parseFinishRank(entry.finish);
+    const earnings = Number(entry.earnings || 0);
+    const hasResult = entry.pick || entry.finish !== "" || earnings > 0;
 
-  const search = state.poolSearch.trim().toLowerCase();
-  if (search) rows = rows.filter((r) => r.golfer.toLowerCase().includes(search));
-
-  rows.sort(bySort(state.poolSort));
+    if (finishRank === 1) return "first-place";
+    if (finishRank !== null && finishRank <= 5) return "top-five";
+    if (hasResult && earnings === 0) return "missed-cut";
+    return "";
+  }
 
   table.innerHTML = `
     <thead>
       <tr>
-        <th>${sortHeader("Golfer", "golfer", state.poolSort)}</th>
-        <th>${sortHeader("Avail Count", "availableCount", state.poolSort)}</th>
+        <th>Tournament</th>
+        ${MEMBERS.map((m) => `<th>${m}</th>`).join("")}
+      </tr>
+    </thead>
+    <tbody>
+      ${events
+        .map(
+          (event) => `
+        <tr>
+          <td class="event-cell">
+            <strong>${event.eventName}</strong>
+            <div class="event-sub">${event.startDate || ""}</div>
+          </td>
+          ${MEMBERS.map((member) => {
+            const entry = (event.rows || []).find((r) => r.member === member) || {};
+            const pick = entry.pick || "";
+            const finish = entry.finish ?? "";
+            const earnings = entry.earnings ? formatCurrency(entry.earnings) : "";
+            const cls = weekClass(entry);
+            return `
+              <td>
+                <div class="member-week ${cls}">
+                  <div><span class="label">Pick</span><span>${pick}</span></div>
+                  <div><span class="label">Finish</span><span>${finish}</span></div>
+                  <div><span class="label">Earnings</span><span>${earnings}</span></div>
+                </div>
+              </td>
+            `;
+          }).join("")}
+        </tr>
+      `
+        )
+        .join("")}
+    </tbody>
+  `;
+}
+
+function buildAvailabilityRows(poolData) {
+  const golfers = poolData.golfers || [];
+  return golfers
+    .filter((g) => state.scope === "all" || g.inNextTournament)
+    .filter((g) => g.name.toLowerCase().includes(state.poolSearch.trim().toLowerCase()))
+    .map((g) => {
+      const status = {};
+      for (const member of MEMBERS) {
+        const memberData = poolData.members?.[member] || { used: [], available: [] };
+        status[member] = memberData.used.includes(g.name) ? "Used" : "Avail";
+      }
+      return {
+        golfer: g.name,
+        worldRank: g.worldRank ?? 999,
+        fedexPoints: g.fedexPoints ?? 0,
+        seasonEarnings: g.seasonEarnings ?? 0,
+        ...status,
+      };
+    })
+    .sort(sortComparator(state.availabilitySort));
+}
+
+function renderAvailabilityMatrix(poolData) {
+  const table = document.getElementById("availabilityMatrix");
+  const rows = buildAvailabilityRows(poolData);
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th>${sortHeader("Golfer", "golfer", state.availabilitySort)}</th>
+        <th>${sortHeader("World Golf Rank", "worldRank", state.availabilitySort)}</th>
+        <th>${sortHeader("FedEx Points", "fedexPoints", state.availabilitySort)}</th>
+        <th>${sortHeader("Season Earnings", "seasonEarnings", state.availabilitySort)}</th>
         ${MEMBERS.map((m) => `<th>${m}</th>`).join("")}
       </tr>
     </thead>
     <tbody>
       ${rows
-        .map((row) => {
-          const cells = MEMBERS.map((member) => {
-            const data = poolData.members?.[member] || { used: [], available: [] };
-            const isUsed = data.used.includes(row.golfer);
-            const cls = isUsed ? "used" : "available";
-            return `<td><span class="status-pill ${cls}">${isUsed ? "Used" : "Avail"}</span></td>`;
-          }).join("");
-          return `<tr><td>${row.golfer}</td><td>${row.availableCount}</td>${cells}</tr>`;
-        })
+        .map(
+          (row) => `
+        <tr>
+          <td>${row.golfer}</td>
+          <td>${row.worldRank}</td>
+          <td>${row.fedexPoints}</td>
+          <td>${formatCurrency(row.seasonEarnings)}</td>
+          ${MEMBERS.map((m) => `<td><span class="status-pill ${row[m] === "Used" ? "used" : "available"}">${row[m]}</span></td>`).join("")}
+        </tr>
+      `
+        )
         .join("")}
     </tbody>
   `;
 
-  bindSort("availabilityMatrix", state.poolSort, () => renderMatrix(poolData));
+  bindSort("availabilityMatrix", state.availabilitySort, () => renderAvailabilityMatrix(poolData));
 }
 
-function renderWarnings(snapshot) {
-  const warningsEl = document.getElementById("warnings");
-  const warnings = snapshot.warnings || [];
-  warningsEl.innerHTML = warnings.length ? warnings.map((w) => `<li>${w}</li>`).join("") : "<li>No warnings.</li>";
-}
+function bindAvailabilityControls(poolData) {
+  const scopeAll = document.getElementById("scopeAll");
+  const scopeNext = document.getElementById("scopeNext");
 
-function renderSyncMeta(snapshot, pool) {
-  document.getElementById("syncMeta").textContent = `Updated ${new Date(snapshot.updatedAt || pool.updatedAt || Date.now()).toLocaleString()}`;
-}
-
-function fallbackKey() {
-  return "one-and-done-fallback";
-}
-
-function renderFallbackForm() {
-  const rows = document.getElementById("fallbackRows");
-  rows.innerHTML = MEMBERS.map((member) => {
-    return `
-      <label>
-        ${member} Pick
-        <input name="pick_${member}" type="text" placeholder="Golfer" />
-      </label>
-      <label>
-        ${member} Earnings
-        <input name="earnings_${member}" type="number" min="0" step="1000" placeholder="0" />
-      </label>
-    `;
-  }).join("");
-
-  const form = document.getElementById("fallbackForm");
-  const status = document.getElementById("fallbackStatus");
-  const existing = localStorage.getItem(fallbackKey());
-  if (existing) {
-    const parsed = JSON.parse(existing);
-    for (const [key, val] of Object.entries(parsed)) {
-      if (form.elements[key]) form.elements[key].value = val;
-    }
-  }
-
-  form.addEventListener("submit", (event) => {
-    event.preventDefault();
-    const payload = {};
-    new FormData(form).forEach((value, key) => {
-      payload[key] = value;
-    });
-    localStorage.setItem(fallbackKey(), JSON.stringify(payload));
-    status.textContent = "Fallback data saved locally.";
-  });
-}
-
-function bindControls(snapshot, pool) {
-  document.getElementById("seasonFilter").addEventListener("input", (event) => {
-    state.seasonFilter = event.target.value;
-    renderSeasonTable(snapshot);
+  scopeAll.addEventListener("click", () => {
+    state.scope = "all";
+    scopeAll.classList.add("active");
+    scopeNext.classList.remove("active");
+    renderAvailabilityMatrix(poolData);
   });
 
-  document.getElementById("weeklyTierFilter").addEventListener("change", (event) => {
-    state.weeklyTierFilter = event.target.value;
-    renderEventSelect(snapshot);
-    renderWeeklyTable(snapshot);
-    renderEventPurse(snapshot);
+  scopeNext.addEventListener("click", () => {
+    state.scope = "next";
+    scopeNext.classList.add("active");
+    scopeAll.classList.remove("active");
+    renderAvailabilityMatrix(poolData);
   });
 
   document.getElementById("poolSearch").addEventListener("input", (event) => {
     state.poolSearch = event.target.value;
-    renderMatrix(pool);
+    renderAvailabilityMatrix(poolData);
   });
+}
 
-  document.getElementById("poolTierFilter").addEventListener("change", (event) => {
-    state.poolTierFilter = event.target.value;
-    renderMatrix(pool);
-  });
+function renderSyncMeta(snapshot, pool) {
+  document.getElementById("syncMeta").textContent = `Updated ${new Date(snapshot.updatedAt || pool.updatedAt || Date.now()).toLocaleString()}`;
 }
 
 async function init() {
@@ -346,18 +362,15 @@ async function init() {
 
   const [snapshot, pool] = await Promise.all([snapshotRes.json(), poolRes.json()]);
 
-  renderLeagueContext(snapshot);
-  renderTeamComparison(snapshot);
+  renderSyncMeta(snapshot, pool);
+  renderNextTournament(snapshot);
+  renderUltimateChampionship(snapshot);
   renderSeasonTable(snapshot);
   renderEventSelect(snapshot);
   renderWeeklyTable(snapshot);
-  renderEventPurse(snapshot);
-  renderCommonRemaining(pool);
-  renderMatrix(pool);
-  renderWarnings(snapshot);
-  renderSyncMeta(snapshot, pool);
-  renderFallbackForm();
-  bindControls(snapshot, pool);
+  renderSeasonWeeklyTable(snapshot);
+  renderAvailabilityMatrix(pool);
+  bindAvailabilityControls(pool);
 }
 
 init().catch((error) => {

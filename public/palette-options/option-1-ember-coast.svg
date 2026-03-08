@@ -1,0 +1,19 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1200" height="640" viewBox="0 0 1200 640">
+  <defs>
+    <linearGradient id="bg" x1="0" y1="0" x2="1" y2="1">
+      <stop offset="0" stop-color="#F6F1E8"/>
+      <stop offset="1" stop-color="#EFE7DB"/>
+    </linearGradient>
+  </defs>
+  <rect width="1200" height="640" fill="url(#bg)"/>
+  <rect x="70" y="80" width="1060" height="110" rx="24" fill="#1F3A5F"/>
+  <rect x="70" y="220" width="340" height="320" rx="20" fill="#FFF9F0" stroke="#D4C2A8"/>
+  <rect x="430" y="220" width="340" height="320" rx="20" fill="#FFF9F0" stroke="#D4C2A8"/>
+  <rect x="790" y="220" width="340" height="320" rx="20" fill="#FFF9F0" stroke="#D4C2A8"/>
+  <rect x="95" y="115" width="190" height="42" rx="21" fill="#FF7A59"/>
+  <rect x="300" y="115" width="190" height="42" rx="21" fill="#2A9D8F"/>
+  <rect x="505" y="115" width="190" height="42" rx="21" fill="#E9C46A"/>
+  <rect x="710" y="115" width="190" height="42" rx="21" fill="#F4A261"/>
+  <rect x="915" y="115" width="190" height="42" rx="21" fill="#E76F51"/>
+  <text x="85" y="62" font-size="34" font-family="Arial" fill="#1E1A15">Option 1 · Ember Coast</text>
+</svg>

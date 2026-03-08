@@ -64,6 +64,7 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       name: event.name,
       tier: event.tier || "regular",
       startDate: event.startDate || null,
+      isUpcoming: Boolean(event.isUpcoming),
       totalPurse: money(event.totalPurse),
       firstPrize: money(event.firstPrize),
       subgroupResults,
@@ -76,6 +77,30 @@ export function normalizeSnapshot(raw, subgroupMembers) {
     warnings.push("No projections returned. Recommendation engine will use fallback estimates.");
   }
 
+  const explicitNext = raw.nextTournament;
+  const inferredNext = normalizedEvents.find((event) => event.isUpcoming) || normalizedEvents.at(-1) || null;
+  const nextTournament = explicitNext
+    ? {
+        id: explicitNext.id || inferredNext?.id || null,
+        name: explicitNext.name || inferredNext?.name || "TBD",
+        tier: explicitNext.tier || inferredNext?.tier || "regular",
+        startDate: explicitNext.startDate || inferredNext?.startDate || null,
+        totalPurse: money(explicitNext.totalPurse ?? inferredNext?.totalPurse),
+        firstPrize: money(explicitNext.firstPrize ?? inferredNext?.firstPrize),
+        lastYearWinner: explicitNext.lastYearWinner || "Unknown",
+      }
+    : inferredNext
+      ? {
+          id: inferredNext.id,
+          name: inferredNext.name,
+          tier: inferredNext.tier,
+          startDate: inferredNext.startDate,
+          totalPurse: inferredNext.totalPurse,
+          firstPrize: inferredNext.firstPrize,
+          lastYearWinner: "Unknown",
+        }
+      : null;
+
   return {
     league: {
       id: raw.league?.id || null,
@@ -85,6 +110,7 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       latestEventId: raw.league?.latestEventId || normalizedEvents.at(-1)?.id || null,
     },
     events: normalizedEvents,
+    nextTournament,
     projections,
     sourceNotes: raw.sourceNotes || [],
     warnings,

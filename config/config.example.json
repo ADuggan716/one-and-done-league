@@ -32,8 +32,9 @@
   },
   "schedule": {
     "timezone": "America/New_York",
-    "weekday": "THURSDAY",
-    "hour": 9,
-    "minute": 0
+    "syncWindows": [
+      { "weekday": "THURSDAY", "hour": 9, "minute": 0, "purpose": "picks-refresh" },
+      { "weekday": "SUNDAY", "hour": 20, "minute": 0, "purpose": "results-refresh" }
+    ]
   }
 }

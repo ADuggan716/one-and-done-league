@@ -31,6 +31,10 @@ export function mergeSignals(baseProjections, signals) {
       projectedEarnings: signal.projectedEarnings ?? existing.projectedEarnings ?? 0,
       projectedDupCount: signal.projectedDupCount ?? existing.projectedDupCount ?? 1,
       futureValue: signal.futureValue ?? existing.futureValue ?? 250000,
+      worldRank: signal.worldRank ?? existing.worldRank ?? 999,
+      fedexPoints: signal.fedexPoints ?? existing.fedexPoints ?? 0,
+      seasonEarnings: signal.seasonEarnings ?? existing.seasonEarnings ?? 0,
+      inNextTournament: signal.inNextTournament ?? existing.inNextTournament ?? false,
       historicalStrength:
         signal.historicalStrength !== undefined
           ? clamp01(signal.historicalStrength)

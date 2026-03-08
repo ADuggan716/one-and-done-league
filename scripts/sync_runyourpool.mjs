@@ -43,6 +43,7 @@ function buildLeagueSnapshot(normalized, config) {
 
   return {
     event: normalized.events.at(-1) || null,
+    nextTournament: normalized.nextTournament || null,
     league: {
       ...normalized.league,
       yourPercentile: computeLeaguePercentile(normalized.league.yourRank, normalized.league.totalEntrants),
@@ -65,6 +66,17 @@ function buildPlayerPool(normalized, config, currentPool) {
   );
   const applied = applyWeeklyPicks(updated, latestPicks);
 
+  const golfers = [...(normalized.projections || [])]
+    .map((p) => ({
+      name: p.golfer,
+      worldRank: Number(p.worldRank || 999),
+      fedexPoints: Number(p.fedexPoints || 0),
+      seasonEarnings: Number(p.seasonEarnings || 0),
+      inNextTournament: Boolean(p.inNextTournament),
+    }))
+    .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name))
+    .slice(0, 100);
+
   return {
     eventId: normalized.events.at(-1)?.id || null,
     eventTier: normalized.events.at(-1)?.tier || "regular",
@@ -73,6 +85,7 @@ function buildPlayerPool(normalized, config, currentPool) {
       firstPrize: normalized.events.at(-1)?.firstPrize || 0,
     },
     members: applied.members,
+    golfers,
     filters: {
       tiers: ["major", "signature", "regular"],
     },

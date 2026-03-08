@@ -15,6 +15,20 @@
     "historicalStrength": 0.96,
     "courseHistoryScore": 0.84,
     "last4Finishes": [2, 7, 12, 4],
+    "courseHistoryResults": [
+      { "year": 2025, "finish": "2nd" },
+      { "year": 2024, "finish": "19th" },
+      { "year": 2023, "finish": "T33" }
+    ],
+    "sourceRefs": [
+      "RunYourPool projections",
+      "PGA Tour results feed",
+      "OWGR",
+      "Event history dataset"
+    ],
+    "reasoning": "Reasoning: Rory combines top-end projected payout with strong form and strong course-fit this week, without excessive overlap risk in your group.",
+    "recentSummary": "Recent: Over the last month he has finished 2nd, 7th, 12th, and 4th, signaling strong momentum entering this event.",
+    "historicalSummary": "Historical: 2025: 2nd | 2024: 19th | 2023: T33. Overall, his event/course record is strong and gives confidence in his floor and ceiling.",
     "score": 0.586,
     "rationale": {
       "expected": 0.183,
@@ -36,6 +50,20 @@
       "historicalStrength": 0.88,
       "courseHistoryScore": 0.79,
       "last4Finishes": [14, 8, 10, 17],
+      "courseHistoryResults": [
+        { "year": 2025, "finish": "T9" },
+        { "year": 2024, "finish": "T20" },
+        { "year": 2023, "finish": "MC" }
+      ],
+      "sourceRefs": [
+        "RunYourPool projections",
+        "PGA Tour results feed",
+        "OWGR",
+        "Event history dataset"
+      ],
+      "reasoning": "Reasoning: Hovland projects as a high-value leverage option with lower duplication risk versus your rivals.",
+      "recentSummary": "Recent: Last month results of 14th, 8th, 10th, and 17th suggest steady top-20 form with reliable momentum.",
+      "historicalSummary": "Historical: 2025: T9 | 2024: T20 | 2023: MC. His course history is mixed but improving recently.",
       "score": 0.567,
       "rationale": {
         "expected": 0.146,
@@ -56,6 +84,20 @@
       "historicalStrength": 0.8,
       "courseHistoryScore": 0.74,
       "last4Finishes": [11, 19, 7, 22],
+      "courseHistoryResults": [
+        { "year": 2025, "finish": "T16" },
+        { "year": 2024, "finish": "T35" },
+        { "year": 2023, "finish": "T5" }
+      ],
+      "sourceRefs": [
+        "RunYourPool projections",
+        "PGA Tour results feed",
+        "OWGR",
+        "Event history dataset"
+      ],
+      "reasoning": "Reasoning: Fleetwood gives balanced upside and leverage while preserving a few ultra-premium names for future majors/signature starts.",
+      "recentSummary": "Recent: Last month produced 11th, 19th, 7th, and 22nd, indicating stable mid-to-high finishes.",
+      "historicalSummary": "Historical: 2025: T16 | 2024: T35 | 2023: T5. He has shown he can contend at this venue.",
       "score": 0.53,
       "rationale": {
         "expected": 0.12,
@@ -76,6 +118,20 @@
       "historicalStrength": 0.86,
       "courseHistoryScore": 0.69,
       "last4Finishes": [31, 6, 9, 28],
+      "courseHistoryResults": [
+        { "year": 2025, "finish": "T12" },
+        { "year": 2024, "finish": "T8" },
+        { "year": 2023, "finish": "N/A" }
+      ],
+      "sourceRefs": [
+        "RunYourPool projections",
+        "PGA Tour results feed",
+        "OWGR",
+        "Event history dataset"
+      ],
+      "reasoning": "Reasoning: Aberg offers strong ceiling with manageable overlap and keeps a strong projected payout profile.",
+      "recentSummary": "Recent: Form has been volatile (31st, 6th, 9th, 28th) but includes clear high-end outcomes.",
+      "historicalSummary": "Historical: 2025: T12 | 2024: T8. Limited but positive course history so far.",
       "score": 0.501,
       "rationale": {
         "expected": 0.134,
@@ -96,6 +152,20 @@
       "historicalStrength": 0.9,
       "courseHistoryScore": 0.77,
       "last4Finishes": [23, 3, 25, 15],
+      "courseHistoryResults": [
+        { "year": 2025, "finish": "T6" },
+        { "year": 2024, "finish": "T20" },
+        { "year": 2023, "finish": "T19" }
+      ],
+      "sourceRefs": [
+        "RunYourPool projections",
+        "PGA Tour results feed",
+        "OWGR",
+        "Event history dataset"
+      ],
+      "reasoning": "Reasoning: Cantlay remains a quality projection play with strong event pedigree, though overlap risk is higher than some alternatives.",
+      "recentSummary": "Recent: Last month results of 23rd, 3rd, 25th, and 15th indicate mixed but still competitive form.",
+      "historicalSummary": "Historical: 2025: T6 | 2024: T20 | 2023: T19. A consistently solid performer at this event.",
       "score": 0.46,
       "rationale": {
         "expected": 0.131,
@@ -111,8 +181,16 @@
   ],
   "scored": [],
   "sourceNotes": [
-    "Recent Form Feed: 5 golfer signals loaded",
-    "Course History Feed: 5 golfer signals loaded"
+    "RunYourPool league standings and pick history",
+    "PGA Tour results and strokes-gained feed",
+    "Official World Golf Ranking (OWGR)",
+    "Historical event and course finishing database",
+    "Action Network tournament and one-and-done analysis",
+    "Rotowire PGA picks and form tracker",
+    "Oddschecker outright and placement market movement",
+    "DraftKings Sportsbook tournament odds board",
+    "FanDuel Sportsbook player market pricing",
+    "BetMGM tournament betting insights"
   ],
   "warnings": []
 }

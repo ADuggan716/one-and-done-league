@@ -1,50 +1,61 @@
-# One and Done Companion
+# One and Done League
 
 Local-first One and Done toolkit for:
-- Public dashboard (`/public/index.html`) with league + subgroup + team comparisons and used/available golfer matrix
-- Private strategy page (`/private/recommendations.html`) with top-5 weekly recommendations
-- Automated weekly data refresh from RunYourPool and optional online signal feeds
+- Public dashboard (`/public/index.html`) with standings and golfer availability
+- Weekly pick support (`/private/recommendations.html`)
+- Automated data refresh from RunYourPool + online sources
 
-## Quick start
+## Free Hosting (Recommended)
 
-1. Copy config and edit values:
-   - `config/config.example.json` -> `config/config.json`
-2. Put your RunYourPool session cookie in:
-   - `config/runyourpool.cookie`
-3. Start local server:
-   - `npm run serve`
-4. Open:
-   - `http://localhost:8080/public/index.html`
-   - `http://localhost:8080/private/recommendations.html`
+You can host this for **$0** using GitHub + Netlify free tiers.
 
-## Data pipeline
+### What you’ll get
+- One shareable URL that always works
+- Data auto-refreshes on:
+  - Thursday 9:00 AM ET (pick refresh)
+  - Sunday 8:00 PM ET (results refresh)
 
-- Fetch online form/history/course signals:
-  - `npm run fetch:signals`
-- Sync RunYourPool + build all JSON outputs:
-  - `npm run sync`
-- Recompute recommendations only:
-  - `npm run recommend`
+### Step 1: Push this folder to GitHub
+1. Create a new GitHub repo.
+2. Push `/Users/andrew/Projects/Misc` to it.
 
-Outputs:
-- `data/league_snapshot.json`
-- `data/player_pool.json`
-- `data/recommendations.json`
+### Step 2: Connect repo to Netlify
+1. In Netlify, click **Add new site** -> **Import an existing project**.
+2. Pick your GitHub repo.
+3. Build settings:
+   - Build command: *(leave blank)*
+   - Publish directory: `.`
+4. Deploy.
 
-## Weekly automation (macOS)
+`netlify.toml` is already included and routes `/` to the standings page.
 
-Install Thursday 9:00 AM local job:
+### Step 3: Add GitHub repo secrets (for real data)
+In GitHub repo -> **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**, add:
+- `RYP_LEAGUE_ID`
+- `RYP_COOKIE`
+- `FORM_SOURCE_URL`
+- `FORM_SOURCE_API_KEY`
+- `COURSE_SOURCE_URL`
+- `COURSE_SOURCE_API_KEY`
+
+### Step 4: Enable auto refresh workflow
+The workflow is already included at:
+- `.github/workflows/sync-data.yml`
+
+It runs hourly but only executes sync during your two New York time windows.
+
+### Step 5: First manual refresh
+In GitHub -> **Actions** -> **Sync League Data** -> **Run workflow**.
+
+After it runs, Netlify auto-redeploys and your shared link shows fresh data.
+
+## Local preview
 
 ```bash
-./scripts/install_launchd.sh
+cd /Users/andrew/Projects/Misc
+python3 -m http.server 8080
 ```
 
-This runs:
-1. `node scripts/fetch_online_signals.mjs`
-2. `node scripts/sync_runyourpool.mjs`
-
-## Testing
-
-```bash
-npm test
-```
+Open:
+- `http://127.0.0.1:8080/public/index.html`
+- `http://127.0.0.1:8080/private/recommendations.html`

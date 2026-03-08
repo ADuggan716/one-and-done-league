@@ -1,126 +1,103 @@
 {
   "event": {
+    "id": "arnold-2026",
+    "name": "Arnold Palmer Invitational",
+    "tier": "signature",
+    "startDate": "2026-03-05",
+    "totalPurse": 20000000,
+    "firstPrize": 4000000
+  },
+  "nextTournament": {
     "id": "players-2026",
     "name": "THE PLAYERS Championship",
     "tier": "signature",
     "startDate": "2026-03-12",
     "totalPurse": 25000000,
-    "firstPrize": 4500000
+    "firstPrize": 4500000,
+    "lastYearWinner": "Scottie Scheffler"
   },
   "league": {
     "id": "demo-league",
     "name": "One and Done League",
     "totalEntrants": 150,
     "yourRank": 34,
-    "latestEventId": "players-2026",
+    "latestEventId": "arnold-2026",
     "yourPercentile": 77.2
   },
   "subgroupStandings": [
-    {
-      "member": "Andrew",
-      "leagueRank": 34,
-      "seasonEarnings": 2150000,
-      "weeklyEarnings": 380000,
-      "avgEarnings": 358333.33,
-      "lastFour": [
-        { "eventId": "wm", "eventName": "WM Phoenix Open", "tier": "regular", "earnings": 200000, "finish": 14, "pick": "Hideki Matsuyama" },
-        { "eventId": "genesis", "eventName": "Genesis Invitational", "tier": "signature", "earnings": 410000, "finish": 6, "pick": "Justin Thomas" },
-        { "eventId": "cognizant", "eventName": "Cognizant Classic", "tier": "regular", "earnings": 260000, "finish": 10, "pick": "Shane Lowry" },
-        { "eventId": "arnold-2026", "eventName": "Arnold Palmer Invitational", "tier": "signature", "earnings": 380000, "finish": 5, "pick": "Collin Morikawa" }
-      ],
-      "groupRank": 1,
-      "toLeader": 0
-    },
-    {
-      "member": "Mike",
-      "leagueRank": 42,
-      "seasonEarnings": 2020000,
-      "weeklyEarnings": 220000,
-      "avgEarnings": 336666.66,
-      "lastFour": [],
-      "groupRank": 2,
-      "toLeader": 130000
-    },
-    {
-      "member": "Paul",
-      "leagueRank": 60,
-      "seasonEarnings": 1890000,
-      "weeklyEarnings": 140000,
-      "avgEarnings": 315000,
-      "lastFour": [],
-      "groupRank": 3,
-      "toLeader": 260000
-    },
-    {
-      "member": "Dakota",
-      "leagueRank": 89,
-      "seasonEarnings": 1610000,
-      "weeklyEarnings": 0,
-      "avgEarnings": 268333.33,
-      "lastFour": [],
-      "groupRank": 4,
-      "toLeader": 540000
-    }
+    { "member": "Andrew", "leagueRank": 34, "seasonEarnings": 2150000, "weeklyEarnings": 380000, "avgEarnings": 358333.33, "groupRank": 1, "toLeader": 0 },
+    { "member": "Mike", "leagueRank": 42, "seasonEarnings": 2020000, "weeklyEarnings": 220000, "avgEarnings": 336666.66, "groupRank": 2, "toLeader": 130000 },
+    { "member": "Paul", "leagueRank": 60, "seasonEarnings": 1890000, "weeklyEarnings": 140000, "avgEarnings": 315000, "groupRank": 3, "toLeader": 260000 },
+    { "member": "Dakota", "leagueRank": 89, "seasonEarnings": 1610000, "weeklyEarnings": 0, "avgEarnings": 268333.33, "groupRank": 4, "toLeader": 540000 }
   ],
   "teams": [
-    {
-      "teamName": "Young Guns",
-      "members": ["Andrew", "Dakota"],
-      "seasonEarnings": 3760000,
-      "weeklyEarnings": 380000,
-      "avgMemberEarnings": 1880000,
-      "rank": 2,
-      "toLeader": 150000
-    },
-    {
-      "teamName": "Experienced Gentlemen",
-      "members": ["Mike", "Paul"],
-      "seasonEarnings": 3910000,
-      "weeklyEarnings": 360000,
-      "avgMemberEarnings": 1955000,
-      "rank": 1,
-      "toLeader": 0
-    }
+    { "teamName": "Experienced Gentlemen", "members": ["Mike", "Paul"], "seasonEarnings": 3910000, "weeklyEarnings": 360000, "avgMemberEarnings": 1955000, "rank": 1, "toLeader": 0 },
+    { "teamName": "Young Guns", "members": ["Andrew", "Dakota"], "seasonEarnings": 3760000, "weeklyEarnings": 380000, "avgMemberEarnings": 1880000, "rank": 2, "toLeader": 150000 }
   ],
   "weeklyComparison": [
     {
-      "eventId": "arnold-2026",
-      "eventName": "Arnold Palmer Invitational",
+      "eventId": "sony-2026",
+      "eventName": "Sony Open",
+      "startDate": "2026-01-15",
+      "tier": "regular",
+      "totalPurse": 8400000,
+      "firstPrize": 1512000,
+      "rows": [
+        { "member": "Andrew", "pick": "Hideki Matsuyama", "finish": 1, "earnings": 1512000 },
+        { "member": "Mike", "pick": "Jordan Spieth", "finish": 4, "earnings": 378000 },
+        { "member": "Paul", "pick": "Tom Kim", "finish": "MC", "earnings": 0 },
+        { "member": "Dakota", "pick": "Wyndham Clark", "finish": 40, "earnings": 50000 }
+      ]
+    },
+    {
+      "eventId": "genesis-2026",
+      "eventName": "Genesis Invitational",
+      "startDate": "2026-02-19",
       "tier": "signature",
       "totalPurse": 20000000,
       "firstPrize": 4000000,
       "rows": [
-        { "member": "Andrew", "eventId": "arnold-2026", "eventName": "Arnold Palmer Invitational", "tier": "signature", "totalPurse": 20000000, "firstPrize": 4000000, "earnings": 380000, "finish": 5, "pick": "Collin Morikawa", "leagueRank": 34 },
-        { "member": "Mike", "eventId": "arnold-2026", "eventName": "Arnold Palmer Invitational", "tier": "signature", "totalPurse": 20000000, "firstPrize": 4000000, "earnings": 220000, "finish": 11, "pick": "Ludvig Aberg", "leagueRank": 42 },
-        { "member": "Paul", "eventId": "arnold-2026", "eventName": "Arnold Palmer Invitational", "tier": "signature", "totalPurse": 20000000, "firstPrize": 4000000, "earnings": 140000, "finish": 18, "pick": "Tommy Fleetwood", "leagueRank": 60 },
-        { "member": "Dakota", "eventId": "arnold-2026", "eventName": "Arnold Palmer Invitational", "tier": "signature", "totalPurse": 20000000, "firstPrize": 4000000, "earnings": 0, "finish": 63, "pick": "Wyndham Clark", "leagueRank": 89 }
+        { "member": "Andrew", "pick": "Justin Thomas", "finish": 6, "earnings": 410000 },
+        { "member": "Mike", "pick": "Patrick Cantlay", "finish": 1, "earnings": 4000000 },
+        { "member": "Paul", "pick": "Sungjae Im", "finish": 3, "earnings": 1200000 },
+        { "member": "Dakota", "pick": "Ludvig Aberg", "finish": "MC", "earnings": 0 }
+      ]
+    },
+    {
+      "eventId": "arnold-2026",
+      "eventName": "Arnold Palmer Invitational",
+      "startDate": "2026-03-05",
+      "tier": "signature",
+      "totalPurse": 20000000,
+      "firstPrize": 4000000,
+      "rows": [
+        { "member": "Andrew", "pick": "Collin Morikawa", "finish": 5, "earnings": 380000 },
+        { "member": "Mike", "pick": "Ludvig Aberg", "finish": 11, "earnings": 220000 },
+        { "member": "Paul", "pick": "Tommy Fleetwood", "finish": 4, "earnings": 640000 },
+        { "member": "Dakota", "pick": "Wyndham Clark", "finish": "MC", "earnings": 0 }
       ]
     },
     {
       "eventId": "players-2026",
       "eventName": "THE PLAYERS Championship",
+      "startDate": "2026-03-12",
       "tier": "signature",
       "totalPurse": 25000000,
       "firstPrize": 4500000,
       "rows": [
-        { "member": "Andrew", "eventId": "players-2026", "eventName": "THE PLAYERS Championship", "tier": "signature", "totalPurse": 25000000, "firstPrize": 4500000, "earnings": 0, "finish": null, "pick": null, "leagueRank": 34 },
-        { "member": "Mike", "eventId": "players-2026", "eventName": "THE PLAYERS Championship", "tier": "signature", "totalPurse": 25000000, "firstPrize": 4500000, "earnings": 0, "finish": null, "pick": null, "leagueRank": 42 },
-        { "member": "Paul", "eventId": "players-2026", "eventName": "THE PLAYERS Championship", "tier": "signature", "totalPurse": 25000000, "firstPrize": 4500000, "earnings": 0, "finish": null, "pick": null, "leagueRank": 60 },
-        { "member": "Dakota", "eventId": "players-2026", "eventName": "THE PLAYERS Championship", "tier": "signature", "totalPurse": 25000000, "firstPrize": 4500000, "earnings": 0, "finish": null, "pick": null, "leagueRank": 89 }
+        { "member": "Andrew", "pick": "", "finish": "", "earnings": 0 },
+        { "member": "Mike", "pick": "", "finish": "", "earnings": 0 },
+        { "member": "Paul", "pick": "", "finish": "", "earnings": 0 },
+        { "member": "Dakota", "pick": "", "finish": "", "earnings": 0 }
       ]
     }
   ],
-  "whoGainedThisWeek": ["Andrew"],
   "projections": [
-    { "golfer": "Rory McIlroy", "projectedEarnings": 640000, "projectedDupCount": 1, "futureValue": 700000, "historicalStrength": 0.96, "courseHistoryScore": 0.84, "last4Finishes": [2, 7, 12, 4] },
-    { "golfer": "Viktor Hovland", "projectedEarnings": 510000, "projectedDupCount": 0, "futureValue": 400000, "historicalStrength": 0.88, "courseHistoryScore": 0.79, "last4Finishes": [14, 8, 10, 17] },
-    { "golfer": "Tommy Fleetwood", "projectedEarnings": 420000, "projectedDupCount": 0, "futureValue": 300000, "historicalStrength": 0.8, "courseHistoryScore": 0.74, "last4Finishes": [11, 19, 7, 22] },
-    { "golfer": "Patrick Cantlay", "projectedEarnings": 460000, "projectedDupCount": 2, "futureValue": 550000, "historicalStrength": 0.9, "courseHistoryScore": 0.77, "last4Finishes": [23, 3, 25, 15] },
-    { "golfer": "Ludvig Aberg", "projectedEarnings": 470000, "projectedDupCount": 1, "futureValue": 500000, "historicalStrength": 0.86, "courseHistoryScore": 0.69, "last4Finishes": [31, 6, 9, 28] }
+    { "golfer": "Rory McIlroy", "projectedEarnings": 640000, "projectedDupCount": 1, "futureValue": 700000, "historicalStrength": 0.96, "courseHistoryScore": 0.84, "last4Finishes": [2, 7, 12, 4] }
   ],
   "sourceNotes": [
-    "Recent Form Feed: 5 golfer signals loaded",
-    "Course History Feed: 5 golfer signals loaded"
+    "Recent Form Feed: 12 golfer signals loaded",
+    "Course History Feed: 12 golfer signals loaded"
   ],
   "warnings": [],
   "updatedAt": "2026-03-08T12:00:00.000Z"

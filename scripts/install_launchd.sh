@@ -21,14 +21,24 @@ cat > "$PLIST_PATH" <<PLIST
     <string>cd ${ROOT_DIR} && node scripts/fetch_online_signals.mjs && node scripts/sync_runyourpool.mjs</string>
   </array>
   <key>StartCalendarInterval</key>
-  <dict>
-    <key>Weekday</key>
-    <integer>5</integer>
-    <key>Hour</key>
-    <integer>9</integer>
-    <key>Minute</key>
-    <integer>0</integer>
-  </dict>
+  <array>
+    <dict>
+      <key>Weekday</key>
+      <integer>5</integer>
+      <key>Hour</key>
+      <integer>9</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+    <dict>
+      <key>Weekday</key>
+      <integer>0</integer>
+      <key>Hour</key>
+      <integer>20</integer>
+      <key>Minute</key>
+      <integer>0</integer>
+    </dict>
+  </array>
   <key>RunAtLoad</key>
   <true/>
   <key>WorkingDirectory</key>
@@ -45,4 +55,4 @@ launchctl unload "$PLIST_PATH" >/dev/null 2>&1 || true
 launchctl load "$PLIST_PATH"
 
 echo "Installed launchd agent at $PLIST_PATH"
-echo "Schedule: Thursday at 09:00 local time"
+echo "Schedule: Thursday at 09:00 and Sunday at 20:00 local time"
