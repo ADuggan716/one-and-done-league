@@ -1,0 +1,118 @@
+{
+  "event": {
+    "id": "players-2026",
+    "name": "THE PLAYERS Championship",
+    "tier": "signature",
+    "startDate": "2026-03-12"
+  },
+  "strategy": "expected-value-plus-form-history-course",
+  "generatedAt": "2026-03-08T12:00:00.000Z",
+  "primary": {
+    "golfer": "Rory McIlroy",
+    "projectedEarnings": 640000,
+    "projectedDupCount": 1,
+    "futureValue": 700000,
+    "historicalStrength": 0.96,
+    "courseHistoryScore": 0.84,
+    "last4Finishes": [2, 7, 12, 4],
+    "score": 0.586,
+    "rationale": {
+      "expected": 0.183,
+      "uniqueness": 0.666,
+      "futureCost": 0.35,
+      "recentForm": 0.938,
+      "historicalStrength": 0.96,
+      "courseHistory": 0.84,
+      "preservePenalty": 0,
+      "explanation": "Recent form: last 4 finishes 2, 7, 12, 4. Historical strength index: 0.96. Course history score: 0.84."
+    }
+  },
+  "alternates": [
+    {
+      "golfer": "Viktor Hovland",
+      "projectedEarnings": 510000,
+      "projectedDupCount": 0,
+      "futureValue": 400000,
+      "historicalStrength": 0.88,
+      "courseHistoryScore": 0.79,
+      "last4Finishes": [14, 8, 10, 17],
+      "score": 0.567,
+      "rationale": {
+        "expected": 0.146,
+        "uniqueness": 1,
+        "futureCost": 0.2,
+        "recentForm": 0.878,
+        "historicalStrength": 0.88,
+        "courseHistory": 0.79,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Tommy Fleetwood",
+      "projectedEarnings": 420000,
+      "projectedDupCount": 0,
+      "futureValue": 300000,
+      "historicalStrength": 0.8,
+      "courseHistoryScore": 0.74,
+      "last4Finishes": [11, 19, 7, 22],
+      "score": 0.53,
+      "rationale": {
+        "expected": 0.12,
+        "uniqueness": 1,
+        "futureCost": 0.15,
+        "recentForm": 0.852,
+        "historicalStrength": 0.8,
+        "courseHistory": 0.74,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 11, 19, 7, 22. Historical strength index: 0.80. Course history score: 0.74. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Ludvig Aberg",
+      "projectedEarnings": 470000,
+      "projectedDupCount": 1,
+      "futureValue": 500000,
+      "historicalStrength": 0.86,
+      "courseHistoryScore": 0.69,
+      "last4Finishes": [31, 6, 9, 28],
+      "score": 0.501,
+      "rationale": {
+        "expected": 0.134,
+        "uniqueness": 0.666,
+        "futureCost": 0.25,
+        "recentForm": 0.815,
+        "historicalStrength": 0.86,
+        "courseHistory": 0.69,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 31, 6, 9, 28. Historical strength index: 0.86. Course history score: 0.69."
+      }
+    },
+    {
+      "golfer": "Patrick Cantlay",
+      "projectedEarnings": 460000,
+      "projectedDupCount": 2,
+      "futureValue": 550000,
+      "historicalStrength": 0.9,
+      "courseHistoryScore": 0.77,
+      "last4Finishes": [23, 3, 25, 15],
+      "score": 0.46,
+      "rationale": {
+        "expected": 0.131,
+        "uniqueness": 0.333,
+        "futureCost": 0.275,
+        "recentForm": 0.835,
+        "historicalStrength": 0.9,
+        "courseHistory": 0.77,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 23, 3, 25, 15. Historical strength index: 0.90. Course history score: 0.77."
+      }
+    }
+  ],
+  "scored": [],
+  "sourceNotes": [
+    "Recent Form Feed: 5 golfer signals loaded",
+    "Course History Feed: 5 golfer signals loaded"
+  ],
+  "warnings": []
+}

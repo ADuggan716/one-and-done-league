@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>One and Done Companion</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/styles.css" />
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+    <main class="shell">
+      <header class="hero">
+        <h1>One and Done Companion</h1>
+        <p>League status for Andrew, Paul, Dakota, and Mike.</p>
+        <div class="hero-meta" id="syncMeta">Loading latest sync...</div>
+      </header>
+
+      <nav class="tabs">
+        <button class="tab active" data-tab="performance">League + Rival Performance</button>
+        <button class="tab" data-tab="pool">Used vs Available Golfers</button>
+      </nav>
+
+      <section class="panel" id="performancePanel">
+        <div class="split">
+          <section class="card">
+            <h2>League Context</h2>
+            <div id="leagueContext"></div>
+          </section>
+          <section class="card">
+            <h2>Team Comparison</h2>
+            <div id="teamComparison"></div>
+          </section>
+        </div>
+
+        <section class="card">
+          <h2>Season Summary (Sortable)</h2>
+          <div class="control-row">
+            <label>Filter member
+              <input id="seasonFilter" type="text" placeholder="Type a name" />
+            </label>
+          </div>
+          <div class="matrix-wrap"><table id="seasonTable"></table></div>
+        </section>
+
+        <section class="card">
+          <h2>Week-by-Week Comparison</h2>
+          <div class="control-row">
+            <label>Event
+              <select id="eventSelect"></select>
+            </label>
+            <label>Tier
+              <select id="weeklyTierFilter">
+                <option value="all">all</option>
+                <option value="major">major</option>
+                <option value="signature">signature</option>
+                <option value="regular">regular</option>
+              </select>
+            </label>
+          </div>
+          <div class="matrix-wrap"><table id="weeklyTable"></table></div>
+        </section>
+      </section>
+
+      <section class="panel hidden" id="poolPanel">
+        <div class="split">
+          <section class="card">
+            <h2>Event Purse Context</h2>
+            <div id="eventPurse"></div>
+          </section>
+          <section class="card">
+            <h2>Filters</h2>
+            <div class="control-row">
+              <label>Tier
+                <select id="poolTierFilter">
+                  <option value="all">all</option>
+                  <option value="major">major</option>
+                  <option value="signature">signature</option>
+                  <option value="regular">regular</option>
+                </select>
+              </label>
+              <label>Golfer search
+                <input id="poolSearch" type="text" placeholder="Search golfer" />
+              </label>
+            </div>
+          </section>
+        </div>
+
+        <section class="card">
+          <h2>Common Remaining Options</h2>
+          <div id="commonRemaining"></div>
+        </section>
+
+        <section class="card">
+          <h2>Availability Matrix (Sortable)</h2>
+          <div class="matrix-wrap">
+            <table id="availabilityMatrix"></table>
+          </div>
+        </section>
+      </section>
+
+      <section class="card fallback">
+        <h2>Manual Weekly Fallback Entry</h2>
+        <p>If sync fails, enter this week’s picks and earnings here. Entries are stored in your browser only.</p>
+        <form id="fallbackForm" class="fallback-form">
+          <div class="fallback-grid" id="fallbackRows"></div>
+          <button type="submit">Save Fallback Data</button>
+        </form>
+        <p id="fallbackStatus" class="muted"></p>
+      </section>
+
+      <section class="card" id="warningsCard">
+        <h2>Warnings</h2>
+        <ul id="warnings"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/public/app.js"></script>
+  </body>
+</html>

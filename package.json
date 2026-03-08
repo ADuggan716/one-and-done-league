@@ -1,0 +1,14 @@
+{
+  "name": "one-and-done-companion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "fetch:signals": "node scripts/fetch_online_signals.mjs",
+    "sync": "node scripts/sync_runyourpool.mjs",
+    "recommend": "node scripts/generate_recommendations.mjs",
+    "build:data": "node scripts/build_local_data.mjs",
+    "serve": "python3 -m http.server 8080"
+  }
+}

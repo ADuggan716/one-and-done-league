@@ -1,0 +1,30 @@
+{
+  "eventId": "players-2026",
+  "eventTier": "signature",
+  "currentEventMeta": {
+    "totalPurse": 25000000,
+    "firstPrize": 4500000
+  },
+  "filters": {
+    "tiers": ["major", "signature", "regular"]
+  },
+  "members": {
+    "Andrew": {
+      "used": ["Scottie Scheffler", "Collin Morikawa", "Justin Thomas", "Shane Lowry"],
+      "available": ["Rory McIlroy", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay", "Tommy Fleetwood"]
+    },
+    "Paul": {
+      "used": ["Rory McIlroy", "Tom Kim", "Sungjae Im"],
+      "available": ["Scottie Scheffler", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay", "Tommy Fleetwood"]
+    },
+    "Dakota": {
+      "used": ["Xander Schauffele", "Hideki Matsuyama", "Wyndham Clark"],
+      "available": ["Scottie Scheffler", "Rory McIlroy", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay"]
+    },
+    "Mike": {
+      "used": ["Ludvig Aberg", "Patrick Cantlay", "Jordan Spieth"],
+      "available": ["Scottie Scheffler", "Rory McIlroy", "Collin Morikawa", "Viktor Hovland", "Tommy Fleetwood"]
+    }
+  },
+  "updatedAt": "2026-03-08T12:00:00.000Z"
+}

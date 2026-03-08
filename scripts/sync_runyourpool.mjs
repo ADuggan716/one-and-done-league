@@ -1,0 +1,149 @@
+#!/usr/bin/env node
+import fs from "node:fs/promises";
+import path from "node:path";
+import { fileURLToPath } from "node:url";
+import { fetchRunYourPoolData, loadCookie, normalizeSnapshot, readConfig, SyncError } from "../src/lib/sync.mjs";
+import {
+  applyWeeklyPicks,
+  buildWeeklyComparison,
+  calculateWhoGainedThisWeek,
+  computeLeaguePercentile,
+  computeSubgroupStandings,
+  computeTeamSummary,
+} from "../src/lib/scoring.mjs";
+import { generateRecommendations } from "../src/lib/recommendations.mjs";
+import { mergeSignals, readOnlineSignals } from "../src/lib/online_signals.mjs";
+
+const __filename = fileURLToPath(import.meta.url);
+const __dirname = path.dirname(__filename);
+const root = path.resolve(__dirname, "..");
+
+async function readJson(relPath) {
+  const fullPath = path.join(root, relPath);
+  const raw = await fs.readFile(fullPath, "utf8");
+  return JSON.parse(raw);
+}
+
+async function writeJson(relPath, payload) {
+  const fullPath = path.join(root, relPath);
+  await fs.writeFile(fullPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
+}
+
+function buildLeagueSnapshot(normalized, config) {
+  const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
+  const latestRanks = new Map(
+    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
+  );
+  const standingsWithLeagueRank = standings.map((row) => ({
+    ...row,
+    leagueRank: latestRanks.get(row.member) ?? null,
+  }));
+  const weeklyComparison = buildWeeklyComparison(config.subgroupMembers, normalized.events);
+  const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
+
+  return {
+    event: normalized.events.at(-1) || null,
+    league: {
+      ...normalized.league,
+      yourPercentile: computeLeaguePercentile(normalized.league.yourRank, normalized.league.totalEntrants),
+    },
+    subgroupStandings: standingsWithLeagueRank,
+    teams,
+    weeklyComparison,
+    whoGainedThisWeek: calculateWhoGainedThisWeek(standingsWithLeagueRank),
+    projections: normalized.projections,
+    sourceNotes: normalized.sourceNotes,
+    warnings: normalized.warnings,
+    updatedAt: normalized.lastSyncedAt,
+  };
+}
+
+function buildPlayerPool(normalized, config, currentPool) {
+  const updated = structuredClone(currentPool);
+  const latestPicks = Object.fromEntries(
+    (normalized.events.at(-1)?.subgroupResults || []).map((row) => [row.member, row.pick])
+  );
+  const applied = applyWeeklyPicks(updated, latestPicks);
+
+  return {
+    eventId: normalized.events.at(-1)?.id || null,
+    eventTier: normalized.events.at(-1)?.tier || "regular",
+    currentEventMeta: {
+      totalPurse: normalized.events.at(-1)?.totalPurse || 0,
+      firstPrize: normalized.events.at(-1)?.firstPrize || 0,
+    },
+    members: applied.members,
+    filters: {
+      tiers: ["major", "signature", "regular"],
+    },
+    updatedAt: normalized.lastSyncedAt,
+  };
+}
+
+async function run() {
+  const config = await readConfig(path.join(root, "config/config.json"));
+  const currentPool = await readJson("data/player_pool.json");
+  const cookie = await loadCookie(path.join(root, config.cookiePath));
+
+  let upstream;
+  try {
+    upstream = await fetchRunYourPoolData({
+      baseUrl: config.runYourPool.baseUrl,
+      cookie,
+      leagueId: config.runYourPool.leagueId,
+    });
+  } catch (error) {
+    if (error instanceof SyncError) {
+      throw error;
+    }
+    throw new SyncError(`Unexpected sync failure: ${error.message}`, "UNEXPECTED");
+  }
+
+  const normalized = normalizeSnapshot(upstream, config.subgroupMembers);
+  let mergedProjections = normalized.projections;
+  let sourceNotes = [...(normalized.sourceNotes || [])];
+
+  try {
+    const onlineSignals = await readOnlineSignals(path.join(root, "data/online_signals.json"));
+    mergedProjections = mergeSignals(normalized.projections, onlineSignals.signals);
+    sourceNotes = [...sourceNotes, ...(onlineSignals.sourceNotes || [])];
+  } catch {
+    sourceNotes.push("Online signal file missing or unreadable; using RunYourPool-only inputs.");
+  }
+
+  normalized.projections = mergedProjections;
+  normalized.sourceNotes = sourceNotes;
+
+  const snapshot = buildLeagueSnapshot(normalized, config);
+  const playerPool = buildPlayerPool(normalized, config, currentPool);
+
+  const andrewAvailable = playerPool.members[config.me]?.available || [];
+  const recommendations = {
+    event: snapshot.event,
+    strategy: "expected-value-plus-form-history-course",
+    sourceNotes: snapshot.sourceNotes,
+    ...generateRecommendations(andrewAvailable, normalized.projections, {
+      weights: config.recommendationWeights,
+      eventTier: snapshot.event?.tier,
+    }),
+    warnings: snapshot.warnings,
+  };
+
+  await writeJson("data/league_snapshot.json", snapshot);
+  await writeJson("data/player_pool.json", playerPool);
+  await writeJson("data/recommendations.json", recommendations);
+
+  const logMessage = `[${new Date().toISOString()}] Sync complete. Event: ${snapshot.event?.name || "N/A"}`;
+  await fs.mkdir(path.join(root, "logs"), { recursive: true });
+  await fs.appendFile(path.join(root, "logs/sync.log"), `${logMessage}\n`, "utf8");
+
+  console.log(logMessage);
+}
+
+run().catch(async (error) => {
+  const message = `[${new Date().toISOString()}] Sync failed (${error.code || "ERR"}): ${error.message}`;
+  await fs.mkdir(path.join(root, "logs"), { recursive: true });
+  await fs.appendFile(path.join(root, "logs/sync.log"), `${message}\n`, "utf8");
+  console.error(message);
+  process.exitCode = 1;
+});

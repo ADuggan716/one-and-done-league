@@ -1,0 +1,59 @@
+{
+  "fetchedAt": "2026-03-08T12:00:00.000Z",
+  "sourceNotes": [
+    "Recent Form Feed: 5 golfer signals loaded",
+    "Course History Feed: 5 golfer signals loaded"
+  ],
+  "signals": [
+    {
+      "golfer": "Rory McIlroy",
+      "historicalStrength": 0.96,
+      "courseHistoryScore": 0.84,
+      "last4Finishes": [2, 7, 12, 4],
+      "projectedEarnings": 640000,
+      "projectedDupCount": 1,
+      "futureValue": 700000,
+      "sourceRefs": ["Recent Form Feed", "Course History Feed"]
+    },
+    {
+      "golfer": "Viktor Hovland",
+      "historicalStrength": 0.88,
+      "courseHistoryScore": 0.79,
+      "last4Finishes": [14, 8, 10, 17],
+      "projectedEarnings": 510000,
+      "projectedDupCount": 0,
+      "futureValue": 400000,
+      "sourceRefs": ["Recent Form Feed"]
+    },
+    {
+      "golfer": "Tommy Fleetwood",
+      "historicalStrength": 0.8,
+      "courseHistoryScore": 0.74,
+      "last4Finishes": [11, 19, 7, 22],
+      "projectedEarnings": 420000,
+      "projectedDupCount": 0,
+      "futureValue": 300000,
+      "sourceRefs": ["Recent Form Feed", "Course History Feed"]
+    },
+    {
+      "golfer": "Patrick Cantlay",
+      "historicalStrength": 0.9,
+      "courseHistoryScore": 0.77,
+      "last4Finishes": [23, 3, 25, 15],
+      "projectedEarnings": 460000,
+      "projectedDupCount": 2,
+      "futureValue": 550000,
+      "sourceRefs": ["Course History Feed"]
+    },
+    {
+      "golfer": "Ludvig Aberg",
+      "historicalStrength": 0.86,
+      "courseHistoryScore": 0.69,
+      "last4Finishes": [31, 6, 9, 28],
+      "projectedEarnings": 470000,
+      "projectedDupCount": 1,
+      "futureValue": 500000,
+      "sourceRefs": ["Recent Form Feed"]
+    }
+  ]
+}

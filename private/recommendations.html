@@ -1,0 +1,60 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Andrew Weekly Pick Strategy</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="/public/styles.css" />
+    <style>
+      .recommendation-grid {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 12px;
+      }
+      .score {
+        font-size: 1.6rem;
+        font-weight: 700;
+      }
+    </style>
+  </head>
+  <body>
+    <main class="shell">
+      <header class="hero">
+        <h1>Andrew Weekly Pick Strategy</h1>
+        <p>Private view. Do not share this page.</p>
+        <div class="hero-meta" id="meta">Loading recommendations...</div>
+      </header>
+
+      <section class="card">
+        <h2>Primary Pick</h2>
+        <div id="primary"></div>
+      </section>
+
+      <section class="card">
+        <h2>Alternates (4)</h2>
+        <div class="recommendation-grid" id="alternates"></div>
+      </section>
+
+      <section class="card">
+        <h2>Scored Candidates</h2>
+        <div class="matrix-wrap">
+          <table id="scoredTable"></table>
+        </div>
+      </section>
+
+      <section class="card">
+        <h2>Warnings</h2>
+        <ul id="warnings"></ul>
+      </section>
+      <section class="card">
+        <h2>Online Sources</h2>
+        <ul id="sources"></ul>
+      </section>
+    </main>
+
+    <script type="module" src="/private/recommendations.js"></script>
+  </body>
+</html>
