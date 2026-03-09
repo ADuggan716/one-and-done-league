@@ -1,104 +1,369 @@
 {
   "event": {
-    "id": "arnold-2026",
+    "id": "arnold-palmer-invitational",
     "name": "Arnold Palmer Invitational",
-    "tier": "signature",
-    "startDate": "2026-03-05",
-    "totalPurse": 20000000,
-    "firstPrize": 4000000
+    "tier": "regular",
+    "startDate": null,
+    "isUpcoming": true,
+    "totalPurse": 0,
+    "firstPrize": 0,
+    "subgroupResults": [
+      {
+        "member": "Andrew",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Paul",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Dakota",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Mike",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      }
+    ],
+    "picks": [
+      {
+        "member": "Andrew",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Paul",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Dakota",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Mike",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      }
+    ]
   },
   "nextTournament": {
-    "id": "players-2026",
-    "name": "THE PLAYERS Championship",
-    "tier": "signature",
-    "startDate": "2026-03-12",
-    "totalPurse": 25000000,
-    "firstPrize": 4500000,
-    "lastYearWinner": "Scottie Scheffler"
+    "id": "arnold-palmer-invitational",
+    "name": "Arnold Palmer Invitational",
+    "tier": "regular",
+    "startDate": null,
+    "totalPurse": 0,
+    "firstPrize": 0,
+    "lastYearWinner": "Unknown"
   },
   "league": {
-    "id": "demo-league",
-    "name": "One and Done League",
+    "id": "/Golf/PickX/multiple_entries.cfm",
+    "name": "allowed No unread notifications Mark all as read View All Notifications",
     "totalEntrants": 150,
-    "yourRank": 34,
-    "latestEventId": "arnold-2026",
-    "yourPercentile": 77.2
+    "yourRank": 0,
+    "latestEventId": "arnold-palmer-invitational",
+    "yourPercentile": 0
   },
   "subgroupStandings": [
-    { "member": "Andrew", "leagueRank": 34, "seasonEarnings": 2150000, "weeklyEarnings": 380000, "avgEarnings": 358333.33, "groupRank": 1, "toLeader": 0 },
-    { "member": "Mike", "leagueRank": 42, "seasonEarnings": 2020000, "weeklyEarnings": 220000, "avgEarnings": 336666.66, "groupRank": 2, "toLeader": 130000 },
-    { "member": "Paul", "leagueRank": 60, "seasonEarnings": 1890000, "weeklyEarnings": 140000, "avgEarnings": 315000, "groupRank": 3, "toLeader": 260000 },
-    { "member": "Dakota", "leagueRank": 89, "seasonEarnings": 1610000, "weeklyEarnings": 0, "avgEarnings": 268333.33, "groupRank": 4, "toLeader": 540000 }
+    {
+      "member": "Andrew",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
+      "lastFour": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "history": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
+    },
+    {
+      "member": "Dakota",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
+      "lastFour": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "history": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
+    },
+    {
+      "member": "Mike",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
+      "lastFour": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "history": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
+    },
+    {
+      "member": "Paul",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
+      "lastFour": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "history": [
+        {
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        }
+      ],
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
+    }
   ],
   "teams": [
-    { "teamName": "Experienced Gentlemen", "members": ["Mike", "Paul"], "seasonEarnings": 3910000, "weeklyEarnings": 360000, "avgMemberEarnings": 1955000, "rank": 1, "toLeader": 0 },
-    { "teamName": "Young Guns", "members": ["Andrew", "Dakota"], "seasonEarnings": 3760000, "weeklyEarnings": 380000, "avgMemberEarnings": 1880000, "rank": 2, "toLeader": 150000 }
+    {
+      "teamName": "Experienced Gentlemen",
+      "members": [
+        "Mike",
+        "Paul"
+      ],
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgMemberEarnings": 0,
+      "rank": 1,
+      "toLeader": 0
+    },
+    {
+      "teamName": "Young Guns",
+      "members": [
+        "Andrew",
+        "Dakota"
+      ],
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgMemberEarnings": 0,
+      "rank": 2,
+      "toLeader": 0
+    }
   ],
   "weeklyComparison": [
     {
-      "eventId": "sony-2026",
-      "eventName": "Sony Open",
-      "startDate": "2026-01-15",
-      "tier": "regular",
-      "totalPurse": 8400000,
-      "firstPrize": 1512000,
-      "rows": [
-        { "member": "Andrew", "pick": "Hideki Matsuyama", "finish": 1, "earnings": 1512000 },
-        { "member": "Mike", "pick": "Jordan Spieth", "finish": 4, "earnings": 378000 },
-        { "member": "Paul", "pick": "Tom Kim", "finish": "MC", "earnings": 0 },
-        { "member": "Dakota", "pick": "Wyndham Clark", "finish": 40, "earnings": 50000 }
-      ]
-    },
-    {
-      "eventId": "genesis-2026",
-      "eventName": "Genesis Invitational",
-      "startDate": "2026-02-19",
-      "tier": "signature",
-      "totalPurse": 20000000,
-      "firstPrize": 4000000,
-      "rows": [
-        { "member": "Andrew", "pick": "Justin Thomas", "finish": 6, "earnings": 410000 },
-        { "member": "Mike", "pick": "Patrick Cantlay", "finish": 1, "earnings": 4000000 },
-        { "member": "Paul", "pick": "Sungjae Im", "finish": 3, "earnings": 1200000 },
-        { "member": "Dakota", "pick": "Ludvig Aberg", "finish": "MC", "earnings": 0 }
-      ]
-    },
-    {
-      "eventId": "arnold-2026",
+      "eventId": "arnold-palmer-invitational",
       "eventName": "Arnold Palmer Invitational",
-      "startDate": "2026-03-05",
-      "tier": "signature",
-      "totalPurse": 20000000,
-      "firstPrize": 4000000,
+      "tier": "regular",
+      "totalPurse": 0,
+      "firstPrize": 0,
       "rows": [
-        { "member": "Andrew", "pick": "Collin Morikawa", "finish": 5, "earnings": 380000 },
-        { "member": "Mike", "pick": "Ludvig Aberg", "finish": 11, "earnings": 220000 },
-        { "member": "Paul", "pick": "Tommy Fleetwood", "finish": 4, "earnings": 640000 },
-        { "member": "Dakota", "pick": "Wyndham Clark", "finish": "MC", "earnings": 0 }
-      ]
-    },
-    {
-      "eventId": "players-2026",
-      "eventName": "THE PLAYERS Championship",
-      "startDate": "2026-03-12",
-      "tier": "signature",
-      "totalPurse": 25000000,
-      "firstPrize": 4500000,
-      "rows": [
-        { "member": "Andrew", "pick": "", "finish": "", "earnings": 0 },
-        { "member": "Mike", "pick": "", "finish": "", "earnings": 0 },
-        { "member": "Paul", "pick": "", "finish": "", "earnings": 0 },
-        { "member": "Dakota", "pick": "", "finish": "", "earnings": 0 }
+        {
+          "member": "Andrew",
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "arnold-palmer-invitational",
+          "eventName": "Arnold Palmer Invitational",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": null
+        }
       ]
     }
   ],
+  "whoGainedThisWeek": [],
   "projections": [
-    { "golfer": "Rory McIlroy", "projectedEarnings": 640000, "projectedDupCount": 1, "futureValue": 700000, "historicalStrength": 0.96, "courseHistoryScore": 0.84, "last4Finishes": [2, 7, 12, 4] }
+    {
+      "golfer": "Rory McIlroy",
+      "projectedEarnings": 640000,
+      "projectedDupCount": 1,
+      "futureValue": 700000,
+      "worldRank": 2,
+      "fedexPoints": 1110,
+      "seasonEarnings": 5480000,
+      "inNextTournament": true,
+      "historicalStrength": 0.96,
+      "courseHistoryScore": 0.84,
+      "last4Finishes": [
+        2,
+        7,
+        12,
+        4
+      ],
+      "sourceRefs": [
+        "Recent Form Feed",
+        "Course History Feed"
+      ]
+    },
+    {
+      "golfer": "Viktor Hovland",
+      "projectedEarnings": 510000,
+      "projectedDupCount": 0,
+      "futureValue": 400000,
+      "worldRank": 5,
+      "fedexPoints": 845,
+      "seasonEarnings": 3620000,
+      "inNextTournament": true,
+      "historicalStrength": 0.88,
+      "courseHistoryScore": 0.79,
+      "last4Finishes": [
+        14,
+        8,
+        10,
+        17
+      ],
+      "sourceRefs": [
+        "Recent Form Feed"
+      ]
+    },
+    {
+      "golfer": "Tommy Fleetwood",
+      "projectedEarnings": 420000,
+      "projectedDupCount": 0,
+      "futureValue": 300000,
+      "worldRank": 8,
+      "fedexPoints": 640,
+      "seasonEarnings": 2800000,
+      "inNextTournament": true,
+      "historicalStrength": 0.8,
+      "courseHistoryScore": 0.74,
+      "last4Finishes": [
+        11,
+        19,
+        7,
+        22
+      ],
+      "sourceRefs": [
+        "Recent Form Feed",
+        "Course History Feed"
+      ]
+    }
   ],
   "sourceNotes": [
+    "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
+    "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/standings.cfm",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
-  "warnings": [],
-  "updatedAt": "2026-03-08T12:00:00.000Z"
+  "warnings": [
+    "No projections returned. Recommendation engine will use fallback estimates."
+  ],
+  "updatedAt": "2026-03-09T01:38:55.955Z"
 }

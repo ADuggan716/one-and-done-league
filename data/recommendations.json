@@ -1,109 +1,269 @@
 {
   "event": {
-    "id": "players-2026",
-    "name": "THE PLAYERS Championship",
-    "tier": "signature",
-    "startDate": "2026-03-12"
+    "id": "arnold-palmer-invitational",
+    "name": "Arnold Palmer Invitational",
+    "tier": "regular",
+    "startDate": null,
+    "isUpcoming": true,
+    "totalPurse": 0,
+    "firstPrize": 0,
+    "subgroupResults": [
+      {
+        "member": "Andrew",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Paul",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Dakota",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Mike",
+        "pick": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      }
+    ],
+    "picks": [
+      {
+        "member": "Andrew",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Paul",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Dakota",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      },
+      {
+        "member": "Mike",
+        "golfer": null,
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
+      }
+    ]
   },
   "strategy": "expected-value-plus-form-history-course",
-  "generatedAt": "2026-03-08T12:00:00.000Z",
+  "sourceNotes": [
+    "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
+    "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/standings.cfm",
+    "Recent Form Feed: 12 golfer signals loaded",
+    "Course History Feed: 12 golfer signals loaded"
+  ],
+  "generatedAt": "2026-03-09T01:38:56.097Z",
   "primary": {
-    "golfer": "Rory McIlroy",
-    "projectedEarnings": 640000,
-    "projectedDupCount": 1,
-    "futureValue": 700000,
-    "historicalStrength": 0.96,
-    "courseHistoryScore": 0.84,
-    "last4Finishes": [2, 7, 12, 4],
-    "courseHistoryResults": [
-      { "year": 2025, "finish": "2nd" },
-      { "year": 2024, "finish": "19th" },
-      { "year": 2023, "finish": "T33" }
+    "golfer": "Tommy Fleetwood",
+    "projectedEarnings": 420000,
+    "projectedDupCount": 0,
+    "futureValue": 300000,
+    "worldRank": 8,
+    "fedexPoints": 640,
+    "seasonEarnings": 2800000,
+    "inNextTournament": true,
+    "historicalStrength": 0.8,
+    "courseHistoryScore": 0.74,
+    "last4Finishes": [
+      11,
+      19,
+      7,
+      22
     ],
     "sourceRefs": [
-      "RunYourPool projections",
-      "PGA Tour results feed",
-      "OWGR",
-      "Event history dataset"
+      "Recent Form Feed",
+      "Course History Feed"
     ],
-    "reasoning": "Reasoning: Rory combines top-end projected payout with strong form and strong course-fit this week, without excessive overlap risk in your group.",
-    "recentSummary": "Recent: Over the last month he has finished 2nd, 7th, 12th, and 4th, signaling strong momentum entering this event.",
-    "historicalSummary": "Historical: 2025: 2nd | 2024: 19th | 2023: T33. Overall, his event/course record is strong and gives confidence in his floor and ceiling.",
-    "score": 0.586,
+    "score": 0.6070000000000001,
+    "reasoning": "Reasoning: Recent form: last 4 finishes 11, 19, 7, 22. Historical strength index: 0.80. Course history score: 0.74. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+    "recentSummary": "Recent: Last four starts finished 11, 19, 7, 22 with steady momentum entering this event.",
+    "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
     "rationale": {
-      "expected": 0.183,
-      "uniqueness": 0.666,
-      "futureCost": 0.35,
-      "recentForm": 0.938,
-      "historicalStrength": 0.96,
-      "courseHistory": 0.84,
+      "expected": 0.12,
+      "uniqueness": 1,
+      "futureCost": 0.15,
+      "recentForm": 0.8525,
+      "historicalStrength": 0.8,
+      "courseHistory": 0.74,
       "preservePenalty": 0,
-      "explanation": "Recent form: last 4 finishes 2, 7, 12, 4. Historical strength index: 0.96. Course history score: 0.84."
+      "explanation": "Recent form: last 4 finishes 11, 19, 7, 22. Historical strength index: 0.80. Course history score: 0.74. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
     }
   },
   "alternates": [
+    {
+      "golfer": "Ludvig Aberg",
+      "projectedEarnings": 250000,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Patrick Cantlay",
+      "projectedEarnings": 250000,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Hideki Matsuyama",
+      "projectedEarnings": 250000,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
     {
       "golfer": "Viktor Hovland",
       "projectedEarnings": 510000,
       "projectedDupCount": 0,
       "futureValue": 400000,
+      "worldRank": 5,
+      "fedexPoints": 845,
+      "seasonEarnings": 3620000,
+      "inNextTournament": true,
       "historicalStrength": 0.88,
       "courseHistoryScore": 0.79,
-      "last4Finishes": [14, 8, 10, 17],
-      "courseHistoryResults": [
-        { "year": 2025, "finish": "T9" },
-        { "year": 2024, "finish": "T20" },
-        { "year": 2023, "finish": "MC" }
+      "last4Finishes": [
+        14,
+        8,
+        10,
+        17
       ],
       "sourceRefs": [
-        "RunYourPool projections",
-        "PGA Tour results feed",
-        "OWGR",
-        "Event history dataset"
+        "Recent Form Feed"
       ],
-      "reasoning": "Reasoning: Hovland projects as a high-value leverage option with lower duplication risk versus your rivals.",
-      "recentSummary": "Recent: Last month results of 14th, 8th, 10th, and 17th suggest steady top-20 form with reliable momentum.",
-      "historicalSummary": "Historical: 2025: T9 | 2024: T20 | 2023: MC. His course history is mixed but improving recently.",
-      "score": 0.567,
+      "score": 0.3739999999999999,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Preserves elite major/signature options by lightly penalizing top-tier stars this week. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 14, 8, 10, 17 with steady momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.146,
+        "expected": 0.1457142857142857,
         "uniqueness": 1,
         "futureCost": 0.2,
-        "recentForm": 0.878,
+        "recentForm": 0.8775,
         "historicalStrength": 0.88,
         "courseHistory": 0.79,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "preservePenalty": 0.25,
+        "explanation": "Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Preserves elite major/signature options by lightly penalizing top-tier stars this week. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
-    },
+    }
+  ],
+  "scored": [
     {
       "golfer": "Tommy Fleetwood",
       "projectedEarnings": 420000,
       "projectedDupCount": 0,
       "futureValue": 300000,
+      "worldRank": 8,
+      "fedexPoints": 640,
+      "seasonEarnings": 2800000,
+      "inNextTournament": true,
       "historicalStrength": 0.8,
       "courseHistoryScore": 0.74,
-      "last4Finishes": [11, 19, 7, 22],
-      "courseHistoryResults": [
-        { "year": 2025, "finish": "T16" },
-        { "year": 2024, "finish": "T35" },
-        { "year": 2023, "finish": "T5" }
+      "last4Finishes": [
+        11,
+        19,
+        7,
+        22
       ],
       "sourceRefs": [
-        "RunYourPool projections",
-        "PGA Tour results feed",
-        "OWGR",
-        "Event history dataset"
+        "Recent Form Feed",
+        "Course History Feed"
       ],
-      "reasoning": "Reasoning: Fleetwood gives balanced upside and leverage while preserving a few ultra-premium names for future majors/signature starts.",
-      "recentSummary": "Recent: Last month produced 11th, 19th, 7th, and 22nd, indicating stable mid-to-high finishes.",
-      "historicalSummary": "Historical: 2025: T16 | 2024: T35 | 2023: T5. He has shown he can contend at this venue.",
-      "score": 0.53,
+      "score": 0.6070000000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 11, 19, 7, 22. Historical strength index: 0.80. Course history score: 0.74. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 11, 19, 7, 22 with steady momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
         "expected": 0.12,
         "uniqueness": 1,
         "futureCost": 0.15,
-        "recentForm": 0.852,
+        "recentForm": 0.8525,
         "historicalStrength": 0.8,
         "courseHistory": 0.74,
         "preservePenalty": 0,
@@ -112,85 +272,161 @@
     },
     {
       "golfer": "Ludvig Aberg",
-      "projectedEarnings": 470000,
+      "projectedEarnings": 250000,
       "projectedDupCount": 1,
-      "futureValue": 500000,
-      "historicalStrength": 0.86,
-      "courseHistoryScore": 0.69,
-      "last4Finishes": [31, 6, 9, 28],
-      "courseHistoryResults": [
-        { "year": 2025, "finish": "T12" },
-        { "year": 2024, "finish": "T8" },
-        { "year": 2023, "finish": "N/A" }
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
       ],
-      "sourceRefs": [
-        "RunYourPool projections",
-        "PGA Tour results feed",
-        "OWGR",
-        "Event history dataset"
-      ],
-      "reasoning": "Reasoning: Aberg offers strong ceiling with manageable overlap and keeps a strong projected payout profile.",
-      "recentSummary": "Recent: Form has been volatile (31st, 6th, 9th, 28th) but includes clear high-end outcomes.",
-      "historicalSummary": "Historical: 2025: T12 | 2024: T8. Limited but positive course history so far.",
-      "score": 0.501,
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.134,
-        "uniqueness": 0.666,
-        "futureCost": 0.25,
-        "recentForm": 0.815,
-        "historicalStrength": 0.86,
-        "courseHistory": 0.69,
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 31, 6, 9, 28. Historical strength index: 0.86. Course history score: 0.69."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
       }
     },
     {
       "golfer": "Patrick Cantlay",
-      "projectedEarnings": 460000,
-      "projectedDupCount": 2,
-      "futureValue": 550000,
-      "historicalStrength": 0.9,
-      "courseHistoryScore": 0.77,
-      "last4Finishes": [23, 3, 25, 15],
-      "courseHistoryResults": [
-        { "year": 2025, "finish": "T6" },
-        { "year": 2024, "finish": "T20" },
-        { "year": 2023, "finish": "T19" }
+      "projectedEarnings": 250000,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Hideki Matsuyama",
+      "projectedEarnings": 250000,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "score": 0.46875,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.07142857142857142,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Viktor Hovland",
+      "projectedEarnings": 510000,
+      "projectedDupCount": 0,
+      "futureValue": 400000,
+      "worldRank": 5,
+      "fedexPoints": 845,
+      "seasonEarnings": 3620000,
+      "inNextTournament": true,
+      "historicalStrength": 0.88,
+      "courseHistoryScore": 0.79,
+      "last4Finishes": [
+        14,
+        8,
+        10,
+        17
       ],
       "sourceRefs": [
-        "RunYourPool projections",
-        "PGA Tour results feed",
-        "OWGR",
-        "Event history dataset"
+        "Recent Form Feed"
       ],
-      "reasoning": "Reasoning: Cantlay remains a quality projection play with strong event pedigree, though overlap risk is higher than some alternatives.",
-      "recentSummary": "Recent: Last month results of 23rd, 3rd, 25th, and 15th indicate mixed but still competitive form.",
-      "historicalSummary": "Historical: 2025: T6 | 2024: T20 | 2023: T19. A consistently solid performer at this event.",
-      "score": 0.46,
+      "score": 0.3739999999999999,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Preserves elite major/signature options by lightly penalizing top-tier stars this week. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 14, 8, 10, 17 with steady momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.131,
-        "uniqueness": 0.333,
-        "futureCost": 0.275,
-        "recentForm": 0.835,
-        "historicalStrength": 0.9,
-        "courseHistory": 0.77,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 23, 3, 25, 15. Historical strength index: 0.90. Course history score: 0.77."
+        "expected": 0.1457142857142857,
+        "uniqueness": 1,
+        "futureCost": 0.2,
+        "recentForm": 0.8775,
+        "historicalStrength": 0.88,
+        "courseHistory": 0.79,
+        "preservePenalty": 0.25,
+        "explanation": "Recent form: last 4 finishes 14, 8, 10, 17. Historical strength index: 0.88. Course history score: 0.79. Preserves elite major/signature options by lightly penalizing top-tier stars this week. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Rory McIlroy",
+      "projectedEarnings": 640000,
+      "projectedDupCount": 1,
+      "futureValue": 700000,
+      "worldRank": 2,
+      "fedexPoints": 1110,
+      "seasonEarnings": 5480000,
+      "inNextTournament": true,
+      "historicalStrength": 0.96,
+      "courseHistoryScore": 0.84,
+      "last4Finishes": [
+        2,
+        7,
+        12,
+        4
+      ],
+      "sourceRefs": [
+        "Recent Form Feed",
+        "Course History Feed"
+      ],
+      "score": 0.3370000000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 2, 7, 12, 4. Historical strength index: 0.96. Course history score: 0.84. Preserves elite major/signature options by lightly penalizing top-tier stars this week.",
+      "recentSummary": "Recent: Last four starts finished 2, 7, 12, 4 with strong momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0.18285714285714286,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.35,
+        "recentForm": 0.9375,
+        "historicalStrength": 0.96,
+        "courseHistory": 0.84,
+        "preservePenalty": 0.25,
+        "explanation": "Recent form: last 4 finishes 2, 7, 12, 4. Historical strength index: 0.96. Course history score: 0.84. Preserves elite major/signature options by lightly penalizing top-tier stars this week."
       }
     }
   ],
-  "scored": [],
-  "sourceNotes": [
-    "RunYourPool league standings and pick history",
-    "PGA Tour results and strokes-gained feed",
-    "Official World Golf Ranking (OWGR)",
-    "Historical event and course finishing database",
-    "Action Network tournament and one-and-done analysis",
-    "Rotowire PGA picks and form tracker",
-    "Oddschecker outright and placement market movement",
-    "DraftKings Sportsbook tournament odds board",
-    "FanDuel Sportsbook player market pricing",
-    "BetMGM tournament betting insights"
-  ],
-  "warnings": []
+  "warnings": [
+    "No projections returned. Recommendation engine will use fallback estimates."
+  ]
 }

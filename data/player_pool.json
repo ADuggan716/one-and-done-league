@@ -1,44 +1,102 @@
 {
-  "eventId": "players-2026",
-  "eventTier": "signature",
+  "eventId": "arnold-palmer-invitational",
+  "eventTier": "regular",
   "currentEventMeta": {
-    "totalPurse": 25000000,
-    "firstPrize": 4500000
-  },
-  "filters": {
-    "tiers": ["major", "signature", "regular"]
+    "totalPurse": 0,
+    "firstPrize": 0
   },
   "members": {
     "Andrew": {
-      "used": ["Scottie Scheffler", "Collin Morikawa", "Justin Thomas", "Shane Lowry"],
-      "available": ["Rory McIlroy", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay", "Tommy Fleetwood", "Hideki Matsuyama"]
+      "used": [
+        "Scottie Scheffler",
+        "Collin Morikawa",
+        "Justin Thomas",
+        "Shane Lowry"
+      ],
+      "available": [
+        "Rory McIlroy",
+        "Ludvig Aberg",
+        "Viktor Hovland",
+        "Patrick Cantlay",
+        "Tommy Fleetwood",
+        "Hideki Matsuyama"
+      ]
     },
     "Paul": {
-      "used": ["Rory McIlroy", "Tom Kim", "Sungjae Im"],
-      "available": ["Scottie Scheffler", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay", "Tommy Fleetwood", "Hideki Matsuyama"]
+      "used": [
+        "Rory McIlroy",
+        "Tom Kim",
+        "Sungjae Im"
+      ],
+      "available": [
+        "Scottie Scheffler",
+        "Ludvig Aberg",
+        "Viktor Hovland",
+        "Patrick Cantlay",
+        "Tommy Fleetwood",
+        "Hideki Matsuyama"
+      ]
     },
     "Dakota": {
-      "used": ["Xander Schauffele", "Hideki Matsuyama", "Wyndham Clark"],
-      "available": ["Scottie Scheffler", "Rory McIlroy", "Ludvig Aberg", "Viktor Hovland", "Patrick Cantlay", "Tommy Fleetwood"]
+      "used": [
+        "Xander Schauffele",
+        "Hideki Matsuyama",
+        "Wyndham Clark"
+      ],
+      "available": [
+        "Scottie Scheffler",
+        "Rory McIlroy",
+        "Ludvig Aberg",
+        "Viktor Hovland",
+        "Patrick Cantlay",
+        "Tommy Fleetwood"
+      ]
     },
     "Mike": {
-      "used": ["Ludvig Aberg", "Patrick Cantlay", "Jordan Spieth"],
-      "available": ["Scottie Scheffler", "Rory McIlroy", "Collin Morikawa", "Viktor Hovland", "Tommy Fleetwood", "Hideki Matsuyama"]
+      "used": [
+        "Ludvig Aberg",
+        "Patrick Cantlay",
+        "Jordan Spieth"
+      ],
+      "available": [
+        "Scottie Scheffler",
+        "Rory McIlroy",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Tommy Fleetwood",
+        "Hideki Matsuyama"
+      ]
     }
   },
   "golfers": [
-    { "name": "Scottie Scheffler", "worldRank": 1, "fedexPoints": 1222, "seasonEarnings": 6120000, "inNextTournament": true },
-    { "name": "Rory McIlroy", "worldRank": 2, "fedexPoints": 1110, "seasonEarnings": 5480000, "inNextTournament": true },
-    { "name": "Xander Schauffele", "worldRank": 3, "fedexPoints": 975, "seasonEarnings": 4290000, "inNextTournament": true },
-    { "name": "Ludvig Aberg", "worldRank": 4, "fedexPoints": 870, "seasonEarnings": 3880000, "inNextTournament": true },
-    { "name": "Viktor Hovland", "worldRank": 5, "fedexPoints": 845, "seasonEarnings": 3620000, "inNextTournament": true },
-    { "name": "Patrick Cantlay", "worldRank": 6, "fedexPoints": 700, "seasonEarnings": 3150000, "inNextTournament": true },
-    { "name": "Collin Morikawa", "worldRank": 7, "fedexPoints": 681, "seasonEarnings": 3010000, "inNextTournament": true },
-    { "name": "Tommy Fleetwood", "worldRank": 8, "fedexPoints": 640, "seasonEarnings": 2800000, "inNextTournament": true },
-    { "name": "Hideki Matsuyama", "worldRank": 9, "fedexPoints": 610, "seasonEarnings": 2660000, "inNextTournament": true },
-    { "name": "Wyndham Clark", "worldRank": 10, "fedexPoints": 590, "seasonEarnings": 2510000, "inNextTournament": true },
-    { "name": "Jordan Spieth", "worldRank": 11, "fedexPoints": 510, "seasonEarnings": 2020000, "inNextTournament": false },
-    { "name": "Sungjae Im", "worldRank": 12, "fedexPoints": 480, "seasonEarnings": 1900000, "inNextTournament": false }
+    {
+      "name": "Rory McIlroy",
+      "worldRank": 2,
+      "fedexPoints": 1110,
+      "seasonEarnings": 5480000,
+      "inNextTournament": true
+    },
+    {
+      "name": "Viktor Hovland",
+      "worldRank": 5,
+      "fedexPoints": 845,
+      "seasonEarnings": 3620000,
+      "inNextTournament": true
+    },
+    {
+      "name": "Tommy Fleetwood",
+      "worldRank": 8,
+      "fedexPoints": 640,
+      "seasonEarnings": 2800000,
+      "inNextTournament": true
+    }
   ],
-  "updatedAt": "2026-03-08T12:00:00.000Z"
+  "filters": {
+    "tiers": [
+      "major",
+      "signature",
+      "regular"
+    ]
+  },
+  "updatedAt": "2026-03-09T01:38:55.955Z"
 }
