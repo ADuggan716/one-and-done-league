@@ -286,7 +286,9 @@ export async function fetchSplashSportsData({
     return {
       member,
       golfer: p.pick || null,
-      earnings: Number.isFinite(s.earnings) ? s.earnings : 0,
+      // Splash standings page provides cumulative season winnings, not per-event earnings.
+      earnings: 0,
+      seasonEarnings: Number.isFinite(s.earnings) ? s.earnings : 0,
       finish: s.finish ?? null,
       leagueRank: s.leagueRank ?? null,
     };
@@ -353,6 +355,7 @@ export function normalizeSnapshot(raw, subgroupMembers) {
         member: pick.member,
         pick: pick.golfer,
         earnings: Number(pick.earnings || 0),
+        seasonEarnings: Number(pick.seasonEarnings || 0),
         finish: pick.finish ?? null,
         leagueRank: pick.leagueRank ?? null,
       }));

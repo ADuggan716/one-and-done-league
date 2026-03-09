@@ -37,14 +37,52 @@ async function writeJson(relPath, payload) {
 }
 
 function buildLeagueSnapshot(normalized, config) {
-  const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
-  const latestRanks = new Map(
-    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
-  );
-  const standingsWithLeagueRank = standings.map((row) => ({
-    ...row,
-    leagueRank: latestRanks.get(row.member) ?? null,
-  }));
+  const isSplash = (config.provider || "splash") === "splash";
+  let standingsWithLeagueRank;
+
+  if (isSplash) {
+    const latestResults = normalized.events.at(-1)?.subgroupResults || [];
+    const rankByMember = new Map(latestResults.map((r) => [r.member, r.leagueRank ?? null]));
+    const seasonByMember = new Map(latestResults.map((r) => [r.member, Number(r.seasonEarnings || 0)]));
+
+    const rows = config.subgroupMembers.map((member) => ({
+      member,
+      seasonEarnings: seasonByMember.get(member) ?? 0,
+      weeklyEarnings: 0,
+      avgEarnings: 0,
+      lastFour: [],
+      history: [],
+      leagueRank: rankByMember.get(member) ?? null,
+    }));
+
+    rows.sort((a, b) => b.seasonEarnings - a.seasonEarnings || a.member.localeCompare(b.member));
+
+    let currentRank = 1;
+    let previousEarnings = null;
+    for (let i = 0; i < rows.length; i += 1) {
+      if (previousEarnings !== null && rows[i].seasonEarnings < previousEarnings) {
+        currentRank = i + 1;
+      }
+      rows[i].groupRank = currentRank;
+      previousEarnings = rows[i].seasonEarnings;
+    }
+
+    const leader = rows[0]?.seasonEarnings ?? 0;
+    standingsWithLeagueRank = rows.map((row) => ({
+      ...row,
+      toLeader: leader - row.seasonEarnings,
+    }));
+  } else {
+    const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
+    const latestRanks = new Map(
+      (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
+    );
+    standingsWithLeagueRank = standings.map((row) => ({
+      ...row,
+      leagueRank: latestRanks.get(row.member) ?? null,
+    }));
+  }
+
   const weeklyComparison = buildWeeklyComparison(config.subgroupMembers, normalized.events);
   const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
 
