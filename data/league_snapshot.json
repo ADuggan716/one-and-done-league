@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "arnold-palmer-invitational",
-    "name": "Arnold Palmer Invitational",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -11,66 +11,66 @@
       {
         "member": "Andrew",
         "pick": null,
-        "earnings": 3408328,
-        "finish": "78",
-        "leagueRank": 78
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Paul",
         "pick": null,
-        "earnings": 3314680,
-        "finish": "72",
-        "leagueRank": 72
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Dakota",
         "pick": null,
-        "earnings": 3824044,
-        "finish": "11",
-        "leagueRank": 11
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Mike",
         "pick": null,
-        "earnings": 4333250,
-        "finish": "33",
-        "leagueRank": 153
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       }
     ],
     "picks": [
       {
         "member": "Andrew",
         "golfer": null,
-        "earnings": 3408328,
-        "finish": "78",
-        "leagueRank": 78
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Paul",
         "golfer": null,
-        "earnings": 3314680,
-        "finish": "72",
-        "leagueRank": 72
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Dakota",
         "golfer": null,
-        "earnings": 3824044,
-        "finish": "11",
-        "leagueRank": 11
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Mike",
         "golfer": null,
-        "earnings": 4333250,
-        "finish": "33",
-        "leagueRank": 153
+        "earnings": 0,
+        "finish": null,
+        "leagueRank": null
       }
     ]
   },
   "nextTournament": {
-    "id": "arnold-palmer-invitational",
-    "name": "Arnold Palmer Invitational",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "totalPurse": 0,
@@ -79,128 +79,128 @@
   },
   "league": {
     "id": "/Golf/PickX/multiple_entries.cfm",
-    "name": "allowed No unread notifications Mark all as read View All Notifications",
+    "name": "Splash Sports League",
     "totalEntrants": 150,
-    "yourRank": 78,
-    "latestEventId": "arnold-palmer-invitational",
-    "yourPercentile": 48.322147651006716
+    "yourRank": 0,
+    "latestEventId": "current-tournament",
+    "yourPercentile": 0
   },
   "subgroupStandings": [
     {
-      "member": "Mike",
-      "seasonEarnings": 4333250,
-      "weeklyEarnings": 4333250,
-      "avgEarnings": 4333250,
+      "member": "Andrew",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 4333250,
-          "finish": "33",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 4333250,
-          "finish": "33",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
       "groupRank": 1,
       "toLeader": 0,
-      "leagueRank": 153
+      "leagueRank": null
     },
     {
       "member": "Dakota",
-      "seasonEarnings": 3824044,
-      "weeklyEarnings": 3824044,
-      "avgEarnings": 3824044,
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3824044,
-          "finish": "11",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3824044,
-          "finish": "11",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
-      "groupRank": 2,
-      "toLeader": 509206,
-      "leagueRank": 11
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
     },
     {
-      "member": "Andrew",
-      "seasonEarnings": 3408328,
-      "weeklyEarnings": 3408328,
-      "avgEarnings": 3408328,
+      "member": "Mike",
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3408328,
-          "finish": "78",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3408328,
-          "finish": "78",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
-      "groupRank": 3,
-      "toLeader": 924922,
-      "leagueRank": 78
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
     },
     {
       "member": "Paul",
-      "seasonEarnings": 3314680,
-      "weeklyEarnings": 3314680,
-      "avgEarnings": 3314680,
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3314680,
-          "finish": "72",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
-          "earnings": 3314680,
-          "finish": "72",
+          "earnings": 0,
+          "finish": null,
           "pick": null
         }
       ],
-      "groupRank": 4,
-      "toLeader": 1018570,
-      "leagueRank": 72
+      "groupRank": 1,
+      "toLeader": 0,
+      "leagueRank": null
     }
   ],
   "teams": [
@@ -210,9 +210,9 @@
         "Mike",
         "Paul"
       ],
-      "seasonEarnings": 7647930,
-      "weeklyEarnings": 7647930,
-      "avgMemberEarnings": 3823965,
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgMemberEarnings": 0,
       "rank": 1,
       "toLeader": 0
     },
@@ -222,75 +222,73 @@
         "Andrew",
         "Dakota"
       ],
-      "seasonEarnings": 7232372,
-      "weeklyEarnings": 7232372,
-      "avgMemberEarnings": 3616186,
+      "seasonEarnings": 0,
+      "weeklyEarnings": 0,
+      "avgMemberEarnings": 0,
       "rank": 2,
-      "toLeader": 415558
+      "toLeader": 0
     }
   ],
   "weeklyComparison": [
     {
-      "eventId": "arnold-palmer-invitational",
-      "eventName": "Arnold Palmer Invitational",
+      "eventId": "current-tournament",
+      "eventName": "Current Tournament",
       "tier": "regular",
       "totalPurse": 0,
       "firstPrize": 0,
       "rows": [
         {
-          "member": "Mike",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "member": "Andrew",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 4333250,
-          "finish": "33",
+          "earnings": 0,
+          "finish": null,
           "pick": null,
-          "leagueRank": 153
+          "leagueRank": null
         },
         {
           "member": "Dakota",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 3824044,
-          "finish": "11",
+          "earnings": 0,
+          "finish": null,
           "pick": null,
-          "leagueRank": 11
+          "leagueRank": null
         },
         {
-          "member": "Andrew",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "member": "Mike",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 3408328,
-          "finish": "78",
+          "earnings": 0,
+          "finish": null,
           "pick": null,
-          "leagueRank": 78
+          "leagueRank": null
         },
         {
           "member": "Paul",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 3314680,
-          "finish": "72",
+          "earnings": 0,
+          "finish": null,
           "pick": null,
-          "leagueRank": 72
+          "leagueRank": null
         }
       ]
     }
   ],
-  "whoGainedThisWeek": [
-    "Mike"
-  ],
+  "whoGainedThisWeek": [],
   "projections": [
     {
       "golfer": "Rory McIlroy",
@@ -362,12 +360,12 @@
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 0",
-    "Splash parsed standings rows: 4",
+    "Splash parsed standings rows: 0",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-09T01:52:38.313Z"
+  "updatedAt": "2026-03-09T01:54:11.161Z"
 }
