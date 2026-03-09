@@ -2,7 +2,14 @@
 import fs from "node:fs/promises";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
-import { fetchRunYourPoolData, loadCookie, normalizeSnapshot, readConfig, SyncError } from "../src/lib/sync.mjs";
+import {
+  fetchRunYourPoolData,
+  fetchSplashSportsData,
+  loadCookie,
+  normalizeSnapshot,
+  readConfig,
+  SyncError,
+} from "../src/lib/sync.mjs";
 import {
   applyWeeklyPicks,
   buildWeeklyComparison,
@@ -100,11 +107,22 @@ async function run() {
 
   let upstream;
   try {
-    upstream = await fetchRunYourPoolData({
-      baseUrl: config.runYourPool.baseUrl,
-      cookie,
-      leagueId: config.runYourPool.leagueId,
-    });
+    if ((config.provider || "splash") === "splash") {
+      upstream = await fetchSplashSportsData({
+        baseUrl: config.splash.baseUrl,
+        cookie,
+        leaguePath: config.splash.leaguePath,
+        standingsPath: config.splash.standingsPath,
+        subgroupMembers: config.subgroupMembers,
+        memberAliases: config.memberAliases || {},
+      });
+    } else {
+      upstream = await fetchRunYourPoolData({
+        baseUrl: config.runYourPool.baseUrl,
+        cookie,
+        leagueId: config.runYourPool.leagueId,
+      });
+    }
   } catch (error) {
     if (error instanceof SyncError) {
       throw error;
@@ -121,7 +139,7 @@ async function run() {
     mergedProjections = mergeSignals(normalized.projections, onlineSignals.signals);
     sourceNotes = [...sourceNotes, ...(onlineSignals.sourceNotes || [])];
   } catch {
-    sourceNotes.push("Online signal file missing or unreadable; using RunYourPool-only inputs.");
+    sourceNotes.push("Online signal file missing or unreadable; using league-source-only inputs.");
   }
 
   normalized.projections = mergedProjections;

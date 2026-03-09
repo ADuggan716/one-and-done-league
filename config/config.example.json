@@ -1,14 +1,19 @@
 {
+  "provider": "splash",
   "me": "Andrew",
   "subgroupMembers": ["Andrew", "Paul", "Dakota", "Mike"],
   "teams": [
     { "name": "Young Guns", "members": ["Andrew", "Dakota"] },
     { "name": "Experienced Gentlemen", "members": ["Mike", "Paul"] }
   ],
+  "memberAliases": {
+    "ADUGGAN716": "Andrew"
+  },
   "cookiePath": "config/runyourpool.cookie",
-  "runYourPool": {
-    "baseUrl": "https://www.runyourpool.com",
-    "leagueId": "YOUR_LEAGUE_ID"
+  "splash": {
+    "baseUrl": "https://sm.app.splashsports.com",
+    "leaguePath": "/Golf/PickX/multiple_entries.cfm",
+    "standingsPath": "/Golf/PickX/standings.cfm"
   },
   "onlineSources": [
     {

@@ -3,7 +3,7 @@
 Local-first One and Done toolkit for:
 - Public dashboard (`/public/index.html`) with standings and golfer availability
 - Weekly pick support (`/private/recommendations.html`)
-- Automated data refresh from RunYourPool + online sources
+- Automated data refresh from Splash Sports + online sources
 
 ## Free Hosting (Recommended)
 
@@ -31,7 +31,7 @@ You can host this for **$0** using GitHub + Netlify free tiers.
 
 ### Step 3: Add GitHub repo secrets (for real data)
 In GitHub repo -> **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**, add:
-- `RYP_LEAGUE_ID`
+- `RYP_LEAGUE_ID` (set this to your Splash league path, e.g. `/Golf/PickX/multiple_entries.cfm`)
 - `RYP_COOKIE`
 - `FORM_SOURCE_URL`
 - `FORM_SOURCE_API_KEY`

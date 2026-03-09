@@ -1,0 +1,114 @@
+name: Sync League Data
+
+on:
+  workflow_dispatch:
+  schedule:
+    - cron: "5 * * * *"
+
+permissions:
+  contents: write
+
+jobs:
+  sync:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Setup Node
+        uses: actions/setup-node@v4
+        with:
+          node-version: "20"
+
+      - name: Decide if run window (America/New_York)
+        id: window
+        run: |
+          python3 - <<'PY'
+          import os
+          from datetime import datetime
+          from zoneinfo import ZoneInfo
+          now = datetime.now(ZoneInfo("America/New_York"))
+          # Thursday 09:00 and Sunday 20:00 in New York local time.
+          should = (now.weekday() == 3 and now.hour == 9) or (now.weekday() == 6 and now.hour == 20)
+          with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
+            f.write(f"run={'true' if should else 'false'}\n")
+          print("Now (NY):", now.isoformat(), "run=", should)
+          PY
+
+      - name: Stop if outside sync windows
+        if: steps.window.outputs.run != 'true'
+        run: echo "Outside Thursday 9:00 AM / Sunday 8:00 PM ET sync windows."
+
+      - name: Create runtime config and cookie
+        if: steps.window.outputs.run == 'true'
+        env:
+          RYP_LEAGUE_ID: ${{ secrets.RYP_LEAGUE_ID }}
+          RYP_COOKIE: ${{ secrets.RYP_COOKIE }}
+          FORM_SOURCE_URL: ${{ secrets.FORM_SOURCE_URL }}
+          FORM_SOURCE_API_KEY: ${{ secrets.FORM_SOURCE_API_KEY }}
+          COURSE_SOURCE_URL: ${{ secrets.COURSE_SOURCE_URL }}
+          COURSE_SOURCE_API_KEY: ${{ secrets.COURSE_SOURCE_API_KEY }}
+        run: |
+          mkdir -p config
+          cat > config/config.json <<JSON
+          {
+            "provider": "splash",
+            "me": "Andrew",
+            "subgroupMembers": ["Andrew", "Paul", "Dakota", "Mike"],
+            "teams": [
+              { "name": "Young Guns", "members": ["Andrew", "Dakota"] },
+              { "name": "Experienced Gentlemen", "members": ["Mike", "Paul"] }
+            ],
+            "memberAliases": {
+              "ADUGGAN716": "Andrew"
+            },
+            "cookiePath": "config/runyourpool.cookie",
+            "splash": {
+              "baseUrl": "https://sm.app.splashsports.com",
+              "leaguePath": "${RYP_LEAGUE_ID}",
+              "standingsPath": "/Golf/PickX/standings.cfm"
+            },
+            "onlineSources": [
+              {
+                "name": "Recent Form Feed",
+                "url": "${FORM_SOURCE_URL}",
+                "authEnv": "FORM_SOURCE_API_KEY"
+              },
+              {
+                "name": "Course History Feed",
+                "url": "${COURSE_SOURCE_URL}",
+                "authEnv": "COURSE_SOURCE_API_KEY"
+              }
+            ],
+            "recommendationWeights": {
+              "expected": 0.35,
+              "uniqueness": 0.15,
+              "opportunityCost": 0.15,
+              "recentForm": 0.2,
+              "historicalStrength": 0.1,
+              "courseHistory": 0.05
+            }
+          }
+          JSON
+
+          printf "%s" "${RYP_COOKIE}" > config/runyourpool.cookie
+
+      - name: Sync data
+        if: steps.window.outputs.run == 'true'
+        env:
+          FORM_SOURCE_API_KEY: ${{ secrets.FORM_SOURCE_API_KEY }}
+          COURSE_SOURCE_API_KEY: ${{ secrets.COURSE_SOURCE_API_KEY }}
+        run: |
+          node scripts/fetch_online_signals.mjs || true
+          node scripts/sync_runyourpool.mjs
+
+      - name: Commit updated data
+        if: steps.window.outputs.run == 'true'
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add data/*.json
+          git diff --cached --quiet && echo "No data changes" && exit 0
+          git commit -m "chore: refresh league data"
+          git push
