@@ -66,6 +66,12 @@ function resolveMemberFromEntry(entryName, subgroupMembers, memberAliases = {}) 
   const aliasEntries = Object.entries(memberAliases || {});
   const hasAliases = aliasEntries.length > 0;
   const byAlias = new Map();
+  const normalizedAliases = aliasEntries.map(([alias, member]) => ({
+    alias,
+    member: String(member),
+    aliasKey: normalizeKey(alias),
+    aliasCompact: normalizeCompact(alias),
+  }));
 
   for (const [alias, member] of aliasEntries) {
     byAlias.set(normalizeKey(alias), String(member));
@@ -80,6 +86,16 @@ function resolveMemberFromEntry(entryName, subgroupMembers, memberAliases = {}) 
 
   const direct = byAlias.get(normalizeKey(entryName)) || byAlias.get(normalizeCompact(entryName));
   if (direct) return direct;
+
+  // Splash sometimes appends labels to entry names; allow alias containment for configured aliases.
+  const entryKey = normalizeKey(entryName);
+  const entryCompact = normalizeCompact(entryName);
+  for (const item of normalizedAliases) {
+    if (!item.aliasCompact) continue;
+    if (entryKey.includes(item.aliasKey) || entryCompact.includes(item.aliasCompact)) {
+      return item.member;
+    }
+  }
 
   // Only allow fuzzy fallback when aliases are not configured.
   if (!hasAliases) {
@@ -311,6 +327,10 @@ export async function fetchSplashSportsData({
       leagueRank: s.leagueRank ?? null,
     };
   });
+  const mappingDebug = mergedPicks.map(
+    (row) =>
+      `${row.member}: rank=${row.leagueRank ?? "-"}, season=${Number(row.seasonEarnings || 0)}, pick=${row.golfer || "-"}`
+  );
 
   return {
     league: {
@@ -347,6 +367,7 @@ export async function fetchSplashSportsData({
       `Splash standings source: ${standingsUrl}`,
       `Splash parsed picks: ${picks.length}`,
       `Splash parsed standings rows: ${standings.length}`,
+      `Splash mapping: ${mappingDebug.join(" | ")}`,
     ],
   };
 }
