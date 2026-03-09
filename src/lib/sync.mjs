@@ -9,7 +9,16 @@ export class SyncError extends Error {
 
 export async function readConfig(path) {
   const raw = await fs.readFile(path, "utf8");
-  return JSON.parse(raw);
+  try {
+    return JSON.parse(raw);
+  } catch {
+    const start = raw.indexOf("{");
+    const end = raw.lastIndexOf("}");
+    if (start !== -1 && end !== -1 && end > start) {
+      return JSON.parse(raw.slice(start, end + 1));
+    }
+    throw new SyncError("Config JSON is malformed.", "BAD_CONFIG_JSON");
+  }
 }
 
 function safeText(html) {
