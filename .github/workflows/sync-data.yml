@@ -62,14 +62,17 @@ jobs:
           COURSE_SOURCE_API_KEY: ${{ secrets.COURSE_SOURCE_API_KEY }}
         run: |
           mkdir -p config
-          cat > config/config.json <<JSON
-          {
+          python3 - <<'PY'
+          import json
+          import os
+
+          cfg = {
             "provider": "splash",
             "me": "Andrew",
             "subgroupMembers": ["Andrew", "Paul", "Dakota", "Mike"],
             "teams": [
-              { "name": "Young Guns", "members": ["Andrew", "Dakota"] },
-              { "name": "Experienced Gentlemen", "members": ["Mike", "Paul"] }
+              {"name": "Young Guns", "members": ["Andrew", "Dakota"]},
+              {"name": "Experienced Gentlemen", "members": ["Mike", "Paul"]},
             ],
             "memberAliases": {
               "ADUGGAN716": "Andrew"
@@ -77,18 +80,18 @@ jobs:
             "cookiePath": "config/runyourpool.cookie",
             "splash": {
               "baseUrl": "https://sm.app.splashsports.com",
-              "leaguePath": "${RYP_LEAGUE_ID}",
+              "leaguePath": os.environ.get("RYP_LEAGUE_ID", "").strip(),
               "standingsPath": "/Golf/PickX/standings.cfm"
             },
             "onlineSources": [
               {
                 "name": "Recent Form Feed",
-                "url": "${FORM_SOURCE_URL}",
+                "url": os.environ.get("FORM_SOURCE_URL", "").strip(),
                 "authEnv": "FORM_SOURCE_API_KEY"
               },
               {
                 "name": "Course History Feed",
-                "url": "${COURSE_SOURCE_URL}",
+                "url": os.environ.get("COURSE_SOURCE_URL", "").strip(),
                 "authEnv": "COURSE_SOURCE_API_KEY"
               }
             ],
@@ -101,7 +104,11 @@ jobs:
               "courseHistory": 0.05
             }
           }
-          JSON
+
+          with open("config/config.json", "w", encoding="utf-8") as f:
+            json.dump(cfg, f, indent=2)
+            f.write("\\n")
+          PY
 
           printf "%s" "${RYP_COOKIE}" > config/runyourpool.cookie
 
