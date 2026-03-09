@@ -97,6 +97,16 @@ function extractCells(trHtml) {
   return cells.filter(Boolean);
 }
 
+function extractTables(html) {
+  const out = [];
+  const tableRegex = /<table[\s\S]*?<\/table>/gi;
+  let m;
+  while ((m = tableRegex.exec(html)) !== null) {
+    out.push(m[0]);
+  }
+  return out;
+}
+
 function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
   const aliasMap = new Map(
     Object.entries(memberAliases).map(([k, v]) => [normalizeKey(k), String(v)])
@@ -139,49 +149,65 @@ function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
   const aliasMap = new Map(
     Object.entries(memberAliases).map(([k, v]) => [normalizeKey(k), String(v)])
   );
-  const rows = extractRows(html);
+  const tables = extractTables(html);
+  const targetTable =
+    tables.find((t) => {
+      const txt = safeText(t).toLowerCase();
+      return txt.includes("entry name") && txt.includes("winnings") && txt.includes("fedex points");
+    }) || html;
+  const rows = extractRows(targetTable);
   const out = [];
+
+  let colRank = 0;
+  let colEntry = 1;
+  let colWinnings = 2;
+  let colFedex = -1;
+  let seenHeader = false;
 
   for (const row of rows) {
     const cells = extractCells(row.raw);
-    const text = cells.join(" ");
-    const rankMatch = text.match(/\b(?:rank\s*)?(\d{1,3})\b/i);
-    const finishMatch = text.match(/\b(?:T)?(\d{1,2}|MC|MDF)\b/i);
+    if (cells.length < 3) continue;
+
+    if (!seenHeader) {
+      const lower = cells.map((c) => normalizeKey(c));
+      if (lower.includes("entry name") && lower.includes("winnings")) {
+        colRank = lower.indexOf("rank");
+        colEntry = lower.indexOf("entry name");
+        colWinnings = lower.indexOf("winnings");
+        colFedex = lower.indexOf("fedex points");
+        seenHeader = true;
+      }
+      continue;
+    }
+
+    const entryName = cells[colEntry] || "";
+    if (!entryName) continue;
 
     let member = null;
     for (const [alias, name] of aliasMap.entries()) {
-      if (normalizeKey(text).includes(alias)) {
+      if (normalizeKey(entryName) === alias) {
         member = name;
         break;
       }
     }
 
     if (!member) {
-      member = subgroupMembers.find((m) => normalizeKey(text).includes(normalizeKey(m))) || null;
+      member = subgroupMembers.find((m) => normalizeKey(entryName).includes(normalizeKey(m))) || null;
     }
 
     if (!member) continue;
 
-    const moneyCandidates = cells
-      .map((c) => matchMoneyLoose(c))
-      .filter((n) => Number.isFinite(n) && n > 0);
-    const currency = moneyCandidates.length ? Math.max(...moneyCandidates) : matchCurrency(text);
-
-    const cellRank =
-      cells
-        .map((c) => c.trim())
-        .find((c) => /^\d{1,3}$/.test(c)) || null;
-
-    const cellFinish =
-      cells
-        .map((c) => c.trim().toUpperCase())
-        .find((c) => /^(T?\d{1,2}|MC|MDF)$/.test(c)) || null;
+    const currency = matchMoneyLoose(cells[colWinnings]);
+    const cellRank = (cells[colRank] || "").trim();
+    const fedexRaw = colFedex >= 0 ? (cells[colFedex] || "").replace(/,/g, "") : "";
+    const fedexPoints = Number(fedexRaw);
 
     out.push({
       member,
       earnings: currency,
-      leagueRank: cellRank ? Number(cellRank) : rankMatch ? Number(rankMatch[1]) : null,
-      finish: cellFinish || (finishMatch ? finishMatch[1] : null),
+      leagueRank: /^\d{1,3}$/.test(cellRank) ? Number(cellRank) : null,
+      finish: null,
+      fedexPoints: Number.isFinite(fedexPoints) ? fedexPoints : null,
     });
   }
 
