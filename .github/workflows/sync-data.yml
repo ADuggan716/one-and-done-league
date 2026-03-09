@@ -118,7 +118,7 @@ jobs:
           FORM_SOURCE_API_KEY: ${{ secrets.FORM_SOURCE_API_KEY }}
           COURSE_SOURCE_API_KEY: ${{ secrets.COURSE_SOURCE_API_KEY }}
         run: |
-          node scripts/fetch_online_signals.mjs || true
+          cp data/online_signals.json /tmp/online_signals_backup.json || true
           node scripts/sync_runyourpool.mjs
 
       - name: Commit updated data
