@@ -2,6 +2,11 @@ name: Sync League Data
 
 on:
   workflow_dispatch:
+    inputs:
+      force_run:
+        description: "Run sync now (ignore time window)"
+        required: false
+        default: "true"
   schedule:
     - cron: "5 * * * *"
 
@@ -29,12 +34,18 @@ jobs:
           from datetime import datetime
           from zoneinfo import ZoneInfo
           now = datetime.now(ZoneInfo("America/New_York"))
+          event_name = os.environ.get("GITHUB_EVENT_NAME", "")
+          force = os.environ.get("FORCE_RUN", "false").lower() == "true"
           # Thursday 09:00 and Sunday 20:00 in New York local time.
-          should = (now.weekday() == 3 and now.hour == 9) or (now.weekday() == 6 and now.hour == 20)
+          should_window = (now.weekday() == 3 and now.hour == 9) or (now.weekday() == 6 and now.hour == 20)
+          should = force or event_name == "workflow_dispatch" or should_window
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
             f.write(f"run={'true' if should else 'false'}\n")
-          print("Now (NY):", now.isoformat(), "run=", should)
+          print("Now (NY):", now.isoformat(), "event=", event_name, "force=", force, "run=", should)
           PY
+        env:
+          GITHUB_EVENT_NAME: ${{ github.event_name }}
+          FORCE_RUN: ${{ github.event.inputs.force_run || 'false' }}
 
       - name: Stop if outside sync windows
         if: steps.window.outputs.run != 'true'
