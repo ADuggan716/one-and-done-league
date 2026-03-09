@@ -44,6 +44,16 @@ function matchCurrency(text) {
   return m ? toMoney(m[1]) : 0;
 }
 
+function matchMoneyLoose(text) {
+  const t = String(text || "").trim();
+  if (!t) return 0;
+  // Supports values like "$1,250,000" or "1,250,000"
+  const withDollar = matchCurrency(t);
+  if (withDollar > 0) return withDollar;
+  if (/^-?\d{1,3}(?:,\d{3})+(?:\.\d+)?$/.test(t)) return toMoney(t);
+  return 0;
+}
+
 function normalizeKey(value) {
   return String(value || "").trim().toLowerCase();
 }
@@ -135,7 +145,6 @@ function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
   for (const row of rows) {
     const cells = extractCells(row.raw);
     const text = cells.join(" ");
-    const currency = matchCurrency(text);
     const rankMatch = text.match(/\b(?:rank\s*)?(\d{1,3})\b/i);
     const finishMatch = text.match(/\b(?:T)?(\d{1,2}|MC|MDF)\b/i);
 
@@ -153,11 +162,26 @@ function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
 
     if (!member) continue;
 
+    const moneyCandidates = cells
+      .map((c) => matchMoneyLoose(c))
+      .filter((n) => Number.isFinite(n) && n > 0);
+    const currency = moneyCandidates.length ? Math.max(...moneyCandidates) : matchCurrency(text);
+
+    const cellRank =
+      cells
+        .map((c) => c.trim())
+        .find((c) => /^\d{1,3}$/.test(c)) || null;
+
+    const cellFinish =
+      cells
+        .map((c) => c.trim().toUpperCase())
+        .find((c) => /^(T?\d{1,2}|MC|MDF)$/.test(c)) || null;
+
     out.push({
       member,
       earnings: currency,
-      leagueRank: rankMatch ? Number(rankMatch[1]) : null,
-      finish: finishMatch ? finishMatch[1] : null,
+      leagueRank: cellRank ? Number(cellRank) : rankMatch ? Number(rankMatch[1]) : null,
+      finish: cellFinish || (finishMatch ? finishMatch[1] : null),
     });
   }
 
@@ -275,6 +299,8 @@ export async function fetchSplashSportsData({
     sourceNotes: [
       `Splash entries source: ${entriesUrl}`,
       `Splash standings source: ${standingsUrl}`,
+      `Splash parsed picks: ${picks.length}`,
+      `Splash parsed standings rows: ${standings.length}`,
     ],
   };
 }
