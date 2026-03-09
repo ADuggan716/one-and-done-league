@@ -102,7 +102,17 @@ function buildPlayerPool(normalized, config, currentPool) {
 
 async function run() {
   const config = await readConfig(path.join(root, "config/config.json"));
-  const currentPool = await readJson("data/player_pool.json");
+  let currentPool;
+  try {
+    currentPool = await readJson("data/player_pool.json");
+  } catch {
+    currentPool = {
+      members: Object.fromEntries(
+        (config.subgroupMembers || []).map((name) => [name, { used: [], available: [] }])
+      ),
+      golfers: [],
+    };
+  }
   const cookie = await loadCookie(path.join(root, config.cookiePath));
 
   let upstream;

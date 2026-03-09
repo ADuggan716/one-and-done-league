@@ -118,7 +118,40 @@ jobs:
           FORM_SOURCE_API_KEY: ${{ secrets.FORM_SOURCE_API_KEY }}
           COURSE_SOURCE_API_KEY: ${{ secrets.COURSE_SOURCE_API_KEY }}
         run: |
-          cp data/online_signals.json /tmp/online_signals_backup.json || true
+          python3 - <<'PY'
+          import json
+          from pathlib import Path
+
+          root = Path(".")
+          data_dir = root / "data"
+          data_dir.mkdir(exist_ok=True)
+
+          def load_or_write(path, fallback):
+            if not path.exists():
+              path.write_text(json.dumps(fallback, indent=2) + "\\n", encoding="utf-8")
+              return
+            try:
+              json.loads(path.read_text(encoding="utf-8"))
+            except Exception:
+              path.write_text(json.dumps(fallback, indent=2) + "\\n", encoding="utf-8")
+
+          load_or_write(
+            data_dir / "online_signals.json",
+            {"fetchedAt": None, "sourceNotes": [], "signals": []}
+          )
+          load_or_write(
+            data_dir / "player_pool.json",
+            {
+              "members": {
+                "Andrew": {"used": [], "available": []},
+                "Paul": {"used": [], "available": []},
+                "Dakota": {"used": [], "available": []},
+                "Mike": {"used": [], "available": []}
+              },
+              "golfers": []
+            }
+          )
+          PY
           node scripts/sync_runyourpool.mjs
 
       - name: Commit updated data
