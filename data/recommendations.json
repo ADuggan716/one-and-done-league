@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "players-championship",
-    "name": "Players Championship",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -12,33 +12,33 @@
         "member": "Andrew",
         "pick": null,
         "earnings": 0,
-        "seasonEarnings": 1568527,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 78
+        "leagueRank": null
       },
       {
         "member": "Paul",
         "pick": null,
         "earnings": 0,
-        "seasonEarnings": 1662175,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 72
+        "leagueRank": null
       },
       {
         "member": "Dakota",
         "pick": null,
         "earnings": 0,
-        "seasonEarnings": 3824044,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 11
+        "leagueRank": null
       },
       {
         "member": "Mike",
         "pick": null,
         "earnings": 0,
-        "seasonEarnings": 643605,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 153
+        "leagueRank": null
       }
     ],
     "picks": [
@@ -46,33 +46,33 @@
         "member": "Andrew",
         "golfer": null,
         "earnings": 0,
-        "seasonEarnings": 1568527,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 78
+        "leagueRank": null
       },
       {
         "member": "Paul",
         "golfer": null,
         "earnings": 0,
-        "seasonEarnings": 1662175,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 72
+        "leagueRank": null
       },
       {
         "member": "Dakota",
         "golfer": null,
         "earnings": 0,
-        "seasonEarnings": 3824044,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 11
+        "leagueRank": null
       },
       {
         "member": "Mike",
         "golfer": null,
         "earnings": 0,
-        "seasonEarnings": 643605,
+        "seasonEarnings": 0,
         "finish": null,
-        "leagueRank": 153
+        "leagueRank": null
       }
     ]
   },
@@ -81,11 +81,11 @@
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 0",
-    "Splash parsed standings rows: 4",
+    "Splash parsed standings rows: 0",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
-  "generatedAt": "2026-03-09T14:27:27.238Z",
+  "generatedAt": "2026-03-09T14:43:04.923Z",
   "primary": {
     "golfer": "Tommy Fleetwood",
     "projectedEarnings": 420000,
