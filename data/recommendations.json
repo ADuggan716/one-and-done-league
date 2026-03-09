@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "current-tournament",
-    "name": "Current Tournament",
+    "id": "players-championship",
+    "name": "Players Championship",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -12,29 +12,33 @@
         "member": "Andrew",
         "pick": null,
         "earnings": 0,
+        "seasonEarnings": 1568527,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 78
       },
       {
         "member": "Paul",
         "pick": null,
         "earnings": 0,
+        "seasonEarnings": 1662175,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 72
       },
       {
         "member": "Dakota",
         "pick": null,
         "earnings": 0,
+        "seasonEarnings": 3824044,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 11
       },
       {
         "member": "Mike",
         "pick": null,
         "earnings": 0,
+        "seasonEarnings": 643605,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 153
       }
     ],
     "picks": [
@@ -42,29 +46,33 @@
         "member": "Andrew",
         "golfer": null,
         "earnings": 0,
+        "seasonEarnings": 1568527,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 78
       },
       {
         "member": "Paul",
         "golfer": null,
         "earnings": 0,
+        "seasonEarnings": 1662175,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 72
       },
       {
         "member": "Dakota",
         "golfer": null,
         "earnings": 0,
+        "seasonEarnings": 3824044,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 11
       },
       {
         "member": "Mike",
         "golfer": null,
         "earnings": 0,
+        "seasonEarnings": 643605,
         "finish": null,
-        "leagueRank": null
+        "leagueRank": 153
       }
     ]
   },
@@ -73,11 +81,11 @@
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 0",
-    "Splash parsed standings rows: 0",
+    "Splash parsed standings rows: 4",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
-  "generatedAt": "2026-03-09T01:54:11.184Z",
+  "generatedAt": "2026-03-09T14:27:27.238Z",
   "primary": {
     "golfer": "Tommy Fleetwood",
     "projectedEarnings": 420000,
