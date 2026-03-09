@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "arnold-palmer-invitational",
-    "name": "Arnold Palmer Invitational",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -69,8 +69,8 @@
     ]
   },
   "nextTournament": {
-    "id": "arnold-palmer-invitational",
-    "name": "Arnold Palmer Invitational",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "totalPurse": 0,
@@ -79,10 +79,10 @@
   },
   "league": {
     "id": "/Golf/PickX/multiple_entries.cfm",
-    "name": "allowed No unread notifications Mark all as read View All Notifications",
+    "name": "Splash Sports League",
     "totalEntrants": 150,
     "yourRank": 0,
-    "latestEventId": "arnold-palmer-invitational",
+    "latestEventId": "current-tournament",
     "yourPercentile": 0
   },
   "subgroupStandings": [
@@ -93,8 +93,8 @@
       "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -103,8 +103,8 @@
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -122,8 +122,8 @@
       "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -132,8 +132,8 @@
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -151,8 +151,8 @@
       "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -161,8 +161,8 @@
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -180,8 +180,8 @@
       "avgEarnings": 0,
       "lastFour": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -190,8 +190,8 @@
       ],
       "history": [
         {
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "earnings": 0,
           "finish": null,
@@ -231,16 +231,16 @@
   ],
   "weeklyComparison": [
     {
-      "eventId": "arnold-palmer-invitational",
-      "eventName": "Arnold Palmer Invitational",
+      "eventId": "current-tournament",
+      "eventName": "Current Tournament",
       "tier": "regular",
       "totalPurse": 0,
       "firstPrize": 0,
       "rows": [
         {
           "member": "Andrew",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -251,8 +251,8 @@
         },
         {
           "member": "Dakota",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -263,8 +263,8 @@
         },
         {
           "member": "Mike",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -275,8 +275,8 @@
         },
         {
           "member": "Paul",
-          "eventId": "arnold-palmer-invitational",
-          "eventName": "Arnold Palmer Invitational",
+          "eventId": "current-tournament",
+          "eventName": "Current Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -365,5 +365,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-09T01:38:55.955Z"
+  "updatedAt": "2026-03-09T01:43:59.668Z"
 }

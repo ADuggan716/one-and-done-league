@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "arnold-palmer-invitational",
-    "name": "Arnold Palmer Invitational",
+    "id": "current-tournament",
+    "name": "Current Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -75,7 +75,7 @@
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
-  "generatedAt": "2026-03-09T01:38:56.097Z",
+  "generatedAt": "2026-03-09T01:43:59.825Z",
   "primary": {
     "golfer": "Tommy Fleetwood",
     "projectedEarnings": 420000,
