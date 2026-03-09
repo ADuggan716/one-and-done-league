@@ -58,6 +58,43 @@ function normalizeKey(value) {
   return String(value || "").trim().toLowerCase();
 }
 
+function normalizeCompact(value) {
+  return normalizeKey(value).replace(/[^a-z0-9]/g, "");
+}
+
+function resolveMemberFromEntry(entryName, subgroupMembers, memberAliases = {}) {
+  const aliasEntries = Object.entries(memberAliases || {});
+  const hasAliases = aliasEntries.length > 0;
+  const byAlias = new Map();
+
+  for (const [alias, member] of aliasEntries) {
+    byAlias.set(normalizeKey(alias), String(member));
+    byAlias.set(normalizeCompact(alias), String(member));
+  }
+
+  // Also allow explicit member names as exact IDs.
+  for (const member of subgroupMembers || []) {
+    byAlias.set(normalizeKey(member), member);
+    byAlias.set(normalizeCompact(member), member);
+  }
+
+  const direct = byAlias.get(normalizeKey(entryName)) || byAlias.get(normalizeCompact(entryName));
+  if (direct) return direct;
+
+  // Only allow fuzzy fallback when aliases are not configured.
+  if (!hasAliases) {
+    return (
+      subgroupMembers.find(
+        (m) =>
+          normalizeKey(entryName).includes(normalizeKey(m)) ||
+          normalizeCompact(entryName).includes(normalizeCompact(m))
+      ) || null
+    );
+  }
+
+  return null;
+}
+
 function parseEventNameFromHtml(html) {
   const text = safeText(html);
   const deadlineMatch = text.match(/([A-Za-z0-9'&.\-\s]{5,80})\s+Pick Deadline/i);
@@ -108,10 +145,6 @@ function extractTables(html) {
 }
 
 function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
-  const aliasMap = new Map(
-    Object.entries(memberAliases).map(([k, v]) => [normalizeKey(k), String(v)])
-  );
-
   const rows = extractRows(html);
   const parsed = [];
 
@@ -124,9 +157,7 @@ function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
       .reverse()
       .find((line) => !/^rename$/i.test(line) && !normalizeKey(line).includes(normalizeKey(entryToken)) && /[a-z]/i.test(line));
 
-    const aliasMember = aliasMap.get(normalizeKey(entryToken));
-    const inferredMember = subgroupMembers.find((m) => normalizeKey(entryToken).includes(normalizeKey(m)));
-    const member = aliasMember || inferredMember;
+    const member = resolveMemberFromEntry(entryToken, subgroupMembers, memberAliases);
 
     if (!member || !pickToken) continue;
 
@@ -146,9 +177,6 @@ function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
 }
 
 function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
-  const aliasMap = new Map(
-    Object.entries(memberAliases).map(([k, v]) => [normalizeKey(k), String(v)])
-  );
   const tables = extractTables(html);
   const targetTable =
     tables.find((t) => {
@@ -183,17 +211,7 @@ function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
     const entryName = cells[colEntry] || "";
     if (!entryName) continue;
 
-    let member = null;
-    for (const [alias, name] of aliasMap.entries()) {
-      if (normalizeKey(entryName) === alias) {
-        member = name;
-        break;
-      }
-    }
-
-    if (!member) {
-      member = subgroupMembers.find((m) => normalizeKey(entryName).includes(normalizeKey(m))) || null;
-    }
+    const member = resolveMemberFromEntry(entryName, subgroupMembers, memberAliases);
 
     if (!member) continue;
 
