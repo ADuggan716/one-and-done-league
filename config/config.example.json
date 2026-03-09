@@ -7,13 +7,17 @@
     { "name": "Experienced Gentlemen", "members": ["Mike", "Paul"] }
   ],
   "memberAliases": {
-    "ADUGGAN716": "Andrew"
+    "ADUGGAN716": "Andrew",
+    "ADuggan716": "Andrew",
+    "MGParent": "Mike",
+    "PDuggan7": "Paul",
+    "Dakota_Girard": "Dakota"
   },
   "cookiePath": "config/runyourpool.cookie",
   "splash": {
     "baseUrl": "https://sm.app.splashsports.com",
     "leaguePath": "/Golf/PickX/multiple_entries.cfm",
-    "standingsPath": "/Golf/PickX/standings.cfm"
+    "standingsPath": "/Golf/PickX/reports/pickone/standings_v2.cfm"
   },
   "onlineSources": [
     {

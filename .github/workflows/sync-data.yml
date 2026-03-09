@@ -75,13 +75,17 @@ jobs:
               {"name": "Experienced Gentlemen", "members": ["Mike", "Paul"]},
             ],
             "memberAliases": {
-              "ADUGGAN716": "Andrew"
+              "ADUGGAN716": "Andrew",
+              "ADuggan716": "Andrew",
+              "MGParent": "Mike",
+              "PDuggan7": "Paul",
+              "Dakota_Girard": "Dakota"
             },
             "cookiePath": "config/runyourpool.cookie",
             "splash": {
               "baseUrl": "https://sm.app.splashsports.com",
               "leaguePath": os.environ.get("RYP_LEAGUE_ID", "").strip(),
-              "standingsPath": "/Golf/PickX/standings.cfm"
+              "standingsPath": "/Golf/PickX/reports/pickone/standings_v2.cfm"
             },
             "onlineSources": [
               {
