@@ -351,8 +351,8 @@ function renderSyncMeta(snapshot, pool) {
 }
 
 async function init() {
-  const snapshotUrl = new URL("../data/league_snapshot.json", import.meta.url);
-  const poolUrl = new URL("../data/player_pool.json", import.meta.url);
+  const snapshotUrl = new URL("./data/league_snapshot.json", import.meta.url);
+  const poolUrl = new URL("./data/player_pool.json", import.meta.url);
   const [snapshotRes, poolRes] = await Promise.all([
     fetch(snapshotUrl),
     fetch(poolUrl),
