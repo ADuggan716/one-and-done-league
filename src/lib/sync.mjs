@@ -127,6 +127,17 @@ function parseLeagueNameFromHtml(html) {
   return "Splash Sports League";
 }
 
+function looksLikeAuthPage(html) {
+  const text = safeText(html).toLowerCase();
+  return (
+    text.includes("log in") ||
+    text.includes("sign in") ||
+    text.includes("password") ||
+    text.includes("forgot password") ||
+    text.includes("create account")
+  );
+}
+
 function extractRows(html) {
   const rows = [];
   const trRegex = /<tr[\s\S]*?<\/tr>/gi;
@@ -299,11 +310,17 @@ export async function fetchSplashSportsData({
     throw new SyncError(`Splash entries fetch failed with HTTP ${entriesRes.status}`, "HTTP_ERROR");
   }
   const entriesHtml = await entriesRes.text();
+  if (looksLikeAuthPage(entriesHtml)) {
+    throw new SyncError("Splash Sports session appears expired (entries page is auth/login).", "AUTH_EXPIRED");
+  }
 
   let standingsHtml = "";
   const standingsRes = await fetch(standingsUrl, { headers });
   if (standingsRes.ok) {
     standingsHtml = await standingsRes.text();
+    if (looksLikeAuthPage(standingsHtml)) {
+      throw new SyncError("Splash Sports session appears expired (standings page is auth/login).", "AUTH_EXPIRED");
+    }
   }
 
   const eventName = parseEventNameFromHtml(entriesHtml);
@@ -312,6 +329,13 @@ export async function fetchSplashSportsData({
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
+
+  if (picks.length === 0 && standings.length === 0) {
+    throw new SyncError(
+      "Splash parser returned zero picks and zero standings rows. Cookie/session likely expired or page markup changed.",
+      "PARSE_EMPTY"
+    );
+  }
   const standingsMap = new Map(standings.map((s) => [s.member, s]));
 
   const mergedPicks = subgroupMembers.map((member) => {
