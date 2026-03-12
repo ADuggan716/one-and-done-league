@@ -1,5 +1,5 @@
 {
-  "eventId": "current-tournament",
+  "eventId": "players-championship",
   "eventTier": "regular",
   "currentEventMeta": {
     "totalPurse": 0,
@@ -11,7 +11,8 @@
         "Scottie Scheffler",
         "Collin Morikawa",
         "Justin Thomas",
-        "Shane Lowry"
+        "Shane Lowry",
+        "Kim"
       ],
       "available": [
         "Rory McIlroy",
@@ -98,5 +99,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-09T14:43:04.776Z"
+  "updatedAt": "2026-03-12T13:22:43.645Z"
 }

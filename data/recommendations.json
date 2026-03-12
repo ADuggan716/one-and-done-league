@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "current-tournament",
-    "name": "Current Tournament",
+    "id": "players-championship",
+    "name": "Players Championship",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -10,7 +10,7 @@
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
+        "pick": "Kim",
         "earnings": 0,
         "seasonEarnings": 0,
         "finish": null,
@@ -44,7 +44,7 @@
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
+        "golfer": "Kim",
         "earnings": 0,
         "seasonEarnings": 0,
         "finish": null,
@@ -80,12 +80,13 @@
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 0",
+    "Splash parsed picks: 1",
     "Splash parsed standings rows: 0",
+    "Splash mapping: Andrew: rank=-, season=0, pick=Kim | Paul: rank=-, season=0, pick=- | Dakota: rank=-, season=0, pick=- | Mike: rank=-, season=0, pick=-",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
-  "generatedAt": "2026-03-09T14:43:04.923Z",
+  "generatedAt": "2026-03-12T13:22:43.661Z",
   "primary": {
     "golfer": "Tommy Fleetwood",
     "projectedEarnings": 420000,

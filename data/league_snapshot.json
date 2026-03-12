@@ -1,7 +1,7 @@
 {
   "event": {
-    "id": "current-tournament",
-    "name": "Current Tournament",
+    "id": "players-championship",
+    "name": "Players Championship",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -10,7 +10,7 @@
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
+        "pick": "Kim",
         "earnings": 0,
         "seasonEarnings": 0,
         "finish": null,
@@ -44,7 +44,7 @@
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
+        "golfer": "Kim",
         "earnings": 0,
         "seasonEarnings": 0,
         "finish": null,
@@ -77,8 +77,8 @@
     ]
   },
   "nextTournament": {
-    "id": "current-tournament",
-    "name": "Current Tournament",
+    "id": "players-championship",
+    "name": "Players Championship",
     "tier": "regular",
     "startDate": null,
     "totalPurse": 0,
@@ -87,10 +87,10 @@
   },
   "league": {
     "id": "/Golf/PickX/multiple_entries.cfm",
-    "name": "Splash Sports League",
+    "name": "allowed No unread notifications Mark all as read View All Notifications",
     "totalEntrants": 150,
     "yourRank": 0,
-    "latestEventId": "current-tournament",
+    "latestEventId": "players-championship",
     "yourPercentile": 0
   },
   "subgroupStandings": [
@@ -167,28 +167,28 @@
   ],
   "weeklyComparison": [
     {
-      "eventId": "current-tournament",
-      "eventName": "Current Tournament",
+      "eventId": "players-championship",
+      "eventName": "Players Championship",
       "tier": "regular",
       "totalPurse": 0,
       "firstPrize": 0,
       "rows": [
         {
           "member": "Andrew",
-          "eventId": "current-tournament",
-          "eventName": "Current Tournament",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
           "finish": null,
-          "pick": null,
+          "pick": "Kim",
           "leagueRank": null
         },
         {
           "member": "Dakota",
-          "eventId": "current-tournament",
-          "eventName": "Current Tournament",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -199,8 +199,8 @@
         },
         {
           "member": "Mike",
-          "eventId": "current-tournament",
-          "eventName": "Current Tournament",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -211,8 +211,8 @@
         },
         {
           "member": "Paul",
-          "eventId": "current-tournament",
-          "eventName": "Current Tournament",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -295,13 +295,14 @@
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 0",
+    "Splash parsed picks: 1",
     "Splash parsed standings rows: 0",
+    "Splash mapping: Andrew: rank=-, season=0, pick=Kim | Paul: rank=-, season=0, pick=- | Dakota: rank=-, season=0, pick=- | Mike: rank=-, season=0, pick=-",
     "Recent Form Feed: 12 golfer signals loaded",
     "Course History Feed: 12 golfer signals loaded"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-09T14:43:04.776Z"
+  "updatedAt": "2026-03-12T13:22:43.645Z"
 }
