@@ -114,7 +114,7 @@ function renderScoreKey() {
 }
 
 async function init() {
-  const response = await fetch("/data/recommendations.json");
+  const response = await fetch(new URL("../data/recommendations.json", import.meta.url));
   if (!response.ok) {
     throw new Error("Could not load recommendations.json");
   }
