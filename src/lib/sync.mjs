@@ -7,6 +7,32 @@ export class SyncError extends Error {
   }
 }
 
+function formatFetchError(error) {
+  const bits = [error?.message || "fetch failed"];
+  if (error?.cause?.code) bits.push(`code=${error.cause.code}`);
+  if (error?.cause?.errno) bits.push(`errno=${error.cause.errno}`);
+  if (error?.cause?.syscall) bits.push(`syscall=${error.cause.syscall}`);
+  if (error?.cause?.hostname) bits.push(`host=${error.cause.hostname}`);
+  return bits.join(" | ");
+}
+
+async function fetchOrThrow(url, options, label) {
+  try {
+    return await fetch(url, options);
+  } catch (error) {
+    throw new SyncError(`${label} fetch failed for ${url} (${formatFetchError(error)})`, "NETWORK_ERROR");
+  }
+}
+
+async function writeDebugHtml(name, html) {
+  try {
+    await fs.mkdir("logs", { recursive: true });
+    await fs.writeFile(`logs/${name}.html`, String(html || ""), "utf8");
+  } catch {
+    // Debug capture should never block the sync flow.
+  }
+}
+
 export async function readConfig(path) {
   const raw = await fs.readFile(path, "utf8");
   try {
@@ -263,13 +289,13 @@ function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
 
 export async function fetchRunYourPoolData({ baseUrl, cookie, leagueId }) {
   const url = `${baseUrl.replace(/\/$/, "")}/api/one-and-done/${leagueId}/snapshot`;
-  const response = await fetch(url, {
+  const response = await fetchOrThrow(url, {
     headers: {
       Cookie: cookie,
       Accept: "application/json",
       "User-Agent": "OneAndDoneCompanion/1.0",
     },
-  });
+  }, "RunYourPool");
 
   if (response.status === 401 || response.status === 403) {
     throw new SyncError("RunYourPool session expired. Refresh cookie and retry.", "AUTH_EXPIRED");
@@ -302,7 +328,7 @@ export async function fetchSplashSportsData({
     "User-Agent": "OneAndDoneCompanion/1.0",
   };
 
-  const entriesRes = await fetch(entriesUrl, { headers });
+  const entriesRes = await fetchOrThrow(entriesUrl, { headers }, "Splash entries");
   if (entriesRes.status === 401 || entriesRes.status === 403) {
     throw new SyncError("Splash Sports session expired. Refresh cookie and retry.", "AUTH_EXPIRED");
   }
@@ -311,16 +337,59 @@ export async function fetchSplashSportsData({
   }
   const entriesHtml = await entriesRes.text();
   if (looksLikeAuthPage(entriesHtml)) {
+    await writeDebugHtml("debug-splash-entries-auth", entriesHtml);
     throw new SyncError("Splash Sports session appears expired (entries page is auth/login).", "AUTH_EXPIRED");
   }
 
   let standingsHtml = "";
-  const standingsRes = await fetch(standingsUrl, { headers });
+  const standingsRes = await fetchOrThrow(standingsUrl, { headers }, "Splash standings");
   if (standingsRes.ok) {
     standingsHtml = await standingsRes.text();
     if (looksLikeAuthPage(standingsHtml)) {
+      await writeDebugHtml("debug-splash-standings-auth", standingsHtml);
       throw new SyncError("Splash Sports session appears expired (standings page is auth/login).", "AUTH_EXPIRED");
     }
+  }
+
+  const eventName = parseEventNameFromHtml(entriesHtml);
+  const leagueName = parseLeagueNameFromHtml(entriesHtml);
+  const picks = parsePicksFromEntriesHtml(entriesHtml, subgroupMembers, memberAliases);
+  const standings = standingsHtml
+    ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
+    : [];
+
+  return buildSplashSnapshot({
+    leaguePath,
+    entriesUrl,
+    standingsUrl,
+    eventName,
+    leagueName,
+    picks,
+    standings,
+    subgroupMembers,
+  });
+}
+
+export function parseSplashSportsHtml({
+  baseUrl,
+  leaguePath,
+  standingsPath,
+  subgroupMembers,
+  memberAliases,
+  entriesHtml,
+  standingsHtml = "",
+}) {
+  const base = baseUrl.replace(/\/$/, "");
+  const entriesUrl = leaguePath.startsWith("http") ? leaguePath : `${base}${leaguePath.startsWith("/") ? "" : "/"}${leaguePath}`;
+  const resolvedStandingsUrl = standingsPath
+    ? (standingsPath.startsWith("http") ? standingsPath : `${base}${standingsPath.startsWith("/") ? "" : "/"}${standingsPath}`)
+    : entriesUrl.replace(/multiple_entries\.cfm/i, "standings.cfm");
+
+  if (looksLikeAuthPage(entriesHtml)) {
+    throw new SyncError("Splash Sports session appears expired (entries page is auth/login).", "AUTH_EXPIRED");
+  }
+  if (standingsHtml && looksLikeAuthPage(standingsHtml)) {
+    throw new SyncError("Splash Sports session appears expired (standings page is auth/login).", "AUTH_EXPIRED");
   }
 
   const eventName = parseEventNameFromHtml(entriesHtml);
@@ -336,6 +405,29 @@ export async function fetchSplashSportsData({
       "PARSE_EMPTY"
     );
   }
+
+  return buildSplashSnapshot({
+    leaguePath,
+    entriesUrl,
+    standingsUrl: resolvedStandingsUrl,
+    eventName,
+    leagueName,
+    picks,
+    standings,
+    subgroupMembers,
+  });
+}
+
+function buildSplashSnapshot({
+  leaguePath,
+  entriesUrl,
+  standingsUrl,
+  eventName,
+  leagueName,
+  picks,
+  standings,
+  subgroupMembers,
+}) {
   const standingsMap = new Map(standings.map((s) => [s.member, s]));
 
   const mergedPicks = subgroupMembers.map((member) => {

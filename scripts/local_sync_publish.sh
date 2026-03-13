@@ -17,7 +17,7 @@ if [[ "$RUN_SIGNALS" == "1" ]]; then
 fi
 
 echo "==> Syncing Splash data locally"
-node scripts/sync_runyourpool.mjs
+SPLASH_SOURCE="${SPLASH_SOURCE:-chrome}" node scripts/sync_runyourpool.mjs
 
 echo "==> Staging updated data files"
 git add data/*.json

@@ -1,5 +1,7 @@
 #!/usr/bin/env node
+import { execFile } from "node:child_process";
 import fs from "node:fs/promises";
+import { promisify } from "node:util";
 import path from "node:path";
 import { fileURLToPath } from "node:url";
 import {
@@ -7,6 +9,7 @@ import {
   fetchSplashSportsData,
   loadCookie,
   normalizeSnapshot,
+  parseSplashSportsHtml,
   readConfig,
   SyncError,
 } from "../src/lib/sync.mjs";
@@ -24,6 +27,64 @@ import { mergeSignals, readOnlineSignals } from "../src/lib/online_signals.mjs";
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "..");
+const execFileAsync = promisify(execFile);
+
+async function captureChromeHtml(targetUrl) {
+  const targetPath = new URL(targetUrl).pathname;
+  const lines = [
+    "on run argv",
+    "set targetPath to item 1 of argv",
+    'tell application "Google Chrome"',
+    'if not running then error "Google Chrome is not running."',
+    "set targetTab to missing value",
+    "repeat with w in windows",
+    "repeat with t in tabs of w",
+    "set tabUrl to URL of t as text",
+    "if tabUrl contains targetPath then",
+    "set targetTab to t",
+    "exit repeat",
+    "end if",
+    "end repeat",
+    "if targetTab is not missing value then exit repeat",
+    "end repeat",
+    "end tell",
+    "if targetTab is missing value then error \"No matching Chrome tab found for \" & targetPath & \". Open the Splash page in a normal Chrome tab first.\"",
+    "delay 1",
+    'tell application "Google Chrome"',
+    'return execute targetTab javascript "document.documentElement.outerHTML"',
+    "end tell",
+    "end run",
+  ];
+
+  const args = lines.flatMap((line) => ["-e", line]).concat(targetPath);
+  const { stdout } = await execFileAsync("osascript", args);
+  return stdout.trim();
+}
+
+async function fetchSplashFromChrome(config) {
+  const baseUrl = config.splash.baseUrl;
+  const entriesUrl = `${baseUrl.replace(/\/$/, "")}${config.splash.leaguePath}`;
+  const standingsUrl = `${baseUrl.replace(/\/$/, "")}${config.splash.standingsPath}`;
+
+  const [entriesHtml, standingsHtml] = await Promise.all([
+    captureChromeHtml(entriesUrl),
+    captureChromeHtml(standingsUrl),
+  ]);
+
+  await fs.mkdir(path.join(root, "logs"), { recursive: true });
+  await fs.writeFile(path.join(root, "logs/chrome-splash-entries.html"), `${entriesHtml}\n`, "utf8");
+  await fs.writeFile(path.join(root, "logs/chrome-splash-standings.html"), `${standingsHtml}\n`, "utf8");
+
+  return parseSplashSportsHtml({
+    baseUrl: config.splash.baseUrl,
+    leaguePath: config.splash.leaguePath,
+    standingsPath: config.splash.standingsPath,
+    subgroupMembers: config.subgroupMembers,
+    memberAliases: config.memberAliases || {},
+    entriesHtml,
+    standingsHtml,
+  });
+}
 
 async function readJson(relPath) {
   const fullPath = path.join(root, relPath);
@@ -156,14 +217,18 @@ async function run() {
   let upstream;
   try {
     if ((config.provider || "splash") === "splash") {
-      upstream = await fetchSplashSportsData({
-        baseUrl: config.splash.baseUrl,
-        cookie,
-        leaguePath: config.splash.leaguePath,
-        standingsPath: config.splash.standingsPath,
-        subgroupMembers: config.subgroupMembers,
-        memberAliases: config.memberAliases || {},
-      });
+      if (process.env.SPLASH_SOURCE === "chrome") {
+        upstream = await fetchSplashFromChrome(config);
+      } else {
+        upstream = await fetchSplashSportsData({
+          baseUrl: config.splash.baseUrl,
+          cookie,
+          leaguePath: config.splash.leaguePath,
+          standingsPath: config.splash.standingsPath,
+          subgroupMembers: config.subgroupMembers,
+          memberAliases: config.memberAliases || {},
+        });
+      }
     } else {
       upstream = await fetchRunYourPoolData({
         baseUrl: config.runYourPool.baseUrl,
