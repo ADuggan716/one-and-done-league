@@ -159,6 +159,31 @@ function parseLeagueNameFromHtml(html) {
   return "Splash Sports League";
 }
 
+function lookupEventMetadata(eventName) {
+  const key = normalizeCompact(eventName);
+
+  if (key === "playerschampionship" || key === "theplayerschampionship") {
+    return {
+      tier: "signature",
+      totalPurse: 25000000,
+      firstPrize: 4500000,
+      lastYearWinner: "Rory McIlroy",
+      sourceNotes: [
+        "Event metadata source: https://www.pgatour.com/tournaments/2025/the-players-championship/R20250112/overview",
+        "Purse source: https://www.pgatour.com/article/news/latest/2025/03/10/purse-breakdown-prize-money-the-players-championship-tpc-sawgrass-scottie-scheffler?webview=1",
+      ],
+    };
+  }
+
+  return {
+    tier: "regular",
+    totalPurse: 0,
+    firstPrize: 0,
+    lastYearWinner: "Unknown",
+    sourceNotes: [],
+  };
+}
+
 function looksLikeAuthPage(html) {
   const text = safeText(html).toLowerCase();
   return (
@@ -397,12 +422,21 @@ export async function fetchSplashSportsData({
   const standingsPagePicks = standingsHtml
     ? parseTournamentPicksFromStandingsHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
-  const picks = [...entryPicks];
-  for (const item of standingsPagePicks) {
-    if (!picks.find((x) => x.member === item.member && x.pick)) {
-      picks.push(item);
-    }
+  const pickMap = new Map();
+  for (const item of entryPicks) {
+    pickMap.set(item.member, { ...item });
   }
+  for (const item of standingsPagePicks) {
+    const current = pickMap.get(item.member) || {};
+    pickMap.set(item.member, {
+      ...current,
+      ...item,
+      pick: item.pick || current.pick || null,
+      earnings: Number.isFinite(item.earnings) ? item.earnings : Number(current.earnings || 0),
+      finish: item.finish ?? current.finish ?? null,
+    });
+  }
+  const picks = [...pickMap.values()];
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
@@ -447,12 +481,21 @@ export function parseSplashSportsHtml({
   const standingsPagePicks = standingsHtml
     ? parseTournamentPicksFromStandingsHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
-  const picks = [...entryPicks];
-  for (const item of standingsPagePicks) {
-    if (!picks.find((x) => x.member === item.member && x.pick)) {
-      picks.push(item);
-    }
+  const pickMap = new Map();
+  for (const item of entryPicks) {
+    pickMap.set(item.member, { ...item });
   }
+  for (const item of standingsPagePicks) {
+    const current = pickMap.get(item.member) || {};
+    pickMap.set(item.member, {
+      ...current,
+      ...item,
+      pick: item.pick || current.pick || null,
+      earnings: Number.isFinite(item.earnings) ? item.earnings : Number(current.earnings || 0),
+      finish: item.finish ?? current.finish ?? null,
+    });
+  }
+  const picks = [...pickMap.values()];
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
@@ -486,24 +529,25 @@ function buildSplashSnapshot({
   standings,
   subgroupMembers,
 }) {
+  const eventMeta = lookupEventMetadata(eventName);
   const standingsMap = new Map(standings.map((s) => [s.member, s]));
+  const pickMap = new Map(picks.map((p) => [p.member, p]));
 
   const mergedPicks = subgroupMembers.map((member) => {
-    const p = picks.find((x) => x.member === member) || {};
+    const p = pickMap.get(member) || {};
     const s = standingsMap.get(member) || {};
     return {
       member,
       golfer: p.pick || null,
-      // Splash standings page provides cumulative season winnings, not per-event earnings.
-      earnings: 0,
+      earnings: Number.isFinite(p.earnings) ? p.earnings : 0,
       seasonEarnings: Number.isFinite(s.earnings) ? s.earnings : 0,
-      finish: s.finish ?? null,
+      finish: p.finish ?? null,
       leagueRank: s.leagueRank ?? null,
     };
   });
   const mappingDebug = mergedPicks.map(
     (row) =>
-      `${row.member}: rank=${row.leagueRank ?? "-"}, season=${Number(row.seasonEarnings || 0)}, pick=${row.golfer || "-"}`
+      `${row.member}: rank=${row.leagueRank ?? "-"}, season=${Number(row.seasonEarnings || 0)}, pick=${row.golfer || "-"}, week=${Number(row.earnings || 0)}, finish=${row.finish ?? "-"}`
   );
 
   return {
@@ -518,22 +562,22 @@ function buildSplashSnapshot({
       {
         id: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
         name: eventName,
-        tier: "regular",
+        tier: eventMeta.tier,
         startDate: null,
         isUpcoming: true,
-        totalPurse: 0,
-        firstPrize: 0,
+        totalPurse: eventMeta.totalPurse,
+        firstPrize: eventMeta.firstPrize,
         picks: mergedPicks,
       },
     ],
     nextTournament: {
       id: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
       name: eventName,
-      tier: "regular",
+      tier: eventMeta.tier,
       startDate: null,
-      totalPurse: 0,
-      firstPrize: 0,
-      lastYearWinner: "Unknown",
+      totalPurse: eventMeta.totalPurse,
+      firstPrize: eventMeta.firstPrize,
+      lastYearWinner: eventMeta.lastYearWinner,
     },
     projections: [],
     sourceNotes: [
@@ -542,6 +586,7 @@ function buildSplashSnapshot({
       `Splash parsed picks: ${picks.length}`,
       `Splash parsed standings rows: ${standings.length}`,
       `Splash mapping: ${mappingDebug.join(" | ")}`,
+      ...eventMeta.sourceNotes,
     ],
   };
 }
