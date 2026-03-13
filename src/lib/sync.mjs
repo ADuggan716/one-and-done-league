@@ -145,6 +145,12 @@ function parseEventNameFromHtml(html) {
 }
 
 function parseLeagueNameFromHtml(html) {
+  const headingMatch = String(html || "").match(/<h1[^>]*>\s*([^<]{4,80}?)\s*<\/h1>/i);
+  if (headingMatch) return safeText(headingMatch[1]);
+
+  const contestTitleMatch = String(html || "").match(/<div[^>]*class="[^"]*contest-title[^"]*"[^>]*>\s*([^<]{4,80}?)\s*<\/div>/i);
+  if (contestTitleMatch) return safeText(contestTitleMatch[1]);
+
   const text = safeText(html);
   const top = text.match(/([A-Za-z0-9'&.\-\s]{4,80})\s+Standings/i);
   if (top) return top[1].trim();
@@ -197,6 +203,20 @@ function extractTables(html) {
   return out;
 }
 
+function extractTableById(html, tableId) {
+  const marker = `id="${tableId}"`;
+  const start = html.indexOf(marker);
+  if (start === -1) return null;
+
+  const tableStart = html.lastIndexOf('<table', start);
+  if (tableStart === -1) return null;
+
+  const tableEnd = html.indexOf('</table>', start);
+  if (tableEnd === -1) return null;
+
+  return html.slice(tableStart, tableEnd + 8);
+}
+
 function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
   const rows = extractRows(html);
   const parsed = [];
@@ -229,54 +249,74 @@ function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
   return [...dedup.values()];
 }
 
-function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
-  const tables = extractTables(html);
-  const targetTable =
-    tables.find((t) => {
-      const txt = safeText(t).toLowerCase();
-      return txt.includes("entry name") && txt.includes("winnings") && txt.includes("fedex points");
-    }) || html;
+function parseTournamentPicksFromStandingsHtml(html, subgroupMembers, memberAliases = {}) {
+  const targetTable = extractTableById(html, "tournamentTable");
+  if (!targetTable) return [];
+
   const rows = extractRows(targetTable);
   const out = [];
-
-  let colRank = 0;
-  let colEntry = 1;
-  let colWinnings = 2;
-  let colFedex = -1;
   let seenHeader = false;
 
   for (const row of rows) {
     const cells = extractCells(row.raw);
-    if (cells.length < 3) continue;
+    if (cells.length < 5) continue;
 
     if (!seenHeader) {
       const lower = cells.map((c) => normalizeKey(c));
-      if (lower.includes("entry name") && lower.includes("winnings")) {
-        colRank = lower.indexOf("rank");
-        colEntry = lower.indexOf("entry name");
-        colWinnings = lower.indexOf("winnings");
-        colFedex = lower.indexOf("fedex points");
+      if (lower.includes("entry name") && lower.includes("player picked")) {
         seenHeader = true;
       }
       continue;
     }
 
-    const entryName = cells[colEntry] || "";
-    if (!entryName) continue;
-
+    const entryName = cells[1] || "";
     const member = resolveMemberFromEntry(entryName, subgroupMembers, memberAliases);
-
     if (!member) continue;
-
-    const currency = matchMoneyLoose(cells[colWinnings]);
-    const cellRank = (cells[colRank] || "").trim();
-    const fedexRaw = colFedex >= 0 ? (cells[colFedex] || "").replace(/,/g, "") : "";
-    const fedexPoints = Number(fedexRaw);
 
     out.push({
       member,
-      earnings: currency,
-      leagueRank: /^\d{1,3}$/.test(cellRank) ? Number(cellRank) : null,
+      pick: cells[2] || null,
+      earnings: matchMoneyLoose(cells[4]),
+      finish: cells[3] || null,
+      leagueRank: /^\d{1,3}$/.test((cells[0] || "").trim()) ? Number(cells[0].trim()) : null,
+    });
+  }
+
+  const dedup = new Map();
+  for (const row of out) dedup.set(row.member, row);
+  return [...dedup.values()];
+}
+
+function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
+  const targetTable = extractTableById(html, "ytdTable");
+  if (!targetTable) return [];
+
+  const rows = extractRows(targetTable);
+  const out = [];
+  let seenHeader = false;
+
+  for (const row of rows) {
+    const cells = extractCells(row.raw);
+    if (cells.length < 6) continue;
+
+    if (!seenHeader) {
+      const lower = cells.map((c) => normalizeKey(c));
+      if (lower.includes("entry name") && lower.includes("winnings")) {
+        seenHeader = true;
+      }
+      continue;
+    }
+
+    const entryName = cells[1] || "";
+    const member = resolveMemberFromEntry(entryName, subgroupMembers, memberAliases);
+    if (!member) continue;
+
+    const fedexPoints = Number(String(cells[4] || "").replace(/,/g, "").trim());
+
+    out.push({
+      member,
+      earnings: matchMoneyLoose(cells[2]),
+      leagueRank: /^\d{1,3}$/.test((cells[0] || "").trim()) ? Number(cells[0].trim()) : null,
       finish: null,
       fedexPoints: Number.isFinite(fedexPoints) ? fedexPoints : null,
     });
@@ -353,7 +393,16 @@ export async function fetchSplashSportsData({
 
   const eventName = parseEventNameFromHtml(entriesHtml);
   const leagueName = parseLeagueNameFromHtml(entriesHtml);
-  const picks = parsePicksFromEntriesHtml(entriesHtml, subgroupMembers, memberAliases);
+  const entryPicks = parsePicksFromEntriesHtml(entriesHtml, subgroupMembers, memberAliases);
+  const standingsPagePicks = standingsHtml
+    ? parseTournamentPicksFromStandingsHtml(standingsHtml, subgroupMembers, memberAliases)
+    : [];
+  const picks = [...entryPicks];
+  for (const item of standingsPagePicks) {
+    if (!picks.find((x) => x.member === item.member && x.pick)) {
+      picks.push(item);
+    }
+  }
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
@@ -394,7 +443,16 @@ export function parseSplashSportsHtml({
 
   const eventName = parseEventNameFromHtml(entriesHtml);
   const leagueName = parseLeagueNameFromHtml(entriesHtml);
-  const picks = parsePicksFromEntriesHtml(entriesHtml, subgroupMembers, memberAliases);
+  const entryPicks = parsePicksFromEntriesHtml(entriesHtml, subgroupMembers, memberAliases);
+  const standingsPagePicks = standingsHtml
+    ? parseTournamentPicksFromStandingsHtml(standingsHtml, subgroupMembers, memberAliases)
+    : [];
+  const picks = [...entryPicks];
+  for (const item of standingsPagePicks) {
+    if (!picks.find((x) => x.member === item.member && x.pick)) {
+      picks.push(item);
+    }
+  }
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
