@@ -7,7 +7,7 @@ Local-first One and Done toolkit for:
 
 ## Free Hosting (Recommended)
 
-Use **GitHub Pages** for the public site and **GitHub Actions** for data refreshes.
+Use **GitHub Pages** for the public site. For Splash data refreshes, use your **local Mac session** and push the updated JSON to GitHub.
 
 ### What you’ll get
 - One shareable URL from GitHub Pages
@@ -21,31 +21,34 @@ Use **GitHub Pages** for the public site and **GitHub Actions** for data refresh
 1. Create a new GitHub repo.
 2. Push `/Users/andrew/Projects/Misc` to it.
 
-### Step 2: Add GitHub repo secrets (for real data)
-In GitHub repo -> **Settings** -> **Secrets and variables** -> **Actions** -> **New repository secret**, add:
-- `RYP_LEAGUE_ID` (set this to your Splash league path, e.g. `/Golf/PickX/multiple_entries.cfm`)
-- `RYP_COOKIE`
-- `FORM_SOURCE_URL`
-- `FORM_SOURCE_API_KEY`
-- `COURSE_SOURCE_URL`
-- `COURSE_SOURCE_API_KEY`
-
-### Step 3: Enable workflows
-The workflows are already included at:
-- `.github/workflows/sync-data.yml`
-- `.github/workflows/deploy-pages.yml`
-
-`sync-data.yml` runs hourly but only executes sync during your two New York time windows. `deploy-pages.yml` publishes the site to GitHub Pages whenever `main` changes.
-
-### Step 4: Turn on GitHub Pages
+### Step 2: Turn on GitHub Pages
 In GitHub repo -> **Settings** -> **Pages**:
 1. Source: **GitHub Actions**
 2. Save
 
-### Step 5: First manual refresh
-In GitHub -> **Actions** -> **Sync League Data** -> **Run workflow**.
+### Step 3: Local config for Splash sync
+Keep your working Splash cookie locally in:
+- `config/runyourpool.cookie`
 
-After it runs, GitHub commits updated JSON and the Pages deploy workflow republishes the site.
+Keep your local settings in:
+- `config/config.json`
+
+### Step 4: First local sync + publish
+Run:
+
+```bash
+cd /Users/andrew/Projects/Misc
+npm run sync:local:publish
+```
+
+That will:
+1. pull online signals
+2. sync Splash data using your local cookie
+3. update JSON files in `data/`
+4. commit the changed data
+5. push to GitHub
+
+GitHub Pages will then republish the site automatically.
 
 ## Local preview
 
@@ -67,13 +70,30 @@ npm run build:site
 
 The publishable site is written to `dist/`.
 
+## Local scheduled refresh on your Mac
+
+If you want the Thursday/Sunday refresh to happen automatically from your own machine:
+
+```bash
+cd /Users/andrew/Projects/Misc
+bash scripts/install_launchd.sh
+```
+
+That installs a macOS `launchd` agent that runs:
+- Thursday at 9:00 AM local time
+- Sunday at 8:00 PM local time
+
+Important:
+- your Mac needs to be on
+- your local Splash cookie in `config/runyourpool.cookie` needs to still be valid
+- Git needs to already be authenticated on your Mac
+
 ## Faster ship loop (automated)
 
 Run one command to:
 1. run tests
 2. commit and push your branch
-3. trigger GitHub `sync-data.yml` (`force_run=true`) and wait for completion (if `gh` CLI is installed + authenticated)
-4. verify live site response (if `SITE_URL` is set)
+3. verify the live GitHub Pages site (if `SITE_URL` is set)
 
 ```bash
 cd /Users/andrew/Projects/Misc
@@ -87,6 +107,6 @@ cd /Users/andrew/Projects/Misc
 SKIP_TESTS=1 SITE_URL="https://<your-github-username>.github.io/<repo-name>/" npm run release:sync:check -- "chore: content tweak"
 ```
 
-Prerequisites for GitHub workflow automation:
+Prerequisites for local automation:
 - `gh` installed (example: `brew install gh`)
 - authenticated (`gh auth login`)

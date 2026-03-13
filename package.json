@@ -8,6 +8,7 @@
     "build:site": "node scripts/build_site.mjs",
     "fetch:signals": "node scripts/fetch_online_signals.mjs",
     "sync": "node scripts/sync_runyourpool.mjs",
+    "sync:local:publish": "bash scripts/local_sync_publish.sh",
     "recommend": "node scripts/generate_recommendations.mjs",
     "build:data": "node scripts/build_local_data.mjs",
     "serve": "python3 -m http.server 8080",

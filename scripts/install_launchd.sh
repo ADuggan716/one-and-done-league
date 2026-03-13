@@ -18,7 +18,7 @@ cat > "$PLIST_PATH" <<PLIST
   <array>
     <string>/bin/zsh</string>
     <string>-lc</string>
-    <string>cd ${ROOT_DIR} && node scripts/fetch_online_signals.mjs && node scripts/sync_runyourpool.mjs</string>
+    <string>cd ${ROOT_DIR} && bash scripts/local_sync_publish.sh</string>
   </array>
   <key>StartCalendarInterval</key>
   <array>
@@ -56,3 +56,4 @@ launchctl load "$PLIST_PATH"
 
 echo "Installed launchd agent at $PLIST_PATH"
 echo "Schedule: Thursday at 09:00 and Sunday at 20:00 local time"
+echo "Command: bash scripts/local_sync_publish.sh"
