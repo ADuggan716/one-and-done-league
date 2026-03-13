@@ -1,51 +1,8 @@
 {
-  "fetchedAt": "2026-03-08T12:00:00.000Z",
+  "fetchedAt": "2026-03-13T18:01:52.580Z",
   "sourceNotes": [
-    "Recent Form Feed: 12 golfer signals loaded",
-    "Course History Feed: 12 golfer signals loaded"
+    "Recent Form Feed: skipped (missing env FORM_SOURCE_API_KEY)",
+    "Course History Feed: skipped (missing env COURSE_SOURCE_API_KEY)"
   ],
-  "signals": [
-    {
-      "golfer": "Rory McIlroy",
-      "worldRank": 2,
-      "fedexPoints": 1110,
-      "seasonEarnings": 5480000,
-      "inNextTournament": true,
-      "historicalStrength": 0.96,
-      "courseHistoryScore": 0.84,
-      "last4Finishes": [2, 7, 12, 4],
-      "projectedEarnings": 640000,
-      "projectedDupCount": 1,
-      "futureValue": 700000,
-      "sourceRefs": ["Recent Form Feed", "Course History Feed"]
-    },
-    {
-      "golfer": "Viktor Hovland",
-      "worldRank": 5,
-      "fedexPoints": 845,
-      "seasonEarnings": 3620000,
-      "inNextTournament": true,
-      "historicalStrength": 0.88,
-      "courseHistoryScore": 0.79,
-      "last4Finishes": [14, 8, 10, 17],
-      "projectedEarnings": 510000,
-      "projectedDupCount": 0,
-      "futureValue": 400000,
-      "sourceRefs": ["Recent Form Feed"]
-    },
-    {
-      "golfer": "Tommy Fleetwood",
-      "worldRank": 8,
-      "fedexPoints": 640,
-      "seasonEarnings": 2800000,
-      "inNextTournament": true,
-      "historicalStrength": 0.8,
-      "courseHistoryScore": 0.74,
-      "last4Finishes": [11, 19, 7, 22],
-      "projectedEarnings": 420000,
-      "projectedDupCount": 0,
-      "futureValue": 300000,
-      "sourceRefs": ["Recent Form Feed", "Course History Feed"]
-    }
-  ]
+  "signals": []
 }

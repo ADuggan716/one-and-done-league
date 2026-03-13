@@ -225,84 +225,18 @@
     }
   ],
   "whoGainedThisWeek": [],
-  "projections": [
-    {
-      "golfer": "Rory McIlroy",
-      "projectedEarnings": 640000,
-      "projectedDupCount": 1,
-      "futureValue": 700000,
-      "worldRank": 2,
-      "fedexPoints": 1110,
-      "seasonEarnings": 5480000,
-      "inNextTournament": true,
-      "historicalStrength": 0.96,
-      "courseHistoryScore": 0.84,
-      "last4Finishes": [
-        2,
-        7,
-        12,
-        4
-      ],
-      "sourceRefs": [
-        "Recent Form Feed",
-        "Course History Feed"
-      ]
-    },
-    {
-      "golfer": "Viktor Hovland",
-      "projectedEarnings": 510000,
-      "projectedDupCount": 0,
-      "futureValue": 400000,
-      "worldRank": 5,
-      "fedexPoints": 845,
-      "seasonEarnings": 3620000,
-      "inNextTournament": true,
-      "historicalStrength": 0.88,
-      "courseHistoryScore": 0.79,
-      "last4Finishes": [
-        14,
-        8,
-        10,
-        17
-      ],
-      "sourceRefs": [
-        "Recent Form Feed"
-      ]
-    },
-    {
-      "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 420000,
-      "projectedDupCount": 0,
-      "futureValue": 300000,
-      "worldRank": 8,
-      "fedexPoints": 640,
-      "seasonEarnings": 2800000,
-      "inNextTournament": true,
-      "historicalStrength": 0.8,
-      "courseHistoryScore": 0.74,
-      "last4Finishes": [
-        11,
-        19,
-        7,
-        22
-      ],
-      "sourceRefs": [
-        "Recent Form Feed",
-        "Course History Feed"
-      ]
-    }
-  ],
+  "projections": [],
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 1",
     "Splash parsed standings rows: 0",
     "Splash mapping: Andrew: rank=-, season=0, pick=Kim | Paul: rank=-, season=0, pick=- | Dakota: rank=-, season=0, pick=- | Mike: rank=-, season=0, pick=-",
-    "Recent Form Feed: 12 golfer signals loaded",
-    "Course History Feed: 12 golfer signals loaded"
+    "Recent Form Feed: skipped (missing env FORM_SOURCE_API_KEY)",
+    "Course History Feed: skipped (missing env COURSE_SOURCE_API_KEY)"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-12T13:22:43.645Z"
+  "updatedAt": "2026-03-13T18:01:53.874Z"
 }
