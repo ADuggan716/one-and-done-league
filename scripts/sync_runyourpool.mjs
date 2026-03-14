@@ -114,21 +114,31 @@ async function writeJson(relPath, payload) {
   await fs.writeFile(fullPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
 
+function dedupeEventsById(events) {
+  const byId = new Map();
+  for (const event of events || []) {
+    if (!event?.id && !event?.eventId) continue;
+    byId.set(event.id || event.eventId, event);
+  }
+  return [...byId.values()];
+}
+
 function buildLeagueSnapshot(normalized, config) {
-  const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
+  const dedupedEvents = dedupeEventsById(normalized.events);
+  const standings = computeSubgroupStandings(config.subgroupMembers, dedupedEvents);
   const latestRanks = new Map(
-    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
+    (dedupedEvents.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
   );
   const standingsWithLeagueRank = standings.map((row) => ({
     ...row,
     leagueRank: latestRanks.get(row.member) ?? null,
   }));
 
-  const weeklyComparison = buildWeeklyComparison(config.subgroupMembers, normalized.events);
+  const weeklyComparison = dedupeEventsById(buildWeeklyComparison(config.subgroupMembers, dedupedEvents));
   const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
 
   return {
-    event: normalized.events.at(-1) || null,
+    event: dedupedEvents.at(-1) || null,
     nextTournament: normalized.nextTournament || null,
     league: {
       ...normalized.league,

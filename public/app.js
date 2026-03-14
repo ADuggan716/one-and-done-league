@@ -160,16 +160,19 @@ function renderSeasonTable(snapshot) {
 
 function renderEventSelect(snapshot) {
   const select = document.getElementById("eventSelect");
-  const events = snapshot.weeklyComparison || [];
+  const events = dedupeEventsById(snapshot.weeklyComparison || []);
+  const liveEventId = snapshot.event?.countsTowardSeasonTotals === false ? snapshot.event?.id : null;
 
   if (!state.selectedEventId && events.length) {
-    state.selectedEventId = events.at(-1).eventId;
+    state.selectedEventId = liveEventId || events.at(-1).eventId;
   }
 
   select.innerHTML = events.map((event) => `<option value="${event.eventId}">${event.eventName}</option>`).join("");
 
   if (![...select.options].some((o) => o.value === state.selectedEventId) && select.options.length) {
-    state.selectedEventId = select.options[0].value;
+    state.selectedEventId = liveEventId && [...select.options].some((o) => o.value === liveEventId)
+      ? liveEventId
+      : select.options[0].value;
   }
 
   select.value = state.selectedEventId;
@@ -181,7 +184,7 @@ function renderEventSelect(snapshot) {
 
 function renderWeeklyTable(snapshot) {
   const table = document.getElementById("weeklyTable");
-  const event = (snapshot.weeklyComparison || []).find((e) => e.eventId === state.selectedEventId);
+  const event = dedupeEventsById(snapshot.weeklyComparison || []).find((e) => e.eventId === state.selectedEventId);
 
   if (!event) {
     table.innerHTML = "<tbody><tr><td>No event data found.</td></tr></tbody>";
@@ -218,9 +221,23 @@ function renderWeeklyTable(snapshot) {
   bindSort("weeklyTable", state.weeklySort, () => renderWeeklyTable(snapshot));
 }
 
+function dedupeEventsById(events) {
+  const byId = new Map();
+  for (const event of events || []) {
+    if (!event?.eventId) continue;
+    byId.set(event.eventId, event);
+  }
+  return [...byId.values()];
+}
+
 function renderSeasonWeeklyTable(snapshot) {
   const table = document.getElementById("seasonWeeklyTable");
-  const events = [...(snapshot.weeklyComparison || [])].filter((event) => event.countsTowardSeasonTotals !== false);
+  const currentEventId = snapshot.event?.id || null;
+  const isLiveCurrentEvent = snapshot.event?.countsTowardSeasonTotals === false;
+  const events = dedupeEventsById(snapshot.weeklyComparison || []).filter((event) => {
+    if (isLiveCurrentEvent && currentEventId && event.eventId === currentEventId) return false;
+    return true;
+  });
   events.sort((a, b) => String(a.startDate || "").localeCompare(String(b.startDate || "")));
 
   function parseFinishRank(finish) {
