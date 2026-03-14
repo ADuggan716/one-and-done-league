@@ -29,17 +29,17 @@ const root = path.resolve(__dirname, "..");
 const execFileAsync = promisify(execFile);
 
 async function captureChromeHtml(targetUrl) {
-  const targetPath = new URL(targetUrl).pathname;
+  const normalizedTargetUrl = String(targetUrl).trim();
   const lines = [
     "on run argv",
-    "set targetPath to item 1 of argv",
+    "set targetUrl to item 1 of argv",
     'tell application "Google Chrome"',
     'if not running then error "Google Chrome is not running."',
     "set targetTab to missing value",
     "repeat with w in windows",
     "repeat with t in tabs of w",
     "set tabUrl to URL of t as text",
-    "if tabUrl contains targetPath then",
+    "if tabUrl is targetUrl then",
     "set targetTab to t",
     "exit repeat",
     "end if",
@@ -47,7 +47,7 @@ async function captureChromeHtml(targetUrl) {
     "if targetTab is not missing value then exit repeat",
     "end repeat",
     "end tell",
-    "if targetTab is missing value then error \"No matching Chrome tab found for \" & targetPath & \". Open the Splash page in a normal Chrome tab first.\"",
+    "if targetTab is missing value then error \"No matching Chrome tab found for \" & targetUrl & \". Open the Splash page in a normal Chrome tab first.\"",
     "delay 1",
     'tell application "Google Chrome"',
     'return execute targetTab javascript "document.documentElement.outerHTML"',
@@ -55,7 +55,7 @@ async function captureChromeHtml(targetUrl) {
     "end run",
   ];
 
-  const args = lines.flatMap((line) => ["-e", line]).concat(targetPath);
+  const args = lines.flatMap((line) => ["-e", line]).concat(normalizedTargetUrl);
   const { stdout } = await execFileAsync("osascript", args);
   return stdout.trim();
 }
