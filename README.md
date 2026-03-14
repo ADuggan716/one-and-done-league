@@ -14,7 +14,7 @@ Use **GitHub Pages** for the public site. For Splash data refreshes, use your **
 - Public dashboard at `/`
 - Weekly pick support at `/private/`
 - Data auto-refreshes on:
-  - Thursday 9:00 AM ET (pick refresh)
+  - Thursday 8:00 AM ET (pick refresh)
   - Sunday 8:00 PM ET (results refresh)
 
 ### Step 1: Push this folder to GitHub
@@ -80,7 +80,7 @@ bash scripts/install_launchd.sh
 ```
 
 That installs a macOS `launchd` agent that runs:
-- Thursday at 9:00 AM local time
+- Thursday at 8:00 AM local time
 - Sunday at 8:00 PM local time
 
 Important:

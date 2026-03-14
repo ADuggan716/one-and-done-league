@@ -36,8 +36,8 @@ jobs:
           now = datetime.now(ZoneInfo("America/New_York"))
           event_name = os.environ.get("GITHUB_EVENT_NAME", "")
           force = os.environ.get("FORCE_RUN", "false").lower() == "true"
-          # Thursday 09:00 and Sunday 20:00 in New York local time.
-          should_window = (now.weekday() == 3 and now.hour == 9) or (now.weekday() == 6 and now.hour == 20)
+          # Thursday 08:00 and Sunday 20:00 in New York local time.
+          should_window = (now.weekday() == 3 and now.hour == 8) or (now.weekday() == 6 and now.hour == 20)
           should = force or event_name == "workflow_dispatch" or should_window
           with open(os.environ["GITHUB_OUTPUT"], "a", encoding="utf-8") as f:
             f.write(f"run={'true' if should else 'false'}\n")
@@ -49,7 +49,7 @@ jobs:
 
       - name: Stop if outside sync windows
         if: steps.window.outputs.run != 'true'
-        run: echo "Outside Thursday 9:00 AM / Sunday 8:00 PM ET sync windows."
+        run: echo "Outside Thursday 8:00 AM / Sunday 8:00 PM ET sync windows."
 
       - name: Create runtime config and cookie
         if: steps.window.outputs.run == 'true'
