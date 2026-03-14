@@ -12,7 +12,7 @@
         "member": "Andrew",
         "pick": "Si Woo Kim",
         "earnings": 58568,
-        "seasonEarnings": 1627095,
+        "seasonEarnings": 1568527,
         "finish": "51",
         "leagueRank": 78
       },
@@ -28,7 +28,7 @@
         "member": "Dakota",
         "pick": "Ludvig Aberg",
         "earnings": 4500000,
-        "seasonEarnings": 8324044,
+        "seasonEarnings": 3824044,
         "finish": "1",
         "leagueRank": 11
       },
@@ -36,7 +36,7 @@
         "member": "Mike",
         "pick": "Sepp Straka",
         "earnings": 906250,
-        "seasonEarnings": 2337505,
+        "seasonEarnings": 1431255,
         "finish": "6",
         "leagueRank": 91
       }
@@ -46,7 +46,7 @@
         "member": "Andrew",
         "golfer": "Si Woo Kim",
         "earnings": 58568,
-        "seasonEarnings": 1627095,
+        "seasonEarnings": 1568527,
         "finish": "51",
         "leagueRank": 78
       },
@@ -62,7 +62,7 @@
         "member": "Dakota",
         "golfer": "Ludvig Aberg",
         "earnings": 4500000,
-        "seasonEarnings": 8324044,
+        "seasonEarnings": 3824044,
         "finish": "1",
         "leagueRank": 11
       },
@@ -70,7 +70,7 @@
         "member": "Mike",
         "golfer": "Sepp Straka",
         "earnings": 906250,
-        "seasonEarnings": 2337505,
+        "seasonEarnings": 1431255,
         "finish": "6",
         "leagueRank": 91
       }
@@ -98,8 +98,16 @@
       "member": "Dakota",
       "seasonEarnings": 8324044,
       "weeklyEarnings": 4500000,
-      "avgEarnings": 832404.4,
+      "avgEarnings": 924893.7777777778,
       "lastFour": [
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 1800000,
+          "finish": "2",
+          "pick": "Rory McIlroy"
+        },
         {
           "eventId": "the-classic",
           "eventName": "The Classic",
@@ -115,14 +123,6 @@
           "earnings": 840000,
           "finish": "5",
           "pick": "Collin Morikawa"
-        },
-        {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "1",
-          "pick": "Ludvig Aberg"
         },
         {
           "eventId": "players-championship",
@@ -199,14 +199,6 @@
           "pick": "Collin Morikawa"
         },
         {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "1",
-          "pick": "Ludvig Aberg"
-        },
-        {
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
@@ -223,8 +215,16 @@
       "member": "Mike",
       "seasonEarnings": 2337505,
       "weeklyEarnings": 906250,
-      "avgEarnings": 233750.5,
+      "avgEarnings": 259722.77777777778,
       "lastFour": [
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler"
+        },
         {
           "eventId": "the-classic",
           "eventName": "The Classic",
@@ -240,14 +240,6 @@
           "earnings": 78000,
           "finish": "41",
           "pick": "Matthew Fitzpatrick"
-        },
-        {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Sepp Straka"
         },
         {
           "eventId": "players-championship",
@@ -324,14 +316,6 @@
           "pick": "Matthew Fitzpatrick"
         },
         {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Sepp Straka"
-        },
-        {
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
@@ -348,8 +332,16 @@
       "member": "Paul",
       "seasonEarnings": 1662175,
       "weeklyEarnings": 0,
-      "avgEarnings": 166217.5,
+      "avgEarnings": 184686.11111111112,
       "lastFour": [
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 319000,
+          "finish": "16",
+          "pick": "Samuel Stevens"
+        },
         {
           "eventId": "the-classic",
           "eventName": "The Classic",
@@ -365,14 +357,6 @@
           "earnings": 157000,
           "finish": "24",
           "pick": "Scottie Scheffler"
-        },
-        {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "123",
-          "pick": "Collin Morikawa"
         },
         {
           "eventId": "players-championship",
@@ -449,14 +433,6 @@
           "pick": "Scottie Scheffler"
         },
         {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "123",
-          "pick": "Collin Morikawa"
-        },
-        {
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
@@ -473,8 +449,16 @@
       "member": "Andrew",
       "seasonEarnings": 1627095,
       "weeklyEarnings": 58568,
-      "avgEarnings": 162709.5,
+      "avgEarnings": 180788.33333333334,
       "lastFour": [
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler"
+        },
         {
           "eventId": "the-classic",
           "eventName": "The Classic",
@@ -490,14 +474,6 @@
           "earnings": 78000,
           "finish": "41",
           "pick": "Hideki Matsuyama"
-        },
-        {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "51",
-          "pick": "Si Woo Kim"
         },
         {
           "eventId": "players-championship",
@@ -572,14 +548,6 @@
           "earnings": 78000,
           "finish": "41",
           "pick": "Hideki Matsuyama"
-        },
-        {
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "51",
-          "pick": "Si Woo Kim"
         },
         {
           "eventId": "players-championship",
@@ -1079,63 +1047,6 @@
       ]
     },
     {
-      "eventId": "players",
-      "eventName": "Players",
-      "tier": "regular",
-      "totalPurse": 0,
-      "firstPrize": 0,
-      "rows": [
-        {
-          "member": "Andrew",
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "51",
-          "pick": "Si Woo Kim",
-          "leagueRank": null
-        },
-        {
-          "member": "Dakota",
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "1",
-          "pick": "Ludvig Aberg",
-          "leagueRank": null
-        },
-        {
-          "member": "Mike",
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Sepp Straka",
-          "leagueRank": null
-        },
-        {
-          "member": "Paul",
-          "eventId": "players",
-          "eventName": "Players",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "123",
-          "pick": "Collin Morikawa",
-          "leagueRank": null
-        }
-      ]
-    },
-    {
       "eventId": "players-championship",
       "eventName": "Players Championship",
       "tier": "signature",
@@ -1212,5 +1123,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-14T02:41:37.157Z"
+  "updatedAt": "2026-03-14T03:00:37.147Z"
 }
