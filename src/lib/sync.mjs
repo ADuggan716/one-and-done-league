@@ -80,6 +80,15 @@ function matchMoneyLoose(text) {
   return 0;
 }
 
+function normalizeEventId(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
 function normalizeKey(value) {
   return String(value || "").trim().toLowerCase();
 }
@@ -175,6 +184,36 @@ function lookupEventMetadata(eventName) {
     };
   }
 
+  if (key === "att" || key === "attpebblebeachproam") {
+    return {
+      tier: "signature",
+      totalPurse: 20000000,
+      firstPrize: 3600000,
+      lastYearWinner: "Wyndham Clark",
+      sourceNotes: [],
+    };
+  }
+
+  if (key === "genesis" || key === "genesisinvitational") {
+    return {
+      tier: "signature",
+      totalPurse: 20000000,
+      firstPrize: 4000000,
+      lastYearWinner: "Hideki Matsuyama",
+      sourceNotes: [],
+    };
+  }
+
+  if (key === "arnoldpalmer" || key === "arnoldpalmerinvitational") {
+    return {
+      tier: "signature",
+      totalPurse: 20000000,
+      firstPrize: 4000000,
+      lastYearWinner: "Scottie Scheffler",
+      sourceNotes: [],
+    };
+  }
+
   return {
     tier: "regular",
     totalPurse: 0,
@@ -240,6 +279,52 @@ function extractTableById(html, tableId) {
   if (tableEnd === -1) return null;
 
   return html.slice(tableStart, tableEnd + 8);
+}
+
+function parsePickHistoryHtml(html, member) {
+  const tables = extractTables(html);
+  const targetTable = tables.find((table) => {
+    const rows = extractRows(table);
+    const headerCells = extractCells(rows[0]?.raw || "");
+    const lower = headerCells.map((c) => normalizeKey(c));
+    return lower.includes("tourney") && lower.includes("pick") && lower.includes("position") && lower.includes("winnings");
+  });
+
+  if (!targetTable) return [];
+
+  const rows = extractRows(targetTable);
+  const out = [];
+  let seenHeader = false;
+
+  for (const row of rows) {
+    const cells = extractCells(row.raw);
+    if (cells.length < 5) continue;
+
+    if (!seenHeader) {
+      const lower = cells.map((c) => normalizeKey(c));
+      if (lower.includes("tourney") && lower.includes("pick") && lower.includes("position") && lower.includes("winnings")) {
+        seenHeader = true;
+      }
+      continue;
+    }
+
+    const eventName = cells[0] || "";
+    const pick = cells[1] || null;
+    if (!eventName || !pick) continue;
+
+    out.push({
+      member,
+      eventId: normalizeEventId(eventName),
+      eventName,
+      pick,
+      finish: cells[2] || null,
+      earnings: matchMoneyLoose(cells[3]),
+      scoreToPar: cells[4] || null,
+      fedexPoints: cells[5] ? Number(String(cells[5]).replace(/,/g, "").trim()) || 0 : 0,
+    });
+  }
+
+  return out;
 }
 
 function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
@@ -459,6 +544,7 @@ export function parseSplashSportsHtml({
   standingsPath,
   subgroupMembers,
   memberAliases,
+  pickHistoryByMember = {},
   entriesHtml,
   standingsHtml = "",
 }) {
@@ -499,6 +585,9 @@ export function parseSplashSportsHtml({
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
+  const pickHistory = Object.fromEntries(
+    Object.entries(pickHistoryByMember || {}).map(([member, html]) => [member, parsePickHistoryHtml(html, member)])
+  );
 
   if (picks.length === 0 && standings.length === 0) {
     throw new SyncError(
@@ -515,6 +604,7 @@ export function parseSplashSportsHtml({
     leagueName,
     picks,
     standings,
+    pickHistory,
     subgroupMembers,
   });
 }
@@ -527,6 +617,7 @@ function buildSplashSnapshot({
   leagueName,
   picks,
   standings,
+  pickHistory = {},
   subgroupMembers,
 }) {
   const eventMeta = lookupEventMetadata(eventName);
@@ -549,6 +640,99 @@ function buildSplashSnapshot({
     (row) =>
       `${row.member}: rank=${row.leagueRank ?? "-"}, season=${Number(row.seasonEarnings || 0)}, pick=${row.golfer || "-"}, week=${Number(row.earnings || 0)}, finish=${row.finish ?? "-"}`
   );
+  const eventOrder = [];
+  const historicalByEvent = new Map();
+
+  for (const member of subgroupMembers) {
+    for (const row of pickHistory[member] || []) {
+      if (!historicalByEvent.has(row.eventId)) {
+        eventOrder.push(row.eventId);
+        const meta = lookupEventMetadata(row.eventName);
+        historicalByEvent.set(row.eventId, {
+          id: row.eventId,
+          name: row.eventName,
+          tier: meta.tier,
+          startDate: null,
+          isUpcoming: false,
+          totalPurse: meta.totalPurse,
+          firstPrize: meta.firstPrize,
+          subgroupResults: subgroupMembers.map((name) => ({
+            member: name,
+            pick: null,
+            earnings: 0,
+            seasonEarnings: 0,
+            finish: null,
+            leagueRank: null,
+          })),
+          picks: subgroupMembers.map((name) => ({
+            member: name,
+            golfer: null,
+            earnings: 0,
+            seasonEarnings: 0,
+            finish: null,
+            leagueRank: null,
+          })),
+        });
+      }
+
+      const event = historicalByEvent.get(row.eventId);
+      const result = event.subgroupResults.find((item) => item.member === member);
+      const pickResult = event.picks.find((item) => item.member === member);
+      Object.assign(result, {
+        pick: row.pick,
+        earnings: row.earnings,
+        finish: row.finish,
+      });
+      Object.assign(pickResult, {
+        golfer: row.pick,
+        earnings: row.earnings,
+        finish: row.finish,
+      });
+    }
+  }
+
+  const seasonEvents = eventOrder.map((id) => historicalByEvent.get(id)).filter(Boolean);
+  const currentEventId = normalizeEventId(eventName);
+  const currentEvent = {
+    id: currentEventId,
+    name: eventName,
+    tier: eventMeta.tier,
+    startDate: null,
+    isUpcoming: true,
+    totalPurse: eventMeta.totalPurse,
+    firstPrize: eventMeta.firstPrize,
+    subgroupResults: mergedPicks.map((pick) => ({
+      member: pick.member,
+      pick: pick.golfer,
+      earnings: pick.earnings,
+      seasonEarnings: pick.seasonEarnings,
+      finish: pick.finish,
+      leagueRank: pick.leagueRank,
+    })),
+    picks: mergedPicks,
+  };
+
+  let replacedCurrent = false;
+  const events = seasonEvents.map((event) => {
+    if (event.id !== currentEventId) return event;
+    replacedCurrent = true;
+    return currentEvent;
+  });
+  if (!replacedCurrent) {
+    events.push(currentEvent);
+  }
+
+  const seasonTotals = new Map(subgroupMembers.map((member) => [member, 0]));
+  for (const event of events) {
+    for (const row of event.subgroupResults) {
+      const next = seasonTotals.get(row.member) + Number(row.earnings || 0);
+      seasonTotals.set(row.member, next);
+      row.seasonEarnings = next;
+    }
+    for (const row of event.picks) {
+      row.seasonEarnings = seasonTotals.get(row.member) || 0;
+    }
+  }
 
   return {
     league: {
@@ -558,20 +742,9 @@ function buildSplashSnapshot({
       yourRank: mergedPicks.find((p) => p.member === "Andrew")?.leagueRank || 0,
       latestEventId: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
     },
-    events: [
-      {
-        id: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
-        name: eventName,
-        tier: eventMeta.tier,
-        startDate: null,
-        isUpcoming: true,
-        totalPurse: eventMeta.totalPurse,
-        firstPrize: eventMeta.firstPrize,
-        picks: mergedPicks,
-      },
-    ],
+    events,
     nextTournament: {
-      id: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      id: currentEventId,
       name: eventName,
       tier: eventMeta.tier,
       startDate: null,
@@ -585,6 +758,7 @@ function buildSplashSnapshot({
       `Splash standings source: ${standingsUrl}`,
       `Splash parsed picks: ${picks.length}`,
       `Splash parsed standings rows: ${standings.length}`,
+      `Splash parsed history rows: ${Object.values(pickHistory).reduce((sum, rows) => sum + rows.length, 0)}`,
       `Splash mapping: ${mappingDebug.join(" | ")}`,
       ...eventMeta.sourceNotes,
     ],

@@ -14,7 +14,6 @@ import {
   SyncError,
 } from "../src/lib/sync.mjs";
 import {
-  applyWeeklyPicks,
   buildWeeklyComparison,
   calculateWhoGainedThisWeek,
   computeLeaguePercentile,
@@ -65,15 +64,32 @@ async function fetchSplashFromChrome(config) {
   const baseUrl = config.splash.baseUrl;
   const entriesUrl = `${baseUrl.replace(/\/$/, "")}${config.splash.leaguePath}`;
   const standingsUrl = `${baseUrl.replace(/\/$/, "")}${config.splash.standingsPath}`;
+  const entryIds = config.entryIds || {};
 
   const [entriesHtml, standingsHtml] = await Promise.all([
     captureChromeHtml(entriesUrl),
     captureChromeHtml(standingsUrl),
   ]);
 
+  const pickHistoryEntries = await Promise.all(
+    Object.entries(entryIds).map(async ([member, entryId]) => {
+      const historyUrl = `${baseUrl.replace(/\/$/, "")}/Golf/PickX/modal/pickHistory.cfm?entryId=${entryId}`;
+      const html = await captureChromeHtml(historyUrl);
+      return [member, html];
+    })
+  );
+  const pickHistoryByMember = Object.fromEntries(pickHistoryEntries);
+
   await fs.mkdir(path.join(root, "logs"), { recursive: true });
   await fs.writeFile(path.join(root, "logs/chrome-splash-entries.html"), `${entriesHtml}\n`, "utf8");
   await fs.writeFile(path.join(root, "logs/chrome-splash-standings.html"), `${standingsHtml}\n`, "utf8");
+  for (const [member, html] of pickHistoryEntries) {
+    await fs.writeFile(
+      path.join(root, `logs/chrome-splash-history-${member.toLowerCase()}.html`),
+      `${html}\n`,
+      "utf8"
+    );
+  }
 
   return parseSplashSportsHtml({
     baseUrl: config.splash.baseUrl,
@@ -81,6 +97,7 @@ async function fetchSplashFromChrome(config) {
     standingsPath: config.splash.standingsPath,
     subgroupMembers: config.subgroupMembers,
     memberAliases: config.memberAliases || {},
+    pickHistoryByMember,
     entriesHtml,
     standingsHtml,
   });
@@ -98,51 +115,18 @@ async function writeJson(relPath, payload) {
 }
 
 function buildLeagueSnapshot(normalized, config) {
-  const isSplash = (config.provider || "splash") === "splash";
-  let standingsWithLeagueRank;
-
-  if (isSplash) {
-    const latestResults = normalized.events.at(-1)?.subgroupResults || [];
-    const rankByMember = new Map(latestResults.map((r) => [r.member, r.leagueRank ?? null]));
-    const seasonByMember = new Map(latestResults.map((r) => [r.member, Number(r.seasonEarnings || 0)]));
-
-    const rows = config.subgroupMembers.map((member) => ({
-      member,
-      seasonEarnings: seasonByMember.get(member) ?? 0,
-      weeklyEarnings: 0,
-      avgEarnings: 0,
-      lastFour: [],
-      history: [],
-      leagueRank: rankByMember.get(member) ?? null,
-    }));
-
-    rows.sort((a, b) => b.seasonEarnings - a.seasonEarnings || a.member.localeCompare(b.member));
-
-    let currentRank = 1;
-    let previousEarnings = null;
-    for (let i = 0; i < rows.length; i += 1) {
-      if (previousEarnings !== null && rows[i].seasonEarnings < previousEarnings) {
-        currentRank = i + 1;
-      }
-      rows[i].groupRank = currentRank;
-      previousEarnings = rows[i].seasonEarnings;
-    }
-
-    const leader = rows[0]?.seasonEarnings ?? 0;
-    standingsWithLeagueRank = rows.map((row) => ({
-      ...row,
-      toLeader: leader - row.seasonEarnings,
-    }));
-  } else {
-    const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
-    const latestRanks = new Map(
-      (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
-    );
-    standingsWithLeagueRank = standings.map((row) => ({
-      ...row,
-      leagueRank: latestRanks.get(row.member) ?? null,
-    }));
-  }
+  const standings = computeSubgroupStandings(config.subgroupMembers, normalized.events);
+  const latestRanks = new Map(
+    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
+  );
+  const latestSeason = new Map(
+    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, Number(r.seasonEarnings || 0)])
+  );
+  const standingsWithLeagueRank = standings.map((row) => ({
+    ...row,
+    seasonEarnings: latestSeason.get(row.member) ?? row.seasonEarnings,
+    leagueRank: latestRanks.get(row.member) ?? null,
+  }));
 
   const weeklyComparison = buildWeeklyComparison(config.subgroupMembers, normalized.events);
   const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
@@ -166,13 +150,15 @@ function buildLeagueSnapshot(normalized, config) {
 }
 
 function buildPlayerPool(normalized, config, currentPool) {
-  const updated = structuredClone(currentPool);
-  const latestPicks = Object.fromEntries(
-    (normalized.events.at(-1)?.subgroupResults || []).map((row) => [row.member, row.pick])
+  const allEventRows = normalized.events.flatMap((event) => event.subgroupResults || []);
+  const usedByMember = Object.fromEntries(
+    config.subgroupMembers.map((member) => [
+      member,
+      [...new Set(allEventRows.filter((row) => row.member === member).map((row) => row.pick).filter(Boolean))],
+    ])
   );
-  const applied = applyWeeklyPicks(updated, latestPicks);
 
-  const golfers = [...(normalized.projections || [])]
+  const projectedGolfers = [...(normalized.projections || [])]
     .map((p) => ({
       name: p.golfer,
       worldRank: Number(p.worldRank || 999),
@@ -180,8 +166,34 @@ function buildPlayerPool(normalized, config, currentPool) {
       seasonEarnings: Number(p.seasonEarnings || 0),
       inNextTournament: Boolean(p.inNextTournament),
     }))
+    .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name));
+  const usedGolfers = [...new Set(allEventRows.map((row) => row.pick).filter(Boolean))].map((name) => ({
+    name,
+    worldRank: 999,
+    fedexPoints: 0,
+    seasonEarnings: 0,
+    inNextTournament: false,
+  }));
+  const golferMap = new Map();
+  for (const golfer of [...projectedGolfers, ...usedGolfers]) {
+    if (!golferMap.has(golfer.name)) golferMap.set(golfer.name, golfer);
+  }
+  const golfers = [...golferMap.values()]
     .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name))
     .slice(0, 100);
+
+  const members = Object.fromEntries(
+    config.subgroupMembers.map((member) => {
+      const used = usedByMember[member] || [];
+      return [
+        member,
+        {
+          used,
+          available: golfers.map((golfer) => golfer.name).filter((name) => !used.includes(name)),
+        },
+      ];
+    })
+  );
 
   return {
     eventId: normalized.events.at(-1)?.id || null,
@@ -190,7 +202,7 @@ function buildPlayerPool(normalized, config, currentPool) {
       totalPurse: normalized.events.at(-1)?.totalPurse || 0,
       firstPrize: normalized.events.at(-1)?.firstPrize || 0,
     },
-    members: applied.members,
+    members,
     golfers,
     filters: {
       tiers: ["major", "signature", "regular"],
