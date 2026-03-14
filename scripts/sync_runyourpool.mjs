@@ -22,6 +22,8 @@ import {
 } from "../src/lib/scoring.mjs";
 import { generateRecommendations } from "../src/lib/recommendations.mjs";
 import { mergeSignals, readOnlineSignals } from "../src/lib/online_signals.mjs";
+import { buildPlayerPool } from "../src/lib/player_pool.mjs";
+import { fetchPgaTourTournamentField } from "../src/lib/pga_tour_field.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -103,12 +105,6 @@ async function fetchSplashFromChrome(config) {
   });
 }
 
-async function readJson(relPath) {
-  const fullPath = path.join(root, relPath);
-  const raw = await fs.readFile(fullPath, "utf8");
-  return JSON.parse(raw);
-}
-
 async function writeJson(relPath, payload) {
   const fullPath = path.join(root, relPath);
   await fs.writeFile(fullPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
@@ -155,81 +151,8 @@ function buildLeagueSnapshot(normalized, config) {
   };
 }
 
-function buildPlayerPool(normalized, config, currentPool) {
-  const allEventRows = normalized.events.flatMap((event) => event.subgroupResults || []);
-  const usedByMember = Object.fromEntries(
-    config.subgroupMembers.map((member) => [
-      member,
-      [...new Set(allEventRows.filter((row) => row.member === member).map((row) => row.pick).filter(Boolean))],
-    ])
-  );
-
-  const projectedGolfers = [...(normalized.projections || [])]
-    .map((p) => ({
-      name: p.golfer,
-      worldRank: Number(p.worldRank || 999),
-      fedexPoints: Number(p.fedexPoints || 0),
-      seasonEarnings: Number(p.seasonEarnings || 0),
-      inNextTournament: Boolean(p.inNextTournament),
-    }))
-    .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name));
-  const usedGolfers = [...new Set(allEventRows.map((row) => row.pick).filter(Boolean))].map((name) => ({
-    name,
-    worldRank: 999,
-    fedexPoints: 0,
-    seasonEarnings: 0,
-    inNextTournament: false,
-  }));
-  const golferMap = new Map();
-  for (const golfer of [...projectedGolfers, ...usedGolfers]) {
-    if (!golferMap.has(golfer.name)) golferMap.set(golfer.name, golfer);
-  }
-  const golfers = [...golferMap.values()]
-    .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name))
-    .slice(0, 50);
-
-  const members = Object.fromEntries(
-    config.subgroupMembers.map((member) => {
-      const used = usedByMember[member] || [];
-      return [
-        member,
-        {
-          used,
-          available: golfers.map((golfer) => golfer.name).filter((name) => !used.includes(name)),
-        },
-      ];
-    })
-  );
-
-  return {
-    eventId: normalized.events.at(-1)?.id || null,
-    eventTier: normalized.events.at(-1)?.tier || "regular",
-    currentEventMeta: {
-      totalPurse: normalized.events.at(-1)?.totalPurse || 0,
-      firstPrize: normalized.events.at(-1)?.firstPrize || 0,
-    },
-    members,
-    golfers,
-    filters: {
-      tiers: ["major", "signature", "regular"],
-    },
-    updatedAt: normalized.lastSyncedAt,
-  };
-}
-
 async function run() {
   const config = await readConfig(path.join(root, "config/config.json"));
-  let currentPool;
-  try {
-    currentPool = await readJson("data/player_pool.json");
-  } catch {
-    currentPool = {
-      members: Object.fromEntries(
-        (config.subgroupMembers || []).map((name) => [name, { used: [], available: [] }])
-      ),
-      golfers: [],
-    };
-  }
   const cookie = await loadCookie(path.join(root, config.cookiePath));
 
   let upstream;
@@ -276,8 +199,24 @@ async function run() {
   normalized.projections = mergedProjections;
   normalized.sourceNotes = sourceNotes;
 
+  let nextTournamentField = [];
+  try {
+    const field = await fetchPgaTourTournamentField(normalized.nextTournament?.name || normalized.events.at(-1)?.name);
+    nextTournamentField = field.playerNames;
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `PGA TOUR field source: ${field.fieldUrl}`,
+      `PGA TOUR field entries: ${field.playerNames.length}`,
+    ];
+  } catch (error) {
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `PGA TOUR field: failed (${error.message})`,
+    ];
+  }
+
   const snapshot = buildLeagueSnapshot(normalized, config);
-  const playerPool = buildPlayerPool(normalized, config, currentPool);
+  const playerPool = buildPlayerPool(normalized, config, { nextTournamentField });
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];
   const recommendations = {

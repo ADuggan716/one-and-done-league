@@ -17,6 +17,16 @@ function formatCurrency(value) {
   return new Intl.NumberFormat("en-US", { style: "currency", currency: "USD", maximumFractionDigits: 0 }).format(value || 0);
 }
 
+function normalizeGolferName(name) {
+  return String(name || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[.'’]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+}
+
 function sortComparator(sort) {
   return (a, b) => {
     const av = a[sort.key];
@@ -230,6 +240,16 @@ function dedupeEventsById(events) {
   return [...byId.values()];
 }
 
+function updateAvailabilityMatrixHeading(poolData) {
+  const heading = document.getElementById("availabilityMatrix")?.closest(".card")?.querySelector("h2");
+  if (!heading) return;
+  const tournamentName = poolData?.tournamentName || "TBD";
+  heading.textContent =
+    state.scope === "next"
+      ? `Availability Matrix - ${tournamentName}`
+      : "Availability Matrix - Top 50";
+}
+
 function renderSeasonWeeklyTable(snapshot) {
   const table = document.getElementById("seasonWeeklyTable");
   const currentEventId = snapshot.event?.id || null;
@@ -310,7 +330,8 @@ function buildAvailabilityRows(poolData) {
       const status = {};
       for (const member of MEMBERS) {
         const memberData = poolData.members?.[member] || { used: [], available: [] };
-        status[member] = memberData.used.includes(g.name) ? "Used" : "Avail";
+        const usedSet = new Set((memberData.used || []).map(normalizeGolferName));
+        status[member] = usedSet.has(normalizeGolferName(g.name)) ? "Used" : "Avail";
       }
       return {
         golfer: g.name,
@@ -326,6 +347,7 @@ function buildAvailabilityRows(poolData) {
 function renderAvailabilityMatrix(poolData) {
   const table = document.getElementById("availabilityMatrix");
   const rows = buildAvailabilityRows(poolData);
+  updateAvailabilityMatrixHeading(poolData);
 
   table.innerHTML = `
     <thead>

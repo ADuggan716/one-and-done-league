@@ -4,7 +4,7 @@ function clamp01(value) {
   return Math.max(0, Math.min(1, Number(value || 0)));
 }
 
-function normalizeGolferName(name) {
+export function normalizeGolferName(name) {
   return String(name || "")
     .normalize("NFKD")
     .replace(/[\u0300-\u036f]/g, "")
@@ -36,7 +36,7 @@ export function mergeSignals(baseProjections, signals) {
   for (const signal of signals) {
     const name = normalizeGolferName(signal.golfer);
     if (!name) continue;
-    const existing = map.get(name) || { golfer: name };
+    const existing = map.get(name) || { golfer: String(signal.golfer || "").trim() || name };
 
     const last4 = Array.isArray(signal.last4Finishes) ? signal.last4Finishes.map((f) => Number(f)).filter(Number.isFinite) : existing.last4Finishes;
 
@@ -58,6 +58,7 @@ export function mergeSignals(baseProjections, signals) {
           ? clamp01(signal.courseHistoryScore)
           : clamp01(existing.courseHistoryScore ?? 0.5),
       last4Finishes: last4 || [35, 28, 40, 22],
+      golfer: existing.golfer || String(signal.golfer || "").trim() || name,
       sourceRefs: [...new Set([...(existing.sourceRefs || []), ...(signal.sourceRefs || [])])],
     });
   }
