@@ -8,71 +8,140 @@
   "members": {
     "Andrew": {
       "used": [
-        "Scottie Scheffler",
+        "Daniel Berger",
+        "Ludvig Aberg",
+        "J.J. Spaun",
         "Collin Morikawa",
-        "Justin Thomas",
+        "Viktor Hovland",
+        "Scottie Scheffler",
         "Shane Lowry",
-        "Kim",
+        "Hideki Matsuyama",
         "Si Woo Kim"
       ],
       "available": [
-        "Rory McIlroy",
-        "Ludvig Aberg",
-        "Viktor Hovland",
-        "Patrick Cantlay",
-        "Tommy Fleetwood",
-        "Hideki Matsuyama"
+        "Sepp Straka"
       ]
     },
     "Paul": {
       "used": [
-        "Rory McIlroy",
-        "Tom Kim",
-        "Sungjae Im",
-        "Collin Morikawa"
+        "Daniel Berger",
+        "Ludvig Aberg",
+        "J.J. Spaun",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Scottie Scheffler",
+        "Shane Lowry",
+        "Hideki Matsuyama",
+        "Si Woo Kim"
       ],
       "available": [
-        "Scottie Scheffler",
-        "Ludvig Aberg",
-        "Viktor Hovland",
-        "Patrick Cantlay",
-        "Tommy Fleetwood",
-        "Hideki Matsuyama"
+        "Sepp Straka"
       ]
     },
     "Dakota": {
       "used": [
-        "Xander Schauffele",
+        "Daniel Berger",
+        "Ludvig Aberg",
+        "J.J. Spaun",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Scottie Scheffler",
+        "Shane Lowry",
         "Hideki Matsuyama",
-        "Wyndham Clark",
-        "Ludvig Aberg"
+        "Si Woo Kim"
       ],
       "available": [
-        "Scottie Scheffler",
-        "Rory McIlroy",
-        "Viktor Hovland",
-        "Patrick Cantlay",
-        "Tommy Fleetwood"
+        "Sepp Straka"
       ]
     },
     "Mike": {
       "used": [
+        "Daniel Berger",
         "Ludvig Aberg",
-        "Patrick Cantlay",
-        "Jordan Spieth",
-        "Sepp Straka"
-      ],
-      "available": [
-        "Scottie Scheffler",
-        "Rory McIlroy",
+        "J.J. Spaun",
         "Collin Morikawa",
         "Viktor Hovland",
-        "Tommy Fleetwood",
-        "Hideki Matsuyama"
-      ]
+        "Scottie Scheffler",
+        "Shane Lowry",
+        "Hideki Matsuyama",
+        "Si Woo Kim",
+        "Sepp Straka"
+      ],
+      "available": []
     }
   },
-  "golfers": [],
+  "golfers": [
+    {
+      "name": "Collin Morikawa",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Daniel Berger",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Hideki Matsuyama",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "J.J. Spaun",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Ludvig Aberg",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Scottie Scheffler",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Sepp Straka",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Shane Lowry",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Si Woo Kim",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Viktor Hovland",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    }
+  ],
   "filters": {
     "tiers": [
       "major",
@@ -80,5 +149,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-13T22:33:15.000Z"
+  "updatedAt": "2026-03-14T02:28:01.395Z"
 }
