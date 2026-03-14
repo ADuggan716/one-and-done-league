@@ -12,9 +12,9 @@
       {
         "member": "Andrew",
         "pick": "Si Woo Kim",
-        "earnings": 58568,
+        "earnings": 57625,
         "seasonEarnings": 1568527,
-        "finish": "51",
+        "finish": "52",
         "leagueRank": 78
       },
       {
@@ -46,9 +46,9 @@
       {
         "member": "Andrew",
         "golfer": "Si Woo Kim",
-        "earnings": 58568,
+        "earnings": 57625,
         "seasonEarnings": 1568527,
-        "finish": "51",
+        "finish": "52",
         "leagueRank": 78
       },
       {
@@ -84,13 +84,13 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 36",
-    "Splash mapping: Andrew: rank=78, season=1568527, pick=Si Woo Kim, week=58568, finish=51 | Paul: rank=72, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=3824044, pick=Ludvig Aberg, week=4500000, finish=1 | Mike: rank=91, season=1431255, pick=Sepp Straka, week=906250, finish=6",
+    "Splash mapping: Andrew: rank=78, season=1568527, pick=Si Woo Kim, week=57625, finish=52 | Paul: rank=72, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=3824044, pick=Ludvig Aberg, week=4500000, finish=1 | Mike: rank=91, season=1431255, pick=Sepp Straka, week=906250, finish=6",
     "Event metadata source: https://www.pgatour.com/tournaments/2025/the-players-championship/R20250112/overview",
     "Purse source: https://www.pgatour.com/article/news/latest/2025/03/10/purse-breakdown-prize-money-the-players-championship-tpc-sawgrass-scottie-scheffler?webview=1",
     "Recent Form Feed: skipped (missing env FORM_SOURCE_API_KEY)",
     "Course History Feed: skipped (missing env COURSE_SOURCE_API_KEY)"
   ],
-  "generatedAt": "2026-03-14T03:21:45.756Z",
+  "generatedAt": "2026-03-14T13:00:44.072Z",
   "primary": {
     "golfer": "Aaron Rai",
     "projectedEarnings": 250000,
