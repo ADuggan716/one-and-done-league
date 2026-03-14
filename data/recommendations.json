@@ -5,6 +5,7 @@
     "tier": "signature",
     "startDate": null,
     "isUpcoming": true,
+    "countsTowardSeasonTotals": false,
     "totalPurse": 25000000,
     "firstPrize": 4500000,
     "subgroupResults": [
@@ -89,7 +90,7 @@
     "Recent Form Feed: skipped (missing env FORM_SOURCE_API_KEY)",
     "Course History Feed: skipped (missing env COURSE_SOURCE_API_KEY)"
   ],
-  "generatedAt": "2026-03-14T03:00:37.149Z",
+  "generatedAt": "2026-03-14T03:21:45.756Z",
   "primary": {
     "golfer": "Aaron Rai",
     "projectedEarnings": 250000,
