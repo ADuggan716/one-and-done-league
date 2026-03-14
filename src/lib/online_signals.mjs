@@ -5,7 +5,13 @@ function clamp01(value) {
 }
 
 function normalizeGolferName(name) {
-  return String(name || "").trim();
+  return String(name || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[.'’]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
 }
 
 export async function fetchJson(url, headers = {}) {
@@ -14,6 +20,14 @@ export async function fetchJson(url, headers = {}) {
     throw new Error(`HTTP ${response.status} from ${url}`);
   }
   return response.json();
+}
+
+export async function fetchText(url, headers = {}) {
+  const response = await fetch(url, { headers });
+  if (!response.ok) {
+    throw new Error(`HTTP ${response.status} from ${url}`);
+  }
+  return response.text();
 }
 
 export function mergeSignals(baseProjections, signals) {
