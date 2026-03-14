@@ -61,13 +61,31 @@ tabButtons.forEach((btn) => {
 
 function renderNextTournament(snapshot) {
   const next = snapshot.nextTournament || snapshot.event || {};
+  const isLive =
+    snapshot.event &&
+    snapshot.event.id === next.id &&
+    snapshot.event.countsTowardSeasonTotals === false;
+  const cardTitle = isLive ? "Current Tournament" : "Next Tournament";
+  const kicker = isLive ? "Current Event" : "Upcoming Event";
+
+  const nextTournamentMount = document.getElementById("nextTournament");
+  const availabilityTournamentMount = document.getElementById("availabilityTournament");
+  const nextHeading = nextTournamentMount?.closest(".card")?.querySelector("h2");
+  const availabilityHeading = availabilityTournamentMount?.closest(".card")?.querySelector("h2");
+
+  if (nextHeading) nextHeading.textContent = cardTitle;
+  if (availabilityHeading) availabilityHeading.textContent = cardTitle;
+
   const html = `
     <div class="next-head">
       <div>
-        <p class="kicker">Upcoming Event</p>
+        <p class="kicker">${kicker}</p>
         <p class="event-title">${next.name || "TBD"}</p>
       </div>
-      <span class="tier-pill">${next.tier || "-"}</span>
+      <div class="event-pills">
+        ${isLive ? '<span class="live-pill">Live</span>' : ""}
+        <span class="tier-pill">${next.tier || "-"}</span>
+      </div>
     </div>
     <div class="next-grid">
       <div><span class="stat-label">Purse:</span><strong>${formatCurrency(next.totalPurse)}</strong></div>
@@ -76,8 +94,8 @@ function renderNextTournament(snapshot) {
     </div>
   `;
 
-  document.getElementById("nextTournament").innerHTML = html;
-  document.getElementById("availabilityTournament").innerHTML = html;
+  nextTournamentMount.innerHTML = html;
+  availabilityTournamentMount.innerHTML = html;
 }
 
 function renderUltimateChampionship(snapshot) {
@@ -202,7 +220,7 @@ function renderWeeklyTable(snapshot) {
 
 function renderSeasonWeeklyTable(snapshot) {
   const table = document.getElementById("seasonWeeklyTable");
-  const events = [...(snapshot.weeklyComparison || [])];
+  const events = [...(snapshot.weeklyComparison || [])].filter((event) => event.countsTowardSeasonTotals !== false);
   events.sort((a, b) => String(a.startDate || "").localeCompare(String(b.startDate || "")));
 
   function parseFinishRank(finish) {

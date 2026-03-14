@@ -119,12 +119,8 @@ function buildLeagueSnapshot(normalized, config) {
   const latestRanks = new Map(
     (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
   );
-  const latestSeason = new Map(
-    (normalized.events.at(-1)?.subgroupResults || []).map((r) => [r.member, Number(r.seasonEarnings || 0)])
-  );
   const standingsWithLeagueRank = standings.map((row) => ({
     ...row,
-    seasonEarnings: latestSeason.get(row.member) ?? row.seasonEarnings,
     leagueRank: latestRanks.get(row.member) ?? null,
   }));
 

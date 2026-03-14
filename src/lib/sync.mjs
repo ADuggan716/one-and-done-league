@@ -80,9 +80,22 @@ function matchMoneyLoose(text) {
   return 0;
 }
 
+function canonicalizeEventName(value) {
+  const raw = String(value || "").trim();
+  const key = normalizeCompact(raw);
+
+  if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
+    return "Players Championship";
+  }
+  if (key === "arnoldpalmer" || key === "arnoldpalmerinvitational") {
+    return "Arnold Palmer";
+  }
+
+  return raw;
+}
+
 function normalizeEventId(value) {
-  return String(value || "")
-    .trim()
+  return canonicalizeEventName(value)
     .toLowerCase()
     .replace(/&/g, "and")
     .replace(/[^a-z0-9]+/g, "-")
@@ -169,7 +182,7 @@ function parseLeagueNameFromHtml(html) {
 }
 
 function lookupEventMetadata(eventName) {
-  const key = normalizeCompact(eventName);
+  const key = normalizeCompact(canonicalizeEventName(eventName));
 
   if (key === "playerschampionship" || key === "theplayerschampionship") {
     return {
@@ -308,7 +321,7 @@ function parsePickHistoryHtml(html, member) {
       continue;
     }
 
-    const eventName = cells[0] || "";
+    const eventName = canonicalizeEventName(cells[0] || "");
     const pick = cells[1] || null;
     if (!eventName || !pick) continue;
 
@@ -620,9 +633,17 @@ function buildSplashSnapshot({
   pickHistory = {},
   subgroupMembers,
 }) {
-  const eventMeta = lookupEventMetadata(eventName);
+  const canonicalCurrentEventName = canonicalizeEventName(eventName);
+  const eventMeta = lookupEventMetadata(canonicalCurrentEventName);
   const standingsMap = new Map(standings.map((s) => [s.member, s]));
   const pickMap = new Map(picks.map((p) => [p.member, p]));
+  const nowEt = new Date(
+    new Date().toLocaleString("en-US", { timeZone: "America/New_York" })
+  );
+  const weekday = nowEt.getDay();
+  const minutes = nowEt.getHours() * 60 + nowEt.getMinutes();
+  const currentEventCountsTowardSeason =
+    weekday === 0 ? minutes >= 20 * 60 : weekday >= 1 && weekday <= 3;
 
   const mergedPicks = subgroupMembers.map((member) => {
     const p = pickMap.get(member) || {};
@@ -654,6 +675,7 @@ function buildSplashSnapshot({
           tier: meta.tier,
           startDate: null,
           isUpcoming: false,
+          countsTowardSeasonTotals: true,
           totalPurse: meta.totalPurse,
           firstPrize: meta.firstPrize,
           subgroupResults: subgroupMembers.map((name) => ({
@@ -692,13 +714,14 @@ function buildSplashSnapshot({
   }
 
   const seasonEvents = eventOrder.map((id) => historicalByEvent.get(id)).filter(Boolean);
-  const currentEventId = normalizeEventId(eventName);
+  const currentEventId = normalizeEventId(canonicalCurrentEventName);
   const currentEvent = {
     id: currentEventId,
-    name: eventName,
+    name: canonicalCurrentEventName,
     tier: eventMeta.tier,
     startDate: null,
     isUpcoming: true,
+    countsTowardSeasonTotals: currentEventCountsTowardSeason,
     totalPurse: eventMeta.totalPurse,
     firstPrize: eventMeta.firstPrize,
     subgroupResults: mergedPicks.map((pick) => ({
@@ -724,8 +747,9 @@ function buildSplashSnapshot({
 
   const seasonTotals = new Map(subgroupMembers.map((member) => [member, 0]));
   for (const event of events) {
+    const countsTowardSeasonTotals = event.countsTowardSeasonTotals !== false;
     for (const row of event.subgroupResults) {
-      const next = seasonTotals.get(row.member) + Number(row.earnings || 0);
+      const next = seasonTotals.get(row.member) + (countsTowardSeasonTotals ? Number(row.earnings || 0) : 0);
       seasonTotals.set(row.member, next);
       row.seasonEarnings = next;
     }
@@ -740,7 +764,7 @@ function buildSplashSnapshot({
       name: leagueName,
       totalEntrants: 150,
       yourRank: mergedPicks.find((p) => p.member === "Andrew")?.leagueRank || 0,
-      latestEventId: `${eventName.toLowerCase().replace(/[^a-z0-9]+/g, "-")}`,
+      latestEventId: currentEventId,
     },
     events,
     nextTournament: {
@@ -798,6 +822,7 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       tier: event.tier || "regular",
       startDate: event.startDate || null,
       isUpcoming: Boolean(event.isUpcoming),
+      countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
       totalPurse: money(event.totalPurse),
       firstPrize: money(event.firstPrize),
       subgroupResults,

@@ -6,34 +6,42 @@ export function money(value) {
 export function computeSubgroupStandings(subgroupMembers, eventHistory) {
   const totals = new Map();
   const byWeek = new Map();
+  const completedByWeek = new Map();
 
   for (const name of subgroupMembers) {
     totals.set(name, 0);
     byWeek.set(name, []);
+    completedByWeek.set(name, []);
   }
 
   for (const event of eventHistory) {
     const eventName = event.name || "Unknown Event";
     const eventResults = event.subgroupResults || [];
+    const countsTowardSeasonTotals = event.countsTowardSeasonTotals !== false;
 
     for (const member of subgroupMembers) {
       const result = eventResults.find((r) => r.member === member) || {};
       const earnings = money(result.earnings);
-      totals.set(member, totals.get(member) + earnings);
-      byWeek.get(member).push({
+      const week = {
         eventId: event.id,
         eventName,
         tier: event.tier || "regular",
         earnings,
         finish: result.finish ?? null,
         pick: result.pick ?? null,
-      });
+      };
+      byWeek.get(member).push(week);
+      if (countsTowardSeasonTotals) {
+        totals.set(member, totals.get(member) + earnings);
+        completedByWeek.get(member).push(week);
+      }
     }
   }
 
   const season = subgroupMembers.map((member) => {
     const total = totals.get(member);
-    const history = byWeek.get(member);
+    const history = completedByWeek.get(member);
+    const allHistory = byWeek.get(member);
     const lastWeek = history.at(-1)?.earnings ?? 0;
     const lastFour = history.slice(-4);
     const avgEarnings =
@@ -47,7 +55,7 @@ export function computeSubgroupStandings(subgroupMembers, eventHistory) {
       weeklyEarnings: lastWeek,
       avgEarnings,
       lastFour,
-      history,
+      history: allHistory,
     };
   });
 
@@ -115,6 +123,8 @@ export function buildWeeklyComparison(subgroupMembers, eventHistory) {
       eventId: event.id,
       eventName: event.name,
       tier: event.tier || "regular",
+      startDate: event.startDate || null,
+      countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
       totalPurse: money(event.totalPurse),
       firstPrize: money(event.firstPrize),
       rows,
