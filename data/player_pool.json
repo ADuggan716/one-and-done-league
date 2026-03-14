@@ -19,58 +19,136 @@
         "Si Woo Kim"
       ],
       "available": [
+        "Aaron Rai",
+        "Ben Griffin",
+        "Cameron Young",
+        "Jake Knapp",
+        "Justin Rose",
+        "Matthew Fitzpatrick",
+        "Maverick McNealy",
+        "Michael Thorbjornsen",
+        "Nicolai Hojgaard",
+        "Patrick Cantlay",
+        "Robert MacIntyre",
+        "Rory McIlroy",
+        "Russell Henley",
+        "Samuel Stevens",
         "Sepp Straka"
       ]
     },
     "Paul": {
       "used": [
-        "Daniel Berger",
+        "Maverick McNealy",
+        "Ben Griffin",
         "Ludvig Aberg",
-        "J.J. Spaun",
-        "Collin Morikawa",
-        "Viktor Hovland",
+        "Si Woo Kim",
+        "Jake Knapp",
+        "Samuel Stevens",
+        "Aaron Rai",
         "Scottie Scheffler",
-        "Shane Lowry",
-        "Hideki Matsuyama",
-        "Si Woo Kim"
+        "Collin Morikawa"
       ],
       "available": [
-        "Sepp Straka"
+        "Cameron Young",
+        "Daniel Berger",
+        "Hideki Matsuyama",
+        "J.J. Spaun",
+        "Justin Rose",
+        "Matthew Fitzpatrick",
+        "Michael Thorbjornsen",
+        "Nicolai Hojgaard",
+        "Patrick Cantlay",
+        "Robert MacIntyre",
+        "Rory McIlroy",
+        "Russell Henley",
+        "Sepp Straka",
+        "Shane Lowry",
+        "Viktor Hovland"
       ]
     },
     "Dakota": {
       "used": [
-        "Daniel Berger",
-        "Ludvig Aberg",
-        "J.J. Spaun",
+        "Aaron Rai",
+        "Si Woo Kim",
+        "Cameron Young",
+        "Maverick McNealy",
+        "Russell Henley",
+        "Rory McIlroy",
+        "Nicolai Hojgaard",
         "Collin Morikawa",
-        "Viktor Hovland",
-        "Scottie Scheffler",
-        "Shane Lowry",
-        "Hideki Matsuyama",
-        "Si Woo Kim"
+        "Ludvig Aberg"
       ],
       "available": [
-        "Sepp Straka"
+        "Ben Griffin",
+        "Daniel Berger",
+        "Hideki Matsuyama",
+        "J.J. Spaun",
+        "Jake Knapp",
+        "Justin Rose",
+        "Matthew Fitzpatrick",
+        "Michael Thorbjornsen",
+        "Patrick Cantlay",
+        "Robert MacIntyre",
+        "Samuel Stevens",
+        "Scottie Scheffler",
+        "Sepp Straka",
+        "Shane Lowry",
+        "Viktor Hovland"
       ]
     },
     "Mike": {
       "used": [
-        "Daniel Berger",
-        "Ludvig Aberg",
-        "J.J. Spaun",
-        "Collin Morikawa",
-        "Viktor Hovland",
+        "Robert MacIntyre",
+        "Patrick Cantlay",
+        "Nicolai Hojgaard",
+        "Maverick McNealy",
+        "Justin Rose",
         "Scottie Scheffler",
-        "Shane Lowry",
-        "Hideki Matsuyama",
-        "Si Woo Kim",
+        "Michael Thorbjornsen",
+        "Matthew Fitzpatrick",
         "Sepp Straka"
       ],
-      "available": []
+      "available": [
+        "Aaron Rai",
+        "Ben Griffin",
+        "Cameron Young",
+        "Collin Morikawa",
+        "Daniel Berger",
+        "Hideki Matsuyama",
+        "J.J. Spaun",
+        "Jake Knapp",
+        "Ludvig Aberg",
+        "Rory McIlroy",
+        "Russell Henley",
+        "Samuel Stevens",
+        "Shane Lowry",
+        "Si Woo Kim",
+        "Viktor Hovland"
+      ]
     }
   },
   "golfers": [
+    {
+      "name": "Aaron Rai",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Ben Griffin",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Cameron Young",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
     {
       "name": "Collin Morikawa",
       "worldRank": 999,
@@ -100,7 +178,84 @@
       "inNextTournament": false
     },
     {
+      "name": "Jake Knapp",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Justin Rose",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
       "name": "Ludvig Aberg",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Matthew Fitzpatrick",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Maverick McNealy",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Michael Thorbjornsen",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Nicolai Hojgaard",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Patrick Cantlay",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Robert MacIntyre",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Rory McIlroy",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Russell Henley",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false
+    },
+    {
+      "name": "Samuel Stevens",
       "worldRank": 999,
       "fedexPoints": 0,
       "seasonEarnings": 0,
@@ -149,5 +304,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-14T02:28:01.395Z"
+  "updatedAt": "2026-03-14T02:39:43.823Z"
 }
