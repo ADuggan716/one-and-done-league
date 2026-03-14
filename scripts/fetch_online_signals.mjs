@@ -13,6 +13,7 @@ const execFileAsync = promisify(execFile);
 
 const PGA_FEDEX_URL = "https://www.pgatour.com/fedexcup/standings.html";
 const PGA_MONEY_URL = "https://www.pgatour.com/stats/money-finishes";
+const PGA_MONEY_DETAIL_URL = "https://www.pgatour.com/stats/detail/109";
 const OWGR_URL = "https://www.owgr.com/current-world-ranking";
 
 function normalizeName(name) {
@@ -39,7 +40,7 @@ function parseNumber(value) {
 
 function mergeSignalRow(map, golfer, patch, sourceName) {
   const key = normalizeName(golfer);
-  if (!key) return;
+  if (!key || !/[a-z]/.test(key)) return;
   const existing = map.get(key) || {
     golfer: String(golfer || "").trim(),
     sourceRefs: [],
@@ -81,13 +82,39 @@ function parseMoneySignals(html) {
   const moneyQuery = queries
     .map((query) => query?.state?.data)
     .find((payload) => payload?.statCategory === "MONEY_FINISHES");
-  const stats = moneyQuery?.subCategories?.find((sub) => sub?.subCategoryName === "Money")?.stats || [];
+  const stats = (moneyQuery?.subCategories || []).flatMap((sub) => sub?.stats || []);
   return stats
     .filter((row) => row?.statTitle === "Official Money")
     .map((row) => ({
       golfer: row.playerName,
       seasonEarnings: parseMoney(row.statValue),
     }));
+}
+
+function parseMoneySignalsFromTable(rows) {
+  const headerIndex = rows.findIndex(
+    (row) =>
+      row.some((cell) => /player|name/i.test(cell)) &&
+      row.some((cell) => /official money|money/i.test(cell))
+  );
+  if (headerIndex === -1) {
+    throw new Error("Money: leaderboard header row not found");
+  }
+
+  const header = rows[headerIndex];
+  const nameIndex = header.findIndex((cell) => /player|name/i.test(cell));
+  const moneyIndex = header.findIndex((cell) => /official money|money/i.test(cell));
+  if (nameIndex === -1 || moneyIndex === -1) {
+    throw new Error("Money: player/money columns not found");
+  }
+
+  return rows
+    .slice(headerIndex + 1)
+    .map((row) => ({
+      golfer: row[nameIndex],
+      seasonEarnings: parseMoney(row[moneyIndex]),
+    }))
+    .filter((row) => row.golfer && /[A-Za-z]/.test(row.golfer));
 }
 
 async function captureChromeTableRows(targetUrl) {
@@ -117,7 +144,7 @@ async function captureChromeTableRows(targetUrl) {
     "end tell",
     "delay 5",
     'tell application "Google Chrome"',
-    'return execute targetTab javascript "(function(){ function cellText(el){ return (el.innerText || el.textContent || \\\"\\\").trim().replace(/\\\\s+/g, \\\" \\\"); } function collect(selector,rowSelector,cellSelector){ const host=document.querySelector(selector); if(!host) return []; return Array.from(host.querySelectorAll(rowSelector)).map(function(row){ return Array.from(row.querySelectorAll(cellSelector)).map(cellText).filter(Boolean); }).filter(function(cells){ return cells.length >= 4; }); } let rows = collect(\\\"table\\\", \\\"tr\\\", \\\"th,td\\\"); if (!rows.length) { rows = Array.from(document.querySelectorAll(\\\"[role=row]\\\")).map(function(row){ return Array.from(row.querySelectorAll(\\\"[role=cell],[role=columnheader],div,span\\\")).map(cellText).filter(Boolean); }).filter(function(cells){ return cells.length >= 4; }); } return JSON.stringify(rows); })()"',
+    'return execute targetTab javascript "(function(){ function cellText(el){ return (el.innerText || el.textContent || \\\"\\\").trim().replace(/\\\\s+/g, \\\" \\\"); } function collectTableRows(){ return Array.from(document.querySelectorAll(\\\"table tr\\\")).map(function(row){ return Array.from(row.children).filter(function(cell){ return cell.tagName === \\\"TH\\\" || cell.tagName === \\\"TD\\\"; }).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } function collectRoleRows(){ return Array.from(document.querySelectorAll(\\\"[role=row]\\\")).map(function(row){ return Array.from(row.querySelectorAll(\\\"[role=cell],[role=columnheader]\\\")).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } var rows = collectTableRows(); if (!rows.length) rows = collectRoleRows(); return JSON.stringify(rows); })()"',
     "end tell",
     "end run",
   ];
@@ -133,9 +160,32 @@ function parseOwgrSignals(rows) {
   }
 
   const header = rows[headerIndex];
-  const rankIndex = header.findIndex((cell) => /ranking/i.test(cell));
-  const nameIndex = header.findIndex((cell) => /name/i.test(cell));
-  const avgPointsIndex = header.findIndex((cell) => /average points/i.test(cell));
+  const dataRows = rows
+    .slice(headerIndex + 1)
+    .filter((row) => row.some((cell) => cell && cell.trim()))
+    .slice(0, 25);
+
+  const inferIndex = (predicate, fallback = -1) => {
+    const explicit = header.findIndex(predicate);
+    if (explicit !== -1) return explicit;
+    return fallback;
+  };
+
+  const columnStats = Array.from({ length: Math.max(...dataRows.map((row) => row.length), header.length) }, (_, index) => {
+    const samples = dataRows.map((row) => row[index] || "");
+    const positiveInts = samples.filter((value) => /^\d+$/.test(value) && Number(value) > 0).length;
+    const alpha = samples.filter((value) => /[A-Za-z]/.test(value) && !/^[\d.\-]+$/.test(value)).length;
+    const decimals = samples.filter((value) => /^\d+(\.\d+)?$/.test(value)).length;
+    return { index, positiveInts, alpha, decimals };
+  });
+
+  const rankFallback = [...columnStats].sort((a, b) => b.positiveInts - a.positiveInts)[0]?.index ?? -1;
+  const nameFallback = [...columnStats].sort((a, b) => b.alpha - a.alpha)[0]?.index ?? -1;
+  const avgFallback = [...columnStats].sort((a, b) => b.decimals - a.decimals)[0]?.index ?? -1;
+
+  const rankIndex = inferIndex((cell) => /this week|current|world ranking|^rank$/i.test(cell), rankFallback);
+  const nameIndex = inferIndex((cell) => /^name$|player/i.test(cell), nameFallback);
+  const avgPointsIndex = inferIndex((cell) => /average points/i.test(cell), avgFallback);
   if (rankIndex === -1 || nameIndex === -1) {
     throw new Error("OWGR: rank/name columns not found");
   }
@@ -145,6 +195,8 @@ function parseOwgrSignals(rows) {
     const rank = parseNumber(row[rankIndex]);
     const name = row[nameIndex];
     if (!rank || !name) continue;
+    if (rank <= 0 || !Number.isInteger(rank) || rank > 500) continue;
+    if (!/[A-Za-z]/.test(name) || /^[\d.\-]+$/.test(name)) continue;
     parsed.push({
       golfer: name,
       worldRank: rank,
@@ -175,7 +227,11 @@ async function main() {
       "User-Agent": "Mozilla/5.0",
       Accept: "text/html,application/xhtml+xml",
     });
-    const rows = parseMoneySignals(html);
+    let rows = parseMoneySignals(html);
+    if (rows.length < 50) {
+      const tableRows = await captureChromeTableRows(PGA_MONEY_DETAIL_URL);
+      rows = parseMoneySignalsFromTable(tableRows);
+    }
     for (const row of rows) mergeSignalRow(signalMap, row.golfer, row, "PGA TOUR Official Money");
     sourceNotes.push(`PGA TOUR Official Money: ${rows.length} golfer records loaded`);
   } catch (error) {

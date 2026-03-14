@@ -186,7 +186,7 @@ function buildPlayerPool(normalized, config, currentPool) {
   }
   const golfers = [...golferMap.values()]
     .sort((a, b) => a.worldRank - b.worldRank || a.name.localeCompare(b.name))
-    .slice(0, 100);
+    .slice(0, 50);
 
   const members = Object.fromEntries(
     config.subgroupMembers.map((member) => {
