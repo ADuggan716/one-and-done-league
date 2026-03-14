@@ -87,16 +87,21 @@
     "Splash mapping: Andrew: rank=78, season=1568527, pick=Si Woo Kim, week=57625, finish=52 | Paul: rank=72, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=3824044, pick=Ludvig Aberg, week=4500000, finish=1 | Mike: rank=91, season=1431255, pick=Sepp Straka, week=906250, finish=6",
     "Event metadata source: https://www.pgatour.com/tournaments/2025/the-players-championship/R20250112/overview",
     "Purse source: https://www.pgatour.com/article/news/latest/2025/03/10/purse-breakdown-prize-money-the-players-championship-tpc-sawgrass-scottie-scheffler?webview=1",
-    "Recent Form Feed: skipped (missing env FORM_SOURCE_API_KEY)",
-    "Course History Feed: skipped (missing env COURSE_SOURCE_API_KEY)"
+    "PGA TOUR FedExCup: 191 golfer records loaded",
+    "PGA TOUR Official Money: 1 golfer records loaded",
+    "OWGR: 100 golfer records loaded"
   ],
-  "generatedAt": "2026-03-14T13:00:44.072Z",
+  "generatedAt": "2026-03-14T15:06:19.703Z",
   "primary": {
-    "golfer": "Aaron Rai",
-    "projectedEarnings": 250000,
+    "golfer": "14793",
+    "projectedEarnings": 0,
     "projectedDupCount": 1,
     "futureValue": 250000,
-    "historicalStrength": 0.5,
+    "worldRank": -85,
+    "fedexPoints": 0,
+    "seasonEarnings": 0,
+    "inNextTournament": false,
+    "historicalStrength": 1,
     "courseHistoryScore": 0.5,
     "last4Finishes": [
       35,
@@ -104,28 +109,35 @@
       40,
       22
     ],
-    "score": 0.46875,
-    "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+    "sourceRefs": [
+      "OWGR"
+    ],
+    "score": 0.49375,
+    "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
     "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
     "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
     "rationale": {
-      "expected": 0.07142857142857142,
+      "expected": 0,
       "uniqueness": 0.6666666666666667,
       "futureCost": 0.125,
       "recentForm": 0.6875,
-      "historicalStrength": 0.5,
+      "historicalStrength": 1,
       "courseHistory": 0.5,
       "preservePenalty": 0,
-      "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
     }
   },
   "alternates": [
     {
-      "golfer": "Ben Griffin",
-      "projectedEarnings": 250000,
+      "golfer": "15368",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -78,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -133,27 +145,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Cameron Young",
-      "projectedEarnings": 250000,
+      "golfer": "15790",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -74,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -161,27 +180,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Jake Knapp",
-      "projectedEarnings": 250000,
+      "golfer": "15907",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -73,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -189,27 +215,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Justin Rose",
-      "projectedEarnings": 250000,
+      "golfer": "19003",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -57,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -217,29 +250,36 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     }
   ],
   "scored": [
     {
-      "golfer": "Aaron Rai",
-      "projectedEarnings": 250000,
+      "golfer": "14793",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -85,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -247,27 +287,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Ben Griffin",
-      "projectedEarnings": 250000,
+      "golfer": "15368",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -78,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -275,27 +322,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Cameron Young",
-      "projectedEarnings": 250000,
+      "golfer": "15790",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -74,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -303,27 +357,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Jake Knapp",
-      "projectedEarnings": 250000,
+      "golfer": "15907",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -73,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -331,27 +392,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Justin Rose",
-      "projectedEarnings": 250000,
+      "golfer": "19003",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -57,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -359,27 +427,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Matthew Fitzpatrick",
-      "projectedEarnings": 250000,
+      "golfer": "20992",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -45,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -387,27 +462,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Maverick McNealy",
-      "projectedEarnings": 250000,
+      "golfer": "21165",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -44,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -415,27 +497,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Michael Thorbjornsen",
-      "projectedEarnings": 250000,
+      "golfer": "28741",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -28,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -443,27 +532,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Nicolai Hojgaard",
-      "projectedEarnings": 250000,
+      "golfer": "38433",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -14,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -471,27 +567,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Patrick Cantlay",
-      "projectedEarnings": 250000,
+      "golfer": "41038",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -12,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -499,27 +602,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Robert MacIntyre",
-      "projectedEarnings": 250000,
+      "golfer": "41313",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -10,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -527,27 +637,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Rory McIlroy",
-      "projectedEarnings": 250000,
+      "golfer": "42487",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -8,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -555,27 +672,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Russell Henley",
-      "projectedEarnings": 250000,
+      "golfer": "52439",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -3,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -583,27 +707,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Samuel Stevens",
-      "projectedEarnings": 250000,
+      "golfer": "85323",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -2,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -611,27 +742,34 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Sepp Straka",
-      "projectedEarnings": 250000,
+      "golfer": "158676",
+      "projectedEarnings": 0,
       "projectedDupCount": 1,
       "futureValue": 250000,
-      "historicalStrength": 0.5,
+      "worldRank": -1,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -639,19 +777,2997 @@
         40,
         22
       ],
-      "score": 0.46875,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "rationale": {
-        "expected": 0.07142857142857142,
+        "expected": 0,
         "uniqueness": 0.6666666666666667,
         "futureCost": 0.125,
         "recentForm": 0.6875,
-        "historicalStrength": 0.5,
+        "historicalStrength": 1,
         "courseHistory": 0.5,
         "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "50176",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 4,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "48501",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 5,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "46534",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 6,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "45969",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 7,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "41908",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 9,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "41190",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 11,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "40431",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 13,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "36162",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 15,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "36056",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 16,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "35830",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 17,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "35188",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 18,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "34501",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 19,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "34269",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 20,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "34169",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 21,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "33054",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 22,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "31541",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 23,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "30606",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 24,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "29589",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 25,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "28979",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 26,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "28959",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 27,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "28436",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 29,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "27543",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 30,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "27184",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 31,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "26314",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 32,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "25424",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 33,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "25078",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 34,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "24802",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 35,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "24794",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 36,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "24474",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 37,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "23672",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 38,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "21956",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 39,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "21929",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 40,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "21708",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 41,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "21595",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 42,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "21357",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 43,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20811",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 46,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20757",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 47,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20481",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 48,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20457",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 49,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20454",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 50,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20268",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 51,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "20036",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 52,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "19658",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 53,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "19639",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 54,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "19606",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 55,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "19024",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 56,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "18898",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 58,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "18873",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 59,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "18410",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 60,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "18266",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 61,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "17782",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 62,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "17654",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 63,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "17019",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 64,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16986",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 65,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16709",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 66,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16704",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 67,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16594",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 68,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16484",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 69,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16482",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 70,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16108",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 71,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "16053",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 72,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15760",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 75,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15569",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 76,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15537",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 77,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15351",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 79,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15202",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 80,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15141",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 81,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "15056",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 82,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14826",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 83,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14802",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 84,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14657",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 86,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14572",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 87,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14514",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 88,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14436",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 89,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14354",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 90,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14254",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 91,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14251",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 92,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14133",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 93,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14093",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 94,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "14080",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 95,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "13999",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 96,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "13827",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 97,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "13597",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 98,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "13490",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 99,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "13351",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 100,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 1,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR"
+      ],
+      "score": 0.49375,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 1,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 1.00. Course history score: 0.50."
       }
     }
   ],
