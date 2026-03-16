@@ -226,6 +226,27 @@ tr:hover td {
   background: linear-gradient(90deg, #f4fbfb, #faffff);
 }
 
+.sticky-col {
+  position: sticky;
+  left: 0;
+}
+
+.sticky-col-head {
+  background: #ecf5f6;
+  z-index: 3;
+  box-shadow: 10px 0 14px -14px rgba(26, 39, 51, 0.28);
+}
+
+.sticky-col-body {
+  background: #fff;
+  z-index: 2;
+  box-shadow: 10px 0 14px -14px rgba(26, 39, 51, 0.22);
+}
+
+tr:hover .sticky-col-body {
+  background: linear-gradient(90deg, #f4fbfb, #faffff);
+}
+
 th button {
   border: none;
   background: transparent;
@@ -237,6 +258,12 @@ th button {
 
 .event-cell {
   min-width: 190px;
+}
+
+.compact-event-col {
+  width: 132px;
+  min-width: 132px;
+  max-width: 132px;
 }
 
 .event-sub {
@@ -288,6 +315,30 @@ th button {
 
 #seasonWeeklyTable {
   min-width: 980px;
+}
+
+#seasonTable,
+#weeklyTable,
+#availabilityMatrix {
+  min-width: max-content;
+}
+
+#availabilityMatrix .sticky-col-body,
+#availabilityMatrix .sticky-col-head {
+  min-width: 168px;
+}
+
+#seasonTable .sticky-col-body,
+#seasonTable .sticky-col-head,
+#weeklyTable .sticky-col-body,
+#weeklyTable .sticky-col-head {
+  min-width: 120px;
+}
+
+#seasonWeeklyTable .event-cell strong {
+  display: block;
+  white-space: normal;
+  line-height: 1.2;
 }
 
 .stat-label {
@@ -427,5 +478,16 @@ th button {
 
   .card {
     padding: 14px;
+  }
+
+  .compact-event-col {
+    width: 114px;
+    min-width: 114px;
+    max-width: 114px;
+  }
+
+  #availabilityMatrix .sticky-col-body,
+  #availabilityMatrix .sticky-col-head {
+    min-width: 148px;
   }
 }

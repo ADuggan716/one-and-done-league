@@ -139,7 +139,7 @@ function renderSeasonTable(snapshot) {
   table.innerHTML = `
     <thead>
       <tr>
-        <th>${sortHeader("Member", "member", state.seasonSort)}</th>
+        <th class="sticky-col sticky-col-head">${sortHeader("Member", "member", state.seasonSort)}</th>
         <th>${sortHeader("League Rank", "leagueRank", state.seasonSort)}</th>
         <th>${sortHeader("Group Rank", "groupRank", state.seasonSort)}</th>
         <th>${sortHeader("Season Earnings", "seasonEarnings", state.seasonSort)}</th>
@@ -152,7 +152,7 @@ function renderSeasonTable(snapshot) {
         .map(
           (row) => `
         <tr>
-          <td>${row.member}</td>
+          <td class="sticky-col sticky-col-body">${row.member}</td>
           <td>${row.leagueRank ?? "-"}</td>
           <td>${row.groupRank}</td>
           <td>${formatCurrency(row.seasonEarnings)}</td>
@@ -206,7 +206,7 @@ function renderWeeklyTable(snapshot) {
   table.innerHTML = `
     <thead>
       <tr>
-        <th>${sortHeader("Member", "member", state.weeklySort)}</th>
+        <th class="sticky-col sticky-col-head">${sortHeader("Member", "member", state.weeklySort)}</th>
         <th>${sortHeader("Pick", "pick", state.weeklySort)}</th>
         <th>${sortHeader("Finish", "finish", state.weeklySort)}</th>
         <th>${sortHeader("Earnings", "earnings", state.weeklySort)}</th>
@@ -217,7 +217,7 @@ function renderWeeklyTable(snapshot) {
         .map(
           (row) => `
         <tr>
-          <td>${row.member}</td>
+          <td class="sticky-col sticky-col-body">${row.member}</td>
           <td>${row.pick || ""}</td>
           <td>${row.finish ?? ""}</td>
           <td>${row.earnings ? formatCurrency(row.earnings) : ""}</td>
@@ -284,7 +284,7 @@ function renderSeasonWeeklyTable(snapshot) {
   table.innerHTML = `
     <thead>
       <tr>
-        <th>Tournament</th>
+        <th class="sticky-col sticky-col-head compact-event-col">Tournament</th>
         ${MEMBERS.map((m) => `<th>${m}</th>`).join("")}
       </tr>
     </thead>
@@ -293,7 +293,7 @@ function renderSeasonWeeklyTable(snapshot) {
         .map(
           (event) => `
         <tr>
-          <td class="event-cell">
+          <td class="event-cell sticky-col sticky-col-body compact-event-col">
             <strong>${event.eventName}</strong>
             <div class="event-sub">${event.startDate || ""}</div>
           </td>
@@ -352,7 +352,7 @@ function renderAvailabilityMatrix(poolData) {
   table.innerHTML = `
     <thead>
       <tr>
-        <th>${sortHeader("Golfer", "golfer", state.availabilitySort)}</th>
+        <th class="sticky-col sticky-col-head">${sortHeader("Golfer", "golfer", state.availabilitySort)}</th>
         <th>${sortHeader("World Golf Rank", "worldRank", state.availabilitySort)}</th>
         <th>${sortHeader("FedEx Points", "fedexPoints", state.availabilitySort)}</th>
         <th>${sortHeader("Season Earnings", "seasonEarnings", state.availabilitySort)}</th>
@@ -364,7 +364,7 @@ function renderAvailabilityMatrix(poolData) {
         .map(
           (row) => `
         <tr>
-          <td>${row.golfer}</td>
+          <td class="sticky-col sticky-col-body">${row.golfer}</td>
           <td>${row.worldRank}</td>
           <td>${row.fedexPoints}</td>
           <td>${formatCurrency(row.seasonEarnings)}</td>
