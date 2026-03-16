@@ -23,7 +23,11 @@ import {
 import { generateRecommendations } from "../src/lib/recommendations.mjs";
 import { mergeSignals, readOnlineSignals } from "../src/lib/online_signals.mjs";
 import { buildPlayerPool } from "../src/lib/player_pool.mjs";
-import { fetchPgaTourTournamentField } from "../src/lib/pga_tour_field.mjs";
+import {
+  fetchPgaTourSchedule,
+  fetchPgaTourTournamentField,
+  resolveNextTournamentFromSchedule,
+} from "../src/lib/pga_tour_field.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -198,6 +202,27 @@ async function run() {
 
   normalized.projections = mergedProjections;
   normalized.sourceNotes = sourceNotes;
+
+  try {
+    const upstreamEventName = normalized.nextTournament?.name || normalized.events.at(-1)?.name;
+    const tournaments = await fetchPgaTourSchedule();
+    normalized.nextTournament = resolveNextTournamentFromSchedule(
+      tournaments,
+      upstreamEventName,
+      {
+        currentEventCompleted: normalized.events.at(-1)?.countsTowardSeasonTotals !== false,
+      }
+    );
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `PGA TOUR schedule resolved next tournament: ${normalized.nextTournament.name}`,
+    ];
+  } catch (error) {
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `PGA TOUR schedule: failed (${error.message})`,
+    ];
+  }
 
   let nextTournamentField = [];
   try {

@@ -1,79 +1,79 @@
 {
   "event": {
-    "id": "players-championship",
-    "name": "Players Championship",
-    "tier": "signature",
+    "id": "current-tournament",
+    "name": "Current Tournament",
+    "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
     "countsTowardSeasonTotals": true,
-    "totalPurse": 25000000,
-    "firstPrize": 4500000,
+    "totalPurse": 0,
+    "firstPrize": 0,
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": "Si Woo Kim",
-        "earnings": 61083,
-        "seasonEarnings": 1629610,
-        "finish": "50",
-        "leagueRank": 101
+        "pick": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Paul",
-        "pick": "Collin Morikawa",
+        "pick": null,
         "earnings": 0,
-        "seasonEarnings": 1662175,
-        "finish": "123",
-        "leagueRank": 96
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Dakota",
-        "pick": "Ludvig Aberg",
-        "earnings": 925000,
-        "seasonEarnings": 4749044,
-        "finish": "5",
-        "leagueRank": 11
+        "pick": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Mike",
-        "pick": "Sepp Straka",
-        "earnings": 731250,
-        "seasonEarnings": 2162505,
-        "finish": "8",
-        "leagueRank": 64
+        "pick": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": "Si Woo Kim",
-        "earnings": 61083,
-        "seasonEarnings": 1629610,
-        "finish": "50",
-        "leagueRank": 101
+        "golfer": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Paul",
-        "golfer": "Collin Morikawa",
+        "golfer": null,
         "earnings": 0,
-        "seasonEarnings": 1662175,
-        "finish": "123",
-        "leagueRank": 96
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Dakota",
-        "golfer": "Ludvig Aberg",
-        "earnings": 925000,
-        "seasonEarnings": 4749044,
-        "finish": "5",
-        "leagueRank": 11
+        "golfer": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       },
       {
         "member": "Mike",
-        "golfer": "Sepp Straka",
-        "earnings": 731250,
-        "seasonEarnings": 2162505,
-        "finish": "8",
-        "leagueRank": 64
+        "golfer": null,
+        "earnings": 0,
+        "seasonEarnings": 0,
+        "finish": null,
+        "leagueRank": null
       }
     ]
   },
@@ -81,29 +81,28 @@
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 4",
-    "Splash parsed standings rows: 4",
-    "Splash parsed history rows: 36",
-    "Splash mapping: Andrew: rank=101, season=1629610, pick=Si Woo Kim, week=61083, finish=50 | Paul: rank=96, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=4749044, pick=Ludvig Aberg, week=925000, finish=5 | Mike: rank=64, season=2162505, pick=Sepp Straka, week=731250, finish=8",
-    "Event metadata source: https://www.pgatour.com/tournaments/2025/the-players-championship/R20250112/overview",
-    "Purse source: https://www.pgatour.com/article/news/latest/2025/03/10/purse-breakdown-prize-money-the-players-championship-tpc-sawgrass-scottie-scheffler?webview=1",
+    "Splash parsed picks: 0",
+    "Splash parsed standings rows: 0",
+    "Splash parsed history rows: 0",
+    "Splash mapping: Andrew: rank=-, season=0, pick=-, week=0, finish=- | Paul: rank=-, season=0, pick=-, week=0, finish=- | Dakota: rank=-, season=0, pick=-, week=0, finish=- | Mike: rank=-, season=0, pick=-, week=0, finish=-",
     "PGA TOUR FedExCup: 191 golfer records loaded",
     "PGA TOUR Official Money: 189 golfer records loaded",
     "OWGR: 100 golfer records loaded",
-    "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/the-players-championship/R2026011/field",
-    "PGA TOUR field entries: 123"
+    "PGA TOUR schedule resolved next tournament: Valspar Championship",
+    "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/valspar-championship/R2026475/field",
+    "PGA TOUR field entries: 131"
   ],
-  "generatedAt": "2026-03-16T00:17:16.501Z",
+  "generatedAt": "2026-03-16T00:35:20.501Z",
   "primary": {
-    "golfer": "Rory McIlroy",
+    "golfer": "Scottie Scheffler",
     "projectedEarnings": 0,
     "projectedDupCount": 1,
     "futureValue": 250000,
-    "worldRank": 2,
-    "fedexPoints": 460,
-    "seasonEarnings": 2214875,
+    "worldRank": 1,
+    "fedexPoints": 1079,
+    "seasonEarnings": 3816430,
     "inNextTournament": false,
-    "historicalStrength": 0.42661499999999997,
+    "historicalStrength": 0.79338,
     "courseHistoryScore": 0.5,
     "last4Finishes": [
       35,
@@ -116,8 +115,8 @@
       "PGA TOUR Official Money",
       "OWGR"
     ],
-    "score": 0.43641150000000006,
-    "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50.",
+    "score": 0.47308800000000006,
+    "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.79. Course history score: 0.50.",
     "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
     "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
     "rationale": {
@@ -125,163 +124,13 @@
       "uniqueness": 0.6666666666666667,
       "futureCost": 0.125,
       "recentForm": 0.6875,
-      "historicalStrength": 0.42661499999999997,
+      "historicalStrength": 0.79338,
       "courseHistory": 0.5,
       "preservePenalty": 0,
-      "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50."
+      "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.79. Course history score: 0.50."
     }
   },
   "alternates": [
-    {
-      "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 0,
-      "projectedDupCount": 1,
-      "futureValue": 250000,
-      "worldRank": 3,
-      "fedexPoints": 502,
-      "seasonEarnings": 2267950,
-      "inNextTournament": false,
-      "historicalStrength": 0.262195,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "score": 0.41996950000000005,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 0.6666666666666667,
-        "futureCost": 0.125,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.262195,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Justin Rose",
-      "projectedEarnings": 0,
-      "projectedDupCount": 1,
-      "futureValue": 250000,
-      "worldRank": 4,
-      "fedexPoints": 520,
-      "seasonEarnings": 2215403,
-      "inNextTournament": false,
-      "historicalStrength": 0.24250500000000003,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "score": 0.41800050000000005,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 0.6666666666666667,
-        "futureCost": 0.125,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.24250500000000003,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Russell Henley",
-      "projectedEarnings": 0,
-      "projectedDupCount": 1,
-      "futureValue": 250000,
-      "worldRank": 7,
-      "fedexPoints": 403,
-      "seasonEarnings": 1708567,
-      "inNextTournament": false,
-      "historicalStrength": 0.23267000000000002,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "score": 0.417017,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 0.6666666666666667,
-        "futureCost": 0.125,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.23267000000000002,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Chris Gotterup",
-      "projectedEarnings": 0,
-      "projectedDupCount": 1,
-      "futureValue": 250000,
-      "worldRank": 6,
-      "fedexPoints": 1120,
-      "seasonEarnings": 3895375,
-      "inNextTournament": false,
-      "historicalStrength": 0.229845,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "score": 0.41673450000000006,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 0.6666666666666667,
-        "futureCost": 0.125,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.229845,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50."
-      }
-    }
-  ],
-  "scored": [
     {
       "golfer": "Rory McIlroy",
       "projectedEarnings": 0,
@@ -354,6 +203,230 @@
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Collin Morikawa",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 5,
+      "fedexPoints": 1182,
+      "seasonEarnings": 5065472,
+      "inNextTournament": false,
+      "historicalStrength": 0.25088,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41883800000000004,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.25088,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Justin Rose",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 4,
+      "fedexPoints": 520,
+      "seasonEarnings": 2215403,
+      "inNextTournament": false,
+      "historicalStrength": 0.24250500000000003,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41800050000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.24250500000000003,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50."
+      }
+    }
+  ],
+  "scored": [
+    {
+      "golfer": "Scottie Scheffler",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 1,
+      "fedexPoints": 1079,
+      "seasonEarnings": 3816430,
+      "inNextTournament": false,
+      "historicalStrength": 0.79338,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.47308800000000006,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.79. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.79338,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.79. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Rory McIlroy",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 2,
+      "fedexPoints": 460,
+      "seasonEarnings": 2214875,
+      "inNextTournament": false,
+      "historicalStrength": 0.42661499999999997,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.43641150000000006,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.42661499999999997,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Tommy Fleetwood",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 3,
+      "fedexPoints": 502,
+      "seasonEarnings": 2267950,
+      "inNextTournament": false,
+      "historicalStrength": 0.262195,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41996950000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.262195,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Collin Morikawa",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 5,
+      "fedexPoints": 1182,
+      "seasonEarnings": 5065472,
+      "inNextTournament": false,
+      "historicalStrength": 0.25088,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41883800000000004,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.25088,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50."
       }
     },
     {
@@ -579,6 +652,80 @@
       }
     },
     {
+      "golfer": "J.J. Spaun",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 9,
+      "fedexPoints": 28,
+      "seasonEarnings": 309772,
+      "inNextTournament": false,
+      "historicalStrength": 0.20595,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.4143450000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.20595,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Hideki Matsuyama",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 12,
+      "fedexPoints": 611,
+      "seasonEarnings": 2310720,
+      "inNextTournament": false,
+      "historicalStrength": 0.20518999999999998,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41426900000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.20518999999999998,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50."
+      }
+    },
+    {
       "golfer": "Ben Griffin",
       "projectedEarnings": 0,
       "projectedDupCount": 1,
@@ -764,6 +911,43 @@
       }
     },
     {
+      "golfer": "Viktor Hovland",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 17,
+      "fedexPoints": 188,
+      "seasonEarnings": 1142378,
+      "inNextTournament": false,
+      "historicalStrength": 0.17594,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41134400000000004,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.17594,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50."
+      }
+    },
+    {
       "golfer": "Akshay Bhatia",
       "projectedEarnings": 0,
       "projectedDupCount": 1,
@@ -830,6 +1014,43 @@
         "futureCost": 0.125,
         "recentForm": 0.6875,
         "historicalStrength": 0.171345,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Ludvig Åberg",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 23,
+      "fedexPoints": 410,
+      "seasonEarnings": 2462875,
+      "inNextTournament": false,
+      "historicalStrength": 0.170845,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.41083450000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.170845,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50."
@@ -1050,6 +1271,80 @@
         "futureCost": 0.125,
         "recentForm": 0.6875,
         "historicalStrength": 0.144795,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Si Woo Kim",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 28,
+      "fedexPoints": 627,
+      "seasonEarnings": 2309038,
+      "inNextTournament": false,
+      "historicalStrength": 0.143705,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.40812050000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.143705,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Shane Lowry",
+      "projectedEarnings": 0,
+      "projectedDupCount": 1,
+      "futureValue": 250000,
+      "worldRank": 27,
+      "fedexPoints": 397,
+      "seasonEarnings": 1419650,
+      "inNextTournament": false,
+      "historicalStrength": 0.14218,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR"
+      ],
+      "score": 0.40796800000000005,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 0.6666666666666667,
+        "futureCost": 0.125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.14218,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50."

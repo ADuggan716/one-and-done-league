@@ -31,7 +31,27 @@ function slugifyTournamentName(name) {
     .toLowerCase();
 }
 
-async function fetchSchedule() {
+function parseMoney(value) {
+  const cleaned = String(value || "").replace(/[^0-9.-]/g, "");
+  const amount = Number(cleaned);
+  return Number.isFinite(amount) ? amount : 0;
+}
+
+function inferTier(name, purse, fedexLabel) {
+  const tournamentName = String(name || "");
+  const purseAmount = parseMoney(purse);
+  const fedex = String(fedexLabel || "");
+
+  if (/masters|pga championship|u\.s\. open|open championship/i.test(tournamentName)) {
+    return "major";
+  }
+  if (purseAmount >= 20000000 || /750\s*pts/i.test(fedex)) {
+    return "signature";
+  }
+  return "regular";
+}
+
+export async function fetchPgaTourSchedule() {
   const html = await fetchText(PGA_TOUR_SCHEDULE_URL, {
     "User-Agent": "Mozilla/5.0",
     Accept: "text/html,application/xhtml+xml",
@@ -46,6 +66,42 @@ async function fetchSchedule() {
   }
 
   return schedule.tournaments;
+}
+
+export function resolveNextTournamentFromSchedule(tournaments, currentEventName, options = {}) {
+  const list = Array.isArray(tournaments) ? tournaments.filter((tournament) => tournament?.display !== "HIDE") : [];
+  if (!list.length) {
+    throw new Error("Schedule: no tournaments available");
+  }
+
+  const currentKey = normalizeTournamentName(currentEventName);
+  const currentIndex = list.findIndex((tournament) => normalizeTournamentName(tournament.name) === currentKey);
+  const currentEventCompleted = Boolean(options.currentEventCompleted);
+
+  let selectedIndex = currentIndex;
+  if (currentIndex !== -1 && currentEventCompleted) {
+    const nextIndex = list.findIndex((tournament, index) => index > currentIndex && tournament.status !== "COMPLETED");
+    selectedIndex = nextIndex !== -1 ? nextIndex : currentIndex;
+  }
+
+  if (selectedIndex === -1) {
+    selectedIndex = currentEventCompleted
+      ? list.findIndex((tournament) => tournament.status === "UPCOMING")
+      : list.findIndex((tournament) => tournament.status !== "COMPLETED");
+    if (selectedIndex === -1) selectedIndex = list.length - 1;
+  }
+
+  const selected = list[selectedIndex];
+  return {
+    id: selected.tournamentId,
+    name: selected.name,
+    startDate: selected.displayDate || null,
+    tier: inferTier(selected.name, selected.purse, selected.standings?.value),
+    totalPurse: parseMoney(selected.purse),
+    firstPrize: parseMoney(selected.championEarnings),
+    lastYearWinner: selected.champions?.[0]?.displayName || "Unknown",
+    status: selected.status || null,
+  };
 }
 
 async function fetchFieldPage(url) {
@@ -70,7 +126,7 @@ export async function fetchPgaTourTournamentField(eventName) {
     throw new Error("Event name is required to resolve PGA TOUR field data.");
   }
 
-  const tournaments = await fetchSchedule();
+  const tournaments = await fetchPgaTourSchedule();
   const targetKey = normalizeTournamentName(eventName);
   const match = tournaments.find((tournament) => normalizeTournamentName(tournament.name) === targetKey);
 
