@@ -1,43 +1,45 @@
 {
-  "eventId": "current-tournament",
+  "eventId": "players-championship",
   "tournamentName": "Valspar Championship",
-  "eventTier": "regular",
+  "eventTier": "signature",
   "currentEventMeta": {
-    "totalPurse": 0,
-    "firstPrize": 0
+    "totalPurse": 25000000,
+    "firstPrize": 4500000
   },
   "members": {
     "Andrew": {
-      "used": [],
-      "available": [
+      "used": [
+        "Daniel Berger",
+        "Ludvig Aberg",
+        "J.J. Spaun",
+        "Collin Morikawa",
+        "Viktor Hovland",
         "Scottie Scheffler",
+        "Shane Lowry",
+        "Hideki Matsuyama",
+        "Si Woo Kim"
+      ],
+      "available": [
         "Rory McIlroy",
         "Tommy Fleetwood",
         "Justin Rose",
-        "Collin Morikawa",
         "Chris Gotterup",
         "Russell Henley",
         "Robert MacIntyre",
-        "J.J. Spaun",
         "Xander Schauffele",
         "Ben Griffin",
-        "Hideki Matsuyama",
         "Sepp Straka",
         "Justin Thomas",
         "Harris English",
         "Alex Noren",
-        "Viktor Hovland",
         "PATRICK REED",
         "Jacob Bridgeman",
         "Keegan Bradley",
         "Cameron Young",
         "Matt Fitzpatrick",
-        "Ludvig Åberg",
         "Maverick McNealy",
         "TYRRELL HATTON",
         "Ryan Gerard",
-        "Shane Lowry",
-        "Si Woo Kim",
         "Sam Burns",
         "Kurt Kitayama",
         "Patrick Cantlay",
@@ -63,19 +65,26 @@
       ]
     },
     "Paul": {
-      "used": [],
-      "available": [
+      "used": [
+        "Maverick McNealy",
+        "Ben Griffin",
+        "Ludvig Aberg",
+        "Si Woo Kim",
+        "Jake Knapp",
+        "Samuel Stevens",
+        "Aaron Rai",
         "Scottie Scheffler",
+        "Collin Morikawa"
+      ],
+      "available": [
         "Rory McIlroy",
         "Tommy Fleetwood",
         "Justin Rose",
-        "Collin Morikawa",
         "Chris Gotterup",
         "Russell Henley",
         "Robert MacIntyre",
         "J.J. Spaun",
         "Xander Schauffele",
-        "Ben Griffin",
         "Hideki Matsuyama",
         "Sepp Straka",
         "Justin Thomas",
@@ -87,17 +96,13 @@
         "Keegan Bradley",
         "Cameron Young",
         "Matt Fitzpatrick",
-        "Ludvig Åberg",
-        "Maverick McNealy",
         "TYRRELL HATTON",
         "Ryan Gerard",
         "Shane Lowry",
-        "Si Woo Kim",
         "Sam Burns",
         "Kurt Kitayama",
         "Patrick Cantlay",
         "Min Woo Lee",
-        "Aaron Rai",
         "NICOLAS ECHAVARRIA",
         "Marco Penge",
         "BRYSON DECHAMBEAU",
@@ -105,12 +110,10 @@
         "Corey Conners",
         "Akshay Bhatia",
         "Matt McCarty",
-        "Jake Knapp",
         "Andrew Novak",
         "Kristoffer Reitan",
         "Ryan Fox",
         "Michael Brennan",
-        "SAMUEL STEVENS",
         "Pierceson Coody",
         "RASMUS HOJGAARD",
         "Sami Valimaki",
@@ -118,15 +121,22 @@
       ]
     },
     "Dakota": {
-      "used": [],
+      "used": [
+        "Aaron Rai",
+        "Si Woo Kim",
+        "Cameron Young",
+        "Maverick McNealy",
+        "Russell Henley",
+        "Rory McIlroy",
+        "Nicolai Hojgaard",
+        "Collin Morikawa",
+        "Ludvig Aberg"
+      ],
       "available": [
         "Scottie Scheffler",
-        "Rory McIlroy",
         "Tommy Fleetwood",
         "Justin Rose",
-        "Collin Morikawa",
         "Chris Gotterup",
-        "Russell Henley",
         "Robert MacIntyre",
         "J.J. Spaun",
         "Xander Schauffele",
@@ -140,19 +150,14 @@
         "PATRICK REED",
         "Jacob Bridgeman",
         "Keegan Bradley",
-        "Cameron Young",
         "Matt Fitzpatrick",
-        "Ludvig Åberg",
-        "Maverick McNealy",
         "TYRRELL HATTON",
         "Ryan Gerard",
         "Shane Lowry",
-        "Si Woo Kim",
         "Sam Burns",
         "Kurt Kitayama",
         "Patrick Cantlay",
         "Min Woo Lee",
-        "Aaron Rai",
         "NICOLAS ECHAVARRIA",
         "Marco Penge",
         "BRYSON DECHAMBEAU",
@@ -168,26 +173,31 @@
         "SAMUEL STEVENS",
         "Pierceson Coody",
         "RASMUS HOJGAARD",
-        "Sami Valimaki",
-        "NICOLAI HOJGAARD"
+        "Sami Valimaki"
       ]
     },
     "Mike": {
-      "used": [],
-      "available": [
+      "used": [
+        "Robert MacIntyre",
+        "Patrick Cantlay",
+        "Nicolai Hojgaard",
+        "Maverick McNealy",
+        "Justin Rose",
         "Scottie Scheffler",
+        "Michael Thorbjornsen",
+        "Matthew Fitzpatrick",
+        "Sepp Straka"
+      ],
+      "available": [
         "Rory McIlroy",
         "Tommy Fleetwood",
-        "Justin Rose",
         "Collin Morikawa",
         "Chris Gotterup",
         "Russell Henley",
-        "Robert MacIntyre",
         "J.J. Spaun",
         "Xander Schauffele",
         "Ben Griffin",
         "Hideki Matsuyama",
-        "Sepp Straka",
         "Justin Thomas",
         "Harris English",
         "Alex Noren",
@@ -198,14 +208,12 @@
         "Cameron Young",
         "Matt Fitzpatrick",
         "Ludvig Åberg",
-        "Maverick McNealy",
         "TYRRELL HATTON",
         "Ryan Gerard",
         "Shane Lowry",
         "Si Woo Kim",
         "Sam Burns",
         "Kurt Kitayama",
-        "Patrick Cantlay",
         "Min Woo Lee",
         "Aaron Rai",
         "NICOLAS ECHAVARRIA",
@@ -223,8 +231,7 @@
         "SAMUEL STEVENS",
         "Pierceson Coody",
         "RASMUS HOJGAARD",
-        "Sami Valimaki",
-        "NICOLAI HOJGAARD"
+        "Sami Valimaki"
       ]
     }
   },
@@ -607,5 +614,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-16T00:35:20.262Z"
+  "updatedAt": "2026-03-16T00:39:56.223Z"
 }

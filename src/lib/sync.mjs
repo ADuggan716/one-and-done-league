@@ -715,6 +715,7 @@ function buildSplashSnapshot({
 
   const seasonEvents = eventOrder.map((id) => historicalByEvent.get(id)).filter(Boolean);
   const currentEventId = normalizeEventId(canonicalCurrentEventName);
+  const includeCurrentEvent = shouldIncludeCurrentEventSnapshot(canonicalCurrentEventName, mergedPicks);
   const currentEvent = {
     id: currentEventId,
     name: canonicalCurrentEventName,
@@ -737,11 +738,12 @@ function buildSplashSnapshot({
 
   let replacedCurrent = false;
   const events = seasonEvents.map((event) => {
+    if (!includeCurrentEvent) return event;
     if (event.id !== currentEventId) return event;
     replacedCurrent = true;
     return currentEvent;
   });
-  if (!replacedCurrent) {
+  if (includeCurrentEvent && !replacedCurrent) {
     events.push(currentEvent);
   }
 
@@ -763,13 +765,13 @@ function buildSplashSnapshot({
       id: leaguePath,
       name: leagueName,
       totalEntrants: 150,
-      yourRank: mergedPicks.find((p) => p.member === "Andrew")?.leagueRank || 0,
-      latestEventId: currentEventId,
+      yourRank: mergedPicks.find((p) => p.member === "Andrew")?.leagueRank || seasonEvents.at(-1)?.subgroupResults?.find((p) => p.member === "Andrew")?.leagueRank || 0,
+      latestEventId: includeCurrentEvent ? currentEventId : seasonEvents.at(-1)?.id || currentEventId,
     },
     events,
     nextTournament: {
-      id: currentEventId,
-      name: eventName,
+      id: includeCurrentEvent ? currentEventId : seasonEvents.at(-1)?.id || currentEventId,
+      name: includeCurrentEvent ? eventName : seasonEvents.at(-1)?.name || eventName,
       tier: eventMeta.tier,
       startDate: null,
       totalPurse: eventMeta.totalPurse,
@@ -792,6 +794,18 @@ function buildSplashSnapshot({
 function money(value) {
   const n = Number(value || 0);
   return Number.isFinite(n) ? n : 0;
+}
+
+export function shouldIncludeCurrentEventSnapshot(eventName, mergedPicks) {
+  const canonicalName = canonicalizeEventName(eventName);
+  if (canonicalName === "Current Tournament") return false;
+  return (mergedPicks || []).some(
+    (row) =>
+      row?.golfer ||
+      Number(row?.earnings || 0) > 0 ||
+      Number(row?.seasonEarnings || 0) > 0 ||
+      row?.leagueRank !== null && row?.leagueRank !== undefined
+  );
 }
 
 export function normalizeSnapshot(raw, subgroupMembers) {

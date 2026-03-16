@@ -114,6 +114,85 @@ async function writeJson(relPath, payload) {
   await fs.writeFile(fullPath, `${JSON.stringify(payload, null, 2)}\n`, "utf8");
 }
 
+async function readJson(relPath) {
+  const fullPath = path.join(root, relPath);
+  const raw = await fs.readFile(fullPath, "utf8");
+  return JSON.parse(raw);
+}
+
+function snapshotHasSeasonData(snapshot) {
+  return Boolean(
+    snapshot?.weeklyComparison?.length &&
+      snapshot?.subgroupStandings?.some((row) => Number(row?.seasonEarnings || 0) > 0)
+  );
+}
+
+async function loadLastGoodSnapshot() {
+  try {
+    const current = await readJson("data/league_snapshot.json");
+    if (snapshotHasSeasonData(current)) return current;
+  } catch {
+    // Fall through to git history lookup.
+  }
+
+  try {
+    const { stdout } = await execFileAsync("git", ["-C", root, "log", "--format=%H", "--", "data/league_snapshot.json"]);
+    const commits = stdout
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .slice(0, 20);
+
+    for (const commit of commits) {
+      try {
+        const { stdout: snapshotRaw } = await execFileAsync("git", [
+          "-C",
+          root,
+          "show",
+          `${commit}:data/league_snapshot.json`,
+        ]);
+        const snapshot = JSON.parse(snapshotRaw);
+        if (snapshotHasSeasonData(snapshot)) return snapshot;
+      } catch {
+        // Try the next historical snapshot.
+      }
+    }
+  } catch {
+    // No historical fallback available.
+  }
+
+  return null;
+}
+
+function restoreEventsFromSnapshot(snapshot) {
+  return (snapshot?.weeklyComparison || []).map((event) => ({
+    id: event.eventId,
+    name: event.eventName,
+    tier: event.tier || "regular",
+    startDate: event.startDate || null,
+    isUpcoming: false,
+    countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
+    totalPurse: Number(event.totalPurse || 0),
+    firstPrize: Number(event.firstPrize || 0),
+    subgroupResults: (event.rows || []).map((row) => ({
+      member: row.member,
+      pick: row.pick ?? null,
+      earnings: Number(row.earnings || 0),
+      seasonEarnings: Number(row.seasonEarnings || 0),
+      finish: row.finish ?? null,
+      leagueRank: row.leagueRank ?? null,
+    })),
+    picks: (event.rows || []).map((row) => ({
+      member: row.member,
+      golfer: row.pick ?? null,
+      earnings: Number(row.earnings || 0),
+      seasonEarnings: Number(row.seasonEarnings || 0),
+      finish: row.finish ?? null,
+      leagueRank: row.leagueRank ?? null,
+    })),
+  }));
+}
+
 function dedupeEventsById(events) {
   const byId = new Map();
   for (const event of events || []) {
@@ -157,6 +236,7 @@ function buildLeagueSnapshot(normalized, config) {
 
 async function run() {
   const config = await readConfig(path.join(root, "config/config.json"));
+  const previousSnapshot = await loadLastGoodSnapshot();
   const cookie = await loadCookie(path.join(root, config.cookiePath));
 
   let upstream;
@@ -202,6 +282,18 @@ async function run() {
 
   normalized.projections = mergedProjections;
   normalized.sourceNotes = sourceNotes;
+
+  if ((!normalized.events || normalized.events.length === 0) && previousSnapshot?.weeklyComparison?.length) {
+    normalized.events = restoreEventsFromSnapshot(previousSnapshot);
+    normalized.league = {
+      ...normalized.league,
+      ...(previousSnapshot.league || {}),
+    };
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      "Fallback: reused previous committed season history because upstream returned no event history.",
+    ];
+  }
 
   try {
     const upstreamEventName = normalized.nextTournament?.name || normalized.events.at(-1)?.name;
