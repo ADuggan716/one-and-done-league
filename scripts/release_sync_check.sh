@@ -45,7 +45,7 @@ if [[ -n "$SITE_URL" ]]; then
     exit 1
   fi
 
-  if rg -q "One and Done Companion|One and Done League" /tmp/one_and_done_home.html; then
+  if rg -q "One and Done Dashboard|One and Done League" /tmp/one_and_done_home.html; then
     echo "==> Site content check passed"
   else
     echo "==> Site returned 200, but expected title text not found"
