@@ -12,10 +12,10 @@
       {
         "member": "Andrew",
         "pick": "Si Woo Kim",
-        "earnings": 57625,
-        "seasonEarnings": 1626152,
-        "finish": "52",
-        "leagueRank": 78
+        "earnings": 61083,
+        "seasonEarnings": 1629610,
+        "finish": "50",
+        "leagueRank": 101
       },
       {
         "member": "Paul",
@@ -23,33 +23,33 @@
         "earnings": 0,
         "seasonEarnings": 1662175,
         "finish": "123",
-        "leagueRank": 72
+        "leagueRank": 96
       },
       {
         "member": "Dakota",
         "pick": "Ludvig Aberg",
-        "earnings": 4500000,
-        "seasonEarnings": 8324044,
-        "finish": "1",
+        "earnings": 925000,
+        "seasonEarnings": 4749044,
+        "finish": "5",
         "leagueRank": 11
       },
       {
         "member": "Mike",
         "pick": "Sepp Straka",
-        "earnings": 906250,
-        "seasonEarnings": 2337505,
-        "finish": "6",
-        "leagueRank": 91
+        "earnings": 731250,
+        "seasonEarnings": 2162505,
+        "finish": "8",
+        "leagueRank": 64
       }
     ],
     "picks": [
       {
         "member": "Andrew",
         "golfer": "Si Woo Kim",
-        "earnings": 57625,
-        "seasonEarnings": 1626152,
-        "finish": "52",
-        "leagueRank": 78
+        "earnings": 61083,
+        "seasonEarnings": 1629610,
+        "finish": "50",
+        "leagueRank": 101
       },
       {
         "member": "Paul",
@@ -57,23 +57,23 @@
         "earnings": 0,
         "seasonEarnings": 1662175,
         "finish": "123",
-        "leagueRank": 72
+        "leagueRank": 96
       },
       {
         "member": "Dakota",
         "golfer": "Ludvig Aberg",
-        "earnings": 4500000,
-        "seasonEarnings": 8324044,
-        "finish": "1",
+        "earnings": 925000,
+        "seasonEarnings": 4749044,
+        "finish": "5",
         "leagueRank": 11
       },
       {
         "member": "Mike",
         "golfer": "Sepp Straka",
-        "earnings": 906250,
-        "seasonEarnings": 2337505,
-        "finish": "6",
-        "leagueRank": 91
+        "earnings": 731250,
+        "seasonEarnings": 2162505,
+        "finish": "8",
+        "leagueRank": 64
       }
     ]
   },
@@ -84,7 +84,7 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 36",
-    "Splash mapping: Andrew: rank=78, season=1568527, pick=Si Woo Kim, week=57625, finish=52 | Paul: rank=72, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=3824044, pick=Ludvig Aberg, week=4500000, finish=1 | Mike: rank=91, season=1431255, pick=Sepp Straka, week=906250, finish=6",
+    "Splash mapping: Andrew: rank=101, season=1629610, pick=Si Woo Kim, week=61083, finish=50 | Paul: rank=96, season=1662175, pick=Collin Morikawa, week=0, finish=123 | Dakota: rank=11, season=4749044, pick=Ludvig Aberg, week=925000, finish=5 | Mike: rank=64, season=2162505, pick=Sepp Straka, week=731250, finish=8",
     "Event metadata source: https://www.pgatour.com/tournaments/2025/the-players-championship/R20250112/overview",
     "Purse source: https://www.pgatour.com/article/news/latest/2025/03/10/purse-breakdown-prize-money-the-players-championship-tpc-sawgrass-scottie-scheffler?webview=1",
     "PGA TOUR FedExCup: 191 golfer records loaded",
@@ -93,7 +93,7 @@
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/the-players-championship/R2026011/field",
     "PGA TOUR field entries: 123"
   ],
-  "generatedAt": "2026-03-16T00:14:15.698Z",
+  "generatedAt": "2026-03-16T00:17:16.501Z",
   "primary": {
     "golfer": "Rory McIlroy",
     "projectedEarnings": 0,
