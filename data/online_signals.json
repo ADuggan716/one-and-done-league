@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-03-14T18:28:12.969Z",
+  "fetchedAt": "2026-03-16T00:14:12.810Z",
   "sourceNotes": [
     "PGA TOUR FedExCup: 191 golfer records loaded",
-    "PGA TOUR Official Money: 188 golfer records loaded",
+    "PGA TOUR Official Money: 189 golfer records loaded",
     "OWGR: 100 golfer records loaded"
   ],
   "signals": [
@@ -14,7 +14,7 @@
         "OWGR"
       ],
       "fedexPoints": 1079,
-      "seasonEarnings": 3545180,
+      "seasonEarnings": 3816430,
       "worldRank": 1,
       "historicalStrength": 0.79338
     },
@@ -26,7 +26,7 @@
         "OWGR"
       ],
       "fedexPoints": 460,
-      "seasonEarnings": 2142750,
+      "seasonEarnings": 2214875,
       "worldRank": 2,
       "historicalStrength": 0.42661499999999997
     },
@@ -38,7 +38,7 @@
         "OWGR"
       ],
       "fedexPoints": 502,
-      "seasonEarnings": 1536700,
+      "seasonEarnings": 2267950,
       "worldRank": 3,
       "historicalStrength": 0.262195
     },
@@ -50,7 +50,7 @@
         "OWGR"
       ],
       "fedexPoints": 520,
-      "seasonEarnings": 1806375,
+      "seasonEarnings": 2215403,
       "worldRank": 4,
       "historicalStrength": 0.24250500000000003
     },
@@ -74,7 +74,7 @@
         "OWGR"
       ],
       "fedexPoints": 1120,
-      "seasonEarnings": 3837375,
+      "seasonEarnings": 3895375,
       "worldRank": 6,
       "historicalStrength": 0.229845
     },
@@ -86,7 +86,7 @@
         "OWGR"
       ],
       "fedexPoints": 403,
-      "seasonEarnings": 1299539,
+      "seasonEarnings": 1708567,
       "worldRank": 7,
       "historicalStrength": 0.23267000000000002
     },
@@ -98,7 +98,7 @@
         "OWGR"
       ],
       "fedexPoints": 247,
-      "seasonEarnings": 943475,
+      "seasonEarnings": 2168475,
       "worldRank": 8,
       "historicalStrength": 0.212435
     },
@@ -110,7 +110,7 @@
         "OWGR"
       ],
       "fedexPoints": 28,
-      "seasonEarnings": 88522,
+      "seasonEarnings": 309772,
       "worldRank": 9,
       "historicalStrength": 0.20595
     },
@@ -122,7 +122,7 @@
         "OWGR"
       ],
       "fedexPoints": 276,
-      "seasonEarnings": 1029280,
+      "seasonEarnings": 2754280,
       "worldRank": 10,
       "historicalStrength": 0.20656500000000003
     },
@@ -146,7 +146,7 @@
         "OWGR"
       ],
       "fedexPoints": 611,
-      "seasonEarnings": 2131970,
+      "seasonEarnings": 2310720,
       "worldRank": 12,
       "historicalStrength": 0.20518999999999998
     },
@@ -158,7 +158,7 @@
         "OWGR"
       ],
       "fedexPoints": 522,
-      "seasonEarnings": 2307420,
+      "seasonEarnings": 3038670,
       "worldRank": 13,
       "historicalStrength": 0.20954
     },
@@ -166,9 +166,11 @@
       "golfer": "Justin Thomas",
       "sourceRefs": [
         "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
         "OWGR"
       ],
       "fedexPoints": 0,
+      "seasonEarnings": 731250,
       "worldRank": 14,
       "historicalStrength": 0.192165
     },
@@ -192,7 +194,7 @@
         "OWGR"
       ],
       "fedexPoints": 172,
-      "seasonEarnings": 697200,
+      "seasonEarnings": 825450,
       "worldRank": 16,
       "historicalStrength": 0.17915
     },
@@ -204,7 +206,7 @@
         "OWGR"
       ],
       "fedexPoints": 188,
-      "seasonEarnings": 733350,
+      "seasonEarnings": 1142378,
       "worldRank": 17,
       "historicalStrength": 0.17594
     },
@@ -224,7 +226,7 @@
         "OWGR"
       ],
       "fedexPoints": 1123,
-      "seasonEarnings": 5477960,
+      "seasonEarnings": 6402960,
       "worldRank": 19,
       "historicalStrength": 0.16527
     },
@@ -236,7 +238,7 @@
         "OWGR"
       ],
       "fedexPoints": 42,
-      "seasonEarnings": 156464,
+      "seasonEarnings": 217547,
       "worldRank": 20,
       "historicalStrength": 0.157705
     },
@@ -248,7 +250,7 @@
         "OWGR"
       ],
       "fedexPoints": 573,
-      "seasonEarnings": 1971920,
+      "seasonEarnings": 6471920,
       "worldRank": 21,
       "historicalStrength": 0.18081
     },
@@ -260,7 +262,7 @@
         "OWGR"
       ],
       "fedexPoints": 229,
-      "seasonEarnings": 899488,
+      "seasonEarnings": 3624488,
       "worldRank": 22,
       "historicalStrength": 0.15303
     },
@@ -272,7 +274,7 @@
         "OWGR"
       ],
       "fedexPoints": 410,
-      "seasonEarnings": 1537875,
+      "seasonEarnings": 2462875,
       "worldRank": 23,
       "historicalStrength": 0.170845
     },
@@ -284,7 +286,7 @@
         "OWGR"
       ],
       "fedexPoints": 286,
-      "seasonEarnings": 1020475,
+      "seasonEarnings": 1148725,
       "worldRank": 24,
       "historicalStrength": 0.147945
     },
@@ -304,7 +306,7 @@
         "OWGR"
       ],
       "fedexPoints": 623,
-      "seasonEarnings": 2072429,
+      "seasonEarnings": 2251179,
       "worldRank": 26,
       "historicalStrength": 0.144795
     },
@@ -328,7 +330,7 @@
         "OWGR"
       ],
       "fedexPoints": 627,
-      "seasonEarnings": 2247955,
+      "seasonEarnings": 2309038,
       "worldRank": 28,
       "historicalStrength": 0.143705
     },
@@ -340,7 +342,7 @@
         "OWGR"
       ],
       "fedexPoints": 275,
-      "seasonEarnings": 747918,
+      "seasonEarnings": 1156946,
       "worldRank": 29,
       "historicalStrength": 0.13157000000000002
     },
@@ -364,7 +366,7 @@
         "OWGR"
       ],
       "fedexPoints": 162,
-      "seasonEarnings": 604740,
+      "seasonEarnings": 732990,
       "worldRank": 31,
       "historicalStrength": 0.12712
     },
@@ -376,7 +378,7 @@
         "OWGR"
       ],
       "fedexPoints": 755,
-      "seasonEarnings": 2979049,
+      "seasonEarnings": 3107299,
       "worldRank": 32,
       "historicalStrength": 0.137715
     },
@@ -428,7 +430,7 @@
         "OWGR"
       ],
       "fedexPoints": 240,
-      "seasonEarnings": 820160,
+      "seasonEarnings": 876410,
       "worldRank": 37,
       "historicalStrength": 0.10964499999999999
     },
@@ -440,7 +442,7 @@
         "OWGR"
       ],
       "fedexPoints": 85,
-      "seasonEarnings": 308100,
+      "seasonEarnings": 717128,
       "worldRank": 38,
       "historicalStrength": 0.10978000000000002
     },
@@ -452,7 +454,7 @@
         "OWGR"
       ],
       "fedexPoints": 1144,
-      "seasonEarnings": 5448680,
+      "seasonEarnings": 5857708,
       "worldRank": 39,
       "historicalStrength": 0.172505
     },
@@ -500,7 +502,7 @@
         "OWGR"
       ],
       "fedexPoints": 81,
-      "seasonEarnings": 222360,
+      "seasonEarnings": 275110,
       "worldRank": 43,
       "historicalStrength": 0.10405500000000001
     },
@@ -524,7 +526,7 @@
         "OWGR"
       ],
       "fedexPoints": 37,
-      "seasonEarnings": 96120,
+      "seasonEarnings": 147870,
       "worldRank": 45,
       "historicalStrength": 0.10496000000000001
     },
@@ -608,7 +610,7 @@
         "OWGR"
       ],
       "fedexPoints": 521,
-      "seasonEarnings": 1662222,
+      "seasonEarnings": 1720222,
       "worldRank": 53,
       "historicalStrength": 0.10227
     },
@@ -628,7 +630,7 @@
         "OWGR"
       ],
       "fedexPoints": 82,
-      "seasonEarnings": 360429,
+      "seasonEarnings": 966679,
       "worldRank": 55,
       "historicalStrength": 0.09448999999999999
     },
@@ -640,7 +642,7 @@
         "OWGR"
       ],
       "fedexPoints": 200,
-      "seasonEarnings": 712930,
+      "seasonEarnings": 984180,
       "worldRank": 56,
       "historicalStrength": 0.094365
     },
@@ -672,7 +674,7 @@
         "OWGR"
       ],
       "fedexPoints": 199,
-      "seasonEarnings": 672408,
+      "seasonEarnings": 763658,
       "worldRank": 59,
       "historicalStrength": 0.08891
     },
@@ -696,7 +698,7 @@
         "OWGR"
       ],
       "fedexPoints": 570,
-      "seasonEarnings": 2756730,
+      "seasonEarnings": 2809480,
       "worldRank": 61,
       "historicalStrength": 0.12539
     },
@@ -708,7 +710,7 @@
         "OWGR"
       ],
       "fedexPoints": 148,
-      "seasonEarnings": 545105,
+      "seasonEarnings": 617230,
       "worldRank": 62,
       "historicalStrength": 0.08354500000000001
     },
@@ -728,7 +730,7 @@
         "OWGR"
       ],
       "fedexPoints": 476,
-      "seasonEarnings": 1682177,
+      "seasonEarnings": 2091204,
       "worldRank": 64,
       "historicalStrength": 0.08493
     },
@@ -740,7 +742,7 @@
         "OWGR"
       ],
       "fedexPoints": 54,
-      "seasonEarnings": 164275,
+      "seasonEarnings": 225358,
       "worldRank": 65,
       "historicalStrength": 0.08241000000000001
     },
@@ -752,7 +754,7 @@
         "OWGR"
       ],
       "fedexPoints": 105,
-      "seasonEarnings": 354642,
+      "seasonEarnings": 445892,
       "worldRank": 66,
       "historicalStrength": 0.08297
     },
@@ -764,7 +766,7 @@
         "OWGR"
       ],
       "fedexPoints": 334,
-      "seasonEarnings": 1189827,
+      "seasonEarnings": 1281077,
       "worldRank": 67,
       "historicalStrength": 0.09204999999999999
     },
@@ -788,7 +790,7 @@
         "OWGR"
       ],
       "fedexPoints": 99,
-      "seasonEarnings": 295782,
+      "seasonEarnings": 356866,
       "worldRank": 69,
       "historicalStrength": 0.080265
     },
@@ -848,7 +850,7 @@
         "OWGR"
       ],
       "fedexPoints": 294,
-      "seasonEarnings": 1105675,
+      "seasonEarnings": 1233925,
       "worldRank": 75,
       "historicalStrength": 0.085095
     },
@@ -912,7 +914,7 @@
         "OWGR"
       ],
       "fedexPoints": 110,
-      "seasonEarnings": 431722,
+      "seasonEarnings": 559972,
       "worldRank": 82,
       "historicalStrength": 0.075705
     },
@@ -944,7 +946,7 @@
         "OWGR"
       ],
       "fedexPoints": 307,
-      "seasonEarnings": 1057109,
+      "seasonEarnings": 1663359,
       "worldRank": 85,
       "historicalStrength": 0.073965
     },
@@ -1068,7 +1070,7 @@
         "OWGR"
       ],
       "fedexPoints": 156,
-      "seasonEarnings": 509801,
+      "seasonEarnings": 581926,
       "worldRank": 96,
       "historicalStrength": 0.07177
     },
@@ -1080,7 +1082,7 @@
         "OWGR"
       ],
       "fedexPoints": 514,
-      "seasonEarnings": 1689668,
+      "seasonEarnings": 1817918,
       "worldRank": 97,
       "historicalStrength": 0.077845
     },
@@ -1092,7 +1094,7 @@
         "OWGR"
       ],
       "fedexPoints": 26,
-      "seasonEarnings": 103000,
+      "seasonEarnings": 281750,
       "worldRank": 98,
       "historicalStrength": 0.06745
     },
@@ -1104,7 +1106,7 @@
         "OWGR"
       ],
       "fedexPoints": 283,
-      "seasonEarnings": 977100,
+      "seasonEarnings": 1386128,
       "worldRank": 99,
       "historicalStrength": 0.066755
     },
@@ -1116,7 +1118,7 @@
         "OWGR"
       ],
       "fedexPoints": 451,
-      "seasonEarnings": 1220139,
+      "seasonEarnings": 1270889,
       "worldRank": 139,
       "historicalStrength": 0.07039999999999999
     },
@@ -1172,7 +1174,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 98,
-      "seasonEarnings": 361691
+      "seasonEarnings": 582941
     },
     {
       "golfer": "Andrew Putnam",
@@ -1181,7 +1183,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 200,
-      "seasonEarnings": 682400
+      "seasonEarnings": 810650
     },
     {
       "golfer": "Austin Eckroat",
@@ -1235,7 +1237,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 78,
-      "seasonEarnings": 274176
+      "seasonEarnings": 683204
     },
     {
       "golfer": "Cam Davis",
@@ -1271,7 +1273,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 98,
-      "seasonEarnings": 287318
+      "seasonEarnings": 466068
     },
     {
       "golfer": "Chan Kim",
@@ -1325,7 +1327,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 30,
-      "seasonEarnings": 82656
+      "seasonEarnings": 137156
     },
     {
       "golfer": "Danny Willett",
@@ -1433,7 +1435,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 74,
-      "seasonEarnings": 175038
+      "seasonEarnings": 303288
     },
     {
       "golfer": "Frankie Capan III",
@@ -1559,7 +1561,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 17,
-      "seasonEarnings": 94763
+      "seasonEarnings": 186013
     },
     {
       "golfer": "Joel Dahmen",
@@ -1622,7 +1624,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 212,
-      "seasonEarnings": 749595
+      "seasonEarnings": 821720
     },
     {
       "golfer": "Kensei Hirata",
@@ -1640,7 +1642,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 144,
-      "seasonEarnings": 428642
+      "seasonEarnings": 484892
     },
     {
       "golfer": "Kevin Streelman",
@@ -1676,7 +1678,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 97,
-      "seasonEarnings": 318881
+      "seasonEarnings": 375131
     },
     {
       "golfer": "Luke Clanton",
@@ -1757,7 +1759,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 107,
-      "seasonEarnings": 352920
+      "seasonEarnings": 481170
     },
     {
       "golfer": "Neal Shipley",
@@ -1784,7 +1786,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 664,
-      "seasonEarnings": 2309000
+      "seasonEarnings": 2361750
     },
     {
       "golfer": "Nicolai Højgaard",
@@ -1793,7 +1795,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 290,
-      "seasonEarnings": 1013320
+      "seasonEarnings": 1192070
     },
     {
       "golfer": "Patrick Fishburn",
@@ -1865,7 +1867,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 51,
-      "seasonEarnings": 159200
+      "seasonEarnings": 213700
     },
     {
       "golfer": "Robert Streb",
@@ -1919,7 +1921,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 237,
-      "seasonEarnings": 835978
+      "seasonEarnings": 893228
     },
     {
       "golfer": "Seamus Power",
@@ -1928,7 +1930,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 91,
-      "seasonEarnings": 285607
+      "seasonEarnings": 336357
     },
     {
       "golfer": "Stephan Jaeger",
@@ -1937,7 +1939,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 138,
-      "seasonEarnings": 468832
+      "seasonEarnings": 523332
     },
     {
       "golfer": "Steven Fisk",
@@ -1946,7 +1948,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 26,
-      "seasonEarnings": 83850
+      "seasonEarnings": 138350
     },
     {
       "golfer": "Sudarshan Yellamaraju",
@@ -1955,7 +1957,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 122,
-      "seasonEarnings": 358940
+      "seasonEarnings": 1283940
     },
     {
       "golfer": "Takumi Kanaya",
@@ -1964,7 +1966,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 72,
-      "seasonEarnings": 203210
+      "seasonEarnings": 252960
     },
     {
       "golfer": "Taylor Moore",
@@ -1973,7 +1975,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 238,
-      "seasonEarnings": 837023
+      "seasonEarnings": 898107
     },
     {
       "golfer": "Thorbjørn Olesen",
@@ -2000,14 +2002,14 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 156,
-      "seasonEarnings": 621529
+      "seasonEarnings": 672279
     },
     {
       "golfer": "Tour Average",
       "sourceRefs": [
         "PGA TOUR Official Money"
       ],
-      "seasonEarnings": 594773
+      "seasonEarnings": 726779
     },
     {
       "golfer": "Troy Merritt",
@@ -2070,7 +2072,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 95,
-      "seasonEarnings": 342382
+      "seasonEarnings": 563632
     },
     {
       "golfer": "Zac Blair",
@@ -2088,7 +2090,7 @@
         "PGA TOUR Official Money"
       ],
       "fedexPoints": 128,
-      "seasonEarnings": 357587
+      "seasonEarnings": 418670
     },
     {
       "golfer": "Zach Johnson",
