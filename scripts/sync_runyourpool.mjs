@@ -21,7 +21,7 @@ import {
   computeTeamSummary,
 } from "../src/lib/scoring.mjs";
 import { generateRecommendations } from "../src/lib/recommendations.mjs";
-import { mergeSignals, readOnlineSignals } from "../src/lib/online_signals.mjs";
+import { mergeSignals, readOnlineSignals, synthesizeWeeklySignals } from "../src/lib/online_signals.mjs";
 import { buildPlayerPool } from "../src/lib/player_pool.mjs";
 import {
   fetchPgaTourSchedule,
@@ -125,6 +125,24 @@ function snapshotHasSeasonData(snapshot) {
     snapshot?.weeklyComparison?.length &&
       snapshot?.subgroupStandings?.some((row) => Number(row?.seasonEarnings || 0) > 0)
   );
+}
+
+function normalizedHasSeasonHistory(normalized) {
+  const events = normalized?.events || [];
+  if (events.length === 0) return false;
+
+  // If Splash already returned carried season totals, we have real season history.
+  if (
+    events.some((event) =>
+      (event?.subgroupResults || []).some((row) => Number(row?.seasonEarnings || 0) > 0)
+    )
+  ) {
+    return true;
+  }
+
+  // If there is only one current event and no carried totals yet, treat it as
+  // current-week-only data and fall back to the last good committed snapshot.
+  return events.length > 1;
 }
 
 async function loadLastGoodSnapshot() {
@@ -283,16 +301,29 @@ async function run() {
   normalized.projections = mergedProjections;
   normalized.sourceNotes = sourceNotes;
 
-  if ((!normalized.events || normalized.events.length === 0) && previousSnapshot?.weeklyComparison?.length) {
-    normalized.events = restoreEventsFromSnapshot(previousSnapshot);
-    normalized.league = {
-      ...normalized.league,
-      ...(previousSnapshot.league || {}),
-    };
-    normalized.sourceNotes = [
-      ...normalized.sourceNotes,
-      "Fallback: reused previous committed season history because upstream returned no event history.",
-    ];
+  if (previousSnapshot?.weeklyComparison?.length) {
+    if (!normalized.events || normalized.events.length === 0) {
+      normalized.events = restoreEventsFromSnapshot(previousSnapshot);
+      normalized.league = {
+        ...normalized.league,
+        ...(previousSnapshot.league || {}),
+      };
+      normalized.sourceNotes = [
+        ...normalized.sourceNotes,
+        "Fallback: reused previous committed season history because upstream returned no event history.",
+      ];
+    } else if (!normalizedHasSeasonHistory(normalized)) {
+      const restored = restoreEventsFromSnapshot(previousSnapshot);
+      const currentIds = new Set((normalized.events || []).map((event) => event.id));
+      normalized.events = [
+        ...restored.filter((event) => !currentIds.has(event.id)),
+        ...normalized.events,
+      ];
+      normalized.sourceNotes = [
+        ...normalized.sourceNotes,
+        "Fallback: reused previous committed season history because upstream only returned current-week data.",
+      ];
+    }
   }
 
   try {
@@ -329,6 +360,27 @@ async function run() {
     normalized.sourceNotes = [
       ...normalized.sourceNotes,
       `PGA TOUR field: failed (${error.message})`,
+    ];
+  }
+
+  const synthesized = synthesizeWeeklySignals(normalized.projections, {
+    nextTournamentField,
+    nextTournament: normalized.nextTournament,
+    events: normalized.events,
+    subgroupMembers: config.subgroupMembers,
+    me: config.me,
+  });
+  normalized.projections = synthesized.projections;
+  if (synthesized.synthesisSummary.fieldCandidateCount > 0) {
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `Weekly projection synthesis: ${synthesized.synthesisSummary.synthesizedCount} field golfers received modeled payout estimates`,
+      `Weekly projection synthesis top field: ${(synthesized.synthesisSummary.topCandidates || []).join(", ")}`,
+    ];
+  } else {
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `Weekly projection synthesis: skipped (${synthesized.synthesisSummary.reason || "no eligible field golfers"})`,
     ];
   }
 
