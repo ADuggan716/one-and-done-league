@@ -9,15 +9,6 @@
   "members": {
     "Andrew": {
       "used": [
-        "Daniel Berger",
-        "Ludvig Aberg",
-        "J.J. Spaun",
-        "Collin Morikawa",
-        "Viktor Hovland",
-        "Scottie Scheffler",
-        "Shane Lowry",
-        "Hideki Matsuyama",
-        "Si Woo Kim",
         "Corey Conners"
       ],
       "available": [
@@ -31,6 +22,7 @@
         "Adrien Saddier",
         "Akshay Bhatia",
         "Aldrich Potgieter",
+        "Alejandro Tosti",
         "Alex Noren",
         "Alex Smalley",
         "Andrew Novak",
@@ -60,31 +52,24 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Dan Brown",
+        "Daniel Berger",
         "Danny Walker",
         "Danny Willett",
         "David Ford",
         "David Lipsky",
         "David Skinns",
-        "Davis Chatfield",
-        "Davis Riley"
+        "Davis Chatfield"
       ]
     },
     "Paul": {
       "used": [
-        "Maverick McNealy",
-        "Ben Griffin",
-        "Ludvig Aberg",
-        "Si Woo Kim",
-        "Jake Knapp",
-        "Samuel Stevens",
-        "Aaron Rai",
-        "Scottie Scheffler",
-        "Collin Morikawa",
         "Jacob Bridgeman"
       ],
       "available": [
         "A.J. Ewart",
+        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -93,6 +78,7 @@
         "Adrien Saddier",
         "Akshay Bhatia",
         "Aldrich Potgieter",
+        "Alejandro Tosti",
         "Alex Noren",
         "Alex Smalley",
         "Andrew Novak",
@@ -100,6 +86,7 @@
         "Austin Eckroat",
         "Austin Smotherman",
         "Beau Hossler",
+        "Ben Griffin",
         "Ben Kohles",
         "Ben Silverman",
         "Billy Horschel",
@@ -121,6 +108,7 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -129,25 +117,16 @@
         "David Ford",
         "David Lipsky",
         "David Skinns",
-        "Davis Chatfield",
-        "Davis Riley"
+        "Davis Chatfield"
       ]
     },
     "Dakota": {
       "used": [
-        "Aaron Rai",
-        "Si Woo Kim",
-        "Cameron Young",
-        "Maverick McNealy",
-        "Russell Henley",
-        "Rory McIlroy",
-        "Nicolai Hojgaard",
-        "Collin Morikawa",
-        "Ludvig Aberg",
         "Jacob Bridgeman"
       ],
       "available": [
         "A.J. Ewart",
+        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -156,6 +135,7 @@
         "Adrien Saddier",
         "Akshay Bhatia",
         "Aldrich Potgieter",
+        "Alejandro Tosti",
         "Alex Noren",
         "Alex Smalley",
         "Andrew Novak",
@@ -174,6 +154,7 @@
         "Brooks Koepka",
         "Bud Cauley",
         "Cam Davis",
+        "Cameron Young",
         "Camilo Villegas",
         "Carson Young",
         "Chad Ramey",
@@ -184,6 +165,7 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -192,21 +174,11 @@
         "David Ford",
         "David Lipsky",
         "David Skinns",
-        "Davis Chatfield",
-        "Davis Riley"
+        "Davis Chatfield"
       ]
     },
     "Mike": {
       "used": [
-        "Robert MacIntyre",
-        "Patrick Cantlay",
-        "Nicolai Hojgaard",
-        "Maverick McNealy",
-        "Justin Rose",
-        "Scottie Scheffler",
-        "Michael Thorbjornsen",
-        "Matthew Fitzpatrick",
-        "Sepp Straka",
         "Viktor Hovland"
       ],
       "available": [
@@ -220,6 +192,7 @@
         "Adrien Saddier",
         "Akshay Bhatia",
         "Aldrich Potgieter",
+        "Alejandro Tosti",
         "Alex Noren",
         "Alex Smalley",
         "Andrew Novak",
@@ -258,8 +231,7 @@
         "David Ford",
         "David Lipsky",
         "David Skinns",
-        "Davis Chatfield",
-        "Davis Riley"
+        "Davis Chatfield"
       ]
     }
   },
@@ -333,6 +305,13 @@
       "fedexPoints": 308,
       "seasonEarnings": 0,
       "inNextTournament": false
+    },
+    {
+      "name": "Alejandro Tosti",
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true
     },
     {
       "name": "Alex Noren",
@@ -606,13 +585,6 @@
       "fedexPoints": 11,
       "seasonEarnings": 0,
       "inNextTournament": true
-    },
-    {
-      "name": "Davis Riley",
-      "worldRank": 999,
-      "fedexPoints": 98,
-      "seasonEarnings": 0,
-      "inNextTournament": true
     }
   ],
   "nextTournamentField": [
@@ -623,6 +595,7 @@
     "Adam Svensson",
     "Adrien Dumont de Chassart",
     "Adrien Saddier",
+    "Alejandro Tosti",
     "Alex Smalley",
     "Andrew Novak",
     "Andrew Putnam",
@@ -648,8 +621,7 @@
     "David Ford",
     "David Lipsky",
     "David Skinns",
-    "Davis Chatfield",
-    "Davis Riley"
+    "Davis Chatfield"
   ],
   "filters": {
     "tiers": [
@@ -658,5 +630,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-19T15:43:24.816Z"
+  "updatedAt": "2026-03-21T02:34:56.874Z"
 }
