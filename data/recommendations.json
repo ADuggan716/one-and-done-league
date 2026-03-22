@@ -12,25 +12,25 @@
       {
         "member": "Andrew",
         "pick": "Corey Conners",
-        "earnings": 203992,
+        "earnings": 266175,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "8",
         "leagueRank": 101
       },
       {
         "member": "Paul",
         "pick": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 96
       },
       {
         "member": "Dakota",
         "pick": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 11
       },
       {
@@ -46,25 +46,25 @@
       {
         "member": "Andrew",
         "golfer": "Corey Conners",
-        "earnings": 203992,
+        "earnings": 266175,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "8",
         "leagueRank": 101
       },
       {
         "member": "Paul",
         "golfer": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 96
       },
       {
         "member": "Dakota",
         "golfer": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 11
       },
       {
@@ -84,7 +84,7 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 0",
-    "Splash mapping: Andrew: rank=101, season=1629610, pick=Corey Conners, week=203992, finish=10 | Paul: rank=96, season=1662175, pick=Jacob Bridgeman, week=203992, finish=10 | Dakota: rank=11, season=4749044, pick=Jacob Bridgeman, week=203992, finish=10 | Mike: rank=64, season=2162505, pick=Viktor Hovland, week=0, finish=85",
+    "Splash mapping: Andrew: rank=101, season=1629610, pick=Corey Conners, week=266175, finish=8 | Paul: rank=96, season=1662175, pick=Jacob Bridgeman, week=116708, finish=17 | Dakota: rank=11, season=4749044, pick=Jacob Bridgeman, week=116708, finish=17 | Mike: rank=64, season=2162505, pick=Viktor Hovland, week=0, finish=85",
     "PGA TOUR FedExCup: 194 golfer records loaded",
     "PGA TOUR Official Money: failed (spawn osascript ENOENT)",
     "OWGR: failed (spawn osascript ENOENT)",
@@ -95,7 +95,7 @@
     "Weekly projection synthesis: 127 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Jacob Bridgeman, Matt Fitzpatrick, Xander Schauffele, Ryo Hisatsune, Sahith Theegala"
   ],
-  "generatedAt": "2026-03-21T02:56:38.753Z",
+  "generatedAt": "2026-03-22T00:00:08.498Z",
   "primary": {
     "golfer": "Aaron Rai",
     "projectedEarnings": 70940,
