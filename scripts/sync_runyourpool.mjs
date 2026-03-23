@@ -11,6 +11,7 @@ import {
   normalizeSnapshot,
   parseSplashSportsHtml,
   readConfig,
+  shouldActivateCurrentWeekWindow,
   SyncError,
 } from "../src/lib/sync.mjs";
 import {
@@ -133,6 +134,9 @@ function canonicalHistoricalEventName(name) {
   if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
     return "Players Championship";
   }
+  if (key === "houstonopen" || key === "texaschildrenshoustonopen") {
+    return "Texas Children's Houston Open";
+  }
   return raw;
 }
 
@@ -162,6 +166,70 @@ function normalizeEventKey(value) {
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]/g, "");
+}
+
+function eventIdFromName(name) {
+  return canonicalHistoricalEventName(name)
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function restorePendingRows(previousSnapshot, eventName) {
+  const normalizedName = normalizeEventKey(eventName);
+  const previousEvent = (previousSnapshot?.weeklyComparison || []).find(
+    (event) => normalizeEventKey(event.eventName) === normalizedName
+  );
+  if (!previousEvent) return new Map();
+
+  return new Map(
+    (previousEvent.rows || []).map((row) => [
+      row.member,
+      {
+        pick: row.pick ?? null,
+        earnings: Number(row.earnings || 0),
+        finish: row.finish ?? null,
+        leagueRank: row.leagueRank ?? null,
+      },
+    ])
+  );
+}
+
+function buildPendingCurrentEvent(nextTournament, subgroupMembers, previousSnapshot) {
+  const eventName = canonicalHistoricalEventName(nextTournament?.name);
+  const restoredRows = restorePendingRows(previousSnapshot, eventName);
+  const subgroupResults = (subgroupMembers || []).map((member) => {
+    const restored = restoredRows.get(member) || {};
+    return {
+      member,
+      pick: restored.pick ?? null,
+      earnings: Number(restored.earnings || 0),
+      seasonEarnings: 0,
+      finish: restored.finish ?? null,
+      leagueRank: restored.leagueRank ?? null,
+    };
+  });
+
+  return {
+    id: eventIdFromName(eventName),
+    name: eventName,
+    tier: nextTournament?.tier || "regular",
+    startDate: nextTournament?.startDate || null,
+    isUpcoming: true,
+    countsTowardSeasonTotals: false,
+    totalPurse: Number(nextTournament?.totalPurse || 0),
+    firstPrize: Number(nextTournament?.firstPrize || 0),
+    subgroupResults,
+    picks: subgroupResults.map((row) => ({
+      member: row.member,
+      golfer: row.pick,
+      earnings: row.earnings,
+      seasonEarnings: 0,
+      finish: row.finish,
+      leagueRank: row.leagueRank,
+    })),
+  };
 }
 
 function snapshotHistoryMetrics(snapshot) {
@@ -518,6 +586,26 @@ async function run() {
     normalizeEventKey(latestEvent.name) !== normalizeEventKey(normalized.nextTournament?.name)
   ) {
     latestEvent.countsTowardSeasonTotals = true;
+  }
+
+  const syncedAt = new Date(normalized.lastSyncedAt || Date.now());
+  const activeEventName = canonicalHistoricalEventName(normalized.nextTournament?.name);
+  const hasActiveWeekEvent = (normalized.events || []).some(
+    (event) => normalizeEventKey(event.name) === normalizeEventKey(activeEventName)
+  );
+  if (
+    normalized.nextTournament &&
+    shouldActivateCurrentWeekWindow(normalized.nextTournament, syncedAt) &&
+    !hasActiveWeekEvent
+  ) {
+    normalized.events = [
+      ...(normalized.events || []),
+      buildPendingCurrentEvent(normalized.nextTournament, config.subgroupMembers, previousSnapshot),
+    ];
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `Activated current-week view for ${activeEventName} at Thursday 8:00 AM ET.`,
+    ];
   }
 
   const synthesized = synthesizeWeeklySignals(normalized.projections, {

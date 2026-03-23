@@ -27,6 +27,13 @@ function normalizeGolferName(name) {
     .toLowerCase();
 }
 
+function normalizeEventKey(name) {
+  return String(name || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
 function sortComparator(sort) {
   return (a, b) => {
     const av = a[sort.key];
@@ -63,9 +70,9 @@ tabButtons.forEach((btn) => {
   btn.addEventListener("click", () => {
     tabButtons.forEach((b) => b.classList.remove("active"));
     btn.classList.add("active");
-    const showAvailability = btn.dataset.tab === "availability";
-    standingsPanel.classList.toggle("hidden", showAvailability);
-    availabilityPanel.classList.toggle("hidden", !showAvailability);
+    const activeTab = btn.dataset.tab;
+    standingsPanel.classList.toggle("hidden", activeTab !== "standings");
+    availabilityPanel.classList.toggle("hidden", activeTab !== "availability");
   });
 });
 
@@ -73,7 +80,7 @@ function renderNextTournament(snapshot) {
   const next = snapshot.nextTournament || snapshot.event || {};
   const isLive =
     snapshot.event &&
-    snapshot.event.id === next.id &&
+    normalizeEventKey(snapshot.event.name) === normalizeEventKey(next.name) &&
     snapshot.event.countsTowardSeasonTotals === false;
   const cardTitle = isLive ? "Current Tournament" : "Next Tournament";
   const kicker = isLive ? "Current Event" : "Upcoming Event";

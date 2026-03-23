@@ -1,0 +1,78 @@
+{
+  "product": "One and Done League",
+  "currentState": {
+    "summary": "The public dashboard, private recommendation flow, GitHub Pages deployment, and Raspberry Pi-based scheduled publishing are all working. The product is now focused on making the sync path dependable, especially around weekly rollover behavior and operator visibility."
+  },
+  "completedFoundation": [
+    "Public dashboard for standings, weekly comparison, and golfer availability is live.",
+    "Private recommendations page shares the same generated data pipeline as the public dashboard.",
+    "GitHub Pages deployment and static JSON publishing workflow are in place.",
+    "The Raspberry Pi runner can sync, commit, and push updates on schedule without relying on the Mac being on.",
+    "Recovery logic now protects the season view from being wiped when Splash only returns current-week data."
+  ],
+  "currentPhase": {
+    "name": "Hardening / Reliability",
+    "summary": "Make the current product dependable enough that weekly refreshes and publishing do not require rescue work.",
+    "items": [
+      "Keep the Pi runner clean and aligned with the main branch so scheduled runs stay rebase-safe.",
+      "Reduce the chance of season-history regressions when upstream data is partial or current-week-only.",
+      "Lock the Thursday-to-Sunday weekly rollover rules so the dashboard opens the new week on Thursday morning but only books earnings into season totals after the Sunday final refresh.",
+      "Make operational checks simple enough that a screenshot or short log snippet is enough to diagnose most failures."
+    ]
+  },
+  "nextPhase": {
+    "name": "Usability",
+    "summary": "Make the product easier to understand and easier to operate without needing to inspect raw files.",
+    "items": [
+      "Add clearer health and freshness messaging for last sync result, source state, and publishing status.",
+      "Improve recommendation transparency so weekly pick guidance is easier to trust and explain.",
+      "Polish small UX details like favicon, metadata, and navigation clarity across public and private views."
+    ]
+  },
+  "laterPhase": {
+    "name": "Feature Expansion",
+    "summary": "Add higher-value league intelligence only after the sync and publishing foundation is stable.",
+    "items": [
+      "Broaden projection inputs and field-aware recommendation logic for tougher weekly pick decisions.",
+      "Add deeper season storytelling, team race views, and smarter comparison tools.",
+      "Introduce lightweight alerts or summaries for failed refreshes and notable standings changes."
+    ]
+  },
+  "buildTimeline": [
+    {
+      "title": "Foundation Complete",
+      "timing": "Done",
+      "summary": "Built the live dashboard, private recommendation workflow, hosted deployment, and shared JSON data pipeline."
+    },
+    {
+      "title": "Always-On Publishing",
+      "timing": "Done",
+      "summary": "Moved scheduled refreshes onto the Raspberry Pi so updates can run even when the Mac is off."
+    },
+    {
+      "title": "Season History Recovery",
+      "timing": "Done",
+      "summary": "Fixed weekly refresh regressions so empty future events do not appear as active picks, duplicate tournaments are collapsed, and the prior completed event rolls into season totals correctly."
+    },
+    {
+      "title": "Weekly Rollover Rules",
+      "timing": "Done",
+      "summary": "Defined the week handoff so Thursday morning opens the new tournament in the week-by-week view, while Sunday night is what finalizes that tournament into season totals and last week's earnings."
+    },
+    {
+      "title": "Reliability Hardening",
+      "timing": "Now",
+      "summary": "Stabilizing sync behavior, preserving season history during partial upstream responses, and reducing manual recovery work."
+    },
+    {
+      "title": "Operator-Friendly Product",
+      "timing": "Next",
+      "summary": "Add clearer status, easier monitoring, and more understandable guidance for weekly decisions."
+    },
+    {
+      "title": "League Intelligence Expansion",
+      "timing": "Later",
+      "summary": "Expand projections, alerts, and deeper season analysis after the automation is consistently dependable."
+    }
+  ]
+}

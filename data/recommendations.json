@@ -91,11 +91,11 @@
     "Fallback: reused previous committed season history because upstream returned no event history.",
     "PGA TOUR schedule resolved next tournament: Texas Children's Houston Open",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/texas-children-s-houston-open/R2026020/field",
-    "PGA TOUR field entries: 131",
-    "Weekly projection synthesis: 120 field golfers received modeled payout estimates",
+    "PGA TOUR field entries: 133",
+    "Weekly projection synthesis: 122 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Chris Gotterup, Scottie Scheffler, Min Woo Lee, Jake Knapp, Nico Echavarria"
   ],
-  "generatedAt": "2026-03-23T17:00:49.106Z",
+  "generatedAt": "2026-03-23T17:21:45.076Z",
   "primary": {
     "golfer": "Aaron Rai",
     "projectedEarnings": 78156,
@@ -606,8 +606,8 @@
   },
   "summary": {
     "totalAvailable": 47,
-    "eligibleCount": 31,
-    "projectedCount": 31,
+    "eligibleCount": 32,
+    "projectedCount": 32,
     "nextTournamentFieldCount": 0,
     "confidenceLabel": "High",
     "warnings": []
@@ -2182,6 +2182,62 @@
       }
     },
     {
+      "golfer": "Andrew Putnam",
+      "projectedEarnings": 88455,
+      "projectedDupCount": 0.06,
+      "futureValue": 234609,
+      "worldRank": 999,
+      "fedexPoints": 226,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.500749825,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.500749825,
+        "expected": 0.025272857142857142,
+        "leverage": 0.7598045714285714,
+        "preservation": 0.7577423
+      },
+      "flags": [
+        "Limited course history"
+      ],
+      "rationale": {
+        "expected": 0.025272857142857142,
+        "uniqueness": 0.98,
+        "futureCost": 0.1173045,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.5,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50."
+      }
+    },
+    {
       "golfer": "Aldrich Potgieter",
       "projectedEarnings": 94414,
       "projectedDupCount": 0.06,
@@ -2530,64 +2586,6 @@
       "futureValue": 150000,
       "worldRank": 999,
       "fedexPoints": 134,
-      "seasonEarnings": 0,
-      "inNextTournament": false,
-      "historicalStrength": 0.5,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.7831250000000001
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.075,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.5,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.50. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Andrew Putnam",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 150000,
-      "worldRank": 999,
-      "fedexPoints": 226,
       "seasonEarnings": 0,
       "inNextTournament": false,
       "historicalStrength": 0.5,

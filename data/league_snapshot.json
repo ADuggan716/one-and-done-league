@@ -1527,13 +1527,13 @@
     },
     {
       "golfer": "Andrew Putnam",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 150000,
+      "projectedEarnings": 88455,
+      "projectedDupCount": 0.06,
+      "futureValue": 234609,
       "worldRank": 999,
       "fedexPoints": 226,
       "seasonEarnings": 0,
-      "inNextTournament": false,
+      "inNextTournament": true,
       "historicalStrength": 0.5,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
@@ -1543,7 +1543,8 @@
         22
       ],
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -3364,13 +3365,13 @@
     },
     {
       "golfer": "Kris Ventura",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 150000,
+      "projectedEarnings": 75506,
+      "projectedDupCount": 0.06,
+      "futureValue": 215221,
       "worldRank": 999,
       "fedexPoints": 37,
       "seasonEarnings": 0,
-      "inNextTournament": false,
+      "inNextTournament": true,
       "historicalStrength": 0.5,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
@@ -3380,7 +3381,8 @@
         22
       ],
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -5366,13 +5368,13 @@
     "Fallback: reused previous committed season history because upstream returned no event history.",
     "PGA TOUR schedule resolved next tournament: Texas Children's Houston Open",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/texas-children-s-houston-open/R2026020/field",
-    "PGA TOUR field entries: 131",
-    "Weekly projection synthesis: 120 field golfers received modeled payout estimates",
+    "PGA TOUR field entries: 133",
+    "Weekly projection synthesis: 122 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Chris Gotterup, Scottie Scheffler, Min Woo Lee, Jake Knapp, Nico Echavarria"
   ],
   "warnings": [
     "No event history returned; dashboard will show empty season state.",
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-23T17:00:48.877Z"
+  "updatedAt": "2026-03-23T17:21:44.806Z"
 }

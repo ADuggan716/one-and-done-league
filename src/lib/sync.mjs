@@ -169,6 +169,9 @@ function canonicalizeEventName(value) {
   if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
     return "Players Championship";
   }
+  if (key === "houstonopen" || key === "texaschildrenshoustonopen") {
+    return "Texas Children's Houston Open";
+  }
   if (key === "arnoldpalmer" || key === "arnoldpalmerinvitational") {
     return "Arnold Palmer";
   }
@@ -976,6 +979,44 @@ function buildSplashSnapshot({
 function money(value) {
   const n = Number(value || 0);
   return Number.isFinite(n) ? n : 0;
+}
+
+function parseTournamentActivationTime(startDateText, referenceDate = new Date()) {
+  const match = String(startDateText || "").match(/([A-Za-z]{3,9})\s+(\d{1,2})/);
+  if (!match) return null;
+
+  const monthMap = {
+    jan: 0,
+    feb: 1,
+    mar: 2,
+    apr: 3,
+    may: 4,
+    jun: 5,
+    jul: 6,
+    aug: 7,
+    sep: 8,
+    oct: 9,
+    nov: 10,
+    dec: 11,
+  };
+  const month = monthMap[match[1].slice(0, 3).toLowerCase()];
+  const day = Number(match[2]);
+  if (!Number.isInteger(month) || !Number.isFinite(day)) return null;
+
+  const candidate = new Date(referenceDate.getFullYear(), month, day, 8, 0, 0, 0);
+  if (candidate.getTime() < referenceDate.getTime() - 180 * 24 * 60 * 60 * 1000) {
+    candidate.setFullYear(candidate.getFullYear() + 1);
+  } else if (candidate.getTime() > referenceDate.getTime() + 180 * 24 * 60 * 60 * 1000) {
+    candidate.setFullYear(candidate.getFullYear() - 1);
+  }
+  return candidate;
+}
+
+export function shouldActivateCurrentWeekWindow(nextTournament, referenceDate = new Date()) {
+  if (!nextTournament?.name) return false;
+  const activationTime = parseTournamentActivationTime(nextTournament.startDate, referenceDate);
+  if (!activationTime) return false;
+  return referenceDate.getTime() >= activationTime.getTime();
 }
 
 export function shouldIncludeCurrentEventSnapshot(eventName, mergedPicks) {
