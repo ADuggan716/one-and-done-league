@@ -1,6 +1,6 @@
 {
   "eventId": "valspar-championship",
-  "tournamentName": "Valspar Championship",
+  "tournamentName": "Texas Children's Houston Open",
   "eventTier": "regular",
   "currentEventMeta": {
     "totalPurse": 0,
@@ -9,15 +9,6 @@
   "members": {
     "Andrew": {
       "used": [
-        "Daniel Berger",
-        "Ludvig Aberg",
-        "J.J. Spaun",
-        "Collin Morikawa",
-        "Viktor Hovland",
-        "Scottie Scheffler",
-        "Shane Lowry",
-        "Hideki Matsuyama",
-        "Si Woo Kim",
         "Corey Conners"
       ],
       "available": [
@@ -61,7 +52,9 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Dan Brown",
+        "Daniel Berger",
         "Danny Walker",
         "Danny Willett",
         "David Ford",
@@ -72,19 +65,11 @@
     },
     "Paul": {
       "used": [
-        "Maverick McNealy",
-        "Ben Griffin",
-        "Ludvig Aberg",
-        "Si Woo Kim",
-        "Jake Knapp",
-        "Samuel Stevens",
-        "Aaron Rai",
-        "Scottie Scheffler",
-        "Collin Morikawa",
         "Jacob Bridgeman"
       ],
       "available": [
         "A.J. Ewart",
+        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -101,6 +86,7 @@
         "Austin Eckroat",
         "Austin Smotherman",
         "Beau Hossler",
+        "Ben Griffin",
         "Ben Kohles",
         "Ben Silverman",
         "Billy Horschel",
@@ -122,6 +108,7 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -135,19 +122,11 @@
     },
     "Dakota": {
       "used": [
-        "Aaron Rai",
-        "Si Woo Kim",
-        "Cameron Young",
-        "Maverick McNealy",
-        "Russell Henley",
-        "Rory McIlroy",
-        "Nicolai Hojgaard",
-        "Collin Morikawa",
-        "Ludvig Aberg",
         "Jacob Bridgeman"
       ],
       "available": [
         "A.J. Ewart",
+        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -175,6 +154,7 @@
         "Brooks Koepka",
         "Bud Cauley",
         "Cam Davis",
+        "Cameron Young",
         "Camilo Villegas",
         "Carson Young",
         "Chad Ramey",
@@ -185,6 +165,7 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
+        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -198,15 +179,6 @@
     },
     "Mike": {
       "used": [
-        "Robert MacIntyre",
-        "Patrick Cantlay",
-        "Nicolai Hojgaard",
-        "Maverick McNealy",
-        "Justin Rose",
-        "Scottie Scheffler",
-        "Michael Thorbjornsen",
-        "Matthew Fitzpatrick",
-        "Sepp Straka",
         "Viktor Hovland"
       ],
       "available": [
@@ -283,7 +255,7 @@
       "worldRank": 999,
       "fedexPoints": 24,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Adam Schenk",
@@ -297,7 +269,7 @@
       "worldRank": 999,
       "fedexPoints": 531,
       "seasonEarnings": 0,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Adam Svensson",
@@ -332,7 +304,7 @@
       "worldRank": 999,
       "fedexPoints": 308,
       "seasonEarnings": 0,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Alejandro Tosti",
@@ -360,14 +332,14 @@
       "worldRank": 999,
       "fedexPoints": 134,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Andrew Putnam",
       "worldRank": 999,
       "fedexPoints": 226,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Austin Eckroat",
@@ -381,7 +353,7 @@
       "worldRank": 999,
       "fedexPoints": 364,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Beau Hossler",
@@ -423,7 +395,7 @@
       "worldRank": 999,
       "fedexPoints": 0,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Brian Campbell",
@@ -465,7 +437,7 @@
       "worldRank": 999,
       "fedexPoints": 6,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Cameron Young",
@@ -521,14 +493,14 @@
       "worldRank": 999,
       "fedexPoints": 1131,
       "seasonEarnings": 0,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Chris Kirk",
       "worldRank": 999,
       "fedexPoints": 65,
       "seasonEarnings": 0,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Christiaan Bezuidenhout",
@@ -542,7 +514,7 @@
       "worldRank": 999,
       "fedexPoints": 13,
       "seasonEarnings": 0,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Collin Morikawa",
@@ -556,7 +528,7 @@
       "worldRank": 999,
       "fedexPoints": 166,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Dan Brown",
@@ -605,7 +577,7 @@
       "worldRank": 999,
       "fedexPoints": 38,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Davis Chatfield",
@@ -618,37 +590,34 @@
   "nextTournamentField": [
     "A.J. Ewart",
     "Aaron Rai",
-    "Adam Hadwin",
     "Adam Schenk",
+    "Adam Scott",
     "Adam Svensson",
     "Adrien Dumont de Chassart",
     "Adrien Saddier",
+    "Aldrich Potgieter",
     "Alejandro Tosti",
     "Alex Smalley",
-    "Andrew Novak",
-    "Andrew Putnam",
     "Austin Eckroat",
-    "Austin Smotherman",
     "Beau Hossler",
     "Ben Griffin",
     "Billy Horschel",
-    "Brandt Snedeker",
     "Brian Campbell",
     "Brice Garnett",
     "Brooks Koepka",
     "Bud Cauley",
-    "Cam Davis",
     "Chad Ramey",
     "Chandler Blanchet",
     "Chandler Phillips",
+    "Chris Gotterup",
+    "Chris Kirk",
     "Christiaan Bezuidenhout",
-    "Corey Conners",
+    "Christo Lamprecht",
     "Dan Brown",
     "Danny Walker",
     "Danny Willett",
     "David Ford",
     "David Lipsky",
-    "David Skinns",
     "Davis Chatfield"
   ],
   "filters": {
@@ -658,5 +627,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-22T00:00:08.194Z"
+  "updatedAt": "2026-03-23T00:00:09.128Z"
 }
