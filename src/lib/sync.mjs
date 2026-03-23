@@ -7,6 +7,8 @@ export class SyncError extends Error {
   }
 }
 
+const COOKIE_NAME_PATTERN = /^[!#$%&'*+\-.^_`|~0-9A-Za-z]+$/;
+
 function formatFetchError(error) {
   const bits = [error?.message || "fetch failed"];
   if (error?.cause?.code) bits.push(`code=${error.cause.code}`);
@@ -14,6 +16,86 @@ function formatFetchError(error) {
   if (error?.cause?.syscall) bits.push(`syscall=${error.cause.syscall}`);
   if (error?.cause?.hostname) bits.push(`host=${error.cause.hostname}`);
   return bits.join(" | ");
+}
+
+function parseCookieJson(raw) {
+  try {
+    return JSON.parse(raw);
+  } catch {
+    return null;
+  }
+}
+
+function dedupeCookiePairs(pairs) {
+  const out = new Map();
+  for (const pair of pairs) {
+    const name = String(pair?.name || "").trim();
+    const value = String(pair?.value || "").trim();
+    if (!name || !COOKIE_NAME_PATTERN.test(name) || !value) continue;
+    out.set(name, value);
+  }
+  return [...out.entries()].map(([name, value]) => `${name}=${value}`);
+}
+
+export function normalizeCookieInput(raw) {
+  const text = String(raw || "").trim();
+  if (!text) {
+    throw new SyncError("Cookie file is empty.", "COOKIE_EMPTY");
+  }
+
+  if (/replace-with-your-runyourpool-session-cookie/i.test(text)) {
+    throw new SyncError("Cookie file still contains the placeholder value.", "COOKIE_PLACEHOLDER");
+  }
+
+  const json = parseCookieJson(text);
+  if (Array.isArray(json)) {
+    const cookiePairs = dedupeCookiePairs(json);
+    if (cookiePairs.length > 0) return cookiePairs.join("; ");
+  }
+
+  const netscapeLines = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => line && !line.startsWith("#"));
+  if (netscapeLines.length > 0 && netscapeLines.every((line) => line.split("\t").length >= 7)) {
+    const cookiePairs = dedupeCookiePairs(
+      netscapeLines.map((line) => {
+        const parts = line.split("\t");
+        return { name: parts[5], value: parts[6] };
+      })
+    );
+    if (cookiePairs.length > 0) return cookiePairs.join("; ");
+  }
+
+  const headerCookieLines = text
+    .split(/\r?\n/)
+    .map((line) => line.trim())
+    .filter((line) => /^cookie:/i.test(line))
+    .map((line) => line.replace(/^cookie:\s*/i, "").trim())
+    .filter(Boolean);
+  if (headerCookieLines.length > 0) {
+    return headerCookieLines.join("; ");
+  }
+
+  if (/^[A-Za-z-]+:\s*/m.test(text) && !/^cookie:/im.test(text)) {
+    throw new SyncError("Copied request headers did not include a Cookie header.", "COOKIE_MISSING_HEADER");
+  }
+
+  const inlinePairs = text
+    .split(";")
+    .map((chunk) => chunk.trim())
+    .filter(Boolean);
+  if (inlinePairs.length > 0 && inlinePairs.every((pair) => pair.includes("="))) {
+    const cookiePairs = dedupeCookiePairs(
+      inlinePairs.map((pair) => {
+        const idx = pair.indexOf("=");
+        return { name: pair.slice(0, idx), value: pair.slice(idx + 1) };
+      })
+    );
+    if (cookiePairs.length > 0) return cookiePairs.join("; ");
+  }
+
+  throw new SyncError("Cookie file format is not recognized. Use a Cookie header, cookie-jar export, or name=value pairs.", "COOKIE_BAD_FORMAT");
 }
 
 async function fetchOrThrow(url, options, label) {
@@ -294,6 +376,91 @@ function extractTableById(html, tableId) {
   return html.slice(tableStart, tableEnd + 8);
 }
 
+function stripHtmlTags(html) {
+  return safeText(String(html || "").replace(/<img[\s\S]*?>/gi, " "));
+}
+
+function extractAttr(tagHtml, attrName) {
+  const pattern = new RegExp(`${attrName}=(["'])([\\s\\S]*?)\\1`, "i");
+  const match = String(tagHtml || "").match(pattern);
+  return match ? match[2] : null;
+}
+
+function extractTableRows(tableHtml) {
+  const rows = [];
+  const rowRegex = /<tr[\s\S]*?<\/tr>/gi;
+  let match;
+  while ((match = rowRegex.exec(tableHtml)) !== null) {
+    rows.push(match[0]);
+  }
+  return rows;
+}
+
+function extractCellHtml(rowHtml) {
+  const cells = [];
+  const cellRegex = /<t[dh][^>]*>([\s\S]*?)<\/t[dh]>/gi;
+  let match;
+  while ((match = cellRegex.exec(rowHtml)) !== null) {
+    cells.push(match[1]);
+  }
+  return cells;
+}
+
+function parsePickFromPickCell(cellHtml) {
+  const text = stripHtmlTags(cellHtml);
+  if (!text || /^your pick for/i.test(text)) return null;
+  if (/^edit pick$/i.test(text)) return null;
+  if (/^winnings:/i.test(text) || /^fedex points:/i.test(text)) return null;
+
+  const onclickMatch = String(cellHtml || "").match(/location\.href='[^']*entry_id=\d+'[\s\S]*?<table[\s\S]*?<\/table>/i);
+  const candidates = text
+    .split(/\s{2,}|\n+/)
+    .map((part) => part.trim())
+    .filter(Boolean)
+    .filter((part) => !/^edit pick$/i.test(part))
+    .filter((part) => !/^winnings:/i.test(part))
+    .filter((part) => !/^fedex points:/i.test(part));
+
+  if (onclickMatch && candidates.length === 0) return null;
+  if (candidates.length === 0) return null;
+  return candidates[0];
+}
+
+function parsePicksFromEntryTable(html, subgroupMembers, memberAliases = {}) {
+  const entryTable = extractTableById(html, "entryTable");
+  if (!entryTable) return [];
+
+  const out = [];
+  for (const rowHtml of extractTableRows(entryTable)) {
+    const rowTag = rowHtml.match(/<tr[^>]*>/i)?.[0] || "";
+    if (!/entryRow/i.test(rowTag)) continue;
+
+    const cells = extractCellHtml(rowHtml);
+    if (cells.length < 3) continue;
+
+    const entryCellText = stripHtmlTags(cells[0]);
+    const entryName = entryCellText.split(/\s+/)[0] || entryCellText;
+    const member = resolveMemberFromEntry(entryName, subgroupMembers, memberAliases);
+    if (!member) continue;
+
+    const pick = parsePickFromPickCell(cells[2]);
+    const entryId = extractAttr(cells[2], "onClick")?.match(/entry_id=(\d+)/i)?.[1] || null;
+    out.push({
+      member,
+      entryName,
+      entryId,
+      pick,
+      earnings: 0,
+      finish: null,
+      leagueRank: null,
+    });
+  }
+
+  const dedup = new Map();
+  for (const item of out) dedup.set(item.member, item);
+  return [...dedup.values()];
+}
+
 function parsePickHistoryHtml(html, member) {
   const tables = extractTables(html);
   const targetTable = tables.find((table) => {
@@ -341,6 +508,9 @@ function parsePickHistoryHtml(html, member) {
 }
 
 function parsePicksFromEntriesHtml(html, subgroupMembers, memberAliases = {}) {
+  const tablePicks = parsePicksFromEntryTable(html, subgroupMembers, memberAliases);
+  if (tablePicks.length > 0) return tablePicks;
+
   const rows = extractRows(html);
   const parsed = [];
 
@@ -539,6 +709,15 @@ export async function fetchSplashSportsData({
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
 
+  if (picks.length === 0 && standings.length === 0) {
+    await writeDebugHtml("debug-splash-entries-parse-empty", entriesHtml);
+    await writeDebugHtml("debug-splash-standings-parse-empty", standingsHtml);
+    throw new SyncError(
+      "Splash parser returned zero picks and zero standings rows. Cookie/session likely expired or page markup changed.",
+      "PARSE_EMPTY"
+    );
+  }
+
   return buildSplashSnapshot({
     leaguePath,
     entriesUrl,
@@ -666,12 +845,15 @@ function buildSplashSnapshot({
 
   for (const member of subgroupMembers) {
     for (const row of pickHistory[member] || []) {
-      if (!historicalByEvent.has(row.eventId)) {
-        eventOrder.push(row.eventId);
-        const meta = lookupEventMetadata(row.eventName);
-        historicalByEvent.set(row.eventId, {
-          id: row.eventId,
-          name: row.eventName,
+      const canonicalEventName = canonicalizeEventName(row.eventName);
+      const canonicalEventId = normalizeEventId(canonicalEventName);
+
+      if (!historicalByEvent.has(canonicalEventId)) {
+        eventOrder.push(canonicalEventId);
+        const meta = lookupEventMetadata(canonicalEventName);
+        historicalByEvent.set(canonicalEventId, {
+          id: canonicalEventId,
+          name: canonicalEventName,
           tier: meta.tier,
           startDate: null,
           isUpcoming: false,
@@ -697,7 +879,7 @@ function buildSplashSnapshot({
         });
       }
 
-      const event = historicalByEvent.get(row.eventId);
+      const event = historicalByEvent.get(canonicalEventId);
       const result = event.subgroupResults.find((item) => item.member === member);
       const pickResult = event.picks.find((item) => item.member === member);
       Object.assign(result, {
@@ -803,8 +985,7 @@ export function shouldIncludeCurrentEventSnapshot(eventName, mergedPicks) {
     (row) =>
       row?.golfer ||
       Number(row?.earnings || 0) > 0 ||
-      Number(row?.seasonEarnings || 0) > 0 ||
-      row?.leagueRank !== null && row?.leagueRank !== undefined
+      row?.finish !== null && row?.finish !== undefined
   );
 }
 
@@ -818,6 +999,7 @@ export function normalizeSnapshot(raw, subgroupMembers) {
   const subgroupSet = new Set(subgroupMembers);
 
   const normalizedEvents = events.map((event) => {
+    const canonicalName = canonicalizeEventName(event.name);
     const picks = Array.isArray(event.picks) ? event.picks : [];
     const subgroupResults = picks
       .filter((pick) => subgroupSet.has(pick.member))
@@ -831,8 +1013,8 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       }));
 
     return {
-      id: event.id,
-      name: event.name,
+      id: normalizeEventId(event.id || canonicalName),
+      name: canonicalName,
       tier: event.tier || "regular",
       startDate: event.startDate || null,
       isUpcoming: Boolean(event.isUpcoming),
@@ -891,9 +1073,6 @@ export function normalizeSnapshot(raw, subgroupMembers) {
 }
 
 export async function loadCookie(cookiePath) {
-  const cookie = (await fs.readFile(cookiePath, "utf8")).trim();
-  if (!cookie) {
-    throw new SyncError("Cookie file is empty.", "COOKIE_EMPTY");
-  }
-  return cookie;
+  const raw = await fs.readFile(cookiePath, "utf8");
+  return normalizeCookieInput(raw);
 }

@@ -127,6 +127,43 @@ function snapshotHasSeasonData(snapshot) {
   );
 }
 
+function canonicalHistoricalEventName(name) {
+  const raw = String(name || "").trim();
+  const key = raw.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
+    return "Players Championship";
+  }
+  return raw;
+}
+
+function canonicalHistoricalEventId(name, fallbackId) {
+  const canonicalName = canonicalHistoricalEventName(name);
+  const fallback = String(fallbackId || "").trim();
+  if (fallback && fallback !== "players") return fallback;
+  return canonicalName
+    .toLowerCase()
+    .replace(/&/g, "and")
+    .replace(/[^a-z0-9]+/g, "-")
+    .replace(/^-+|-+$/g, "");
+}
+
+function eventHasMeaningfulData(event) {
+  const rows = event?.subgroupResults || [];
+  return rows.some(
+    (row) =>
+      row?.pick ||
+      Number(row?.earnings || 0) > 0 ||
+      (row?.finish !== null && row?.finish !== undefined)
+  );
+}
+
+function normalizeEventKey(value) {
+  return String(value || "")
+    .trim()
+    .toLowerCase()
+    .replace(/[^a-z0-9]/g, "");
+}
+
 function snapshotHistoryMetrics(snapshot) {
   const events = snapshot?.weeklyComparison || [];
   const seasonEarningsTotal = (snapshot?.subgroupStandings || []).reduce(
@@ -177,11 +214,13 @@ function normalizedHasSeasonHistory(normalized) {
 }
 
 async function loadLastGoodSnapshot() {
+  const candidates = [];
   let bestSnapshot = null;
 
   try {
     const current = await readJson("data/league_snapshot.json");
     if (snapshotHasSeasonData(current)) {
+      candidates.push(current);
       bestSnapshot = current;
     }
   } catch {
@@ -205,8 +244,11 @@ async function loadLastGoodSnapshot() {
           `${commit}:data/league_snapshot.json`,
         ]);
         const snapshot = JSON.parse(snapshotRaw);
-        if (snapshotHasSeasonData(snapshot) && (!bestSnapshot || compareSnapshotRichness(snapshot, bestSnapshot) > 0)) {
-          bestSnapshot = snapshot;
+        if (snapshotHasSeasonData(snapshot)) {
+          candidates.push(snapshot);
+          if (!bestSnapshot || compareSnapshotRichness(snapshot, bestSnapshot) > 0) {
+            bestSnapshot = snapshot;
+          }
         }
       } catch {
         // Try the next historical snapshot.
@@ -216,36 +258,105 @@ async function loadLastGoodSnapshot() {
     // No historical fallback available.
   }
 
-  return bestSnapshot;
+  return mergeHistoricalSnapshots(candidates) || bestSnapshot;
 }
 
 function restoreEventsFromSnapshot(snapshot) {
-  return (snapshot?.weeklyComparison || []).map((event) => ({
-    id: event.eventId,
-    name: event.eventName,
+  return (snapshot?.weeklyComparison || [])
+    .map((event) => ({
+      id: canonicalHistoricalEventId(event.eventName, event.eventId),
+      name: canonicalHistoricalEventName(event.eventName),
+      tier: event.tier || "regular",
+      startDate: event.startDate || null,
+      isUpcoming: false,
+      countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
+      totalPurse: Number(event.totalPurse || 0),
+      firstPrize: Number(event.firstPrize || 0),
+      subgroupResults: (event.rows || []).map((row) => ({
+        member: row.member,
+        pick: row.pick ?? null,
+        earnings: Number(row.earnings || 0),
+        seasonEarnings: Number(row.seasonEarnings || 0),
+        finish: row.finish ?? null,
+        leagueRank: row.leagueRank ?? null,
+      })),
+      picks: (event.rows || []).map((row) => ({
+        member: row.member,
+        golfer: row.pick ?? null,
+        earnings: Number(row.earnings || 0),
+        seasonEarnings: Number(row.seasonEarnings || 0),
+        finish: row.finish ?? null,
+        leagueRank: row.leagueRank ?? null,
+      })),
+    }))
+    .filter(eventHasMeaningfulData);
+}
+
+function eventRichnessMetrics(event) {
+  const rows = event?.subgroupResults || [];
+  return {
+    nonEmptyPickCount: rows.filter((row) => row?.pick).length,
+    completedFinishCount: rows.filter((row) => row?.finish !== null && row?.finish !== undefined).length,
+    totalEarnings: rows.reduce((sum, row) => sum + Number(row?.earnings || 0), 0),
+  };
+}
+
+function compareEventRichness(left, right) {
+  const a = eventRichnessMetrics(left);
+  const b = eventRichnessMetrics(right);
+
+  if (a.totalEarnings !== b.totalEarnings) return a.totalEarnings - b.totalEarnings;
+  if (a.completedFinishCount !== b.completedFinishCount) return a.completedFinishCount - b.completedFinishCount;
+  return a.nonEmptyPickCount - b.nonEmptyPickCount;
+}
+
+function toWeeklyComparisonEvent(event) {
+  return {
+    eventId: event.id,
+    eventName: event.name,
     tier: event.tier || "regular",
     startDate: event.startDate || null,
-    isUpcoming: false,
     countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
     totalPurse: Number(event.totalPurse || 0),
     firstPrize: Number(event.firstPrize || 0),
-    subgroupResults: (event.rows || []).map((row) => ({
+    rows: (event.subgroupResults || []).map((row) => ({
       member: row.member,
+      eventId: event.id,
+      eventName: event.name,
+      tier: event.tier || "regular",
+      totalPurse: Number(event.totalPurse || 0),
+      firstPrize: Number(event.firstPrize || 0),
+      earnings: Number(row.earnings || 0),
+      finish: row.finish ?? null,
       pick: row.pick ?? null,
-      earnings: Number(row.earnings || 0),
-      seasonEarnings: Number(row.seasonEarnings || 0),
-      finish: row.finish ?? null,
       leagueRank: row.leagueRank ?? null,
     })),
-    picks: (event.rows || []).map((row) => ({
-      member: row.member,
-      golfer: row.pick ?? null,
-      earnings: Number(row.earnings || 0),
-      seasonEarnings: Number(row.seasonEarnings || 0),
-      finish: row.finish ?? null,
-      leagueRank: row.leagueRank ?? null,
-    })),
-  }));
+  };
+}
+
+function mergeHistoricalSnapshots(snapshots) {
+  const candidates = (snapshots || []).filter(Boolean);
+  if (candidates.length === 0) return null;
+
+  const richestSnapshot = candidates.reduce((best, snapshot) => {
+    if (!best) return snapshot;
+    return compareSnapshotRichness(snapshot, best) > 0 ? snapshot : best;
+  }, null);
+
+  const mergedEvents = new Map();
+  for (const snapshot of [richestSnapshot, ...candidates.filter((snapshot) => snapshot !== richestSnapshot)]) {
+    for (const event of restoreEventsFromSnapshot(snapshot)) {
+      const current = mergedEvents.get(event.id);
+      if (!current || compareEventRichness(event, current) > 0) {
+        mergedEvents.set(event.id, event);
+      }
+    }
+  }
+
+  return {
+    ...richestSnapshot,
+    weeklyComparison: [...mergedEvents.values()].map(toWeeklyComparisonEvent),
+  };
 }
 
 function dedupeEventsById(events) {
@@ -398,6 +509,15 @@ async function run() {
       ...normalized.sourceNotes,
       `PGA TOUR field: failed (${error.message})`,
     ];
+  }
+
+  const latestEvent = normalized.events?.at(-1);
+  if (
+    latestEvent &&
+    eventHasMeaningfulData(latestEvent) &&
+    normalizeEventKey(latestEvent.name) !== normalizeEventKey(normalized.nextTournament?.name)
+  ) {
+    latestEvent.countsTowardSeasonTotals = true;
   }
 
   const synthesized = synthesizeWeeklySignals(normalized.projections, {
