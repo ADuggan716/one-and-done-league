@@ -127,6 +127,37 @@ function snapshotHasSeasonData(snapshot) {
   );
 }
 
+function snapshotHistoryMetrics(snapshot) {
+  const events = snapshot?.weeklyComparison || [];
+  const seasonEarningsTotal = (snapshot?.subgroupStandings || []).reduce(
+    (sum, row) => sum + Number(row?.seasonEarnings || 0),
+    0
+  );
+
+  return {
+    eventCount: events.length,
+    completedEventCount: events.filter((event) => event?.countsTowardSeasonTotals !== false).length,
+    seasonEarningsTotal,
+    updatedAtMs: Number.isFinite(Date.parse(snapshot?.updatedAt || "")) ? Date.parse(snapshot.updatedAt) : 0,
+  };
+}
+
+function compareSnapshotRichness(left, right) {
+  const a = snapshotHistoryMetrics(left);
+  const b = snapshotHistoryMetrics(right);
+
+  if (a.completedEventCount !== b.completedEventCount) {
+    return a.completedEventCount - b.completedEventCount;
+  }
+  if (a.eventCount !== b.eventCount) {
+    return a.eventCount - b.eventCount;
+  }
+  if (a.seasonEarningsTotal !== b.seasonEarningsTotal) {
+    return a.seasonEarningsTotal - b.seasonEarningsTotal;
+  }
+  return a.updatedAtMs - b.updatedAtMs;
+}
+
 function normalizedHasSeasonHistory(normalized) {
   const events = normalized?.events || [];
   if (events.length === 0) return false;
@@ -146,9 +177,13 @@ function normalizedHasSeasonHistory(normalized) {
 }
 
 async function loadLastGoodSnapshot() {
+  let bestSnapshot = null;
+
   try {
     const current = await readJson("data/league_snapshot.json");
-    if (snapshotHasSeasonData(current)) return current;
+    if (snapshotHasSeasonData(current)) {
+      bestSnapshot = current;
+    }
   } catch {
     // Fall through to git history lookup.
   }
@@ -170,7 +205,9 @@ async function loadLastGoodSnapshot() {
           `${commit}:data/league_snapshot.json`,
         ]);
         const snapshot = JSON.parse(snapshotRaw);
-        if (snapshotHasSeasonData(snapshot)) return snapshot;
+        if (snapshotHasSeasonData(snapshot) && (!bestSnapshot || compareSnapshotRichness(snapshot, bestSnapshot) > 0)) {
+          bestSnapshot = snapshot;
+        }
       } catch {
         // Try the next historical snapshot.
       }
@@ -179,7 +216,7 @@ async function loadLastGoodSnapshot() {
     // No historical fallback available.
   }
 
-  return null;
+  return bestSnapshot;
 }
 
 function restoreEventsFromSnapshot(snapshot) {

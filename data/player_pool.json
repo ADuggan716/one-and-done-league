@@ -1,5 +1,5 @@
 {
-  "eventId": "valspar-championship",
+  "eventId": "houston-open",
   "tournamentName": "Texas Children's Houston Open",
   "eventTier": "regular",
   "currentEventMeta": {
@@ -9,7 +9,15 @@
   "members": {
     "Andrew": {
       "used": [
-        "Corey Conners"
+        "Daniel Berger",
+        "Ludvig Aberg",
+        "J.J. Spaun",
+        "Collin Morikawa",
+        "Viktor Hovland",
+        "Scottie Scheffler",
+        "Shane Lowry",
+        "Hideki Matsuyama",
+        "Si Woo Kim"
       ],
       "available": [
         "A.J. Ewart",
@@ -52,9 +60,8 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
-        "Collin Morikawa",
+        "Corey Conners",
         "Dan Brown",
-        "Daniel Berger",
         "Danny Walker",
         "Danny Willett",
         "David Ford",
@@ -65,11 +72,18 @@
     },
     "Paul": {
       "used": [
-        "Jacob Bridgeman"
+        "Maverick McNealy",
+        "Ben Griffin",
+        "Ludvig Aberg",
+        "Si Woo Kim",
+        "Jake Knapp",
+        "Samuel Stevens",
+        "Aaron Rai",
+        "Scottie Scheffler",
+        "Collin Morikawa"
       ],
       "available": [
         "A.J. Ewart",
-        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -86,7 +100,6 @@
         "Austin Eckroat",
         "Austin Smotherman",
         "Beau Hossler",
-        "Ben Griffin",
         "Ben Kohles",
         "Ben Silverman",
         "Billy Horschel",
@@ -108,7 +121,6 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
-        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -122,11 +134,18 @@
     },
     "Dakota": {
       "used": [
-        "Jacob Bridgeman"
+        "Aaron Rai",
+        "Si Woo Kim",
+        "Cameron Young",
+        "Maverick McNealy",
+        "Russell Henley",
+        "Rory McIlroy",
+        "Nicolai Hojgaard",
+        "Collin Morikawa",
+        "Ludvig Aberg"
       ],
       "available": [
         "A.J. Ewart",
-        "Aaron Rai",
         "Adam Hadwin",
         "Adam Schenk",
         "Adam Scott",
@@ -154,7 +173,6 @@
         "Brooks Koepka",
         "Bud Cauley",
         "Cam Davis",
-        "Cameron Young",
         "Camilo Villegas",
         "Carson Young",
         "Chad Ramey",
@@ -165,7 +183,6 @@
         "Chris Kirk",
         "Christiaan Bezuidenhout",
         "Christo Lamprecht",
-        "Collin Morikawa",
         "Corey Conners",
         "Dan Brown",
         "Daniel Berger",
@@ -179,7 +196,15 @@
     },
     "Mike": {
       "used": [
-        "Viktor Hovland"
+        "Robert MacIntyre",
+        "Patrick Cantlay",
+        "Nicolai Hojgaard",
+        "Maverick McNealy",
+        "Justin Rose",
+        "Scottie Scheffler",
+        "Michael Thorbjornsen",
+        "Matthew Fitzpatrick",
+        "Sepp Straka"
       ],
       "available": [
         "A.J. Ewart",
@@ -627,5 +652,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-23T00:00:09.128Z"
+  "updatedAt": "2026-03-23T16:35:52.581Z"
 }
