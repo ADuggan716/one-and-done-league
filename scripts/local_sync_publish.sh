@@ -26,6 +26,9 @@ echo "==> Working directory: $ROOT_DIR"
 echo "==> Branch: $BRANCH"
 echo "==> Splash source: $SPLASH_SOURCE"
 
+echo "==> Updating runner code from origin/$BRANCH"
+git pull --rebase origin "$BRANCH"
+
 run_sync_once() {
   if [[ "$SPLASH_SOURCE" == "chrome" ]]; then
     SPLASH_SOURCE=chrome node scripts/sync_runyourpool.mjs
@@ -99,9 +102,6 @@ else
   echo "==> Committing data refresh"
   git commit -m "$COMMIT_MSG"
 fi
-
-echo "==> Rebasing onto latest origin/$BRANCH"
-git pull --rebase origin "$BRANCH"
 
 echo "==> Pushing updated data"
 git push origin "$BRANCH"
