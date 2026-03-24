@@ -15,6 +15,7 @@ const PGA_FEDEX_URL = "https://www.pgatour.com/fedexcup/standings.html";
 const PGA_MONEY_URL = "https://www.pgatour.com/stats/money-finishes";
 const PGA_MONEY_DETAIL_URL = "https://www.pgatour.com/stats/detail/109";
 const OWGR_URL = "https://www.owgr.com/current-world-ranking";
+const OWGR_FALLBACK_PATH = path.join(root, "data/owgr_fallback.json");
 
 function normalizeName(name) {
   return String(name || "")
@@ -91,6 +92,28 @@ function parseMoneySignals(html) {
     }));
 }
 
+function parseMoneySignalsFromDetailHtml(html) {
+  const data = extractNextData(html, "Money detail");
+  const queries = data?.props?.pageProps?.dehydratedState?.queries || [];
+  const detailQuery = queries
+    .map((query) => query?.state?.data)
+    .find((payload) => payload?.statId === "109" && Array.isArray(payload?.rows));
+
+  if (!detailQuery) {
+    throw new Error("Money detail: stat details rows not found");
+  }
+
+  return detailQuery.rows
+    .map((row) => {
+      const moneyStat = (row?.stats || []).find((stat) => /money/i.test(stat?.statName || ""));
+      return {
+        golfer: row?.playerName,
+        seasonEarnings: parseMoney(moneyStat?.statValue),
+      };
+    })
+    .filter((row) => row.golfer && row.seasonEarnings > 0);
+}
+
 function parseMoneySignalsFromTable(rows) {
   const headerIndex = rows.findIndex(
     (row) =>
@@ -115,6 +138,40 @@ function parseMoneySignalsFromTable(rows) {
       seasonEarnings: parseMoney(row[moneyIndex]),
     }))
     .filter((row) => row.golfer && /[A-Za-z]/.test(row.golfer));
+}
+
+async function readOwgrFallbackSignals() {
+  try {
+    const raw = await fs.readFile(OWGR_FALLBACK_PATH, "utf8");
+    const parsed = JSON.parse(raw);
+    return Array.isArray(parsed?.signals) ? parsed.signals : [];
+  } catch {
+    return [];
+  }
+}
+
+function mergeMissingWorldRanks(signalMap, fallbackSignals, sourceName) {
+  let merged = 0;
+  for (const row of fallbackSignals) {
+    const key = normalizeName(row?.golfer);
+    if (!key) continue;
+    const current = signalMap.get(key);
+    const currentRank = Number(current?.worldRank);
+    if (Number.isFinite(currentRank) && currentRank > 0 && currentRank < 999) continue;
+    const nextRank = Number(row?.worldRank);
+    if (!Number.isFinite(nextRank) || nextRank <= 0 || nextRank >= 999) continue;
+    mergeSignalRow(
+      signalMap,
+      row.golfer,
+      {
+        worldRank: nextRank,
+        historicalStrength: row.historicalStrength,
+      },
+      sourceName
+    );
+    merged += 1;
+  }
+  return merged;
 }
 
 async function captureChromeTableRows(targetUrl) {
@@ -223,11 +280,18 @@ async function main() {
   }
 
   try {
-    const html = await fetchText(PGA_MONEY_URL, {
+    const html = await fetchText(PGA_MONEY_DETAIL_URL, {
       "User-Agent": "Mozilla/5.0",
       Accept: "text/html,application/xhtml+xml",
     });
-    let rows = parseMoneySignals(html);
+    let rows = parseMoneySignalsFromDetailHtml(html);
+    if (rows.length < 50) {
+      const overviewHtml = await fetchText(PGA_MONEY_URL, {
+        "User-Agent": "Mozilla/5.0",
+        Accept: "text/html,application/xhtml+xml",
+      });
+      rows = parseMoneySignals(overviewHtml);
+    }
     if (rows.length < 50) {
       const tableRows = await captureChromeTableRows(PGA_MONEY_DETAIL_URL);
       rows = parseMoneySignalsFromTable(tableRows);
@@ -241,12 +305,21 @@ async function main() {
   try {
     const rows = await captureChromeTableRows(OWGR_URL);
     const parsed = parseOwgrSignals(rows);
+    if (parsed.length < 50) {
+      throw new Error(`OWGR returned only ${parsed.length} ranking rows`);
+    }
     for (const row of parsed) {
       mergeSignalRow(signalMap, row.golfer, row, "OWGR");
     }
     sourceNotes.push(`OWGR: ${parsed.length} golfer records loaded`);
   } catch (error) {
-    sourceNotes.push(`OWGR: failed (${error.message})`);
+    const fallbackSignals = await readOwgrFallbackSignals();
+    const mergedFallbackCount = mergeMissingWorldRanks(signalMap, fallbackSignals, "OWGR fallback");
+    if (mergedFallbackCount > 0) {
+      sourceNotes.push(`OWGR: failed (${error.message}); fallback restored ${mergedFallbackCount} world ranks`);
+    } else {
+      sourceNotes.push(`OWGR: failed (${error.message})`);
+    }
   }
 
   const signals = [...signalMap.values()].sort((a, b) => {
