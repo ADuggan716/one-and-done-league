@@ -804,7 +804,7 @@ export function parseSplashSportsHtml({
   });
 }
 
-function buildSplashSnapshot({
+export function buildSplashSnapshot({
   leaguePath,
   entriesUrl,
   standingsUrl,
@@ -933,15 +933,19 @@ function buildSplashSnapshot({
   }
 
   const seasonTotals = new Map(subgroupMembers.map((member) => [member, 0]));
+  const explicitSeasonTotals = new Map(mergedPicks.map((pick) => [pick.member, Number(pick.seasonEarnings || 0)]));
+  const hasExplicitSeasonTotals = [...explicitSeasonTotals.values()].some((value) => value > 0);
   for (const event of events) {
     const countsTowardSeasonTotals = event.countsTowardSeasonTotals !== false;
     for (const row of event.subgroupResults) {
       const next = seasonTotals.get(row.member) + (countsTowardSeasonTotals ? Number(row.earnings || 0) : 0);
       seasonTotals.set(row.member, next);
-      row.seasonEarnings = next;
+      row.seasonEarnings = hasExplicitSeasonTotals ? explicitSeasonTotals.get(row.member) || 0 : next;
     }
     for (const row of event.picks) {
-      row.seasonEarnings = seasonTotals.get(row.member) || 0;
+      row.seasonEarnings = hasExplicitSeasonTotals
+        ? explicitSeasonTotals.get(row.member) || 0
+        : seasonTotals.get(row.member) || 0;
     }
   }
 

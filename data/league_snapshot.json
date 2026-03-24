@@ -12,25 +12,25 @@
       {
         "member": "Andrew",
         "pick": "Corey Conners",
-        "earnings": 203992,
+        "earnings": 266175,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "8",
         "leagueRank": 101
       },
       {
         "member": "Dakota",
         "pick": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 11
       },
       {
         "member": "Paul",
         "pick": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 96
       },
       {
@@ -46,25 +46,25 @@
       {
         "member": "Andrew",
         "golfer": "Corey Conners",
-        "earnings": 203992,
+        "earnings": 266175,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "8",
         "leagueRank": 101
       },
       {
         "member": "Dakota",
         "golfer": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 11
       },
       {
         "member": "Paul",
         "golfer": "Jacob Bridgeman",
-        "earnings": 203992,
+        "earnings": 116708,
         "seasonEarnings": 0,
-        "finish": "10",
+        "finish": "17",
         "leagueRank": 96
       },
       {
@@ -91,16 +91,16 @@
     "id": "/Golf/PickX/multiple_entries.cfm",
     "name": "Manage Entries",
     "totalEntrants": 150,
-    "yourRank": 104,
-    "latestEventId": "houston-open",
-    "yourPercentile": 30.87248322147651
+    "yourRank": 101,
+    "latestEventId": "valspar-championship",
+    "yourPercentile": 32.88590604026846
   },
   "subgroupStandings": [
     {
       "member": "Dakota",
-      "seasonEarnings": 8528036,
-      "weeklyEarnings": 203992,
-      "avgEarnings": 852803.6,
+      "seasonEarnings": 4910569,
+      "weeklyEarnings": 116708,
+      "avgEarnings": 486575.2,
       "lastFour": [
         {
           "eventId": "the-classic",
@@ -122,16 +122,16 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 4500000,
-          "finish": "1",
+          "earnings": 925000,
+          "finish": "5",
           "pick": "Ludvig Aberg"
         },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman"
         }
       ],
@@ -204,16 +204,16 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 4500000,
-          "finish": "1",
+          "earnings": 925000,
+          "finish": "5",
           "pick": "Ludvig Aberg"
         },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman"
         }
       ],
@@ -223,9 +223,9 @@
     },
     {
       "member": "Mike",
-      "seasonEarnings": 2337505,
+      "seasonEarnings": 2162505,
       "weeklyEarnings": 0,
-      "avgEarnings": 233750.5,
+      "avgEarnings": 216250.5,
       "lastFour": [
         {
           "eventId": "the-classic",
@@ -247,8 +247,8 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 906250,
-          "finish": "6",
+          "earnings": 731250,
+          "finish": "8",
           "pick": "Sepp Straka"
         },
         {
@@ -329,8 +329,8 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 906250,
-          "finish": "6",
+          "earnings": 731250,
+          "finish": "8",
           "pick": "Sepp Straka"
         },
         {
@@ -343,14 +343,14 @@
         }
       ],
       "groupRank": 2,
-      "toLeader": 6190531,
+      "toLeader": 2748064,
       "leagueRank": 64
     },
     {
       "member": "Paul",
-      "seasonEarnings": 1866167,
-      "weeklyEarnings": 203992,
-      "avgEarnings": 186616.7,
+      "seasonEarnings": 1823700,
+      "weeklyEarnings": 116708,
+      "avgEarnings": 177888.3,
       "lastFour": [
         {
           "eventId": "the-classic",
@@ -380,8 +380,8 @@
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman"
         }
       ],
@@ -462,20 +462,20 @@
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman"
         }
       ],
       "groupRank": 3,
-      "toLeader": 6661869,
+      "toLeader": 3086869,
       "leagueRank": 96
     },
     {
       "member": "Andrew",
-      "seasonEarnings": 1831087,
-      "weeklyEarnings": 203992,
-      "avgEarnings": 183108.7,
+      "seasonEarnings": 1791135,
+      "weeklyEarnings": 266175,
+      "avgEarnings": 189578.5,
       "lastFour": [
         {
           "eventId": "the-classic",
@@ -497,16 +497,16 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 58568,
-          "finish": "51",
+          "earnings": 61083,
+          "finish": "50",
           "pick": "Si Woo Kim"
         },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 266175,
+          "finish": "8",
           "pick": "Corey Conners"
         }
       ],
@@ -579,21 +579,21 @@
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 58568,
-          "finish": "51",
+          "earnings": 61083,
+          "finish": "50",
           "pick": "Si Woo Kim"
         },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
           "tier": "regular",
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 266175,
+          "finish": "8",
           "pick": "Corey Conners"
         }
       ],
       "groupRank": 4,
-      "toLeader": 6696949,
+      "toLeader": 3119434,
       "leagueRank": 101
     }
   ],
@@ -604,9 +604,9 @@
         "Andrew",
         "Dakota"
       ],
-      "seasonEarnings": 10359123,
-      "weeklyEarnings": 407984,
-      "avgMemberEarnings": 5179561.5,
+      "seasonEarnings": 6701704,
+      "weeklyEarnings": 382883,
+      "avgMemberEarnings": 3350852,
       "rank": 1,
       "toLeader": 0
     },
@@ -616,11 +616,11 @@
         "Mike",
         "Paul"
       ],
-      "seasonEarnings": 4203672,
-      "weeklyEarnings": 203992,
-      "avgMemberEarnings": 2101836,
+      "seasonEarnings": 3986205,
+      "weeklyEarnings": 116708,
+      "avgMemberEarnings": 1993102.5,
       "rank": 2,
-      "toLeader": 6155451
+      "toLeader": 2715499
     }
   ],
   "weeklyComparison": [
@@ -1112,8 +1112,8 @@
           "tier": "signature",
           "totalPurse": 25000000,
           "firstPrize": 4500000,
-          "earnings": 4500000,
-          "finish": "1",
+          "earnings": 925000,
+          "finish": "5",
           "pick": "Ludvig Aberg",
           "leagueRank": 11
         },
@@ -1124,10 +1124,10 @@
           "tier": "signature",
           "totalPurse": 25000000,
           "firstPrize": 4500000,
-          "earnings": 906250,
-          "finish": "6",
+          "earnings": 731250,
+          "finish": "8",
           "pick": "Sepp Straka",
-          "leagueRank": 91
+          "leagueRank": 64
         },
         {
           "member": "Andrew",
@@ -1136,10 +1136,10 @@
           "tier": "signature",
           "totalPurse": 25000000,
           "firstPrize": 4500000,
-          "earnings": 58568,
-          "finish": "51",
+          "earnings": 61083,
+          "finish": "50",
           "pick": "Si Woo Kim",
-          "leagueRank": 78
+          "leagueRank": 101
         },
         {
           "member": "Paul",
@@ -1151,7 +1151,7 @@
           "earnings": 0,
           "finish": "123",
           "pick": "Collin Morikawa",
-          "leagueRank": 72
+          "leagueRank": 96
         }
       ]
     },
@@ -1171,8 +1171,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 266175,
+          "finish": "8",
           "pick": "Corey Conners",
           "leagueRank": 101
         },
@@ -1183,8 +1183,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman",
           "leagueRank": 11
         },
@@ -1195,8 +1195,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 203992,
-          "finish": "10",
+          "earnings": 116708,
+          "finish": "17",
           "pick": "Jacob Bridgeman",
           "leagueRank": 96
         },
@@ -1216,8 +1216,6 @@
     }
   ],
   "whoGainedThisWeek": [
-    "Dakota",
-    "Paul",
     "Andrew"
   ],
   "projections": [
@@ -5370,11 +5368,12 @@
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/texas-children-s-houston-open/R2026020/field",
     "PGA TOUR field entries: 133",
     "Weekly projection synthesis: 122 field golfers received modeled payout estimates",
-    "Weekly projection synthesis top field: Chris Gotterup, Scottie Scheffler, Min Woo Lee, Jake Knapp, Nico Echavarria"
+    "Weekly projection synthesis top field: Chris Gotterup, Scottie Scheffler, Min Woo Lee, Jake Knapp, Nico Echavarria",
+    "Standings season totals reconciled to explicit Splash year-to-date values."
   ],
   "warnings": [
     "No event history returned; dashboard will show empty season state.",
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-23T17:21:44.806Z"
+  "updatedAt": "2026-03-23T17:43:06.449Z"
 }

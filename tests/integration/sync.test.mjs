@@ -1,6 +1,7 @@
 import test from "node:test";
 import assert from "node:assert/strict";
 import {
+  buildSplashSnapshot,
   normalizeCookieInput,
   normalizeSnapshot,
   shouldActivateCurrentWeekWindow,
@@ -105,4 +106,37 @@ test("normalizeCookieInput rejects placeholder cookie files", () => {
     () => normalizeCookieInput("SESSIONID=replace-with-your-runyourpool-session-cookie"),
     (error) => error instanceof SyncError && error.code === "COOKIE_PLACEHOLDER"
   );
+});
+
+test("buildSplashSnapshot preserves explicit Splash season totals", () => {
+  const snapshot = buildSplashSnapshot({
+    leaguePath: "/Golf/PickX/multiple_entries.cfm",
+    entriesUrl: "https://example.com/entries",
+    standingsUrl: "https://example.com/standings",
+    eventName: "Valspar Championship",
+    leagueName: "League",
+    picks: [
+      { member: "Dakota", pick: "Jacob Bridgeman", earnings: 203992, finish: "10" },
+      { member: "Andrew", pick: "Corey Conners", earnings: 203992, finish: "10" },
+    ],
+    standings: [
+      { member: "Dakota", earnings: 4910569, leagueRank: 12 },
+      { member: "Andrew", earnings: 1791135, leagueRank: 104 },
+    ],
+    pickHistory: {
+      Dakota: [
+        { eventName: "Genesis", pick: "Rory McIlroy", earnings: 1800000, finish: "2" },
+        { eventName: "Players Championship", pick: "Ludvig Aberg", earnings: 4500000, finish: "1" },
+      ],
+      Andrew: [],
+    },
+    subgroupMembers: ["Andrew", "Dakota"],
+  });
+
+  const currentEvent = snapshot.events.at(-1);
+  const dakotaCurrentRow = currentEvent.subgroupResults.find((row) => row.member === "Dakota");
+  const dakotaCurrentPick = currentEvent.picks.find((row) => row.member === "Dakota");
+
+  assert.equal(dakotaCurrentRow.seasonEarnings, 4910569);
+  assert.equal(dakotaCurrentPick.seasonEarnings, 4910569);
 });

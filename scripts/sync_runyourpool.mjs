@@ -329,6 +329,118 @@ async function loadLastGoodSnapshot() {
   return mergeHistoricalSnapshots(candidates) || bestSnapshot;
 }
 
+async function loadHistoricalSnapshotCandidates() {
+  const candidates = [];
+
+  try {
+    const current = await readJson("data/league_snapshot.json");
+    if (snapshotHasSeasonData(current)) {
+      candidates.push(current);
+    }
+  } catch {
+    // Fall through to git history lookup.
+  }
+
+  try {
+    const { stdout } = await execFileAsync("git", ["-C", root, "log", "--format=%H", "--", "data/league_snapshot.json"]);
+    const commits = stdout
+      .split("\n")
+      .map((line) => line.trim())
+      .filter(Boolean)
+      .slice(0, 20);
+
+    for (const commit of commits) {
+      try {
+        const { stdout: snapshotRaw } = await execFileAsync("git", [
+          "-C",
+          root,
+          "show",
+          `${commit}:data/league_snapshot.json`,
+        ]);
+        const snapshot = JSON.parse(snapshotRaw);
+        if (snapshotHasSeasonData(snapshot)) {
+          candidates.push(snapshot);
+        }
+      } catch {
+        // Try the next historical snapshot.
+      }
+    }
+  } catch {
+    // No historical fallback available.
+  }
+
+  return candidates;
+}
+
+function extractExplicitSeasonTotals(normalized, members) {
+  const explicitTotals = new Map();
+
+  for (const event of normalized?.events || []) {
+    for (const row of event?.subgroupResults || []) {
+      const value = Number(row?.seasonEarnings || 0);
+      if (members.includes(row.member) && value > 0) {
+        explicitTotals.set(row.member, value);
+      }
+    }
+  }
+
+  const mappingNote = (normalized?.sourceNotes || []).find((note) => String(note).startsWith("Splash mapping:"));
+  if (mappingNote) {
+    const payload = String(mappingNote).replace(/^Splash mapping:\s*/, "");
+    for (const segment of payload.split("|")) {
+      const trimmed = segment.trim();
+      const match = trimmed.match(/^([^:]+):.*season=(\d+)/i);
+      if (!match) continue;
+      const member = match[1].trim();
+      const seasonEarnings = Number(match[2]);
+      if (members.includes(member) && seasonEarnings > 0) {
+        explicitTotals.set(member, seasonEarnings);
+      }
+    }
+  }
+
+  return explicitTotals;
+}
+
+function scoreSnapshotAgainstSeasonTotals(snapshot, explicitTotals, members) {
+  let compared = 0;
+  let totalDelta = 0;
+  const standingsByMember = new Map((snapshot?.subgroupStandings || []).map((row) => [row.member, Number(row?.seasonEarnings || 0)]));
+
+  for (const member of members) {
+    const explicit = explicitTotals.get(member);
+    if (!Number.isFinite(explicit) || explicit <= 0) continue;
+    compared += 1;
+    totalDelta += Math.abs((standingsByMember.get(member) || 0) - explicit);
+  }
+
+  return {
+    compared,
+    totalDelta,
+  };
+}
+
+function selectBestHistoricalSnapshot(candidates, explicitTotals, members) {
+  if (!candidates.length) return null;
+
+  let best = null;
+  let bestScore = null;
+  for (const snapshot of candidates) {
+    const score = scoreSnapshotAgainstSeasonTotals(snapshot, explicitTotals, members);
+    if (score.compared === 0) continue;
+    if (
+      !bestScore ||
+      score.totalDelta < bestScore.totalDelta ||
+      (score.totalDelta === bestScore.totalDelta && compareSnapshotRichness(snapshot, best) > 0)
+    ) {
+      best = snapshot;
+      bestScore = score;
+    }
+  }
+
+  return best || mergeHistoricalSnapshots(candidates) || candidates[0];
+}
+
 function restoreEventsFromSnapshot(snapshot) {
   return (snapshot?.weeklyComparison || [])
     .map((event) => ({
@@ -468,8 +580,47 @@ function buildLeagueSnapshot(normalized, config) {
   };
 }
 
+function applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config) {
+  if (!snapshot?.subgroupStandings?.length || !explicitSeasonTotals?.size) return snapshot;
+
+  const updatedStandings = snapshot.subgroupStandings.map((row) => ({
+    ...row,
+    seasonEarnings: explicitSeasonTotals.get(row.member) ?? row.seasonEarnings,
+  }));
+
+  updatedStandings.sort((a, b) => b.seasonEarnings - a.seasonEarnings || a.member.localeCompare(b.member));
+
+  let currentRank = 1;
+  let previousEarnings = null;
+  for (let i = 0; i < updatedStandings.length; i += 1) {
+    if (previousEarnings !== null && updatedStandings[i].seasonEarnings < previousEarnings) {
+      currentRank = i + 1;
+    }
+    updatedStandings[i].groupRank = currentRank;
+    previousEarnings = updatedStandings[i].seasonEarnings;
+  }
+
+  const leader = updatedStandings[0]?.seasonEarnings ?? 0;
+  const rankedStandings = updatedStandings.map((row) => ({
+    ...row,
+    toLeader: leader - row.seasonEarnings,
+  }));
+
+  return {
+    ...snapshot,
+    subgroupStandings: rankedStandings,
+    teams: computeTeamSummary(rankedStandings, config.teams || []),
+    whoGainedThisWeek: calculateWhoGainedThisWeek(rankedStandings),
+    sourceNotes: [
+      ...(snapshot.sourceNotes || []),
+      "Standings season totals reconciled to explicit Splash year-to-date values.",
+    ],
+  };
+}
+
 async function run() {
   const config = await readConfig(path.join(root, "config/config.json"));
+  const historicalSnapshots = await loadHistoricalSnapshotCandidates();
   const previousSnapshot = await loadLastGoodSnapshot();
   const cookie = await loadCookie(path.join(root, config.cookiePath));
 
@@ -517,19 +668,25 @@ async function run() {
   normalized.projections = mergedProjections;
   normalized.sourceNotes = sourceNotes;
 
-  if (previousSnapshot?.weeklyComparison?.length) {
+  const explicitSeasonTotals = extractExplicitSeasonTotals(normalized, config.subgroupMembers);
+  const matchedHistoricalSnapshot =
+    explicitSeasonTotals.size > 0
+      ? selectBestHistoricalSnapshot(historicalSnapshots, explicitSeasonTotals, config.subgroupMembers)
+      : previousSnapshot;
+
+  if (matchedHistoricalSnapshot?.weeklyComparison?.length) {
     if (!normalized.events || normalized.events.length === 0) {
-      normalized.events = restoreEventsFromSnapshot(previousSnapshot);
+      normalized.events = restoreEventsFromSnapshot(matchedHistoricalSnapshot);
       normalized.league = {
         ...normalized.league,
-        ...(previousSnapshot.league || {}),
+        ...(matchedHistoricalSnapshot.league || {}),
       };
       normalized.sourceNotes = [
         ...normalized.sourceNotes,
         "Fallback: reused previous committed season history because upstream returned no event history.",
       ];
     } else if (!normalizedHasSeasonHistory(normalized)) {
-      const restored = restoreEventsFromSnapshot(previousSnapshot);
+      const restored = restoreEventsFromSnapshot(matchedHistoricalSnapshot);
       const currentIds = new Set((normalized.events || []).map((event) => event.id));
       normalized.events = [
         ...restored.filter((event) => !currentIds.has(event.id)),
@@ -600,7 +757,7 @@ async function run() {
   ) {
     normalized.events = [
       ...(normalized.events || []),
-      buildPendingCurrentEvent(normalized.nextTournament, config.subgroupMembers, previousSnapshot),
+      buildPendingCurrentEvent(normalized.nextTournament, config.subgroupMembers, matchedHistoricalSnapshot),
     ];
     normalized.sourceNotes = [
       ...normalized.sourceNotes,
@@ -629,7 +786,10 @@ async function run() {
     ];
   }
 
-  const snapshot = buildLeagueSnapshot(normalized, config);
+  let snapshot = buildLeagueSnapshot(normalized, config);
+  if (explicitSeasonTotals.size > 0) {
+    snapshot = applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config);
+  }
   const playerPool = buildPlayerPool(normalized, config, { nextTournamentField });
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];
