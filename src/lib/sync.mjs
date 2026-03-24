@@ -583,6 +583,74 @@ function parseTournamentPicksFromStandingsHtml(html, subgroupMembers, memberAlia
   return [...dedup.values()];
 }
 
+function parseTournamentOptionsFromStandingsHtml(html) {
+  const match = html.match(/<select[^>]*name=["']tournamentId["'][^>]*>([\s\S]*?)<\/select>/i);
+  if (!match) return [];
+
+  const options = [];
+  const optionRegex = /<option\b([^>]*)value=["']?([^"'>\s]+)["']?([^>]*)>([\s\S]*?)<\/option>/gi;
+  let optionMatch;
+  while ((optionMatch = optionRegex.exec(match[1]))) {
+    const attrs = `${optionMatch[1]} ${optionMatch[3]}`;
+    options.push({
+      value: String(optionMatch[2] || "").trim(),
+      label: stripHtmlTags(optionMatch[4] || "").trim(),
+      selected: /\bselected\b/i.test(attrs),
+      disabled: /\bdisabled\b/i.test(attrs),
+    });
+  }
+
+  return options;
+}
+
+function buildSupplementalEventFromStandingsPage({
+  standingsHtml,
+  tournamentName,
+  subgroupMembers,
+  memberAliases = {},
+  standingsRows = [],
+}) {
+  const tournamentRows = parseTournamentPicksFromStandingsHtml(standingsHtml, subgroupMembers, memberAliases);
+  if (!tournamentRows.length) return null;
+
+  const canonicalName = canonicalizeEventName(tournamentName);
+  const eventMeta = lookupEventMetadata(canonicalName);
+  const standingsMap = new Map((standingsRows || []).map((row) => [row.member, row]));
+
+  const subgroupResults = subgroupMembers.map((member) => {
+    const tournamentRow = tournamentRows.find((row) => row.member === member) || {};
+    const standingsRow = standingsMap.get(member) || {};
+    return {
+      member,
+      pick: tournamentRow.pick || null,
+      earnings: Number(tournamentRow.earnings || 0),
+      seasonEarnings: Number(standingsRow.earnings || 0),
+      finish: tournamentRow.finish ?? null,
+      leagueRank: standingsRow.leagueRank ?? null,
+    };
+  });
+
+  return {
+    id: normalizeEventId(canonicalName),
+    name: canonicalName,
+    tier: eventMeta.tier,
+    startDate: null,
+    isUpcoming: false,
+    countsTowardSeasonTotals: true,
+    totalPurse: eventMeta.totalPurse,
+    firstPrize: eventMeta.firstPrize,
+    subgroupResults,
+    picks: subgroupResults.map((row) => ({
+      member: row.member,
+      golfer: row.pick,
+      earnings: row.earnings,
+      seasonEarnings: row.seasonEarnings,
+      finish: row.finish,
+      leagueRank: row.leagueRank,
+    })),
+  };
+}
+
 function parseStandingsFromHtml(html, subgroupMembers, memberAliases = {}) {
   const targetTable = extractTableById(html, "ytdTable");
   if (!targetTable) return [];
@@ -711,6 +779,36 @@ export async function fetchSplashSportsData({
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
+  let supplementalEvents = [];
+
+  if (standingsHtml && standingsPagePicks.length < subgroupMembers.length) {
+    const tournamentOptions = parseTournamentOptionsFromStandingsHtml(standingsHtml);
+    const selectedIndex = tournamentOptions.findIndex((option) => option.selected);
+    const previousCompletedOption =
+      selectedIndex > 0
+        ? [...tournamentOptions.slice(0, selectedIndex)].reverse().find((option) => !option.disabled)
+        : null;
+
+    if (previousCompletedOption?.value) {
+      const previousStandingsUrl = `${base}/Golf/PickX/reports/pickone/standings_v2.cfm?tournamentId=${encodeURIComponent(previousCompletedOption.value)}`;
+      const previousRes = await fetchOrThrow(previousStandingsUrl, { headers }, "Splash previous tournament standings");
+      if (previousRes.ok) {
+        const previousStandingsHtml = await previousRes.text();
+        if (!looksLikeAuthPage(previousStandingsHtml)) {
+          const supplementalEvent = buildSupplementalEventFromStandingsPage({
+            standingsHtml: previousStandingsHtml,
+            tournamentName: previousCompletedOption.label,
+            subgroupMembers,
+            memberAliases,
+            standingsRows: standings,
+          });
+          if (supplementalEvent) {
+            supplementalEvents = [supplementalEvent];
+          }
+        }
+      }
+    }
+  }
 
   if (picks.length === 0 && standings.length === 0) {
     await writeDebugHtml("debug-splash-entries-parse-empty", entriesHtml);
@@ -729,6 +827,7 @@ export async function fetchSplashSportsData({
     leagueName,
     picks,
     standings,
+    supplementalEvents,
     subgroupMembers,
   });
 }
@@ -812,6 +911,7 @@ export function buildSplashSnapshot({
   leagueName,
   picks,
   standings,
+  supplementalEvents = [],
   pickHistory = {},
   subgroupMembers,
 }) {
@@ -898,7 +998,12 @@ export function buildSplashSnapshot({
     }
   }
 
-  const seasonEvents = eventOrder.map((id) => historicalByEvent.get(id)).filter(Boolean);
+  const seasonEventMap = new Map(eventOrder.map((id) => [id, historicalByEvent.get(id)]).filter(([, event]) => Boolean(event)));
+  for (const event of supplementalEvents || []) {
+    if (!event?.id) continue;
+    seasonEventMap.set(event.id, event);
+  }
+  const seasonEvents = [...seasonEventMap.values()];
   const currentEventId = normalizeEventId(canonicalCurrentEventName);
   const includeCurrentEvent = shouldIncludeCurrentEventSnapshot(canonicalCurrentEventName, mergedPicks);
   const currentEvent = {
