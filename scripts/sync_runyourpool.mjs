@@ -266,19 +266,19 @@ function compareSnapshotRichness(left, right) {
 function normalizedHasSeasonHistory(normalized) {
   const events = normalized?.events || [];
   if (events.length === 0) return false;
+  const completedEvents = events.filter((event) => event?.isUpcoming !== true);
 
-  // If Splash already returned carried season totals, we have real season history.
+  // Only completed events count as historical season state. Upcoming/current event
+  // rows can carry YTD totals from Splash without implying full history exists.
   if (
-    events.some((event) =>
+    completedEvents.some((event) =>
       (event?.subgroupResults || []).some((row) => Number(row?.seasonEarnings || 0) > 0)
     )
   ) {
     return true;
   }
 
-  // If there is only one current event and no carried totals yet, treat it as
-  // current-week-only data and fall back to the last good committed snapshot.
-  return events.length > 1;
+  return completedEvents.length > 1;
 }
 
 async function loadLastGoodSnapshot() {
@@ -423,9 +423,14 @@ function scoreSnapshotAgainstSeasonTotals(snapshot, explicitTotals, members) {
 function selectBestHistoricalSnapshot(candidates, explicitTotals, members) {
   if (!candidates.length) return null;
 
+  const historyRichCandidates = candidates.filter(
+    (snapshot) => (snapshot?.weeklyComparison || []).filter((event) => event?.countsTowardSeasonTotals !== false).length > 1
+  );
+  const pool = historyRichCandidates.length ? historyRichCandidates : candidates;
+
   let best = null;
   let bestScore = null;
-  for (const snapshot of candidates) {
+  for (const snapshot of pool) {
     const score = scoreSnapshotAgainstSeasonTotals(snapshot, explicitTotals, members);
     if (score.compared === 0) continue;
     if (
@@ -438,7 +443,7 @@ function selectBestHistoricalSnapshot(candidates, explicitTotals, members) {
     }
   }
 
-  return best || mergeHistoricalSnapshots(candidates) || candidates[0];
+  return best || mergeHistoricalSnapshots(pool) || pool[0];
 }
 
 function restoreEventsFromSnapshot(snapshot) {
@@ -580,6 +585,12 @@ function buildLeagueSnapshot(normalized, config) {
   };
 }
 
+function parsedHistoryRowCountFromNotes(sourceNotes) {
+  const note = (sourceNotes || []).find((item) => String(item).startsWith("Splash parsed history rows:"));
+  const match = String(note || "").match(/(\d+)/);
+  return match ? Number(match[1]) : null;
+}
+
 function applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config) {
   if (!snapshot?.subgroupStandings?.length || !explicitSeasonTotals?.size) return snapshot;
 
@@ -673,6 +684,7 @@ async function run() {
     explicitSeasonTotals.size > 0
       ? selectBestHistoricalSnapshot(historicalSnapshots, explicitSeasonTotals, config.subgroupMembers)
       : previousSnapshot;
+  const parsedHistoryRowCount = parsedHistoryRowCountFromNotes(normalized.sourceNotes);
 
   if (matchedHistoricalSnapshot?.weeklyComparison?.length) {
     if (!normalized.events || normalized.events.length === 0) {
@@ -685,7 +697,7 @@ async function run() {
         ...normalized.sourceNotes,
         "Fallback: reused previous committed season history because upstream returned no event history.",
       ];
-    } else if (!normalizedHasSeasonHistory(normalized)) {
+    } else if (!normalizedHasSeasonHistory(normalized) || parsedHistoryRowCount === 0) {
       const restored = restoreEventsFromSnapshot(matchedHistoricalSnapshot);
       const currentIds = new Set((normalized.events || []).map((event) => event.id));
       normalized.events = [
@@ -694,7 +706,9 @@ async function run() {
       ];
       normalized.sourceNotes = [
         ...normalized.sourceNotes,
-        "Fallback: reused previous committed season history because upstream only returned current-week data.",
+        parsedHistoryRowCount === 0
+          ? "Fallback: reused previous committed season history because Splash returned no historical event rows."
+          : "Fallback: reused previous committed season history because upstream only returned current-week data.",
       ];
     }
   }

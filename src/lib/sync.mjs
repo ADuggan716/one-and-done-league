@@ -624,7 +624,7 @@ function buildSupplementalEventFromStandingsPage({
       member,
       pick: tournamentRow.pick || null,
       earnings: Number(tournamentRow.earnings || 0),
-      seasonEarnings: Number(standingsRow.earnings || 0),
+      seasonEarnings: 0,
       finish: tournamentRow.finish ?? null,
       leagueRank: standingsRow.leagueRank ?? null,
     };

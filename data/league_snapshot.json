@@ -100,8 +100,32 @@
       "member": "Dakota",
       "seasonEarnings": 4910569,
       "weeklyEarnings": 161525,
-      "avgEarnings": 161525,
+      "avgEarnings": 491056.9,
       "lastFour": [
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 324000,
+          "finish": "6",
+          "pick": "Nicolai Hojgaard"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 840000,
+          "finish": "5",
+          "pick": "Collin Morikawa"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 925000,
+          "finish": "5",
+          "pick": "Ludvig Aberg"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -112,6 +136,78 @@
         }
       ],
       "history": [
+        {
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "earnings": 22404,
+          "finish": "50",
+          "pick": "Aaron Rai"
+        },
+        {
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "earnings": 322000,
+          "finish": "6",
+          "pick": "Si Woo Kim"
+        },
+        {
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "earnings": 92640,
+          "finish": "22",
+          "pick": "Cameron Young"
+        },
+        {
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "earnings": 188000,
+          "finish": "13",
+          "pick": "Maverick McNealy"
+        },
+        {
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "earnings": 235000,
+          "finish": "19",
+          "pick": "Russell Henley"
+        },
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 1800000,
+          "finish": "2",
+          "pick": "Rory McIlroy"
+        },
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 324000,
+          "finish": "6",
+          "pick": "Nicolai Hojgaard"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 840000,
+          "finish": "5",
+          "pick": "Collin Morikawa"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 925000,
+          "finish": "5",
+          "pick": "Ludvig Aberg"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -129,8 +225,32 @@
       "member": "Mike",
       "seasonEarnings": 2162505,
       "weeklyEarnings": 0,
-      "avgEarnings": 0,
+      "avgEarnings": 216250.5,
       "lastFour": [
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "68",
+          "pick": "Michael Thorbjornsen"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Matthew Fitzpatrick"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 731250,
+          "finish": "8",
+          "pick": "Sepp Straka"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -141,6 +261,78 @@
         }
       ],
       "history": [
+        {
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "earnings": 409500,
+          "finish": "4",
+          "pick": "Robert MacIntyre"
+        },
+        {
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "earnings": 169740,
+          "finish": "13",
+          "pick": "Patrick Cantlay"
+        },
+        {
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "earnings": 92640,
+          "finish": "22",
+          "pick": "Nicolai Hojgaard"
+        },
+        {
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "earnings": 188000,
+          "finish": "13",
+          "pick": "Maverick McNealy"
+        },
+        {
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "earnings": 78375,
+          "finish": "37",
+          "pick": "Justin Rose"
+        },
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler"
+        },
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "68",
+          "pick": "Michael Thorbjornsen"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Matthew Fitzpatrick"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 731250,
+          "finish": "8",
+          "pick": "Sepp Straka"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -158,8 +350,32 @@
       "member": "Paul",
       "seasonEarnings": 1823700,
       "weeklyEarnings": 161525,
-      "avgEarnings": 161525,
+      "avgEarnings": 182370,
       "lastFour": [
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 77600,
+          "finish": "23",
+          "pick": "Aaron Rai"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 157000,
+          "finish": "24",
+          "pick": "Scottie Scheffler"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 0,
+          "finish": "123",
+          "pick": "Collin Morikawa"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -170,6 +386,78 @@
         }
       ],
       "history": [
+        {
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "earnings": 72475,
+          "finish": "24",
+          "pick": "Maverick McNealy"
+        },
+        {
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "earnings": 81420,
+          "finish": "24",
+          "pick": "Ben Griffin"
+        },
+        {
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "141",
+          "pick": "Ludvig Aberg"
+        },
+        {
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "earnings": 439680,
+          "finish": "3",
+          "pick": "Si Woo Kim"
+        },
+        {
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "earnings": 515000,
+          "finish": "8",
+          "pick": "Jake Knapp"
+        },
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 319000,
+          "finish": "16",
+          "pick": "Samuel Stevens"
+        },
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 77600,
+          "finish": "23",
+          "pick": "Aaron Rai"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 157000,
+          "finish": "24",
+          "pick": "Scottie Scheffler"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 0,
+          "finish": "123",
+          "pick": "Collin Morikawa"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -187,8 +475,32 @@
       "member": "Andrew",
       "seasonEarnings": 1791135,
       "weeklyEarnings": 161525,
-      "avgEarnings": 161525,
+      "avgEarnings": 179113.5,
       "lastFour": [
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 726400,
+          "finish": "2",
+          "pick": "Shane Lowry"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Hideki Matsuyama"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 61083,
+          "finish": "50",
+          "pick": "Si Woo Kim"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -199,6 +511,78 @@
         }
       ],
       "history": [
+        {
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "earnings": 287105,
+          "finish": "6",
+          "pick": "Daniel Berger"
+        },
+        {
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "153",
+          "pick": "Ludvig Aberg"
+        },
+        {
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "96",
+          "pick": "J.J. Spaun"
+        },
+        {
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "earnings": 22272,
+          "finish": "54",
+          "pick": "Collin Morikawa"
+        },
+        {
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "earnings": 39750,
+          "finish": "58",
+          "pick": "Viktor Hovland"
+        },
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler"
+        },
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 726400,
+          "finish": "2",
+          "pick": "Shane Lowry"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Hideki Matsuyama"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 61083,
+          "finish": "50",
+          "pick": "Si Woo Kim"
+        },
         {
           "eventId": "valspar-championship",
           "eventName": "Valspar Championship",
@@ -240,6 +624,537 @@
     }
   ],
   "weeklyComparison": [
+    {
+      "eventId": "sony",
+      "eventName": "Sony",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Mike",
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 409500,
+          "finish": "4",
+          "pick": "Robert MacIntyre",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 287105,
+          "finish": "6",
+          "pick": "Daniel Berger",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 72475,
+          "finish": "24",
+          "pick": "Maverick McNealy",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 22404,
+          "finish": "50",
+          "pick": "Aaron Rai",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "amex",
+      "eventName": "AmEx",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Dakota",
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 322000,
+          "finish": "6",
+          "pick": "Si Woo Kim",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 169740,
+          "finish": "13",
+          "pick": "Patrick Cantlay",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 81420,
+          "finish": "24",
+          "pick": "Ben Griffin",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "amex",
+          "eventName": "AmEx",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "153",
+          "pick": "Ludvig Aberg",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "farmers",
+      "eventName": "Farmers",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Dakota",
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 92640,
+          "finish": "22",
+          "pick": "Cameron Young",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 92640,
+          "finish": "22",
+          "pick": "Nicolai Hojgaard",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "96",
+          "pick": "J.J. Spaun",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "141",
+          "pick": "Ludvig Aberg",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "phoenix",
+      "eventName": "Phoenix",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Paul",
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 439680,
+          "finish": "3",
+          "pick": "Si Woo Kim",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 188000,
+          "finish": "13",
+          "pick": "Maverick McNealy",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 188000,
+          "finish": "13",
+          "pick": "Maverick McNealy",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 22272,
+          "finish": "54",
+          "pick": "Collin Morikawa",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "atandt-no-cut",
+      "eventName": "AT&T (NO CUT)",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Paul",
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 515000,
+          "finish": "8",
+          "pick": "Jake Knapp",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 235000,
+          "finish": "19",
+          "pick": "Russell Henley",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 78375,
+          "finish": "37",
+          "pick": "Justin Rose",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 39750,
+          "finish": "58",
+          "pick": "Viktor Hovland",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "genesis",
+      "eventName": "Genesis",
+      "tier": "signature",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 20000000,
+      "firstPrize": 4000000,
+      "rows": [
+        {
+          "member": "Dakota",
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 1800000,
+          "finish": "2",
+          "pick": "Rory McIlroy",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 319000,
+          "finish": "16",
+          "pick": "Samuel Stevens",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "the-classic",
+      "eventName": "The Classic",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Andrew",
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 726400,
+          "finish": "2",
+          "pick": "Shane Lowry",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 324000,
+          "finish": "6",
+          "pick": "Nicolai Hojgaard",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 77600,
+          "finish": "23",
+          "pick": "Aaron Rai",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "68",
+          "pick": "Michael Thorbjornsen",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "arnold-palmer",
+      "eventName": "Arnold Palmer",
+      "tier": "signature",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 20000000,
+      "firstPrize": 4000000,
+      "rows": [
+        {
+          "member": "Dakota",
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 840000,
+          "finish": "5",
+          "pick": "Collin Morikawa",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 157000,
+          "finish": "24",
+          "pick": "Scottie Scheffler",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Hideki Matsuyama",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "totalPurse": 20000000,
+          "firstPrize": 4000000,
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Matthew Fitzpatrick",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "players-championship",
+      "eventName": "Players Championship",
+      "tier": "signature",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 25000000,
+      "firstPrize": 4500000,
+      "rows": [
+        {
+          "member": "Dakota",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "totalPurse": 25000000,
+          "firstPrize": 4500000,
+          "earnings": 925000,
+          "finish": "5",
+          "pick": "Ludvig Aberg",
+          "leagueRank": 11
+        },
+        {
+          "member": "Mike",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "totalPurse": 25000000,
+          "firstPrize": 4500000,
+          "earnings": 731250,
+          "finish": "8",
+          "pick": "Sepp Straka",
+          "leagueRank": 64
+        },
+        {
+          "member": "Andrew",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "totalPurse": 25000000,
+          "firstPrize": 4500000,
+          "earnings": 61083,
+          "finish": "50",
+          "pick": "Si Woo Kim",
+          "leagueRank": 101
+        },
+        {
+          "member": "Paul",
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "totalPurse": 25000000,
+          "firstPrize": 4500000,
+          "earnings": 0,
+          "finish": "123",
+          "pick": "Collin Morikawa",
+          "leagueRank": 96
+        }
+      ]
+    },
     {
       "eventId": "valspar-championship",
       "eventName": "Valspar Championship",
@@ -331,7 +1246,7 @@
     {
       "golfer": "Aaron Rai",
       "projectedEarnings": 78156,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.02,
       "futureValue": 219324,
       "worldRank": 999,
       "fedexPoints": 77,
@@ -700,7 +1615,7 @@
     {
       "golfer": "Ben Griffin",
       "projectedEarnings": 82704,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.04,
       "futureValue": 226197,
       "worldRank": 999,
       "fedexPoints": 144,
@@ -1912,7 +2827,7 @@
     {
       "golfer": "Jake Knapp",
       "projectedEarnings": 124125,
-      "projectedDupCount": 0.41,
+      "projectedDupCount": 0.33,
       "futureValue": 281184,
       "worldRank": 999,
       "fedexPoints": 680,
@@ -2496,7 +3411,7 @@
     {
       "golfer": "Kurt Kitayama",
       "projectedEarnings": 108315,
-      "projectedDupCount": 0.1,
+      "projectedDupCount": 0.18,
       "futureValue": 261590,
       "worldRank": 999,
       "fedexPoints": 489,
@@ -2994,7 +3909,7 @@
     {
       "golfer": "Michael Thorbjornsen",
       "projectedEarnings": 90322,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.04,
       "futureValue": 237277,
       "worldRank": 999,
       "fedexPoints": 252,
@@ -3016,7 +3931,7 @@
     {
       "golfer": "Min Woo Lee",
       "projectedEarnings": 132970,
-      "projectedDupCount": 0.6,
+      "projectedDupCount": 0.74,
       "futureValue": 291545,
       "worldRank": 999,
       "fedexPoints": 781,
@@ -3103,7 +4018,7 @@
     {
       "golfer": "Nico Echavarria",
       "projectedEarnings": 123353,
-      "projectedDupCount": 0.4,
+      "projectedDupCount": 0.46,
       "futureValue": 280260,
       "worldRank": 999,
       "fedexPoints": 671,
@@ -3277,7 +4192,7 @@
     {
       "golfer": "Pierceson Coody",
       "projectedEarnings": 105939,
-      "projectedDupCount": 0.09,
+      "projectedDupCount": 0.13,
       "futureValue": 258512,
       "worldRank": 999,
       "fedexPoints": 459,
@@ -3580,7 +4495,7 @@
     {
       "golfer": "Ryan Gerard",
       "projectedEarnings": 122584,
-      "projectedDupCount": 0.24,
+      "projectedDupCount": 0.34,
       "futureValue": 279337,
       "worldRank": 999,
       "fedexPoints": 662,
@@ -3666,7 +4581,7 @@
     {
       "golfer": "Sahith Theegala",
       "projectedEarnings": 112420,
-      "projectedDupCount": 0.23,
+      "projectedDupCount": 0.28,
       "futureValue": 266822,
       "worldRank": 999,
       "fedexPoints": 540,
@@ -3775,7 +4690,7 @@
     {
       "golfer": "Scottie Scheffler",
       "projectedEarnings": 166298,
-      "projectedDupCount": 0.82,
+      "projectedDupCount": 0.27,
       "futureValue": 327450,
       "worldRank": 999,
       "fedexPoints": 1131,
@@ -4452,6 +5367,7 @@
     "PGA TOUR FedExCup: 194 golfer records loaded",
     "PGA TOUR Official Money: failed (Command failed: osascript -e on run argv -e set targetUrl to item 1 of argv -e tell application \"Google Chrome\" -e if not running then error \"Google Chrome is not running.\" -e activate -e set targetTab to missing value -e repeat with w in windows -e repeat with t in tabs of w -e set tabUrl to URL of t as text -e if tabUrl starts with targetUrl then -e set targetTab to t -e exit repeat -e end if -e end repeat -e if targetTab is not missing value then exit repeat -e end repeat -e if targetTab is missing value then -e tell window 1 -e set targetTab to make new tab with properties {URL:targetUrl} -e set active tab index to (count of tabs) -e end tell -e end if -e end tell -e delay 5 -e tell application \"Google Chrome\" -e return execute targetTab javascript \"(function(){ function cellText(el){ return (el.innerText || el.textContent || \\\"\\\").trim().replace(/\\\\s+/g, \\\" \\\"); } function collectTableRows(){ return Array.from(document.querySelectorAll(\\\"table tr\\\")).map(function(row){ return Array.from(row.children).filter(function(cell){ return cell.tagName === \\\"TH\\\" || cell.tagName === \\\"TD\\\"; }).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } function collectRoleRows(){ return Array.from(document.querySelectorAll(\\\"[role=row]\\\")).map(function(row){ return Array.from(row.querySelectorAll(\\\"[role=cell],[role=columnheader]\\\")).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } var rows = collectTableRows(); if (!rows.length) rows = collectRoleRows(); return JSON.stringify(rows); })()\" -e end tell -e end run https://www.pgatour.com/stats/detail/109\n175:405: execution error: Google Chrome got an error: AppleEvent timed out. (-1712)\n)",
     "OWGR: failed (Command failed: osascript -e on run argv -e set targetUrl to item 1 of argv -e tell application \"Google Chrome\" -e if not running then error \"Google Chrome is not running.\" -e activate -e set targetTab to missing value -e repeat with w in windows -e repeat with t in tabs of w -e set tabUrl to URL of t as text -e if tabUrl starts with targetUrl then -e set targetTab to t -e exit repeat -e end if -e end repeat -e if targetTab is not missing value then exit repeat -e end repeat -e if targetTab is missing value then -e tell window 1 -e set targetTab to make new tab with properties {URL:targetUrl} -e set active tab index to (count of tabs) -e end tell -e end if -e end tell -e delay 5 -e tell application \"Google Chrome\" -e return execute targetTab javascript \"(function(){ function cellText(el){ return (el.innerText || el.textContent || \\\"\\\").trim().replace(/\\\\s+/g, \\\" \\\"); } function collectTableRows(){ return Array.from(document.querySelectorAll(\\\"table tr\\\")).map(function(row){ return Array.from(row.children).filter(function(cell){ return cell.tagName === \\\"TH\\\" || cell.tagName === \\\"TD\\\"; }).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } function collectRoleRows(){ return Array.from(document.querySelectorAll(\\\"[role=row]\\\")).map(function(row){ return Array.from(row.querySelectorAll(\\\"[role=cell],[role=columnheader]\\\")).map(cellText); }).filter(function(cells){ return cells.some(function(cell){ return cell !== \\\"\\\"; }); }); } var rows = collectTableRows(); if (!rows.length) rows = collectRoleRows(); return JSON.stringify(rows); })()\" -e end tell -e end run https://www.owgr.com/current-world-ranking\n175:405: execution error: Google Chrome got an error: AppleEvent timed out. (-1712)\n)",
+    "Fallback: reused previous committed season history because Splash returned no historical event rows.",
     "PGA TOUR schedule resolved next tournament: Texas Children's Houston Open",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/texas-children-s-houston-open/R2026020/field",
     "PGA TOUR field entries: 135",
@@ -4462,5 +5378,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-24T01:14:32.864Z"
+  "updatedAt": "2026-03-24T01:23:14.940Z"
 }
