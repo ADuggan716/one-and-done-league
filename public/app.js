@@ -208,6 +208,10 @@ function renderWeeklyTable(snapshot) {
     return;
   }
 
+  const liveEventId = snapshot.event?.countsTowardSeasonTotals === false ? snapshot.event?.id : null;
+  const selectedEventIsLive = Boolean(liveEventId && event.eventId === liveEventId);
+  const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
+  const earningsLabel = selectedEventIsLive ? "Projected Earnings" : "Earnings";
   const rows = [...event.rows].sort(sortComparator(state.weeklySort));
 
   table.innerHTML = `
@@ -215,8 +219,8 @@ function renderWeeklyTable(snapshot) {
       <tr>
         <th class="sticky-col sticky-col-head">${sortHeader("Member", "member", state.weeklySort)}</th>
         <th>${sortHeader("Pick", "pick", state.weeklySort)}</th>
-        <th>${sortHeader("Finish", "finish", state.weeklySort)}</th>
-        <th>${sortHeader("Earnings", "earnings", state.weeklySort)}</th>
+        <th>${sortHeader(finishLabel, "finish", state.weeklySort)}</th>
+        <th>${sortHeader(earningsLabel, "earnings", state.weeklySort)}</th>
       </tr>
     </thead>
     <tbody>

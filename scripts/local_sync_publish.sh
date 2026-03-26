@@ -5,6 +5,7 @@ ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 cd "$ROOT_DIR"
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 mkdir -p logs .tmp
+CONFIG_PATH="${ROOT_DIR}/config/config.json"
 
 LOCK_DIR="${ROOT_DIR}/.tmp/local_sync_publish.lock"
 if ! mkdir "$LOCK_DIR" 2>/dev/null; then
@@ -85,6 +86,110 @@ run_sync_with_retries() {
   return 1
 }
 
+pick_watch_status_json() {
+  node - "$CONFIG_PATH" "${ROOT_DIR}/data/league_snapshot.json" <<'NODE'
+const fs = require("fs");
+
+const [configPath, snapshotPath] = process.argv.slice(2);
+const config = JSON.parse(fs.readFileSync(configPath, "utf8"));
+const snapshot = JSON.parse(fs.readFileSync(snapshotPath, "utf8"));
+
+const watch = config?.schedule?.pickVisibilityWatch || {};
+const enabled = watch.enabled !== false;
+const weekday = String(watch.weekday || "THURSDAY").toUpperCase();
+const pollMinutes = Number.isInteger(Number(watch.pollMinutes)) ? Number(watch.pollMinutes) : 10;
+const startHour = Number.isInteger(Number(watch.startHour)) ? Number(watch.startHour) : 8;
+const startMinute = Number.isInteger(Number(watch.startMinute)) ? Number(watch.startMinute) : 0;
+const endHour = Number.isInteger(Number(watch.endHour)) ? Number(watch.endHour) : 17;
+const endMinute = Number.isInteger(Number(watch.endMinute)) ? Number(watch.endMinute) : 0;
+const timezone = String(config?.schedule?.timezone || "America/New_York");
+
+const now = new Date();
+const parts = new Intl.DateTimeFormat("en-US", {
+  timeZone: timezone,
+  weekday: "long",
+  hour: "2-digit",
+  minute: "2-digit",
+  hour12: false,
+}).formatToParts(now);
+
+const values = Object.fromEntries(parts.filter((part) => part.type !== "literal").map((part) => [part.type, part.value]));
+const currentWeekday = String(values.weekday || "").toUpperCase();
+const currentMinutes = Number(values.hour || 0) * 60 + Number(values.minute || 0);
+const startMinutes = startHour * 60 + startMinute;
+const endMinutes = endHour * 60 + endMinute;
+const watchDay = currentWeekday === weekday;
+const inWindow = watchDay && currentMinutes >= startMinutes && currentMinutes <= endMinutes;
+const pastWindow = watchDay && currentMinutes > endMinutes;
+
+const members = Array.isArray(config?.subgroupMembers) ? config.subgroupMembers : [];
+const rows = Array.isArray(snapshot?.event?.subgroupResults) ? snapshot.event.subgroupResults : [];
+const visibleCount = rows.filter((row) => String(row?.pick || "").trim()).length;
+const allVisible = members.length > 0 && visibleCount >= members.length;
+const isUpcoming = Boolean(snapshot?.event?.isUpcoming);
+const eventName = snapshot?.event?.name || null;
+
+let mode = "ready";
+if (enabled && watchDay && isUpcoming && !allVisible) {
+  if (inWindow) mode = "wait";
+  else if (pastWindow) mode = "skip";
+}
+
+process.stdout.write(JSON.stringify({
+  mode,
+  enabled,
+  weekday,
+  timezone,
+  pollMinutes,
+  eventName,
+  isUpcoming,
+  visibleCount,
+  totalMembers: members.length,
+  allVisible,
+  inWindow,
+  pastWindow,
+}));
+NODE
+}
+
+pick_watch_field() {
+  local json="$1"
+  local field="$2"
+  node -e 'const payload = JSON.parse(process.argv[1]); const field = process.argv[2]; const value = payload[field]; if (typeof value === "object") console.log(JSON.stringify(value)); else console.log(String(value));' "$json" "$field"
+}
+
+wait_for_public_picks_if_needed() {
+  while true; do
+    local status_json
+    status_json="$(pick_watch_status_json)"
+    local mode event_name visible total poll_minutes
+    mode="$(pick_watch_field "$status_json" "mode")"
+    event_name="$(pick_watch_field "$status_json" "eventName")"
+    visible="$(pick_watch_field "$status_json" "visibleCount")"
+    total="$(pick_watch_field "$status_json" "totalMembers")"
+    poll_minutes="$(pick_watch_field "$status_json" "pollMinutes")"
+
+    if [[ "$mode" == "ready" ]]; then
+      if [[ "$total" != "0" ]]; then
+        echo "==> Pick visibility check: ${visible}/${total} subgroup picks visible for ${event_name:-current event}"
+      fi
+      return 0
+    fi
+
+    if [[ "$mode" == "skip" ]]; then
+      echo "==> Pick visibility watch ended for ${event_name:-current event}; only ${visible}/${total} subgroup picks are public"
+      echo "==> Skipping publish to avoid pushing a partial Thursday pick board"
+      exit 0
+    fi
+
+    echo "==> ${event_name:-Current event}: only ${visible}/${total} subgroup picks are public"
+    echo "==> Waiting ${poll_minutes} minutes and retrying until Splash exposes all subgroup picks"
+    sleep "$((poll_minutes * 60))"
+    echo "==> Re-running sync while Thursday pick visibility watch is active"
+    run_sync_with_retries
+  done
+}
+
 if [[ "$RUN_SIGNALS" == "1" ]]; then
   echo "==> Fetching online signals (non-fatal)"
   node scripts/fetch_online_signals.mjs || true
@@ -92,6 +197,7 @@ fi
 
 echo "==> Syncing Splash data locally"
 run_sync_with_retries
+wait_for_public_picks_if_needed
 
 echo "==> Staging updated data files"
 git add data/*.json

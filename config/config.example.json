@@ -41,8 +41,20 @@
   },
   "schedule": {
     "timezone": "America/New_York",
+    "pickVisibilityWatch": {
+      "enabled": true,
+      "weekday": "THURSDAY",
+      "startHour": 8,
+      "startMinute": 0,
+      "endHour": 17,
+      "endMinute": 0,
+      "pollMinutes": 10
+    },
     "syncWindows": [
       { "weekday": "THURSDAY", "hour": 8, "minute": 0, "purpose": "picks-refresh" },
+      { "weekday": "THURSDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
+      { "weekday": "FRIDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
+      { "weekday": "SATURDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
       { "weekday": "SUNDAY", "hour": 20, "minute": 0, "purpose": "results-refresh" }
     ]
   }
