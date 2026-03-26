@@ -1,9 +1,9 @@
 {
-  "fetchedAt": "2026-03-24T01:37:21.709Z",
+  "fetchedAt": "2026-03-26T12:00:09.427Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 194 golfer records loaded",
+    "PGA TOUR FedExCup: 201 golfer records loaded",
     "PGA TOUR Official Money: 191 golfer records loaded",
-    "OWGR: 100 golfer records loaded"
+    "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
   "signals": [
     {
@@ -11,1120 +11,1120 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 1131,
       "seasonEarnings": 3816430,
       "worldRank": 1,
-      "historicalStrength": 0.7672
+      "historicalStrength": 0.79338
     },
     {
       "golfer": "Rory McIlroy",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 476,
       "seasonEarnings": 2214875,
       "worldRank": 2,
-      "historicalStrength": 0.41163
+      "historicalStrength": 0.42661499999999997
     },
     {
       "golfer": "Tommy Fleetwood",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 702,
       "seasonEarnings": 2267950,
       "worldRank": 3,
-      "historicalStrength": 0.264885
-    },
-    {
-      "golfer": "Cameron Young",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 1323,
-      "seasonEarnings": 6471920,
-      "worldRank": 4,
-      "historicalStrength": 0.27033
+      "historicalStrength": 0.262195
     },
     {
       "golfer": "Justin Rose",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 601,
       "seasonEarnings": 2215403,
-      "worldRank": 5,
-      "historicalStrength": 0.243515
+      "worldRank": 4,
+      "historicalStrength": 0.24250500000000003
     },
     {
       "golfer": "Collin Morikawa",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 1182,
       "seasonEarnings": 5065472,
-      "worldRank": 6,
-      "historicalStrength": 0.24165999999999999
-    },
-    {
-      "golfer": "Xander Schauffele",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 741,
-      "seasonEarnings": 3137238,
-      "worldRank": 7,
-      "historicalStrength": 0.24805000000000002
-    },
-    {
-      "golfer": "Russell Henley",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 484,
-      "seasonEarnings": 1708567,
-      "worldRank": 8,
-      "historicalStrength": 0.232535
-    },
-    {
-      "golfer": "Robert MacIntyre",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 572,
-      "seasonEarnings": 2168475,
-      "worldRank": 9,
-      "historicalStrength": 0.22610000000000002
+      "worldRank": 5,
+      "historicalStrength": 0.25088
     },
     {
       "golfer": "Chris Gotterup",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 1131,
       "seasonEarnings": 3895375,
-      "worldRank": 10,
-      "historicalStrength": 0.22740999999999997
+      "worldRank": 6,
+      "historicalStrength": 0.229845
     },
     {
-      "golfer": "Sepp Straka",
+      "golfer": "Russell Henley",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 722,
-      "seasonEarnings": 3038670,
-      "worldRank": 11,
-      "historicalStrength": 0.21959
+      "fedexPoints": 484,
+      "seasonEarnings": 1708567,
+      "worldRank": 7,
+      "historicalStrength": 0.23267000000000002
+    },
+    {
+      "golfer": "Robert MacIntyre",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 572,
+      "seasonEarnings": 2168475,
+      "worldRank": 8,
+      "historicalStrength": 0.212435
     },
     {
       "golfer": "J.J. Spaun",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 75,
       "seasonEarnings": 309772,
-      "worldRank": 12,
-      "historicalStrength": 0.202975
+      "worldRank": 9,
+      "historicalStrength": 0.20595
     },
     {
-      "golfer": "Hideki Matsuyama",
+      "golfer": "Xander Schauffele",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 650,
-      "seasonEarnings": 2310720,
-      "worldRank": 13,
-      "historicalStrength": 0.20189
-    },
-    {
-      "golfer": "Justin Thomas",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 222,
-      "seasonEarnings": 782392,
-      "worldRank": 14,
-      "historicalStrength": 0.201315
-    },
-    {
-      "golfer": "Matt Fitzpatrick",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 1229,
-      "seasonEarnings": 5262488,
-      "worldRank": 15,
-      "historicalStrength": 0.24798499999999998
+      "fedexPoints": 741,
+      "seasonEarnings": 3137238,
+      "worldRank": 10,
+      "historicalStrength": 0.20656500000000003
     },
     {
       "golfer": "Ben Griffin",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 144,
       "seasonEarnings": 412583,
-      "worldRank": 16,
-      "historicalStrength": 0.196055
+      "worldRank": 11,
+      "historicalStrength": 0.202155
     },
     {
-      "golfer": "Ludvig Åberg",
+      "golfer": "Hideki Matsuyama",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 685,
-      "seasonEarnings": 2462875,
-      "worldRank": 17,
-      "historicalStrength": 0.18185
+      "fedexPoints": 650,
+      "seasonEarnings": 2310720,
+      "worldRank": 12,
+      "historicalStrength": 0.20518999999999998
     },
     {
-      "golfer": "Viktor Hovland",
+      "golfer": "Sepp Straka",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 268,
-      "seasonEarnings": 1142378,
-      "worldRank": 18,
-      "historicalStrength": 0.173335
+      "fedexPoints": 722,
+      "seasonEarnings": 3038670,
+      "worldRank": 13,
+      "historicalStrength": 0.20954
     },
     {
-      "golfer": "Alex Noren",
+      "golfer": "Justin Thomas",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 198,
-      "seasonEarnings": 825450,
-      "worldRank": 19,
-      "historicalStrength": 0.17696
-    },
-    {
-      "golfer": "Jacob Bridgeman",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 1452,
-      "seasonEarnings": 6564485,
-      "worldRank": 20,
-      "historicalStrength": 0.18292999999999998
+      "fedexPoints": 222,
+      "seasonEarnings": 782392,
+      "worldRank": 14,
+      "historicalStrength": 0.192165
     },
     {
       "golfer": "Harris English",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 212,
       "seasonEarnings": 757007,
-      "worldRank": 21,
-      "historicalStrength": 0.174405
+      "worldRank": 15,
+      "historicalStrength": 0.18028
     },
     {
-      "golfer": "Akshay Bhatia",
+      "golfer": "Alex Noren",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 1224,
-      "seasonEarnings": 5857708,
-      "worldRank": 22,
-      "historicalStrength": 0.173235
+      "fedexPoints": 198,
+      "seasonEarnings": 825450,
+      "worldRank": 16,
+      "historicalStrength": 0.17915
+    },
+    {
+      "golfer": "Viktor Hovland",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 268,
+      "seasonEarnings": 1142378,
+      "worldRank": 17,
+      "historicalStrength": 0.17594
     },
     {
       "golfer": "PATRICK REED",
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
-      "worldRank": 23,
-      "historicalStrength": 0.168055
+      "worldRank": 18,
+      "historicalStrength": 0.171345
+    },
+    {
+      "golfer": "Jacob Bridgeman",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 1452,
+      "seasonEarnings": 6564485,
+      "worldRank": 19,
+      "historicalStrength": 0.16527
     },
     {
       "golfer": "Keegan Bradley",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 60,
       "seasonEarnings": 238204,
-      "worldRank": 24,
-      "historicalStrength": 0.153745
+      "worldRank": 20,
+      "historicalStrength": 0.157705
+    },
+    {
+      "golfer": "Cameron Young",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 1323,
+      "seasonEarnings": 6471920,
+      "worldRank": 21,
+      "historicalStrength": 0.18081
+    },
+    {
+      "golfer": "Matt Fitzpatrick",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 1229,
+      "seasonEarnings": 5262488,
+      "worldRank": 22,
+      "historicalStrength": 0.15303
+    },
+    {
+      "golfer": "Ludvig Åberg",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 685,
+      "seasonEarnings": 2462875,
+      "worldRank": 23,
+      "historicalStrength": 0.170845
     },
     {
       "golfer": "Maverick McNealy",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 312,
       "seasonEarnings": 1148725,
+      "worldRank": 24,
+      "historicalStrength": 0.147945
+    },
+    {
+      "golfer": "TYRRELL HATTON",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
       "worldRank": 25,
-      "historicalStrength": 0.14837
+      "historicalStrength": 0.144895
     },
     {
       "golfer": "Ryan Gerard",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 662,
       "seasonEarnings": 2251179,
       "worldRank": 26,
-      "historicalStrength": 0.14552
-    },
-    {
-      "golfer": "TYRRELL HATTON",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 27,
-      "historicalStrength": 0.142155
-    },
-    {
-      "golfer": "Si Woo Kim",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 640,
-      "seasonEarnings": 2309038,
-      "worldRank": 28,
-      "historicalStrength": 0.142545
+      "historicalStrength": 0.144795
     },
     {
       "golfer": "Shane Lowry",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 397,
       "seasonEarnings": 1419650,
-      "worldRank": 29,
-      "historicalStrength": 0.13713
+      "worldRank": 27,
+      "historicalStrength": 0.14218
     },
     {
-      "golfer": "Min Woo Lee",
+      "golfer": "Si Woo Kim",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 781,
-      "seasonEarnings": 3107299,
-      "worldRank": 30,
-      "historicalStrength": 0.14023000000000002
+      "fedexPoints": 640,
+      "seasonEarnings": 2309038,
+      "worldRank": 28,
+      "historicalStrength": 0.143705
     },
     {
       "golfer": "Sam Burns",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 356,
       "seasonEarnings": 1156946,
-      "worldRank": 31,
-      "historicalStrength": 0.13683499999999998
+      "worldRank": 29,
+      "historicalStrength": 0.13157000000000002
     },
     {
       "golfer": "Kurt Kitayama",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 489,
       "seasonEarnings": 2224092,
-      "worldRank": 32,
-      "historicalStrength": 0.132565
-    },
-    {
-      "golfer": "BRYSON DECHAMBEAU",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 33,
-      "historicalStrength": 0.16547
-    },
-    {
-      "golfer": "JON RAHM",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 34,
-      "historicalStrength": 0.145015
+      "worldRank": 30,
+      "historicalStrength": 0.13591999999999999
     },
     {
       "golfer": "Patrick Cantlay",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 270,
       "seasonEarnings": 1009403,
-      "worldRank": 35,
-      "historicalStrength": 0.13485
+      "worldRank": 31,
+      "historicalStrength": 0.12712
     },
     {
-      "golfer": "Daniel Berger",
+      "golfer": "Min Woo Lee",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 577,
-      "seasonEarnings": 2809480,
-      "worldRank": 36,
-      "historicalStrength": 0.12336499999999999
-    },
-    {
-      "golfer": "NICOLAS ECHAVARRIA",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 37,
-      "historicalStrength": 0.11988000000000001
+      "fedexPoints": 781,
+      "seasonEarnings": 3107299,
+      "worldRank": 32,
+      "historicalStrength": 0.137715
     },
     {
       "golfer": "Aaron Rai",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 77,
       "seasonEarnings": 270129,
-      "worldRank": 38,
-      "historicalStrength": 0.118445
+      "worldRank": 33,
+      "historicalStrength": 0.12401
+    },
+    {
+      "golfer": "NICOLAS ECHAVARRIA",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 34,
+      "historicalStrength": 0.12237
     },
     {
       "golfer": "Marco Penge",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 191,
       "seasonEarnings": 738458,
-      "worldRank": 39,
-      "historicalStrength": 0.12663
+      "worldRank": 35,
+      "historicalStrength": 0.11835999999999999
     },
     {
-      "golfer": "Corey Conners",
+      "golfer": "BRYSON DECHAMBEAU",
       "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 220,
-      "seasonEarnings": 878653,
-      "worldRank": 40,
-      "historicalStrength": 0.11471
+      "worldRank": 36,
+      "historicalStrength": 0.10854
     },
     {
       "golfer": "Jason Day",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 249,
       "seasonEarnings": 876410,
-      "worldRank": 41,
-      "historicalStrength": 0.10752500000000001
+      "worldRank": 37,
+      "historicalStrength": 0.10964499999999999
     },
     {
-      "golfer": "Jake Knapp",
+      "golfer": "Corey Conners",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 680,
-      "seasonEarnings": 2166475,
-      "worldRank": 42,
-      "historicalStrength": 0.10593
+      "fedexPoints": 220,
+      "seasonEarnings": 878653,
+      "worldRank": 38,
+      "historicalStrength": 0.10978000000000002
+    },
+    {
+      "golfer": "Akshay Bhatia",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 1224,
+      "seasonEarnings": 5857708,
+      "worldRank": 39,
+      "historicalStrength": 0.172505
     },
     {
       "golfer": "Matt McCarty",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 301,
       "seasonEarnings": 1060663,
-      "worldRank": 43,
-      "historicalStrength": 0.10325500000000001
+      "worldRank": 40,
+      "historicalStrength": 0.10678499999999999
     },
     {
-      "golfer": "Michael Brennan",
+      "golfer": "Jake Knapp",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 43,
-      "seasonEarnings": 147870,
-      "worldRank": 44,
-      "historicalStrength": 0.10346999999999999
-    },
-    {
-      "golfer": "Ryan Fox",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 287,
-      "seasonEarnings": 1004520,
-      "worldRank": 45,
-      "historicalStrength": 0.102495
-    },
-    {
-      "golfer": "Kristoffer Reitan",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 88,
-      "seasonEarnings": 275110,
-      "worldRank": 46,
-      "historicalStrength": 0.10186500000000001
-    },
-    {
-      "golfer": "NICOLAI HOJGAARD",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 47,
-      "historicalStrength": 0.102115
-    },
-    {
-      "golfer": "Brian Harman",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 227,
-      "seasonEarnings": 966679,
-      "worldRank": 48,
-      "historicalStrength": 0.102295
+      "fedexPoints": 680,
+      "seasonEarnings": 2166475,
+      "worldRank": 41,
+      "historicalStrength": 0.107975
     },
     {
       "golfer": "Andrew Novak",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 139,
       "seasonEarnings": 518507,
-      "worldRank": 49,
-      "historicalStrength": 0.10092000000000001
+      "worldRank": 42,
+      "historicalStrength": 0.10378499999999999
     },
     {
-      "golfer": "Adam Scott",
+      "golfer": "Kristoffer Reitan",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 531,
-      "seasonEarnings": 1720222,
-      "worldRank": 50,
-      "historicalStrength": 0.0998
+      "fedexPoints": 88,
+      "seasonEarnings": 275110,
+      "worldRank": 43,
+      "historicalStrength": 0.10405500000000001
+    },
+    {
+      "golfer": "Ryan Fox",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 287,
+      "seasonEarnings": 1004520,
+      "worldRank": 44,
+      "historicalStrength": 0.10582499999999999
+    },
+    {
+      "golfer": "Michael Brennan",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 43,
+      "seasonEarnings": 147870,
+      "worldRank": 45,
+      "historicalStrength": 0.10496000000000001
     },
     {
       "golfer": "SAMUEL STEVENS",
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
-      "worldRank": 51,
-      "historicalStrength": 0.10016499999999999
+      "worldRank": 46,
+      "historicalStrength": 0.102285
     },
     {
       "golfer": "Pierceson Coody",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 464,
       "seasonEarnings": 1638355,
-      "worldRank": 52,
-      "historicalStrength": 0.09989
+      "worldRank": 47,
+      "historicalStrength": 0.102405
     },
     {
       "golfer": "RASMUS HOJGAARD",
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
-      "worldRank": 53,
-      "historicalStrength": 0.096315
+      "worldRank": 48,
+      "historicalStrength": 0.10134000000000001
     },
     {
       "golfer": "Sami Valimaki",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 59,
       "seasonEarnings": 230330,
-      "worldRank": 54,
-      "historicalStrength": 0.095595
+      "worldRank": 49,
+      "historicalStrength": 0.09829
     },
     {
-      "golfer": "Michael Thorbjornsen",
+      "golfer": "NICOLAI HOJGAARD",
       "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 252,
-      "seasonEarnings": 984180,
-      "worldRank": 55,
-      "historicalStrength": 0.095275
-    },
-    {
-      "golfer": "Max Greyserman",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 120,
-      "seasonEarnings": 538509,
-      "worldRank": 56,
-      "historicalStrength": 0.0939
+      "worldRank": 50,
+      "historicalStrength": 0.10018
     },
     {
       "golfer": "Michael Kim",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 118,
       "seasonEarnings": 366760,
-      "worldRank": 57,
-      "historicalStrength": 0.09618499999999999
+      "worldRank": 51,
+      "historicalStrength": 0.09802999999999999
+    },
+    {
+      "golfer": "Max Greyserman",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 120,
+      "seasonEarnings": 538509,
+      "worldRank": 52,
+      "historicalStrength": 0.098195
+    },
+    {
+      "golfer": "Adam Scott",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 531,
+      "seasonEarnings": 1720222,
+      "worldRank": 53,
+      "historicalStrength": 0.10227
+    },
+    {
+      "golfer": "JON RAHM",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 54,
+      "historicalStrength": 0.12397
+    },
+    {
+      "golfer": "Brian Harman",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 227,
+      "seasonEarnings": 966679,
+      "worldRank": 55,
+      "historicalStrength": 0.09448999999999999
+    },
+    {
+      "golfer": "Michael Thorbjornsen",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 252,
+      "seasonEarnings": 984180,
+      "worldRank": 56,
+      "historicalStrength": 0.094365
     },
     {
       "golfer": "JAYDEN SCHAPER",
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
-      "worldRank": 58,
-      "historicalStrength": 0.09298
-    },
-    {
-      "golfer": "Rickie Fowler",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 353,
-      "seasonEarnings": 1281077,
-      "worldRank": 59,
-      "historicalStrength": 0.092485
-    },
-    {
-      "golfer": "Harry Hall",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 324,
-      "seasonEarnings": 1108525,
-      "worldRank": 60,
-      "historicalStrength": 0.092045
-    },
-    {
-      "golfer": "Ryo Hisatsune",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 579,
-      "seasonEarnings": 2142346,
-      "worldRank": 61,
-      "historicalStrength": 0.0916
-    },
-    {
-      "golfer": "Nick Taylor",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 218,
-      "seasonEarnings": 763658,
-      "worldRank": 62,
-      "historicalStrength": 0.088495
-    },
-    {
-      "golfer": "THOMAS DETRY",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 63,
-      "historicalStrength": 0.094555
-    },
-    {
-      "golfer": "Jordan Spieth",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 385,
-      "seasonEarnings": 1445500,
-      "worldRank": 64,
-      "historicalStrength": 0.09298
+      "worldRank": 57,
+      "historicalStrength": 0.095015
     },
     {
       "golfer": "Rasmus Neergaard-Petersen",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 38,
       "seasonEarnings": 118852,
-      "worldRank": 65,
-      "historicalStrength": 0.08602
+      "worldRank": 58,
+      "historicalStrength": 0.08827
+    },
+    {
+      "golfer": "Nick Taylor",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 218,
+      "seasonEarnings": 763658,
+      "worldRank": 59,
+      "historicalStrength": 0.08891
+    },
+    {
+      "golfer": "Harry Hall",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 324,
+      "seasonEarnings": 1108525,
+      "worldRank": 60,
+      "historicalStrength": 0.09512000000000001
+    },
+    {
+      "golfer": "Daniel Berger",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 577,
+      "seasonEarnings": 2809480,
+      "worldRank": 61,
+      "historicalStrength": 0.12539
     },
     {
       "golfer": "Taylor Pendrith",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 165,
       "seasonEarnings": 617230,
-      "worldRank": 66,
-      "historicalStrength": 0.08159
+      "worldRank": 62,
+      "historicalStrength": 0.08354500000000001
     },
     {
-      "golfer": "Wyndham Clark",
+      "golfer": "JOHN KEEFER",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 63,
+      "historicalStrength": 0.08352000000000001
+    },
+    {
+      "golfer": "Ryo Hisatsune",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 124,
-      "seasonEarnings": 445892,
-      "worldRank": 67,
-      "historicalStrength": 0.080175
+      "fedexPoints": 579,
+      "seasonEarnings": 2142346,
+      "worldRank": 64,
+      "historicalStrength": 0.08493
     },
     {
       "golfer": "J.T. Poston",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 67,
       "seasonEarnings": 225358,
-      "worldRank": 68,
-      "historicalStrength": 0.080735
+      "worldRank": 65,
+      "historicalStrength": 0.08241000000000001
     },
     {
-      "golfer": "CASEY JARVIS",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 69,
-      "historicalStrength": 0.081645
-    },
-    {
-      "golfer": "Patrick Rodgers",
+      "golfer": "Wyndham Clark",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 466,
-      "seasonEarnings": 1698394,
-      "worldRank": 70,
-      "historicalStrength": 0.08198
+      "fedexPoints": 124,
+      "seasonEarnings": 445892,
+      "worldRank": 66,
+      "historicalStrength": 0.08297
     },
     {
-      "golfer": "Max McGreevy",
+      "golfer": "Rickie Fowler",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 112,
-      "seasonEarnings": 356866,
-      "worldRank": 71,
-      "historicalStrength": 0.07927
-    },
-    {
-      "golfer": "JOHN KEEFER",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 72,
-      "historicalStrength": 0.07725499999999999
-    },
-    {
-      "golfer": "Sahith Theegala",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 540,
-      "seasonEarnings": 1817918,
-      "worldRank": 73,
-      "historicalStrength": 0.076025
-    },
-    {
-      "golfer": "ELVIS SMYLIE",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 74,
-      "historicalStrength": 0.07606500000000001
+      "fedexPoints": 353,
+      "seasonEarnings": 1281077,
+      "worldRank": 67,
+      "historicalStrength": 0.09204999999999999
     },
     {
       "golfer": "Aldrich Potgieter",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 308,
       "seasonEarnings": 878250,
-      "worldRank": 75,
-      "historicalStrength": 0.07677
+      "worldRank": 68,
+      "historicalStrength": 0.08054
     },
     {
-      "golfer": "Garrick Higgo",
+      "golfer": "Max McGreevy",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 19,
-      "seasonEarnings": 70026,
-      "worldRank": 76,
-      "historicalStrength": 0.07492
+      "fedexPoints": 112,
+      "seasonEarnings": 356866,
+      "worldRank": 69,
+      "historicalStrength": 0.080265
+    },
+    {
+      "golfer": "THOMAS DETRY",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 70,
+      "historicalStrength": 0.09133
     },
     {
       "golfer": "Haotong Li",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 162,
       "seasonEarnings": 519475,
-      "worldRank": 77,
-      "historicalStrength": 0.07663
-    },
-    {
-      "golfer": "DANIEL BROWN(OCT1994)",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 78,
-      "historicalStrength": 0.07518
-    },
-    {
-      "golfer": "Bud Cauley",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 138,
-      "seasonEarnings": 577899,
-      "worldRank": 79,
-      "historicalStrength": 0.075635
-    },
-    {
-      "golfer": "RICHARD HOEY",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 80,
-      "historicalStrength": 0.07677500000000001
-    },
-    {
-      "golfer": "Lucas Glover",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 43,
-      "seasonEarnings": 193500,
-      "worldRank": 81,
-      "historicalStrength": 0.07324
+      "worldRank": 71,
+      "historicalStrength": 0.07880000000000001
     },
     {
       "golfer": "Sungjae Im",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 115,
       "seasonEarnings": 382958,
+      "worldRank": 72,
+      "historicalStrength": 0.07675499999999999
+    },
+    {
+      "golfer": "ELVIS SMYLIE",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 73,
+      "historicalStrength": 0.079535
+    },
+    {
+      "golfer": "Garrick Higgo",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 19,
+      "seasonEarnings": 70026,
+      "worldRank": 74,
+      "historicalStrength": 0.07894999999999999
+    },
+    {
+      "golfer": "Jordan Spieth",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 385,
+      "seasonEarnings": 1445500,
+      "worldRank": 75,
+      "historicalStrength": 0.085095
+    },
+    {
+      "golfer": "DANIEL BROWN(OCT1994)",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 76,
+      "historicalStrength": 0.077685
+    },
+    {
+      "golfer": "RICHARD HOEY",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 77,
+      "historicalStrength": 0.07601
+    },
+    {
+      "golfer": "Lucas Glover",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 43,
+      "seasonEarnings": 193500,
+      "worldRank": 78,
+      "historicalStrength": 0.07683999999999999
+    },
+    {
+      "golfer": "LAURIE CANTER",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 79,
+      "historicalStrength": 0.07257
+    },
+    {
+      "golfer": "CASEY JARVIS",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 80,
+      "historicalStrength": 0.08242000000000001
+    },
+    {
+      "golfer": "THRISTON LAWRENCE",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 81,
+      "historicalStrength": 0.07286000000000001
+    },
+    {
+      "golfer": "Bud Cauley",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 138,
+      "seasonEarnings": 577899,
       "worldRank": 82,
-      "historicalStrength": 0.083635
+      "historicalStrength": 0.075705
+    },
+    {
+      "golfer": "DANIEL HILLIER",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 83,
+      "historicalStrength": 0.073285
     },
     {
       "golfer": "Billy Horschel",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 139,
       "seasonEarnings": 538166,
-      "worldRank": 83,
-      "historicalStrength": 0.07236000000000001
+      "worldRank": 84,
+      "historicalStrength": 0.07528
+    },
+    {
+      "golfer": "Patrick Rodgers",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 466,
+      "seasonEarnings": 1698394,
+      "worldRank": 85,
+      "historicalStrength": 0.073965
+    },
+    {
+      "golfer": "TOM MCKIBBIN",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 86,
+      "historicalStrength": 0.07127
     },
     {
       "golfer": "John Parry",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 125,
       "seasonEarnings": 349776,
-      "worldRank": 84,
-      "historicalStrength": 0.07271999999999999
-    },
-    {
-      "golfer": "DAVID PUIG",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 85,
-      "historicalStrength": 0.07721
-    },
-    {
-      "golfer": "Matti Schmid",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 186,
-      "seasonEarnings": 616961,
-      "worldRank": 86,
-      "historicalStrength": 0.07307
-    },
-    {
-      "golfer": "DANIEL HILLIER",
-      "sourceRefs": [
-        "OWGR"
-      ],
       "worldRank": 87,
-      "historicalStrength": 0.071755
-    },
-    {
-      "golfer": "Austin Smotherman",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 364,
-      "seasonEarnings": 1386128,
-      "worldRank": 88,
-      "historicalStrength": 0.071715
-    },
-    {
-      "golfer": "THRISTON LAWRENCE",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 89,
-      "historicalStrength": 0.06682
-    },
-    {
-      "golfer": "Ricky Castillo",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 466,
-      "seasonEarnings": 1295004,
-      "worldRank": 90,
-      "historicalStrength": 0.07116
-    },
-    {
-      "golfer": "Christiaan Bezuidenhout",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 124,
-      "seasonEarnings": 304862,
-      "worldRank": 91,
-      "historicalStrength": 0.07099
-    },
-    {
-      "golfer": "Chris Kirk",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 65,
-      "seasonEarnings": 281750,
-      "worldRank": 92,
-      "historicalStrength": 0.068865
+      "historicalStrength": 0.07413
     },
     {
       "golfer": "Adrien Saddier",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 13,
       "seasonEarnings": 62256,
-      "worldRank": 93,
-      "historicalStrength": 0.068955
-    },
-    {
-      "golfer": "LAURIE CANTER",
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "worldRank": 94,
-      "historicalStrength": 0.066465
-    },
-    {
-      "golfer": "Jordan Smith",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "fedexPoints": 303,
-      "seasonEarnings": 943328,
-      "worldRank": 95,
-      "historicalStrength": 0.08673
+      "worldRank": 88,
+      "historicalStrength": 0.071255
     },
     {
       "golfer": "Denny McCarthy",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 81,
       "seasonEarnings": 244306,
-      "worldRank": 96,
-      "historicalStrength": 0.06781000000000001
+      "worldRank": 89,
+      "historicalStrength": 0.070465
     },
     {
-      "golfer": "TOM MCKIBBIN",
+      "golfer": "Jordan Smith",
       "sourceRefs": [
-        "OWGR"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
       ],
-      "worldRank": 97,
-      "historicalStrength": 0.06691
+      "fedexPoints": 303,
+      "seasonEarnings": 943328,
+      "worldRank": 90,
+      "historicalStrength": 0.070665
+    },
+    {
+      "golfer": "DAVID PUIG",
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "worldRank": 91,
+      "historicalStrength": 0.07400999999999999
+    },
+    {
+      "golfer": "Brian Campbell",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 9,
+      "seasonEarnings": 54522,
+      "worldRank": 92,
+      "historicalStrength": 0.069995
+    },
+    {
+      "golfer": "Christiaan Bezuidenhout",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 124,
+      "seasonEarnings": 304862,
+      "worldRank": 93,
+      "historicalStrength": 0.07218
     },
     {
       "golfer": "Matt Wallace",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "fedexPoints": 25,
       "seasonEarnings": 66811,
+      "worldRank": 94,
+      "historicalStrength": 0.069135
+    },
+    {
+      "golfer": "Tom Hoge",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 175,
+      "seasonEarnings": 644364,
+      "worldRank": 95,
+      "historicalStrength": 0.06798499999999999
+    },
+    {
+      "golfer": "Matti Schmid",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 186,
+      "seasonEarnings": 616961,
+      "worldRank": 96,
+      "historicalStrength": 0.07177
+    },
+    {
+      "golfer": "Sahith Theegala",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 540,
+      "seasonEarnings": 1817918,
+      "worldRank": 97,
+      "historicalStrength": 0.077845
+    },
+    {
+      "golfer": "Chris Kirk",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "fedexPoints": 65,
+      "seasonEarnings": 281750,
       "worldRank": 98,
-      "historicalStrength": 0.06793
+      "historicalStrength": 0.06745
     },
     {
-      "golfer": "Stephan Jaeger",
+      "golfer": "Austin Smotherman",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 228,
-      "seasonEarnings": 799744,
-      "worldRank": 107,
-      "historicalStrength": 0.06586
+      "fedexPoints": 364,
+      "seasonEarnings": 1386128,
+      "worldRank": 99,
+      "historicalStrength": 0.066755
     },
     {
-      "golfer": "David Lipsky",
+      "golfer": "Ricky Castillo",
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
-      "fedexPoints": 365,
-      "seasonEarnings": 1168727,
-      "worldRank": 154,
-      "historicalStrength": 0.072355
+      "fedexPoints": 466,
+      "seasonEarnings": 1295004,
+      "worldRank": 139,
+      "historicalStrength": 0.07039999999999999
     },
     {
       "golfer": "A.J. Ewart",
@@ -1134,6 +1134,13 @@
       ],
       "fedexPoints": 181,
       "seasonEarnings": 533676
+    },
+    {
+      "golfer": "Aaron Wise",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Adam Hadwin",
@@ -1244,15 +1251,6 @@
       "seasonEarnings": 108290
     },
     {
-      "golfer": "Brian Campbell",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money"
-      ],
-      "fedexPoints": 9,
-      "seasonEarnings": 54522
-    },
-    {
       "golfer": "Brice Garnett",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1334,6 +1332,13 @@
       "seasonEarnings": 193368
     },
     {
+      "golfer": "Charley Hoffman",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
+    },
+    {
       "golfer": "Christo Lamprecht",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1377,6 +1382,15 @@
       ],
       "fedexPoints": 123,
       "seasonEarnings": 334075
+    },
+    {
+      "golfer": "David Lipsky",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
+      ],
+      "fedexPoints": 365,
+      "seasonEarnings": 1168727
     },
     {
       "golfer": "David Skinns",
@@ -1460,6 +1474,13 @@
       "seasonEarnings": 303288
     },
     {
+      "golfer": "Erik van Rooyen",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
+    },
+    {
       "golfer": "Frankie Capan III",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1541,6 +1562,13 @@
       "seasonEarnings": 8920
     },
     {
+      "golfer": "Jeffrey Kang",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
+    },
+    {
       "golfer": "Jeremy Paul",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1620,6 +1648,13 @@
       ],
       "fedexPoints": 28,
       "seasonEarnings": 76937
+    },
+    {
+      "golfer": "K.H. Lee",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Karl Vilips",
@@ -1847,6 +1882,13 @@
       "seasonEarnings": 148000
     },
     {
+      "golfer": "Paul Waring",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
+    },
+    {
       "golfer": "Peter Malnati",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1955,6 +1997,15 @@
       "seasonEarnings": 387499
     },
     {
+      "golfer": "Stephan Jaeger",
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
+      ],
+      "fedexPoints": 228,
+      "seasonEarnings": 799744
+    },
+    {
       "golfer": "Steven Fisk",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -2000,15 +2051,6 @@
       "seasonEarnings": 31776
     },
     {
-      "golfer": "Tom Hoge",
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money"
-      ],
-      "fedexPoints": 175,
-      "seasonEarnings": 644364
-    },
-    {
       "golfer": "Tom Kim",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -2025,6 +2067,13 @@
       ],
       "fedexPoints": 204,
       "seasonEarnings": 780569
+    },
+    {
+      "golfer": "Trey Mullinax",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Troy Merritt",
