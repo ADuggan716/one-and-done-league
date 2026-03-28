@@ -12,9 +12,9 @@
       {
         "member": "Andrew",
         "pick": "Ben Griffin",
-        "earnings": 17721,
+        "earnings": 20790,
         "seasonEarnings": 1791135,
-        "finish": "76",
+        "finish": "60",
         "leagueRank": 104
       },
       {
@@ -22,23 +22,23 @@
         "pick": "Ryan Fox",
         "earnings": 0,
         "seasonEarnings": 1823700,
-        "finish": "105",
+        "finish": "112",
         "leagueRank": 101
       },
       {
         "member": "Dakota",
         "pick": "Ryan Gerard",
-        "earnings": 0,
+        "earnings": 3652,
         "seasonEarnings": 4910569,
-        "finish": "119",
+        "finish": "89",
         "leagueRank": 12
       },
       {
         "member": "Mike",
         "pick": "Min Woo Lee",
-        "earnings": 37330,
+        "earnings": 445500,
         "seasonEarnings": 2162505,
-        "finish": "31",
+        "finish": "4",
         "leagueRank": 84
       }
     ],
@@ -46,9 +46,9 @@
       {
         "member": "Andrew",
         "golfer": "Ben Griffin",
-        "earnings": 17721,
+        "earnings": 20790,
         "seasonEarnings": 1791135,
-        "finish": "76",
+        "finish": "60",
         "leagueRank": 104
       },
       {
@@ -56,23 +56,23 @@
         "golfer": "Ryan Fox",
         "earnings": 0,
         "seasonEarnings": 1823700,
-        "finish": "105",
+        "finish": "112",
         "leagueRank": 101
       },
       {
         "member": "Dakota",
         "golfer": "Ryan Gerard",
-        "earnings": 0,
+        "earnings": 3652,
         "seasonEarnings": 4910569,
-        "finish": "119",
+        "finish": "89",
         "leagueRank": 12
       },
       {
         "member": "Mike",
         "golfer": "Min Woo Lee",
-        "earnings": 37330,
+        "earnings": 445500,
         "seasonEarnings": 2162505,
-        "finish": "31",
+        "finish": "4",
         "leagueRank": 84
       }
     ]
@@ -220,8 +220,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "119",
+          "earnings": 3652,
+          "finish": "89",
           "pick": "Ryan Gerard"
         }
       ],
@@ -353,8 +353,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 37330,
-          "finish": "31",
+          "earnings": 445500,
+          "finish": "4",
           "pick": "Min Woo Lee"
         }
       ],
@@ -487,7 +487,7 @@
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
           "earnings": 0,
-          "finish": "105",
+          "finish": "112",
           "pick": "Ryan Fox"
         }
       ],
@@ -619,8 +619,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 17721,
-          "finish": "76",
+          "earnings": 20790,
+          "finish": "60",
           "pick": "Ben Griffin"
         }
       ],
@@ -1262,8 +1262,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 37330,
-          "finish": "31",
+          "earnings": 445500,
+          "finish": "4",
           "pick": "Min Woo Lee",
           "leagueRank": 84
         },
@@ -1274,8 +1274,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 17721,
-          "finish": "76",
+          "earnings": 20790,
+          "finish": "60",
           "pick": "Ben Griffin",
           "leagueRank": 104
         },
@@ -1286,8 +1286,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "119",
+          "earnings": 3652,
+          "finish": "89",
           "pick": "Ryan Gerard",
           "leagueRank": 12
         },
@@ -1299,7 +1299,7 @@
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "105",
+          "finish": "112",
           "pick": "Ryan Fox",
           "leagueRank": 101
         }
@@ -3640,28 +3640,6 @@
       ]
     },
     {
-      "golfer": "Aaron Wise",
-      "projectedEarnings": 73097,
-      "projectedDupCount": 0.06,
-      "futureValue": 211425,
-      "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": true,
-      "historicalStrength": 0.5,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "Weekly projection synthesis"
-      ]
-    },
-    {
       "golfer": "Adam Hadwin",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -4480,6 +4458,28 @@
       ]
     },
     {
+      "golfer": "Erik van Rooyen",
+      "projectedEarnings": 73097,
+      "projectedDupCount": 0.06,
+      "futureValue": 211425,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "historicalStrength": 0.5,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
       "golfer": "Frankie Capan III",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -4906,28 +4906,6 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "Weekly projection synthesis"
-      ]
-    },
-    {
-      "golfer": "K.H. Lee",
-      "projectedEarnings": 73097,
-      "projectedDupCount": 0.06,
-      "futureValue": 211425,
-      "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": true,
-      "historicalStrength": 0.5,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
         "Weekly projection synthesis"
       ]
     },
@@ -6233,20 +6211,20 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 0",
-    "Splash mapping: Andrew: rank=104, season=1791135, pick=Ben Griffin, week=17721, finish=76 | Paul: rank=101, season=1823700, pick=Ryan Fox, week=0, finish=105 | Dakota: rank=12, season=4910569, pick=Ryan Gerard, week=0, finish=119 | Mike: rank=84, season=2162505, pick=Min Woo Lee, week=37330, finish=31",
-    "PGA TOUR FedExCup: 198 golfer records loaded",
+    "Splash mapping: Andrew: rank=104, season=1791135, pick=Ben Griffin, week=20790, finish=60 | Paul: rank=101, season=1823700, pick=Ryan Fox, week=0, finish=112 | Dakota: rank=12, season=4910569, pick=Ryan Gerard, week=3652, finish=89 | Mike: rank=84, season=2162505, pick=Min Woo Lee, week=445500, finish=4",
+    "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 191 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "Fallback: reused previous committed season history because Splash returned no historical event rows.",
     "PGA TOUR schedule resolved next tournament: Texas Children's Houston Open",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/texas-children-s-houston-open/R2026020/field",
     "PGA TOUR field entries: 135",
-    "Weekly projection synthesis: 128 field golfers received modeled payout estimates",
+    "Weekly projection synthesis: 127 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Chris Gotterup, Min Woo Lee, Ryan Gerard, Kurt Kitayama, Jake Knapp",
     "Standings season totals reconciled to explicit Splash year-to-date values."
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-03-27T00:00:10.605Z"
+  "updatedAt": "2026-03-28T00:00:07.247Z"
 }

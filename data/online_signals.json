@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-03-27T00:00:08.023Z",
+  "fetchedAt": "2026-03-28T00:00:04.667Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 198 golfer records loaded",
+    "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 191 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1136,13 +1136,6 @@
       "seasonEarnings": 533676
     },
     {
-      "golfer": "Aaron Wise",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Adam Hadwin",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1467,6 +1460,13 @@
       "seasonEarnings": 303288
     },
     {
+      "golfer": "Erik van Rooyen",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
+    },
+    {
       "golfer": "Frankie Capan III",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1634,13 +1634,6 @@
       ],
       "fedexPoints": 28,
       "seasonEarnings": 76937
-    },
-    {
-      "golfer": "K.H. Lee",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Karl Vilips",
