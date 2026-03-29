@@ -12,9 +12,9 @@
       {
         "member": "Andrew",
         "pick": "Ben Griffin",
-        "earnings": 20790,
+        "earnings": 27313,
         "seasonEarnings": 1791135,
-        "finish": "60",
+        "finish": "45",
         "leagueRank": 104
       },
       {
@@ -28,7 +28,7 @@
       {
         "member": "Dakota",
         "pick": "Ryan Gerard",
-        "earnings": 3652,
+        "earnings": 0,
         "seasonEarnings": 4910569,
         "finish": "89",
         "leagueRank": 12
@@ -36,9 +36,9 @@
       {
         "member": "Mike",
         "pick": "Min Woo Lee",
-        "earnings": 445500,
+        "earnings": 584100,
         "seasonEarnings": 2162505,
-        "finish": "4",
+        "finish": "3",
         "leagueRank": 84
       }
     ],
@@ -46,9 +46,9 @@
       {
         "member": "Andrew",
         "golfer": "Ben Griffin",
-        "earnings": 20790,
+        "earnings": 27313,
         "seasonEarnings": 1791135,
-        "finish": "60",
+        "finish": "45",
         "leagueRank": 104
       },
       {
@@ -62,7 +62,7 @@
       {
         "member": "Dakota",
         "golfer": "Ryan Gerard",
-        "earnings": 3652,
+        "earnings": 0,
         "seasonEarnings": 4910569,
         "finish": "89",
         "leagueRank": 12
@@ -70,9 +70,9 @@
       {
         "member": "Mike",
         "golfer": "Min Woo Lee",
-        "earnings": 445500,
+        "earnings": 584100,
         "seasonEarnings": 2162505,
-        "finish": "4",
+        "finish": "3",
         "leagueRank": 84
       }
     ]
@@ -84,7 +84,7 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 0",
-    "Splash mapping: Andrew: rank=104, season=1791135, pick=Ben Griffin, week=20790, finish=60 | Paul: rank=101, season=1823700, pick=Ryan Fox, week=0, finish=112 | Dakota: rank=12, season=4910569, pick=Ryan Gerard, week=3652, finish=89 | Mike: rank=84, season=2162505, pick=Min Woo Lee, week=445500, finish=4",
+    "Splash mapping: Andrew: rank=104, season=1791135, pick=Ben Griffin, week=27313, finish=45 | Paul: rank=101, season=1823700, pick=Ryan Fox, week=0, finish=112 | Dakota: rank=12, season=4910569, pick=Ryan Gerard, week=0, finish=89 | Mike: rank=84, season=2162505, pick=Min Woo Lee, week=584100, finish=3",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 191 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -96,7 +96,7 @@
     "Weekly projection synthesis top field: Chris Gotterup, Min Woo Lee, Ryan Gerard, Kurt Kitayama, Jake Knapp",
     "Standings season totals reconciled to explicit Splash year-to-date values."
   ],
-  "generatedAt": "2026-03-28T00:00:07.563Z",
+  "generatedAt": "2026-03-29T00:00:15.021Z",
   "primary": {
     "golfer": "Sam Burns",
     "projectedEarnings": 201491,
