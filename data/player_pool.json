@@ -1,6 +1,6 @@
 {
   "eventId": "texas-children-s-houston-open",
-  "tournamentName": "Texas Children's Houston Open",
+  "tournamentName": "Valero Texas Open",
   "eventTier": "regular",
   "currentEventMeta": {
     "totalPurse": 0,
@@ -255,7 +255,7 @@
       "worldRank": 3,
       "fedexPoints": 702,
       "seasonEarnings": 2267950,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Justin Rose",
@@ -269,35 +269,35 @@
       "worldRank": 5,
       "fedexPoints": 1182,
       "seasonEarnings": 5065472,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Chris Gotterup",
       "worldRank": 6,
       "fedexPoints": 1131,
       "seasonEarnings": 3895375,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Russell Henley",
       "worldRank": 7,
       "fedexPoints": 484,
       "seasonEarnings": 1708567,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Robert MacIntyre",
       "worldRank": 8,
       "fedexPoints": 572,
       "seasonEarnings": 2168475,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "J.J. Spaun",
       "worldRank": 9,
       "fedexPoints": 75,
       "seasonEarnings": 309772,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Xander Schauffele",
@@ -311,21 +311,21 @@
       "worldRank": 11,
       "fedexPoints": 144,
       "seasonEarnings": 412583,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Hideki Matsuyama",
       "worldRank": 12,
       "fedexPoints": 650,
       "seasonEarnings": 2310720,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Sepp Straka",
       "worldRank": 13,
       "fedexPoints": 722,
       "seasonEarnings": 3038670,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Justin Thomas",
@@ -339,14 +339,14 @@
       "worldRank": 15,
       "fedexPoints": 212,
       "seasonEarnings": 757007,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Alex Noren",
       "worldRank": 16,
       "fedexPoints": 198,
       "seasonEarnings": 825450,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Viktor Hovland",
@@ -395,14 +395,14 @@
       "worldRank": 23,
       "fedexPoints": 685,
       "seasonEarnings": 2462875,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Maverick McNealy",
       "worldRank": 24,
       "fedexPoints": 312,
       "seasonEarnings": 1148725,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "TYRRELL HATTON",
@@ -416,35 +416,35 @@
       "worldRank": 26,
       "fedexPoints": 662,
       "seasonEarnings": 2251179,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Shane Lowry",
       "worldRank": 27,
       "fedexPoints": 397,
       "seasonEarnings": 1419650,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Si Woo Kim",
       "worldRank": 28,
       "fedexPoints": 640,
       "seasonEarnings": 2309038,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Sam Burns",
       "worldRank": 29,
       "fedexPoints": 356,
       "seasonEarnings": 1156946,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Kurt Kitayama",
       "worldRank": 30,
       "fedexPoints": 489,
       "seasonEarnings": 2224092,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Patrick Cantlay",
@@ -458,7 +458,7 @@
       "worldRank": 32,
       "fedexPoints": 781,
       "seasonEarnings": 3107299,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Aaron Rai",
@@ -493,7 +493,7 @@
       "worldRank": 37,
       "fedexPoints": 249,
       "seasonEarnings": 876410,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Corey Conners",
@@ -514,21 +514,21 @@
       "worldRank": 40,
       "fedexPoints": 301,
       "seasonEarnings": 1060663,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Jake Knapp",
       "worldRank": 41,
       "fedexPoints": 680,
       "seasonEarnings": 2166475,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Andrew Novak",
       "worldRank": 42,
       "fedexPoints": 139,
       "seasonEarnings": 518507,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Kristoffer Reitan",
@@ -542,14 +542,14 @@
       "worldRank": 44,
       "fedexPoints": 287,
       "seasonEarnings": 1004520,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Michael Brennan",
       "worldRank": 45,
       "fedexPoints": 43,
       "seasonEarnings": 147870,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "SAMUEL STEVENS",
@@ -577,7 +577,7 @@
       "worldRank": 49,
       "fedexPoints": 59,
       "seasonEarnings": 230330,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "NICOLAI HOJGAARD",
@@ -588,21 +588,23 @@
     }
   ],
   "nextTournamentField": [
-    "Chris Gotterup",
-    "Ben Griffin",
-    "Harris English",
-    "Ryan Gerard",
-    "Shane Lowry",
-    "Sam Burns",
-    "Kurt Kitayama",
-    "Min Woo Lee",
+    "Tommy Fleetwood",
+    "Collin Morikawa",
+    "Russell Henley",
+    "Robert MacIntyre",
+    "J.J. Spaun",
+    "Hideki Matsuyama",
+    "Sepp Straka",
+    "Alex Noren",
+    "Ludvig Åberg",
+    "Maverick McNealy",
+    "Si Woo Kim",
     "Marco Penge",
-    "Jason Day",
-    "Jake Knapp",
+    "Matt McCarty",
+    "Andrew Novak",
     "Kristoffer Reitan",
-    "Ryan Fox",
-    "Michael Brennan",
-    "Pierceson Coody"
+    "Pierceson Coody",
+    "Sami Valimaki"
   ],
   "filters": {
     "tiers": [
@@ -611,5 +613,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-03-29T00:00:14.701Z"
+  "updatedAt": "2026-03-30T00:00:08.945Z"
 }
