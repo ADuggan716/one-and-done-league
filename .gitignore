@@ -1,0 +1,8 @@
+.DS_Store
+node_modules/
+dist/
+logs/
+
+# Local machine/project secrets
+config/config.json
+config/runyourpool.cookie

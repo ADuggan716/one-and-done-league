@@ -1,0 +1,18 @@
+{
+  "name": "one-and-done-companion",
+  "version": "1.0.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "test": "node --test",
+    "build:site": "node scripts/build_site.mjs",
+    "fetch:signals": "node scripts/fetch_online_signals.mjs",
+    "sync": "node scripts/sync_runyourpool.mjs",
+    "sync:local:publish": "bash scripts/local_sync_publish.sh",
+    "recommend": "node scripts/generate_recommendations.mjs",
+    "build:data": "node scripts/build_local_data.mjs",
+    "check:cookie": "node scripts/check_splash_cookie.mjs",
+    "serve": "python3 -m http.server 8080",
+    "release:sync:check": "bash scripts/release_sync_check.sh"
+  }
+}

@@ -1,0 +1,61 @@
+{
+  "provider": "splash",
+  "me": "Andrew",
+  "subgroupMembers": ["Andrew", "Paul", "Dakota", "Mike"],
+  "teams": [
+    { "name": "Young Guns", "members": ["Andrew", "Dakota"] },
+    { "name": "Experienced Gentlemen", "members": ["Mike", "Paul"] }
+  ],
+  "memberAliases": {
+    "ADUGGAN716": "Andrew",
+    "ADuggan716": "Andrew",
+    "MGParent": "Mike",
+    "PDuggan7": "Paul",
+    "Dakota_Girard": "Dakota"
+  },
+  "cookiePath": "config/runyourpool.cookie",
+  "splash": {
+    "baseUrl": "https://sm.app.splashsports.com",
+    "leaguePath": "/Golf/PickX/multiple_entries.cfm",
+    "standingsPath": "/Golf/PickX/reports/pickone/standings_v2.cfm"
+  },
+  "onlineSources": [
+    {
+      "name": "Recent Form Feed",
+      "url": "https://your-source.example.com/form-signals",
+      "authEnv": "FORM_SOURCE_API_KEY"
+    },
+    {
+      "name": "Course History Feed",
+      "url": "https://your-source.example.com/course-history",
+      "authEnv": "COURSE_SOURCE_API_KEY"
+    }
+  ],
+  "recommendationWeights": {
+    "expected": 0.35,
+    "uniqueness": 0.15,
+    "opportunityCost": 0.15,
+    "recentForm": 0.2,
+    "historicalStrength": 0.1,
+    "courseHistory": 0.05
+  },
+  "schedule": {
+    "timezone": "America/New_York",
+    "pickVisibilityWatch": {
+      "enabled": true,
+      "weekday": "THURSDAY",
+      "startHour": 8,
+      "startMinute": 0,
+      "endHour": 17,
+      "endMinute": 0,
+      "pollMinutes": 10
+    },
+    "syncWindows": [
+      { "weekday": "THURSDAY", "hour": 8, "minute": 0, "purpose": "picks-refresh" },
+      { "weekday": "THURSDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
+      { "weekday": "FRIDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
+      { "weekday": "SATURDAY", "hour": 20, "minute": 0, "purpose": "evening-refresh" },
+      { "weekday": "SUNDAY", "hour": 20, "minute": 0, "purpose": "results-refresh" }
+    ]
+  }
+}

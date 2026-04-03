@@ -1,0 +1,472 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Product Roadmap</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
+    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="stylesheet" href="../../styles.css" />
+    <style>
+      .hero-row,
+      .phase-grid,
+      .foundation-grid,
+      .timeline-grid {
+        display: grid;
+        gap: 14px;
+      }
+
+      .hero-row,
+      .phase-grid {
+        grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+      }
+
+      .foundation-grid,
+      .timeline-grid {
+        grid-template-columns: 1fr;
+      }
+
+      .eyebrow,
+      .phase-label,
+      .timeline-label {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        border: 1px solid var(--line);
+        border-radius: 999px;
+        padding: 8px 12px;
+        font-size: 0.8rem;
+        letter-spacing: 0.05em;
+        text-transform: uppercase;
+        color: var(--muted);
+        background: rgba(255, 255, 255, 0.7);
+      }
+
+      .hero-copy {
+        display: grid;
+        gap: 14px;
+      }
+
+      .hero-copy p,
+      .phase-card p,
+      .timeline-card p,
+      .foundation-item p,
+      .empty-state p,
+      .status-line {
+        margin: 0;
+        line-height: 1.55;
+        color: var(--muted);
+      }
+
+      .hero-copy strong,
+      .phase-card strong,
+      .timeline-card strong,
+      .foundation-item strong {
+        color: var(--ink);
+      }
+
+      .signal-strip {
+        display: flex;
+        flex-wrap: wrap;
+        gap: 10px;
+      }
+
+      .signal-pill {
+        display: inline-flex;
+        align-items: center;
+        gap: 8px;
+        padding: 9px 12px;
+        border-radius: 999px;
+        border: 1px solid var(--line);
+        background: rgba(255, 255, 255, 0.82);
+        font-size: 0.84rem;
+      }
+
+      .signal-pill strong {
+        font-family: "Space Grotesk", sans-serif;
+        font-size: 0.95rem;
+      }
+
+      .phase-card {
+        padding: 20px;
+      }
+
+      .phase-card.current {
+        background: linear-gradient(180deg, rgba(236, 245, 246, 0.98), rgba(244, 250, 249, 0.96));
+      }
+
+      .phase-card.next {
+        background: linear-gradient(180deg, rgba(249, 245, 237, 0.96), rgba(255, 250, 243, 0.96));
+      }
+
+      .phase-card.later {
+        background: linear-gradient(180deg, rgba(242, 244, 255, 0.96), rgba(248, 249, 255, 0.96));
+      }
+
+      .phase-card h2,
+      .foundation-item h3,
+      .timeline-card h3 {
+        margin: 10px 0 6px;
+      }
+
+      .item-list {
+        margin: 14px 0 0;
+        padding: 0;
+        list-style: none;
+        display: grid;
+        gap: 10px;
+      }
+
+      .item-list li {
+        border: 1px solid var(--line);
+        border-radius: 14px;
+        padding: 12px 13px;
+        background: rgba(255, 255, 255, 0.88);
+        line-height: 1.45;
+      }
+
+      .foundation-item,
+      .timeline-card {
+        display: grid;
+        gap: 8px;
+        padding: 18px;
+      }
+
+      .foundation-item {
+        grid-template-columns: auto 1fr;
+        align-items: start;
+      }
+
+      .foundation-index {
+        width: 38px;
+        height: 38px;
+        border-radius: 12px;
+        display: inline-grid;
+        place-items: center;
+        background: linear-gradient(135deg, #0d3b66, #00a896);
+        color: #fff;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+      }
+
+      .timeline-card {
+        grid-template-columns: minmax(110px, 140px) 1fr;
+        align-items: start;
+      }
+
+      .timeline-badge {
+        display: inline-flex;
+        align-items: center;
+        justify-content: center;
+        min-height: 42px;
+        border-radius: 14px;
+        padding: 10px 12px;
+        font-family: "Space Grotesk", sans-serif;
+        font-weight: 700;
+        color: #163247;
+        background: linear-gradient(135deg, rgba(0, 168, 150, 0.14), rgba(13, 59, 102, 0.08));
+        border: 1px solid rgba(54, 86, 104, 0.16);
+      }
+
+      .empty-state,
+      .error-state {
+        text-align: center;
+        padding: 36px 20px;
+      }
+
+      .error-state {
+        color: #7a4730;
+      }
+
+      .error-state p {
+        color: inherit;
+      }
+
+      @media (max-width: 720px) {
+        .timeline-card,
+        .foundation-item {
+          grid-template-columns: 1fr;
+        }
+      }
+    </style>
+  </head>
+  <body>
+    <div class="bg-shape bg-shape-a"></div>
+    <div class="bg-shape bg-shape-b"></div>
+
+    <main class="shell">
+      <section class="hero card">
+        <div class="hero-copy">
+          <span class="eyebrow">Internal View</span>
+          <div>
+            <h1 id="product-name">Product Roadmap</h1>
+            <p class="hero-meta">A single-page view of the current state, active phase, and build timeline for this product.</p>
+          </div>
+          <div class="signal-strip" id="signal-strip"></div>
+          <p class="status-line" id="status-line">Loading roadmap data...</p>
+        </div>
+      </section>
+
+      <section class="hero-row">
+        <article class="card">
+          <span class="phase-label">Current State</span>
+          <h2>Where the product is now</h2>
+          <p id="current-summary">Loading...</p>
+        </article>
+
+        <article class="card">
+          <span class="phase-label">Focus</span>
+          <h2 id="current-phase-name">Loading...</h2>
+          <p id="current-phase-summary">Loading...</p>
+        </article>
+      </section>
+
+      <section class="phase-grid" id="phase-grid"></section>
+
+      <section class="card">
+        <span class="phase-label">Completed Foundation</span>
+        <h2>What already exists</h2>
+        <div class="foundation-grid" id="foundation-grid"></div>
+      </section>
+
+      <section class="card">
+        <span class="timeline-label">Build Timeline</span>
+        <h2>Road to the next phase</h2>
+        <div class="timeline-grid" id="timeline-grid"></div>
+      </section>
+    </main>
+
+    <script id="embedded-roadmap-data" type="application/json">
+      {
+        "product": "One and Done League",
+        "currentState": {
+          "summary": "The public dashboard, private recommendation flow, GitHub Pages deployment, and Raspberry Pi-based scheduled publishing are all working. The product is now focused on making the sync path dependable, especially around weekly rollover behavior and operator visibility."
+        },
+        "completedFoundation": [
+          "Public dashboard for standings, weekly comparison, and golfer availability is live.",
+          "Private recommendations page shares the same generated data pipeline as the public dashboard.",
+          "GitHub Pages deployment and static JSON publishing workflow are in place.",
+          "The Raspberry Pi runner can sync, commit, and push updates on schedule without relying on the Mac being on.",
+          "Recovery logic now protects the season view from being wiped when Splash only returns current-week data."
+        ],
+        "currentPhase": {
+          "name": "Hardening / Reliability",
+          "summary": "Make the current product dependable enough that weekly refreshes and publishing do not require rescue work.",
+          "items": [
+            "Keep the Pi runner clean and aligned with the main branch so scheduled runs stay rebase-safe.",
+            "Reduce the chance of season-history regressions when upstream data is partial or current-week-only.",
+            "Lock the Thursday-to-Sunday weekly rollover rules so the dashboard opens the new week on Thursday morning but only books earnings into season totals after the Sunday final refresh.",
+            "Make operational checks simple enough that a screenshot or short log snippet is enough to diagnose most failures."
+          ]
+        },
+        "nextPhase": {
+          "name": "Usability",
+          "summary": "Make the product easier to understand and easier to operate without needing to inspect raw files.",
+          "items": [
+            "Add clearer health and freshness messaging for last sync result, source state, and publishing status.",
+            "Improve recommendation transparency so weekly pick guidance is easier to trust and explain.",
+            "Polish small UX details like favicon, metadata, and navigation clarity across public and private views."
+          ]
+        },
+        "laterPhase": {
+          "name": "Feature Expansion",
+          "summary": "Add higher-value league intelligence only after the sync and publishing foundation is stable.",
+          "items": [
+            "Broaden projection inputs and field-aware recommendation logic for tougher weekly pick decisions.",
+            "Add deeper season storytelling, team race views, and smarter comparison tools.",
+            "Introduce lightweight alerts or summaries for failed refreshes and notable standings changes."
+          ]
+        },
+        "buildTimeline": [
+          {
+            "title": "Foundation Complete",
+            "timing": "Done",
+            "summary": "Built the live dashboard, private recommendation workflow, hosted deployment, and shared JSON data pipeline."
+          },
+          {
+            "title": "Always-On Publishing",
+            "timing": "Done",
+            "summary": "Moved scheduled refreshes onto the Raspberry Pi so updates can run even when the Mac is off."
+          },
+          {
+            "title": "Season History Recovery",
+            "timing": "Done",
+            "summary": "Fixed weekly refresh regressions so empty future events do not appear as active picks, duplicate tournaments are collapsed, and the prior completed event rolls into season totals correctly."
+          },
+          {
+            "title": "Weekly Rollover Rules",
+            "timing": "Done",
+            "summary": "Defined the week handoff so Thursday morning opens the new tournament in the week-by-week view, while Sunday night is what finalizes that tournament into season totals and last week's earnings."
+          },
+          {
+            "title": "Reliability Hardening",
+            "timing": "Now",
+            "summary": "Stabilizing sync behavior, preserving season history during partial upstream responses, and reducing manual recovery work."
+          },
+          {
+            "title": "Operator-Friendly Product",
+            "timing": "Next",
+            "summary": "Add clearer status, easier monitoring, and more understandable guidance for weekly decisions."
+          },
+          {
+            "title": "League Intelligence Expansion",
+            "timing": "Later",
+            "summary": "Expand projections, alerts, and deeper season analysis after the automation is consistently dependable."
+          }
+        ]
+      }
+    </script>
+    <script>
+      const dataPaths = [
+        "../data/product_roadmap.json",
+        "../../data/product_roadmap.json",
+      ];
+
+      function setText(id, value) {
+        const node = document.getElementById(id);
+        if (node) node.textContent = value;
+      }
+
+      function createEl(tag, className, text) {
+        const el = document.createElement(tag);
+        if (className) el.className = className;
+        if (text !== undefined) el.textContent = text;
+        return el;
+      }
+
+      async function loadRoadmap() {
+        const embedded = document.getElementById("embedded-roadmap-data");
+        if (embedded && embedded.textContent && embedded.textContent.trim()) {
+          try {
+            return JSON.parse(embedded.textContent);
+          } catch (_) {
+            // Fall through to fetch-based loading.
+          }
+        }
+
+        for (const url of dataPaths) {
+          try {
+            const response = await fetch(url, { cache: "no-store" });
+            if (!response.ok) continue;
+            return await response.json();
+          } catch (_) {
+            // Try the next path.
+          }
+        }
+        throw new Error("Roadmap data could not be loaded.");
+      }
+
+      function renderSignals(roadmap) {
+        const strip = document.getElementById("signal-strip");
+        strip.replaceChildren();
+
+        const signals = [
+          ["Current phase", roadmap && roadmap.currentPhase ? roadmap.currentPhase.name : "Unknown"],
+          ["Next phase", roadmap && roadmap.nextPhase ? roadmap.nextPhase.name : "Unknown"],
+          ["Timeline steps", String(roadmap && roadmap.buildTimeline ? roadmap.buildTimeline.length : 0)],
+        ];
+
+        for (const [label, value] of signals) {
+          const pill = createEl("div", "signal-pill");
+          pill.append(createEl("span", "", label));
+          pill.append(createEl("strong", "", value));
+          strip.append(pill);
+        }
+      }
+
+      function renderPhaseCard(phase, tone, heading) {
+        const card = createEl("article", `card phase-card ${tone}`);
+        card.append(createEl("span", "phase-label", heading));
+        card.append(createEl("h2", "", phase && phase.name ? phase.name : "Untitled phase"));
+        card.append(createEl("p", "", phase && phase.summary ? phase.summary : "No summary available."));
+
+        const list = createEl("ul", "item-list");
+        for (const item of (phase && phase.items) || []) {
+          list.append(createEl("li", "", item));
+        }
+        card.append(list);
+        return card;
+      }
+
+      function renderFoundations(items) {
+        const container = document.getElementById("foundation-grid");
+        container.replaceChildren();
+
+        if (!items || !items.length) {
+          const empty = createEl("div", "empty-state");
+          empty.append(createEl("p", "", "No completed foundation items are recorded."));
+          container.append(empty);
+          return;
+        }
+
+        items.forEach((item, index) => {
+          const row = createEl("article", "card foundation-item");
+          row.append(createEl("div", "foundation-index", String(index + 1).padStart(2, "0")));
+          const copy = createEl("div");
+          copy.append(createEl("h3", "", item));
+          copy.append(createEl("p", "", "Completed capability that the product can already rely on."));
+          row.append(copy);
+          container.append(row);
+        });
+      }
+
+      function renderTimeline(items) {
+        const container = document.getElementById("timeline-grid");
+        container.replaceChildren();
+
+        if (!items || !items.length) {
+          const empty = createEl("div", "empty-state");
+          empty.append(createEl("p", "", "No timeline entries are recorded."));
+          container.append(empty);
+          return;
+        }
+
+        for (const item of items) {
+          const row = createEl("article", "card timeline-card");
+          row.append(createEl("div", "timeline-badge", item && item.timing ? item.timing : "TBD"));
+          const copy = createEl("div");
+          copy.append(createEl("h3", "", item && item.title ? item.title : "Untitled milestone"));
+          copy.append(createEl("p", "", item && item.summary ? item.summary : "No summary available."));
+          row.append(copy);
+          container.append(row);
+        }
+      }
+
+      function renderRoadmap(roadmap) {
+        setText("product-name", roadmap && roadmap.product ? roadmap.product : "Product Roadmap");
+        setText("current-summary", roadmap && roadmap.currentState ? roadmap.currentState.summary : "No current state summary available.");
+        setText("current-phase-name", roadmap && roadmap.currentPhase ? roadmap.currentPhase.name : "Unknown phase");
+        setText("current-phase-summary", roadmap && roadmap.currentPhase ? roadmap.currentPhase.summary : "No current phase summary available.");
+        setText("status-line", "Loaded from embedded roadmap data");
+
+        renderSignals(roadmap);
+
+        const phaseGrid = document.getElementById("phase-grid");
+        phaseGrid.replaceChildren(
+          renderPhaseCard(roadmap ? roadmap.currentPhase : null, "current", "Now"),
+          renderPhaseCard(roadmap ? roadmap.nextPhase : null, "next", "Next"),
+          renderPhaseCard(roadmap ? roadmap.laterPhase : null, "later", "Later")
+        );
+
+        renderFoundations(roadmap ? roadmap.completedFoundation : []);
+        renderTimeline(roadmap ? roadmap.buildTimeline : []);
+      }
+
+      function renderError(message) {
+        setText("status-line", "Roadmap data failed to load.");
+        const phaseGrid = document.getElementById("phase-grid");
+        phaseGrid.replaceChildren();
+        const error = createEl("article", "card error-state");
+        error.append(createEl("h2", "", "Roadmap unavailable"));
+        error.append(createEl("p", "", message));
+        phaseGrid.append(error);
+      }
+
+      loadRoadmap().then(renderRoadmap).catch((error) => {
+        renderError(error.message);
+      });
+    </script>
+  </body>
+</html>
