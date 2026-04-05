@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-04-03T02:25:02.004Z",
+  "fetchedAt": "2026-04-05T21:02:13.292Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 200 golfer records loaded",
+    "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: 100 golfer records loaded"
   ],
@@ -1338,13 +1338,6 @@
       "seasonEarnings": 193368
     },
     {
-      "golfer": "Charley Hoffman",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Christo Lamprecht",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1597,13 +1590,6 @@
       "seasonEarnings": 156364
     },
     {
-      "golfer": "Jimmy Walker",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Joe Highsmith",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1719,13 +1705,6 @@
       ],
       "fedexPoints": 37,
       "seasonEarnings": 92640
-    },
-    {
-      "golfer": "Lanto Griffin",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Lee Hodges",
