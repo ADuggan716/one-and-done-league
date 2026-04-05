@@ -46,11 +46,12 @@ NODE
   crontab -l 2>/dev/null | awk -v begin="$CRON_TAG_BEGIN" -v end="$CRON_TAG_END" '
     $0 == begin { skip=1; next }
     $0 == end { skip=0; next }
+    /\/home\/andr00\/projects\/one-and-done-league/ { next }
     skip != 1 { print }
   '
   echo "$CRON_TAG_BEGIN"
   echo "PATH=/usr/local/bin:/usr/bin:/bin"
-  printf '%s' "$SCHEDULE_LINES"
+  printf '%s\n' "$SCHEDULE_LINES"
   echo "$CRON_TAG_END"
 } > "$TMP_CRON"
 
