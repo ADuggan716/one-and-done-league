@@ -6,6 +6,14 @@ cd "$ROOT_DIR"
 export PATH="/opt/homebrew/bin:/usr/local/bin:$PATH"
 mkdir -p logs .tmp
 CONFIG_PATH="${ROOT_DIR}/config/config.json"
+ALERT_ENV_PATH="${ALERT_ENV_PATH:-$HOME/.config/golf-sync-alert.env}"
+
+if [[ -f "$ALERT_ENV_PATH" ]]; then
+  set -a
+  # shellcheck disable=SC1090
+  source "$ALERT_ENV_PATH"
+  set +a
+fi
 
 LOCK_DIR="${ROOT_DIR}/.tmp/local_sync_publish.lock"
 if ! mkdir "$LOCK_DIR" 2>/dev/null; then
@@ -22,6 +30,8 @@ RETRY_DELAY_SECONDS="${RETRY_DELAY_SECONDS:-120}"
 SPLASH_SOURCE="${SPLASH_SOURCE:-direct}"
 ALLOW_CHROME_FALLBACK="${ALLOW_CHROME_FALLBACK:-0}"
 LAST_LOG_PATH="${ROOT_DIR}/logs/local_sync_publish.last.log"
+COOKIE_ALERT_STATE_PATH="${ROOT_DIR}/.tmp/cookie_alert.last_sent"
+COOKIE_ALERT_COOLDOWN_MINUTES="${COOKIE_ALERT_COOLDOWN_MINUTES:-720}"
 
 echo "==> Working directory: $ROOT_DIR"
 echo "==> Branch: $BRANCH"
@@ -53,6 +63,54 @@ should_retry_sync_failure() {
   return 1
 }
 
+cookie_refresh_needed() {
+  local log_path="$1"
+  grep -Eq "AUTH_EXPIRED|COOKIE_EMPTY|PARSE_EMPTY" "$log_path"
+}
+
+send_cookie_refresh_alert_if_needed() {
+  local log_path="$1"
+
+  if [[ -z "${ALERT_EMAIL_TO:-}" || -z "${ALERT_SMTP_USER:-}" || -z "${ALERT_SMTP_PASS:-}" ]]; then
+    echo "==> Cookie alert skipped: SMTP/email env vars not configured"
+    return 0
+  fi
+
+  local now_ts last_ts min_gap
+  now_ts="$(date +%s)"
+  last_ts=0
+  if [[ -f "$COOKIE_ALERT_STATE_PATH" ]]; then
+    last_ts="$(cat "$COOKIE_ALERT_STATE_PATH" 2>/dev/null || echo 0)"
+  fi
+  min_gap="$((COOKIE_ALERT_COOLDOWN_MINUTES * 60))"
+
+  if (( now_ts - last_ts < min_gap )); then
+    echo "==> Cookie alert skipped: cooldown active"
+    return 0
+  fi
+
+  local host_name body
+  host_name="$(hostname)"
+  body="$(
+    {
+      echo "Golf sync on ${host_name} needs a Splash cookie refresh."
+      echo
+      echo "Project: ${ROOT_DIR}"
+      echo "Time: $(date)"
+      echo
+      echo "Recent sync log:"
+      tail -n 40 "$log_path"
+    } | tr -d '\r'
+  )"
+
+  if python3 scripts/send_sync_alert.py "Golf sync needs cookie refresh (${host_name})" <<<"$body"; then
+    printf '%s\n' "$now_ts" > "$COOKIE_ALERT_STATE_PATH"
+    echo "==> Cookie refresh alert sent to ${ALERT_EMAIL_TO}"
+  else
+    echo "==> Cookie alert send failed"
+  fi
+}
+
 run_sync_with_retries() {
   local attempt=1
 
@@ -81,6 +139,10 @@ run_sync_with_retries() {
     if SPLASH_SOURCE=chrome node scripts/sync_runyourpool.mjs 2>&1 | tee "$LAST_LOG_PATH"; then
       return 0
     fi
+  fi
+
+  if cookie_refresh_needed "$LAST_LOG_PATH"; then
+    send_cookie_refresh_alert_if_needed "$LAST_LOG_PATH"
   fi
 
   return 1
