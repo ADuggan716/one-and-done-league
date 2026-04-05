@@ -12,17 +12,17 @@
       {
         "member": "Andrew",
         "pick": "Maverick McNealy",
-        "earnings": 103250,
+        "earnings": 91467,
         "seasonEarnings": 1850760,
-        "finish": "20",
+        "finish": "22",
         "leagueRank": 113
       },
       {
         "member": "Paul",
         "pick": "Tommy Fleetwood",
-        "earnings": 218050,
+        "earnings": 237650,
         "seasonEarnings": 1823700,
-        "finish": "11",
+        "finish": "10",
         "leagueRank": 115
       },
       {
@@ -46,17 +46,17 @@
       {
         "member": "Andrew",
         "golfer": "Maverick McNealy",
-        "earnings": 103250,
+        "earnings": 91467,
         "seasonEarnings": 1850760,
-        "finish": "20",
+        "finish": "22",
         "leagueRank": 113
       },
       {
         "member": "Paul",
         "golfer": "Tommy Fleetwood",
-        "earnings": 218050,
+        "earnings": 237650,
         "seasonEarnings": 1823700,
-        "finish": "11",
+        "finish": "10",
         "leagueRank": 115
       },
       {
@@ -84,29 +84,29 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 0",
-    "Splash mapping: Andrew: rank=113, season=1850760, pick=Maverick McNealy, week=103250, finish=20 | Paul: rank=115, season=1823700, pick=Tommy Fleetwood, week=218050, finish=11 | Dakota: rank=15, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=73, season=2746605, pick=Russell Henley, week=0, finish=71",
+    "Splash mapping: Andrew: rank=113, season=1850760, pick=Maverick McNealy, week=91467, finish=22 | Paul: rank=115, season=1823700, pick=Tommy Fleetwood, week=237650, finish=10 | Dakota: rank=15, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=73, season=2746605, pick=Russell Henley, week=0, finish=71",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
-    "OWGR: 100 golfer records loaded",
+    "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "Fallback: reused previous committed season history because Splash returned no historical event rows.",
     "PGA TOUR schedule resolved next tournament: Valero Texas Open",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/valero-texas-open/R2026041/field",
     "PGA TOUR field entries: 132",
     "Weekly projection synthesis: 122 field golfers received modeled payout estimates",
-    "Weekly projection synthesis top field: Tommy Fleetwood, Sepp Straka, Hideki Matsuyama, Ludvig Åberg, Robert MacIntyre",
+    "Weekly projection synthesis top field: Tommy Fleetwood, Sepp Straka, Robert MacIntyre, Hideki Matsuyama, Ludvig Åberg",
     "Standings season totals reconciled to explicit Splash year-to-date values."
   ],
-  "generatedAt": "2026-04-05T21:03:13.420Z",
+  "generatedAt": "2026-04-05T21:51:48.117Z",
   "primary": {
     "golfer": "Russell Henley",
-    "projectedEarnings": 413843,
+    "projectedEarnings": 437119,
     "projectedDupCount": 0.13,
-    "futureValue": 737911,
-    "worldRank": 9,
+    "futureValue": 768235,
+    "worldRank": 7,
     "fedexPoints": 484,
     "seasonEarnings": 1708567,
     "inNextTournament": true,
-    "historicalStrength": 0.228195,
+    "historicalStrength": 0.23267000000000002,
     "courseHistoryScore": 0.5,
     "last4Finishes": [
       35,
@@ -117,7 +117,7 @@
     "sourceRefs": [
       "PGA TOUR FedExCup",
       "PGA TOUR Official Money",
-      "OWGR",
+      "OWGR fallback",
       "Weekly projection synthesis"
     ],
     "courseHistoryResults": [],
@@ -125,7 +125,7 @@
     "hasCourseHistory": false,
     "hasRecentForm": true,
     "eligible": true,
-    "score": 0.464860475,
+    "score": 0.465361275,
     "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50.",
     "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
     "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -133,20 +133,20 @@
     "confidenceScore": 0.9400000000000001,
     "confidenceLabel": "High",
     "decisionScores": {
-      "balanced": 0.464860475,
-      "expected": 0.11824085714285715,
-      "leverage": 0.7620648380952381,
-      "preservation": 0.56598095
+      "balanced": 0.465361275,
+      "expected": 0.12489114285714285,
+      "leverage": 0.7633948952380952,
+      "preservation": 0.557555
     },
     "flags": [
       "Limited course history"
     ],
     "rationale": {
-      "expected": 0.11824085714285715,
+      "expected": 0.12489114285714285,
       "uniqueness": 0.9566666666666667,
-      "futureCost": 0.3689555,
+      "futureCost": 0.3841175,
       "recentForm": 0.6875,
-      "historicalStrength": 0.228195,
+      "historicalStrength": 0.23267000000000002,
       "courseHistory": 0.5,
       "preservePenalty": 0,
       "fieldPenalty": 0,
@@ -158,14 +158,14 @@
   "alternates": [
     {
       "golfer": "Sepp Straka",
-      "projectedEarnings": 583819,
+      "projectedEarnings": 573581,
       "projectedDupCount": 0.37,
-      "futureValue": 809294,
-      "worldRank": 12,
+      "futureValue": 799012,
+      "worldRank": 13,
       "fedexPoints": 722,
       "seasonEarnings": 3038670,
       "inNextTournament": true,
-      "historicalStrength": 0.216045,
+      "historicalStrength": 0.20954,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -176,7 +176,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -184,162 +184,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.46328935000000004,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50.",
+      "score": 0.4623862000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.46328935000000004,
-        "expected": 0.16680542857142858,
-        "leverage": 0.7157777523809524,
-        "preservation": 0.54274355
+        "balanced": 0.4623862000000001,
+        "expected": 0.1638802857142857,
+        "leverage": 0.7151927238095238,
+        "preservation": 0.5448524
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.16680542857142858,
+        "expected": 0.1638802857142857,
         "uniqueness": 0.8766666666666667,
-        "futureCost": 0.404647,
+        "futureCost": 0.399506,
         "recentForm": 0.6875,
-        "historicalStrength": 0.216045,
+        "historicalStrength": 0.20954,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Robert MacIntyre",
-      "projectedEarnings": 460358,
-      "projectedDupCount": 0.39,
-      "futureValue": 751294,
-      "worldRank": 11,
-      "fedexPoints": 572,
-      "seasonEarnings": 2168475,
-      "inNextTournament": true,
-      "historicalStrength": 0.22215,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.45490375,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.45490375,
-        "expected": 0.13153085714285714,
-        "leverage": 0.7040561714285714,
-        "preservation": 0.5610593
-      },
-      "flags": [
-        "Limited course history"
-      ],
-      "rationale": {
-        "expected": 0.13153085714285714,
-        "uniqueness": 0.87,
-        "futureCost": 0.375647,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.22215,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Marco Penge",
-      "projectedEarnings": 171901,
-      "projectedDupCount": 0.06,
-      "futureValue": 463795,
-      "worldRank": 36,
-      "fedexPoints": 191,
-      "seasonEarnings": 738458,
-      "inNextTournament": true,
-      "historicalStrength": 0.12501,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.45440647500000003,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.45440647500000003,
-        "expected": 0.04911457142857143,
-        "leverage": 0.7645729142857142,
-        "preservation": 0.632738
-      },
-      "flags": [
-        "Limited course history"
-      ],
-      "rationale": {
-        "expected": 0.04911457142857143,
-        "uniqueness": 0.98,
-        "futureCost": 0.2318975,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.12501,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50."
       }
     },
     {
       "golfer": "Matt McCarty",
-      "projectedEarnings": 193700,
+      "projectedEarnings": 199762,
       "projectedDupCount": 0.06,
-      "futureValue": 471453,
-      "worldRank": 44,
+      "futureValue": 483395,
+      "worldRank": 40,
       "fedexPoints": 301,
       "seasonEarnings": 1060663,
       "inNextTournament": true,
-      "historicalStrength": 0.10149,
+      "historicalStrength": 0.10678499999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -350,7 +234,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -358,7 +242,123 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.453660025,
+      "score": 0.453900075,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.453900075,
+        "expected": 0.05707485714285714,
+        "leverage": 0.7661649714285713,
+        "preservation": 0.6241242499999999
+      },
+      "flags": [
+        "Limited course history"
+      ],
+      "rationale": {
+        "expected": 0.05707485714285714,
+        "uniqueness": 0.98,
+        "futureCost": 0.2416975,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.10678499999999999,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Marco Penge",
+      "projectedEarnings": 172548,
+      "projectedDupCount": 0.06,
+      "futureValue": 466316,
+      "worldRank": 35,
+      "fedexPoints": 191,
+      "seasonEarnings": 738458,
+      "inNextTournament": true,
+      "historicalStrength": 0.11835999999999999,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.4536171,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.4536171,
+        "expected": 0.04929942857142857,
+        "leverage": 0.7646098857142857,
+        "preservation": 0.6309842000000001
+      },
+      "flags": [
+        "Limited course history"
+      ],
+      "rationale": {
+        "expected": 0.04929942857142857,
+        "uniqueness": 0.98,
+        "futureCost": 0.233158,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.11835999999999999,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Andrew Novak",
+      "projectedEarnings": 143033,
+      "projectedDupCount": 0.06,
+      "futureValue": 423206,
+      "worldRank": 42,
+      "fedexPoints": 139,
+      "seasonEarnings": 518507,
+      "inNextTournament": true,
+      "historicalStrength": 0.10378499999999999,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.45244135,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -366,20 +366,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.453660025,
-        "expected": 0.055342857142857145,
-        "leverage": 0.7658185714285713,
-        "preservation": 0.6269126
+        "balanced": 0.45244135,
+        "expected": 0.040866571428571426,
+        "leverage": 0.7629233142857142,
+        "preservation": 0.64173095
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.055342857142857145,
+        "expected": 0.040866571428571426,
         "uniqueness": 0.98,
-        "futureCost": 0.2357265,
+        "futureCost": 0.211603,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10149,
+        "historicalStrength": 0.10378499999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -392,14 +392,14 @@
   "views": {
     "balanced": {
       "golfer": "Russell Henley",
-      "projectedEarnings": 413843,
+      "projectedEarnings": 437119,
       "projectedDupCount": 0.13,
-      "futureValue": 737911,
-      "worldRank": 9,
+      "futureValue": 768235,
+      "worldRank": 7,
       "fedexPoints": 484,
       "seasonEarnings": 1708567,
       "inNextTournament": true,
-      "historicalStrength": 0.228195,
+      "historicalStrength": 0.23267000000000002,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -410,7 +410,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -418,7 +418,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.464860475,
+      "score": 0.465361275,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -426,20 +426,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.464860475,
-        "expected": 0.11824085714285715,
-        "leverage": 0.7620648380952381,
-        "preservation": 0.56598095
+        "balanced": 0.465361275,
+        "expected": 0.12489114285714285,
+        "leverage": 0.7633948952380952,
+        "preservation": 0.557555
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.11824085714285715,
+        "expected": 0.12489114285714285,
         "uniqueness": 0.9566666666666667,
-        "futureCost": 0.3689555,
+        "futureCost": 0.3841175,
         "recentForm": 0.6875,
-        "historicalStrength": 0.228195,
+        "historicalStrength": 0.23267000000000002,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -450,14 +450,14 @@
     },
     "expected": {
       "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 625098,
+      "projectedEarnings": 658487,
       "projectedDupCount": 0.75,
-      "futureValue": 901867,
-      "worldRank": 4,
+      "futureValue": 936175,
+      "worldRank": 3,
       "fedexPoints": 702,
       "seasonEarnings": 2267950,
       "inNextTournament": true,
-      "historicalStrength": 0.260365,
+      "historicalStrength": 0.262195,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -468,7 +468,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -476,7 +476,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.4459062750000001,
+      "score": 0.446855075,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -484,20 +484,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.4459062750000001,
-        "expected": 0.17859942857142858,
-        "leverage": 0.6294698857142856,
-        "preservation": 0.5216196500000001
+        "balanced": 0.446855075,
+        "expected": 0.18813914285714287,
+        "leverage": 0.6313778285714284,
+        "preservation": 0.51160175
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.17859942857142858,
+        "expected": 0.18813914285714287,
         "uniqueness": 0.75,
-        "futureCost": 0.4509335,
+        "futureCost": 0.4680875,
         "recentForm": 0.6875,
-        "historicalStrength": 0.260365,
+        "historicalStrength": 0.262195,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -508,14 +508,14 @@
     },
     "leverage": {
       "golfer": "Matt McCarty",
-      "projectedEarnings": 193700,
+      "projectedEarnings": 199762,
       "projectedDupCount": 0.06,
-      "futureValue": 471453,
-      "worldRank": 44,
+      "futureValue": 483395,
+      "worldRank": 40,
       "fedexPoints": 301,
       "seasonEarnings": 1060663,
       "inNextTournament": true,
-      "historicalStrength": 0.10149,
+      "historicalStrength": 0.10678499999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -526,7 +526,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -534,46 +534,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.453660025,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
+      "score": 0.453900075,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.453660025,
-        "expected": 0.055342857142857145,
-        "leverage": 0.7658185714285713,
-        "preservation": 0.6269126
+        "balanced": 0.453900075,
+        "expected": 0.05707485714285714,
+        "leverage": 0.7661649714285713,
+        "preservation": 0.6241242499999999
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.055342857142857145,
+        "expected": 0.05707485714285714,
         "uniqueness": 0.98,
-        "futureCost": 0.2357265,
+        "futureCost": 0.2416975,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10149,
+        "historicalStrength": 0.10678499999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50."
       }
     },
     "preservation": {
-      "golfer": "Kristoffer Reitan",
-      "projectedEarnings": 118917,
+      "golfer": "Sami Valimaki",
+      "projectedEarnings": 112258,
       "projectedDupCount": 0.06,
-      "futureValue": 386209,
-      "worldRank": 48,
-      "fedexPoints": 88,
-      "seasonEarnings": 275110,
+      "futureValue": 376525,
+      "worldRank": 49,
+      "fedexPoints": 59,
+      "seasonEarnings": 230330,
       "inNextTournament": true,
-      "historicalStrength": 0.100465,
+      "historicalStrength": 0.09829,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -584,7 +584,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -592,7 +592,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.452472525,
+      "score": 0.452315425,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -600,20 +600,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.452472525,
-        "expected": 0.033976285714285716,
-        "leverage": 0.761545257142857,
-        "preservation": 0.65233205
+        "balanced": 0.452315425,
+        "expected": 0.03207371428571429,
+        "leverage": 0.7611647428571428,
+        "preservation": 0.654911
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.033976285714285716,
+        "expected": 0.03207371428571429,
         "uniqueness": 0.98,
-        "futureCost": 0.1931045,
+        "futureCost": 0.1882625,
         "recentForm": 0.6875,
-        "historicalStrength": 0.100465,
+        "historicalStrength": 0.09829,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -624,7 +624,7 @@
     }
   },
   "summary": {
-    "totalAvailable": 38,
+    "totalAvailable": 39,
     "eligibleCount": 10,
     "projectedCount": 10,
     "nextTournamentFieldCount": 0,
@@ -634,14 +634,14 @@
   "scored": [
     {
       "golfer": "Russell Henley",
-      "projectedEarnings": 413843,
+      "projectedEarnings": 437119,
       "projectedDupCount": 0.13,
-      "futureValue": 737911,
-      "worldRank": 9,
+      "futureValue": 768235,
+      "worldRank": 7,
       "fedexPoints": 484,
       "seasonEarnings": 1708567,
       "inNextTournament": true,
-      "historicalStrength": 0.228195,
+      "historicalStrength": 0.23267000000000002,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -652,7 +652,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -660,7 +660,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.464860475,
+      "score": 0.465361275,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -668,20 +668,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.464860475,
-        "expected": 0.11824085714285715,
-        "leverage": 0.7620648380952381,
-        "preservation": 0.56598095
+        "balanced": 0.465361275,
+        "expected": 0.12489114285714285,
+        "leverage": 0.7633948952380952,
+        "preservation": 0.557555
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.11824085714285715,
+        "expected": 0.12489114285714285,
         "uniqueness": 0.9566666666666667,
-        "futureCost": 0.3689555,
+        "futureCost": 0.3841175,
         "recentForm": 0.6875,
-        "historicalStrength": 0.228195,
+        "historicalStrength": 0.23267000000000002,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -692,14 +692,14 @@
     },
     {
       "golfer": "Sepp Straka",
-      "projectedEarnings": 583819,
+      "projectedEarnings": 573581,
       "projectedDupCount": 0.37,
-      "futureValue": 809294,
-      "worldRank": 12,
+      "futureValue": 799012,
+      "worldRank": 13,
       "fedexPoints": 722,
       "seasonEarnings": 3038670,
       "inNextTournament": true,
-      "historicalStrength": 0.216045,
+      "historicalStrength": 0.20954,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -710,7 +710,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -718,162 +718,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.46328935000000004,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50.",
+      "score": 0.4623862000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.46328935000000004,
-        "expected": 0.16680542857142858,
-        "leverage": 0.7157777523809524,
-        "preservation": 0.54274355
+        "balanced": 0.4623862000000001,
+        "expected": 0.1638802857142857,
+        "leverage": 0.7151927238095238,
+        "preservation": 0.5448524
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.16680542857142858,
+        "expected": 0.1638802857142857,
         "uniqueness": 0.8766666666666667,
-        "futureCost": 0.404647,
+        "futureCost": 0.399506,
         "recentForm": 0.6875,
-        "historicalStrength": 0.216045,
+        "historicalStrength": 0.20954,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Robert MacIntyre",
-      "projectedEarnings": 460358,
-      "projectedDupCount": 0.39,
-      "futureValue": 751294,
-      "worldRank": 11,
-      "fedexPoints": 572,
-      "seasonEarnings": 2168475,
-      "inNextTournament": true,
-      "historicalStrength": 0.22215,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.45490375,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.45490375,
-        "expected": 0.13153085714285714,
-        "leverage": 0.7040561714285714,
-        "preservation": 0.5610593
-      },
-      "flags": [
-        "Limited course history"
-      ],
-      "rationale": {
-        "expected": 0.13153085714285714,
-        "uniqueness": 0.87,
-        "futureCost": 0.375647,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.22215,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.22. Course history score: 0.50."
-      }
-    },
-    {
-      "golfer": "Marco Penge",
-      "projectedEarnings": 171901,
-      "projectedDupCount": 0.06,
-      "futureValue": 463795,
-      "worldRank": 36,
-      "fedexPoints": 191,
-      "seasonEarnings": 738458,
-      "inNextTournament": true,
-      "historicalStrength": 0.12501,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.45440647500000003,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.45440647500000003,
-        "expected": 0.04911457142857143,
-        "leverage": 0.7645729142857142,
-        "preservation": 0.632738
-      },
-      "flags": [
-        "Limited course history"
-      ],
-      "rationale": {
-        "expected": 0.04911457142857143,
-        "uniqueness": 0.98,
-        "futureCost": 0.2318975,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.12501,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50."
       }
     },
     {
       "golfer": "Matt McCarty",
-      "projectedEarnings": 193700,
+      "projectedEarnings": 199762,
       "projectedDupCount": 0.06,
-      "futureValue": 471453,
-      "worldRank": 44,
+      "futureValue": 483395,
+      "worldRank": 40,
       "fedexPoints": 301,
       "seasonEarnings": 1060663,
       "inNextTournament": true,
-      "historicalStrength": 0.10149,
+      "historicalStrength": 0.10678499999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -884,7 +768,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -892,46 +776,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.453660025,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
+      "score": 0.453900075,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.453660025,
-        "expected": 0.055342857142857145,
-        "leverage": 0.7658185714285713,
-        "preservation": 0.6269126
+        "balanced": 0.453900075,
+        "expected": 0.05707485714285714,
+        "leverage": 0.7661649714285713,
+        "preservation": 0.6241242499999999
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.055342857142857145,
+        "expected": 0.05707485714285714,
         "uniqueness": 0.98,
-        "futureCost": 0.2357265,
+        "futureCost": 0.2416975,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10149,
+        "historicalStrength": 0.10678499999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50."
       }
     },
     {
-      "golfer": "Brian Harman",
-      "projectedEarnings": 173741,
+      "golfer": "Marco Penge",
+      "projectedEarnings": 172548,
       "projectedDupCount": 0.06,
-      "futureValue": 449311,
-      "worldRank": 46,
-      "fedexPoints": 227,
-      "seasonEarnings": 966679,
+      "futureValue": 466316,
+      "worldRank": 35,
+      "fedexPoints": 191,
+      "seasonEarnings": 738458,
       "inNextTournament": true,
-      "historicalStrength": 0.10044,
+      "historicalStrength": 0.11835999999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -942,7 +826,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -950,46 +834,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.453219775,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
+      "score": 0.4536171,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.453219775,
-        "expected": 0.04964028571428571,
-        "leverage": 0.7646780571428571,
-        "preservation": 0.6333977000000001
+        "balanced": 0.4536171,
+        "expected": 0.04929942857142857,
+        "leverage": 0.7646098857142857,
+        "preservation": 0.6309842000000001
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.04964028571428571,
+        "expected": 0.04929942857142857,
         "uniqueness": 0.98,
-        "futureCost": 0.2246555,
+        "futureCost": 0.233158,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10044,
+        "historicalStrength": 0.11835999999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50."
       }
     },
     {
       "golfer": "Andrew Novak",
-      "projectedEarnings": 135622,
+      "projectedEarnings": 143033,
       "projectedDupCount": 0.06,
-      "futureValue": 404611,
-      "worldRank": 49,
+      "futureValue": 423206,
+      "worldRank": 42,
       "fedexPoints": 139,
       "seasonEarnings": 518507,
       "inNextTournament": true,
-      "historicalStrength": 0.10108500000000001,
+      "historicalStrength": 0.10378499999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1000,7 +884,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -1008,7 +892,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.452824875,
+      "score": 0.45244135,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -1016,20 +900,20 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.452824875,
-        "expected": 0.03874914285714286,
-        "leverage": 0.7624998285714285,
-        "preservation": 0.64690445
+        "balanced": 0.45244135,
+        "expected": 0.040866571428571426,
+        "leverage": 0.7629233142857142,
+        "preservation": 0.64173095
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.03874914285714286,
+        "expected": 0.040866571428571426,
         "uniqueness": 0.98,
-        "futureCost": 0.2023055,
+        "futureCost": 0.211603,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10108500000000001,
+        "historicalStrength": 0.10378499999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -1040,14 +924,14 @@
     },
     {
       "golfer": "Kristoffer Reitan",
-      "projectedEarnings": 118917,
+      "projectedEarnings": 123983,
       "projectedDupCount": 0.06,
-      "futureValue": 386209,
-      "worldRank": 48,
+      "futureValue": 399682,
+      "worldRank": 43,
       "fedexPoints": 88,
       "seasonEarnings": 275110,
       "inNextTournament": true,
-      "historicalStrength": 0.100465,
+      "historicalStrength": 0.10405500000000001,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1058,7 +942,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -1066,7 +950,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.452472525,
+      "score": 0.45232765,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -1074,20 +958,78 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.452472525,
-        "expected": 0.033976285714285716,
-        "leverage": 0.761545257142857,
-        "preservation": 0.65233205
+        "balanced": 0.45232765,
+        "expected": 0.03542371428571429,
+        "leverage": 0.7618347428571428,
+        "preservation": 0.64882865
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.033976285714285716,
+        "expected": 0.03542371428571429,
         "uniqueness": 0.98,
-        "futureCost": 0.1931045,
+        "futureCost": 0.199841,
         "recentForm": 0.6875,
-        "historicalStrength": 0.100465,
+        "historicalStrength": 0.10405500000000001,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Sami Valimaki",
+      "projectedEarnings": 112258,
+      "projectedDupCount": 0.06,
+      "futureValue": 376525,
+      "worldRank": 49,
+      "fedexPoints": 59,
+      "seasonEarnings": 230330,
+      "inNextTournament": true,
+      "historicalStrength": 0.09829,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.452315425,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.452315425,
+        "expected": 0.03207371428571429,
+        "leverage": 0.7611647428571428,
+        "preservation": 0.654911
+      },
+      "flags": [
+        "Limited course history"
+      ],
+      "rationale": {
+        "expected": 0.03207371428571429,
+        "uniqueness": 0.98,
+        "futureCost": 0.1882625,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.09829,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
@@ -1098,14 +1040,14 @@
     },
     {
       "golfer": "Alex Noren",
-      "projectedEarnings": 220222,
-      "projectedDupCount": 0.2,
-      "futureValue": 551144,
-      "worldRank": 19,
+      "projectedEarnings": 231435,
+      "projectedDupCount": 0.26,
+      "futureValue": 572139,
+      "worldRank": 16,
       "fedexPoints": 198,
       "seasonEarnings": 825450,
       "inNextTournament": true,
-      "historicalStrength": 0.173975,
+      "historicalStrength": 0.17915,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1116,7 +1058,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -1124,46 +1066,46 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.45058390000000004,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50.",
+      "score": 0.44764807500000003,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.45058390000000004,
-        "expected": 0.06292057142857142,
-        "leverage": 0.7346674476190476,
-        "preservation": 0.6138780500000001
+        "balanced": 0.44764807500000003,
+        "expected": 0.06612428571428572,
+        "leverage": 0.7213081904761904,
+        "preservation": 0.6083558
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.06292057142857142,
-        "uniqueness": 0.9333333333333333,
-        "futureCost": 0.275572,
+        "expected": 0.06612428571428572,
+        "uniqueness": 0.9133333333333333,
+        "futureCost": 0.2860695,
         "recentForm": 0.6875,
-        "historicalStrength": 0.173975,
+        "historicalStrength": 0.17915,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50."
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50."
       }
     },
     {
       "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 625098,
+      "projectedEarnings": 658487,
       "projectedDupCount": 0.75,
-      "futureValue": 901867,
-      "worldRank": 4,
+      "futureValue": 936175,
+      "worldRank": 3,
       "fedexPoints": 702,
       "seasonEarnings": 2267950,
       "inNextTournament": true,
-      "historicalStrength": 0.260365,
+      "historicalStrength": 0.262195,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1174,7 +1116,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
       "courseHistoryResults": [],
@@ -1182,7 +1124,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.4459062750000001,
+      "score": 0.446855075,
       "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
@@ -1190,26 +1132,84 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.4459062750000001,
-        "expected": 0.17859942857142858,
-        "leverage": 0.6294698857142856,
-        "preservation": 0.5216196500000001
+        "balanced": 0.446855075,
+        "expected": 0.18813914285714287,
+        "leverage": 0.6313778285714284,
+        "preservation": 0.51160175
       },
       "flags": [
         "Limited course history"
       ],
       "rationale": {
-        "expected": 0.17859942857142858,
+        "expected": 0.18813914285714287,
         "uniqueness": 0.75,
-        "futureCost": 0.4509335,
+        "futureCost": 0.4680875,
         "recentForm": 0.6875,
-        "historicalStrength": 0.260365,
+        "historicalStrength": 0.262195,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.26. Course history score: 0.50."
+      }
+    },
+    {
+      "golfer": "Robert MacIntyre",
+      "projectedEarnings": 488415,
+      "projectedDupCount": 0.54,
+      "futureValue": 787829,
+      "worldRank": 8,
+      "fedexPoints": 572,
+      "seasonEarnings": 2168475,
+      "inNextTournament": true,
+      "historicalStrength": 0.212435,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.446497825,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.446497825,
+        "expected": 0.13954714285714287,
+        "leverage": 0.6706594285714285,
+        "preservation": 0.54864155
+      },
+      "flags": [
+        "Limited course history"
+      ],
+      "rationale": {
+        "expected": 0.13954714285714287,
+        "uniqueness": 0.82,
+        "futureCost": 0.3939145,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.212435,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50."
       }
     },
     {
@@ -1221,7 +1221,7 @@
       "fedexPoints": 476,
       "seasonEarnings": 2214875,
       "inNextTournament": false,
-      "historicalStrength": 0.40299500000000005,
+      "historicalStrength": 0.42661499999999997,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1232,7 +1232,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1240,7 +1240,7 @@
       "hasRecentForm": true,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.40. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
@@ -1250,7 +1250,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.49311844999999993
+        "preservation": 0.4966614499999999
       },
       "flags": [
         "Out of field",
@@ -1263,205 +1263,25 @@
         "uniqueness": 1,
         "futureCost": 0.534093,
         "recentForm": 0.6875,
-        "historicalStrength": 0.40299500000000005,
+        "historicalStrength": 0.42661499999999997,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.40. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Cameron Young",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 991080,
-      "worldRank": 3,
-      "fedexPoints": 1323,
-      "seasonEarnings": 6471920,
-      "inNextTournament": false,
-      "historicalStrength": 0.267835,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.27. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.49597624999999995
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.49554,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.267835,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.27. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Xander Schauffele",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 893938,
-      "worldRank": 5,
-      "fedexPoints": 741,
-      "seasonEarnings": 3137238,
-      "inNextTournament": false,
-      "historicalStrength": 0.241675,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.52119485
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.446969,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.241675,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.24. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Matt Fitzpatrick",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 859266,
-      "worldRank": 6,
-      "fedexPoints": 1229,
-      "seasonEarnings": 5262488,
-      "inNextTournament": false,
-      "historicalStrength": 0.24581,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.5322167
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.429633,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.24581,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.25. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.43. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
       "golfer": "Justin Rose",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 829952,
-      "worldRank": 7,
+      "futureValue": 936372,
+      "worldRank": 4,
       "fedexPoints": 601,
       "seasonEarnings": 2215403,
       "inNextTournament": false,
-      "historicalStrength": 0.240135,
+      "historicalStrength": 0.24250500000000003,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1472,7 +1292,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1490,7 +1310,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.54015965
+        "preservation": 0.5085891499999999
       },
       "flags": [
         "Out of field",
@@ -1501,9 +1321,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.414976,
+        "futureCost": 0.468186,
         "recentForm": 0.6875,
-        "historicalStrength": 0.240135,
+        "historicalStrength": 0.24250500000000003,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -1516,12 +1336,12 @@
       "golfer": "Chris Gotterup",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 762124,
-      "worldRank": 10,
+      "futureValue": 859266,
+      "worldRank": 6,
       "fedexPoints": 1219,
       "seasonEarnings": 4218363,
       "inNextTournament": false,
-      "historicalStrength": 0.23347500000000002,
+      "historicalStrength": 0.229845,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1532,7 +1352,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1550,7 +1370,67 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.5595090500000001
+        "preservation": 0.52982195
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.429633,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.229845,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Xander Schauffele",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 762124,
+      "worldRank": 10,
+      "fedexPoints": 741,
+      "seasonEarnings": 3137238,
+      "inNextTournament": false,
+      "historicalStrength": 0.20656500000000003,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.5554725500000001
       },
       "flags": [
         "Out of field",
@@ -1563,25 +1443,25 @@
         "uniqueness": 1,
         "futureCost": 0.381062,
         "recentForm": 0.6875,
-        "historicalStrength": 0.23347500000000002,
+        "historicalStrength": 0.20656500000000003,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.23. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.21. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
       "golfer": "Justin Thomas",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 685018,
-      "worldRank": 15,
+      "futureValue": 698138,
+      "worldRank": 14,
       "fedexPoints": 222,
       "seasonEarnings": 782392,
       "inNextTournament": false,
-      "historicalStrength": 0.19716499999999998,
+      "historicalStrength": 0.192165,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1592,7 +1472,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1600,7 +1480,7 @@
       "hasRecentForm": true,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.20. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.19. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
@@ -1610,7 +1490,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.5771943500000001
+        "preservation": 0.5725083499999999
       },
       "flags": [
         "Out of field",
@@ -1621,27 +1501,27 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.342509,
+        "futureCost": 0.349069,
         "recentForm": 0.6875,
-        "historicalStrength": 0.19716499999999998,
+        "historicalStrength": 0.192165,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.20. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.19. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
-      "golfer": "Jacob Bridgeman",
+      "golfer": "Harris English",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 661216,
-      "worldRank": 17,
-      "fedexPoints": 1452,
-      "seasonEarnings": 6564485,
+      "futureValue": 685018,
+      "worldRank": 15,
+      "fedexPoints": 250,
+      "seasonEarnings": 853532,
       "inNextTournament": false,
-      "historicalStrength": 0.18168,
+      "historicalStrength": 0.18028,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1652,7 +1532,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1670,7 +1550,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.5820122000000001
+        "preservation": 0.5746616000000001
       },
       "flags": [
         "Out of field",
@@ -1681,9 +1561,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.330608,
+        "futureCost": 0.342509,
         "recentForm": 0.6875,
-        "historicalStrength": 0.18168,
+        "historicalStrength": 0.18028,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -1693,15 +1573,133 @@
       }
     },
     {
-      "golfer": "Harris English",
+      "golfer": "PATRICK REED",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 650346,
+      "worldRank": 18,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 0.171345,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.5837229500000001
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.325173,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.171345,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Jacob Bridgeman",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 640065,
+      "worldRank": 19,
+      "fedexPoints": 1452,
+      "seasonEarnings": 6564485,
+      "inNextTournament": false,
+      "historicalStrength": 0.16527,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.5858960000000001
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.3200325,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.16527,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Keegan Bradley",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
       "futureValue": 630310,
       "worldRank": 20,
-      "fedexPoints": 250,
-      "seasonEarnings": 853532,
+      "fedexPoints": 60,
+      "seasonEarnings": 238204,
       "inNextTournament": false,
-      "historicalStrength": 0.17078,
+      "historicalStrength": 0.157705,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1712,183 +1710,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.589649
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.315155,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.17078,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Akshay Bhatia",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 612186,
-      "worldRank": 22,
-      "fedexPoints": 1224,
-      "seasonEarnings": 5857708,
-      "inNextTournament": false,
-      "historicalStrength": 0.17146999999999998,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.5951897
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.306093,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.17146999999999998,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "PATRICK REED",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 603732,
-      "worldRank": 23,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false,
-      "historicalStrength": 0.166435,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.59697065
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.301866,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.166435,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "BRYSON DECHAMBEAU",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 595639,
-      "worldRank": 24,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false,
-      "historicalStrength": 0.16185,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1906,7 +1728,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.5987108
+        "preservation": 0.58768775
       },
       "flags": [
         "Out of field",
@@ -1917,9 +1739,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.2978195,
+        "futureCost": 0.315155,
         "recentForm": 0.6875,
-        "historicalStrength": 0.16185,
+        "historicalStrength": 0.157705,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -1929,15 +1751,15 @@
       }
     },
     {
-      "golfer": "Keegan Bradley",
+      "golfer": "Cameron Young",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 587876,
-      "worldRank": 25,
-      "fedexPoints": 60,
-      "seasonEarnings": 238204,
+      "futureValue": 621032,
+      "worldRank": 21,
+      "fedexPoints": 1323,
+      "seasonEarnings": 6471920,
       "inNextTournament": false,
-      "historicalStrength": 0.150285,
+      "historicalStrength": 0.18081,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -1948,7 +1770,67 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.5939369
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.310516,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.18081,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.18. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Matt Fitzpatrick",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 612186,
+      "worldRank": 22,
+      "fedexPoints": 1229,
+      "seasonEarnings": 5262488,
+      "inNextTournament": false,
+      "historicalStrength": 0.15303,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -1966,7 +1848,65 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.5993049500000001
+        "preservation": 0.5924237
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.306093,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.15303,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.15. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "TYRRELL HATTON",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 587876,
+      "worldRank": 25,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 0.144895,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.59849645
       },
       "flags": [
         "Out of field",
@@ -1979,25 +1919,25 @@
         "uniqueness": 1,
         "futureCost": 0.293938,
         "recentForm": 0.6875,
-        "historicalStrength": 0.150285,
+        "historicalStrength": 0.144895,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.15. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
       "golfer": "Ryan Gerard",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 573240,
-      "worldRank": 27,
+      "futureValue": 580417,
+      "worldRank": 26,
       "fedexPoints": 662,
       "seasonEarnings": 2251179,
       "inNextTournament": false,
-      "historicalStrength": 0.14388499999999999,
+      "historicalStrength": 0.144795,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2008,7 +1948,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2026,7 +1966,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.60273575
+        "preservation": 0.60071915
       },
       "flags": [
         "Out of field",
@@ -2037,203 +1977,27 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.28662,
+        "futureCost": 0.2902085,
         "recentForm": 0.6875,
-        "historicalStrength": 0.14388499999999999,
+        "historicalStrength": 0.144795,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
         "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "JON RAHM",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 566324,
-      "worldRank": 28,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false,
-      "historicalStrength": 0.1436,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.6047678
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.283162,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.1436,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "TYRRELL HATTON",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 553204,
-      "worldRank": 30,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false,
-      "historicalStrength": 0.139325,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.60806255
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.276602,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.139325,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Min Woo Lee",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 546969,
-      "worldRank": 31,
-      "fedexPoints": 944,
-      "seasonEarnings": 3691399,
-      "inNextTournament": false,
-      "historicalStrength": 0.15282,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.15. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.6119573
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.2734845,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.15282,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.15. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
       "golfer": "Sam Burns",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 535079,
-      "worldRank": 33,
+      "futureValue": 559651,
+      "worldRank": 29,
       "fedexPoints": 393,
       "seasonEarnings": 1253471,
       "inNextTournament": false,
-      "historicalStrength": 0.13435999999999998,
+      "historicalStrength": 0.13157000000000002,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2244,7 +2008,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2262,7 +2026,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.6127553
+        "preservation": 0.6049652
       },
       "flags": [
         "Out of field",
@@ -2273,69 +2037,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.2675395,
+        "futureCost": 0.2798255,
         "recentForm": 0.6875,
-        "historicalStrength": 0.13435999999999998,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Patrick Cantlay",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 529402,
-      "worldRank": 34,
-      "fedexPoints": 270,
-      "seasonEarnings": 1009403,
-      "inNextTournament": false,
-      "historicalStrength": 0.132015,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.61410665
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.264701,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.132015,
+        "historicalStrength": 0.13157000000000002,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -2348,12 +2052,12 @@
       "golfer": "Kurt Kitayama",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 523890,
-      "worldRank": 35,
+      "futureValue": 553204,
+      "worldRank": 30,
       "fedexPoints": 494,
       "seasonEarnings": 2245971,
       "inNextTournament": false,
-      "historicalStrength": 0.13169,
+      "historicalStrength": 0.13591999999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2364,7 +2068,67 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.6075518
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.276602,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.13591999999999999,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Patrick Cantlay",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 546969,
+      "worldRank": 31,
+      "fedexPoints": 270,
+      "seasonEarnings": 1009403,
+      "inNextTournament": false,
+      "historicalStrength": 0.12712,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2382,7 +2146,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.6157115
+        "preservation": 0.6081023
       },
       "flags": [
         "Out of field",
@@ -2393,9 +2157,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.261945,
+        "futureCost": 0.2734845,
         "recentForm": 0.6875,
-        "historicalStrength": 0.13169,
+        "historicalStrength": 0.12712,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -2405,73 +2169,15 @@
       }
     },
     {
-      "golfer": "NICOLAS ECHAVARRIA",
+      "golfer": "Min Woo Lee",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 508251,
-      "worldRank": 38,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
+      "futureValue": 540931,
+      "worldRank": 32,
+      "fedexPoints": 944,
+      "seasonEarnings": 3691399,
       "inNextTournament": false,
-      "historicalStrength": 0.11812,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.6183677000000001
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.2541255,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.11812,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Aaron Rai",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 503311,
-      "worldRank": 39,
-      "fedexPoints": 77,
-      "seasonEarnings": 270129,
-      "inNextTournament": false,
-      "historicalStrength": 0.11794500000000001,
+      "historicalStrength": 0.137715,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2482,7 +2188,67 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.61150295
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2704655,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.137715,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.14. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Aaron Rai",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 535079,
+      "worldRank": 33,
+      "fedexPoints": 77,
+      "seasonEarnings": 270129,
+      "inNextTournament": false,
+      "historicalStrength": 0.12401,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2500,7 +2266,243 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.61982345
+        "preservation": 0.6112028
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2675395,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.12401,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "NICOLAS ECHAVARRIA",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 529402,
+      "worldRank": 34,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 0.12237,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.6126598999999999
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.264701,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.12237,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "BRYSON DECHAMBEAU",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 518533,
+      "worldRank": 36,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 0.10854,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.6138461
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2592665,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.10854,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Jason Day",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 513322,
+      "worldRank": 37,
+      "fedexPoints": 338,
+      "seasonEarnings": 1199398,
+      "inNextTournament": false,
+      "historicalStrength": 0.10964499999999999,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.61557515
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.256661,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.10964499999999999,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Akshay Bhatia",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 503311,
+      "worldRank": 39,
+      "fedexPoints": 1224,
+      "seasonEarnings": 5857708,
+      "inNextTournament": false,
+      "historicalStrength": 0.172505,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.62800745
       },
       "flags": [
         "Out of field",
@@ -2513,25 +2515,25 @@
         "uniqueness": 1,
         "futureCost": 0.2516555,
         "recentForm": 0.6875,
-        "historicalStrength": 0.11794500000000001,
+        "historicalStrength": 0.172505,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.17. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
-      "golfer": "Jason Day",
+      "golfer": "Jake Knapp",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
       "futureValue": 493801,
       "worldRank": 41,
-      "fedexPoints": 338,
-      "seasonEarnings": 1199398,
+      "fedexPoints": 769,
+      "seasonEarnings": 2489463,
       "inNextTournament": false,
-      "historicalStrength": 0.11609499999999999,
+      "historicalStrength": 0.107975,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2542,7 +2544,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2550,7 +2552,7 @@
       "hasRecentForm": true,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
@@ -2560,7 +2562,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.62239895
+        "preservation": 0.6211809500000001
       },
       "flags": [
         "Out of field",
@@ -2573,25 +2575,25 @@
         "uniqueness": 1,
         "futureCost": 0.2469005,
         "recentForm": 0.6875,
-        "historicalStrength": 0.11609499999999999,
+        "historicalStrength": 0.107975,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.12. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
-      "golfer": "Jake Knapp",
+      "golfer": "Ryan Fox",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 489218,
-      "worldRank": 42,
-      "fedexPoints": 769,
-      "seasonEarnings": 2489463,
+      "futureValue": 480372,
+      "worldRank": 44,
+      "fedexPoints": 287,
+      "seasonEarnings": 1004520,
       "inNextTournament": false,
-      "historicalStrength": 0.11435999999999999,
+      "historicalStrength": 0.10582499999999999,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2602,7 +2604,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2620,7 +2622,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.6235136
+        "preservation": 0.6248871500000001
       },
       "flags": [
         "Out of field",
@@ -2631,9 +2633,9 @@
       "rationale": {
         "expected": 0,
         "uniqueness": 1,
-        "futureCost": 0.244609,
+        "futureCost": 0.240186,
         "recentForm": 0.6875,
-        "historicalStrength": 0.11435999999999999,
+        "historicalStrength": 0.10582499999999999,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -2646,12 +2648,12 @@
       "golfer": "Michael Brennan",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 484744,
-      "worldRank": 43,
+      "futureValue": 476098,
+      "worldRank": 45,
       "fedexPoints": 67,
       "seasonEarnings": 207495,
       "inNextTournament": false,
-      "historicalStrength": 0.104675,
+      "historicalStrength": 0.10496000000000001,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2662,7 +2664,7 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2680,67 +2682,7 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.62340305
-      },
-      "flags": [
-        "Out of field",
-        "Missing payout projection",
-        "Limited course history",
-        "Projected unique"
-      ],
-      "rationale": {
-        "expected": 0,
-        "uniqueness": 1,
-        "futureCost": 0.242372,
-        "recentForm": 0.6875,
-        "historicalStrength": 0.104675,
-        "courseHistory": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0.12,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
-      }
-    },
-    {
-      "golfer": "Ryan Fox",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 476098,
-      "worldRank": 45,
-      "fedexPoints": 287,
-      "seasonEarnings": 1004520,
-      "inNextTournament": false,
-      "historicalStrength": 0.10082500000000001,
-      "courseHistoryScore": 0.5,
-      "last4Finishes": [
-        35,
-        28,
-        40,
-        22
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR"
-      ],
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": false,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
-      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.19,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0,
-        "expected": 0,
-        "leverage": 0.8487499999999999,
-        "preservation": 0.62541935
+        "preservation": 0.6260396
       },
       "flags": [
         "Out of field",
@@ -2753,7 +2695,7 @@
         "uniqueness": 1,
         "futureCost": 0.238049,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10082500000000001,
+        "historicalStrength": 0.10496000000000001,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
@@ -2763,15 +2705,15 @@
       }
     },
     {
-      "golfer": "NICOLAI HOJGAARD",
+      "golfer": "SAMUEL STEVENS",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 467829,
-      "worldRank": 47,
+      "futureValue": 471919,
+      "worldRank": 46,
       "fedexPoints": 0,
       "seasonEarnings": 0,
       "inNextTournament": false,
-      "historicalStrength": 0.12850999999999999,
+      "historicalStrength": 0.102285,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2780,7 +2722,7 @@
         22
       ],
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2788,7 +2730,7 @@
       "hasRecentForm": true,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
@@ -2798,7 +2740,67 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.6320528000000001
+        "preservation": 0.62689205
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2359595,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.102285,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Pierceson Coody",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 467829,
+      "worldRank": 47,
+      "fedexPoints": 464,
+      "seasonEarnings": 1638355,
+      "inNextTournament": false,
+      "historicalStrength": 0.102405,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.6281370500000001
       },
       "flags": [
         "Out of field",
@@ -2811,25 +2813,25 @@
         "uniqueness": 1,
         "futureCost": 0.2339145,
         "recentForm": 0.6875,
-        "historicalStrength": 0.12850999999999999,
+        "historicalStrength": 0.102405,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.13. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
-      "golfer": "SAMUEL STEVENS",
+      "golfer": "RASMUS HOJGAARD",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
-      "futureValue": 456062,
-      "worldRank": 50,
+      "futureValue": 463825,
+      "worldRank": 48,
       "fedexPoints": 0,
       "seasonEarnings": 0,
       "inNextTournament": false,
-      "historicalStrength": 0.10905499999999999,
+      "historicalStrength": 0.10134000000000001,
       "courseHistoryScore": 0.5,
       "last4Finishes": [
         35,
@@ -2838,7 +2840,7 @@
         22
       ],
       "sourceRefs": [
-        "OWGR"
+        "OWGR fallback"
       ],
       "courseHistoryResults": [],
       "hasProjectedEarnings": false,
@@ -2846,7 +2848,7 @@
       "hasRecentForm": true,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
       "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
@@ -2856,7 +2858,65 @@
         "balanced": 0,
         "expected": 0,
         "leverage": 0.8487499999999999,
-        "preservation": 0.63266465
+        "preservation": 0.6291785000000001
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Limited course history",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2319125,
+        "recentForm": 0.6875,
+        "historicalStrength": 0.10134000000000001,
+        "courseHistory": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "NICOLAI HOJGAARD",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 456062,
+      "worldRank": 50,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "historicalStrength": 0.10018,
+      "courseHistoryScore": 0.5,
+      "last4Finishes": [
+        35,
+        28,
+        40,
+        22
+      ],
+      "sourceRefs": [
+        "OWGR fallback"
+      ],
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 35, 28, 40, 22 with mixed momentum entering this event.",
+      "historicalSummary": "Historical: Limited course/event history available; baseline course-fit assumptions applied.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.19,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8487499999999999,
+        "preservation": 0.6313334
       },
       "flags": [
         "Out of field",
@@ -2869,13 +2929,13 @@
         "uniqueness": 1,
         "futureCost": 0.228031,
         "recentForm": 0.6875,
-        "historicalStrength": 0.10905499999999999,
+        "historicalStrength": 0.10018,
         "courseHistory": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.11. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 35, 28, 40, 22. Historical strength index: 0.10. Course history score: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     }
   ],
