@@ -178,7 +178,11 @@ function renderSeasonTable(snapshot) {
 function renderEventSelect(snapshot) {
   const select = document.getElementById("eventSelect");
   const events = dedupeEventsById(snapshot.weeklyComparison || []);
-  const liveEventId = snapshot.event?.countsTowardSeasonTotals === false ? snapshot.event?.id : null;
+  const liveEventId = events.find(
+    (event) =>
+      event.countsTowardSeasonTotals === false &&
+      normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name)
+  )?.eventId;
 
   if (!state.selectedEventId && events.length) {
     state.selectedEventId = liveEventId || events.at(-1).eventId;
@@ -208,8 +212,9 @@ function renderWeeklyTable(snapshot) {
     return;
   }
 
-  const liveEventId = snapshot.event?.countsTowardSeasonTotals === false ? snapshot.event?.id : null;
-  const selectedEventIsLive = Boolean(liveEventId && event.eventId === liveEventId);
+  const selectedEventIsLive =
+    event.countsTowardSeasonTotals === false &&
+    normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Projected Earnings" : "Earnings";
   const rows = [...event.rows].sort(sortComparator(state.weeklySort));

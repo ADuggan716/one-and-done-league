@@ -13,17 +13,17 @@
         "member": "Andrew",
         "pick": "Maverick McNealy",
         "earnings": 95550,
-        "seasonEarnings": 1850760,
+        "seasonEarnings": 1946310,
         "finish": "21",
-        "leagueRank": 113
+        "leagueRank": 120
       },
       {
         "member": "Paul",
         "pick": "Tommy Fleetwood",
         "earnings": 237650,
-        "seasonEarnings": 1823700,
+        "seasonEarnings": 2061350,
         "finish": "10",
-        "leagueRank": 115
+        "leagueRank": 113
       },
       {
         "member": "Dakota",
@@ -31,7 +31,7 @@
         "earnings": 0,
         "seasonEarnings": 4910569,
         "finish": "87",
-        "leagueRank": 15
+        "leagueRank": 18
       },
       {
         "member": "Mike",
@@ -39,7 +39,7 @@
         "earnings": 0,
         "seasonEarnings": 2746605,
         "finish": "71",
-        "leagueRank": 73
+        "leagueRank": 86
       }
     ],
     "picks": [
@@ -47,17 +47,17 @@
         "member": "Andrew",
         "golfer": "Maverick McNealy",
         "earnings": 95550,
-        "seasonEarnings": 1850760,
+        "seasonEarnings": 1946310,
         "finish": "21",
-        "leagueRank": 113
+        "leagueRank": 120
       },
       {
         "member": "Paul",
         "golfer": "Tommy Fleetwood",
         "earnings": 237650,
-        "seasonEarnings": 1823700,
+        "seasonEarnings": 2061350,
         "finish": "10",
-        "leagueRank": 115
+        "leagueRank": 113
       },
       {
         "member": "Dakota",
@@ -65,7 +65,7 @@
         "earnings": 0,
         "seasonEarnings": 4910569,
         "finish": "87",
-        "leagueRank": 15
+        "leagueRank": 18
       },
       {
         "member": "Mike",
@@ -73,7 +73,7 @@
         "earnings": 0,
         "seasonEarnings": 2746605,
         "finish": "71",
-        "leagueRank": 73
+        "leagueRank": 86
       }
     ]
   },
@@ -84,7 +84,7 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed history rows: 0",
-    "Splash mapping: Andrew: rank=113, season=1850760, pick=Maverick McNealy, week=95550, finish=21 | Paul: rank=115, season=1823700, pick=Tommy Fleetwood, week=237650, finish=10 | Dakota: rank=15, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=73, season=2746605, pick=Russell Henley, week=0, finish=71",
+    "Splash mapping: Andrew: rank=120, season=1946310, pick=Maverick McNealy, week=95550, finish=21 | Paul: rank=113, season=2061350, pick=Tommy Fleetwood, week=237650, finish=10 | Dakota: rank=18, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=86, season=2746605, pick=Russell Henley, week=0, finish=71",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -92,11 +92,13 @@
     "PGA TOUR schedule resolved next tournament: Masters Tournament",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/masters-tournament/R2026014/field",
     "PGA TOUR field entries: 91",
+    "Opened next-tournament view for Masters Tournament after finalizing Valero Texas Open.",
     "Weekly projection synthesis: 74 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Collin Morikawa, Jacob Bridgeman, Chris Gotterup, Cameron Young",
-    "Standings season totals reconciled to explicit Splash year-to-date values."
+    "Standings season totals reconciled to explicit Splash year-to-date values.",
+    "Completed-event rollover applied for Valero Texas Open."
   ],
-  "generatedAt": "2026-04-06T00:00:06.349Z",
+  "generatedAt": "2026-04-06T01:12:42.778Z",
   "primary": {
     "golfer": "Rory McIlroy",
     "projectedEarnings": 533516,

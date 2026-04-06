@@ -553,12 +553,16 @@ function dedupeEventsById(events) {
   return [...byId.values()];
 }
 
+function latestCompletedEvent(events) {
+  const completed = (events || []).filter((event) => event?.countsTowardSeasonTotals !== false);
+  return completed.at(-1) || null;
+}
+
 function buildLeagueSnapshot(normalized, config) {
   const dedupedEvents = dedupeEventsById(normalized.events);
   const standings = computeSubgroupStandings(config.subgroupMembers, dedupedEvents);
-  const latestRanks = new Map(
-    (dedupedEvents.at(-1)?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null])
-  );
+  const displayEvent = latestCompletedEvent(dedupedEvents) || dedupedEvents.at(-1) || null;
+  const latestRanks = new Map((displayEvent?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null]));
   const standingsWithLeagueRank = standings.map((row) => ({
     ...row,
     leagueRank: latestRanks.get(row.member) ?? null,
@@ -568,7 +572,7 @@ function buildLeagueSnapshot(normalized, config) {
   const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
 
   return {
-    event: dedupedEvents.at(-1) || null,
+    event: displayEvent,
     nextTournament: normalized.nextTournament || null,
     league: {
       ...normalized.league,
@@ -625,6 +629,73 @@ function applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, con
     sourceNotes: [
       ...(snapshot.sourceNotes || []),
       "Standings season totals reconciled to explicit Splash year-to-date values.",
+    ],
+  };
+}
+
+function applyCompletedEventRollover(snapshot, previousSnapshot, normalizedNextTournament, config) {
+  if (!snapshot?.subgroupStandings?.length || !snapshot?.weeklyComparison?.length) return snapshot;
+
+  const completedEvent = latestCompletedEvent(snapshot.weeklyComparison);
+  const nextTournamentName = canonicalHistoricalEventName(normalizedNextTournament?.name);
+  if (!completedEvent?.eventName || !nextTournamentName) return snapshot;
+
+  const completedKey = normalizeEventKey(completedEvent.eventName);
+  const nextKey = normalizeEventKey(nextTournamentName);
+  if (!completedKey || completedKey === nextKey) return snapshot;
+
+  const previousHadNextWeekOpen = (previousSnapshot?.weeklyComparison || []).some(
+    (event) => normalizeEventKey(event?.eventName) === nextKey
+  );
+  const previousStandings = new Map((previousSnapshot?.subgroupStandings || []).map((row) => [row.member, row]));
+  const previousWasPreRollover = !previousHadNextWeekOpen;
+
+  const updatedStandings = snapshot.subgroupStandings.map((row) => {
+    const eventRow = (completedEvent.rows || []).find((item) => item.member === row.member) || {};
+    const weeklyEarnings = Number(eventRow.earnings || row.weeklyEarnings || 0);
+    const previousSeason = Number(previousStandings.get(row.member)?.seasonEarnings || 0);
+    const currentSeason = Number(row.seasonEarnings || 0);
+
+    let seasonEarnings = currentSeason;
+    if (previousWasPreRollover) {
+      seasonEarnings = Math.max(currentSeason, previousSeason + weeklyEarnings);
+    } else if (previousSeason > currentSeason) {
+      seasonEarnings = previousSeason;
+    }
+
+    return {
+      ...row,
+      seasonEarnings,
+      weeklyEarnings,
+    };
+  });
+
+  updatedStandings.sort((a, b) => b.seasonEarnings - a.seasonEarnings || a.member.localeCompare(b.member));
+
+  let currentRank = 1;
+  let previousEarnings = null;
+  for (let i = 0; i < updatedStandings.length; i += 1) {
+    if (previousEarnings !== null && updatedStandings[i].seasonEarnings < previousEarnings) {
+      currentRank = i + 1;
+    }
+    updatedStandings[i].groupRank = currentRank;
+    previousEarnings = updatedStandings[i].seasonEarnings;
+  }
+
+  const leader = updatedStandings[0]?.seasonEarnings ?? 0;
+  const rankedStandings = updatedStandings.map((row) => ({
+    ...row,
+    toLeader: leader - row.seasonEarnings,
+  }));
+
+  return {
+    ...snapshot,
+    subgroupStandings: rankedStandings,
+    teams: computeTeamSummary(rankedStandings, config.teams || []),
+    whoGainedThisWeek: calculateWhoGainedThisWeek(rankedStandings),
+    sourceNotes: [
+      ...(snapshot.sourceNotes || []),
+      `Completed-event rollover applied for ${completedEvent.eventName}.`,
     ],
   };
 }
@@ -764,9 +835,13 @@ async function run() {
   const hasActiveWeekEvent = (normalized.events || []).some(
     (event) => normalizeEventKey(event.name) === normalizeEventKey(activeEventName)
   );
+  const mostRecentCompletedEvent = latestCompletedEvent(normalized.events);
+  const completedWeekRolledOver =
+    mostRecentCompletedEvent &&
+    normalizeEventKey(mostRecentCompletedEvent.name) !== normalizeEventKey(activeEventName);
   if (
     normalized.nextTournament &&
-    shouldActivateCurrentWeekWindow(normalized.nextTournament, syncedAt) &&
+    (shouldActivateCurrentWeekWindow(normalized.nextTournament, syncedAt) || completedWeekRolledOver) &&
     !hasActiveWeekEvent
   ) {
     normalized.events = [
@@ -775,7 +850,9 @@ async function run() {
     ];
     normalized.sourceNotes = [
       ...normalized.sourceNotes,
-      `Activated current-week view for ${activeEventName} at Thursday 8:00 AM ET.`,
+      completedWeekRolledOver
+        ? `Opened next-tournament view for ${activeEventName} after finalizing ${mostRecentCompletedEvent.name}.`
+        : `Activated current-week view for ${activeEventName} at Thursday 8:00 AM ET.`,
     ];
   }
 
@@ -804,6 +881,7 @@ async function run() {
   if (explicitSeasonTotals.size > 0) {
     snapshot = applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config);
   }
+  snapshot = applyCompletedEventRollover(snapshot, previousSnapshot, normalized.nextTournament, config);
   const playerPool = buildPlayerPool(normalized, config, { nextTournamentField });
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];
