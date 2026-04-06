@@ -169,11 +169,20 @@ function canonicalizeEventName(value) {
   if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
     return "Players Championship";
   }
-  if (key === "houstonopen" || key === "texaschildrenshoustonopen") {
+  if (key === "houston" || key === "houstonopen" || key === "texaschildrenshoustonopen") {
     return "Texas Children's Houston Open";
+  }
+  if (key === "valero" || key === "valerotexasopen") {
+    return "Valero Texas Open";
+  }
+  if (key === "valspar" || key === "valsparchampionship") {
+    return "Valspar Championship";
   }
   if (key === "arnoldpalmer" || key === "arnoldpalmerinvitational") {
     return "Arnold Palmer";
+  }
+  if (key === "masterstournament" || key === "masters") {
+    return "Masters Tournament";
   }
 
   return raw;
@@ -719,6 +728,7 @@ export async function fetchSplashSportsData({
   standingsPath,
   subgroupMembers,
   memberAliases,
+  entryIds = {},
 }) {
   const base = baseUrl.replace(/\/$/, "");
   const entriesUrl = leaguePath.startsWith("http") ? leaguePath : `${base}${leaguePath.startsWith("/") ? "" : "/"}${leaguePath}`;
@@ -779,6 +789,20 @@ export async function fetchSplashSportsData({
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
+  const pickHistoryByMember = {};
+
+  for (const [member, entryId] of Object.entries(entryIds || {})) {
+    if (!entryId) continue;
+    const historyUrl = `${base}/Golf/PickX/modal/pickHistory.cfm?entryId=${encodeURIComponent(entryId)}`;
+    const historyRes = await fetchOrThrow(historyUrl, { headers }, `Splash pick history (${member})`);
+    if (!historyRes.ok) continue;
+    const historyHtml = await historyRes.text();
+    if (looksLikeAuthPage(historyHtml)) {
+      await writeDebugHtml(`debug-splash-history-auth-${String(member).toLowerCase()}`, historyHtml);
+      throw new SyncError("Splash Sports session appears expired (pick history page is auth/login).", "AUTH_EXPIRED");
+    }
+    pickHistoryByMember[member] = historyHtml;
+  }
   let supplementalEvents = [];
 
   if (standingsHtml && standingsPagePicks.length < subgroupMembers.length) {
@@ -828,6 +852,9 @@ export async function fetchSplashSportsData({
     picks,
     standings,
     supplementalEvents,
+    pickHistory: Object.fromEntries(
+      Object.entries(pickHistoryByMember).map(([member, html]) => [member, parsePickHistoryHtml(html, member)])
+    ),
     subgroupMembers,
   });
 }

@@ -700,6 +700,47 @@ function applyCompletedEventRollover(snapshot, previousSnapshot, normalizedNextT
   };
 }
 
+function applyHistoryBackfillFloor(snapshot, config) {
+  if (!snapshot?.subgroupStandings?.length) return snapshot;
+
+  const updatedStandings = snapshot.subgroupStandings.map((row) => {
+    const computedFromHistory = (row.history || []).reduce((sum, week) => sum + Number(week?.earnings || 0), 0);
+    return {
+      ...row,
+      seasonEarnings: Math.max(Number(row.seasonEarnings || 0), computedFromHistory),
+    };
+  });
+
+  updatedStandings.sort((a, b) => b.seasonEarnings - a.seasonEarnings || a.member.localeCompare(b.member));
+
+  let currentRank = 1;
+  let previousEarnings = null;
+  for (let i = 0; i < updatedStandings.length; i += 1) {
+    if (previousEarnings !== null && updatedStandings[i].seasonEarnings < previousEarnings) {
+      currentRank = i + 1;
+    }
+    updatedStandings[i].groupRank = currentRank;
+    previousEarnings = updatedStandings[i].seasonEarnings;
+  }
+
+  const leader = updatedStandings[0]?.seasonEarnings ?? 0;
+  const rankedStandings = updatedStandings.map((row) => ({
+    ...row,
+    toLeader: leader - row.seasonEarnings,
+  }));
+
+  return {
+    ...snapshot,
+    subgroupStandings: rankedStandings,
+    teams: computeTeamSummary(rankedStandings, config.teams || []),
+    whoGainedThisWeek: calculateWhoGainedThisWeek(rankedStandings),
+    sourceNotes: [
+      ...(snapshot.sourceNotes || []),
+      "Season totals floored to reconstructed completed-event history when that history exceeds Splash year-to-date values.",
+    ],
+  };
+}
+
 async function run() {
   const config = await readConfig(path.join(root, "config/config.json"));
   const historicalSnapshots = await loadHistoricalSnapshotCandidates();
@@ -719,6 +760,7 @@ async function run() {
           standingsPath: config.splash.standingsPath,
           subgroupMembers: config.subgroupMembers,
           memberAliases: config.memberAliases || {},
+          entryIds: config.entryIds || {},
         });
       }
     } else {
@@ -877,11 +919,23 @@ async function run() {
     ];
   }
 
+  const hasLivePickHistory = Number(parsedHistoryRowCount || 0) > 0;
   let snapshot = buildLeagueSnapshot(normalized, config);
-  if (explicitSeasonTotals.size > 0) {
+  if (!hasLivePickHistory && explicitSeasonTotals.size > 0) {
     snapshot = applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config);
   }
-  snapshot = applyCompletedEventRollover(snapshot, previousSnapshot, normalized.nextTournament, config);
+  if (!hasLivePickHistory) {
+    snapshot = applyCompletedEventRollover(snapshot, previousSnapshot, normalized.nextTournament, config);
+    snapshot = applyHistoryBackfillFloor(snapshot, config);
+  } else {
+    snapshot = {
+      ...snapshot,
+      sourceNotes: [
+        ...(snapshot.sourceNotes || []),
+        "Live Splash pick-history rows available; season totals derived directly from reconstructed event history.",
+      ],
+    };
+  }
   const playerPool = buildPlayerPool(normalized, config, { nextTournamentField });
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];

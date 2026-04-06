@@ -100,16 +100,8 @@
       "member": "Dakota",
       "seasonEarnings": 4910569,
       "weeklyEarnings": 0,
-      "avgEarnings": 446415.36363636365,
+      "avgEarnings": 409214.0833333333,
       "lastFour": [
-        {
-          "eventId": "arnold-palmer",
-          "eventName": "Arnold Palmer",
-          "tier": "signature",
-          "earnings": 840000,
-          "finish": "5",
-          "pick": "Collin Morikawa"
-        },
         {
           "eventId": "players-championship",
           "eventName": "Players Championship",
@@ -125,6 +117,14 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Jacob Bridgeman"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "89",
+          "pick": "Ryan Gerard"
         },
         {
           "eventId": "valero-texas-open",
@@ -220,8 +220,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 21384,
-          "finish": "64",
+          "earnings": 0,
+          "finish": "89",
           "pick": "Ryan Gerard"
         },
         {
@@ -249,16 +249,8 @@
       "member": "Mike",
       "seasonEarnings": 2746605,
       "weeklyEarnings": 0,
-      "avgEarnings": 196591.36363636365,
+      "avgEarnings": 228883.75,
       "lastFour": [
-        {
-          "eventId": "arnold-palmer",
-          "eventName": "Arnold Palmer",
-          "tier": "signature",
-          "earnings": 78000,
-          "finish": "41",
-          "pick": "Matthew Fitzpatrick"
-        },
         {
           "eventId": "players-championship",
           "eventName": "Players Championship",
@@ -274,6 +266,14 @@
           "earnings": 0,
           "finish": "85",
           "pick": "Viktor Hovland"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 584100,
+          "finish": "3",
+          "pick": "Min Woo Lee"
         },
         {
           "eventId": "valero-texas-open",
@@ -369,8 +369,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 584100,
+          "finish": "3",
           "pick": "Min Woo Lee"
         },
         {
@@ -398,16 +398,8 @@
       "member": "Paul",
       "seasonEarnings": 2061350,
       "weeklyEarnings": 237650,
-      "avgEarnings": 187395.45454545456,
+      "avgEarnings": 171779.16666666666,
       "lastFour": [
-        {
-          "eventId": "arnold-palmer",
-          "eventName": "Arnold Palmer",
-          "tier": "signature",
-          "earnings": 157000,
-          "finish": "24",
-          "pick": "Scottie Scheffler"
-        },
         {
           "eventId": "players-championship",
           "eventName": "Players Championship",
@@ -423,6 +415,14 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Jacob Bridgeman"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "112",
+          "pick": "Ryan Fox"
         },
         {
           "eventId": "valero-texas-open",
@@ -518,8 +518,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 23887,
-          "finish": "48",
+          "earnings": 0,
+          "finish": "112",
           "pick": "Ryan Fox"
         },
         {
@@ -547,16 +547,8 @@
       "member": "Andrew",
       "seasonEarnings": 1946310,
       "weeklyEarnings": 95550,
-      "avgEarnings": 171516.81818181818,
+      "avgEarnings": 162192.5,
       "lastFour": [
-        {
-          "eventId": "arnold-palmer",
-          "eventName": "Arnold Palmer",
-          "tier": "signature",
-          "earnings": 78000,
-          "finish": "41",
-          "pick": "Hideki Matsuyama"
-        },
         {
           "eventId": "players-championship",
           "eventName": "Players Championship",
@@ -572,6 +564,14 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Corey Conners"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 59625,
+          "finish": "28",
+          "pick": "Ben Griffin"
         },
         {
           "eventId": "valero-texas-open",
@@ -667,8 +667,8 @@
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
-          "earnings": 42287,
-          "finish": "34",
+          "earnings": 59625,
+          "finish": "28",
           "pick": "Ben Griffin"
         },
         {
@@ -1211,7 +1211,7 @@
           "earnings": 925000,
           "finish": "5",
           "pick": "Ludvig Aberg",
-          "leagueRank": 11
+          "leagueRank": null
         },
         {
           "member": "Mike",
@@ -1223,7 +1223,7 @@
           "earnings": 731250,
           "finish": "8",
           "pick": "Sepp Straka",
-          "leagueRank": 64
+          "leagueRank": null
         },
         {
           "member": "Andrew",
@@ -1235,7 +1235,7 @@
           "earnings": 61083,
           "finish": "50",
           "pick": "Si Woo Kim",
-          "leagueRank": 101
+          "leagueRank": null
         },
         {
           "member": "Paul",
@@ -1247,7 +1247,7 @@
           "earnings": 0,
           "finish": "123",
           "pick": "Collin Morikawa",
-          "leagueRank": 96
+          "leagueRank": null
         }
       ]
     },
@@ -1270,7 +1270,7 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Corey Conners",
-          "leagueRank": 104
+          "leagueRank": null
         },
         {
           "member": "Dakota",
@@ -1282,7 +1282,7 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Jacob Bridgeman",
-          "leagueRank": 12
+          "leagueRank": null
         },
         {
           "member": "Paul",
@@ -1294,7 +1294,7 @@
           "earnings": 161525,
           "finish": "14",
           "pick": "Jacob Bridgeman",
-          "leagueRank": 101
+          "leagueRank": null
         },
         {
           "member": "Mike",
@@ -1306,7 +1306,7 @@
           "earnings": 0,
           "finish": "85",
           "pick": "Viktor Hovland",
-          "leagueRank": 84
+          "leagueRank": null
         }
       ]
     },
@@ -1315,10 +1315,22 @@
       "eventName": "Texas Children's Houston Open",
       "tier": "regular",
       "startDate": null,
-      "countsTowardSeasonTotals": false,
+      "countsTowardSeasonTotals": true,
       "totalPurse": 0,
       "firstPrize": 0,
       "rows": [
+        {
+          "member": "Mike",
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 584100,
+          "finish": "3",
+          "pick": "Min Woo Lee",
+          "leagueRank": null
+        },
         {
           "member": "Andrew",
           "eventId": "texas-children-s-houston-open",
@@ -1326,22 +1338,10 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 42287,
-          "finish": "34",
+          "earnings": 59625,
+          "finish": "28",
           "pick": "Ben Griffin",
-          "leagueRank": 104
-        },
-        {
-          "member": "Paul",
-          "eventId": "texas-children-s-houston-open",
-          "eventName": "Texas Children's Houston Open",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 23887,
-          "finish": "48",
-          "pick": "Ryan Fox",
-          "leagueRank": 101
+          "leagueRank": null
         },
         {
           "member": "Dakota",
@@ -1350,22 +1350,22 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 21384,
-          "finish": "64",
+          "earnings": 0,
+          "finish": "89",
           "pick": "Ryan Gerard",
-          "leagueRank": 12
+          "leagueRank": null
         },
         {
-          "member": "Mike",
+          "member": "Paul",
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "$0",
-          "pick": "Min Woo Lee",
-          "leagueRank": 84
+          "finish": "112",
+          "pick": "Ryan Fox",
+          "leagueRank": null
         }
       ]
     },
@@ -6340,23 +6340,21 @@
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
-    "Splash parsed history rows: 0",
+    "Splash parsed history rows: 48",
     "Splash mapping: Andrew: rank=120, season=1946310, pick=Maverick McNealy, week=95550, finish=21 | Paul: rank=113, season=2061350, pick=Tommy Fleetwood, week=237650, finish=10 | Dakota: rank=18, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=86, season=2746605, pick=Russell Henley, week=0, finish=71",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
-    "Fallback: reused previous committed season history because Splash returned no historical event rows.",
     "PGA TOUR schedule resolved next tournament: Masters Tournament",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/masters-tournament/R2026014/field",
     "PGA TOUR field entries: 91",
     "Opened next-tournament view for Masters Tournament after finalizing Valero Texas Open.",
     "Weekly projection synthesis: 74 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Collin Morikawa, Jacob Bridgeman, Chris Gotterup, Cameron Young",
-    "Standings season totals reconciled to explicit Splash year-to-date values.",
-    "Completed-event rollover applied for Valero Texas Open."
+    "Live Splash pick-history rows available; season totals derived directly from reconstructed event history."
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-06T01:12:42.636Z"
+  "updatedAt": "2026-04-06T01:26:28.709Z"
 }
