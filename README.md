@@ -1,19 +1,19 @@
 # One and Done League
 
 Local-first One and Done toolkit for:
-- Public dashboard (`app/public/index.html`) with standings and golfer availability
-- Weekly pick support (`app/private/recommendations.html`)
+- League Dashboard (`app/league/index.html`) with standings and golfer availability
+- Selector (`app/selector/recommendations.html`)
 - Automated data refresh from Splash Sports + online sources
 
 ## Free Hosting (Recommended)
 
-Use **GitHub Pages** for the public site. For Splash data refreshes, use your **local Mac session** and push the updated JSON to GitHub.
+Use **GitHub Pages** for the league site. For Splash data refreshes, use your **local Mac session** and push the updated JSON to GitHub.
 The recurring Thursday/Sunday sync should run from your Mac, not from GitHub Actions.
 
 ### What you’ll get
 - One shareable URL from GitHub Pages
-- Public dashboard at `/`
-- Weekly pick support at `/private/`
+- League Dashboard at `/`
+- Selector at `/selector/`
 - Data auto-refreshes on:
   - Thursday 8:00 AM ET (pick refresh)
   - Thursday 8:00 PM ET (evening refresh)
@@ -77,8 +77,8 @@ python3 -m http.server 8080
 ```
 
 Open:
-- `http://127.0.0.1:8080/app/public/index.html`
-- `http://127.0.0.1:8080/app/private/recommendations.html`
+- `http://127.0.0.1:8080/app/league/index.html`
+- `http://127.0.0.1:8080/app/selector/recommendations.html`
 
 Build the GitHub Pages output locally:
 
@@ -122,7 +122,7 @@ Important:
 - your Mac timezone should be set to Eastern Time if you want exact 8:00 AM ET / 8:00 PM ET execution
 
 Practical note:
-- both the public dashboard and private recommendations page use the same generated JSON in `data/`
+- both the League Dashboard and Selector use the same generated JSON in `data/`
 - fixing the Splash cookie/sync path fixes both sites at once
 
 Verify the installed schedule:

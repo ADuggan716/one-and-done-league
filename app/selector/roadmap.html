@@ -9,7 +9,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;500;700&family=IBM+Plex+Sans:wght@400;500;600&display=swap" rel="stylesheet" />
-    <link rel="stylesheet" href="../public/styles.css" />
+    <link rel="stylesheet" href="../league/styles.css" />
     <link rel="stylesheet" href="../../styles.css" />
     <style>
       .hero-row,
@@ -201,7 +201,7 @@
     <main class="shell">
       <section class="hero card">
         <div class="hero-copy">
-          <span class="eyebrow">Internal View</span>
+          <span class="eyebrow">Selector View</span>
           <div>
             <h1 id="product-name">Product Roadmap</h1>
             <p class="hero-meta">A single-page view of the current state, active phase, and build timeline for this product.</p>
@@ -244,11 +244,11 @@
       {
         "product": "One and Done League",
         "currentState": {
-          "summary": "The public dashboard, private recommendation flow, GitHub Pages deployment, and Raspberry Pi-based scheduled publishing are all working. The product is now focused on making the sync path dependable, especially around weekly rollover behavior and operator visibility."
+          "summary": "The league dashboard, selector workflow, GitHub Pages deployment, and Raspberry Pi-based scheduled publishing are all working. The product is now focused on making the sync path dependable, especially around weekly rollover behavior and operator visibility."
         },
         "completedFoundation": [
-          "Public dashboard for standings, weekly comparison, and golfer availability is live.",
-          "Private recommendations page shares the same generated data pipeline as the public dashboard.",
+          "League dashboard for standings, weekly comparison, and golfer availability is live.",
+          "Selector page shares the same generated data pipeline as the league dashboard.",
           "GitHub Pages deployment and static JSON publishing workflow are in place.",
           "The Raspberry Pi runner can sync, commit, and push updates on schedule without relying on the Mac being on.",
           "Recovery logic now protects the season view from being wiped when Splash only returns current-week data."
@@ -269,7 +269,7 @@
           "items": [
             "Add clearer health and freshness messaging for last sync result, source state, and publishing status.",
             "Improve recommendation transparency so weekly pick guidance is easier to trust and explain.",
-            "Polish small UX details like favicon, metadata, and navigation clarity across public and private views."
+            "Polish small UX details like favicon, metadata, and navigation clarity across the league dashboard and selector."
           ]
         },
         "laterPhase": {
@@ -285,7 +285,7 @@
           {
             "title": "Foundation Complete",
             "timing": "Done",
-            "summary": "Built the live dashboard, private recommendation workflow, hosted deployment, and shared JSON data pipeline."
+            "summary": "Built the live dashboard, selector workflow, hosted deployment, and shared JSON data pipeline."
           },
           {
             "title": "Always-On Publishing",

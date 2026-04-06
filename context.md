@@ -100,22 +100,20 @@ The intended separation is:
 
 ## Domain Model Direction
 
-This project is evolving toward clearer naming and structure.
+This project now uses clearer naming and structure.
 
-Planned conceptual separation:
-- league = shared pool state, standings, player availability, public environment
-- selection = Andrew's recommendation logic, picks, and strategy outputs
+Current conceptual separation:
+- league = shared pool state, standings, player availability, and the League Dashboard
+- selector = Andrew's recommendation logic, picks, and strategy outputs
 
 ## Refactor Backlog
 
-Planned improvements after migration and stabilization:
+Current structure after migration:
 
-- rename `app/public` → `app/league`
-- rename `app/private` → `app/selection`
-- update all file references impacted by that rename
-- formalize separation between league-level and selection-level logic
-- remove remaining legacy build artifacts and junk
-- standardize naming and simplify structure where possible
+- `app/league` contains the League Dashboard source
+- `app/selector` contains the Selector source
+- the built site preserves `/private/` as a redirect to `/selector/` for compatibility
+- future cleanup should continue removing remaining legacy naming assumptions where possible
 
 ## Data / Recommendation Priorities
 

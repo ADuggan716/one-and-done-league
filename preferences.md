@@ -69,4 +69,4 @@ Apply the shared standard UI style by default unless this project needs to match
 For now:
 - focus on getting the engine and outputs right
 - treat visual polish as secondary
-- defer structural rename work (`public/private` → `league/selection`) until after stabilization
+- use `League Dashboard` and `Selector` consistently in user-facing naming, routes, and docs

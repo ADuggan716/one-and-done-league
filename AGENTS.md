@@ -123,15 +123,14 @@ When the project could benefit from Pi hosting, explicitly surface that option a
 - keep reusable engineering lessons out of this repo and in the main `knowledgebase`
 - add build notes only when they are useful and durable
 
-## Roadmap Awareness
+## Structure Awareness
 
-The system is currently in a post-migration state and will undergo structural improvements.
-
-Planned changes:
-- rename `public` → `league`
-- rename `private` → `selection`
+The app now uses:
+- `app/league` for league-facing dashboard views
+- `app/selector` for Andrew's recommendation and selector views
 
 Agents should:
-- understand that "public" currently maps to league-level data or views
-- understand that "private" currently maps to selection-level or recommendation-specific logic
-- avoid introducing new dependencies on legacy naming where possible
+- use `League Dashboard` for the league-facing product name
+- use `Selector` for the recommendation-facing product name
+- avoid introducing new dependencies on the legacy `public/private` naming
+- preserve the compatibility redirect from `/private/` to `/selector/` unless explicitly removing legacy routes
