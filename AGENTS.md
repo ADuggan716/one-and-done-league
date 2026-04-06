@@ -132,5 +132,5 @@ The app now uses:
 Agents should:
 - use `League Dashboard` for the league-facing product name
 - use `Selector` for the recommendation-facing product name
-- avoid introducing new dependencies on the legacy `public/private` naming
+- avoid introducing new dependencies on the legacy route and folder naming
 - preserve the compatibility redirect from `/private/` to `/selector/` unless explicitly removing legacy routes
