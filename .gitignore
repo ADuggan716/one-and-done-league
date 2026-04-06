@@ -2,6 +2,7 @@
 node_modules/
 dist/
 logs/
+__pycache__/
 
 # Local machine/project secrets
 config/config.json
