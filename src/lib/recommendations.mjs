@@ -7,6 +7,9 @@ function clamp01(value) {
 function normalizeGolferName(name) {
   return String(name || "")
     .normalize("NFKD")
+    .replace(/[øØ]/g, "o")
+    .replace(/[æÆ]/g, "ae")
+    .replace(/[åÅ]/g, "a")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[.'’]/g, "")
     .replace(/\s+/g, " ")
@@ -20,6 +23,54 @@ function expectedValueScore(projectedEarnings, salaryCap = 3_500_000) {
 
 function opportunityCostScore(futureValue) {
   return clamp01(money(futureValue) / 2_000_000);
+}
+
+function resolveWeights(eventTier, weights = {}) {
+  const base = {
+    expected: 0.29,
+    uniqueness: 0.14,
+    opportunityCost: 0.13,
+    recentForm: 0.14,
+    historicalStrength: 0.08,
+    courseHistory: 0.1,
+    strokesGained: 0.08,
+    eventHistoryTrend: 0.04,
+  };
+
+  if (eventTier === "major") {
+    return {
+      ...base,
+      expected: 0.25,
+      uniqueness: 0.12,
+      opportunityCost: 0.11,
+      recentForm: 0.14,
+      historicalStrength: 0.08,
+      courseHistory: 0.14,
+      strokesGained: 0.09,
+      eventHistoryTrend: 0.07,
+      ...weights,
+    };
+  }
+
+  if (eventTier === "signature") {
+    return {
+      ...base,
+      expected: 0.27,
+      uniqueness: 0.13,
+      opportunityCost: 0.12,
+      recentForm: 0.14,
+      historicalStrength: 0.08,
+      courseHistory: 0.11,
+      strokesGained: 0.09,
+      eventHistoryTrend: 0.06,
+      ...weights,
+    };
+  }
+
+  return {
+    ...base,
+    ...weights,
+  };
 }
 
 function uniquenessScore(projectedDupCount, rivalCount = 3) {
@@ -39,6 +90,34 @@ function recentFormScore(candidate) {
   return clamp01(1 - avgFinish / 100);
 }
 
+function strokesGainedScore(candidate) {
+  const total = Number(candidate.strokesGained?.total?.lastFive);
+  const approach = Number(candidate.strokesGained?.approach?.lastFive);
+  const offTheTee = Number(candidate.strokesGained?.offTheTee?.lastFive);
+  const values = [total * 0.55, approach * 0.3, offTheTee * 0.15].filter(Number.isFinite);
+  if (!values.length) return 0.5;
+  const combined = values.reduce((sum, value) => sum + value, 0);
+  return clamp01((combined + 2) / 4);
+}
+
+function eventHistoryTrendScore(candidate) {
+  const history = Array.isArray(candidate.courseHistoryResults) ? candidate.courseHistoryResults.slice(0, 4) : [];
+  if (!history.length) return 0.5;
+  const values = history.map((row, index) => {
+    const finish = String(row.finish || "").toUpperCase();
+    const numeric = finish.match(/T?(\d+)/)?.[1];
+    const base = numeric
+      ? clamp01(1 - (Number(numeric) - 1) / 60)
+      : /MC|WD|DQ/.test(finish)
+        ? 0.12
+        : 0.35;
+    const weight = Math.max(0.5, 1 - index * 0.12);
+    return { base, weight };
+  });
+  const totalWeight = values.reduce((sum, row) => sum + row.weight, 0) || 1;
+  return clamp01(values.reduce((sum, row) => sum + row.base * row.weight, 0) / totalWeight);
+}
+
 function courseHistoryScore(candidate) {
   return clamp01(candidate.courseHistoryScore ?? 0.5);
 }
@@ -47,21 +126,74 @@ function strengthScore(candidate) {
   return clamp01(candidate.historicalStrength ?? 0.5);
 }
 
+function formatRank(rank) {
+  return Number.isFinite(Number(rank)) && Number(rank) > 0 ? `No. ${Number(rank)}` : "unranked";
+}
+
+function formatMoneyCompact(value) {
+  const amount = money(value);
+  if (amount >= 1_000_000) return `$${(amount / 1_000_000).toFixed(1)}M`;
+  if (amount >= 1_000) return `$${Math.round(amount / 1_000)}K`;
+  return `$${Math.round(amount)}`;
+}
+
+function formatSigned(value) {
+  if (!Number.isFinite(Number(value))) return null;
+  const amount = Number(value);
+  return `${amount >= 0 ? "+" : ""}${amount.toFixed(3)}`;
+}
+
+function hasDetailedSource(sourceRefs = []) {
+  return sourceRefs.some((source) => /recent|history|course|strokes gained|datagolf|rotowire|odds/i.test(String(source)));
+}
+
+function isSyntheticRecentFallback(last4Finishes = [], sourceRefs = []) {
+  const values = Array.isArray(last4Finishes) ? last4Finishes.filter(Number.isFinite) : [];
+  return (
+    values.length === 4 &&
+    values.join(",") === "35,28,40,22" &&
+    !hasDetailedSource(sourceRefs)
+  );
+}
+
+function isSyntheticCourseFallback(courseHistoryResults = [], courseHistoryScore, sourceRefs = []) {
+  return (
+    (!Array.isArray(courseHistoryResults) || courseHistoryResults.length === 0) &&
+    Number(courseHistoryScore) === 0.5 &&
+    !hasDetailedSource(sourceRefs)
+  );
+}
+
 function buildReasonText(candidate, eventTier) {
   const pieces = [];
+  const lead = [];
 
   if (!candidate.eligible) {
-    pieces.push("Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option.");
+    lead.push("Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option.");
   } else if (!candidate.hasProjectedEarnings) {
-    pieces.push("Projection feed is missing this golfer's weekly payout estimate, so the ranking leans on secondary signals.");
+    lead.push("Projection feed is missing this golfer's weekly payout estimate, so the ranking leans on secondary signals.");
+  } else if (Number(candidate.decisionScores?.expected) >= 0.14) {
+    lead.push("This is one of the stronger weekly payout profiles on the board.");
+  } else if (Number(candidate.decisionScores?.leverage) >= 0.78) {
+    lead.push("This creates cleaner separation from the rest of the pool than most top options.");
+  } else if (Number(candidate.decisionScores?.preservation) >= 0.66) {
+    lead.push("This keeps more future ceiling intact than the typical top-tier click.");
   }
 
   if ((candidate.last4Finishes || []).length) {
     pieces.push(`Recent form: last 4 finishes ${candidate.last4Finishes.join(", ")}.`);
+  } else {
+    pieces.push(
+      `Season profile: ${formatRank(candidate.worldRank)} OWGR, ${candidate.fedexPoints || 0} FedExCup points, ${formatMoneyCompact(candidate.seasonEarnings)} in season earnings.`
+    );
   }
 
   if (Number.isFinite(candidate.historicalStrength)) {
     pieces.push(`Historical strength index: ${candidate.historicalStrength.toFixed(2)}.`);
+  }
+
+  if (Number.isFinite(candidate.strokesGained?.total?.lastFive)) {
+    pieces.push(`Last-five SG Total: ${formatSigned(candidate.strokesGained.total.lastFive)}.`);
   }
 
   if (Number.isFinite(candidate.courseHistoryScore)) {
@@ -76,20 +208,30 @@ function buildReasonText(candidate, eventTier) {
     pieces.push("Leverage edge: projected to be unique against Paul, Dakota, and Mike.");
   }
 
-  return pieces.join(" ");
+  return [...lead, ...pieces].join(" ");
 }
 
 function buildRecentSummary(candidate) {
   const finishes = Array.isArray(candidate.last4Finishes) ? candidate.last4Finishes.filter(Number.isFinite) : [];
-  if (finishes.length === 0) return "Recent: Limited recent starts in the last month; form signal is neutral.";
+  if (finishes.length === 0) {
+    return `Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: ${formatRank(candidate.worldRank)} OWGR, ${candidate.fedexPoints || 0} FedExCup points, and ${formatMoneyCompact(candidate.seasonEarnings)} earned this season.`;
+  }
   const avgFinish = finishes.reduce((sum, v) => sum + v, 0) / finishes.length;
   const momentum = avgFinish <= 12 ? "strong momentum" : avgFinish <= 22 ? "steady momentum" : "mixed momentum";
-  return `Recent: Last four starts finished ${finishes.join(", ")} with ${momentum} entering this event.`;
+  const sgTotal = formatSigned(candidate.strokesGained?.total?.lastFive);
+  const sgApproach = formatSigned(candidate.strokesGained?.approach?.lastFive);
+  const sgOffTee = formatSigned(candidate.strokesGained?.offTheTee?.lastFive);
+  const sgNote = sgTotal
+    ? ` Last-five SG Total ${sgTotal}${sgApproach ? `, Approach ${sgApproach}` : ""}${sgOffTee ? `, Off-the-Tee ${sgOffTee}` : ""}.`
+    : "";
+  return `Recent: Last four starts finished ${finishes.join(", ")} with ${momentum} entering this event.${sgNote}`;
 }
 
 function buildHistoricalSummary(candidate) {
   const past = Array.isArray(candidate.courseHistoryResults) ? candidate.courseHistoryResults.slice(0, 3) : [];
-  if (!past.length) return "Historical: Limited course/event history available; baseline course-fit assumptions applied.";
+  if (!past.length) {
+    return `Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including ${formatRank(candidate.worldRank)} OWGR and a ${Number(candidate.historicalStrength ?? 0.5).toFixed(2)} historical-strength signal.`;
+  }
   const lines = past.map((r) => `${r.year}: ${r.finish}`).join(" | ");
   const quality = (candidate.courseHistoryScore ?? 0.5) >= 0.75 ? "strong" : "solid";
   return `Historical: ${lines}. Overall, historical performance at this event/course has been ${quality}.`;
@@ -103,7 +245,7 @@ function buildCautionSummary(candidate) {
     return "Caution: projected earnings are missing, so this recommendation carries lower confidence than a normal week.";
   }
   if (!candidate.hasCourseHistory) {
-    return "Caution: course/event history is thin, so fit is mostly inferred from broader profile signals.";
+    return "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.";
   }
   return "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.";
 }
@@ -115,8 +257,14 @@ function labelConfidence(score) {
 }
 
 function mergeCandidateData(golfer, projection = {}, playerMeta = {}) {
-  const last4Finishes = Array.isArray(projection.last4Finishes) ? projection.last4Finishes.filter(Number.isFinite) : [];
-  const courseHistoryResults = Array.isArray(projection.courseHistoryResults) ? projection.courseHistoryResults : [];
+  const sourceRefs = Array.isArray(projection.sourceRefs) ? projection.sourceRefs : [];
+  const rawLast4Finishes = Array.isArray(projection.last4Finishes) ? projection.last4Finishes.filter(Number.isFinite) : [];
+  const rawCourseHistoryResults = Array.isArray(projection.courseHistoryResults) ? projection.courseHistoryResults : [];
+  const last4Finishes = isSyntheticRecentFallback(rawLast4Finishes, sourceRefs) ? [] : rawLast4Finishes;
+  const courseHistoryResults = rawCourseHistoryResults;
+  const courseHistoryScore = isSyntheticCourseFallback(rawCourseHistoryResults, projection.courseHistoryScore, sourceRefs)
+    ? undefined
+    : projection.courseHistoryScore;
   const projectedEarnings = Number(projection.projectedEarnings || 0);
   const projectedDupCount = Number.isFinite(Number(projection.projectedDupCount))
     ? Number(projection.projectedDupCount)
@@ -137,6 +285,7 @@ function mergeCandidateData(golfer, projection = {}, playerMeta = {}) {
       ? Number(projection.seasonEarnings ?? playerMeta.seasonEarnings)
       : 0,
     inNextTournament,
+    courseHistoryScore,
     last4Finishes,
     courseHistoryResults,
     hasProjectedEarnings: projectedEarnings > 0,
@@ -148,15 +297,7 @@ function mergeCandidateData(golfer, projection = {}, playerMeta = {}) {
 
 export function scoreCandidate(candidate, context = {}, weights = {}) {
   const eventTier = context.eventTier || "regular";
-
-  const w = {
-    expected: weights.expected ?? 0.35,
-    uniqueness: weights.uniqueness ?? 0.15,
-    opportunityCost: weights.opportunityCost ?? 0.15,
-    recentForm: weights.recentForm ?? 0.2,
-    historicalStrength: weights.historicalStrength ?? 0.1,
-    courseHistory: weights.courseHistory ?? 0.05,
-  };
+  const w = resolveWeights(eventTier, weights);
 
   const expected = expectedValueScore(candidate.projectedEarnings);
   const uniqueness = uniquenessScore(candidate.projectedDupCount);
@@ -164,6 +305,8 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
   const recentForm = recentFormScore(candidate);
   const historicalStrength = strengthScore(candidate);
   const courseHistory = courseHistoryScore(candidate);
+  const strokesGained = strokesGainedScore(candidate);
+  const eventHistoryTrend = eventHistoryTrendScore(candidate);
   const preservePenalty = tierPreservationPenalty(candidate, eventTier);
   const fieldPenalty = candidate.eligible ? 0 : 0.45;
   const projectionPenalty = candidate.hasProjectedEarnings ? 0 : 0.12;
@@ -175,7 +318,9 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
     (1 - futureCost) * w.opportunityCost +
     recentForm * w.recentForm +
     historicalStrength * w.historicalStrength +
-    courseHistory * w.courseHistory;
+    courseHistory * w.courseHistory +
+    strokesGained * w.strokesGained +
+    eventHistoryTrend * w.eventHistoryTrend;
 
   const score = Math.max(0, weighted - preservePenalty - fieldPenalty - projectionPenalty - dataPenalty);
   const confidenceScore = clamp01(
@@ -187,13 +332,13 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
   const decisionScores = {
     balanced: score,
     expected,
-    leverage: clamp01(uniqueness * 0.7 + (candidate.hasProjectedEarnings ? expected * 0.2 : 0.08) + recentForm * 0.1),
-    preservation: clamp01((1 - futureCost) * 0.6 + recentForm * 0.15 + historicalStrength * 0.15 + courseHistory * 0.1),
+    leverage: clamp01(uniqueness * 0.66 + (candidate.hasProjectedEarnings ? expected * 0.16 : 0.08) + recentForm * 0.06 + strokesGained * 0.12),
+    preservation: clamp01((1 - futureCost) * 0.52 + recentForm * 0.1 + historicalStrength * 0.1 + courseHistory * 0.14 + eventHistoryTrend * 0.06 + strokesGained * 0.08),
   };
   const flags = [];
   if (!candidate.eligible) flags.push("Out of field");
   if (!candidate.hasProjectedEarnings) flags.push("Missing payout projection");
-  if (!candidate.hasCourseHistory) flags.push("Limited course history");
+  if (!candidate.hasCourseHistory) flags.push("Course-history detail missing");
   if ((candidate.projectedDupCount || 0) === 0) flags.push("Projected unique");
 
   return {
@@ -214,6 +359,8 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
       recentForm,
       historicalStrength,
       courseHistory,
+      strokesGained,
+      eventHistoryTrend,
       preservePenalty,
       fieldPenalty,
       projectionPenalty,
@@ -221,6 +368,39 @@ export function scoreCandidate(candidate, context = {}, weights = {}) {
       explanation: buildReasonText(candidate, eventTier),
     },
   };
+}
+
+function comparisonStrengths(primary, challenger) {
+  const strengths = [];
+  const push = (label, delta, formatter) => {
+    if (!(delta > 0)) return;
+    strengths.push({
+      label,
+      delta,
+      detail: formatter(delta),
+    });
+  };
+
+  push("Projected upside", (primary.decisionScores?.expected ?? 0) - (challenger.decisionScores?.expected ?? 0), (delta) => `${Math.round(delta * 100)} pts more weekly upside`);
+  push("Leverage", (primary.decisionScores?.leverage ?? 0) - (challenger.decisionScores?.leverage ?? 0), (delta) => `${Math.round(delta * 100)} pts cleaner leverage`);
+  push("Recent form", recentFormScore(primary) - recentFormScore(challenger), (delta) => `${Math.round(delta * 100)} pts better recent-form grade`);
+  push("Course history", eventHistoryTrendScore(primary) - eventHistoryTrendScore(challenger), (delta) => `${Math.round(delta * 100)} pts stronger event-history grade`);
+  push("Strokes gained", strokesGainedScore(primary) - strokesGainedScore(challenger), (delta) => `${Math.round(delta * 100)} pts stronger SG profile`);
+  push("Future preservation", (primary.decisionScores?.preservation ?? 0) - (challenger.decisionScores?.preservation ?? 0), (delta) => `${Math.round(delta * 100)} pts lower-regret spend`);
+
+  return strengths.sort((a, b) => b.delta - a.delta).slice(0, 2);
+}
+
+function buildComparisons(primary, rankedPool = []) {
+  if (!primary) return [];
+  return rankedPool
+    .filter((candidate) => candidate.golfer !== primary.golfer)
+    .slice(0, 3)
+    .map((candidate) => ({
+      golfer: candidate.golfer,
+      scoreGap: Number(((primary.score ?? 0) - (candidate.score ?? 0)).toFixed(3)),
+      strengths: comparisonStrengths(primary, candidate),
+    }));
 }
 
 function sortByMetric(candidates, metric, fallbackMetric = "balanced") {
@@ -300,6 +480,7 @@ export function generateRecommendations(availableGolfers, projections, options =
       leverage: leverageView,
       preservation: preservationView,
     },
+    comparisons: buildComparisons(balanced, rankedPool),
     summary: {
       totalAvailable: availableGolfers.length,
       eligibleCount: scored.filter((candidate) => candidate.eligible).length,

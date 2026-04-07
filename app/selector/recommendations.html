@@ -41,14 +41,30 @@
       }
       .support-top {
         align-items: stretch;
+        grid-template-columns: minmax(0, 1.45fr) minmax(320px, 0.95fr);
       }
       .stack {
         display: grid;
         gap: 13px;
       }
+      .support-side {
+        display: grid;
+        gap: 13px;
+        align-content: start;
+      }
       .key-card {
         border: 1px solid #d3ddef;
         background: linear-gradient(180deg, #f3f8ff, #eef5ff);
+      }
+      .summary-card {
+        border-color: #c8ddd8;
+        background:
+          radial-gradient(circle at top right, rgba(232, 199, 138, 0.12), transparent 34%),
+          linear-gradient(180deg, rgba(248, 255, 253, 0.98), rgba(239, 248, 245, 0.94));
+      }
+      .summary-card h2,
+      .key-card h2 {
+        margin-bottom: 14px;
       }
       .summary-grid,
       .decision-grid,
@@ -57,7 +73,7 @@
         gap: 12px;
       }
       .summary-grid {
-        grid-template-columns: repeat(auto-fit, minmax(180px, 1fr));
+        grid-template-columns: repeat(2, minmax(0, 1fr));
       }
       .decision-grid {
         grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
@@ -70,6 +86,10 @@
         border-radius: 16px;
         border: 1px solid var(--line);
         background: linear-gradient(180deg, rgba(255, 255, 255, 0.94), rgba(240, 248, 246, 0.92));
+        min-height: 152px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
       }
       .summary-stat span,
       .metric-grid span,
@@ -84,7 +104,8 @@
       .summary-stat strong {
         display: block;
         margin-top: 6px;
-        font-size: 1.4rem;
+        font-size: 2rem;
+        line-height: 1;
         font-family: "Space Grotesk", sans-serif;
       }
       .summary-stat p,
@@ -193,6 +214,11 @@
         display: grid;
         gap: 9px;
       }
+      .comparison-grid {
+        display: grid;
+        gap: 12px;
+        grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+      }
       .term {
         border: 1px solid var(--line);
         border-radius: 14px;
@@ -249,6 +275,39 @@
       .candidate-block p + p {
         margin-top: 4px;
         color: var(--muted);
+      }
+      .comparison-card {
+        border: 1px solid var(--line);
+        border-radius: 16px;
+        padding: 14px 15px;
+        background: linear-gradient(180deg, rgba(255, 255, 255, 0.92), rgba(238, 247, 244, 0.88));
+      }
+      .comparison-card h3 {
+        margin: 6px 0 8px;
+        font-size: 1.02rem;
+        font-family: "Space Grotesk", sans-serif;
+      }
+      .comparison-card ul {
+        margin: 10px 0 0;
+        padding-left: 18px;
+        display: grid;
+        gap: 8px;
+      }
+      .comparison-card li {
+        line-height: 1.45;
+        color: var(--ink);
+      }
+      .comparison-kicker {
+        display: block;
+        font-size: 0.72rem;
+        text-transform: uppercase;
+        letter-spacing: 0.08em;
+        color: var(--muted);
+      }
+      .comparison-gap {
+        margin: 0;
+        color: var(--muted);
+        font-size: 0.85rem;
       }
       .source-list {
         margin: 8px 0 0;
@@ -351,6 +410,10 @@
         line-height: 1.5;
       }
       @media (max-width: 780px) {
+        .support-top,
+        .summary-grid {
+          grid-template-columns: 1fr;
+        }
         .metric-grid,
         .score-strip {
           grid-template-columns: 1fr;
@@ -375,25 +438,30 @@
       </header>
 
       <section class="split support-top">
-        <article class="stack">
-          <article class="card">
+        <article class="card">
+          <h2>Primary Pick</h2>
+          <div id="primary"></div>
+        </article>
+        <aside class="support-side">
+          <article class="card summary-card">
             <h2>Board Summary</h2>
             <div class="summary-grid" id="summary"></div>
           </article>
-          <article class="card">
-            <h2>Primary Pick</h2>
-            <div id="primary"></div>
+          <article class="card key-card">
+            <h2>Scoring Key</h2>
+            <div id="scoreKey"></div>
           </article>
-        </article>
-        <article class="card key-card">
-          <h2>Scoring Key</h2>
-          <div id="scoreKey"></div>
-        </article>
+        </aside>
       </section>
 
       <section class="card">
         <h2>Decision Lenses</h2>
         <div class="decision-grid" id="decisionViews"></div>
+      </section>
+
+      <section class="card">
+        <h2>Why This Pick Wins</h2>
+        <div class="comparison-grid" id="comparisons"></div>
       </section>
 
       <section class="card">

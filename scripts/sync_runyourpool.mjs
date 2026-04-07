@@ -29,6 +29,7 @@ import {
   fetchPgaTourTournamentField,
   resolveNextTournamentFromSchedule,
 } from "../src/lib/pga_tour_field.mjs";
+import { enrichProjectionsWithBettingProfiles } from "../src/lib/pga_tour_betting_profiles.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -937,15 +938,37 @@ async function run() {
     };
   }
   const playerPool = buildPlayerPool(normalized, config, { nextTournamentField });
+  try {
+    const enrichedProfiles = await enrichProjectionsWithBettingProfiles(normalized.projections, {
+      nextTournament: normalized.nextTournament,
+      golfers: playerPool.members[config.me]?.available || [],
+    });
+    normalized.projections = enrichedProfiles.projections;
+    normalized.sourceNotes = [...normalized.sourceNotes, ...(enrichedProfiles.sourceNotes || [])];
+  } catch (error) {
+    normalized.sourceNotes = [
+      ...normalized.sourceNotes,
+      `PGA TOUR betting profiles: failed (${error.message})`,
+    ];
+  }
+  snapshot = {
+    ...snapshot,
+    projections: normalized.projections,
+    sourceNotes: normalized.sourceNotes,
+  };
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];
   const recommendations = {
-    event: snapshot.event,
-    strategy: "expected-value-plus-form-history-course",
-    sourceNotes: snapshot.sourceNotes,
+    currentEvent: snapshot.event,
+    event: snapshot.nextTournament || snapshot.event,
+    strategy: "balanced-weekly-pick-with-tradeoffs",
+    sourceNotes: normalized.sourceNotes,
     ...generateRecommendations(andrewAvailable, normalized.projections, {
       weights: config.recommendationWeights,
-      eventTier: snapshot.event?.tier,
+      eventTier: snapshot.nextTournament?.tier || snapshot.event?.tier,
+      nextTournamentField: playerPool.nextTournamentField || [],
+      playerPoolGolfers: playerPool.golfers || [],
+      sourceNotes: snapshot.sourceNotes || [],
     }),
     warnings: snapshot.warnings,
   };

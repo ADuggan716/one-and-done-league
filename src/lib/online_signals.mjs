@@ -12,6 +12,9 @@ function numberOr(value, fallback = 0) {
 export function normalizeGolferName(name) {
   return String(name || "")
     .normalize("NFKD")
+    .replace(/[øØ]/g, "o")
+    .replace(/[æÆ]/g, "ae")
+    .replace(/[åÅ]/g, "a")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[.'’]/g, "")
     .replace(/\s+/g, " ")
@@ -57,12 +60,12 @@ export function mergeSignals(baseProjections, signals) {
       historicalStrength:
         signal.historicalStrength !== undefined
           ? clamp01(signal.historicalStrength)
-          : clamp01(existing.historicalStrength ?? 0.5),
+          : existing.historicalStrength,
       courseHistoryScore:
         signal.courseHistoryScore !== undefined
           ? clamp01(signal.courseHistoryScore)
-          : clamp01(existing.courseHistoryScore ?? 0.5),
-      last4Finishes: last4 || [35, 28, 40, 22],
+          : existing.courseHistoryScore,
+      last4Finishes: last4,
       golfer: existing.golfer || String(signal.golfer || "").trim() || name,
       sourceRefs: [...new Set([...(existing.sourceRefs || []), ...(signal.sourceRefs || [])])],
     });

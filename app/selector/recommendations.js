@@ -6,12 +6,27 @@ function formatCurrency(value) {
   }).format(value || 0);
 }
 
+function formatCompactCurrency(value) {
+  return new Intl.NumberFormat("en-US", {
+    style: "currency",
+    currency: "USD",
+    notation: "compact",
+    maximumFractionDigits: 1,
+  }).format(value || 0);
+}
+
 function formatScore(value) {
   return (value || 0).toFixed(3);
 }
 
 function formatPercent(value) {
   return `${Math.round((value || 0) * 100)}%`;
+}
+
+function formatSigned(value, digits = 3) {
+  const amount = Number(value);
+  if (!Number.isFinite(amount)) return "N/A";
+  return `${amount >= 0 ? "+" : ""}${amount.toFixed(digits)}`;
 }
 
 function missingFieldData(recs) {
@@ -32,8 +47,11 @@ function escapeHtml(value) {
 }
 
 function candidateSections(candidate) {
+  const reasoning = String(candidate.reasoning || "").replace(/^Reasoning:\s*/i, "");
+  const leadSplit = reasoning.split(". ");
   return {
-    reasoning: String(candidate.reasoning || "").replace(/^Reasoning:\s*/i, ""),
+    reasoning,
+    lead: leadSplit[0] ? `${leadSplit[0].trim()}${leadSplit[0].trim().endsWith(".") ? "" : "."}` : "",
     recent: String(candidate.recentSummary || "").replace(/^Recent:\s*/i, ""),
     historical: String(candidate.historicalSummary || "").replace(/^Historical:\s*/i, ""),
     caution: String(candidate.cautionSummary || "").replace(/^Caution:\s*/i, ""),
@@ -85,6 +103,17 @@ function cardForCandidate(candidate, title = "", dataState = {}) {
   const scoreValue = fieldUnavailable && projectionUnavailable ? "N/A" : formatScore(candidate.score);
   const earningsValue = projectionUnavailable ? "N/A" : formatCurrency(candidate.projectedEarnings);
   const overlapValue = dataState.fieldPending ? "Pending field" : String(candidate.projectedDupCount ?? 0);
+  const profileLabel = candidate.hasRecentForm ? "Recent finishes" : "Season earnings";
+  const profileValue = candidate.hasRecentForm
+    ? ((candidate.last4Finishes || []).join(", ") || "N/A")
+    : formatCompactCurrency(candidate.seasonEarnings);
+  const sgValue = Number.isFinite(Number(candidate.strokesGained?.total?.lastFive))
+    ? formatSigned(candidate.strokesGained.total.lastFive)
+    : "N/A";
+  const fitLabel = candidate.hasCourseHistory ? "Masters history" : "History detail";
+  const fitValue = candidate.hasCourseHistory
+    ? (candidate.courseHistoryResults || []).slice(0, 2).map((row) => `${row.year}: ${row.finish}`).join(" | ")
+    : "Profile-based";
 
   return `
     ${title ? `<p class="sub"><strong>${escapeHtml(title)}</strong></p>` : ""}
@@ -110,13 +139,13 @@ function cardForCandidate(candidate, title = "", dataState = {}) {
     <div class="metric-grid">
       ${metric("Projected earnings", earningsValue)}
       ${metric("Rival overlap", overlapValue)}
-      ${metric("Future value", formatCurrency(candidate.futureValue))}
-      ${metric("Recent finishes", (candidate.last4Finishes || []).join(", ") || "N/A")}
+      ${metric("Last-five SG total", sgValue)}
+      ${metric(fitLabel, fitValue || "N/A")}
     </div>
     ${scoreStrip(candidate, dataState)}
     <div class="candidate-block">
       <p><strong>Why this can work</strong></p>
-      <p>${escapeHtml(sec.reasoning || "No written rationale available.")}</p>
+      <p>${escapeHtml(sec.lead || sec.reasoning || "No written rationale available.")}</p>
     </div>
     <div class="candidate-block">
       <p><strong>Recent form</strong></p>
@@ -129,6 +158,10 @@ function cardForCandidate(candidate, title = "", dataState = {}) {
     <div class="candidate-block">
       <p><strong>What to watch</strong></p>
       <p>${escapeHtml(sec.caution || "No caution note available.")}</p>
+    </div>
+    <div class="candidate-block">
+      <p><strong>Decision profile</strong></p>
+      <p>${escapeHtml(`${profileLabel}: ${profileValue}. Future value: ${formatCurrency(candidate.futureValue)}.`)}</p>
     </div>
   `;
 }
@@ -162,11 +195,15 @@ function renderScoreKey() {
     <div class="term-list">
       <div class="term">
         <p><strong>Balanced score</strong></p>
-        <p>The main ranking blends weekly upside, leverage, recent form, historical strength, course fit, and preservation costs, while pushing out-of-field names down hard.</p>
+        <p>The main ranking blends weekly upside, leverage, recent form, Strokes Gained shape, event history, and preservation costs, while pushing out-of-field names down hard. On major weeks, course and event history get a slightly bigger vote.</p>
       </div>
       <div class="term">
         <p><strong>Projected upside</strong></p>
         <p>This reflects this week’s payout projection only. If projections are missing, the card is explicitly marked lower-confidence.</p>
+      </div>
+      <div class="term">
+        <p><strong>Last-five SG total</strong></p>
+        <p>This is the quickest form read in the card. Strong recent SG totals help the model trust a golfer’s current ball-striking and scoring baseline.</p>
       </div>
       <div class="term">
         <p><strong>Leverage</strong></p>
@@ -189,7 +226,7 @@ function renderSummary(recs) {
     projectionPending: Number(summary.projectedCount || 0) === 0,
   };
   const topWarning = dataState.fieldPending
-    ? "Houston field not published yet"
+    ? `${eventName} field not published yet`
     : summary.warnings?.[0];
 
   document.getElementById("meta").textContent = `${eventName} | Updated ${updated} | Strategy: ${recs.strategy}`;
@@ -243,6 +280,22 @@ function renderDecisionViews(recs, dataState) {
     viewCard("Best leverage", "Use this when you want separation from Paul, Dakota, and Mike.", views.leverage, "Leverage", formatPercent(views.leverage?.decisionScores?.leverage), dataState),
     viewCard("Best low-regret spend", "Use this when you want a playable pick without burning future ceiling.", views.preservation, "Low-regret spend", formatPercent(views.preservation?.decisionScores?.preservation), dataState),
   ].join("");
+}
+
+function renderComparisons(recs) {
+  const comparisons = recs.comparisons || [];
+  document.getElementById("comparisons").innerHTML = comparisons.length
+    ? comparisons.map((comparison) => `
+        <article class="comparison-card">
+          <span class="comparison-kicker">Over ${escapeHtml(comparison.golfer || "alternate")}</span>
+          <h3>${escapeHtml(recs.primary?.golfer || "Primary pick")} holds the edge</h3>
+          <p class="comparison-gap">Balanced-score gap: ${escapeHtml(formatScore(comparison.scoreGap || 0))}</p>
+          <ul>
+            ${(comparison.strengths || []).map((strength) => `<li><strong>${escapeHtml(strength.label)}:</strong> ${escapeHtml(strength.detail)}</li>`).join("")}
+          </ul>
+        </article>
+      `).join("")
+    : `<div class="term"><p>No direct comparison notes available yet.</p></div>`;
 }
 
 function renderWarnings(recs) {
@@ -334,6 +387,7 @@ async function init() {
   const [recs, roadmap] = await Promise.all([recsResponse.json(), roadmapResponse.json()]);
   const dataState = renderSummary(recs);
   renderDecisionViews(recs, dataState);
+  renderComparisons(recs);
   document.getElementById("primary").innerHTML = cardForCandidate(recs.primary, "Recommended click", dataState);
   document.getElementById("alternates").innerHTML = (recs.alternates || [])
     .map((candidate, idx) => `<article class="card">${cardForCandidate(candidate, `Alternate ${idx + 1}`, dataState)}</article>`)

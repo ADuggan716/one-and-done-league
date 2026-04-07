@@ -4,6 +4,7 @@ import path from "node:path";
 import { fileURLToPath } from "node:url";
 import { generateRecommendations } from "../src/lib/recommendations.mjs";
 import { synthesizeWeeklySignals } from "../src/lib/online_signals.mjs";
+import { enrichProjectionsWithBettingProfiles } from "../src/lib/pga_tour_betting_profiles.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -27,7 +28,18 @@ const synthesized = synthesizeWeeklySignals(snapshot.projections || [], {
   me: config.me,
   usedByMember,
 });
-const projections = synthesized.projections;
+let projections = synthesized.projections;
+let profileSourceNotes = [];
+try {
+  const enrichedProfiles = await enrichProjectionsWithBettingProfiles(projections, {
+    nextTournament: snapshot.nextTournament || snapshot.event,
+    golfers: available,
+  });
+  projections = enrichedProfiles.projections;
+  profileSourceNotes = enrichedProfiles.sourceNotes || [];
+} catch (error) {
+  profileSourceNotes = [`PGA TOUR betting profiles: failed (${error.message})`];
+}
 
 const recommendations = {
   currentEvent: snapshot.event,
@@ -35,6 +47,7 @@ const recommendations = {
   strategy: "balanced-weekly-pick-with-tradeoffs",
   sourceNotes: [
     ...(snapshot.sourceNotes || []),
+    ...profileSourceNotes,
     ...(synthesized.synthesisSummary.fieldCandidateCount
       ? [`Weekly projection synthesis: ${synthesized.synthesisSummary.synthesizedCount} field golfers modeled during recommendation generation`]
       : []),

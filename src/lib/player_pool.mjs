@@ -1,6 +1,9 @@
 function normalizeGolferName(name) {
   return String(name || "")
     .normalize("NFKD")
+    .replace(/[øØ]/g, "o")
+    .replace(/[æÆ]/g, "ae")
+    .replace(/[åÅ]/g, "a")
     .replace(/[\u0300-\u036f]/g, "")
     .replace(/[.'’]/g, "")
     .replace(/\s+/g, " ")
