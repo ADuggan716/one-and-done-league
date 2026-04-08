@@ -42,6 +42,13 @@ function canonicalDisplayEventKey(name) {
   if (key === "themasters" || key === "masterstournament") return "masterstournament";
   if (key === "theplayerschampionship" || key === "playerschampionship" || key === "theplayers" || key === "players") return "playerschampionship";
   if (key === "houstonopen" || key === "texaschildrenshoustonopen") return "texaschildrenshoustonopen";
+  if (key === "sony" || key === "sonyopeninhawaii") return "sonyopeninhawaii";
+  if (key === "amex" || key === "americanexpress" || key === "theamericanexpress") return "americanexpress";
+  if (key === "farmers" || key === "farmersinsuranceopen") return "farmersinsuranceopen";
+  if (key === "phoenix" || key === "wastemanagementphoenixopen" || key === "wmphoenixopen") return "wastemanagementphoenixopen";
+  if (key === "attnocut" || key === "attpebblebeachnationalproam" || key === "attpebblebeachproam" || key === "attpebblebeachproam") return "attpebblebeachnationalproam";
+  if (key === "genesis" || key === "genesisinvitational" || key === "thegenesisinvitational") return "genesisinvitational";
+  if (key === "theclassic" || key === "cognizantclassic" || key === "cognizantclassicinthepalmbeaches") return "cognizantclassic";
   return key;
 }
 
@@ -340,7 +347,7 @@ function renderLeagueWideTable(snapshot) {
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Current Earnings" : "Earnings";
   const subgroupRows = eventRowsForDisplay(snapshot.weeklyComparison || [])
-    .find((item) => normalizeEventKey(item.eventName) === normalizeEventKey(event.eventName))?.rows || [];
+    .find((item) => canonicalDisplayEventKey(item.eventName) === canonicalDisplayEventKey(event.eventName))?.rows || [];
   const subgroupPickMap = new Map();
   for (const row of subgroupRows) {
     const golferKey = normalizeGolferName(row.pick);
