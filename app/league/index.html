@@ -22,6 +22,7 @@
 
       <nav class="tabs">
         <button class="tab active" data-tab="standings">Standings</button>
+        <button class="tab" data-tab="history">History</button>
         <button class="tab" data-tab="availability">Golfer Availability</button>
       </nav>
 
@@ -67,9 +68,16 @@
           <div id="leagueWideSummary" class="mini-summary"></div>
           <div class="matrix-wrap"><table id="leagueWideTable"></table></div>
         </section>
+      </section>
 
+      <section class="panel hidden" id="historyPanel">
         <section class="card">
-          <h2>Full Season Weekly Table</h2>
+          <div class="section-head">
+            <div>
+              <h2>Full Season Weekly Table</h2>
+              <p class="section-sub">Tournament-by-tournament archive for Andrew, Paul, Dakota, and Mike across the full season.</p>
+            </div>
+          </div>
           <div class="matrix-wrap"><table id="seasonWeeklyTable"></table></div>
         </section>
       </section>

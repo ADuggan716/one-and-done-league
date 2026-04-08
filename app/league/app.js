@@ -13,6 +13,7 @@ const state = {
 
 const tabButtons = [...document.querySelectorAll(".tab")];
 const standingsPanel = document.getElementById("standingsPanel");
+const historyPanel = document.getElementById("historyPanel");
 const availabilityPanel = document.getElementById("availabilityPanel");
 
 function formatCurrency(value) {
@@ -118,6 +119,7 @@ tabButtons.forEach((btn) => {
     btn.classList.add("active");
     const activeTab = btn.dataset.tab;
     standingsPanel.classList.toggle("hidden", activeTab !== "standings");
+    historyPanel.classList.toggle("hidden", activeTab !== "history");
     availabilityPanel.classList.toggle("hidden", activeTab !== "availability");
   });
 });
