@@ -520,6 +520,52 @@ function toWeeklyComparisonEvent(event) {
   };
 }
 
+function toLeagueWidePickEvent(event) {
+  return {
+    eventId: event.eventId || event.id,
+    eventName: event.eventName || event.name,
+    tier: event.tier || "regular",
+    startDate: event.startDate || null,
+    countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
+    totalPurse: Number(event.totalPurse || 0),
+    firstPrize: Number(event.firstPrize || 0),
+    totalEntrants: Number(event.totalEntrants || 0),
+    rows: (event.rows || []).map((row) => ({
+      golfer: row.golfer || null,
+      pickCount: Number(row.pickCount || 0),
+      finish: row.finish ?? null,
+      earnings: Number(row.earnings || 0),
+    })),
+  };
+}
+
+function compareLeagueWideEventRichness(left, right) {
+  const leftRows = left?.rows || [];
+  const rightRows = right?.rows || [];
+  const leftPicks = leftRows.reduce((sum, row) => sum + Number(row?.pickCount || 0), 0);
+  const rightPicks = rightRows.reduce((sum, row) => sum + Number(row?.pickCount || 0), 0);
+
+  if (leftPicks !== rightPicks) return leftPicks - rightPicks;
+  if (leftRows.length !== rightRows.length) return leftRows.length - rightRows.length;
+  return Number(left?.totalEntrants || 0) - Number(right?.totalEntrants || 0);
+}
+
+function mergeLeagueWidePickHistory(...collections) {
+  const merged = new Map();
+  for (const collection of collections) {
+    for (const event of collection || []) {
+      if (!event?.eventId && !event?.eventName) continue;
+      const eventId = event.eventId || event.id || eventIdFromName(event.eventName || event.name);
+      const normalizedEvent = toLeagueWidePickEvent({ ...event, eventId });
+      const current = merged.get(eventId);
+      if (!current || compareLeagueWideEventRichness(normalizedEvent, current) > 0) {
+        merged.set(eventId, normalizedEvent);
+      }
+    }
+  }
+  return [...merged.values()];
+}
+
 function mergeHistoricalSnapshots(snapshots) {
   const candidates = (snapshots || []).filter(Boolean);
   if (candidates.length === 0) return null;
@@ -542,6 +588,9 @@ function mergeHistoricalSnapshots(snapshots) {
   return {
     ...richestSnapshot,
     weeklyComparison: [...mergedEvents.values()].map(toWeeklyComparisonEvent),
+    leagueWidePickHistory: mergeLeagueWidePickHistory(
+      ...candidates.map((snapshot) => snapshot?.leagueWidePickHistory || [])
+    ),
   };
 }
 
@@ -570,6 +619,7 @@ function buildLeagueSnapshot(normalized, config) {
   }));
 
   const weeklyComparison = dedupeEventsById(buildWeeklyComparison(config.subgroupMembers, dedupedEvents));
+  const leagueWidePickHistory = mergeLeagueWidePickHistory(normalized.leagueWideHistory || []);
   const teams = computeTeamSummary(standingsWithLeagueRank, config.teams || []);
 
   return {
@@ -582,6 +632,7 @@ function buildLeagueSnapshot(normalized, config) {
     subgroupStandings: standingsWithLeagueRank,
     teams,
     weeklyComparison,
+    leagueWidePickHistory,
     whoGainedThisWeek: calculateWhoGainedThisWeek(standingsWithLeagueRank),
     projections: normalized.projections,
     sourceNotes: normalized.sourceNotes,
@@ -922,6 +973,14 @@ async function run() {
 
   const hasLivePickHistory = Number(parsedHistoryRowCount || 0) > 0;
   let snapshot = buildLeagueSnapshot(normalized, config);
+  snapshot = {
+    ...snapshot,
+    leagueWidePickHistory: mergeLeagueWidePickHistory(
+      matchedHistoricalSnapshot?.leagueWidePickHistory || [],
+      previousSnapshot?.leagueWidePickHistory || [],
+      snapshot.leagueWidePickHistory || []
+    ),
+  };
   if (!hasLivePickHistory && explicitSeasonTotals.size > 0) {
     snapshot = applyExplicitSeasonTotalsToSnapshot(snapshot, explicitSeasonTotals, config);
   }

@@ -1,7 +1,7 @@
 {
   "currentEvent": {
-    "id": "valero-texas-open",
-    "name": "Valero Texas Open",
+    "id": "the-masters",
+    "name": "The Masters",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
@@ -11,68 +11,68 @@
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": "Maverick McNealy",
-        "earnings": 95550,
+        "pick": "Schauffele",
+        "earnings": 0,
         "seasonEarnings": 1946310,
-        "finish": "21",
+        "finish": null,
         "leagueRank": 120
       },
       {
         "member": "Paul",
-        "pick": "Tommy Fleetwood",
-        "earnings": 237650,
+        "pick": null,
+        "earnings": 0,
         "seasonEarnings": 2061350,
-        "finish": "10",
+        "finish": null,
         "leagueRank": 113
       },
       {
         "member": "Dakota",
-        "pick": "Sepp Straka",
+        "pick": null,
         "earnings": 0,
         "seasonEarnings": 4910569,
-        "finish": "87",
+        "finish": null,
         "leagueRank": 18
       },
       {
         "member": "Mike",
-        "pick": "Russell Henley",
+        "pick": null,
         "earnings": 0,
         "seasonEarnings": 2746605,
-        "finish": "71",
+        "finish": null,
         "leagueRank": 86
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": "Maverick McNealy",
-        "earnings": 95550,
+        "golfer": "Schauffele",
+        "earnings": 0,
         "seasonEarnings": 1946310,
-        "finish": "21",
+        "finish": null,
         "leagueRank": 120
       },
       {
         "member": "Paul",
-        "golfer": "Tommy Fleetwood",
-        "earnings": 237650,
+        "golfer": null,
+        "earnings": 0,
         "seasonEarnings": 2061350,
-        "finish": "10",
+        "finish": null,
         "leagueRank": 113
       },
       {
         "member": "Dakota",
-        "golfer": "Sepp Straka",
+        "golfer": null,
         "earnings": 0,
         "seasonEarnings": 4910569,
-        "finish": "87",
+        "finish": null,
         "leagueRank": 18
       },
       {
         "member": "Mike",
-        "golfer": "Russell Henley",
+        "golfer": null,
         "earnings": 0,
         "seasonEarnings": 2746605,
-        "finish": "71",
+        "finish": null,
         "leagueRank": 86
       }
     ]
@@ -91,25 +91,24 @@
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 4",
+    "Splash parsed picks: 1",
     "Splash parsed standings rows: 4",
+    "Splash parsed league-wide event summaries: 13",
     "Splash parsed history rows: 48",
-    "Splash mapping: Andrew: rank=120, season=1946310, pick=Maverick McNealy, week=95550, finish=21 | Paul: rank=113, season=2061350, pick=Tommy Fleetwood, week=237650, finish=10 | Dakota: rank=18, season=4910569, pick=Sepp Straka, week=0, finish=87 | Mike: rank=86, season=2746605, pick=Russell Henley, week=0, finish=71",
+    "Splash mapping: Andrew: rank=120, season=1946310, pick=Schauffele, week=0, finish=- | Paul: rank=113, season=2061350, pick=-, week=0, finish=- | Dakota: rank=18, season=4910569, pick=-, week=0, finish=- | Mike: rank=86, season=2746605, pick=-, week=0, finish=-",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Masters Tournament",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/masters-tournament/R2026014/field",
     "PGA TOUR field entries: 91",
-    "Opened next-tournament view for Masters Tournament after finalizing Valero Texas Open.",
+    "Opened next-tournament view for Masters Tournament after finalizing The Masters.",
     "Weekly projection synthesis: 74 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Collin Morikawa, Jacob Bridgeman, Chris Gotterup, Cameron Young",
-    "Live Splash pick-history rows available; season totals derived directly from reconstructed event history.",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-masters-tournament-2026",
-    "PGA TOUR betting profiles matched: 38/39",
-    "Weekly projection synthesis: 45 field golfers modeled during recommendation generation"
+    "PGA TOUR betting profiles matched: 38/39"
   ],
-  "generatedAt": "2026-04-07T01:57:07.845Z",
+  "generatedAt": "2026-04-08T00:57:35.836Z",
   "primary": {
     "golfer": "Xander Schauffele",
     "projectedEarnings": 442325,
@@ -1850,9 +1849,9 @@
   ],
   "summary": {
     "totalAvailable": 39,
-    "eligibleCount": 34,
+    "eligibleCount": 36,
     "projectedCount": 36,
-    "nextTournamentFieldCount": 45,
+    "nextTournamentFieldCount": 47,
     "confidenceLabel": "High",
     "warnings": []
   },
@@ -5491,6 +5490,194 @@
       }
     },
     {
+      "golfer": "NICOLAI HOJGAARD",
+      "projectedEarnings": 272674,
+      "projectedDupCount": 0.02,
+      "futureValue": 535661,
+      "worldRank": 50,
+      "fedexPoints": 635,
+      "seasonEarnings": 2291827,
+      "inNextTournament": true,
+      "historicalStrength": 0.10018,
+      "courseHistoryScore": 0.415,
+      "last4Finishes": [
+        2,
+        55,
+        27,
+        24
+      ],
+      "sourceRefs": [
+        "OWGR fallback",
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2025",
+          "finish": "MC",
+          "roundScores": "76-74",
+          "toPar": "+6"
+        },
+        {
+          "year": "2024",
+          "finish": "T16",
+          "roundScores": "67-73-74-76",
+          "toPar": "+2"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "2",
+          "roundScores": "68-62-63-71",
+          "toPar": "-16",
+          "fedexPoints": 300
+        },
+        {
+          "date": "March 22, 2026",
+          "tournamentName": "Valspar Championship",
+          "result": "T55",
+          "roundScores": "69-70-74-72",
+          "toPar": "+1",
+          "fedexPoints": 5.2
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T27",
+          "roundScores": "71-74-71-69",
+          "toPar": "-3",
+          "fedexPoints": 39
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T24",
+          "roundScores": "72-73-70-71",
+          "toPar": "-2",
+          "fedexPoints": 36.333
+        },
+        {
+          "date": "March 1, 2026",
+          "tournamentName": "Cognizant Classic in The Palm Beaches",
+          "result": "T6",
+          "roundScores": "70-72-66-65",
+          "toPar": "-11",
+          "fedexPoints": 91.667
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "T3",
+          "roundScores": "66-70-65-68",
+          "toPar": "-15",
+          "fedexPoints": 125
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T22",
+          "roundScores": "70-67-72-69",
+          "toPar": "-10",
+          "fedexPoints": 37.3
+        },
+        {
+          "date": "Oct. 12, 2025",
+          "tournamentName": "Baycurrent Classic",
+          "result": "T14",
+          "roundScores": "68-70-72-64",
+          "toPar": "-10",
+          "fedexPoints": null
+        },
+        {
+          "date": "Oct. 5, 2025",
+          "tournamentName": "Sanderson Farms Championship",
+          "result": "MC",
+          "roundScores": "71-72",
+          "toPar": "-1",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 3, 2025",
+          "tournamentName": "Wyndham Championship",
+          "result": "T55",
+          "roundScores": "72-65-69-71",
+          "toPar": "-3",
+          "fedexPoints": 5.6
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 48,
+          "overall": 0.256,
+          "lastFive": 0.039
+        },
+        "approach": {
+          "overallRank": 12,
+          "overall": 0.712,
+          "lastFive": 0.706
+        },
+        "aroundTheGreen": {
+          "overallRank": 64,
+          "overall": 0.113,
+          "lastFive": 0.139
+        },
+        "putting": {
+          "overallRank": 22,
+          "overall": 0.488,
+          "lastFive": 0.457
+        },
+        "total": {
+          "overallRank": null,
+          "overall": 1.568,
+          "lastFive": 1.341
+        }
+      },
+      "performanceNotes": [
+        "Højgaard posted a Strokes Gained: Off-the-Tee average of 0.256 (48th) this season, while his average Driving Distance of 317.5 yards ranked ninth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Højgaard sported a 0.712 mark that ranked 12th on TOUR. He ranked 55th with a 67.26% Greens in Regulation rate.",
+        "On the greens, Højgaard delivered a 0.488 Strokes Gained: Putting mark this season, which placed him 22nd on TOUR. In addition, he ranked 53rd with a Putts Per Round average of 28.25, and he ranked 47th by breaking par 23.41% of the time.",
+        "Højgaard ranked 20th with 635 FedExCup Regular Season points and ranked 19th in Bogey Avoidance at 12.50%."
+      ],
+      "name": "NICOLAI HOJGAARD",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.5583953781914894,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 2, 55, 27, 24. Historical strength index: 0.10. Last-five SG Total: +1.341. Course history score: 0.41.",
+      "recentSummary": "Recent: Last four starts finished 2, 55, 27, 24 with mixed momentum entering this event. Last-five SG Total +1.341, Approach +0.706, Off-the-Tee +0.039.",
+      "historicalSummary": "Historical: 2025: MC | 2024: T16. Overall, historical performance at this event/course has been solid.",
+      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
+      "confidenceScore": 1,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.5583953781914894,
+        "expected": 0.07790685714285714,
+        "leverage": 0.800521097142857,
+        "preservation": 0.6058437570212767
+      },
+      "flags": [],
+      "rationale": {
+        "expected": 0.07790685714285714,
+        "uniqueness": 0.9933333333333333,
+        "futureCost": 0.2678305,
+        "recentForm": 0.73,
+        "historicalStrength": 0.10018,
+        "courseHistory": 0.415,
+        "strokesGained": 0.7388,
+        "eventHistoryTrend": 0.41489361702127664,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 2, 55, 27, 24. Historical strength index: 0.10. Last-five SG Total: +1.341. Course history score: 0.41."
+      }
+    },
+    {
       "golfer": "Marco Penge",
       "projectedEarnings": 202445,
       "projectedDupCount": 0.06,
@@ -6040,6 +6227,188 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 21, 13, 6, 27. Historical strength index: 0.13. Last-five SG Total: +0.918. Course history score: 0.26."
+      }
+    },
+    {
+      "golfer": "RASMUS HOJGAARD",
+      "projectedEarnings": 166804,
+      "projectedDupCount": 0.06,
+      "futureValue": 441308,
+      "worldRank": 48,
+      "fedexPoints": 166,
+      "seasonEarnings": 494257,
+      "inNextTournament": true,
+      "historicalStrength": 0.10134000000000001,
+      "courseHistoryScore": 0.483,
+      "last4Finishes": [
+        28,
+        68,
+        9,
+        24
+      ],
+      "sourceRefs": [
+        "OWGR fallback",
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2025",
+          "finish": "T32",
+          "roundScores": "73-67-75-74",
+          "toPar": "+1"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "T28",
+          "roundScores": "68-67-71-67",
+          "toPar": "-7",
+          "fedexPoints": 23.955
+        },
+        {
+          "date": "March 22, 2026",
+          "tournamentName": "Valspar Championship",
+          "result": "T68",
+          "roundScores": "71-71-74-71",
+          "toPar": "+3",
+          "fedexPoints": 3.06
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "MC",
+          "roundScores": "75-72",
+          "toPar": "+3",
+          "fedexPoints": null
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Puerto Rico Open",
+          "result": "MC",
+          "roundScores": "71-77",
+          "toPar": "+4",
+          "fedexPoints": null
+        },
+        {
+          "date": "March 1, 2026",
+          "tournamentName": "Cognizant Classic in The Palm Beaches",
+          "result": "T9",
+          "roundScores": "69-72-66-67",
+          "toPar": "-10",
+          "fedexPoints": 72.5
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "T24",
+          "roundScores": "68-70-66-72",
+          "toPar": "-8",
+          "fedexPoints": 34.75
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T30",
+          "roundScores": "74-67-70-69",
+          "toPar": "-8",
+          "fedexPoints": 23.125
+        },
+        {
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "T44",
+          "roundScores": "68-65-70-70",
+          "toPar": "-15",
+          "fedexPoints": 8.792
+        },
+        {
+          "date": "Oct. 12, 2025",
+          "tournamentName": "Baycurrent Classic",
+          "result": "T14",
+          "roundScores": "72-68-68-66",
+          "toPar": "-10",
+          "fedexPoints": null
+        },
+        {
+          "date": "Oct. 5, 2025",
+          "tournamentName": "Sanderson Farms Championship",
+          "result": "T3",
+          "roundScores": "69-69-66-65",
+          "toPar": "-19",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 61,
+          "overall": 0.172,
+          "lastFive": -0.069
+        },
+        "approach": {
+          "overallRank": 43,
+          "overall": 0.333,
+          "lastFive": 0.387
+        },
+        "aroundTheGreen": {
+          "overallRank": 134,
+          "overall": -0.273,
+          "lastFive": -0.24
+        },
+        "putting": {
+          "overallRank": 15,
+          "overall": 0.59,
+          "lastFive": 0.411
+        },
+        "total": {
+          "overallRank": 28,
+          "overall": 0.823,
+          "lastFive": 0.488
+        }
+      },
+      "performanceNotes": [
+        "Højgaard posts a Strokes Gained: Off-the-Tee average of 0.172 (61st) this season, while his average Driving Distance of 319.6 yards ranks sixth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Højgaard sports a 0.333 mark that ranks 43rd on TOUR. He ranks 32nd with a 68.85% Greens in Regulation rate.",
+        "On the greens, Højgaard delivers a 0.590 Strokes Gained: Putting mark this season, which places him 15th on TOUR. In addition, he ranks 66th by breaking par 22.62% of the time.",
+        "Højgaard has earned 166 FedExCup Regular Season points, ranking 83rd on TOUR."
+      ],
+      "name": "RASMUS HOJGAARD",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.5376180083333334,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 28, 68, 9, 24. Historical strength index: 0.10. Last-five SG Total: +0.488. Course history score: 0.48.",
+      "recentSummary": "Recent: Last four starts finished 28, 68, 9, 24 with mixed momentum entering this event. Last-five SG Total +0.488, Approach +0.387, Off-the-Tee -0.069.",
+      "historicalSummary": "Historical: 2025: T32. Overall, historical performance at this event/course has been solid.",
+      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
+      "confidenceScore": 1,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.5376180083333334,
+        "expected": 0.047658285714285716,
+        "leverage": 0.7662998257142858,
+        "preservation": 0.62724692
+      },
+      "flags": [],
+      "rationale": {
+        "expected": 0.047658285714285716,
+        "uniqueness": 0.98,
+        "futureCost": 0.220654,
+        "recentForm": 0.6775,
+        "historicalStrength": 0.10134000000000001,
+        "courseHistory": 0.483,
+        "strokesGained": 0.5935375,
+        "eventHistoryTrend": 0.4833333333333333,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 28, 68, 9, 24. Historical strength index: 0.10. Last-five SG Total: +0.488. Course history score: 0.48."
       }
     },
     {
@@ -8259,378 +8628,6 @@
       }
     },
     {
-      "golfer": "NICOLAI HOJGAARD",
-      "projectedEarnings": 226052,
-      "projectedDupCount": 0.06,
-      "futureValue": 358712,
-      "worldRank": 999,
-      "fedexPoints": 635,
-      "seasonEarnings": 2291827,
-      "inNextTournament": false,
-      "historicalStrength": 0.5,
-      "courseHistoryScore": 0.415,
-      "last4Finishes": [
-        2,
-        55,
-        27,
-        24
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "MC",
-          "roundScores": "76-74",
-          "toPar": "+6"
-        },
-        {
-          "year": "2024",
-          "finish": "T16",
-          "roundScores": "67-73-74-76",
-          "toPar": "+2"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "March 29, 2026",
-          "tournamentName": "Texas Children's Houston Open",
-          "result": "2",
-          "roundScores": "68-62-63-71",
-          "toPar": "-16",
-          "fedexPoints": 300
-        },
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T55",
-          "roundScores": "69-70-74-72",
-          "toPar": "+1",
-          "fedexPoints": 5.2
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T27",
-          "roundScores": "71-74-71-69",
-          "toPar": "-3",
-          "fedexPoints": 39
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T24",
-          "roundScores": "72-73-70-71",
-          "toPar": "-2",
-          "fedexPoints": 36.333
-        },
-        {
-          "date": "March 1, 2026",
-          "tournamentName": "Cognizant Classic in The Palm Beaches",
-          "result": "T6",
-          "roundScores": "70-72-66-65",
-          "toPar": "-11",
-          "fedexPoints": 91.667
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T3",
-          "roundScores": "66-70-65-68",
-          "toPar": "-15",
-          "fedexPoints": 125
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "T22",
-          "roundScores": "70-67-72-69",
-          "toPar": "-10",
-          "fedexPoints": 37.3
-        },
-        {
-          "date": "Oct. 12, 2025",
-          "tournamentName": "Baycurrent Classic",
-          "result": "T14",
-          "roundScores": "68-70-72-64",
-          "toPar": "-10",
-          "fedexPoints": null
-        },
-        {
-          "date": "Oct. 5, 2025",
-          "tournamentName": "Sanderson Farms Championship",
-          "result": "MC",
-          "roundScores": "71-72",
-          "toPar": "-1",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 3, 2025",
-          "tournamentName": "Wyndham Championship",
-          "result": "T55",
-          "roundScores": "72-65-69-71",
-          "toPar": "-3",
-          "fedexPoints": 5.6
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 48,
-          "overall": 0.256,
-          "lastFive": 0.039
-        },
-        "approach": {
-          "overallRank": 12,
-          "overall": 0.712,
-          "lastFive": 0.706
-        },
-        "aroundTheGreen": {
-          "overallRank": 64,
-          "overall": 0.113,
-          "lastFive": 0.139
-        },
-        "putting": {
-          "overallRank": 22,
-          "overall": 0.488,
-          "lastFive": 0.457
-        },
-        "total": {
-          "overallRank": null,
-          "overall": 1.568,
-          "lastFive": 1.341
-        }
-      },
-      "performanceNotes": [
-        "Højgaard posted a Strokes Gained: Off-the-Tee average of 0.256 (48th) this season, while his average Driving Distance of 317.5 yards ranked ninth on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Højgaard sported a 0.712 mark that ranked 12th on TOUR. He ranked 55th with a 67.26% Greens in Regulation rate.",
-        "On the greens, Højgaard delivered a 0.488 Strokes Gained: Putting mark this season, which placed him 22nd on TOUR. In addition, he ranked 53rd with a Putts Per Round average of 28.25, and he ranked 47th by breaking par 23.41% of the time.",
-        "Højgaard ranked 20th with 635 FedExCup Regular Season points and ranked 19th in Bogey Avoidance at 12.50%."
-      ],
-      "name": "NICOLAI HOJGAARD",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0.1549863531914894,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 2, 55, 27, 24. Historical strength index: 0.50. Last-five SG Total: +1.341. Course history score: 0.41.",
-      "recentSummary": "Recent: Last four starts finished 2, 55, 27, 24 with mixed momentum entering this event. Last-five SG Total +1.341, Approach +0.706, Off-the-Tee +0.039.",
-      "historicalSummary": "Historical: 2025: MC | 2024: T16. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.5499999999999999,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0.1549863531914894,
-        "expected": 0.06458628571428572,
-        "leverage": 0.7895898057142856,
-        "preservation": 0.6918324970212767
-      },
-      "flags": [
-        "Out of field"
-      ],
-      "rationale": {
-        "expected": 0.06458628571428572,
-        "uniqueness": 0.98,
-        "futureCost": 0.179356,
-        "recentForm": 0.73,
-        "historicalStrength": 0.5,
-        "courseHistory": 0.415,
-        "strokesGained": 0.7388,
-        "eventHistoryTrend": 0.41489361702127664,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 2, 55, 27, 24. Historical strength index: 0.50. Last-five SG Total: +1.341. Course history score: 0.41."
-      }
-    },
-    {
-      "golfer": "RASMUS HOJGAARD",
-      "projectedEarnings": 117119,
-      "projectedDupCount": 0.06,
-      "futureValue": 258136,
-      "worldRank": 999,
-      "fedexPoints": 166,
-      "seasonEarnings": 494257,
-      "inNextTournament": false,
-      "historicalStrength": 0.5,
-      "courseHistoryScore": 0.483,
-      "last4Finishes": [
-        28,
-        68,
-        9,
-        24
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "T32",
-          "roundScores": "73-67-75-74",
-          "toPar": "+1"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "March 29, 2026",
-          "tournamentName": "Texas Children's Houston Open",
-          "result": "T28",
-          "roundScores": "68-67-71-67",
-          "toPar": "-7",
-          "fedexPoints": 23.955
-        },
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T68",
-          "roundScores": "71-71-74-71",
-          "toPar": "+3",
-          "fedexPoints": 3.06
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "MC",
-          "roundScores": "75-72",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Puerto Rico Open",
-          "result": "MC",
-          "roundScores": "71-77",
-          "toPar": "+4",
-          "fedexPoints": null
-        },
-        {
-          "date": "March 1, 2026",
-          "tournamentName": "Cognizant Classic in The Palm Beaches",
-          "result": "T9",
-          "roundScores": "69-72-66-67",
-          "toPar": "-10",
-          "fedexPoints": 72.5
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T24",
-          "roundScores": "68-70-66-72",
-          "toPar": "-8",
-          "fedexPoints": 34.75
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "T30",
-          "roundScores": "74-67-70-69",
-          "toPar": "-8",
-          "fedexPoints": 23.125
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T44",
-          "roundScores": "68-65-70-70",
-          "toPar": "-15",
-          "fedexPoints": 8.792
-        },
-        {
-          "date": "Oct. 12, 2025",
-          "tournamentName": "Baycurrent Classic",
-          "result": "T14",
-          "roundScores": "72-68-68-66",
-          "toPar": "-10",
-          "fedexPoints": null
-        },
-        {
-          "date": "Oct. 5, 2025",
-          "tournamentName": "Sanderson Farms Championship",
-          "result": "T3",
-          "roundScores": "69-69-66-65",
-          "toPar": "-19",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 61,
-          "overall": 0.172,
-          "lastFive": -0.069
-        },
-        "approach": {
-          "overallRank": 43,
-          "overall": 0.333,
-          "lastFive": 0.387
-        },
-        "aroundTheGreen": {
-          "overallRank": 134,
-          "overall": -0.273,
-          "lastFive": -0.24
-        },
-        "putting": {
-          "overallRank": 15,
-          "overall": 0.59,
-          "lastFive": 0.411
-        },
-        "total": {
-          "overallRank": 28,
-          "overall": 0.823,
-          "lastFive": 0.488
-        }
-      },
-      "performanceNotes": [
-        "Højgaard posts a Strokes Gained: Off-the-Tee average of 0.172 (61st) this season, while his average Driving Distance of 319.6 yards ranks sixth on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Højgaard sports a 0.333 mark that ranks 43rd on TOUR. He ranks 32nd with a 68.85% Greens in Regulation rate.",
-        "On the greens, Højgaard delivers a 0.590 Strokes Gained: Putting mark this season, which places him 15th on TOUR. In addition, he ranks 66th by breaking par 22.62% of the time.",
-        "Højgaard has earned 166 FedExCup Regular Season points, ranking 83rd on TOUR."
-      ],
-      "name": "RASMUS HOJGAARD",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": false,
-      "score": 0.13625340833333338,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 28, 68, 9, 24. Historical strength index: 0.50. Last-five SG Total: +0.488. Course history score: 0.48.",
-      "recentSummary": "Recent: Last four starts finished 28, 68, 9, 24 with mixed momentum entering this event. Last-five SG Total +0.488, Approach +0.387, Off-the-Tee -0.069.",
-      "historicalSummary": "Historical: 2025: T32. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
-      "confidenceScore": 0.5499999999999999,
-      "confidenceLabel": "Low",
-      "decisionScores": {
-        "balanced": 0.13625340833333338,
-        "expected": 0.03346257142857143,
-        "leverage": 0.7640285114285714,
-        "preservation": 0.7147376400000002
-      },
-      "flags": [
-        "Out of field"
-      ],
-      "rationale": {
-        "expected": 0.03346257142857143,
-        "uniqueness": 0.98,
-        "futureCost": 0.129068,
-        "recentForm": 0.6775,
-        "historicalStrength": 0.5,
-        "courseHistory": 0.483,
-        "strokesGained": 0.5935375,
-        "eventHistoryTrend": 0.4833333333333333,
-        "preservePenalty": 0,
-        "fieldPenalty": 0.45,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 28, 68, 9, 24. Historical strength index: 0.50. Last-five SG Total: +0.488. Course history score: 0.48."
-      }
-    },
-    {
       "golfer": "NICOLAS ECHAVARRIA",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -9046,5 +9043,8 @@
         "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 47 OWGR, 464 FedExCup points, $1.6M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     }
+  ],
+  "warnings": [
+    "No projections returned. Recommendation engine will use fallback estimates."
   ]
 }

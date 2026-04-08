@@ -20,7 +20,8 @@
         "Si Woo Kim",
         "Corey Conners",
         "Ben Griffin",
-        "Maverick McNealy"
+        "Maverick McNealy",
+        "Schauffele"
       ],
       "available": [
         "Rory McIlroy",
@@ -568,9 +569,9 @@
     {
       "name": "RASMUS HOJGAARD",
       "worldRank": 48,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false
+      "fedexPoints": 166,
+      "seasonEarnings": 494257,
+      "inNextTournament": true
     },
     {
       "name": "Sami Valimaki",
@@ -582,9 +583,9 @@
     {
       "name": "NICOLAI HOJGAARD",
       "worldRank": 50,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": false
+      "fedexPoints": 635,
+      "seasonEarnings": 2291827,
+      "inNextTournament": true
     }
   ],
   "nextTournamentField": [
@@ -632,7 +633,9 @@
     "Kristoffer Reitan",
     "Ryan Fox",
     "Michael Brennan",
-    "Sami Valimaki"
+    "RASMUS HOJGAARD",
+    "Sami Valimaki",
+    "NICOLAI HOJGAARD"
   ],
   "filters": {
     "tiers": [
@@ -641,5 +644,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-04-06T01:26:28.709Z"
+  "updatedAt": "2026-04-08T00:57:33.136Z"
 }

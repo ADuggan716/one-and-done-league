@@ -592,6 +592,98 @@ function parseTournamentPicksFromStandingsHtml(html, subgroupMembers, memberAlia
   return [...dedup.values()];
 }
 
+function parseLeagueWideTournamentPicksFromStandingsHtml(html) {
+  const targetTable = extractTableById(html, "tournamentTable");
+  if (!targetTable) return [];
+
+  const rows = extractRows(targetTable);
+  const out = [];
+  let seenHeader = false;
+
+  for (const row of rows) {
+    const cells = extractCells(row.raw);
+    if (cells.length < 5) continue;
+
+    if (!seenHeader) {
+      const lower = cells.map((c) => normalizeKey(c));
+      if (lower.includes("entry name") && lower.includes("player picked")) {
+        seenHeader = true;
+      }
+      continue;
+    }
+
+    const entryName = String(cells[1] || "").trim();
+    const pick = String(cells[2] || "").trim();
+    const finish = String(cells[3] || "").trim() || null;
+    if (!entryName || !pick) continue;
+
+    out.push({
+      entryName,
+      pick,
+      earnings: matchMoneyLoose(cells[4]),
+      finish,
+      leagueRank: /^\d{1,4}$/.test((cells[0] || "").trim()) ? Number(cells[0].trim()) : null,
+    });
+  }
+
+  return out;
+}
+
+function aggregateLeagueWidePicks(rows = []) {
+  const byGolfer = new Map();
+
+  for (const row of rows) {
+    const pick = String(row?.pick || "").trim();
+    if (!pick) continue;
+    const key = normalizeKey(pick);
+    const current = byGolfer.get(key) || {
+      golfer: pick,
+      pickCount: 0,
+      finish: null,
+      earnings: 0,
+      sampleLeagueRank: null,
+    };
+
+    current.pickCount += 1;
+
+    if (!current.finish && row.finish) current.finish = row.finish;
+    if (!Number(current.earnings) && Number(row.earnings || 0)) current.earnings = Number(row.earnings || 0);
+    if (current.sampleLeagueRank == null && Number.isFinite(Number(row.leagueRank))) {
+      current.sampleLeagueRank = Number(row.leagueRank);
+    }
+
+    byGolfer.set(key, current);
+  }
+
+  return [...byGolfer.values()].sort((a, b) => {
+    if (b.pickCount !== a.pickCount) return b.pickCount - a.pickCount;
+    if (Number(b.earnings || 0) !== Number(a.earnings || 0)) return Number(b.earnings || 0) - Number(a.earnings || 0);
+    return a.golfer.localeCompare(b.golfer);
+  });
+}
+
+function buildLeagueWideEventSummary({
+  eventName,
+  tournamentRows,
+  countsTowardSeasonTotals = true,
+}) {
+  const canonicalEventName = canonicalizeEventName(eventName);
+  const eventMeta = lookupEventMetadata(canonicalEventName);
+  const leagueRows = Array.isArray(tournamentRows) ? aggregateLeagueWidePicks(tournamentRows) : [];
+
+  return {
+    eventId: normalizeEventId(canonicalEventName),
+    eventName: canonicalEventName,
+    tier: eventMeta.tier,
+    startDate: null,
+    countsTowardSeasonTotals,
+    totalPurse: eventMeta.totalPurse,
+    firstPrize: eventMeta.firstPrize,
+    totalEntrants: Array.isArray(tournamentRows) ? tournamentRows.filter((row) => row?.pick).length : 0,
+    rows: leagueRows,
+  };
+}
+
 function parseTournamentOptionsFromStandingsHtml(html) {
   const match = html.match(/<select[^>]*name=["']tournamentId["'][^>]*>([\s\S]*?)<\/select>/i);
   if (!match) return [];
@@ -804,6 +896,35 @@ export async function fetchSplashSportsData({
     pickHistoryByMember[member] = historyHtml;
   }
   let supplementalEvents = [];
+  let leagueWideHistory = standingsHtml
+    ? [buildLeagueWideEventSummary({
+      eventName,
+      tournamentRows: parseLeagueWideTournamentPicksFromStandingsHtml(standingsHtml),
+      countsTowardSeasonTotals: false,
+    })]
+    : [];
+
+  if (standingsHtml) {
+    const tournamentOptions = parseTournamentOptionsFromStandingsHtml(standingsHtml)
+      .filter((option) => option?.value && !option.disabled);
+    const selectedLabel = tournamentOptions.find((option) => option.selected)?.label;
+
+    for (const option of tournamentOptions) {
+      if (option.label === selectedLabel) continue;
+      const optionStandingsUrl = `${base}/Golf/PickX/reports/pickone/standings_v2.cfm?tournamentId=${encodeURIComponent(option.value)}`;
+      const optionRes = await fetchOrThrow(optionStandingsUrl, { headers }, `Splash standings (${option.label})`);
+      if (!optionRes.ok) continue;
+      const optionHtml = await optionRes.text();
+      if (looksLikeAuthPage(optionHtml)) continue;
+      const optionRows = parseLeagueWideTournamentPicksFromStandingsHtml(optionHtml);
+      if (!optionRows.length) continue;
+      leagueWideHistory.push(buildLeagueWideEventSummary({
+        eventName: option.label,
+        tournamentRows: optionRows,
+        countsTowardSeasonTotals: true,
+      }));
+    }
+  }
 
   if (standingsHtml && standingsPagePicks.length < subgroupMembers.length) {
     const tournamentOptions = parseTournamentOptionsFromStandingsHtml(standingsHtml);
@@ -852,6 +973,7 @@ export async function fetchSplashSportsData({
     picks,
     standings,
     supplementalEvents,
+    leagueWideHistory,
     pickHistory: Object.fromEntries(
       Object.entries(pickHistoryByMember).map(([member, html]) => [member, parsePickHistoryHtml(html, member)])
     ),
@@ -906,6 +1028,13 @@ export function parseSplashSportsHtml({
   const standings = standingsHtml
     ? parseStandingsFromHtml(standingsHtml, subgroupMembers, memberAliases)
     : [];
+  const leagueWideHistory = standingsHtml
+    ? [buildLeagueWideEventSummary({
+      eventName,
+      tournamentRows: parseLeagueWideTournamentPicksFromStandingsHtml(standingsHtml),
+      countsTowardSeasonTotals: false,
+    })]
+    : [];
   const pickHistory = Object.fromEntries(
     Object.entries(pickHistoryByMember || {}).map(([member, html]) => [member, parsePickHistoryHtml(html, member)])
   );
@@ -925,6 +1054,7 @@ export function parseSplashSportsHtml({
     leagueName,
     picks,
     standings,
+    leagueWideHistory,
     pickHistory,
     subgroupMembers,
   });
@@ -939,6 +1069,7 @@ export function buildSplashSnapshot({
   picks,
   standings,
   supplementalEvents = [],
+  leagueWideHistory = [],
   pickHistory = {},
   subgroupMembers,
 }) {
@@ -1100,11 +1231,13 @@ export function buildSplashSnapshot({
       lastYearWinner: eventMeta.lastYearWinner,
     },
     projections: [],
+    leagueWideHistory,
     sourceNotes: [
       `Splash entries source: ${entriesUrl}`,
       `Splash standings source: ${standingsUrl}`,
       `Splash parsed picks: ${picks.length}`,
       `Splash parsed standings rows: ${standings.length}`,
+      `Splash parsed league-wide event summaries: ${leagueWideHistory.length}`,
       `Splash parsed history rows: ${Object.values(pickHistory).reduce((sum, rows) => sum + rows.length, 0)}`,
       `Splash mapping: ${mappingDebug.join(" | ")}`,
       ...eventMeta.sourceNotes,
@@ -1169,6 +1302,7 @@ export function shouldIncludeCurrentEventSnapshot(eventName, mergedPicks) {
 export function normalizeSnapshot(raw, subgroupMembers) {
   const warnings = [];
   const events = Array.isArray(raw.events) ? raw.events : [];
+  const leagueWideHistory = Array.isArray(raw.leagueWideHistory) ? raw.leagueWideHistory : [];
 
   if (!raw.league) warnings.push("Missing league context in upstream response.");
   if (events.length === 0) warnings.push("No event history returned; dashboard will show empty season state.");
@@ -1241,6 +1375,22 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       latestEventId: raw.league?.latestEventId || normalizedEvents.at(-1)?.id || null,
     },
     events: normalizedEvents,
+    leagueWideHistory: leagueWideHistory.map((event) => ({
+      eventId: normalizeEventId(event.eventId || event.eventName || event.name),
+      eventName: canonicalizeEventName(event.eventName || event.name),
+      tier: event.tier || "regular",
+      startDate: event.startDate || null,
+      countsTowardSeasonTotals: event.countsTowardSeasonTotals !== false,
+      totalPurse: money(event.totalPurse),
+      firstPrize: money(event.firstPrize),
+      totalEntrants: Number(event.totalEntrants || 0),
+      rows: (event.rows || []).map((row) => ({
+        golfer: row.golfer || null,
+        pickCount: Number(row.pickCount || 0),
+        finish: row.finish ?? null,
+        earnings: money(row.earnings),
+      })),
+    })),
     nextTournament,
     projections,
     sourceNotes: raw.sourceNotes || [],

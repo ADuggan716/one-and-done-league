@@ -3,8 +3,10 @@ const MEMBERS = ["Andrew", "Paul", "Dakota", "Mike"];
 const state = {
   seasonSort: { key: "groupRank", dir: "asc" },
   weeklySort: { key: "earnings", dir: "desc" },
+  leagueWideSort: { key: "pickCount", dir: "desc" },
   availabilitySort: { key: "worldRank", dir: "asc" },
   selectedEventId: "",
+  selectedLeagueWideEventId: "",
   poolSearch: "",
   scope: "all",
 };
@@ -43,6 +45,16 @@ function sortComparator(sort) {
     if (typeof av === "number" && typeof bv === "number") return (av - bv) * factor;
     return String(av ?? "").localeCompare(String(bv ?? "")) * factor;
   };
+}
+
+function parseFinishRank(finish) {
+  if (finish === null || finish === undefined || finish === "") return null;
+  const raw = String(finish).trim().toUpperCase();
+  if (!raw) return null;
+  if (raw === "MC" || raw === "MDF" || raw === "WD" || raw === "DQ") return 999;
+  const cleaned = raw.startsWith("T") ? raw.slice(1) : raw;
+  const n = Number(cleaned);
+  return Number.isFinite(n) ? n : null;
 }
 
 function sortHeader(label, key, sortState) {
@@ -247,6 +259,101 @@ function renderWeeklyTable(snapshot) {
   bindSort("weeklyTable", state.weeklySort, () => renderWeeklyTable(snapshot));
 }
 
+function renderLeagueWideEventSelect(snapshot) {
+  const select = document.getElementById("leagueWideEventSelect");
+  const events = dedupeEventsById(snapshot.leagueWidePickHistory || []);
+  const liveEventId = events.find(
+    (event) =>
+      event.countsTowardSeasonTotals === false &&
+      normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name)
+  )?.eventId;
+
+  if (!state.selectedLeagueWideEventId && events.length) {
+    state.selectedLeagueWideEventId = liveEventId || events[0].eventId;
+  }
+
+  select.innerHTML = events.map((event) => `<option value="${event.eventId}">${event.eventName}</option>`).join("");
+
+  if (![...select.options].some((option) => option.value === state.selectedLeagueWideEventId) && select.options.length) {
+    state.selectedLeagueWideEventId = liveEventId && [...select.options].some((option) => option.value === liveEventId)
+      ? liveEventId
+      : select.options[0].value;
+  }
+
+  select.value = state.selectedLeagueWideEventId;
+  select.addEventListener("change", () => {
+    state.selectedLeagueWideEventId = select.value;
+    renderLeagueWideTable(snapshot);
+  });
+}
+
+function renderLeagueWideTable(snapshot) {
+  const table = document.getElementById("leagueWideTable");
+  const summary = document.getElementById("leagueWideSummary");
+  const event = dedupeEventsById(snapshot.leagueWidePickHistory || []).find((item) => item.eventId === state.selectedLeagueWideEventId);
+
+  if (!event) {
+    summary.innerHTML = "";
+    table.innerHTML = "<tbody><tr><td>No league-wide pick data found.</td></tr></tbody>";
+    return;
+  }
+
+  const selectedEventIsLive =
+    event.countsTowardSeasonTotals === false &&
+    normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name);
+  const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
+  const earningsLabel = selectedEventIsLive ? "Current Earnings" : "Earnings";
+  const topPickCount = Math.max(0, ...((event.rows || []).map((row) => Number(row.pickCount || 0))));
+  const rows = [...(event.rows || [])]
+    .map((row) => ({
+      ...row,
+      finishRank: parseFinishRank(row.finish),
+      isMostChosen: Number(row.pickCount || 0) > 0 && Number(row.pickCount || 0) === topPickCount,
+    }))
+    .sort((a, b) => {
+      if (state.leagueWideSort.key === "finish") {
+        const av = a.finishRank ?? 9999;
+        const bv = b.finishRank ?? 9999;
+        return (av - bv) * (state.leagueWideSort.dir === "asc" ? 1 : -1);
+      }
+      return sortComparator(state.leagueWideSort)(a, b);
+    });
+
+  summary.innerHTML = [
+    `<span class="summary-pill"><strong>${event.totalEntrants || rows.reduce((sum, row) => sum + Number(row.pickCount || 0), 0)}</strong> tracked picks</span>`,
+    `<span class="summary-pill"><strong>${rows.length}</strong> golfers chosen</span>`,
+    rows[0] ? `<span class="summary-pill"><strong>${rows[0].golfer}</strong> most chosen at ${rows[0].pickCount}</span>` : "",
+  ].join("");
+
+  table.innerHTML = `
+    <thead>
+      <tr>
+        <th class="sticky-col sticky-col-head">${sortHeader("Golfer", "golfer", state.leagueWideSort)}</th>
+        <th>${sortHeader("Pick Count", "pickCount", state.leagueWideSort)}</th>
+        <th>${sortHeader(finishLabel, "finish", state.leagueWideSort)}</th>
+        <th>${sortHeader(earningsLabel, "earnings", state.leagueWideSort)}</th>
+      </tr>
+    </thead>
+    <tbody>
+      ${rows.map((row) => `
+        <tr class="${row.isMostChosen ? "league-wide-leader-row" : ""}">
+          <td class="sticky-col sticky-col-body">
+            <div class="league-wide-golfer-cell">
+              <span>${row.golfer || ""}</span>
+              ${row.isMostChosen ? '<span class="leader-badge">Most chosen</span>' : ""}
+            </div>
+          </td>
+          <td><strong>${row.pickCount || 0}</strong></td>
+          <td>${row.finish ?? ""}</td>
+          <td>${row.earnings ? formatCurrency(row.earnings) : ""}</td>
+        </tr>
+      `).join("")}
+    </tbody>
+  `;
+
+  bindSort("leagueWideTable", state.leagueWideSort, () => renderLeagueWideTable(snapshot));
+}
+
 function dedupeEventsById(events) {
   const byId = new Map();
   for (const event of events || []) {
@@ -443,6 +550,8 @@ async function init() {
   renderSeasonTable(snapshot);
   renderEventSelect(snapshot);
   renderWeeklyTable(snapshot);
+  renderLeagueWideEventSelect(snapshot);
+  renderLeagueWideTable(snapshot);
   renderSeasonWeeklyTable(snapshot);
   renderAvailabilityMatrix(pool);
   bindAvailabilityControls(pool);

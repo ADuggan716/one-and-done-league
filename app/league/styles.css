@@ -150,6 +150,21 @@ body {
   letter-spacing: -0.01em;
 }
 
+.section-head {
+  display: flex;
+  justify-content: space-between;
+  align-items: end;
+  gap: 12px;
+  margin-bottom: 8px;
+}
+
+.section-sub {
+  margin: 0;
+  color: var(--muted);
+  font-size: 0.9rem;
+  max-width: 760px;
+}
+
 .split {
   display: grid;
   grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
@@ -247,6 +262,33 @@ tr:hover .sticky-col-body {
   background: linear-gradient(90deg, #f4fbfb, #faffff);
 }
 
+.league-wide-leader-row td {
+  background: linear-gradient(90deg, #f7fdfb, #eef9f5);
+}
+
+.league-wide-leader-row .sticky-col-body {
+  background: linear-gradient(90deg, #f7fdfb, #eef9f5);
+}
+
+.league-wide-golfer-cell {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 220px;
+}
+
+.leader-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  background: linear-gradient(135deg, #0d3b66, #00a896);
+  color: #f8fffd;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+}
+
 th button {
   border: none;
   background: transparent;
@@ -270,6 +312,26 @@ th button {
   color: var(--muted);
   font-size: 0.84rem;
   margin-top: 4px;
+}
+
+.mini-summary {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+
+.summary-pill {
+  border: 1px solid var(--line);
+  background: linear-gradient(180deg, #fbfffe, #eef8f6);
+  border-radius: 999px;
+  padding: 8px 12px;
+  font-size: 0.9rem;
+  color: var(--muted);
+}
+
+.summary-pill strong {
+  color: var(--ink);
 }
 
 .member-week {
