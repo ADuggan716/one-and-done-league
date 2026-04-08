@@ -289,6 +289,41 @@ tr:hover .sticky-col-body {
   letter-spacing: 0.02em;
 }
 
+.member-badge {
+  display: inline-flex;
+  align-items: center;
+  padding: 4px 8px;
+  border-radius: 999px;
+  font-size: 0.72rem;
+  font-weight: 600;
+  letter-spacing: 0.02em;
+  border: 1px solid transparent;
+}
+
+.member-badge-andrew {
+  background: #dceffd;
+  border-color: #a9d3f6;
+  color: #0d3b66;
+}
+
+.member-badge-paul {
+  background: #fce8cf;
+  border-color: #efc998;
+  color: #8a4b08;
+}
+
+.member-badge-dakota {
+  background: #e4f7ea;
+  border-color: #b8e3c4;
+  color: #17643d;
+}
+
+.member-badge-mike {
+  background: #f8e1ec;
+  border-color: #eab9cf;
+  color: #8a2854;
+}
+
 th button {
   border: none;
   background: transparent;

@@ -36,6 +36,27 @@ function normalizeEventKey(name) {
     .replace(/[^a-z0-9]/g, "");
 }
 
+function canonicalDisplayEventKey(name) {
+  const key = normalizeEventKey(name);
+  if (key === "themasters" || key === "masterstournament") return "masterstournament";
+  if (key === "theplayerschampionship" || key === "playerschampionship" || key === "theplayers" || key === "players") return "playerschampionship";
+  if (key === "houstonopen" || key === "texaschildrenshoustonopen") return "texaschildrenshoustonopen";
+  return key;
+}
+
+function compareDisplayEventRichness(left, right) {
+  const leftRows = left?.rows || [];
+  const rightRows = right?.rows || [];
+  const leftSignal = leftRows.reduce((sum, row) => sum + Number(Boolean(row?.pick)) + Number(Boolean(row?.finish)) + Number(Number(row?.earnings || 0) > 0), 0);
+  const rightSignal = rightRows.reduce((sum, row) => sum + Number(Boolean(row?.pick)) + Number(Boolean(row?.finish)) + Number(Number(row?.earnings || 0) > 0), 0);
+
+  if (leftSignal !== rightSignal) return leftSignal - rightSignal;
+  if (Number(Boolean(left?.startDate)) !== Number(Boolean(right?.startDate))) {
+    return Number(Boolean(left?.startDate)) - Number(Boolean(right?.startDate));
+  }
+  return Number(left?.countsTowardSeasonTotals !== false) - Number(right?.countsTowardSeasonTotals !== false);
+}
+
 function sortComparator(sort) {
   return (a, b) => {
     const av = a[sort.key];
@@ -55,6 +76,19 @@ function parseFinishRank(finish) {
   const cleaned = raw.startsWith("T") ? raw.slice(1) : raw;
   const n = Number(cleaned);
   return Number.isFinite(n) ? n : null;
+}
+
+function eventRowsForDisplay(events) {
+  const byName = new Map();
+  for (const event of dedupeEventsById(events || [])) {
+    const key = canonicalDisplayEventKey(event?.eventName || event?.name);
+    if (!key) continue;
+    const current = byName.get(key);
+    if (!current || compareDisplayEventRichness(event, current) > 0) {
+      byName.set(key, event);
+    }
+  }
+  return [...byName.values()];
 }
 
 function sortHeader(label, key, sortState) {
@@ -189,7 +223,7 @@ function renderSeasonTable(snapshot) {
 
 function renderEventSelect(snapshot) {
   const select = document.getElementById("eventSelect");
-  const events = dedupeEventsById(snapshot.weeklyComparison || []);
+  const events = eventRowsForDisplay(snapshot.weeklyComparison || []);
   const liveEventId = events.find(
     (event) =>
       event.countsTowardSeasonTotals === false &&
@@ -217,7 +251,7 @@ function renderEventSelect(snapshot) {
 
 function renderWeeklyTable(snapshot) {
   const table = document.getElementById("weeklyTable");
-  const event = dedupeEventsById(snapshot.weeklyComparison || []).find((e) => e.eventId === state.selectedEventId);
+  const event = eventRowsForDisplay(snapshot.weeklyComparison || []).find((e) => e.eventId === state.selectedEventId);
 
   if (!event) {
     table.innerHTML = "<tbody><tr><td>No event data found.</td></tr></tbody>";
@@ -261,7 +295,7 @@ function renderWeeklyTable(snapshot) {
 
 function renderLeagueWideEventSelect(snapshot) {
   const select = document.getElementById("leagueWideEventSelect");
-  const events = dedupeEventsById(snapshot.leagueWidePickHistory || []);
+  const events = eventRowsForDisplay(snapshot.leagueWidePickHistory || []);
   const liveEventId = events.find(
     (event) =>
       event.countsTowardSeasonTotals === false &&
@@ -290,7 +324,7 @@ function renderLeagueWideEventSelect(snapshot) {
 function renderLeagueWideTable(snapshot) {
   const table = document.getElementById("leagueWideTable");
   const summary = document.getElementById("leagueWideSummary");
-  const event = dedupeEventsById(snapshot.leagueWidePickHistory || []).find((item) => item.eventId === state.selectedLeagueWideEventId);
+  const event = eventRowsForDisplay(snapshot.leagueWidePickHistory || []).find((item) => item.eventId === state.selectedLeagueWideEventId);
 
   if (!event) {
     summary.innerHTML = "";
@@ -303,12 +337,23 @@ function renderLeagueWideTable(snapshot) {
     normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Current Earnings" : "Earnings";
+  const subgroupRows = eventRowsForDisplay(snapshot.weeklyComparison || [])
+    .find((item) => normalizeEventKey(item.eventName) === normalizeEventKey(event.eventName))?.rows || [];
+  const subgroupPickMap = new Map();
+  for (const row of subgroupRows) {
+    const golferKey = normalizeGolferName(row.pick);
+    if (!golferKey) continue;
+    const current = subgroupPickMap.get(golferKey) || [];
+    current.push(row.member);
+    subgroupPickMap.set(golferKey, current);
+  }
   const topPickCount = Math.max(0, ...((event.rows || []).map((row) => Number(row.pickCount || 0))));
   const rows = [...(event.rows || [])]
     .map((row) => ({
       ...row,
       finishRank: parseFinishRank(row.finish),
       isMostChosen: Number(row.pickCount || 0) > 0 && Number(row.pickCount || 0) === topPickCount,
+      subgroupMembers: subgroupPickMap.get(normalizeGolferName(row.golfer)) || [],
     }))
     .sort((a, b) => {
       if (state.leagueWideSort.key === "finish") {
@@ -341,6 +386,7 @@ function renderLeagueWideTable(snapshot) {
             <div class="league-wide-golfer-cell">
               <span>${row.golfer || ""}</span>
               ${row.isMostChosen ? '<span class="leader-badge">Most chosen</span>' : ""}
+              ${row.subgroupMembers.map((member) => `<span class="member-badge member-badge-${member.toLowerCase()}">${member}</span>`).join("")}
             </div>
           </td>
           <td><strong>${row.pickCount || 0}</strong></td>
@@ -377,7 +423,7 @@ function renderSeasonWeeklyTable(snapshot) {
   const table = document.getElementById("seasonWeeklyTable");
   const currentEventId = snapshot.event?.id || null;
   const isLiveCurrentEvent = snapshot.event?.countsTowardSeasonTotals === false;
-  const events = dedupeEventsById(snapshot.weeklyComparison || []).filter((event) => {
+  const events = eventRowsForDisplay(snapshot.weeklyComparison || []).filter((event) => {
     if (isLiveCurrentEvent && currentEventId && event.eventId === currentEventId) return false;
     return true;
   });
