@@ -99,6 +99,19 @@ function eventRowsForDisplay(events) {
   return [...byName.values()];
 }
 
+function orderedEventSelectorRows(events, nextTournamentName) {
+  const displayEvents = eventRowsForDisplay(events || []);
+  const liveEvent = displayEvents.find(
+    (event) =>
+      event.countsTowardSeasonTotals === false &&
+      canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(nextTournamentName)
+  );
+  const historyEvents = displayEvents
+    .filter((event) => !liveEvent || event.eventId !== liveEvent.eventId)
+    .reverse();
+  return liveEvent ? [liveEvent, ...historyEvents] : historyEvents;
+}
+
 function sortHeader(label, key, sortState) {
   const arrow = sortState.key === key ? (sortState.dir === "asc" ? " ▲" : " ▼") : "";
   return `<button data-sort-key="${key}">${label}${arrow}</button>`;
@@ -232,15 +245,11 @@ function renderSeasonTable(snapshot) {
 
 function renderEventSelect(snapshot) {
   const select = document.getElementById("eventSelect");
-  const events = eventRowsForDisplay(snapshot.weeklyComparison || []);
-  const liveEventId = events.find(
-    (event) =>
-      event.countsTowardSeasonTotals === false &&
-      normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name)
-  )?.eventId;
+  const events = orderedEventSelectorRows(snapshot.weeklyComparison || [], snapshot.nextTournament?.name);
+  const liveEventId = events.find((event) => event.countsTowardSeasonTotals === false)?.eventId;
 
   if (!state.selectedEventId && events.length) {
-    state.selectedEventId = liveEventId || events.at(-1).eventId;
+    state.selectedEventId = liveEventId || events[0].eventId;
   }
 
   select.innerHTML = events.map((event) => `<option value="${event.eventId}">${event.eventName}</option>`).join("");
@@ -304,12 +313,8 @@ function renderWeeklyTable(snapshot) {
 
 function renderLeagueWideEventSelect(snapshot) {
   const select = document.getElementById("leagueWideEventSelect");
-  const events = eventRowsForDisplay(snapshot.leagueWidePickHistory || []);
-  const liveEventId = events.find(
-    (event) =>
-      event.countsTowardSeasonTotals === false &&
-      normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name)
-  )?.eventId;
+  const events = orderedEventSelectorRows(snapshot.leagueWidePickHistory || [], snapshot.nextTournament?.name);
+  const liveEventId = events.find((event) => event.countsTowardSeasonTotals === false)?.eventId;
 
   if (!state.selectedLeagueWideEventId && events.length) {
     state.selectedLeagueWideEventId = liveEventId || events[0].eventId;
