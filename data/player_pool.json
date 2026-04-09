@@ -1,10 +1,10 @@
 {
-  "eventId": "masters-tournament",
+  "eventId": "the-masters",
   "tournamentName": "Masters Tournament",
-  "eventTier": "major",
+  "eventTier": "regular",
   "currentEventMeta": {
     "totalPurse": 0,
-    "firstPrize": 4200000
+    "firstPrize": 0
   },
   "members": {
     "Andrew": {
@@ -21,7 +21,7 @@
         "Corey Conners",
         "Ben Griffin",
         "Maverick McNealy",
-        "Schauffele"
+        "Xander Schauffele"
       ],
       "available": [
         "Rory McIlroy",
@@ -30,7 +30,6 @@
         "Chris Gotterup",
         "Russell Henley",
         "Robert MacIntyre",
-        "Xander Schauffele",
         "Sepp Straka",
         "Justin Thomas",
         "Harris English",
@@ -78,7 +77,8 @@
         "Collin Morikawa",
         "Jacob Bridgeman",
         "Ryan Fox",
-        "Tommy Fleetwood"
+        "Tommy Fleetwood",
+        "Jon Rahm"
       ],
       "available": [
         "Rory McIlroy",
@@ -134,10 +134,10 @@
         "Ludvig Aberg",
         "Jacob Bridgeman",
         "Ryan Gerard",
-        "Sepp Straka"
+        "Sepp Straka",
+        "Scottie Scheffler"
       ],
       "available": [
-        "Scottie Scheffler",
         "Tommy Fleetwood",
         "Justin Rose",
         "Chris Gotterup",
@@ -190,7 +190,8 @@
         "Sepp Straka",
         "Viktor Hovland",
         "Min Woo Lee",
-        "Russell Henley"
+        "Russell Henley",
+        "Jon Rahm"
       ],
       "available": [
         "Rory McIlroy",
@@ -254,8 +255,8 @@
     {
       "name": "Tommy Fleetwood",
       "worldRank": 3,
-      "fedexPoints": 702,
-      "seasonEarnings": 2267950,
+      "fedexPoints": 770,
+      "seasonEarnings": 2505600,
       "inNextTournament": true
     },
     {
@@ -289,15 +290,15 @@
     {
       "name": "Robert MacIntyre",
       "worldRank": 8,
-      "fedexPoints": 572,
-      "seasonEarnings": 2168475,
+      "fedexPoints": 780,
+      "seasonEarnings": 2910008,
       "inNextTournament": true
     },
     {
       "name": "J.J. Spaun",
       "worldRank": 9,
-      "fedexPoints": 75,
-      "seasonEarnings": 309772,
+      "fedexPoints": 575,
+      "seasonEarnings": 2073772,
       "inNextTournament": true
     },
     {
@@ -317,8 +318,8 @@
     {
       "name": "Hideki Matsuyama",
       "worldRank": 12,
-      "fedexPoints": 650,
-      "seasonEarnings": 2310720,
+      "fedexPoints": 687,
+      "seasonEarnings": 2406270,
       "inNextTournament": true
     },
     {
@@ -345,8 +346,8 @@
     {
       "name": "Alex Noren",
       "worldRank": 16,
-      "fedexPoints": 198,
-      "seasonEarnings": 825450,
+      "fedexPoints": 223,
+      "seasonEarnings": 885475,
       "inNextTournament": true
     },
     {
@@ -394,15 +395,15 @@
     {
       "name": "Ludvig Åberg",
       "worldRank": 23,
-      "fedexPoints": 685,
-      "seasonEarnings": 2462875,
+      "fedexPoints": 790,
+      "seasonEarnings": 2841400,
       "inNextTournament": true
     },
     {
       "name": "Maverick McNealy",
       "worldRank": 24,
-      "fedexPoints": 312,
-      "seasonEarnings": 1148725,
+      "fedexPoints": 349,
+      "seasonEarnings": 1244275,
       "inNextTournament": true
     },
     {
@@ -429,8 +430,8 @@
     {
       "name": "Si Woo Kim",
       "worldRank": 28,
-      "fedexPoints": 640,
-      "seasonEarnings": 2309038,
+      "fedexPoints": 707,
+      "seasonEarnings": 2546688,
       "inNextTournament": true
     },
     {
@@ -478,8 +479,8 @@
     {
       "name": "Marco Penge",
       "worldRank": 35,
-      "fedexPoints": 191,
-      "seasonEarnings": 738458,
+      "fedexPoints": 228,
+      "seasonEarnings": 834008,
       "inNextTournament": true
     },
     {
@@ -513,8 +514,8 @@
     {
       "name": "Matt McCarty",
       "worldRank": 40,
-      "fedexPoints": 301,
-      "seasonEarnings": 1060663,
+      "fedexPoints": 314,
+      "seasonEarnings": 1096473,
       "inNextTournament": true
     },
     {
@@ -527,15 +528,15 @@
     {
       "name": "Andrew Novak",
       "worldRank": 42,
-      "fedexPoints": 139,
-      "seasonEarnings": 518507,
+      "fedexPoints": 190,
+      "seasonEarnings": 677757,
       "inNextTournament": true
     },
     {
       "name": "Kristoffer Reitan",
       "worldRank": 43,
-      "fedexPoints": 88,
-      "seasonEarnings": 275110,
+      "fedexPoints": 156,
+      "seasonEarnings": 512760,
       "inNextTournament": true
     },
     {
@@ -576,8 +577,8 @@
     {
       "name": "Sami Valimaki",
       "worldRank": 49,
-      "fedexPoints": 59,
-      "seasonEarnings": 230330,
+      "fedexPoints": 110,
+      "seasonEarnings": 389580,
       "inNextTournament": true
     },
     {
@@ -644,5 +645,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-04-08T00:57:33.136Z"
+  "updatedAt": "2026-04-09T12:00:13.384Z"
 }

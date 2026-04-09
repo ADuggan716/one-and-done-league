@@ -11,68 +11,68 @@
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": "Schauffele",
+        "pick": "Xander Schauffele",
         "earnings": 0,
         "seasonEarnings": 1946310,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 120
       },
       {
         "member": "Paul",
-        "pick": null,
+        "pick": "Jon Rahm",
         "earnings": 0,
         "seasonEarnings": 2061350,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
-        "pick": null,
+        "pick": "Scottie Scheffler",
         "earnings": 0,
         "seasonEarnings": 4910569,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 18
       },
       {
         "member": "Mike",
-        "pick": null,
+        "pick": "Jon Rahm",
         "earnings": 0,
         "seasonEarnings": 2746605,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 86
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": "Schauffele",
+        "golfer": "Xander Schauffele",
         "earnings": 0,
         "seasonEarnings": 1946310,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 120
       },
       {
         "member": "Paul",
-        "golfer": null,
+        "golfer": "Jon Rahm",
         "earnings": 0,
         "seasonEarnings": 2061350,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
-        "golfer": null,
+        "golfer": "Scottie Scheffler",
         "earnings": 0,
         "seasonEarnings": 4910569,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 18
       },
       {
         "member": "Mike",
-        "golfer": null,
+        "golfer": "Jon Rahm",
         "earnings": 0,
         "seasonEarnings": 2746605,
-        "finish": null,
+        "finish": "$0",
         "leagueRank": 86
       }
     ]
@@ -85,50 +85,45 @@
     "totalPurse": 0,
     "firstPrize": 4200000,
     "lastYearWinner": "Rory McIlroy",
-    "status": "UPCOMING"
+    "status": "IN_PROGRESS"
   },
   "strategy": "balanced-weekly-pick-with-tradeoffs",
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 1",
+    "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 13",
-    "Splash parsed history rows: 48",
-    "Splash mapping: Andrew: rank=120, season=1946310, pick=Schauffele, week=0, finish=- | Paul: rank=113, season=2061350, pick=-, week=0, finish=- | Dakota: rank=18, season=4910569, pick=-, week=0, finish=- | Mike: rank=86, season=2746605, pick=-, week=0, finish=-",
-    "PGA TOUR FedExCup: 197 golfer records loaded",
+    "Splash parsed history rows: 52",
+    "Splash mapping: Andrew: rank=120, season=1946310, pick=Xander Schauffele, week=0, finish=$0 | Paul: rank=113, season=2061350, pick=Jon Rahm, week=0, finish=$0 | Dakota: rank=18, season=4910569, pick=Scottie Scheffler, week=0, finish=$0 | Mike: rank=86, season=2746605, pick=Jon Rahm, week=0, finish=$0",
+    "PGA TOUR FedExCup: 201 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Masters Tournament",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/masters-tournament/R2026014/field",
     "PGA TOUR field entries: 91",
-    "Opened next-tournament view for Masters Tournament after finalizing The Masters.",
-    "Weekly projection synthesis: 74 field golfers received modeled payout estimates",
+    "Weekly projection synthesis: 78 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Collin Morikawa, Jacob Bridgeman, Chris Gotterup, Cameron Young",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-masters-tournament-2026",
-    "PGA TOUR betting profiles matched: 38/39"
+    "PGA TOUR betting profiles matched: 37/38"
   ],
-  "generatedAt": "2026-04-08T00:57:35.836Z",
+  "generatedAt": "2026-04-09T12:00:15.636Z",
   "primary": {
-    "golfer": "Xander Schauffele",
-    "projectedEarnings": 442325,
-    "projectedDupCount": 0.16,
-    "futureValue": 826201,
-    "worldRank": 10,
-    "fedexPoints": 741,
-    "seasonEarnings": 3137238,
+    "golfer": "PATRICK REED",
+    "projectedEarnings": 213426,
+    "projectedDupCount": 0.06,
+    "futureValue": 565957,
+    "worldRank": 18,
+    "fedexPoints": 0,
+    "seasonEarnings": 0,
     "inNextTournament": true,
-    "historicalStrength": 0.20656500000000003,
-    "courseHistoryScore": 0.761,
+    "historicalStrength": 0.171345,
+    "courseHistoryScore": 0.828,
     "last4Finishes": [
-      4,
-      3,
-      24,
-      7
+      23,
+      3
     ],
     "sourceRefs": [
-      "PGA TOUR FedExCup",
-      "PGA TOUR Official Money",
       "OWGR fallback",
       "Weekly projection synthesis",
       "PGA TOUR betting profile"
@@ -136,339 +131,137 @@
     "courseHistoryResults": [
       {
         "year": "2025",
-        "finish": "T8",
-        "roundScores": "73-69-70-71",
-        "toPar": "-5"
+        "finish": "3",
+        "roundScores": "71-70-69-69",
+        "toPar": "-9"
       },
       {
         "year": "2024",
-        "finish": "8",
-        "roundScores": "72-72-70-73",
-        "toPar": "-1"
+        "finish": "T12",
+        "roundScores": "74-70-73-72",
+        "toPar": "+1"
       },
       {
         "year": "2023",
-        "finish": "T10",
-        "roundScores": "68-74-71-71",
-        "toPar": "-4"
+        "finish": "T4",
+        "roundScores": "71-70-72-68",
+        "toPar": "-7"
       },
       {
         "year": "2022",
-        "finish": "MC",
-        "roundScores": "74-77",
-        "toPar": "+7"
+        "finish": "T35",
+        "roundScores": "74-73-73-74",
+        "toPar": "+6"
       },
       {
         "year": "2021",
-        "finish": "T3",
-        "roundScores": "72-69-68-72",
-        "toPar": "-7"
+        "finish": "T8",
+        "roundScores": "70-75-70-69",
+        "toPar": "-4"
       }
     ],
     "recentResults": [
       {
-        "date": "March 22, 2026",
-        "tournamentName": "Valspar Championship",
-        "result": "T4",
-        "roundScores": "68-72-71-65",
-        "toPar": "-8",
-        "fedexPoints": 115
-      },
-      {
-        "date": "March 15, 2026",
-        "tournamentName": "THE PLAYERS Championship",
-        "result": "3",
-        "roundScores": "69-65-74-69",
-        "toPar": "-11",
-        "fedexPoints": 350
-      },
-      {
-        "date": "March 8, 2026",
-        "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-        "result": "T24",
-        "roundScores": "68-71-73-74",
-        "toPar": "-2",
-        "fedexPoints": 36.333
-      },
-      {
-        "date": "Feb. 22, 2026",
-        "tournamentName": "The Genesis Invitational",
-        "result": "T7",
-        "roundScores": "68-65-70-69",
-        "toPar": "-12",
-        "fedexPoints": 176
-      },
-      {
-        "date": "Feb. 15, 2026",
-        "tournamentName": "AT&T Pebble Beach Pro-Am",
-        "result": "T19",
-        "roundScores": "69-65-69-70",
-        "toPar": "-15",
-        "fedexPoints": 51.8
-      },
-      {
-        "date": "Feb. 8, 2026",
-        "tournamentName": "WM Phoenix Open",
-        "result": "T41",
-        "roundScores": "71-70-73-65",
-        "toPar": "-5",
-        "fedexPoints": 12.214
-      },
-      {
-        "date": "Feb. 1, 2026",
-        "tournamentName": "Farmers Insurance Open",
+        "date": "July 20, 2025",
+        "tournamentName": "The Open Championship",
         "result": "MC",
-        "roundScores": "73-69",
-        "toPar": "-2",
+        "roundScores": "77-70",
+        "toPar": "+5",
         "fedexPoints": null
       },
       {
-        "date": "Oct. 12, 2025",
-        "tournamentName": "Baycurrent Classic",
-        "result": "1",
-        "roundScores": "71-63-67-64",
-        "toPar": "-19",
+        "date": "June 15, 2025",
+        "tournamentName": "U.S. Open",
+        "result": "T23",
+        "roundScores": "73-74-71-70",
+        "toPar": "+8",
         "fedexPoints": null
       },
       {
-        "date": "Aug. 17, 2025",
-        "tournamentName": "BMW Championship",
-        "result": "T28",
-        "roundScores": "74-70-73-66",
-        "toPar": "+3",
+        "date": "May 18, 2025",
+        "tournamentName": "PGA Championship",
+        "result": "MC",
+        "roundScores": "72-74",
+        "toPar": "+4",
         "fedexPoints": null
       },
       {
-        "date": "Aug. 10, 2025",
-        "tournamentName": "FedEx St. Jude Championship",
-        "result": "T22",
-        "roundScores": "68-72-65-69",
-        "toPar": "-6",
+        "date": "April 13, 2025",
+        "tournamentName": "Masters Tournament",
+        "result": "3",
+        "roundScores": "71-70-69-69",
+        "toPar": "-9",
         "fedexPoints": null
       }
     ],
     "strokesGained": {
       "offTheTee": {
-        "overallRank": 34,
-        "overall": 0.423,
-        "lastFive": 0.437
+        "overallRank": null,
+        "overall": null,
+        "lastFive": -0.045
       },
       "approach": {
-        "overallRank": 14,
-        "overall": 0.662,
-        "lastFive": 0.72
+        "overallRank": null,
+        "overall": null,
+        "lastFive": 0.363
       },
       "aroundTheGreen": {
-        "overallRank": 80,
-        "overall": 0.009,
-        "lastFive": 0.154
+        "overallRank": null,
+        "overall": null,
+        "lastFive": 0.122
       },
       "putting": {
-        "overallRank": 36,
-        "overall": 0.349,
-        "lastFive": 0.434
+        "overallRank": null,
+        "overall": null,
+        "lastFive": 0.1
       },
       "total": {
-        "overallRank": 12,
-        "overall": 1.443,
-        "lastFive": 1.745
+        "overallRank": null,
+        "overall": null,
+        "lastFive": 0.54
       }
     },
     "performanceNotes": [
-      "Schauffele posted a Strokes Gained: Off-the-Tee average of 0.423 (34th) this season, while his average Driving Distance of 310.3 yards ranked 31st on TOUR.",
-      "In terms of Strokes Gained: Approach the Green this season, Schauffele sported a 0.662 mark that ranked 14th on TOUR. He ranked 61st with a 66.88% Greens in Regulation rate.",
-      "On the greens, Schauffele delivered a 0.349 Strokes Gained: Putting mark this season, which placed him 36th on TOUR. In addition, he ranked 62nd with a Putts Per Round average of 28.35, and he ranked 45th by breaking par 23.50% of the time.",
-      "Schauffele ranked 13th with 741 FedExCup Regular Season points this season."
+      "Reed averaged -0.045 Strokes Gained: Off-the-Tee in his past five tournaments.",
+      "In terms of Strokes Gained: Approach the Green, Reed posted a 0.363 mark in his past five tournaments.",
+      "On the greens, Reed delivered a 0.100 Strokes Gained: Putting mark in his past five tournaments."
     ],
-    "name": "Xander Schauffele",
+    "name": "PATRICK REED",
     "hasProjectedEarnings": true,
     "hasCourseHistory": true,
     "hasRecentForm": true,
     "eligible": true,
-    "score": 0.6377698416666666,
-    "reasoning": "Reasoning: Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76.",
-    "recentSummary": "Recent: Last four starts finished 4, 3, 24, 7 with strong momentum entering this event. Last-five SG Total +1.745, Approach +0.720, Off-the-Tee +0.437.",
-    "historicalSummary": "Historical: 2025: T8 | 2024: 8 | 2023: T10. Overall, historical performance at this event/course has been strong.",
+    "score": 0.6197059154471546,
+    "reasoning": "Reasoning: Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83.",
+    "recentSummary": "Recent: Last four starts finished 23, 3 with steady momentum entering this event. Last-five SG Total +0.540, Approach +0.363, Off-the-Tee -0.045.",
+    "historicalSummary": "Historical: 2025: 3 | 2024: T12 | 2023: T4. Overall, historical performance at this event/course has been strong.",
     "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
     "confidenceScore": 1,
     "confidenceLabel": "High",
     "decisionScores": {
-      "balanced": 0.6377698416666666,
-      "expected": 0.12637857142857142,
-      "leverage": 0.7965595714285715,
-      "preservation": 0.6313102400000001
+      "balanced": 0.6197059154471546,
+      "expected": 0.06097885714285714,
+      "leverage": 0.7807311171428573,
+      "preservation": 0.689998436097561
     },
     "flags": [],
     "rationale": {
-      "expected": 0.12637857142857142,
-      "uniqueness": 0.9466666666666667,
-      "futureCost": 0.4131005,
-      "recentForm": 0.905,
-      "historicalStrength": 0.20656500000000003,
-      "courseHistory": 0.761,
-      "strokesGained": 0.810325,
-      "eventHistoryTrend": 0.7266666666666667,
+      "expected": 0.06097885714285714,
+      "uniqueness": 0.98,
+      "futureCost": 0.2829785,
+      "recentForm": 0.87,
+      "historicalStrength": 0.171345,
+      "courseHistory": 0.828,
+      "strokesGained": 0.5997875,
+      "eventHistoryTrend": 0.8184959349593497,
       "preservePenalty": 0,
       "fieldPenalty": 0,
       "projectionPenalty": 0,
       "dataPenalty": 0,
-      "explanation": "Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76."
+      "explanation": "Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83."
     }
   },
   "alternates": [
-    {
-      "golfer": "PATRICK REED",
-      "projectedEarnings": 213426,
-      "projectedDupCount": 0.06,
-      "futureValue": 565957,
-      "worldRank": 18,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": true,
-      "historicalStrength": 0.171345,
-      "courseHistoryScore": 0.828,
-      "last4Finishes": [
-        23,
-        3
-      ],
-      "sourceRefs": [
-        "OWGR fallback",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "3",
-          "roundScores": "71-70-69-69",
-          "toPar": "-9"
-        },
-        {
-          "year": "2024",
-          "finish": "T12",
-          "roundScores": "74-70-73-72",
-          "toPar": "+1"
-        },
-        {
-          "year": "2023",
-          "finish": "T4",
-          "roundScores": "71-70-72-68",
-          "toPar": "-7"
-        },
-        {
-          "year": "2022",
-          "finish": "T35",
-          "roundScores": "74-73-73-74",
-          "toPar": "+6"
-        },
-        {
-          "year": "2021",
-          "finish": "T8",
-          "roundScores": "70-75-70-69",
-          "toPar": "-4"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "July 20, 2025",
-          "tournamentName": "The Open Championship",
-          "result": "MC",
-          "roundScores": "77-70",
-          "toPar": "+5",
-          "fedexPoints": null
-        },
-        {
-          "date": "June 15, 2025",
-          "tournamentName": "U.S. Open",
-          "result": "T23",
-          "roundScores": "73-74-71-70",
-          "toPar": "+8",
-          "fedexPoints": null
-        },
-        {
-          "date": "May 18, 2025",
-          "tournamentName": "PGA Championship",
-          "result": "MC",
-          "roundScores": "72-74",
-          "toPar": "+4",
-          "fedexPoints": null
-        },
-        {
-          "date": "April 13, 2025",
-          "tournamentName": "Masters Tournament",
-          "result": "3",
-          "roundScores": "71-70-69-69",
-          "toPar": "-9",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": null,
-          "overall": null,
-          "lastFive": -0.045
-        },
-        "approach": {
-          "overallRank": null,
-          "overall": null,
-          "lastFive": 0.363
-        },
-        "aroundTheGreen": {
-          "overallRank": null,
-          "overall": null,
-          "lastFive": 0.122
-        },
-        "putting": {
-          "overallRank": null,
-          "overall": null,
-          "lastFive": 0.1
-        },
-        "total": {
-          "overallRank": null,
-          "overall": null,
-          "lastFive": 0.54
-        }
-      },
-      "performanceNotes": [
-        "Reed averaged -0.045 Strokes Gained: Off-the-Tee in his past five tournaments.",
-        "In terms of Strokes Gained: Approach the Green, Reed posted a 0.363 mark in his past five tournaments.",
-        "On the greens, Reed delivered a 0.100 Strokes Gained: Putting mark in his past five tournaments."
-      ],
-      "name": "PATRICK REED",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.6197059154471546,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83.",
-      "recentSummary": "Recent: Last four starts finished 23, 3 with steady momentum entering this event. Last-five SG Total +0.540, Approach +0.363, Off-the-Tee -0.045.",
-      "historicalSummary": "Historical: 2025: 3 | 2024: T12 | 2023: T4. Overall, historical performance at this event/course has been strong.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.6197059154471546,
-        "expected": 0.06097885714285714,
-        "leverage": 0.7807311171428573,
-        "preservation": 0.689998436097561
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.06097885714285714,
-        "uniqueness": 0.98,
-        "futureCost": 0.2829785,
-        "recentForm": 0.87,
-        "historicalStrength": 0.171345,
-        "courseHistory": 0.828,
-        "strokesGained": 0.5997875,
-        "eventHistoryTrend": 0.8184959349593497,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83."
-      }
-    },
     {
       "golfer": "Jacob Bridgeman",
       "projectedEarnings": 578216,
@@ -853,25 +646,22 @@
       }
     },
     {
-      "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 503838,
-      "projectedDupCount": 0.27,
-      "futureValue": 983164,
-      "worldRank": 3,
-      "fedexPoints": 702,
-      "seasonEarnings": 2267950,
+      "golfer": "BRYSON DECHAMBEAU",
+      "projectedEarnings": 154262,
+      "projectedDupCount": 0.06,
+      "futureValue": 453663,
+      "worldRank": 36,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
       "inNextTournament": true,
-      "historicalStrength": 0.262195,
-      "courseHistoryScore": 0.656,
+      "historicalStrength": 0.10854,
+      "courseHistoryScore": 0.534,
       "last4Finishes": [
         10,
-        8,
-        49,
-        7
+        2,
+        5
       ],
       "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
         "OWGR fallback",
         "Weekly projection synthesis",
         "PGA TOUR betting profile"
@@ -879,204 +669,153 @@
       "courseHistoryResults": [
         {
           "year": "2025",
-          "finish": "T21",
-          "roundScores": "73-69-75-69",
-          "toPar": "-2"
+          "finish": "T5",
+          "roundScores": "69-68-69-75",
+          "toPar": "-7"
         },
         {
           "year": "2024",
-          "finish": "T3",
-          "roundScores": "72-71-72-69",
-          "toPar": "-4"
+          "finish": "T6",
+          "roundScores": "65-73-75-73",
+          "toPar": "-2"
         },
         {
           "year": "2023",
-          "finish": "33",
-          "roundScores": "72-71-74-74",
-          "toPar": "+3"
+          "finish": "MC",
+          "roundScores": "74-74",
+          "toPar": "+4"
         },
         {
           "year": "2022",
-          "finish": "T14",
-          "roundScores": "75-72-70-73",
-          "toPar": "+2"
+          "finish": "MC",
+          "roundScores": "76-80",
+          "toPar": "+12"
         },
         {
           "year": "2021",
           "finish": "T46",
-          "roundScores": "74-70-73-76",
+          "roundScores": "76-67-75-75",
           "toPar": "+5"
         }
       ],
       "recentResults": [
         {
-          "date": "April 5, 2026",
-          "tournamentName": "Valero Texas Open",
-          "result": "T10",
-          "roundScores": "67-70-71-69",
-          "toPar": "-11",
-          "fedexPoints": 67.5
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T8",
-          "roundScores": "69-70-73-68",
-          "toPar": "-8",
-          "fedexPoints": 200
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "49",
-          "roundScores": "76-69-76-73",
-          "toPar": "+6",
-          "fedexPoints": 13.5
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "T7",
-          "roundScores": "69-66-70-67",
-          "toPar": "-12",
-          "fedexPoints": 176
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T4",
-          "roundScores": "67-68-67-66",
-          "toPar": "-20",
-          "fedexPoints": 312.5
-        },
-        {
-          "date": "Aug. 24, 2025",
-          "tournamentName": "TOUR Championship",
-          "result": "1",
-          "roundScores": "64-63-67-68",
-          "toPar": "-18",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T4",
-          "roundScores": "65-69-69-67",
-          "toPar": "-10",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T3",
-          "roundScores": "63-64-69-69",
-          "toPar": "-15",
-          "fedexPoints": null
-        },
-        {
           "date": "July 20, 2025",
           "tournamentName": "The Open Championship",
-          "result": "T16",
-          "roundScores": "73-68-69-67",
-          "toPar": "-7",
-          "fedexPoints": 66.143
+          "result": "T10",
+          "roundScores": "78-65-68-64",
+          "toPar": "-9",
+          "fedexPoints": null
         },
         {
-          "date": "July 13, 2025",
-          "tournamentName": "Genesis Scottish Open",
-          "result": "T34",
-          "roundScores": "70-67-71-68",
-          "toPar": "-4",
-          "fedexPoints": 18
+          "date": "June 15, 2025",
+          "tournamentName": "U.S. Open",
+          "result": "MC",
+          "roundScores": "73-77",
+          "toPar": "+10",
+          "fedexPoints": null
+        },
+        {
+          "date": "May 18, 2025",
+          "tournamentName": "PGA Championship",
+          "result": "T2",
+          "roundScores": "71-68-69-70",
+          "toPar": "-6",
+          "fedexPoints": null
+        },
+        {
+          "date": "April 13, 2025",
+          "tournamentName": "Masters Tournament",
+          "result": "T5",
+          "roundScores": "69-68-69-75",
+          "toPar": "-7",
+          "fedexPoints": null
         }
       ],
       "strokesGained": {
         "offTheTee": {
-          "overallRank": 32,
-          "overall": 0.435,
-          "lastFive": 0.47
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.585
         },
         "approach": {
-          "overallRank": 28,
-          "overall": 0.459,
-          "lastFive": 0.424
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.035
         },
         "aroundTheGreen": {
-          "overallRank": 2,
-          "overall": 0.712,
-          "lastFive": 0.711
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.078
         },
         "putting": {
-          "overallRank": 120,
-          "overall": -0.263,
-          "lastFive": -0.262
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.006
         },
         "total": {
-          "overallRank": 14,
-          "overall": 1.343,
-          "lastFive": 1.343
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.703
         }
       },
       "performanceNotes": [
-        "Fleetwood posted a Strokes Gained: Off-the-Tee average of 0.435 (32nd) this season, while his average Driving Distance of 299.3 yards ranked 117th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Fleetwood sported a 0.459 mark that ranked 28th on TOUR. He ranked 44th with a 67.78% Greens in Regulation rate.",
-        "Fleetwood ranks second on TOUR in Strokes Gained: Around-the-Green with an average of 0.712.",
-        "On the greens, Fleetwood delivered a -0.263 Strokes Gained: Putting mark this season, which placed him 120th on TOUR. In addition, he ranked 44th with a Putts Per Round average of 28.15.",
-        "Fleetwood has accumulated 770 FedExCup Regular Season points, ranking 11th on TOUR. He ranked 17th in Bogey Avoidance at 12.22% and ranked 30th by breaking par 24.44% of the time."
+        "DeChambeau posted a Strokes Gained: Off-the-Tee average of 0.585 in his past five tournaments, demonstrating strong performance from the tee.",
+        "In terms of Strokes Gained: Approach the Green in his past five starts, DeChambeau sported a 0.035 mark.",
+        "Around the greens, DeChambeau delivered a 0.078 Strokes Gained: Around-the-Green mark in his past five tournaments.",
+        "On the greens, DeChambeau posted a 0.006 Strokes Gained: Putting average in his past five starts."
       ],
-      "name": "Tommy Fleetwood",
+      "name": "BRYSON DECHAMBEAU",
       "hasProjectedEarnings": true,
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.601884281504065,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66.",
-      "recentSummary": "Recent: Last four starts finished 10, 8, 49, 7 with steady momentum entering this event. Last-five SG Total +1.343, Approach +0.424, Off-the-Tee +0.470.",
-      "historicalSummary": "Historical: 2025: T21 | 2024: T3 | 2023: 33. Overall, historical performance at this event/course has been solid.",
+      "score": 0.6012519038617886,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 10, 2, 5. Historical strength index: 0.11. Last-five SG Total: +0.703. Course history score: 0.53.",
+      "recentSummary": "Recent: Last four starts finished 10, 2, 5 with strong momentum entering this event. Last-five SG Total +0.703, Approach +0.035, Off-the-Tee +0.585.",
+      "historicalSummary": "Historical: 2025: T5 | 2024: T6 | 2023: MC. Overall, historical performance at this event/course has been solid.",
       "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.601884281504065,
-        "expected": 0.1439537142857143,
-        "leverage": 0.7606230942857142,
-        "preservation": 0.5660784941463415
+        "balanced": 0.6012519038617886,
+        "expected": 0.044074857142857145,
+        "leverage": 0.7849989771428572,
+        "preservation": 0.6665953923577237
       },
       "flags": [],
       "rationale": {
-        "expected": 0.1439537142857143,
-        "uniqueness": 0.91,
-        "futureCost": 0.491582,
-        "recentForm": 0.815,
-        "historicalStrength": 0.262195,
-        "courseHistory": 0.656,
-        "strokesGained": 0.7340875,
-        "eventHistoryTrend": 0.7235772357723578,
+        "expected": 0.044074857142857145,
+        "uniqueness": 0.98,
+        "futureCost": 0.2268315,
+        "recentForm": 0.9433333333333334,
+        "historicalStrength": 0.10854,
+        "courseHistory": 0.534,
+        "strokesGained": 0.621225,
+        "eventHistoryTrend": 0.5817073170731707,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66."
+        "explanation": "Recent form: last 4 finishes 10, 2, 5. Historical strength index: 0.11. Last-five SG Total: +0.703. Course history score: 0.53."
       }
-    }
-  ],
-  "views": {
-    "balanced": {
-      "golfer": "Xander Schauffele",
-      "projectedEarnings": 442325,
-      "projectedDupCount": 0.16,
-      "futureValue": 826201,
-      "worldRank": 10,
-      "fedexPoints": 741,
-      "seasonEarnings": 3137238,
+    },
+    {
+      "golfer": "Akshay Bhatia",
+      "projectedEarnings": 481328,
+      "projectedDupCount": 0.32,
+      "futureValue": 748982,
+      "worldRank": 39,
+      "fedexPoints": 1224,
+      "seasonEarnings": 5857708,
       "inNextTournament": true,
-      "historicalStrength": 0.20656500000000003,
-      "courseHistoryScore": 0.761,
+      "historicalStrength": 0.172505,
+      "courseHistoryScore": 0.371,
       "last4Finishes": [
-        4,
-        3,
-        24,
-        7
+        13,
+        1,
+        16,
+        6
       ],
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1088,183 +827,320 @@
       "courseHistoryResults": [
         {
           "year": "2025",
-          "finish": "T8",
-          "roundScores": "73-69-70-71",
-          "toPar": "-5"
+          "finish": "T42",
+          "roundScores": "70-76-75-71",
+          "toPar": "+4"
         },
         {
           "year": "2024",
-          "finish": "8",
-          "roundScores": "72-72-70-73",
-          "toPar": "-1"
-        },
-        {
-          "year": "2023",
-          "finish": "T10",
-          "roundScores": "68-74-71-71",
-          "toPar": "-4"
-        },
-        {
-          "year": "2022",
-          "finish": "MC",
-          "roundScores": "74-77",
-          "toPar": "+7"
-        },
-        {
-          "year": "2021",
-          "finish": "T3",
-          "roundScores": "72-69-68-72",
-          "toPar": "-7"
+          "finish": "T35",
+          "roundScores": "72-75-74-73",
+          "toPar": "+6"
         }
       ],
       "recentResults": [
         {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T4",
-          "roundScores": "68-72-71-65",
-          "toPar": "-8",
-          "fedexPoints": 115
-        },
-        {
           "date": "March 15, 2026",
           "tournamentName": "THE PLAYERS Championship",
-          "result": "3",
-          "roundScores": "69-65-74-69",
-          "toPar": "-11",
-          "fedexPoints": 350
+          "result": "T13",
+          "roundScores": "71-71-70-70",
+          "toPar": "-6",
+          "fedexPoints": 80.556
         },
         {
           "date": "March 8, 2026",
           "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T24",
-          "roundScores": "68-71-73-74",
-          "toPar": "-2",
-          "fedexPoints": 36.333
+          "result": "P1",
+          "roundScores": "70-66-68-69",
+          "toPar": "-15",
+          "fedexPoints": 700
         },
         {
           "date": "Feb. 22, 2026",
           "tournamentName": "The Genesis Invitational",
-          "result": "T7",
-          "roundScores": "68-65-70-69",
-          "toPar": "-12",
-          "fedexPoints": 176
+          "result": "T16",
+          "roundScores": "68-71-67-68",
+          "toPar": "-10",
+          "fedexPoints": 68.75
         },
         {
           "date": "Feb. 15, 2026",
           "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T19",
-          "roundScores": "69-65-69-70",
-          "toPar": "-15",
-          "fedexPoints": 51.8
+          "result": "T6",
+          "roundScores": "65-64-68-72",
+          "toPar": "-19",
+          "fedexPoints": 250
         },
         {
           "date": "Feb. 8, 2026",
           "tournamentName": "WM Phoenix Open",
-          "result": "T41",
-          "roundScores": "71-70-73-65",
-          "toPar": "-5",
-          "fedexPoints": 12.214
+          "result": "T3",
+          "roundScores": "68-67-67-67",
+          "toPar": "-15",
+          "fedexPoints": 125
         },
         {
           "date": "Feb. 1, 2026",
           "tournamentName": "Farmers Insurance Open",
           "result": "MC",
-          "roundScores": "73-69",
-          "toPar": "-2",
+          "roundScores": "76-69",
+          "toPar": "+1",
           "fedexPoints": null
         },
         {
-          "date": "Oct. 12, 2025",
-          "tournamentName": "Baycurrent Classic",
-          "result": "1",
-          "roundScores": "71-63-67-64",
-          "toPar": "-19",
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "MC",
+          "roundScores": "68-69-78",
+          "toPar": "-1",
           "fedexPoints": null
         },
         {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T28",
-          "roundScores": "74-70-73-66",
-          "toPar": "+3",
+          "date": "Oct. 5, 2025",
+          "tournamentName": "Sanderson Farms Championship",
+          "result": "MC",
+          "roundScores": "72-73",
+          "toPar": "+1",
           "fedexPoints": null
         },
         {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T22",
-          "roundScores": "68-72-65-69",
-          "toPar": "-6",
+          "date": "Sept. 14, 2025",
+          "tournamentName": "Procore Championship",
+          "result": "T11",
+          "roundScores": "68-73-70-66",
+          "toPar": "-11",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 24, 2025",
+          "tournamentName": "TOUR Championship",
+          "result": "T13",
+          "roundScores": "66-67-69-68",
+          "toPar": "-10",
           "fedexPoints": null
         }
       ],
       "strokesGained": {
         "offTheTee": {
-          "overallRank": 34,
-          "overall": 0.423,
-          "lastFive": 0.437
+          "overallRank": 95,
+          "overall": -0.044,
+          "lastFive": 0.186
         },
         "approach": {
-          "overallRank": 14,
-          "overall": 0.662,
-          "lastFive": 0.72
+          "overallRank": 8,
+          "overall": 0.792,
+          "lastFive": 0.963
         },
         "aroundTheGreen": {
-          "overallRank": 80,
-          "overall": 0.009,
-          "lastFive": 0.154
+          "overallRank": 49,
+          "overall": 0.168,
+          "lastFive": 0.136
         },
         "putting": {
-          "overallRank": 36,
-          "overall": 0.349,
-          "lastFive": 0.434
+          "overallRank": 10,
+          "overall": 0.73,
+          "lastFive": 1.031
         },
         "total": {
-          "overallRank": 12,
-          "overall": 1.443,
-          "lastFive": 1.745
+          "overallRank": 6,
+          "overall": 1.646,
+          "lastFive": 2.316
         }
       },
       "performanceNotes": [
-        "Schauffele posted a Strokes Gained: Off-the-Tee average of 0.423 (34th) this season, while his average Driving Distance of 310.3 yards ranked 31st on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Schauffele sported a 0.662 mark that ranked 14th on TOUR. He ranked 61st with a 66.88% Greens in Regulation rate.",
-        "On the greens, Schauffele delivered a 0.349 Strokes Gained: Putting mark this season, which placed him 36th on TOUR. In addition, he ranked 62nd with a Putts Per Round average of 28.35, and he ranked 45th by breaking par 23.50% of the time.",
-        "Schauffele ranked 13th with 741 FedExCup Regular Season points this season."
+        "Bhatia posted a Strokes Gained: Off-the-Tee average of -0.044 (95th) this season, while his average Driving Distance of 301.2 yards ranked 100th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Bhatia sported a 0.792 mark that ranked eighth on TOUR. He ranked 26th with a 69.33% Greens in Regulation rate.",
+        "On the greens, Bhatia delivered a 0.730 Strokes Gained: Putting mark this season, which placed him 10th on TOUR. In addition, he ranked 18th with a Putts Per Round average of 27.80, and he ranked fourth by breaking par 28.22% of the time.",
+        "Bhatia ranked fourth in FedExCup Regular Season points with 1,224 and his Bogey Avoidance percentage of 12.67% placed him 24th on TOUR."
       ],
-      "name": "Xander Schauffele",
+      "name": "Akshay Bhatia",
       "hasProjectedEarnings": true,
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.6377698416666666,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76.",
-      "recentSummary": "Recent: Last four starts finished 4, 3, 24, 7 with strong momentum entering this event. Last-five SG Total +1.745, Approach +0.720, Off-the-Tee +0.437.",
-      "historicalSummary": "Historical: 2025: T8 | 2024: 8 | 2023: T10. Overall, historical performance at this event/course has been strong.",
+      "score": 0.6005375117021277,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 13, 1, 16, 6. Historical strength index: 0.17. Last-five SG Total: +2.316. Course history score: 0.37.",
+      "recentSummary": "Recent: Last four starts finished 13, 1, 16, 6 with strong momentum entering this event. Last-five SG Total +2.316, Approach +0.963, Off-the-Tee +0.186.",
+      "historicalSummary": "Historical: 2025: T42 | 2024: T35. Overall, historical performance at this event/course has been solid.",
       "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.6377698416666666,
-        "expected": 0.12637857142857142,
-        "leverage": 0.7965595714285715,
-        "preservation": 0.6313102400000001
+        "balanced": 0.6005375117021277,
+        "expected": 0.1375222857142857,
+        "leverage": 0.7739215657142857,
+        "preservation": 0.5795437757446809
       },
       "flags": [],
       "rationale": {
-        "expected": 0.12637857142857142,
-        "uniqueness": 0.9466666666666667,
-        "futureCost": 0.4131005,
-        "recentForm": 0.905,
-        "historicalStrength": 0.20656500000000003,
-        "courseHistory": 0.761,
-        "strokesGained": 0.810325,
-        "eventHistoryTrend": 0.7266666666666667,
+        "expected": 0.1375222857142857,
+        "uniqueness": 0.8933333333333333,
+        "futureCost": 0.374491,
+        "recentForm": 0.91,
+        "historicalStrength": 0.172505,
+        "courseHistory": 0.371,
+        "strokesGained": 0.8976500000000001,
+        "eventHistoryTrend": 0.37127659574468086,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76."
+        "explanation": "Recent form: last 4 finishes 13, 1, 16, 6. Historical strength index: 0.17. Last-five SG Total: +2.316. Course history score: 0.37."
+      }
+    }
+  ],
+  "views": {
+    "balanced": {
+      "golfer": "PATRICK REED",
+      "projectedEarnings": 213426,
+      "projectedDupCount": 0.06,
+      "futureValue": 565957,
+      "worldRank": 18,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "historicalStrength": 0.171345,
+      "courseHistoryScore": 0.828,
+      "last4Finishes": [
+        23,
+        3
+      ],
+      "sourceRefs": [
+        "OWGR fallback",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2025",
+          "finish": "3",
+          "roundScores": "71-70-69-69",
+          "toPar": "-9"
+        },
+        {
+          "year": "2024",
+          "finish": "T12",
+          "roundScores": "74-70-73-72",
+          "toPar": "+1"
+        },
+        {
+          "year": "2023",
+          "finish": "T4",
+          "roundScores": "71-70-72-68",
+          "toPar": "-7"
+        },
+        {
+          "year": "2022",
+          "finish": "T35",
+          "roundScores": "74-73-73-74",
+          "toPar": "+6"
+        },
+        {
+          "year": "2021",
+          "finish": "T8",
+          "roundScores": "70-75-70-69",
+          "toPar": "-4"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "July 20, 2025",
+          "tournamentName": "The Open Championship",
+          "result": "MC",
+          "roundScores": "77-70",
+          "toPar": "+5",
+          "fedexPoints": null
+        },
+        {
+          "date": "June 15, 2025",
+          "tournamentName": "U.S. Open",
+          "result": "T23",
+          "roundScores": "73-74-71-70",
+          "toPar": "+8",
+          "fedexPoints": null
+        },
+        {
+          "date": "May 18, 2025",
+          "tournamentName": "PGA Championship",
+          "result": "MC",
+          "roundScores": "72-74",
+          "toPar": "+4",
+          "fedexPoints": null
+        },
+        {
+          "date": "April 13, 2025",
+          "tournamentName": "Masters Tournament",
+          "result": "3",
+          "roundScores": "71-70-69-69",
+          "toPar": "-9",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": null,
+          "overall": null,
+          "lastFive": -0.045
+        },
+        "approach": {
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.363
+        },
+        "aroundTheGreen": {
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.122
+        },
+        "putting": {
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.1
+        },
+        "total": {
+          "overallRank": null,
+          "overall": null,
+          "lastFive": 0.54
+        }
+      },
+      "performanceNotes": [
+        "Reed averaged -0.045 Strokes Gained: Off-the-Tee in his past five tournaments.",
+        "In terms of Strokes Gained: Approach the Green, Reed posted a 0.363 mark in his past five tournaments.",
+        "On the greens, Reed delivered a 0.100 Strokes Gained: Putting mark in his past five tournaments."
+      ],
+      "name": "PATRICK REED",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.6197059154471546,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83.",
+      "recentSummary": "Recent: Last four starts finished 23, 3 with steady momentum entering this event. Last-five SG Total +0.540, Approach +0.363, Off-the-Tee -0.045.",
+      "historicalSummary": "Historical: 2025: 3 | 2024: T12 | 2023: T4. Overall, historical performance at this event/course has been strong.",
+      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
+      "confidenceScore": 1,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.6197059154471546,
+        "expected": 0.06097885714285714,
+        "leverage": 0.7807311171428573,
+        "preservation": 0.689998436097561
+      },
+      "flags": [],
+      "rationale": {
+        "expected": 0.06097885714285714,
+        "uniqueness": 0.98,
+        "futureCost": 0.2829785,
+        "recentForm": 0.87,
+        "historicalStrength": 0.171345,
+        "courseHistory": 0.828,
+        "strokesGained": 0.5997875,
+        "eventHistoryTrend": 0.8184959349593497,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83."
       }
     },
     "expected": {
@@ -1644,19 +1520,20 @@
       }
     },
     "preservation": {
-      "golfer": "PATRICK REED",
-      "projectedEarnings": 213426,
+      "golfer": "BRYSON DECHAMBEAU",
+      "projectedEarnings": 154262,
       "projectedDupCount": 0.06,
-      "futureValue": 565957,
-      "worldRank": 18,
+      "futureValue": 453663,
+      "worldRank": 36,
       "fedexPoints": 0,
       "seasonEarnings": 0,
       "inNextTournament": true,
-      "historicalStrength": 0.171345,
-      "courseHistoryScore": 0.828,
+      "historicalStrength": 0.10854,
+      "courseHistoryScore": 0.534,
       "last4Finishes": [
-        23,
-        3
+        10,
+        2,
+        5
       ],
       "sourceRefs": [
         "OWGR fallback",
@@ -1666,66 +1543,66 @@
       "courseHistoryResults": [
         {
           "year": "2025",
-          "finish": "3",
-          "roundScores": "71-70-69-69",
-          "toPar": "-9"
-        },
-        {
-          "year": "2024",
-          "finish": "T12",
-          "roundScores": "74-70-73-72",
-          "toPar": "+1"
-        },
-        {
-          "year": "2023",
-          "finish": "T4",
-          "roundScores": "71-70-72-68",
+          "finish": "T5",
+          "roundScores": "69-68-69-75",
           "toPar": "-7"
         },
         {
+          "year": "2024",
+          "finish": "T6",
+          "roundScores": "65-73-75-73",
+          "toPar": "-2"
+        },
+        {
+          "year": "2023",
+          "finish": "MC",
+          "roundScores": "74-74",
+          "toPar": "+4"
+        },
+        {
           "year": "2022",
-          "finish": "T35",
-          "roundScores": "74-73-73-74",
-          "toPar": "+6"
+          "finish": "MC",
+          "roundScores": "76-80",
+          "toPar": "+12"
         },
         {
           "year": "2021",
-          "finish": "T8",
-          "roundScores": "70-75-70-69",
-          "toPar": "-4"
+          "finish": "T46",
+          "roundScores": "76-67-75-75",
+          "toPar": "+5"
         }
       ],
       "recentResults": [
         {
           "date": "July 20, 2025",
           "tournamentName": "The Open Championship",
-          "result": "MC",
-          "roundScores": "77-70",
-          "toPar": "+5",
+          "result": "T10",
+          "roundScores": "78-65-68-64",
+          "toPar": "-9",
           "fedexPoints": null
         },
         {
           "date": "June 15, 2025",
           "tournamentName": "U.S. Open",
-          "result": "T23",
-          "roundScores": "73-74-71-70",
-          "toPar": "+8",
+          "result": "MC",
+          "roundScores": "73-77",
+          "toPar": "+10",
           "fedexPoints": null
         },
         {
           "date": "May 18, 2025",
           "tournamentName": "PGA Championship",
-          "result": "MC",
-          "roundScores": "72-74",
-          "toPar": "+4",
+          "result": "T2",
+          "roundScores": "71-68-69-70",
+          "toPar": "-6",
           "fedexPoints": null
         },
         {
           "date": "April 13, 2025",
           "tournamentName": "Masters Tournament",
-          "result": "3",
-          "roundScores": "71-70-69-69",
-          "toPar": "-9",
+          "result": "T5",
+          "roundScores": "69-68-69-75",
+          "toPar": "-7",
           "fedexPoints": null
         }
       ],
@@ -1733,335 +1610,130 @@
         "offTheTee": {
           "overallRank": null,
           "overall": null,
-          "lastFive": -0.045
+          "lastFive": 0.585
         },
         "approach": {
           "overallRank": null,
           "overall": null,
-          "lastFive": 0.363
+          "lastFive": 0.035
         },
         "aroundTheGreen": {
           "overallRank": null,
           "overall": null,
-          "lastFive": 0.122
+          "lastFive": 0.078
         },
         "putting": {
           "overallRank": null,
           "overall": null,
-          "lastFive": 0.1
+          "lastFive": 0.006
         },
         "total": {
           "overallRank": null,
           "overall": null,
-          "lastFive": 0.54
+          "lastFive": 0.703
         }
       },
       "performanceNotes": [
-        "Reed averaged -0.045 Strokes Gained: Off-the-Tee in his past five tournaments.",
-        "In terms of Strokes Gained: Approach the Green, Reed posted a 0.363 mark in his past five tournaments.",
-        "On the greens, Reed delivered a 0.100 Strokes Gained: Putting mark in his past five tournaments."
+        "DeChambeau posted a Strokes Gained: Off-the-Tee average of 0.585 in his past five tournaments, demonstrating strong performance from the tee.",
+        "In terms of Strokes Gained: Approach the Green in his past five starts, DeChambeau sported a 0.035 mark.",
+        "Around the greens, DeChambeau delivered a 0.078 Strokes Gained: Around-the-Green mark in his past five tournaments.",
+        "On the greens, DeChambeau posted a 0.006 Strokes Gained: Putting average in his past five starts."
       ],
-      "name": "PATRICK REED",
+      "name": "BRYSON DECHAMBEAU",
       "hasProjectedEarnings": true,
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.6197059154471546,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83.",
-      "recentSummary": "Recent: Last four starts finished 23, 3 with steady momentum entering this event. Last-five SG Total +0.540, Approach +0.363, Off-the-Tee -0.045.",
-      "historicalSummary": "Historical: 2025: 3 | 2024: T12 | 2023: T4. Overall, historical performance at this event/course has been strong.",
+      "score": 0.6012519038617886,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 10, 2, 5. Historical strength index: 0.11. Last-five SG Total: +0.703. Course history score: 0.53.",
+      "recentSummary": "Recent: Last four starts finished 10, 2, 5 with strong momentum entering this event. Last-five SG Total +0.703, Approach +0.035, Off-the-Tee +0.585.",
+      "historicalSummary": "Historical: 2025: T5 | 2024: T6 | 2023: MC. Overall, historical performance at this event/course has been solid.",
       "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.6197059154471546,
-        "expected": 0.06097885714285714,
-        "leverage": 0.7807311171428573,
-        "preservation": 0.689998436097561
+        "balanced": 0.6012519038617886,
+        "expected": 0.044074857142857145,
+        "leverage": 0.7849989771428572,
+        "preservation": 0.6665953923577237
       },
       "flags": [],
       "rationale": {
-        "expected": 0.06097885714285714,
+        "expected": 0.044074857142857145,
         "uniqueness": 0.98,
-        "futureCost": 0.2829785,
-        "recentForm": 0.87,
-        "historicalStrength": 0.171345,
-        "courseHistory": 0.828,
-        "strokesGained": 0.5997875,
-        "eventHistoryTrend": 0.8184959349593497,
+        "futureCost": 0.2268315,
+        "recentForm": 0.9433333333333334,
+        "historicalStrength": 0.10854,
+        "courseHistory": 0.534,
+        "strokesGained": 0.621225,
+        "eventHistoryTrend": 0.5817073170731707,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 23, 3. Historical strength index: 0.17. Last-five SG Total: +0.540. Course history score: 0.83."
+        "explanation": "Recent form: last 4 finishes 10, 2, 5. Historical strength index: 0.11. Last-five SG Total: +0.703. Course history score: 0.53."
       }
     }
   },
   "comparisons": [
     {
-      "golfer": "PATRICK REED",
-      "scoreGap": 0.018,
-      "strengths": [
-        {
-          "label": "Strokes gained",
-          "delta": 0.21053749999999993,
-          "detail": "21 pts stronger SG profile"
-        },
-        {
-          "label": "Projected upside",
-          "delta": 0.06539971428571428,
-          "detail": "7 pts more weekly upside"
-        }
-      ]
-    },
-    {
       "golfer": "Jacob Bridgeman",
-      "scoreGap": 0.03,
+      "scoreGap": 0.012,
       "strengths": [
         {
           "label": "Course history",
-          "delta": 0.22666666666666668,
-          "detail": "23 pts stronger event-history grade"
+          "delta": 0.3184959349593497,
+          "detail": "32 pts stronger event-history grade"
         },
         {
           "label": "Future preservation",
-          "delta": 0.07286166000000016,
-          "detail": "7 pts lower-regret spend"
+          "delta": 0.13154985609756098,
+          "detail": "13 pts lower-regret spend"
         }
       ]
     },
     {
       "golfer": "Rory McIlroy",
-      "scoreGap": 0.033,
+      "scoreGap": 0.015,
       "strengths": [
         {
-          "label": "Recent form",
-          "delta": 0.11750000000000005,
-          "detail": "12 pts better recent-form grade"
+          "label": "Future preservation",
+          "delta": 0.1332560907317072,
+          "detail": "13 pts lower-regret spend"
         },
         {
-          "label": "Strokes gained",
-          "delta": 0.07692499999999991,
-          "detail": "8 pts stronger SG profile"
+          "label": "Course history",
+          "delta": 0.11955284552845546,
+          "detail": "12 pts stronger event-history grade"
+        }
+      ]
+    },
+    {
+      "golfer": "BRYSON DECHAMBEAU",
+      "scoreGap": 0.018,
+      "strengths": [
+        {
+          "label": "Course history",
+          "delta": 0.236788617886179,
+          "detail": "24 pts stronger event-history grade"
+        },
+        {
+          "label": "Future preservation",
+          "delta": 0.02340304373983726,
+          "detail": "2 pts lower-regret spend"
         }
       ]
     }
   ],
   "summary": {
-    "totalAvailable": 39,
-    "eligibleCount": 36,
-    "projectedCount": 36,
+    "totalAvailable": 38,
+    "eligibleCount": 35,
+    "projectedCount": 35,
     "nextTournamentFieldCount": 47,
     "confidenceLabel": "High",
     "warnings": []
   },
   "scored": [
-    {
-      "golfer": "Xander Schauffele",
-      "projectedEarnings": 442325,
-      "projectedDupCount": 0.16,
-      "futureValue": 826201,
-      "worldRank": 10,
-      "fedexPoints": 741,
-      "seasonEarnings": 3137238,
-      "inNextTournament": true,
-      "historicalStrength": 0.20656500000000003,
-      "courseHistoryScore": 0.761,
-      "last4Finishes": [
-        4,
-        3,
-        24,
-        7
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "T8",
-          "roundScores": "73-69-70-71",
-          "toPar": "-5"
-        },
-        {
-          "year": "2024",
-          "finish": "8",
-          "roundScores": "72-72-70-73",
-          "toPar": "-1"
-        },
-        {
-          "year": "2023",
-          "finish": "T10",
-          "roundScores": "68-74-71-71",
-          "toPar": "-4"
-        },
-        {
-          "year": "2022",
-          "finish": "MC",
-          "roundScores": "74-77",
-          "toPar": "+7"
-        },
-        {
-          "year": "2021",
-          "finish": "T3",
-          "roundScores": "72-69-68-72",
-          "toPar": "-7"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T4",
-          "roundScores": "68-72-71-65",
-          "toPar": "-8",
-          "fedexPoints": 115
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "3",
-          "roundScores": "69-65-74-69",
-          "toPar": "-11",
-          "fedexPoints": 350
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T24",
-          "roundScores": "68-71-73-74",
-          "toPar": "-2",
-          "fedexPoints": 36.333
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "T7",
-          "roundScores": "68-65-70-69",
-          "toPar": "-12",
-          "fedexPoints": 176
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T19",
-          "roundScores": "69-65-69-70",
-          "toPar": "-15",
-          "fedexPoints": 51.8
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T41",
-          "roundScores": "71-70-73-65",
-          "toPar": "-5",
-          "fedexPoints": 12.214
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "MC",
-          "roundScores": "73-69",
-          "toPar": "-2",
-          "fedexPoints": null
-        },
-        {
-          "date": "Oct. 12, 2025",
-          "tournamentName": "Baycurrent Classic",
-          "result": "1",
-          "roundScores": "71-63-67-64",
-          "toPar": "-19",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T28",
-          "roundScores": "74-70-73-66",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T22",
-          "roundScores": "68-72-65-69",
-          "toPar": "-6",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 34,
-          "overall": 0.423,
-          "lastFive": 0.437
-        },
-        "approach": {
-          "overallRank": 14,
-          "overall": 0.662,
-          "lastFive": 0.72
-        },
-        "aroundTheGreen": {
-          "overallRank": 80,
-          "overall": 0.009,
-          "lastFive": 0.154
-        },
-        "putting": {
-          "overallRank": 36,
-          "overall": 0.349,
-          "lastFive": 0.434
-        },
-        "total": {
-          "overallRank": 12,
-          "overall": 1.443,
-          "lastFive": 1.745
-        }
-      },
-      "performanceNotes": [
-        "Schauffele posted a Strokes Gained: Off-the-Tee average of 0.423 (34th) this season, while his average Driving Distance of 310.3 yards ranked 31st on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Schauffele sported a 0.662 mark that ranked 14th on TOUR. He ranked 61st with a 66.88% Greens in Regulation rate.",
-        "On the greens, Schauffele delivered a 0.349 Strokes Gained: Putting mark this season, which placed him 36th on TOUR. In addition, he ranked 62nd with a Putts Per Round average of 28.35, and he ranked 45th by breaking par 23.50% of the time.",
-        "Schauffele ranked 13th with 741 FedExCup Regular Season points this season."
-      ],
-      "name": "Xander Schauffele",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.6377698416666666,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76.",
-      "recentSummary": "Recent: Last four starts finished 4, 3, 24, 7 with strong momentum entering this event. Last-five SG Total +1.745, Approach +0.720, Off-the-Tee +0.437.",
-      "historicalSummary": "Historical: 2025: T8 | 2024: 8 | 2023: T10. Overall, historical performance at this event/course has been strong.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.6377698416666666,
-        "expected": 0.12637857142857142,
-        "leverage": 0.7965595714285715,
-        "preservation": 0.6313102400000001
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.12637857142857142,
-        "uniqueness": 0.9466666666666667,
-        "futureCost": 0.4131005,
-        "recentForm": 0.905,
-        "historicalStrength": 0.20656500000000003,
-        "courseHistory": 0.761,
-        "strokesGained": 0.810325,
-        "eventHistoryTrend": 0.7266666666666667,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 4, 3, 24, 7. Historical strength index: 0.21. Last-five SG Total: +1.745. Course history score: 0.76."
-      }
-    },
     {
       "golfer": "PATRICK REED",
       "projectedEarnings": 213426,
@@ -2599,213 +2271,6 @@
       }
     },
     {
-      "golfer": "Tommy Fleetwood",
-      "projectedEarnings": 503838,
-      "projectedDupCount": 0.27,
-      "futureValue": 983164,
-      "worldRank": 3,
-      "fedexPoints": 702,
-      "seasonEarnings": 2267950,
-      "inNextTournament": true,
-      "historicalStrength": 0.262195,
-      "courseHistoryScore": 0.656,
-      "last4Finishes": [
-        10,
-        8,
-        49,
-        7
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "T21",
-          "roundScores": "73-69-75-69",
-          "toPar": "-2"
-        },
-        {
-          "year": "2024",
-          "finish": "T3",
-          "roundScores": "72-71-72-69",
-          "toPar": "-4"
-        },
-        {
-          "year": "2023",
-          "finish": "33",
-          "roundScores": "72-71-74-74",
-          "toPar": "+3"
-        },
-        {
-          "year": "2022",
-          "finish": "T14",
-          "roundScores": "75-72-70-73",
-          "toPar": "+2"
-        },
-        {
-          "year": "2021",
-          "finish": "T46",
-          "roundScores": "74-70-73-76",
-          "toPar": "+5"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "April 5, 2026",
-          "tournamentName": "Valero Texas Open",
-          "result": "T10",
-          "roundScores": "67-70-71-69",
-          "toPar": "-11",
-          "fedexPoints": 67.5
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T8",
-          "roundScores": "69-70-73-68",
-          "toPar": "-8",
-          "fedexPoints": 200
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "49",
-          "roundScores": "76-69-76-73",
-          "toPar": "+6",
-          "fedexPoints": 13.5
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "T7",
-          "roundScores": "69-66-70-67",
-          "toPar": "-12",
-          "fedexPoints": 176
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T4",
-          "roundScores": "67-68-67-66",
-          "toPar": "-20",
-          "fedexPoints": 312.5
-        },
-        {
-          "date": "Aug. 24, 2025",
-          "tournamentName": "TOUR Championship",
-          "result": "1",
-          "roundScores": "64-63-67-68",
-          "toPar": "-18",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T4",
-          "roundScores": "65-69-69-67",
-          "toPar": "-10",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T3",
-          "roundScores": "63-64-69-69",
-          "toPar": "-15",
-          "fedexPoints": null
-        },
-        {
-          "date": "July 20, 2025",
-          "tournamentName": "The Open Championship",
-          "result": "T16",
-          "roundScores": "73-68-69-67",
-          "toPar": "-7",
-          "fedexPoints": 66.143
-        },
-        {
-          "date": "July 13, 2025",
-          "tournamentName": "Genesis Scottish Open",
-          "result": "T34",
-          "roundScores": "70-67-71-68",
-          "toPar": "-4",
-          "fedexPoints": 18
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 32,
-          "overall": 0.435,
-          "lastFive": 0.47
-        },
-        "approach": {
-          "overallRank": 28,
-          "overall": 0.459,
-          "lastFive": 0.424
-        },
-        "aroundTheGreen": {
-          "overallRank": 2,
-          "overall": 0.712,
-          "lastFive": 0.711
-        },
-        "putting": {
-          "overallRank": 120,
-          "overall": -0.263,
-          "lastFive": -0.262
-        },
-        "total": {
-          "overallRank": 14,
-          "overall": 1.343,
-          "lastFive": 1.343
-        }
-      },
-      "performanceNotes": [
-        "Fleetwood posted a Strokes Gained: Off-the-Tee average of 0.435 (32nd) this season, while his average Driving Distance of 299.3 yards ranked 117th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Fleetwood sported a 0.459 mark that ranked 28th on TOUR. He ranked 44th with a 67.78% Greens in Regulation rate.",
-        "Fleetwood ranks second on TOUR in Strokes Gained: Around-the-Green with an average of 0.712.",
-        "On the greens, Fleetwood delivered a -0.263 Strokes Gained: Putting mark this season, which placed him 120th on TOUR. In addition, he ranked 44th with a Putts Per Round average of 28.15.",
-        "Fleetwood has accumulated 770 FedExCup Regular Season points, ranking 11th on TOUR. He ranked 17th in Bogey Avoidance at 12.22% and ranked 30th by breaking par 24.44% of the time."
-      ],
-      "name": "Tommy Fleetwood",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.601884281504065,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66.",
-      "recentSummary": "Recent: Last four starts finished 10, 8, 49, 7 with steady momentum entering this event. Last-five SG Total +1.343, Approach +0.424, Off-the-Tee +0.470.",
-      "historicalSummary": "Historical: 2025: T21 | 2024: T3 | 2023: 33. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.601884281504065,
-        "expected": 0.1439537142857143,
-        "leverage": 0.7606230942857142,
-        "preservation": 0.5660784941463415
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.1439537142857143,
-        "uniqueness": 0.91,
-        "futureCost": 0.491582,
-        "recentForm": 0.815,
-        "historicalStrength": 0.262195,
-        "courseHistory": 0.656,
-        "strokesGained": 0.7340875,
-        "eventHistoryTrend": 0.7235772357723578,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66."
-      }
-    },
-    {
       "golfer": "BRYSON DECHAMBEAU",
       "projectedEarnings": 154262,
       "projectedDupCount": 0.06,
@@ -2958,213 +2423,6 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 10, 2, 5. Historical strength index: 0.11. Last-five SG Total: +0.703. Course history score: 0.53."
-      }
-    },
-    {
-      "golfer": "Matt Fitzpatrick",
-      "projectedEarnings": 499600,
-      "projectedDupCount": 0.33,
-      "futureValue": 813485,
-      "worldRank": 22,
-      "fedexPoints": 1229,
-      "seasonEarnings": 5262488,
-      "inNextTournament": true,
-      "historicalStrength": 0.15303,
-      "courseHistoryScore": 0.605,
-      "last4Finishes": [
-        1,
-        2,
-        41,
-        24
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "T40",
-          "roundScores": "71-73-74-73",
-          "toPar": "+3"
-        },
-        {
-          "year": "2024",
-          "finish": "T22",
-          "roundScores": "71-73-73-75",
-          "toPar": "+4"
-        },
-        {
-          "year": "2023",
-          "finish": "T10",
-          "roundScores": "70-72-72-70",
-          "toPar": "-4"
-        },
-        {
-          "year": "2022",
-          "finish": "T14",
-          "roundScores": "71-73-76-70",
-          "toPar": "+2"
-        },
-        {
-          "year": "2021",
-          "finish": "T34",
-          "roundScores": "74-70-73-73",
-          "toPar": "+2"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "1",
-          "roundScores": "68-69-68-68",
-          "toPar": "-11",
-          "fedexPoints": 500
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "2",
-          "roundScores": "70-69-69-68",
-          "toPar": "-12",
-          "fedexPoints": 500
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T41",
-          "roundScores": "74-70-70-75",
-          "toPar": "+1",
-          "fedexPoints": 18.75
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "T24",
-          "roundScores": "69-66-72-70",
-          "toPar": "-7",
-          "fedexPoints": 41
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T14",
-          "roundScores": "66-68-70-67",
-          "toPar": "-17",
-          "fedexPoints": 85
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "9",
-          "roundScores": "65-70-67-69",
-          "toPar": "-13",
-          "fedexPoints": 80
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T63",
-          "roundScores": "69-67-65-74",
-          "toPar": "-13",
-          "fedexPoints": 3.9
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T17",
-          "roundScores": "70-71-70-68",
-          "toPar": "-1",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T32",
-          "roundScores": "67-71-69-69",
-          "toPar": "-4",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 3, 2025",
-          "tournamentName": "Wyndham Championship",
-          "result": "T8",
-          "roundScores": "67-69-64-67",
-          "toPar": "-13",
-          "fedexPoints": 80
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 16,
-          "overall": 0.549,
-          "lastFive": 0.542
-        },
-        "approach": {
-          "overallRank": 7,
-          "overall": 0.81,
-          "lastFive": 0.811
-        },
-        "aroundTheGreen": {
-          "overallRank": 22,
-          "overall": 0.309,
-          "lastFive": 0.276
-        },
-        "putting": {
-          "overallRank": 96,
-          "overall": -0.083,
-          "lastFive": 0.016
-        },
-        "total": {
-          "overallRank": 7,
-          "overall": 1.584,
-          "lastFive": 1.645
-        }
-      },
-      "performanceNotes": [
-        "Fitzpatrick posted a Strokes Gained: Off-the-Tee average of 0.549 (16th) this season, while his average Driving Distance of 305.2 yards ranked 69th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Fitzpatrick sported a 0.810 mark that ranked seventh on TOUR. He ranked fourth with a 72.02% Greens in Regulation rate.",
-        "Fitzpatrick delivered a 0.309 Strokes Gained: Around-the-Green mark this season, which placed him 22nd on TOUR.",
-        "On the greens, Fitzpatrick delivered a -0.083 Strokes Gained: Putting mark this season, which placed him 96th on TOUR. In addition, he ranked 139th with a Putts Per Round average of 29.25, and he ranked eighth by breaking par 26.79% of the time.",
-        "Fitzpatrick ranks third in FedExCup Regular Season points with 1,229 points this season."
-      ],
-      "name": "Matt Fitzpatrick",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.6008246016260163,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 1, 2, 41, 24. Historical strength index: 0.15. Last-five SG Total: +1.645. Course history score: 0.60.",
-      "recentSummary": "Recent: Last four starts finished 1, 2, 41, 24 with steady momentum entering this event. Last-five SG Total +1.645, Approach +0.811, Off-the-Tee +0.542.",
-      "historicalSummary": "Historical: 2025: T40 | 2024: T22 | 2023: T10. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.6008246016260163,
-        "expected": 0.14274285714285714,
-        "leverage": 0.7569193571428572,
-        "preservation": 0.5939375585365854
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.14274285714285714,
-        "uniqueness": 0.89,
-        "futureCost": 0.4067425,
-        "recentForm": 0.83,
-        "historicalStrength": 0.15303,
-        "courseHistory": 0.605,
-        "strokesGained": 0.8073375,
-        "eventHistoryTrend": 0.6308943089430894,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 1, 2, 41, 24. Historical strength index: 0.15. Last-five SG Total: +1.645. Course history score: 0.60."
       }
     },
     {
@@ -3556,13 +2814,427 @@
       }
     },
     {
+      "golfer": "Tommy Fleetwood",
+      "projectedEarnings": 518888,
+      "projectedDupCount": 0.34,
+      "futureValue": 997060,
+      "worldRank": 3,
+      "fedexPoints": 770,
+      "seasonEarnings": 2505600,
+      "inNextTournament": true,
+      "historicalStrength": 0.262195,
+      "courseHistoryScore": 0.656,
+      "last4Finishes": [
+        10,
+        8,
+        49,
+        7
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2025",
+          "finish": "T21",
+          "roundScores": "73-69-75-69",
+          "toPar": "-2"
+        },
+        {
+          "year": "2024",
+          "finish": "T3",
+          "roundScores": "72-71-72-69",
+          "toPar": "-4"
+        },
+        {
+          "year": "2023",
+          "finish": "33",
+          "roundScores": "72-71-74-74",
+          "toPar": "+3"
+        },
+        {
+          "year": "2022",
+          "finish": "T14",
+          "roundScores": "75-72-70-73",
+          "toPar": "+2"
+        },
+        {
+          "year": "2021",
+          "finish": "T46",
+          "roundScores": "74-70-73-76",
+          "toPar": "+5"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "April 5, 2026",
+          "tournamentName": "Valero Texas Open",
+          "result": "T10",
+          "roundScores": "67-70-71-69",
+          "toPar": "-11",
+          "fedexPoints": 67.5
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T8",
+          "roundScores": "69-70-73-68",
+          "toPar": "-8",
+          "fedexPoints": 200
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "49",
+          "roundScores": "76-69-76-73",
+          "toPar": "+6",
+          "fedexPoints": 13.5
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "T7",
+          "roundScores": "69-66-70-67",
+          "toPar": "-12",
+          "fedexPoints": 176
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T4",
+          "roundScores": "67-68-67-66",
+          "toPar": "-20",
+          "fedexPoints": 312.5
+        },
+        {
+          "date": "Aug. 24, 2025",
+          "tournamentName": "TOUR Championship",
+          "result": "1",
+          "roundScores": "64-63-67-68",
+          "toPar": "-18",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 17, 2025",
+          "tournamentName": "BMW Championship",
+          "result": "T4",
+          "roundScores": "65-69-69-67",
+          "toPar": "-10",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 10, 2025",
+          "tournamentName": "FedEx St. Jude Championship",
+          "result": "T3",
+          "roundScores": "63-64-69-69",
+          "toPar": "-15",
+          "fedexPoints": null
+        },
+        {
+          "date": "July 20, 2025",
+          "tournamentName": "The Open Championship",
+          "result": "T16",
+          "roundScores": "73-68-69-67",
+          "toPar": "-7",
+          "fedexPoints": 66.143
+        },
+        {
+          "date": "July 13, 2025",
+          "tournamentName": "Genesis Scottish Open",
+          "result": "T34",
+          "roundScores": "70-67-71-68",
+          "toPar": "-4",
+          "fedexPoints": 18
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 32,
+          "overall": 0.435,
+          "lastFive": 0.47
+        },
+        "approach": {
+          "overallRank": 28,
+          "overall": 0.459,
+          "lastFive": 0.424
+        },
+        "aroundTheGreen": {
+          "overallRank": 2,
+          "overall": 0.712,
+          "lastFive": 0.711
+        },
+        "putting": {
+          "overallRank": 120,
+          "overall": -0.263,
+          "lastFive": -0.262
+        },
+        "total": {
+          "overallRank": 14,
+          "overall": 1.343,
+          "lastFive": 1.343
+        }
+      },
+      "performanceNotes": [
+        "Fleetwood posted a Strokes Gained: Off-the-Tee average of 0.435 (32nd) this season, while his average Driving Distance of 299.3 yards ranked 117th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Fleetwood sported a 0.459 mark that ranked 28th on TOUR. He ranked 44th with a 67.78% Greens in Regulation rate.",
+        "Fleetwood ranks second on TOUR in Strokes Gained: Around-the-Green with an average of 0.712.",
+        "On the greens, Fleetwood delivered a -0.263 Strokes Gained: Putting mark this season, which placed him 120th on TOUR. In addition, he ranked 44th with a Putts Per Round average of 28.15.",
+        "Fleetwood has accumulated 770 FedExCup Regular Season points, ranking 11th on TOUR. He ranked 17th in Bogey Avoidance at 12.22% and ranked 30th by breaking par 24.44% of the time."
+      ],
+      "name": "Tommy Fleetwood",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.5988470815040651,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66.",
+      "recentSummary": "Recent: Last four starts finished 10, 8, 49, 7 with steady momentum entering this event. Last-five SG Total +1.343, Approach +0.424, Off-the-Tee +0.470.",
+      "historicalSummary": "Historical: 2025: T21 | 2024: T3 | 2023: 33. Overall, historical performance at this event/course has been solid.",
+      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
+      "confidenceScore": 1,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.5988470815040651,
+        "expected": 0.1482537142857143,
+        "leverage": 0.7459110942857142,
+        "preservation": 0.5624655341463416
+      },
+      "flags": [],
+      "rationale": {
+        "expected": 0.1482537142857143,
+        "uniqueness": 0.8866666666666667,
+        "futureCost": 0.49853,
+        "recentForm": 0.815,
+        "historicalStrength": 0.262195,
+        "courseHistory": 0.656,
+        "strokesGained": 0.7340875,
+        "eventHistoryTrend": 0.7235772357723578,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 10, 8, 49, 7. Historical strength index: 0.26. Last-five SG Total: +1.343. Course history score: 0.66."
+      }
+    },
+    {
+      "golfer": "Matt Fitzpatrick",
+      "projectedEarnings": 499600,
+      "projectedDupCount": 0.39,
+      "futureValue": 813485,
+      "worldRank": 22,
+      "fedexPoints": 1229,
+      "seasonEarnings": 5262488,
+      "inNextTournament": true,
+      "historicalStrength": 0.15303,
+      "courseHistoryScore": 0.605,
+      "last4Finishes": [
+        1,
+        2,
+        41,
+        24
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2025",
+          "finish": "T40",
+          "roundScores": "71-73-74-73",
+          "toPar": "+3"
+        },
+        {
+          "year": "2024",
+          "finish": "T22",
+          "roundScores": "71-73-73-75",
+          "toPar": "+4"
+        },
+        {
+          "year": "2023",
+          "finish": "T10",
+          "roundScores": "70-72-72-70",
+          "toPar": "-4"
+        },
+        {
+          "year": "2022",
+          "finish": "T14",
+          "roundScores": "71-73-76-70",
+          "toPar": "+2"
+        },
+        {
+          "year": "2021",
+          "finish": "T34",
+          "roundScores": "74-70-73-73",
+          "toPar": "+2"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "March 22, 2026",
+          "tournamentName": "Valspar Championship",
+          "result": "1",
+          "roundScores": "68-69-68-68",
+          "toPar": "-11",
+          "fedexPoints": 500
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "2",
+          "roundScores": "70-69-69-68",
+          "toPar": "-12",
+          "fedexPoints": 500
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T41",
+          "roundScores": "74-70-70-75",
+          "toPar": "+1",
+          "fedexPoints": 18.75
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "T24",
+          "roundScores": "69-66-72-70",
+          "toPar": "-7",
+          "fedexPoints": 41
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T14",
+          "roundScores": "66-68-70-67",
+          "toPar": "-17",
+          "fedexPoints": 85
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "9",
+          "roundScores": "65-70-67-69",
+          "toPar": "-13",
+          "fedexPoints": 80
+        },
+        {
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "T63",
+          "roundScores": "69-67-65-74",
+          "toPar": "-13",
+          "fedexPoints": 3.9
+        },
+        {
+          "date": "Aug. 17, 2025",
+          "tournamentName": "BMW Championship",
+          "result": "T17",
+          "roundScores": "70-71-70-68",
+          "toPar": "-1",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 10, 2025",
+          "tournamentName": "FedEx St. Jude Championship",
+          "result": "T32",
+          "roundScores": "67-71-69-69",
+          "toPar": "-4",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 3, 2025",
+          "tournamentName": "Wyndham Championship",
+          "result": "T8",
+          "roundScores": "67-69-64-67",
+          "toPar": "-13",
+          "fedexPoints": 80
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 16,
+          "overall": 0.549,
+          "lastFive": 0.542
+        },
+        "approach": {
+          "overallRank": 7,
+          "overall": 0.81,
+          "lastFive": 0.811
+        },
+        "aroundTheGreen": {
+          "overallRank": 22,
+          "overall": 0.309,
+          "lastFive": 0.276
+        },
+        "putting": {
+          "overallRank": 96,
+          "overall": -0.083,
+          "lastFive": 0.016
+        },
+        "total": {
+          "overallRank": 7,
+          "overall": 1.584,
+          "lastFive": 1.645
+        }
+      },
+      "performanceNotes": [
+        "Fitzpatrick posted a Strokes Gained: Off-the-Tee average of 0.549 (16th) this season, while his average Driving Distance of 305.2 yards ranked 69th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Fitzpatrick sported a 0.810 mark that ranked seventh on TOUR. He ranked fourth with a 72.02% Greens in Regulation rate.",
+        "Fitzpatrick delivered a 0.309 Strokes Gained: Around-the-Green mark this season, which placed him 22nd on TOUR.",
+        "On the greens, Fitzpatrick delivered a -0.083 Strokes Gained: Putting mark this season, which placed him 96th on TOUR. In addition, he ranked 139th with a Putts Per Round average of 29.25, and he ranked eighth by breaking par 26.79% of the time.",
+        "Fitzpatrick ranks third in FedExCup Regular Season points with 1,229 points this season."
+      ],
+      "name": "Matt Fitzpatrick",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.5978246016260164,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 1, 2, 41, 24. Historical strength index: 0.15. Last-five SG Total: +1.645. Course history score: 0.60.",
+      "recentSummary": "Recent: Last four starts finished 1, 2, 41, 24 with steady momentum entering this event. Last-five SG Total +1.645, Approach +0.811, Off-the-Tee +0.542.",
+      "historicalSummary": "Historical: 2025: T40 | 2024: T22 | 2023: T10. Overall, historical performance at this event/course has been solid.",
+      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
+      "confidenceScore": 1,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.5978246016260164,
+        "expected": 0.14274285714285714,
+        "leverage": 0.7437193571428572,
+        "preservation": 0.5939375585365854
+      },
+      "flags": [],
+      "rationale": {
+        "expected": 0.14274285714285714,
+        "uniqueness": 0.87,
+        "futureCost": 0.4067425,
+        "recentForm": 0.83,
+        "historicalStrength": 0.15303,
+        "courseHistory": 0.605,
+        "strokesGained": 0.8073375,
+        "eventHistoryTrend": 0.6308943089430894,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 1, 2, 41, 24. Historical strength index: 0.15. Last-five SG Total: +1.645. Course history score: 0.60."
+      }
+    },
+    {
       "golfer": "Robert MacIntyre",
-      "projectedEarnings": 409340,
-      "projectedDupCount": 0.08,
-      "futureValue": 814311,
+      "projectedEarnings": 455848,
+      "projectedDupCount": 0.13,
+      "futureValue": 857252,
       "worldRank": 8,
-      "fedexPoints": 572,
-      "seasonEarnings": 2168475,
+      "fedexPoints": 780,
+      "seasonEarnings": 2910008,
       "inNextTournament": true,
       "historicalStrength": 0.212435,
       "courseHistoryScore": 0.492,
@@ -3719,7 +3391,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5951502166666668,
+      "score": 0.5940804416666666,
       "reasoning": "Reasoning: Recent form: last 4 finishes 2, 4, 24, 20. Historical strength index: 0.21. Last-five SG Total: +1.493. Course history score: 0.49.",
       "recentSummary": "Recent: Last four starts finished 2, 4, 24, 20 with steady momentum entering this event. Last-five SG Total +1.493, Approach -0.243, Off-the-Tee +0.650.",
       "historicalSummary": "Historical: 2025: MC | 2022: T23 | 2021: T12. Overall, historical performance at this event/course has been solid.",
@@ -3727,16 +3399,16 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5951502166666668,
-        "expected": 0.11695428571428572,
-        "leverage": 0.7989851857142858,
-        "preservation": 0.5723176400000001
+        "balanced": 0.5940804416666666,
+        "expected": 0.13024228571428573,
+        "leverage": 0.7901112657142857,
+        "preservation": 0.5611529800000001
       },
       "flags": [],
       "rationale": {
-        "expected": 0.11695428571428572,
-        "uniqueness": 0.9733333333333334,
-        "futureCost": 0.4071555,
+        "expected": 0.13024228571428573,
+        "uniqueness": 0.9566666666666667,
+        "futureCost": 0.428626,
         "recentForm": 0.875,
         "historicalStrength": 0.212435,
         "courseHistory": 0.492,
@@ -4152,7 +3824,7 @@
     {
       "golfer": "Justin Rose",
       "projectedEarnings": 467716,
-      "projectedDupCount": 0.14,
+      "projectedDupCount": 0.19,
       "futureValue": 925878,
       "worldRank": 4,
       "fedexPoints": 601,
@@ -4325,7 +3997,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5825628394308943,
+      "score": 0.5800628394308943,
       "reasoning": "Reasoning: Recent form: last 4 finishes 13, 37, 1, 21. Historical strength index: 0.24. Last-five SG Total: +0.681. Course history score: 0.58.",
       "recentSummary": "Recent: Last four starts finished 13, 37, 1, 21 with steady momentum entering this event. Last-five SG Total +0.681, Approach +0.817, Off-the-Tee -0.327.",
       "historicalSummary": "Historical: 2025: 2 | 2024: MC | 2023: T16. Overall, historical performance at this event/course has been solid.",
@@ -4333,15 +4005,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5825628394308943,
+        "balanced": 0.5800628394308943,
         "expected": 0.13363314285714287,
-        "leverage": 0.776899302857143,
+        "leverage": 0.7658993028571429,
         "preservation": 0.5501654395121951
       },
       "flags": [],
       "rationale": {
         "expected": 0.13363314285714287,
-        "uniqueness": 0.9533333333333334,
+        "uniqueness": 0.9366666666666666,
         "futureCost": 0.462939,
         "recentForm": 0.8200000000000001,
         "historicalStrength": 0.24250500000000003,
@@ -4714,7 +4386,7 @@
     {
       "golfer": "Sepp Straka",
       "projectedEarnings": 419133,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.02,
       "futureValue": 782960,
       "worldRank": 13,
       "fedexPoints": 722,
@@ -4881,7 +4553,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5685956800813008,
+      "score": 0.5705956800813008,
       "reasoning": "Reasoning: Recent form: last 4 finishes 8, 13, 50, 2. Historical strength index: 0.21. Last-five SG Total: +0.652. Course history score: 0.40.",
       "recentSummary": "Recent: Last four starts finished 8, 13, 50, 2 with steady momentum entering this event. Last-five SG Total +0.652, Approach +0.451, Off-the-Tee +0.068.",
       "historicalSummary": "Historical: 2025: MC | 2024: T16 | 2023: T46. Overall, historical performance at this event/course has been solid.",
@@ -4889,15 +4561,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5685956800813008,
+        "balanced": 0.5705956800813008,
         "expected": 0.11975228571428571,
-        "leverage": 0.7901333657142858,
+        "leverage": 0.7989333657142857,
         "preservation": 0.5485890829268293
       },
       "flags": [],
       "rationale": {
         "expected": 0.11975228571428571,
-        "uniqueness": 0.98,
+        "uniqueness": 0.9933333333333333,
         "futureCost": 0.39148,
         "recentForm": 0.8175,
         "historicalStrength": 0.20954,
@@ -5679,12 +5351,12 @@
     },
     {
       "golfer": "Marco Penge",
-      "projectedEarnings": 202445,
+      "projectedEarnings": 209541,
       "projectedDupCount": 0.06,
-      "futureValue": 500493,
+      "futureValue": 507045,
       "worldRank": 35,
-      "fedexPoints": 191,
-      "seasonEarnings": 738458,
+      "fedexPoints": 228,
+      "seasonEarnings": 834008,
       "inNextTournament": true,
       "historicalStrength": 0.11835999999999999,
       "last4Finishes": [
@@ -5821,7 +5493,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.555554525,
+      "score": 0.5557727250000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 21, 4, 16, 64. Historical strength index: 0.12. Last-five SG Total: +0.811.",
       "recentSummary": "Recent: Last four starts finished 21, 4, 16, 64 with mixed momentum entering this event. Last-five SG Total +0.811, Approach -0.139, Off-the-Tee +0.715.",
       "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 35 OWGR and a 0.12 historical-strength signal.",
@@ -5829,18 +5501,18 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.555554525,
-        "expected": 0.05784142857142857,
-        "leverage": 0.7756526285714286,
-        "preservation": 0.6256898200000001
+        "balanced": 0.5557727250000001,
+        "expected": 0.05986885714285714,
+        "leverage": 0.7759770171428572,
+        "preservation": 0.6239863000000001
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.05784142857142857,
+        "expected": 0.05986885714285714,
         "uniqueness": 0.98,
-        "futureCost": 0.2502465,
+        "futureCost": 0.2535225,
         "recentForm": 0.7375,
         "historicalStrength": 0.11835999999999999,
         "courseHistory": 0.5,
@@ -6413,12 +6085,12 @@
     },
     {
       "golfer": "Matt McCarty",
-      "projectedEarnings": 213466,
+      "projectedEarnings": 216031,
       "projectedDupCount": 0.06,
-      "futureValue": 499559,
+      "futureValue": 501928,
       "worldRank": 40,
-      "fedexPoints": 301,
-      "seasonEarnings": 1060663,
+      "fedexPoints": 314,
+      "seasonEarnings": 1096473,
       "inNextTournament": true,
       "historicalStrength": 0.10678499999999999,
       "courseHistoryScore": 0.783,
@@ -6563,7 +6235,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5369122583333333,
+      "score": 0.5369910833333333,
       "reasoning": "Reasoning: Recent form: last 4 finishes 39, 41, 24, 67. Historical strength index: 0.11. Last-five SG Total: -0.523. Course history score: 0.78.",
       "recentSummary": "Recent: Last four starts finished 39, 41, 24, 67 with mixed momentum entering this event. Last-five SG Total -0.523, Approach -0.132, Off-the-Tee -0.227.",
       "historicalSummary": "Historical: 2025: T14. Overall, historical performance at this event/course has been strong.",
@@ -6571,16 +6243,16 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5369122583333333,
-        "expected": 0.06099028571428571,
-        "leverage": 0.7400694457142858,
-        "preservation": 0.6474371600000001
+        "balanced": 0.5369910833333333,
+        "expected": 0.06172314285714286,
+        "leverage": 0.7401867028571429,
+        "preservation": 0.6468212200000001
       },
       "flags": [],
       "rationale": {
-        "expected": 0.06099028571428571,
+        "expected": 0.06172314285714286,
         "uniqueness": 0.98,
-        "futureCost": 0.2497795,
+        "futureCost": 0.250964,
         "recentForm": 0.5725,
         "historicalStrength": 0.10678499999999999,
         "courseHistory": 0.783,
@@ -6796,12 +6468,12 @@
     },
     {
       "golfer": "Kristoffer Reitan",
-      "projectedEarnings": 159454,
+      "projectedEarnings": 174504,
       "projectedDupCount": 0.06,
-      "futureValue": 443674,
+      "futureValue": 457569,
       "worldRank": 43,
-      "fedexPoints": 88,
-      "seasonEarnings": 275110,
+      "fedexPoints": 156,
+      "seasonEarnings": 512760,
       "inNextTournament": true,
       "historicalStrength": 0.10405500000000001,
       "last4Finishes": [
@@ -6938,7 +6610,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5290406000000001,
+      "score": 0.5295034750000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 10, 66, 17, 41. Historical strength index: 0.10. Last-five SG Total: +0.111.",
       "recentSummary": "Recent: Last four starts finished 10, 66, 17, 41 with mixed momentum entering this event. Last-five SG Total +0.111, Approach -0.299, Off-the-Tee +0.477.",
       "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 43 OWGR and a 0.10 historical-strength signal.",
@@ -6946,18 +6618,18 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5290406000000001,
-        "expected": 0.04555828571428571,
-        "leverage": 0.7552763257142858,
-        "preservation": 0.6224082599999999
+        "balanced": 0.5295034750000001,
+        "expected": 0.049858285714285716,
+        "leverage": 0.7559643257142857,
+        "preservation": 0.61879556
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.04555828571428571,
+        "expected": 0.049858285714285716,
         "uniqueness": 0.98,
-        "futureCost": 0.221837,
+        "futureCost": 0.2287845,
         "recentForm": 0.665,
         "historicalStrength": 0.10405500000000001,
         "courseHistory": 0.5,
@@ -6972,12 +6644,12 @@
     },
     {
       "golfer": "Sami Valimaki",
-      "projectedEarnings": 144728,
+      "projectedEarnings": 155400,
       "projectedDupCount": 0.06,
-      "futureValue": 419209,
+      "futureValue": 429064,
       "worldRank": 49,
-      "fedexPoints": 59,
-      "seasonEarnings": 230330,
+      "fedexPoints": 110,
+      "seasonEarnings": 389580,
       "inNextTournament": true,
       "historicalStrength": 0.09829,
       "last4Finishes": [
@@ -7114,7 +6786,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.52549475,
+      "score": 0.525822825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 14, 37, 34, 41. Historical strength index: 0.10. Last-five SG Total: -0.479.",
       "recentSummary": "Recent: Last four starts finished 14, 37, 34, 41 with mixed momentum entering this event. Last-five SG Total -0.479, Approach +0.195, Off-the-Tee -0.520.",
       "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 49 OWGR and a 0.10 historical-strength signal.",
@@ -7122,18 +6794,18 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.52549475,
-        "expected": 0.04135085714285714,
-        "leverage": 0.7460276371428572,
-        "preservation": 0.62367566
+        "balanced": 0.525822825,
+        "expected": 0.0444,
+        "leverage": 0.7465155000000001,
+        "preservation": 0.6211133600000001
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.04135085714285714,
+        "expected": 0.0444,
         "uniqueness": 0.98,
-        "futureCost": 0.2096045,
+        "futureCost": 0.214532,
         "recentForm": 0.685,
         "historicalStrength": 0.09829,
         "courseHistory": 0.5,
@@ -7541,189 +7213,13 @@
       }
     },
     {
-      "golfer": "Chris Gotterup",
-      "projectedEarnings": 568812,
-      "projectedDupCount": 0.83,
-      "futureValue": 985486,
-      "worldRank": 6,
-      "fedexPoints": 1219,
-      "seasonEarnings": 4218363,
-      "inNextTournament": true,
-      "historicalStrength": 0.229845,
-      "last4Finishes": [
-        6,
-        56,
-        18,
-        37
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [],
-      "recentResults": [
-        {
-          "date": "March 29, 2026",
-          "tournamentName": "Texas Children's Houston Open",
-          "result": "T6",
-          "roundScores": "68-69-65-65",
-          "toPar": "-13",
-          "fedexPoints": 88.75
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T56",
-          "roundScores": "71-73-68-78",
-          "toPar": "+2",
-          "fedexPoints": 10.75
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T18",
-          "roundScores": "69-71-69-76",
-          "toPar": "-3",
-          "fedexPoints": 54
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "MC",
-          "roundScores": "71-74",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T37",
-          "roundScores": "64-71-70-72",
-          "toPar": "-11",
-          "fedexPoints": 19.969
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "1",
-          "roundScores": "63-71-70-64",
-          "toPar": "-16",
-          "fedexPoints": 500
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "T18",
-          "roundScores": "68-70-70-69",
-          "toPar": "-11",
-          "fedexPoints": 46
-        },
-        {
-          "date": "Jan. 18, 2026",
-          "tournamentName": "Sony Open in Hawaii",
-          "result": "1",
-          "roundScores": "63-69-68-64",
-          "toPar": "-16",
-          "fedexPoints": 500
-        },
-        {
-          "date": "Oct. 12, 2025",
-          "tournamentName": "Baycurrent Classic",
-          "result": "T40",
-          "roundScores": "74-66-72-68",
-          "toPar": "-4",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 24, 2025",
-          "tournamentName": "TOUR Championship",
-          "result": "T10",
-          "roundScores": "70-63-69-66",
-          "toPar": "-12",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 14,
-          "overall": 0.579,
-          "lastFive": 0.255
-        },
-        "approach": {
-          "overallRank": 30,
-          "overall": 0.436,
-          "lastFive": 0.191
-        },
-        "aroundTheGreen": {
-          "overallRank": 25,
-          "overall": 0.296,
-          "lastFive": 0.059
-        },
-        "putting": {
-          "overallRank": 80,
-          "overall": 0.023,
-          "lastFive": -0.094
-        },
-        "total": {
-          "overallRank": 16,
-          "overall": 1.335,
-          "lastFive": 0.411
-        }
-      },
-      "performanceNotes": [
-        "Gotterup has posted a Strokes Gained: Off-the-Tee average of 0.579 (14th) this season, while his average Driving Distance of 319.9 yards ranks fourth on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Gotterup sports a 0.436 mark that ranks 30th on TOUR. He ranks 34th with a 68.70% Greens in Regulation rate.",
-        "On the greens, Gotterup has delivered a 0.023 Strokes Gained: Putting mark this season, which places him 80th on TOUR. In addition, he ranks 71st with a Putts Per Round average of 28.50, and he ranks 23rd by breaking par 25.19% of the time.",
-        "Gotterup has accumulated 1,219 FedExCup Regular Season points, ranking fifth on TOUR."
-      ],
-      "name": "Chris Gotterup",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.5181902500000001,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 6, 56, 18, 37. Historical strength index: 0.23. Last-five SG Total: +0.411.",
-      "recentSummary": "Recent: Last four starts finished 6, 56, 18, 37 with mixed momentum entering this event. Last-five SG Total +0.411, Approach +0.191, Off-the-Tee +0.255.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 6 OWGR and a 0.23 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.5181902500000001,
-        "expected": 0.1625177142857143,
-        "leverage": 0.6155008342857143,
-        "preservation": 0.5039401400000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.1625177142857143,
-        "uniqueness": 0.7233333333333334,
-        "futureCost": 0.492743,
-        "recentForm": 0.7075,
-        "historicalStrength": 0.229845,
-        "courseHistory": 0.5,
-        "strokesGained": 0.5804,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 6, 56, 18, 37. Historical strength index: 0.23. Last-five SG Total: +0.411."
-      }
-    },
-    {
       "golfer": "Alex Noren",
-      "projectedEarnings": 271146,
+      "projectedEarnings": 275794,
       "projectedDupCount": 0.06,
-      "futureValue": 629049,
+      "futureValue": 633340,
       "worldRank": 16,
-      "fedexPoints": 198,
-      "seasonEarnings": 825450,
+      "fedexPoints": 223,
+      "seasonEarnings": 885475,
       "inNextTournament": true,
       "historicalStrength": 0.17915,
       "courseHistoryScore": 0.12,
@@ -7869,7 +7365,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.514120425,
+      "score": 0.5142634,
       "reasoning": "Reasoning: Recent form: last 4 finishes 30, 32, 24, 12. Historical strength index: 0.18. Last-five SG Total: +0.843. Course history score: 0.12.",
       "recentSummary": "Recent: Last four starts finished 30, 32, 24, 12 with mixed momentum entering this event. Last-five SG Total +0.843, Approach -0.141, Off-the-Tee -0.181.",
       "historicalSummary": "Historical: 2023: MC. Overall, historical performance at this event/course has been solid.",
@@ -7877,16 +7373,16 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.514120425,
-        "expected": 0.07747028571428571,
-        "leverage": 0.7763212457142858,
-        "preservation": 0.52174626
+        "balanced": 0.5142634,
+        "expected": 0.07879828571428571,
+        "leverage": 0.7765337257142857,
+        "preservation": 0.5206306
       },
       "flags": [],
       "rationale": {
-        "expected": 0.07747028571428571,
+        "expected": 0.07879828571428571,
         "uniqueness": 0.98,
-        "futureCost": 0.3145245,
+        "futureCost": 0.31667,
         "recentForm": 0.755,
         "historicalStrength": 0.17915,
         "courseHistory": 0.12,
@@ -7901,12 +7397,12 @@
     },
     {
       "golfer": "Andrew Novak",
-      "projectedEarnings": 174460,
+      "projectedEarnings": 185133,
       "projectedDupCount": 0.06,
-      "futureValue": 459486,
+      "futureValue": 469340,
       "worldRank": 42,
-      "fedexPoints": 139,
-      "seasonEarnings": 518507,
+      "fedexPoints": 190,
+      "seasonEarnings": 677757,
       "inNextTournament": true,
       "historicalStrength": 0.10378499999999999,
       "last4Finishes": [
@@ -8043,7 +7539,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.513801175,
+      "score": 0.514129425,
       "reasoning": "Reasoning: Recent form: last 4 finishes 14, 55, 38, 47. Historical strength index: 0.10. Last-five SG Total: -0.256.",
       "recentSummary": "Recent: Last four starts finished 14, 55, 38, 47 with mixed momentum entering this event. Last-five SG Total -0.256, Approach -0.168, Off-the-Tee -0.077.",
       "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 42 OWGR and a 0.10 historical-strength signal.",
@@ -8051,18 +7547,18 @@
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.513801175,
-        "expected": 0.049845714285714285,
-        "leverage": 0.7455928142857143,
-        "preservation": 0.6083571400000001
+        "balanced": 0.514129425,
+        "expected": 0.052895142857142856,
+        "leverage": 0.7460807228571429,
+        "preservation": 0.6057951
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.049845714285714285,
+        "expected": 0.052895142857142856,
         "uniqueness": 0.98,
-        "futureCost": 0.229743,
+        "futureCost": 0.23467,
         "recentForm": 0.615,
         "historicalStrength": 0.10378499999999999,
         "courseHistory": 0.5,
@@ -8073,6 +7569,182 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 14, 55, 38, 47. Historical strength index: 0.10. Last-five SG Total: -0.256."
+      }
+    },
+    {
+      "golfer": "Chris Gotterup",
+      "projectedEarnings": 568812,
+      "projectedDupCount": 0.93,
+      "futureValue": 985486,
+      "worldRank": 6,
+      "fedexPoints": 1219,
+      "seasonEarnings": 4218363,
+      "inNextTournament": true,
+      "historicalStrength": 0.229845,
+      "last4Finishes": [
+        6,
+        56,
+        18,
+        37
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "T6",
+          "roundScores": "68-69-65-65",
+          "toPar": "-13",
+          "fedexPoints": 88.75
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T56",
+          "roundScores": "71-73-68-78",
+          "toPar": "+2",
+          "fedexPoints": 10.75
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T18",
+          "roundScores": "69-71-69-76",
+          "toPar": "-3",
+          "fedexPoints": 54
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "MC",
+          "roundScores": "71-74",
+          "toPar": "+3",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T37",
+          "roundScores": "64-71-70-72",
+          "toPar": "-11",
+          "fedexPoints": 19.969
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "1",
+          "roundScores": "63-71-70-64",
+          "toPar": "-16",
+          "fedexPoints": 500
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T18",
+          "roundScores": "68-70-70-69",
+          "toPar": "-11",
+          "fedexPoints": 46
+        },
+        {
+          "date": "Jan. 18, 2026",
+          "tournamentName": "Sony Open in Hawaii",
+          "result": "1",
+          "roundScores": "63-69-68-64",
+          "toPar": "-16",
+          "fedexPoints": 500
+        },
+        {
+          "date": "Oct. 12, 2025",
+          "tournamentName": "Baycurrent Classic",
+          "result": "T40",
+          "roundScores": "74-66-72-68",
+          "toPar": "-4",
+          "fedexPoints": null
+        },
+        {
+          "date": "Aug. 24, 2025",
+          "tournamentName": "TOUR Championship",
+          "result": "T10",
+          "roundScores": "70-63-69-66",
+          "toPar": "-12",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 14,
+          "overall": 0.579,
+          "lastFive": 0.255
+        },
+        "approach": {
+          "overallRank": 30,
+          "overall": 0.436,
+          "lastFive": 0.191
+        },
+        "aroundTheGreen": {
+          "overallRank": 25,
+          "overall": 0.296,
+          "lastFive": 0.059
+        },
+        "putting": {
+          "overallRank": 80,
+          "overall": 0.023,
+          "lastFive": -0.094
+        },
+        "total": {
+          "overallRank": 16,
+          "overall": 1.335,
+          "lastFive": 0.411
+        }
+      },
+      "performanceNotes": [
+        "Gotterup has posted a Strokes Gained: Off-the-Tee average of 0.579 (14th) this season, while his average Driving Distance of 319.9 yards ranks fourth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Gotterup sports a 0.436 mark that ranks 30th on TOUR. He ranks 34th with a 68.70% Greens in Regulation rate.",
+        "On the greens, Gotterup has delivered a 0.023 Strokes Gained: Putting mark this season, which places him 80th on TOUR. In addition, he ranks 71st with a Putts Per Round average of 28.50, and he ranks 23rd by breaking par 25.19% of the time.",
+        "Gotterup has accumulated 1,219 FedExCup Regular Season points, ranking fifth on TOUR."
+      ],
+      "name": "Chris Gotterup",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.5131902500000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 6, 56, 18, 37. Historical strength index: 0.23. Last-five SG Total: +0.411.",
+      "recentSummary": "Recent: Last four starts finished 6, 56, 18, 37 with mixed momentum entering this event. Last-five SG Total +0.411, Approach +0.191, Off-the-Tee +0.255.",
+      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 6 OWGR and a 0.23 historical-strength signal.",
+      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.5131902500000001,
+        "expected": 0.1625177142857143,
+        "leverage": 0.5935008342857143,
+        "preservation": 0.5039401400000001
+      },
+      "flags": [
+        "Course-history detail missing"
+      ],
+      "rationale": {
+        "expected": 0.1625177142857143,
+        "uniqueness": 0.69,
+        "futureCost": 0.492743,
+        "recentForm": 0.7075,
+        "historicalStrength": 0.229845,
+        "courseHistory": 0.5,
+        "strokesGained": 0.5804,
+        "eventHistoryTrend": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 6, 56, 18, 37. Historical strength index: 0.23. Last-five SG Total: +0.411."
       }
     },
     {
