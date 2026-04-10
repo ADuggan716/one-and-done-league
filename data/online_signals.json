@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-04-09T12:00:04.902Z",
+  "fetchedAt": "2026-04-10T00:00:04.292Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 201 golfer records loaded",
+    "PGA TOUR FedExCup: 198 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1199,13 +1199,6 @@
       "seasonEarnings": 1272492
     },
     {
-      "golfer": "Ángel Cabrera",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Austin Eckroat",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1483,13 +1476,6 @@
       ],
       "fedexPoints": 4,
       "seasonEarnings": 10253
-    },
-    {
-      "golfer": "Fred Couples",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Gary Woodland",
@@ -1821,13 +1807,6 @@
       ],
       "fedexPoints": 133,
       "seasonEarnings": 481170
-    },
-    {
-      "golfer": "Mike Weir",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Neal Shipley",
