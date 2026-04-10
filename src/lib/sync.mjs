@@ -181,7 +181,7 @@ function canonicalizeEventName(value) {
   if (key === "arnoldpalmer" || key === "arnoldpalmerinvitational") {
     return "Arnold Palmer";
   }
-  if (key === "masterstournament" || key === "masters") {
+  if (key === "themasters" || key === "masterstournament" || key === "masters") {
     return "Masters Tournament";
   }
 

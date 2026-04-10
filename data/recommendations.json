@@ -1,11 +1,11 @@
 {
   "currentEvent": {
-    "id": "the-masters",
-    "name": "The Masters",
+    "id": "masters-tournament",
+    "name": "Masters Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
-    "countsTowardSeasonTotals": true,
+    "countsTowardSeasonTotals": false,
     "totalPurse": 0,
     "firstPrize": 0,
     "subgroupResults": [
@@ -107,7 +107,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-masters-tournament-2026",
     "PGA TOUR betting profiles matched: 37/38"
   ],
-  "generatedAt": "2026-04-10T00:00:20.586Z",
+  "generatedAt": "2026-04-10T01:17:55.308Z",
   "primary": {
     "golfer": "PATRICK REED",
     "projectedEarnings": 213426,

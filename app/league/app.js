@@ -112,6 +112,13 @@ function orderedEventSelectorRows(events, nextTournamentName) {
   return liveEvent ? [liveEvent, ...historyEvents] : historyEvents;
 }
 
+function isEventPublicInLeagueWideHistory(snapshot, eventName) {
+  const match = eventRowsForDisplay(snapshot.leagueWidePickHistory || []).find(
+    (event) => canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(eventName)
+  );
+  return Boolean((match?.rows || []).length);
+}
+
 function sortHeader(label, key, sortState) {
   const arrow = sortState.key === key ? (sortState.dir === "asc" ? " ▲" : " ▼") : "";
   return `<button data-sort-key="${key}">${label}${arrow}</button>`;
@@ -148,7 +155,7 @@ function renderNextTournament(snapshot) {
   const next = snapshot.nextTournament || snapshot.event || {};
   const isLive =
     snapshot.event &&
-    normalizeEventKey(snapshot.event.name) === normalizeEventKey(next.name) &&
+    canonicalDisplayEventKey(snapshot.event.name) === canonicalDisplayEventKey(next.name) &&
     snapshot.event.countsTowardSeasonTotals === false;
   const cardTitle = isLive ? "Current Tournament" : "Next Tournament";
   const kicker = isLive ? "Current Event" : "Upcoming Event";
@@ -278,7 +285,8 @@ function renderWeeklyTable(snapshot) {
 
   const selectedEventIsLive =
     event.countsTowardSeasonTotals === false &&
-    normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name);
+    canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(snapshot.nextTournament?.name);
+  const hidePrivatePicks = selectedEventIsLive && !isEventPublicInLeagueWideHistory(snapshot, event.eventName);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Projected Earnings" : "Earnings";
   const rows = [...event.rows].sort(sortComparator(state.weeklySort));
@@ -298,7 +306,7 @@ function renderWeeklyTable(snapshot) {
           (row) => `
         <tr>
           <td class="sticky-col sticky-col-body">${row.member}</td>
-          <td>${row.pick || ""}</td>
+          <td>${hidePrivatePicks ? "" : (row.pick || "")}</td>
           <td>${row.finish ?? ""}</td>
           <td>${row.earnings ? formatCurrency(row.earnings) : ""}</td>
         </tr>
@@ -348,7 +356,7 @@ function renderLeagueWideTable(snapshot) {
 
   const selectedEventIsLive =
     event.countsTowardSeasonTotals === false &&
-    normalizeEventKey(event.eventName) === normalizeEventKey(snapshot.nextTournament?.name);
+    canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(snapshot.nextTournament?.name);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Current Earnings" : "Earnings";
   const subgroupRows = eventRowsForDisplay(snapshot.weeklyComparison || [])
@@ -482,7 +490,8 @@ function renderSeasonWeeklyTable(snapshot) {
           </td>
           ${MEMBERS.map((member) => {
             const entry = (event.rows || []).find((r) => r.member === member) || {};
-            const pick = entry.pick || "";
+            const hidePrivatePick = event.countsTowardSeasonTotals === false && !isEventPublicInLeagueWideHistory(snapshot, event.eventName);
+            const pick = hidePrivatePick ? "" : (entry.pick || "");
             const finish = entry.finish ?? "";
             const earnings = entry.earnings ? formatCurrency(entry.earnings) : "";
             const cls = weekClass(entry);

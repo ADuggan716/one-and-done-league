@@ -611,7 +611,8 @@ function latestCompletedEvent(events) {
 function buildLeagueSnapshot(normalized, config) {
   const dedupedEvents = dedupeEventsById(normalized.events);
   const standings = computeSubgroupStandings(config.subgroupMembers, dedupedEvents);
-  const displayEvent = latestCompletedEvent(dedupedEvents) || dedupedEvents.at(-1) || null;
+  const liveEvent = [...dedupedEvents].reverse().find((event) => event?.countsTowardSeasonTotals === false) || null;
+  const displayEvent = liveEvent || latestCompletedEvent(dedupedEvents) || dedupedEvents.at(-1) || null;
   const latestRanks = new Map((displayEvent?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null]));
   const standingsWithLeagueRank = standings.map((row) => ({
     ...row,

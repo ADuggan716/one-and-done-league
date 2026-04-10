@@ -1,11 +1,11 @@
 {
   "event": {
-    "id": "the-masters",
-    "name": "The Masters",
+    "id": "masters-tournament",
+    "name": "Masters Tournament",
     "tier": "regular",
     "startDate": null,
     "isUpcoming": true,
-    "countsTowardSeasonTotals": true,
+    "countsTowardSeasonTotals": false,
     "totalPurse": 0,
     "firstPrize": 0,
     "subgroupResults": [
@@ -92,16 +92,32 @@
     "name": "Manage Entries",
     "totalEntrants": 150,
     "yourRank": 120,
-    "latestEventId": "the-masters",
+    "latestEventId": "masters-tournament",
     "yourPercentile": 20.13422818791946
   },
   "subgroupStandings": [
     {
       "member": "Dakota",
-      "seasonEarnings": 5590444,
-      "weeklyEarnings": 679875,
-      "avgEarnings": 399317.4285714286,
+      "seasonEarnings": 4910569,
+      "weeklyEarnings": 0,
+      "avgEarnings": 409214.0833333333,
       "lastFour": [
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 925000,
+          "finish": "5",
+          "pick": "Ludvig Aberg"
+        },
+        {
+          "eventId": "valspar-championship",
+          "eventName": "Valspar Championship",
+          "tier": "regular",
+          "earnings": 161525,
+          "finish": "14",
+          "pick": "Jacob Bridgeman"
+        },
         {
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
@@ -117,22 +133,6 @@
           "earnings": 0,
           "finish": "87",
           "pick": "Sepp Straka"
-        },
-        {
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Scottie Scheffler"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 679875,
-          "finish": "6",
-          "pick": "Scottie Scheffler"
         }
       ],
       "history": [
@@ -236,14 +236,6 @@
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Scottie Scheffler"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
           "earnings": 679875,
           "finish": "6",
           "pick": "Scottie Scheffler"
@@ -257,8 +249,24 @@
       "member": "Mike",
       "seasonEarnings": 2746605,
       "weeklyEarnings": 0,
-      "avgEarnings": 196186.07142857142,
+      "avgEarnings": 228883.75,
       "lastFour": [
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 731250,
+          "finish": "8",
+          "pick": "Sepp Straka"
+        },
+        {
+          "eventId": "valspar-championship",
+          "eventName": "Valspar Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "85",
+          "pick": "Viktor Hovland"
+        },
         {
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
@@ -274,22 +282,6 @@
           "earnings": 0,
           "finish": "71",
           "pick": "Russell Henley"
-        },
-        {
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
         }
       ],
       "history": [
@@ -396,131 +388,25 @@
           "earnings": 0,
           "finish": "73",
           "pick": "Jon Rahm"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
         }
       ],
       "groupRank": 2,
-      "toLeader": 2843839,
+      "toLeader": 2163964,
       "leagueRank": 86
     },
     {
-      "member": "Andrew",
-      "seasonEarnings": 2626185,
-      "weeklyEarnings": 679875,
-      "avgEarnings": 187584.64285714287,
+      "member": "Paul",
+      "seasonEarnings": 2061350,
+      "weeklyEarnings": 237650,
+      "avgEarnings": 171779.16666666666,
       "lastFour": [
-        {
-          "eventId": "texas-children-s-houston-open",
-          "eventName": "Texas Children's Houston Open",
-          "tier": "regular",
-          "earnings": 59625,
-          "finish": "28",
-          "pick": "Ben Griffin"
-        },
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 95550,
-          "finish": "21",
-          "pick": "Maverick McNealy"
-        },
-        {
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Xander Schauffele"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 679875,
-          "finish": "6",
-          "pick": "Xander Schauffele"
-        }
-      ],
-      "history": [
-        {
-          "eventId": "sony",
-          "eventName": "Sony",
-          "tier": "regular",
-          "earnings": 287105,
-          "finish": "6",
-          "pick": "Daniel Berger"
-        },
-        {
-          "eventId": "amex",
-          "eventName": "AmEx",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "153",
-          "pick": "Ludvig Aberg"
-        },
-        {
-          "eventId": "farmers",
-          "eventName": "Farmers",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "96",
-          "pick": "J.J. Spaun"
-        },
-        {
-          "eventId": "phoenix",
-          "eventName": "Phoenix",
-          "tier": "regular",
-          "earnings": 22272,
-          "finish": "54",
-          "pick": "Collin Morikawa"
-        },
-        {
-          "eventId": "atandt-no-cut",
-          "eventName": "AT&T (NO CUT)",
-          "tier": "regular",
-          "earnings": 39750,
-          "finish": "58",
-          "pick": "Viktor Hovland"
-        },
-        {
-          "eventId": "genesis",
-          "eventName": "Genesis",
-          "tier": "signature",
-          "earnings": 415000,
-          "finish": "12",
-          "pick": "Scottie Scheffler"
-        },
-        {
-          "eventId": "the-classic",
-          "eventName": "The Classic",
-          "tier": "regular",
-          "earnings": 726400,
-          "finish": "2",
-          "pick": "Shane Lowry"
-        },
-        {
-          "eventId": "arnold-palmer",
-          "eventName": "Arnold Palmer",
-          "tier": "signature",
-          "earnings": 78000,
-          "finish": "41",
-          "pick": "Hideki Matsuyama"
-        },
         {
           "eventId": "players-championship",
           "eventName": "Players Championship",
           "tier": "signature",
-          "earnings": 61083,
-          "finish": "50",
-          "pick": "Si Woo Kim"
+          "earnings": 0,
+          "finish": "123",
+          "pick": "Collin Morikawa"
         },
         {
           "eventId": "valspar-championship",
@@ -528,51 +414,8 @@
           "tier": "regular",
           "earnings": 161525,
           "finish": "14",
-          "pick": "Corey Conners"
+          "pick": "Jacob Bridgeman"
         },
-        {
-          "eventId": "texas-children-s-houston-open",
-          "eventName": "Texas Children's Houston Open",
-          "tier": "regular",
-          "earnings": 59625,
-          "finish": "28",
-          "pick": "Ben Griffin"
-        },
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 95550,
-          "finish": "21",
-          "pick": "Maverick McNealy"
-        },
-        {
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Xander Schauffele"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 679875,
-          "finish": "6",
-          "pick": "Xander Schauffele"
-        }
-      ],
-      "groupRank": 3,
-      "toLeader": 2964259,
-      "leagueRank": 120
-    },
-    {
-      "member": "Paul",
-      "seasonEarnings": 2061350,
-      "weeklyEarnings": 0,
-      "avgEarnings": 147239.2857142857,
-      "lastFour": [
         {
           "eventId": "texas-children-s-houston-open",
           "eventName": "Texas Children's Houston Open",
@@ -588,22 +431,6 @@
           "earnings": 237650,
           "finish": "10",
           "pick": "Tommy Fleetwood"
-        },
-        {
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
-        },
-        {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
         }
       ],
       "history": [
@@ -710,19 +537,160 @@
           "earnings": 0,
           "finish": "73",
           "pick": "Jon Rahm"
+        }
+      ],
+      "groupRank": 3,
+      "toLeader": 2849219,
+      "leagueRank": 113
+    },
+    {
+      "member": "Andrew",
+      "seasonEarnings": 1946310,
+      "weeklyEarnings": 95550,
+      "avgEarnings": 162192.5,
+      "lastFour": [
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 61083,
+          "finish": "50",
+          "pick": "Si Woo Kim"
         },
         {
-          "eventId": "the-masters",
-          "eventName": "The Masters",
+          "eventId": "valspar-championship",
+          "eventName": "Valspar Championship",
+          "tier": "regular",
+          "earnings": 161525,
+          "finish": "14",
+          "pick": "Corey Conners"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 59625,
+          "finish": "28",
+          "pick": "Ben Griffin"
+        },
+        {
+          "eventId": "valero-texas-open",
+          "eventName": "Valero Texas Open",
+          "tier": "regular",
+          "earnings": 95550,
+          "finish": "21",
+          "pick": "Maverick McNealy"
+        }
+      ],
+      "history": [
+        {
+          "eventId": "sony",
+          "eventName": "Sony",
+          "tier": "regular",
+          "earnings": 287105,
+          "finish": "6",
+          "pick": "Daniel Berger"
+        },
+        {
+          "eventId": "amex",
+          "eventName": "AmEx",
           "tier": "regular",
           "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm"
+          "finish": "153",
+          "pick": "Ludvig Aberg"
+        },
+        {
+          "eventId": "farmers",
+          "eventName": "Farmers",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "96",
+          "pick": "J.J. Spaun"
+        },
+        {
+          "eventId": "phoenix",
+          "eventName": "Phoenix",
+          "tier": "regular",
+          "earnings": 22272,
+          "finish": "54",
+          "pick": "Collin Morikawa"
+        },
+        {
+          "eventId": "atandt-no-cut",
+          "eventName": "AT&T (NO CUT)",
+          "tier": "regular",
+          "earnings": 39750,
+          "finish": "58",
+          "pick": "Viktor Hovland"
+        },
+        {
+          "eventId": "genesis",
+          "eventName": "Genesis",
+          "tier": "signature",
+          "earnings": 415000,
+          "finish": "12",
+          "pick": "Scottie Scheffler"
+        },
+        {
+          "eventId": "the-classic",
+          "eventName": "The Classic",
+          "tier": "regular",
+          "earnings": 726400,
+          "finish": "2",
+          "pick": "Shane Lowry"
+        },
+        {
+          "eventId": "arnold-palmer",
+          "eventName": "Arnold Palmer",
+          "tier": "signature",
+          "earnings": 78000,
+          "finish": "41",
+          "pick": "Hideki Matsuyama"
+        },
+        {
+          "eventId": "players-championship",
+          "eventName": "Players Championship",
+          "tier": "signature",
+          "earnings": 61083,
+          "finish": "50",
+          "pick": "Si Woo Kim"
+        },
+        {
+          "eventId": "valspar-championship",
+          "eventName": "Valspar Championship",
+          "tier": "regular",
+          "earnings": 161525,
+          "finish": "14",
+          "pick": "Corey Conners"
+        },
+        {
+          "eventId": "texas-children-s-houston-open",
+          "eventName": "Texas Children's Houston Open",
+          "tier": "regular",
+          "earnings": 59625,
+          "finish": "28",
+          "pick": "Ben Griffin"
+        },
+        {
+          "eventId": "valero-texas-open",
+          "eventName": "Valero Texas Open",
+          "tier": "regular",
+          "earnings": 95550,
+          "finish": "21",
+          "pick": "Maverick McNealy"
+        },
+        {
+          "eventId": "masters-tournament",
+          "eventName": "Masters Tournament",
+          "tier": "regular",
+          "earnings": 679875,
+          "finish": "6",
+          "pick": "Xander Schauffele"
         }
       ],
       "groupRank": 4,
-      "toLeader": 3529094,
-      "leagueRank": 113
+      "toLeader": 2964259,
+      "leagueRank": 120
     }
   ],
   "teams": [
@@ -732,9 +700,9 @@
         "Andrew",
         "Dakota"
       ],
-      "seasonEarnings": 8216629,
-      "weeklyEarnings": 1359750,
-      "avgMemberEarnings": 4108314.5,
+      "seasonEarnings": 6856879,
+      "weeklyEarnings": 95550,
+      "avgMemberEarnings": 3428439.5,
       "rank": 1,
       "toLeader": 0
     },
@@ -745,10 +713,10 @@
         "Paul"
       ],
       "seasonEarnings": 4807955,
-      "weeklyEarnings": 0,
+      "weeklyEarnings": 237650,
       "avgMemberEarnings": 2403977.5,
       "rank": 2,
-      "toLeader": 3408674
+      "toLeader": 2048924
     }
   ],
   "weeklyComparison": [
@@ -1465,7 +1433,7 @@
       "eventName": "Masters Tournament",
       "tier": "regular",
       "startDate": null,
-      "countsTowardSeasonTotals": true,
+      "countsTowardSeasonTotals": false,
       "totalPurse": 0,
       "firstPrize": 0,
       "rows": [
@@ -1473,65 +1441,6 @@
           "member": "Andrew",
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Xander Schauffele",
-          "leagueRank": null
-        },
-        {
-          "member": "Dakota",
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "6",
-          "pick": "Scottie Scheffler",
-          "leagueRank": null
-        },
-        {
-          "member": "Mike",
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm",
-          "leagueRank": null
-        },
-        {
-          "member": "Paul",
-          "eventId": "masters-tournament",
-          "eventName": "Masters Tournament",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "73",
-          "pick": "Jon Rahm",
-          "leagueRank": null
-        }
-      ]
-    },
-    {
-      "eventId": "the-masters",
-      "eventName": "The Masters",
-      "tier": "regular",
-      "startDate": null,
-      "countsTowardSeasonTotals": true,
-      "totalPurse": 0,
-      "firstPrize": 0,
-      "rows": [
-        {
-          "member": "Andrew",
-          "eventId": "the-masters",
-          "eventName": "The Masters",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -1542,8 +1451,8 @@
         },
         {
           "member": "Dakota",
-          "eventId": "the-masters",
-          "eventName": "The Masters",
+          "eventId": "masters-tournament",
+          "eventName": "Masters Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -1554,8 +1463,8 @@
         },
         {
           "member": "Mike",
-          "eventId": "the-masters",
-          "eventName": "The Masters",
+          "eventId": "masters-tournament",
+          "eventName": "Masters Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -1566,8 +1475,8 @@
         },
         {
           "member": "Paul",
-          "eventId": "the-masters",
-          "eventName": "The Masters",
+          "eventId": "masters-tournament",
+          "eventName": "Masters Tournament",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
@@ -4261,11 +4170,178 @@
           "earnings": 0
         }
       ]
+    },
+    {
+      "eventId": "masters-tournament",
+      "eventName": "Masters Tournament",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": false,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "totalEntrants": 163,
+      "rows": [
+        {
+          "golfer": "Jon Rahm",
+          "pickCount": 32,
+          "finish": "73",
+          "earnings": 0
+        },
+        {
+          "golfer": "Bryson DeChambeau",
+          "pickCount": 25,
+          "finish": "56",
+          "earnings": 0
+        },
+        {
+          "golfer": "Scottie Scheffler",
+          "pickCount": 18,
+          "finish": "6",
+          "earnings": 679875
+        },
+        {
+          "golfer": "Xander Schauffele",
+          "pickCount": 16,
+          "finish": "6",
+          "earnings": 679875
+        },
+        {
+          "golfer": "Ludvig Aberg",
+          "pickCount": 15,
+          "finish": "40",
+          "earnings": 75600
+        },
+        {
+          "golfer": "Patrick Reed",
+          "pickCount": 11,
+          "finish": "3",
+          "earnings": 1092000
+        },
+        {
+          "golfer": "Matthew Fitzpatrick",
+          "pickCount": 10,
+          "finish": "40",
+          "earnings": 75600
+        },
+        {
+          "golfer": "Cameron Young",
+          "pickCount": 7,
+          "finish": "33",
+          "earnings": 108600
+        },
+        {
+          "golfer": "Tommy Fleetwood",
+          "pickCount": 5,
+          "finish": "10",
+          "earnings": 450000
+        },
+        {
+          "golfer": "Rory McIlroy",
+          "pickCount": 4,
+          "finish": "1",
+          "earnings": 3234000
+        },
+        {
+          "golfer": "Justin Rose",
+          "pickCount": 2,
+          "finish": "6",
+          "earnings": 679875
+        },
+        {
+          "golfer": "Collin Morikawa",
+          "pickCount": 2,
+          "finish": "40",
+          "earnings": 75600
+        },
+        {
+          "golfer": "Tyrrell Hatton",
+          "pickCount": 2,
+          "finish": "40",
+          "earnings": 75600
+        },
+        {
+          "golfer": "Viktor Hovland",
+          "pickCount": 2,
+          "finish": "48",
+          "earnings": 20633
+        },
+        {
+          "golfer": "Haotong Li",
+          "pickCount": 1,
+          "finish": "10",
+          "earnings": 450000
+        },
+        {
+          "golfer": "Adam Scott",
+          "pickCount": 1,
+          "finish": "17",
+          "earnings": 209606
+        },
+        {
+          "golfer": "Brooks Koepka",
+          "pickCount": 1,
+          "finish": "17",
+          "earnings": 209606
+        },
+        {
+          "golfer": "Christopher Gotterup",
+          "pickCount": 1,
+          "finish": "17",
+          "earnings": 209606
+        },
+        {
+          "golfer": "Hideki Matsuyama",
+          "pickCount": 1,
+          "finish": "17",
+          "earnings": 209606
+        },
+        {
+          "golfer": "Keegan Bradley",
+          "pickCount": 1,
+          "finish": "17",
+          "earnings": 209606
+        },
+        {
+          "golfer": "Jake Knapp",
+          "pickCount": 1,
+          "finish": "33",
+          "earnings": 108600
+        },
+        {
+          "golfer": "Cameron Smith",
+          "pickCount": 1,
+          "finish": "40",
+          "earnings": 75600
+        },
+        {
+          "golfer": "Brian Harman",
+          "pickCount": 1,
+          "finish": "77",
+          "earnings": 0
+        },
+        {
+          "golfer": "Max Greyserman",
+          "pickCount": 1,
+          "finish": "77",
+          "earnings": 0
+        },
+        {
+          "golfer": "Robert MacIntyre",
+          "pickCount": 1,
+          "finish": "82",
+          "earnings": 0
+        },
+        {
+          "golfer": "Sungjae Im",
+          "pickCount": 1,
+          "finish": "56",
+          "earnings": 0
+        }
+      ]
     }
   ],
   "whoGainedThisWeek": [
-    "Dakota",
-    "Andrew"
+    "Paul"
   ],
   "projections": [
     {
@@ -12535,5 +12611,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-10T00:00:12.529Z"
+  "updatedAt": "2026-04-10T01:17:52.293Z"
 }
