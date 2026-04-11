@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-04-10T00:00:04.292Z",
+  "fetchedAt": "2026-04-11T00:00:03.624Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 198 golfer records loaded",
+    "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1629,13 +1629,6 @@
       ],
       "fedexPoints": 215,
       "seasonEarnings": 727291
-    },
-    {
-      "golfer": "José María Olazábal",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Justin Lower",

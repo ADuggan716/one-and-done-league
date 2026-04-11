@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Xander Schauffele",
-        "earnings": 679875,
+        "earnings": 325500,
         "seasonEarnings": 1946310,
-        "finish": "6",
+        "finish": "16",
         "leagueRank": 120
       },
       {
         "member": "Paul",
         "pick": "Jon Rahm",
-        "earnings": 0,
+        "earnings": 28245,
         "seasonEarnings": 2061350,
-        "finish": "73",
+        "finish": "47",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
         "pick": "Scottie Scheffler",
-        "earnings": 679875,
+        "earnings": 162488,
         "seasonEarnings": 4910569,
-        "finish": "6",
+        "finish": "24",
         "leagueRank": 18
       },
       {
         "member": "Mike",
         "pick": "Jon Rahm",
-        "earnings": 0,
+        "earnings": 28245,
         "seasonEarnings": 2746605,
-        "finish": "73",
+        "finish": "47",
         "leagueRank": 86
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Xander Schauffele",
-        "earnings": 679875,
+        "earnings": 325500,
         "seasonEarnings": 1946310,
-        "finish": "6",
+        "finish": "16",
         "leagueRank": 120
       },
       {
         "member": "Paul",
         "golfer": "Jon Rahm",
-        "earnings": 0,
+        "earnings": 28245,
         "seasonEarnings": 2061350,
-        "finish": "73",
+        "finish": "47",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
         "golfer": "Scottie Scheffler",
-        "earnings": 679875,
+        "earnings": 162488,
         "seasonEarnings": 4910569,
-        "finish": "6",
+        "finish": "24",
         "leagueRank": 18
       },
       {
         "member": "Mike",
         "golfer": "Jon Rahm",
-        "earnings": 0,
+        "earnings": 28245,
         "seasonEarnings": 2746605,
-        "finish": "73",
+        "finish": "47",
         "leagueRank": 86
       }
     ]
@@ -236,8 +236,8 @@
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
           "tier": "regular",
-          "earnings": 679875,
-          "finish": "6",
+          "earnings": 162488,
+          "finish": "24",
           "pick": "Scottie Scheffler"
         }
       ],
@@ -385,8 +385,8 @@
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
+          "earnings": 28245,
+          "finish": "47",
           "pick": "Jon Rahm"
         }
       ],
@@ -534,8 +534,8 @@
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "73",
+          "earnings": 28245,
+          "finish": "47",
           "pick": "Jon Rahm"
         }
       ],
@@ -683,8 +683,8 @@
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
           "tier": "regular",
-          "earnings": 679875,
-          "finish": "6",
+          "earnings": 325500,
+          "finish": "16",
           "pick": "Xander Schauffele"
         }
       ],
@@ -1444,8 +1444,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 679875,
-          "finish": "6",
+          "earnings": 325500,
+          "finish": "16",
           "pick": "Xander Schauffele",
           "leagueRank": 120
         },
@@ -1456,8 +1456,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 679875,
-          "finish": "6",
+          "earnings": 162488,
+          "finish": "24",
           "pick": "Scottie Scheffler",
           "leagueRank": 18
         },
@@ -1468,8 +1468,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "73",
+          "earnings": 28245,
+          "finish": "47",
           "pick": "Jon Rahm",
           "leagueRank": 86
         },
@@ -1480,8 +1480,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "73",
+          "earnings": 28245,
+          "finish": "47",
           "pick": "Jon Rahm",
           "leagueRank": 113
         }
@@ -11786,20 +11786,6 @@
       ]
     },
     {
-      "golfer": "José María Olazábal",
-      "projectedEarnings": 66528,
-      "projectedDupCount": 0.06,
-      "futureValue": 211425,
-      "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": true,
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "Weekly projection synthesis"
-      ]
-    },
-    {
       "golfer": "Justin Lower",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -12596,14 +12582,14 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 13",
     "Splash parsed history rows: 52",
-    "Splash mapping: Andrew: rank=120, season=1946310, pick=Xander Schauffele, week=679875, finish=6 | Paul: rank=113, season=2061350, pick=Jon Rahm, week=0, finish=73 | Dakota: rank=18, season=4910569, pick=Scottie Scheffler, week=679875, finish=6 | Mike: rank=86, season=2746605, pick=Jon Rahm, week=0, finish=73",
-    "PGA TOUR FedExCup: 198 golfer records loaded",
+    "Splash mapping: Andrew: rank=120, season=1946310, pick=Xander Schauffele, week=325500, finish=16 | Paul: rank=113, season=2061350, pick=Jon Rahm, week=28245, finish=47 | Dakota: rank=18, season=4910569, pick=Scottie Scheffler, week=162488, finish=24 | Mike: rank=86, season=2746605, pick=Jon Rahm, week=28245, finish=47",
+    "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Masters Tournament",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/masters-tournament/R2026014/field",
     "PGA TOUR field entries: 91",
-    "Weekly projection synthesis: 75 field golfers received modeled payout estimates",
+    "Weekly projection synthesis: 74 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Collin Morikawa, Jacob Bridgeman, Chris Gotterup, Cameron Young",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-masters-tournament-2026",
     "PGA TOUR betting profiles matched: 37/38"
@@ -12611,5 +12597,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-10T01:17:52.293Z"
+  "updatedAt": "2026-04-11T00:00:12.130Z"
 }
