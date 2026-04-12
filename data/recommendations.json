@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Xander Schauffele",
-        "earnings": 325500,
+        "earnings": 348750,
         "seasonEarnings": 1946310,
-        "finish": "16",
+        "finish": "15",
         "leagueRank": 120
       },
       {
         "member": "Paul",
         "pick": "Jon Rahm",
-        "earnings": 28245,
+        "earnings": 58950,
         "seasonEarnings": 2061350,
-        "finish": "47",
+        "finish": "48",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
         "pick": "Scottie Scheffler",
-        "earnings": 162488,
+        "earnings": 725625,
         "seasonEarnings": 4910569,
-        "finish": "24",
+        "finish": "7",
         "leagueRank": 18
       },
       {
         "member": "Mike",
         "pick": "Jon Rahm",
-        "earnings": 28245,
+        "earnings": 58950,
         "seasonEarnings": 2746605,
-        "finish": "47",
+        "finish": "48",
         "leagueRank": 86
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Xander Schauffele",
-        "earnings": 325500,
+        "earnings": 348750,
         "seasonEarnings": 1946310,
-        "finish": "16",
+        "finish": "15",
         "leagueRank": 120
       },
       {
         "member": "Paul",
         "golfer": "Jon Rahm",
-        "earnings": 28245,
+        "earnings": 58950,
         "seasonEarnings": 2061350,
-        "finish": "47",
+        "finish": "48",
         "leagueRank": 113
       },
       {
         "member": "Dakota",
         "golfer": "Scottie Scheffler",
-        "earnings": 162488,
+        "earnings": 725625,
         "seasonEarnings": 4910569,
-        "finish": "24",
+        "finish": "7",
         "leagueRank": 18
       },
       {
         "member": "Mike",
         "golfer": "Jon Rahm",
-        "earnings": 28245,
+        "earnings": 58950,
         "seasonEarnings": 2746605,
-        "finish": "47",
+        "finish": "48",
         "leagueRank": 86
       }
     ]
@@ -95,7 +95,7 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 13",
     "Splash parsed history rows: 52",
-    "Splash mapping: Andrew: rank=120, season=1946310, pick=Xander Schauffele, week=325500, finish=16 | Paul: rank=113, season=2061350, pick=Jon Rahm, week=28245, finish=47 | Dakota: rank=18, season=4910569, pick=Scottie Scheffler, week=162488, finish=24 | Mike: rank=86, season=2746605, pick=Jon Rahm, week=28245, finish=47",
+    "Splash mapping: Andrew: rank=120, season=1946310, pick=Xander Schauffele, week=348750, finish=15 | Paul: rank=113, season=2061350, pick=Jon Rahm, week=58950, finish=48 | Dakota: rank=18, season=4910569, pick=Scottie Scheffler, week=725625, finish=7 | Mike: rank=86, season=2746605, pick=Jon Rahm, week=58950, finish=48",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -107,7 +107,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-masters-tournament-2026",
     "PGA TOUR betting profiles matched: 37/38"
   ],
-  "generatedAt": "2026-04-11T00:00:19.714Z",
+  "generatedAt": "2026-04-12T00:00:19.573Z",
   "primary": {
     "golfer": "PATRICK REED",
     "projectedEarnings": 213426,
