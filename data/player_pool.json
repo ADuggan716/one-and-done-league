@@ -1,10 +1,10 @@
 {
-  "eventId": "masters-tournament",
-  "tournamentName": "Masters Tournament",
-  "eventTier": "regular",
+  "eventId": "rbc-heritage",
+  "tournamentName": "RBC Heritage",
+  "eventTier": "signature",
   "currentEventMeta": {
-    "totalPurse": 0,
-    "firstPrize": 0
+    "totalPurse": 20000000,
+    "firstPrize": 3600000
   },
   "members": {
     "Andrew": {
@@ -250,7 +250,7 @@
       "worldRank": 2,
       "fedexPoints": 476,
       "seasonEarnings": 2214875,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Tommy Fleetwood",
@@ -320,7 +320,7 @@
       "worldRank": 12,
       "fedexPoints": 687,
       "seasonEarnings": 2406270,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Sepp Straka",
@@ -362,7 +362,7 @@
       "worldRank": 18,
       "fedexPoints": 0,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Jacob Bridgeman",
@@ -411,7 +411,7 @@
       "worldRank": 25,
       "fedexPoints": 0,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Ryan Gerard",
@@ -467,7 +467,7 @@
       "worldRank": 33,
       "fedexPoints": 77,
       "seasonEarnings": 270129,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "NICOLAS ECHAVARRIA",
@@ -481,14 +481,14 @@
       "worldRank": 35,
       "fedexPoints": 228,
       "seasonEarnings": 834008,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "BRYSON DECHAMBEAU",
       "worldRank": 36,
       "fedexPoints": 0,
       "seasonEarnings": 0,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Jason Day",
@@ -537,7 +537,7 @@
       "worldRank": 43,
       "fedexPoints": 156,
       "seasonEarnings": 512760,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Ryan Fox",
@@ -565,14 +565,14 @@
       "worldRank": 47,
       "fedexPoints": 464,
       "seasonEarnings": 1638355,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "RASMUS HOJGAARD",
       "worldRank": 48,
       "fedexPoints": 166,
       "seasonEarnings": 494257,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Sami Valimaki",
@@ -591,7 +591,6 @@
   ],
   "nextTournamentField": [
     "Scottie Scheffler",
-    "Rory McIlroy",
     "Tommy Fleetwood",
     "Justin Rose",
     "Collin Morikawa",
@@ -601,20 +600,17 @@
     "J.J. Spaun",
     "Xander Schauffele",
     "Ben Griffin",
-    "Hideki Matsuyama",
     "Sepp Straka",
     "Justin Thomas",
     "Harris English",
     "Alex Noren",
     "Viktor Hovland",
-    "PATRICK REED",
     "Jacob Bridgeman",
     "Keegan Bradley",
     "Cameron Young",
     "Matt Fitzpatrick",
     "Ludvig Åberg",
     "Maverick McNealy",
-    "TYRRELL HATTON",
     "Ryan Gerard",
     "Shane Lowry",
     "Si Woo Kim",
@@ -622,19 +618,15 @@
     "Kurt Kitayama",
     "Patrick Cantlay",
     "Min Woo Lee",
-    "Aaron Rai",
-    "Marco Penge",
-    "BRYSON DECHAMBEAU",
     "Jason Day",
     "Corey Conners",
     "Akshay Bhatia",
     "Matt McCarty",
     "Jake Knapp",
     "Andrew Novak",
-    "Kristoffer Reitan",
     "Ryan Fox",
     "Michael Brennan",
-    "RASMUS HOJGAARD",
+    "Pierceson Coody",
     "Sami Valimaki",
     "NICOLAI HOJGAARD"
   ],
@@ -645,5 +637,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-04-12T00:00:13.034Z"
+  "updatedAt": "2026-04-13T00:00:12.250Z"
 }
