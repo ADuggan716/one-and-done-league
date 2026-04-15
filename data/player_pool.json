@@ -1,10 +1,10 @@
 {
-  "eventId": "zurich-classic-of-new-orleans",
-  "tournamentName": "Zurich Classic of New Orleans",
+  "eventId": "rbc-heritage",
+  "tournamentName": "RBC Heritage",
   "eventTier": "regular",
   "currentEventMeta": {
-    "totalPurse": 9500000,
-    "firstPrize": 1329400
+    "totalPurse": 0,
+    "firstPrize": 0
   },
   "members": {
     "Andrew": {
@@ -244,7 +244,7 @@
       "worldRank": 1,
       "fedexPoints": 1131,
       "seasonEarnings": 3816430,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Rory McIlroy",
@@ -258,7 +258,7 @@
       "worldRank": 3,
       "fedexPoints": 770,
       "seasonEarnings": 2505600,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Justin Rose",
@@ -272,49 +272,49 @@
       "worldRank": 5,
       "fedexPoints": 1182,
       "seasonEarnings": 5065472,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Chris Gotterup",
       "worldRank": 6,
       "fedexPoints": 1219,
       "seasonEarnings": 4218363,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Russell Henley",
       "worldRank": 7,
       "fedexPoints": 484,
       "seasonEarnings": 1708567,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Robert MacIntyre",
       "worldRank": 8,
       "fedexPoints": 780,
       "seasonEarnings": 2910008,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "J.J. Spaun",
       "worldRank": 9,
       "fedexPoints": 575,
       "seasonEarnings": 2073772,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Xander Schauffele",
       "worldRank": 10,
       "fedexPoints": 741,
       "seasonEarnings": 3137238,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Ben Griffin",
       "worldRank": 11,
       "fedexPoints": 168,
       "seasonEarnings": 472208,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Hideki Matsuyama",
@@ -328,35 +328,35 @@
       "worldRank": 13,
       "fedexPoints": 722,
       "seasonEarnings": 3038670,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Justin Thomas",
       "worldRank": 14,
       "fedexPoints": 222,
       "seasonEarnings": 782392,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Harris English",
       "worldRank": 15,
       "fedexPoints": 250,
       "seasonEarnings": 853532,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Alex Noren",
       "worldRank": 16,
       "fedexPoints": 223,
       "seasonEarnings": 885475,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Viktor Hovland",
       "worldRank": 17,
       "fedexPoints": 268,
       "seasonEarnings": 1142378,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "PATRICK REED",
@@ -370,42 +370,42 @@
       "worldRank": 19,
       "fedexPoints": 1452,
       "seasonEarnings": 6564485,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Keegan Bradley",
       "worldRank": 20,
       "fedexPoints": 60,
       "seasonEarnings": 238204,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Cameron Young",
       "worldRank": 21,
       "fedexPoints": 1323,
       "seasonEarnings": 6471920,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Matt Fitzpatrick",
       "worldRank": 22,
       "fedexPoints": 1229,
       "seasonEarnings": 5262488,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Ludvig Åberg",
       "worldRank": 23,
       "fedexPoints": 790,
       "seasonEarnings": 2841400,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Maverick McNealy",
       "worldRank": 24,
       "fedexPoints": 349,
       "seasonEarnings": 1244275,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "TYRRELL HATTON",
@@ -419,49 +419,49 @@
       "worldRank": 26,
       "fedexPoints": 662,
       "seasonEarnings": 2251179,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Shane Lowry",
       "worldRank": 27,
       "fedexPoints": 421,
       "seasonEarnings": 1479275,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Si Woo Kim",
       "worldRank": 28,
       "fedexPoints": 707,
       "seasonEarnings": 2546688,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Sam Burns",
       "worldRank": 29,
       "fedexPoints": 393,
       "seasonEarnings": 1253471,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Kurt Kitayama",
       "worldRank": 30,
       "fedexPoints": 494,
       "seasonEarnings": 2245971,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Patrick Cantlay",
       "worldRank": 31,
       "fedexPoints": 270,
       "seasonEarnings": 1009403,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Min Woo Lee",
       "worldRank": 32,
       "fedexPoints": 944,
       "seasonEarnings": 3691399,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Aaron Rai",
@@ -482,7 +482,7 @@
       "worldRank": 35,
       "fedexPoints": 228,
       "seasonEarnings": 834008,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "BRYSON DECHAMBEAU",
@@ -496,42 +496,42 @@
       "worldRank": 37,
       "fedexPoints": 338,
       "seasonEarnings": 1199398,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Corey Conners",
       "worldRank": 38,
       "fedexPoints": 220,
       "seasonEarnings": 878653,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Akshay Bhatia",
       "worldRank": 39,
       "fedexPoints": 1224,
       "seasonEarnings": 5857708,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Matt McCarty",
       "worldRank": 40,
       "fedexPoints": 314,
       "seasonEarnings": 1096473,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Jake Knapp",
       "worldRank": 41,
       "fedexPoints": 769,
       "seasonEarnings": 2489463,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Andrew Novak",
       "worldRank": 42,
       "fedexPoints": 190,
       "seasonEarnings": 677757,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Kristoffer Reitan",
@@ -545,14 +545,14 @@
       "worldRank": 44,
       "fedexPoints": 287,
       "seasonEarnings": 1004520,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "Michael Brennan",
       "worldRank": 45,
       "fedexPoints": 67,
       "seasonEarnings": 207495,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "SAMUEL STEVENS",
@@ -566,7 +566,7 @@
       "worldRank": 47,
       "fedexPoints": 464,
       "seasonEarnings": 1638355,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "RASMUS HOJGAARD",
@@ -580,17 +580,57 @@
       "worldRank": 49,
       "fedexPoints": 110,
       "seasonEarnings": 389580,
-      "inNextTournament": false
+      "inNextTournament": true
     },
     {
       "name": "NICOLAI HOJGAARD",
       "worldRank": 50,
       "fedexPoints": 635,
       "seasonEarnings": 2291827,
-      "inNextTournament": false
+      "inNextTournament": true
     }
   ],
-  "nextTournamentField": [],
+  "nextTournamentField": [
+    "Scottie Scheffler",
+    "Tommy Fleetwood",
+    "Collin Morikawa",
+    "Chris Gotterup",
+    "Russell Henley",
+    "Robert MacIntyre",
+    "J.J. Spaun",
+    "Xander Schauffele",
+    "Ben Griffin",
+    "Sepp Straka",
+    "Justin Thomas",
+    "Harris English",
+    "Alex Noren",
+    "Viktor Hovland",
+    "Jacob Bridgeman",
+    "Keegan Bradley",
+    "Cameron Young",
+    "Matt Fitzpatrick",
+    "Ludvig Åberg",
+    "Maverick McNealy",
+    "Ryan Gerard",
+    "Shane Lowry",
+    "Si Woo Kim",
+    "Sam Burns",
+    "Kurt Kitayama",
+    "Patrick Cantlay",
+    "Min Woo Lee",
+    "Marco Penge",
+    "Jason Day",
+    "Corey Conners",
+    "Akshay Bhatia",
+    "Matt McCarty",
+    "Jake Knapp",
+    "Andrew Novak",
+    "Ryan Fox",
+    "Michael Brennan",
+    "Pierceson Coody",
+    "Sami Valimaki",
+    "NICOLAI HOJGAARD"
+  ],
   "filters": {
     "tiers": [
       "major",
@@ -598,5 +638,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-04-15T23:34:55.972Z"
+  "updatedAt": "2026-04-15T23:38:22.979Z"
 }

@@ -77,8 +77,28 @@ export function resolveNextTournamentFromSchedule(tournaments, currentEventName,
   const currentKey = normalizeTournamentName(currentEventName);
   const currentIndex = list.findIndex((tournament) => normalizeTournamentName(tournament.name) === currentKey);
   const currentEventCompleted = Boolean(options.currentEventCompleted);
+  const firstNonCompletedIndex = list.findIndex((tournament) => tournament.status !== "COMPLETED");
+
+  if (currentIndex !== -1) {
+    const current = list[currentIndex];
+    if (current?.status === "IN_PROGRESS" || current?.status === "UPCOMING") {
+      return {
+        id: current.tournamentId,
+        name: current.name,
+        startDate: current.displayDate || null,
+        tier: inferTier(current.name, current.purse, current.standings?.value),
+        totalPurse: parseMoney(current.purse),
+        firstPrize: parseMoney(current.championEarnings),
+        lastYearWinner: current.champions?.[0]?.displayName || "Unknown",
+        status: current.status || null,
+      };
+    }
+  }
 
   let selectedIndex = currentIndex;
+  if (selectedIndex !== -1 && firstNonCompletedIndex !== -1 && selectedIndex > firstNonCompletedIndex) {
+    selectedIndex = firstNonCompletedIndex;
+  }
   if (currentIndex !== -1 && currentEventCompleted) {
     const nextIndex = list.findIndex((tournament, index) => index > currentIndex && tournament.status !== "COMPLETED");
     selectedIndex = nextIndex !== -1 ? nextIndex : currentIndex;
@@ -87,7 +107,7 @@ export function resolveNextTournamentFromSchedule(tournaments, currentEventName,
   if (selectedIndex === -1) {
     selectedIndex = currentEventCompleted
       ? list.findIndex((tournament) => tournament.status === "UPCOMING")
-      : list.findIndex((tournament) => tournament.status !== "COMPLETED");
+      : firstNonCompletedIndex;
     if (selectedIndex === -1) selectedIndex = list.length - 1;
   }
 

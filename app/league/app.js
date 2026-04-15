@@ -119,6 +119,13 @@ function isEventPublicInLeagueWideHistory(snapshot, eventName) {
   return Boolean((match?.rows || []).length);
 }
 
+function isCurrentEventWindow(snapshot, eventName) {
+  const currentName = snapshot?.event?.name || snapshot?.nextTournament?.name;
+  if (!currentName || !eventName) return false;
+  if (canonicalDisplayEventKey(currentName) !== canonicalDisplayEventKey(eventName)) return false;
+  return snapshot?.nextTournament?.status !== "COMPLETED";
+}
+
 function sortHeader(label, key, sortState) {
   const arrow = sortState.key === key ? (sortState.dir === "asc" ? " ▲" : " ▼") : "";
   return `<button data-sort-key="${key}">${label}${arrow}</button>`;
@@ -153,10 +160,7 @@ tabButtons.forEach((btn) => {
 
 function renderNextTournament(snapshot) {
   const next = snapshot.nextTournament || snapshot.event || {};
-  const isLive =
-    snapshot.event &&
-    canonicalDisplayEventKey(snapshot.event.name) === canonicalDisplayEventKey(next.name) &&
-    snapshot.event.countsTowardSeasonTotals === false;
+  const isLive = isCurrentEventWindow(snapshot, next.name);
   const cardTitle = isLive ? "Current Tournament" : "Next Tournament";
   const kicker = isLive ? "Current Event" : "Upcoming Event";
 
@@ -283,9 +287,7 @@ function renderWeeklyTable(snapshot) {
     return;
   }
 
-  const selectedEventIsLive =
-    event.countsTowardSeasonTotals === false &&
-    canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(snapshot.nextTournament?.name);
+  const selectedEventIsLive = isCurrentEventWindow(snapshot, event.eventName);
   const hidePrivatePicks = selectedEventIsLive && !isEventPublicInLeagueWideHistory(snapshot, event.eventName);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Projected Earnings" : "Earnings";
@@ -354,9 +356,7 @@ function renderLeagueWideTable(snapshot) {
     return;
   }
 
-  const selectedEventIsLive =
-    event.countsTowardSeasonTotals === false &&
-    canonicalDisplayEventKey(event.eventName) === canonicalDisplayEventKey(snapshot.nextTournament?.name);
+  const selectedEventIsLive = isCurrentEventWindow(snapshot, event.eventName);
   const finishLabel = selectedEventIsLive ? "Current Place" : "Finish";
   const earningsLabel = selectedEventIsLive ? "Current Earnings" : "Earnings";
   const subgroupRows = eventRowsForDisplay(snapshot.weeklyComparison || [])
@@ -444,7 +444,7 @@ function updateAvailabilityMatrixHeading(poolData) {
 function renderSeasonWeeklyTable(snapshot) {
   const table = document.getElementById("seasonWeeklyTable");
   const currentEventId = snapshot.event?.id || null;
-  const isLiveCurrentEvent = snapshot.event?.countsTowardSeasonTotals === false;
+  const isLiveCurrentEvent = isCurrentEventWindow(snapshot, snapshot.event?.name);
   const events = eventRowsForDisplay(snapshot.weeklyComparison || []).filter((event) => {
     if (isLiveCurrentEvent && currentEventId && event.eventId === currentEventId) return false;
     return true;
