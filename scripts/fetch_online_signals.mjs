@@ -264,6 +264,12 @@ function parseOwgrSignals(rows) {
 }
 
 async function main() {
+  const output = await refreshOnlineSignals();
+  console.log(`Saved ${output.signals.length} online signals.`);
+}
+
+export async function refreshOnlineSignals(options = {}) {
+  const outputPath = options.outputPath || path.join(root, "data/online_signals.json");
   const signalMap = new Map();
   const sourceNotes = [];
 
@@ -333,11 +339,13 @@ async function main() {
     signals,
   };
 
-  await fs.writeFile(path.join(root, "data/online_signals.json"), `${JSON.stringify(output, null, 2)}\n`, "utf8");
-  console.log(`Saved ${signals.length} online signals.`);
+  await fs.writeFile(outputPath, `${JSON.stringify(output, null, 2)}\n`, "utf8");
+  return output;
 }
 
-main().catch((error) => {
-  console.error(error.message);
-  process.exitCode = 1;
-});
+if (process.argv[1] && path.resolve(process.argv[1]) === __filename) {
+  main().catch((error) => {
+    console.error(error.message);
+    process.exitCode = 1;
+  });
+}

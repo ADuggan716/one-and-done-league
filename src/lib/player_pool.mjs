@@ -1,5 +1,5 @@
 function normalizeGolferName(name) {
-  return String(name || "")
+  const normalized = String(name || "")
     .normalize("NFKD")
     .replace(/[øØ]/g, "o")
     .replace(/[æÆ]/g, "ae")
@@ -9,6 +9,8 @@ function normalizeGolferName(name) {
     .replace(/\s+/g, " ")
     .trim()
     .toLowerCase();
+  if (normalized === "matt fitzpatrick") return "matthew fitzpatrick";
+  return normalized;
 }
 
 function numberOr(value, fallback) {
@@ -17,6 +19,36 @@ function numberOr(value, fallback) {
 }
 
 export { normalizeGolferName };
+
+function lastNameKey(name) {
+  return normalizeGolferName(name).split(" ").filter(Boolean).at(-1) || "";
+}
+
+function expandUsedNames(usedNames = [], golfers = []) {
+  const usedSet = new Set(usedNames.map(normalizeGolferName).filter(Boolean));
+  const golfersByLastName = new Map();
+
+  for (const golfer of golfers || []) {
+    const key = lastNameKey(golfer.name);
+    if (!key) continue;
+    const current = golfersByLastName.get(key) || [];
+    current.push(normalizeGolferName(golfer.name));
+    golfersByLastName.set(key, current);
+  }
+
+  for (const name of usedNames || []) {
+    const normalized = normalizeGolferName(name);
+    if (!normalized) continue;
+    if (!normalized.includes(" ")) {
+      const matches = golfersByLastName.get(normalized) || [];
+      if (matches.length === 1) {
+        usedSet.add(matches[0]);
+      }
+    }
+  }
+
+  return usedSet;
+}
 
 export function buildPlayerPool(normalized, config, options = {}) {
   const allEventRows = normalized.events.flatMap((event) => event.subgroupResults || []);
@@ -74,7 +106,7 @@ export function buildPlayerPool(normalized, config, options = {}) {
   const members = Object.fromEntries(
     config.subgroupMembers.map((member) => {
       const used = usedByMember[member] || [];
-      const usedSet = new Set(used.map(normalizeGolferName));
+      const usedSet = expandUsedNames(used, golfers);
       return [
         member,
         {

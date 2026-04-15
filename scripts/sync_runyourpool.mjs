@@ -30,6 +30,7 @@ import {
   resolveNextTournamentFromSchedule,
 } from "../src/lib/pga_tour_field.mjs";
 import { enrichProjectionsWithBettingProfiles } from "../src/lib/pga_tour_betting_profiles.mjs";
+import { refreshOnlineSignals } from "./fetch_online_signals.mjs";
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -833,11 +834,27 @@ async function run() {
   const normalized = normalizeSnapshot(upstream, config.subgroupMembers);
   let mergedProjections = normalized.projections;
   let sourceNotes = [...(normalized.sourceNotes || [])];
+  let onlineSignals = null;
 
   try {
-    const onlineSignals = await readOnlineSignals(path.join(root, "data/online_signals.json"));
+    onlineSignals = await refreshOnlineSignals({
+      outputPath: path.join(root, "data/online_signals.json"),
+    });
+    sourceNotes = [
+      ...sourceNotes,
+      `Online signals refreshed at ${onlineSignals.fetchedAt}.`,
+      ...(onlineSignals.sourceNotes || []),
+    ];
+  } catch {
+    sourceNotes.push("Online signal refresh failed; using cached online signals if available.");
+  }
+
+  try {
+    if (!onlineSignals) {
+      onlineSignals = await readOnlineSignals(path.join(root, "data/online_signals.json"));
+      sourceNotes = [...sourceNotes, ...(onlineSignals.sourceNotes || [])];
+    }
     mergedProjections = mergeSignals(normalized.projections, onlineSignals.signals);
-    sourceNotes = [...sourceNotes, ...(onlineSignals.sourceNotes || [])];
   } catch {
     sourceNotes.push("Online signal file missing or unreadable; using league-source-only inputs.");
   }
