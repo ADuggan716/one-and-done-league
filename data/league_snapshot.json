@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Christopher Gotterup",
-        "earnings": 0,
+        "earnings": 56760,
         "seasonEarnings": 2576310,
-        "finish": "$0",
+        "finish": "44",
         "leagueRank": 118
       },
       {
         "member": "Paul",
         "pick": "Xander Schauffele",
-        "earnings": 0,
+        "earnings": 111471,
         "seasonEarnings": 2162600,
-        "finish": "$0",
+        "finish": "27",
         "leagueRank": 135
       },
       {
         "member": "Dakota",
         "pick": "Patrick Cantlay",
-        "earnings": 0,
+        "earnings": 111471,
         "seasonEarnings": 7340569,
-        "finish": "$0",
+        "finish": "27",
         "leagueRank": 9
       },
       {
         "member": "Mike",
         "pick": "Ludvig Aberg",
-        "earnings": 0,
+        "earnings": 3600000,
         "seasonEarnings": 2847855,
-        "finish": "$0",
+        "finish": "1",
         "leagueRank": 103
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Christopher Gotterup",
-        "earnings": 0,
+        "earnings": 56760,
         "seasonEarnings": 2576310,
-        "finish": "$0",
+        "finish": "44",
         "leagueRank": 118
       },
       {
         "member": "Paul",
         "golfer": "Xander Schauffele",
-        "earnings": 0,
+        "earnings": 111471,
         "seasonEarnings": 2162600,
-        "finish": "$0",
+        "finish": "27",
         "leagueRank": 135
       },
       {
         "member": "Dakota",
         "golfer": "Patrick Cantlay",
-        "earnings": 0,
+        "earnings": 111471,
         "seasonEarnings": 7340569,
-        "finish": "$0",
+        "finish": "27",
         "leagueRank": 9
       },
       {
         "member": "Mike",
         "golfer": "Ludvig Aberg",
-        "earnings": 0,
+        "earnings": 3600000,
         "seasonEarnings": 2847855,
-        "finish": "$0",
+        "finish": "1",
         "leagueRank": 103
       }
     ]
@@ -131,7 +131,7 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Patrick Cantlay"
         }
       ],
@@ -245,15 +245,15 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Patrick Cantlay"
         },
         {
           "eventId": "rbc-heritage",
           "eventName": "RBC Heritage",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 111471,
+          "finish": "27",
           "pick": "Patrick Cantlay"
         }
       ],
@@ -296,7 +296,7 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "1",
           "pick": "Ludvig Aberg"
         }
       ],
@@ -410,15 +410,15 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "1",
           "pick": "Ludvig Aberg"
         },
         {
           "eventId": "rbc-heritage",
           "eventName": "RBC Heritage",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 3600000,
+          "finish": "1",
           "pick": "Ludvig Aberg"
         }
       ],
@@ -461,7 +461,7 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "44",
           "pick": "Christopher Gotterup"
         }
       ],
@@ -575,15 +575,15 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "44",
           "pick": "Christopher Gotterup"
         },
         {
           "eventId": "rbc-heritage",
           "eventName": "RBC Heritage",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 56760,
+          "finish": "44",
           "pick": "Christopher Gotterup"
         }
       ],
@@ -626,7 +626,7 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Xander Schauffele"
         }
       ],
@@ -740,15 +740,15 @@
           "eventName": "RBC (NO CUT)",
           "tier": "regular",
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Xander Schauffele"
         },
         {
           "eventId": "rbc-heritage",
           "eventName": "RBC Heritage",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 111471,
+          "finish": "27",
           "pick": "Xander Schauffele"
         }
       ],
@@ -1568,7 +1568,7 @@
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "$0",
+          "finish": "44",
           "pick": "Christopher Gotterup",
           "leagueRank": null
         },
@@ -1580,7 +1580,7 @@
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Patrick Cantlay",
           "leagueRank": null
         },
@@ -1592,7 +1592,7 @@
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "$0",
+          "finish": "1",
           "pick": "Ludvig Aberg",
           "leagueRank": null
         },
@@ -1604,7 +1604,7 @@
           "totalPurse": 0,
           "firstPrize": 0,
           "earnings": 0,
-          "finish": "$0",
+          "finish": "27",
           "pick": "Xander Schauffele",
           "leagueRank": null
         }
@@ -1620,16 +1620,16 @@
       "firstPrize": 0,
       "rows": [
         {
-          "member": "Andrew",
+          "member": "Mike",
           "eventId": "rbc-heritage",
           "eventName": "RBC Heritage",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
-          "pick": "Christopher Gotterup",
-          "leagueRank": 118
+          "earnings": 3600000,
+          "finish": "1",
+          "pick": "Ludvig Aberg",
+          "leagueRank": 103
         },
         {
           "member": "Dakota",
@@ -1638,22 +1638,10 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 111471,
+          "finish": "27",
           "pick": "Patrick Cantlay",
           "leagueRank": 9
-        },
-        {
-          "member": "Mike",
-          "eventId": "rbc-heritage",
-          "eventName": "RBC Heritage",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
-          "pick": "Ludvig Aberg",
-          "leagueRank": 103
         },
         {
           "member": "Paul",
@@ -1662,10 +1650,22 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 111471,
+          "finish": "27",
           "pick": "Xander Schauffele",
           "leagueRank": 135
+        },
+        {
+          "member": "Andrew",
+          "eventId": "rbc-heritage",
+          "eventName": "RBC Heritage",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 56760,
+          "finish": "44",
+          "pick": "Christopher Gotterup",
+          "leagueRank": 118
         }
       ]
     }
@@ -12153,8 +12153,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 14",
     "Splash parsed history rows: 56",
-    "Splash mapping: Andrew: rank=118, season=2576310, pick=Christopher Gotterup, week=0, finish=$0 | Paul: rank=135, season=2162600, pick=Xander Schauffele, week=0, finish=$0 | Dakota: rank=9, season=7340569, pick=Patrick Cantlay, week=0, finish=$0 | Mike: rank=103, season=2847855, pick=Ludvig Aberg, week=0, finish=$0",
-    "Online signals refreshed at 2026-04-16T12:00:15.830Z.",
+    "Splash mapping: Andrew: rank=118, season=2576310, pick=Christopher Gotterup, week=56760, finish=44 | Paul: rank=135, season=2162600, pick=Xander Schauffele, week=111471, finish=27 | Dakota: rank=9, season=7340569, pick=Patrick Cantlay, week=111471, finish=27 | Mike: rank=103, season=2847855, pick=Ludvig Aberg, week=3600000, finish=1",
+    "Online signals refreshed at 2026-04-17T00:00:27.083Z.",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -12169,5 +12169,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-16T12:00:15.538Z"
+  "updatedAt": "2026-04-17T00:00:26.830Z"
 }
