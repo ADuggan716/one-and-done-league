@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Christopher Gotterup",
-        "earnings": 43600,
+        "earnings": 45800,
         "seasonEarnings": 2576310,
-        "finish": "61",
+        "finish": "55",
         "leagueRank": 118
       },
       {
         "member": "Paul",
         "pick": "Xander Schauffele",
-        "earnings": 131143,
+        "earnings": 160500,
         "seasonEarnings": 2162600,
-        "finish": "28",
+        "finish": "25",
         "leagueRank": 135
       },
       {
         "member": "Dakota",
         "pick": "Patrick Cantlay",
-        "earnings": 841667,
+        "earnings": 631000,
         "seasonEarnings": 7340569,
-        "finish": "4",
+        "finish": "6",
         "leagueRank": 9
       },
       {
         "member": "Mike",
         "pick": "Ludvig Aberg",
-        "earnings": 841667,
+        "earnings": 631000,
         "seasonEarnings": 2847855,
-        "finish": "4",
+        "finish": "6",
         "leagueRank": 103
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Christopher Gotterup",
-        "earnings": 43600,
+        "earnings": 45800,
         "seasonEarnings": 2576310,
-        "finish": "61",
+        "finish": "55",
         "leagueRank": 118
       },
       {
         "member": "Paul",
         "golfer": "Xander Schauffele",
-        "earnings": 131143,
+        "earnings": 160500,
         "seasonEarnings": 2162600,
-        "finish": "28",
+        "finish": "25",
         "leagueRank": 135
       },
       {
         "member": "Dakota",
         "golfer": "Patrick Cantlay",
-        "earnings": 841667,
+        "earnings": 631000,
         "seasonEarnings": 7340569,
-        "finish": "4",
+        "finish": "6",
         "leagueRank": 9
       },
       {
         "member": "Mike",
         "golfer": "Ludvig Aberg",
-        "earnings": 841667,
+        "earnings": 631000,
         "seasonEarnings": 2847855,
-        "finish": "4",
+        "finish": "6",
         "leagueRank": 103
       }
     ]
@@ -95,8 +95,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 14",
     "Splash parsed history rows: 56",
-    "Splash mapping: Andrew: rank=118, season=2576310, pick=Christopher Gotterup, week=43600, finish=61 | Paul: rank=135, season=2162600, pick=Xander Schauffele, week=131143, finish=28 | Dakota: rank=9, season=7340569, pick=Patrick Cantlay, week=841667, finish=4 | Mike: rank=103, season=2847855, pick=Ludvig Aberg, week=841667, finish=4",
-    "Online signals refreshed at 2026-04-18T00:00:15.000Z.",
+    "Splash mapping: Andrew: rank=118, season=2576310, pick=Christopher Gotterup, week=45800, finish=55 | Paul: rank=135, season=2162600, pick=Xander Schauffele, week=160500, finish=25 | Dakota: rank=9, season=7340569, pick=Patrick Cantlay, week=631000, finish=6 | Mike: rank=103, season=2847855, pick=Ludvig Aberg, week=631000, finish=6",
+    "Online signals refreshed at 2026-04-19T00:00:16.817Z.",
     "PGA TOUR FedExCup: 197 golfer records loaded",
     "PGA TOUR Official Money: 194 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -108,7 +108,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-rbc-heritage-2026",
     "PGA TOUR betting profiles matched: 30/38"
   ],
-  "generatedAt": "2026-04-18T00:00:29.876Z",
+  "generatedAt": "2026-04-19T00:00:33.361Z",
   "primary": {
     "golfer": "Russell Henley",
     "projectedEarnings": 719961,
