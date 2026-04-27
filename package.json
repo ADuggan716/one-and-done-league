@@ -12,6 +12,7 @@
     "recommend": "node scripts/generate_recommendations.mjs",
     "build:data": "node scripts/build_local_data.mjs",
     "check:cookie": "node scripts/check_splash_cookie.mjs",
+    "check:sync-health": "bash scripts/check_sync_health.sh",
     "serve": "python3 -m http.server 8080",
     "release:sync:check": "bash scripts/release_sync_check.sh"
   }

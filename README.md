@@ -139,6 +139,19 @@ tail -f /Users/androo/Codex/projects/golf/logs/launchd.err.log
 tail -f /Users/androo/Codex/projects/golf/logs/sync.log
 ```
 
+The install script also adds a daily health check at 9:15 AM local time.
+That health check will:
+- verify the main `launchd` sync job is still installed and loaded
+- verify a successful sync heartbeat exists after the most recent scheduled sync window
+- send an email alert using the same `~/.config/golf-sync-alert.env` SMTP settings if the scheduler disappears or misses a scheduled run
+
+Run the health check manually:
+
+```bash
+cd /Users/androo/Codex/projects/golf
+npm run check:sync-health
+```
+
 ## GitHub Actions sync
 
 `/.github/workflows/sync-data.yml` is kept as a manual-only backup path.

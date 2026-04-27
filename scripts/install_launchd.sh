@@ -4,6 +4,8 @@ set -euo pipefail
 ROOT_DIR="$(cd "$(dirname "${BASH_SOURCE[0]}")/.." && pwd)"
 AGENT_LABEL="com.andrew.oneanddone.sync"
 PLIST_PATH="$HOME/Library/LaunchAgents/${AGENT_LABEL}.plist"
+HEALTH_LABEL="com.andrew.oneanddone.sync-health"
+HEALTH_PLIST_PATH="$HOME/Library/LaunchAgents/${HEALTH_LABEL}.plist"
 CONFIG_PATH="${ROOT_DIR}/config/config.json"
 
 mkdir -p "$HOME/Library/LaunchAgents"
@@ -89,6 +91,40 @@ PLIST
 launchctl bootout "gui/$(id -u)" "$PLIST_PATH" >/dev/null 2>&1 || true
 launchctl bootstrap "gui/$(id -u)" "$PLIST_PATH"
 
+tee "$HEALTH_PLIST_PATH" >/dev/null <<PLIST
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+  <key>Label</key>
+  <string>${HEALTH_LABEL}</string>
+  <key>ProgramArguments</key>
+  <array>
+    <string>/bin/zsh</string>
+    <string>-lc</string>
+    <string>cd ${ROOT_DIR} && bash scripts/check_sync_health.sh</string>
+  </array>
+  <key>StartCalendarInterval</key>
+  <dict>
+    <key>Hour</key>
+    <integer>9</integer>
+    <key>Minute</key>
+    <integer>15</integer>
+  </dict>
+  <key>WorkingDirectory</key>
+  <string>${ROOT_DIR}</string>
+  <key>StandardOutPath</key>
+  <string>${ROOT_DIR}/logs/launchd-health.out.log</string>
+  <key>StandardErrorPath</key>
+  <string>${ROOT_DIR}/logs/launchd-health.err.log</string>
+</dict>
+</plist>
+PLIST
+
+launchctl bootout "gui/$(id -u)" "$HEALTH_PLIST_PATH" >/dev/null 2>&1 || true
+launchctl bootstrap "gui/$(id -u)" "$HEALTH_PLIST_PATH"
+
 echo "Installed launchd agent at $PLIST_PATH"
+echo "Installed health-check launchd agent at $HEALTH_PLIST_PATH"
 echo "Schedule loaded from ${CONFIG_PATH}"
 echo "Command: bash scripts/local_sync_publish.sh"

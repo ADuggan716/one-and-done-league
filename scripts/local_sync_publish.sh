@@ -32,6 +32,7 @@ ALLOW_CHROME_FALLBACK="${ALLOW_CHROME_FALLBACK:-0}"
 LAST_LOG_PATH="${ROOT_DIR}/logs/local_sync_publish.last.log"
 COOKIE_ALERT_STATE_PATH="${ROOT_DIR}/.tmp/cookie_alert.last_sent"
 COOKIE_ALERT_COOLDOWN_MINUTES="${COOKIE_ALERT_COOLDOWN_MINUTES:-720}"
+SUCCESS_STATE_PATH="${ROOT_DIR}/.tmp/last_successful_sync_epoch"
 
 echo "==> Working directory: $ROOT_DIR"
 echo "==> Branch: $BRANCH"
@@ -273,5 +274,7 @@ fi
 
 echo "==> Pushing updated data"
 git push origin "$BRANCH"
+
+printf '%s\n' "$(date +%s)" > "$SUCCESS_STATE_PATH"
 
 echo "==> Local sync + publish complete"
