@@ -248,8 +248,14 @@ async function fetchProfileMap(nextTournament) {
 
   const entries = new Map();
   for (const item of listNode.items || []) {
-    const name = textFromSegments((item?.segments || []).filter((segment) => segment?.type !== "link")).trim();
-    const url = (item?.segments || []).find((segment) => segment?.type === "link" && /betting-profile/.test(segment?.data || ""))?.data;
+    const playerLink = (item?.segments || []).find(
+      (segment) => segment?.type === "link" && /\/player\//.test(segment?.data || "")
+    );
+    const previewLink = (item?.segments || []).find(
+      (segment) => segment?.type === "link" && /betting-profile/.test(segment?.data || "")
+    );
+    const name = String(playerLink?.value || "").trim();
+    const url = previewLink?.data;
     const playerId = (item?.segments || []).find((segment) => segment?.__typename === "NewsArticlePlayerTournamentOdds")?.playerId || null;
     if (!name || !url) continue;
     entries.set(normalizeGolferName(name), { name, url, playerId });
