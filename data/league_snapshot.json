@@ -675,7 +675,7 @@
           "tier": "regular",
           "earnings": 0,
           "finish": null,
-          "pick": "Henley"
+          "pick": "Bridgeman"
         }
       ],
       "history": [
@@ -805,7 +805,7 @@
           "tier": "regular",
           "earnings": 0,
           "finish": null,
-          "pick": "Henley"
+          "pick": "Bridgeman"
         },
         {
           "eventId": "cadillac-championship",
@@ -1751,7 +1751,7 @@
           "firstPrize": 0,
           "earnings": 0,
           "finish": null,
-          "pick": "Henley",
+          "pick": "Bridgeman",
           "leagueRank": 126
         },
         {
@@ -5484,11 +5484,135 @@
       "seasonEarnings": 2931317,
       "inNextTournament": true,
       "historicalStrength": 0.25042,
+      "last4Finishes": [
+        25,
+        3,
+        13,
+        6
+      ],
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
         "OWGR",
-        "Weekly projection synthesis"
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T25",
+          "roundScores": "68-68-70-70",
+          "toPar": "-8",
+          "fedexPoints": 35.375
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "T3",
+          "roundScores": "73-71-66-68",
+          "toPar": "-10",
+          "fedexPoints": 312.5
+        },
+        {
+          "date": "April 5, 2026",
+          "tournamentName": "Valero Texas Open",
+          "result": "MC",
+          "roundScores": "72-71",
+          "toPar": "-1",
+          "fedexPoints": null
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T13",
+          "roundScores": "68-71-71-72",
+          "toPar": "-6",
+          "fedexPoints": 80.556
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T6",
+          "roundScores": "70-69-71-68",
+          "toPar": "-10",
+          "fedexPoints": 233.333
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "MC",
+          "roundScores": "76-68",
+          "toPar": "+2",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T19",
+          "roundScores": "66-69-71-67",
+          "toPar": "-15",
+          "fedexPoints": 51.8
+        },
+        {
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "T8",
+          "roundScores": "65-66-69-67",
+          "toPar": "-21",
+          "fedexPoints": 75
+        },
+        {
+          "date": "Jan. 18, 2026",
+          "tournamentName": "Sony Open in Hawaii",
+          "result": "T19",
+          "roundScores": "65-73-67-67",
+          "toPar": "-8",
+          "fedexPoints": 43
+        },
+        {
+          "date": "Sept. 14, 2025",
+          "tournamentName": "Procore Championship",
+          "result": "T19",
+          "roundScores": "65-68-74-72",
+          "toPar": "-9",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 59,
+          "overall": 0.192,
+          "lastFive": 0.31
+        },
+        "approach": {
+          "overallRank": 65,
+          "overall": 0.131,
+          "lastFive": -0.162
+        },
+        "aroundTheGreen": {
+          "overallRank": 35,
+          "overall": 0.244,
+          "lastFive": 0.389
+        },
+        "putting": {
+          "overallRank": 16,
+          "overall": 0.518,
+          "lastFive": 0.452
+        },
+        "total": {
+          "overallRank": 19,
+          "overall": 1.087,
+          "lastFive": 0.989
+        }
+      },
+      "performanceNotes": [
+        "Henley posted a Strokes Gained: Off-the-Tee average of 0.192 (59th) this season, while his average Driving Distance of 293.1 yards ranked 149th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Henley sported a 0.131 mark that ranked 65th on TOUR. He ranked 58th with a 66.49% Greens in Regulation rate.",
+        "On the greens, Henley delivered a 0.518 Strokes Gained: Putting mark this season, which placed him 16th on TOUR. In addition, he ranked 11th with a Putts Per Round average of 27.69.",
+        "Henley's overall performance is reflected in his 1.087 Strokes Gained: Total average, ranking 19th on TOUR. He has earned 832 FedExCup Regular Season points, ranking 15th.",
+        "His consistency is highlighted by a second-ranked 10.59% Bogey Avoidance rate and 25th-ranked 24.48% Par Breakers percentage."
       ]
     },
     {
@@ -6160,134 +6284,11 @@
       "seasonEarnings": 6740179,
       "inNextTournament": true,
       "historicalStrength": 0.181285,
-      "last4Finishes": [
-        33,
-        41,
-        14,
-        5
-      ],
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
         "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [],
-      "recentResults": [
-        {
-          "date": "April 19, 2026",
-          "tournamentName": "RBC Heritage",
-          "result": "T33",
-          "roundScores": "75-65-66-71",
-          "toPar": "-7",
-          "fedexPoints": 23.25
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T41",
-          "roundScores": "71-74-69-76",
-          "toPar": "+2",
-          "fedexPoints": 19.5
-        },
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T14",
-          "roundScores": "68-70-72-69",
-          "toPar": "-5",
-          "fedexPoints": 54
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T5",
-          "roundScores": "70-68-71-70",
-          "toPar": "-9",
-          "fedexPoints": 275
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T18",
-          "roundScores": "75-69-69-72",
-          "toPar": "-3",
-          "fedexPoints": 54
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "1",
-          "roundScores": "66-64-64-72",
-          "toPar": "-18",
-          "fedexPoints": 700
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T8",
-          "roundScores": "67-65-68-70",
-          "toPar": "-18",
-          "fedexPoints": 147.5
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T18",
-          "roundScores": "71-68-69-67",
-          "toPar": "-9",
-          "fedexPoints": 44
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T13",
-          "roundScores": "64-66-69-69",
-          "toPar": "-20",
-          "fedexPoints": 55.2
-        },
-        {
-          "date": "Jan. 18, 2026",
-          "tournamentName": "Sony Open in Hawaii",
-          "result": "T4",
-          "roundScores": "69-68-67-64",
-          "toPar": "-12",
-          "fedexPoints": 122.5
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 51,
-          "overall": 0.241,
-          "lastFive": 0.354
-        },
-        "approach": {
-          "overallRank": 20,
-          "overall": 0.49,
-          "lastFive": 0.002
-        },
-        "aroundTheGreen": {
-          "overallRank": 118,
-          "overall": -0.192,
-          "lastFive": -0.253
-        },
-        "putting": {
-          "overallRank": 1,
-          "overall": 1.201,
-          "lastFive": 0.892
-        },
-        "total": {
-          "overallRank": 4,
-          "overall": 1.74,
-          "lastFive": 0.995
-        }
-      },
-      "performanceNotes": [
-        "Bridgeman posted a Strokes Gained: Off-the-Tee average of 0.241 (51st) this season, while his average Driving Distance of 306.4 yards ranked 50th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Bridgeman sported a 0.490 mark that ranked 20th on TOUR. He ranked 25th with a 68.89% Greens in Regulation rate.",
-        "On the greens, Bridgeman delivered a 1.201 Strokes Gained: Putting mark this season, which placed him first on TOUR. In addition, he ranked 22nd with a Putts Per Round average of 27.83, and he ranked fifth by breaking par 27.36% of the time.",
-        "Bridgeman has accumulated 1,495 FedExCup Regular Season points, ranking him fifth, and he ranks 14th with a 12.50% Bogey Avoidance rate."
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -11199,8 +11200,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 15",
     "Splash parsed history rows: 56",
-    "Splash mapping: Andrew: rank=126, season=2719060, pick=Henley, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
-    "Online signals refreshed at 2026-04-29T01:15:34.256Z.",
+    "Splash mapping: Andrew: rank=126, season=2719060, pick=Bridgeman, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
+    "Online signals refreshed at 2026-04-29T01:23:43.418Z.",
     "PGA TOUR FedExCup: 202 golfer records loaded",
     "PGA TOUR Official Money: 198 golfer records loaded",
     "OWGR: 100 golfer records loaded",
@@ -11216,5 +11217,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-29T01:15:28.758Z"
+  "updatedAt": "2026-04-29T01:23:37.924Z"
 }

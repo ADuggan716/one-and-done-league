@@ -230,7 +230,34 @@ function buildRecentSummary(candidate) {
 function buildHistoricalSummary(candidate) {
   const past = Array.isArray(candidate.courseHistoryResults) ? candidate.courseHistoryResults.slice(0, 3) : [];
   if (!past.length) {
-    return `Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including ${formatRank(candidate.worldRank)} OWGR and a ${Number(candidate.historicalStrength ?? 0.5).toFixed(2)} historical-strength signal.`;
+    const sgTotal = formatSigned(candidate.strokesGained?.total?.lastFive);
+    const sgApproach = formatSigned(candidate.strokesGained?.approach?.lastFive);
+    const recentResults = Array.isArray(candidate.recentResults) ? candidate.recentResults.slice(0, 3) : [];
+    const recentLine = recentResults.length
+      ? recentResults.map((row) => `${row.tournamentName}: ${row.result}`).join(" | ")
+      : "";
+    const notes = Array.isArray(candidate.performanceNotes) ? candidate.performanceNotes : [];
+    const fitNote = notes.find((note) => /off-the-tee|approach|putting|greens in regulation|bogey avoidance|driving distance/i.test(String(note)))
+      || notes[0];
+
+    const pieces = [];
+    if (sgTotal || sgApproach) {
+      pieces.push(
+        `Recent fit signals are still useful here, with${sgTotal ? ` last-five SG Total ${sgTotal}` : ""}${sgApproach ? `${sgTotal ? "," : ""} Approach ${sgApproach}` : ""}.`
+      );
+    }
+    if (recentLine) {
+      pieces.push(`Latest starts: ${recentLine}.`);
+    }
+    if (fitNote) {
+      pieces.push(String(fitNote).replace(/\s+/g, " ").trim());
+    }
+    if (!pieces.length) {
+      pieces.push(
+        `Current fit is inferred from broader profile strength, including ${formatRank(candidate.worldRank)} OWGR and a ${Number(candidate.historicalStrength ?? 0.5).toFixed(2)} historical-strength signal.`
+      );
+    }
+    return `Historical: ${pieces.join(" ")}`;
   }
   const lines = past.map((r) => `${r.year}: ${r.finish}`).join(" | ");
   const quality = (candidate.courseHistoryScore ?? 0.5) >= 0.75 ? "strong" : "solid";
@@ -245,6 +272,9 @@ function buildCautionSummary(candidate) {
     return "Caution: projected earnings are missing, so this recommendation carries lower confidence than a normal week.";
   }
   if (!candidate.hasCourseHistory) {
+    if (candidate.hasRecentForm || Number.isFinite(Number(candidate.strokesGained?.total?.lastFive))) {
+      return "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.";
+    }
     return "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.";
   }
   return "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.";

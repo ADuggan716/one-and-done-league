@@ -95,8 +95,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 15",
     "Splash parsed history rows: 56",
-    "Splash mapping: Andrew: rank=126, season=2719060, pick=Henley, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
-    "Online signals refreshed at 2026-04-29T01:15:34.256Z.",
+    "Splash mapping: Andrew: rank=126, season=2719060, pick=Bridgeman, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
+    "Online signals refreshed at 2026-04-29T01:23:43.418Z.",
     "PGA TOUR FedExCup: 202 golfer records loaded",
     "PGA TOUR Official Money: 198 golfer records loaded",
     "OWGR: 100 golfer records loaded",
@@ -109,7 +109,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-cadillac-championship-2026",
     "PGA TOUR betting profiles matched: 24/36"
   ],
-  "generatedAt": "2026-04-29T01:15:37.607Z",
+  "generatedAt": "2026-04-29T01:23:45.475Z",
   "primary": {
     "golfer": "Cameron Young",
     "projectedEarnings": 1334313,
@@ -257,8 +257,8 @@
     "score": 0.663523825,
     "reasoning": "Reasoning: Recent form: last 4 finishes 25, 3, 1, 3. Historical strength index: 0.29. Last-five SG Total: +1.715.",
     "recentSummary": "Recent: Last four starts finished 25, 3, 1, 3 with strong momentum entering this event. Last-five SG Total +1.715, Approach +0.792, Off-the-Tee +0.644.",
-    "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 4 OWGR and a 0.29 historical-strength signal.",
-    "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+    "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.715, Approach +0.792. Latest starts: RBC Heritage: T25 | Masters Tournament: T3 | THE PLAYERS Championship: 1. Young posted a Strokes Gained: Off-the-Tee average of 0.611 (10th) this season, while his average Driving Distance of 311.0 yards ranked 32nd on TOUR.",
+    "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
     "confidenceScore": 0.9400000000000001,
     "confidenceLabel": "High",
     "decisionScores": {
@@ -287,6 +287,183 @@
     }
   },
   "alternates": [
+    {
+      "golfer": "Russell Henley",
+      "projectedEarnings": 668383,
+      "projectedDupCount": 0.12,
+      "futureValue": 744903,
+      "worldRank": 8,
+      "fedexPoints": 832,
+      "seasonEarnings": 2931317,
+      "inNextTournament": true,
+      "historicalStrength": 0.25042,
+      "last4Finishes": [
+        25,
+        3,
+        13,
+        6
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T25",
+          "roundScores": "68-68-70-70",
+          "toPar": "-8",
+          "fedexPoints": 35.375
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "T3",
+          "roundScores": "73-71-66-68",
+          "toPar": "-10",
+          "fedexPoints": 312.5
+        },
+        {
+          "date": "April 5, 2026",
+          "tournamentName": "Valero Texas Open",
+          "result": "MC",
+          "roundScores": "72-71",
+          "toPar": "-1",
+          "fedexPoints": null
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T13",
+          "roundScores": "68-71-71-72",
+          "toPar": "-6",
+          "fedexPoints": 80.556
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T6",
+          "roundScores": "70-69-71-68",
+          "toPar": "-10",
+          "fedexPoints": 233.333
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "MC",
+          "roundScores": "76-68",
+          "toPar": "+2",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T19",
+          "roundScores": "66-69-71-67",
+          "toPar": "-15",
+          "fedexPoints": 51.8
+        },
+        {
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "T8",
+          "roundScores": "65-66-69-67",
+          "toPar": "-21",
+          "fedexPoints": 75
+        },
+        {
+          "date": "Jan. 18, 2026",
+          "tournamentName": "Sony Open in Hawaii",
+          "result": "T19",
+          "roundScores": "65-73-67-67",
+          "toPar": "-8",
+          "fedexPoints": 43
+        },
+        {
+          "date": "Sept. 14, 2025",
+          "tournamentName": "Procore Championship",
+          "result": "T19",
+          "roundScores": "65-68-74-72",
+          "toPar": "-9",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 59,
+          "overall": 0.192,
+          "lastFive": 0.31
+        },
+        "approach": {
+          "overallRank": 65,
+          "overall": 0.131,
+          "lastFive": -0.162
+        },
+        "aroundTheGreen": {
+          "overallRank": 35,
+          "overall": 0.244,
+          "lastFive": 0.389
+        },
+        "putting": {
+          "overallRank": 16,
+          "overall": 0.518,
+          "lastFive": 0.452
+        },
+        "total": {
+          "overallRank": 19,
+          "overall": 1.087,
+          "lastFive": 0.989
+        }
+      },
+      "performanceNotes": [
+        "Henley posted a Strokes Gained: Off-the-Tee average of 0.192 (59th) this season, while his average Driving Distance of 293.1 yards ranked 149th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Henley sported a 0.131 mark that ranked 65th on TOUR. He ranked 58th with a 66.49% Greens in Regulation rate.",
+        "On the greens, Henley delivered a 0.518 Strokes Gained: Putting mark this season, which placed him 16th on TOUR. In addition, he ranked 11th with a Putts Per Round average of 27.69.",
+        "Henley's overall performance is reflected in his 1.087 Strokes Gained: Total average, ranking 19th on TOUR. He has earned 832 FedExCup Regular Season points, ranking 15th.",
+        "His consistency is highlighted by a second-ranked 10.59% Bogey Avoidance rate and 25th-ranked 24.48% Par Breakers percentage."
+      ],
+      "name": "Russell Henley",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.6187042,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 25, 3, 13, 6. Historical strength index: 0.25. Last-five SG Total: +0.989.",
+      "recentSummary": "Recent: Last four starts finished 25, 3, 13, 6 with strong momentum entering this event. Last-five SG Total +0.989, Approach -0.162, Off-the-Tee +0.310.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.989, Approach -0.162. Latest starts: RBC Heritage: T25 | Masters Tournament: T3 | Valero Texas Open: MC. Henley posted a Strokes Gained: Off-the-Tee average of 0.192 (59th) this season, while his average Driving Distance of 293.1 yards ranked 149th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.6187042,
+        "expected": 0.19096657142857143,
+        "leverage": 0.7933601514285715,
+        "preservation": 0.59045422
+      },
+      "flags": [
+        "Course-history detail missing"
+      ],
+      "rationale": {
+        "expected": 0.19096657142857143,
+        "uniqueness": 0.96,
+        "futureCost": 0.3724515,
+        "recentForm": 0.8825000000000001,
+        "historicalStrength": 0.25042,
+        "courseHistory": 0.5,
+        "strokesGained": 0.6354625,
+        "eventHistoryTrend": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 25, 3, 13, 6. Historical strength index: 0.25. Last-five SG Total: +0.989."
+      }
+    },
     {
       "golfer": "Akshay Bhatia",
       "projectedEarnings": 723636,
@@ -434,8 +611,8 @@
       "score": 0.6178,
       "reasoning": "Reasoning: Recent form: last 4 finishes 16, 13, 1, 16. Historical strength index: 0.17. Last-five SG Total: +1.628.",
       "recentSummary": "Recent: Last four starts finished 16, 13, 1, 16 with strong momentum entering this event. Last-five SG Total +1.628, Approach +0.701, Off-the-Tee +0.003.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 24 OWGR and a 0.17 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.628, Approach +0.701. Latest starts: RBC Heritage: T16 | Masters Tournament: MC | THE PLAYERS Championship: T13. Bhatia posted a Strokes Gained: Off-the-Tee average of -0.059 (100th) this season, while his average Driving Distance of 301.5 yards ranked 97th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -610,8 +787,8 @@
       "score": 0.604963825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 8, 33, 1, 14. Historical strength index: 0.11. Last-five SG Total: +1.497.",
       "recentSummary": "Recent: Last four starts finished 8, 33, 1, 14 with steady momentum entering this event. Last-five SG Total +1.497, Approach +0.646, Off-the-Tee +0.506.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.497, Approach +0.646. Latest starts: RBC Heritage: T8 | Masters Tournament: T33 | Texas Children's Houston Open: 1. Woodland posted a Strokes Gained: Off-the-Tee average of 0.606 (13th) in 2026, while his average Driving Distance of 323.5 yards ranked second on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -637,182 +814,6 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 8, 33, 1, 14. Historical strength index: 0.11. Last-five SG Total: +1.497."
-      }
-    },
-    {
-      "golfer": "Jacob Bridgeman",
-      "projectedEarnings": 846878,
-      "projectedDupCount": 0.2,
-      "futureValue": 742732,
-      "worldRank": 19,
-      "fedexPoints": 1495,
-      "seasonEarnings": 6740179,
-      "inNextTournament": true,
-      "historicalStrength": 0.181285,
-      "last4Finishes": [
-        33,
-        41,
-        14,
-        5
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [],
-      "recentResults": [
-        {
-          "date": "April 19, 2026",
-          "tournamentName": "RBC Heritage",
-          "result": "T33",
-          "roundScores": "75-65-66-71",
-          "toPar": "-7",
-          "fedexPoints": 23.25
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T41",
-          "roundScores": "71-74-69-76",
-          "toPar": "+2",
-          "fedexPoints": 19.5
-        },
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T14",
-          "roundScores": "68-70-72-69",
-          "toPar": "-5",
-          "fedexPoints": 54
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T5",
-          "roundScores": "70-68-71-70",
-          "toPar": "-9",
-          "fedexPoints": 275
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T18",
-          "roundScores": "75-69-69-72",
-          "toPar": "-3",
-          "fedexPoints": 54
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "1",
-          "roundScores": "66-64-64-72",
-          "toPar": "-18",
-          "fedexPoints": 700
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T8",
-          "roundScores": "67-65-68-70",
-          "toPar": "-18",
-          "fedexPoints": 147.5
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T18",
-          "roundScores": "71-68-69-67",
-          "toPar": "-9",
-          "fedexPoints": 44
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T13",
-          "roundScores": "64-66-69-69",
-          "toPar": "-20",
-          "fedexPoints": 55.2
-        },
-        {
-          "date": "Jan. 18, 2026",
-          "tournamentName": "Sony Open in Hawaii",
-          "result": "T4",
-          "roundScores": "69-68-67-64",
-          "toPar": "-12",
-          "fedexPoints": 122.5
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 51,
-          "overall": 0.241,
-          "lastFive": 0.354
-        },
-        "approach": {
-          "overallRank": 20,
-          "overall": 0.49,
-          "lastFive": 0.002
-        },
-        "aroundTheGreen": {
-          "overallRank": 118,
-          "overall": -0.192,
-          "lastFive": -0.253
-        },
-        "putting": {
-          "overallRank": 1,
-          "overall": 1.201,
-          "lastFive": 0.892
-        },
-        "total": {
-          "overallRank": 4,
-          "overall": 1.74,
-          "lastFive": 0.995
-        }
-      },
-      "performanceNotes": [
-        "Bridgeman posted a Strokes Gained: Off-the-Tee average of 0.241 (51st) this season, while his average Driving Distance of 306.4 yards ranked 50th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Bridgeman sported a 0.490 mark that ranked 20th on TOUR. He ranked 25th with a 68.89% Greens in Regulation rate.",
-        "On the greens, Bridgeman delivered a 1.201 Strokes Gained: Putting mark this season, which placed him first on TOUR. In addition, he ranked 22nd with a Putts Per Round average of 27.83, and he ranked fifth by breaking par 27.36% of the time.",
-        "Bridgeman has accumulated 1,495 FedExCup Regular Season points, ranking him fifth, and he ranks 14th with a 12.50% Bogey Avoidance rate."
-      ],
-      "name": "Jacob Bridgeman",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.6041327750000001,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995.",
-      "recentSummary": "Recent: Last four starts finished 33, 41, 14, 5 with mixed momentum entering this event. Last-five SG Total +0.995, Approach +0.002, Off-the-Tee +0.354.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 19 OWGR and a 0.18 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.6041327750000001,
-        "expected": 0.24196514285714285,
-        "leverage": 0.7787929228571429,
-        "preservation": 0.5737871800000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.24196514285714285,
-        "uniqueness": 0.9333333333333333,
-        "futureCost": 0.371366,
-        "recentForm": 0.7675,
-        "historicalStrength": 0.181285,
-        "courseHistory": 0.5,
-        "strokesGained": 0.6502375,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995."
       }
     },
     {
@@ -962,8 +963,8 @@
       "score": 0.59407465,
       "reasoning": "Reasoning: Recent form: last 4 finishes 3, 13, 37, 1. Historical strength index: 0.27. Last-five SG Total: -0.082.",
       "recentSummary": "Recent: Last four starts finished 3, 13, 37, 1 with steady momentum entering this event. Last-five SG Total -0.082, Approach +0.364, Off-the-Tee -0.431.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 5 OWGR and a 0.27 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total -0.082, Approach +0.364. Latest starts: Masters Tournament: T3 | THE PLAYERS Championship: T13 | Arnold Palmer Invitational presented by Mastercard: MC. Rose ranks first on TOUR this season with a 71.98% Greens in Regulation Percentage and posted a Strokes Gained: Approach the Green average of 0.755 (seventh).",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -1140,8 +1141,8 @@
       "score": 0.663523825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 3, 1, 3. Historical strength index: 0.29. Last-five SG Total: +1.715.",
       "recentSummary": "Recent: Last four starts finished 25, 3, 1, 3 with strong momentum entering this event. Last-five SG Total +1.715, Approach +0.792, Off-the-Tee +0.644.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 4 OWGR and a 0.29 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.715, Approach +0.792. Latest starts: RBC Heritage: T25 | Masters Tournament: T3 | THE PLAYERS Championship: 1. Young posted a Strokes Gained: Off-the-Tee average of 0.611 (10th) this season, while his average Driving Distance of 311.0 yards ranked 32nd on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -1170,20 +1171,20 @@
       }
     },
     "expected": {
-      "golfer": "Jacob Bridgeman",
-      "projectedEarnings": 846878,
-      "projectedDupCount": 0.2,
-      "futureValue": 742732,
-      "worldRank": 19,
-      "fedexPoints": 1495,
-      "seasonEarnings": 6740179,
+      "golfer": "Chris Gotterup",
+      "projectedEarnings": 787642,
+      "projectedDupCount": 0.76,
+      "futureValue": 763396,
+      "worldRank": 11,
+      "fedexPoints": 1299,
+      "seasonEarnings": 4543363,
       "inNextTournament": true,
-      "historicalStrength": 0.181285,
+      "historicalStrength": 0.232185,
       "last4Finishes": [
-        33,
-        41,
-        14,
-        5
+        25,
+        24,
+        6,
+        56
       ],
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1197,152 +1198,152 @@
         {
           "date": "April 19, 2026",
           "tournamentName": "RBC Heritage",
-          "result": "T33",
-          "roundScores": "75-65-66-71",
-          "toPar": "-7",
-          "fedexPoints": 23.25
+          "result": "T25",
+          "roundScores": "70-72-69-65",
+          "toPar": "-8",
+          "fedexPoints": 35.375
         },
         {
           "date": "April 12, 2026",
           "tournamentName": "Masters Tournament",
-          "result": "T41",
-          "roundScores": "71-74-69-76",
-          "toPar": "+2",
-          "fedexPoints": 19.5
+          "result": "T24",
+          "roundScores": "72-69-72-73",
+          "toPar": "-2",
+          "fedexPoints": 44
         },
         {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T14",
-          "roundScores": "68-70-72-69",
-          "toPar": "-5",
-          "fedexPoints": 54
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "T6",
+          "roundScores": "68-69-65-65",
+          "toPar": "-13",
+          "fedexPoints": 88.75
         },
         {
           "date": "March 15, 2026",
           "tournamentName": "THE PLAYERS Championship",
-          "result": "T5",
-          "roundScores": "70-68-71-70",
-          "toPar": "-9",
-          "fedexPoints": 275
+          "result": "T56",
+          "roundScores": "71-73-68-78",
+          "toPar": "+2",
+          "fedexPoints": 10.75
         },
         {
           "date": "March 8, 2026",
           "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
           "result": "T18",
-          "roundScores": "75-69-69-72",
+          "roundScores": "69-71-69-76",
           "toPar": "-3",
           "fedexPoints": 54
         },
         {
           "date": "Feb. 22, 2026",
           "tournamentName": "The Genesis Invitational",
-          "result": "1",
-          "roundScores": "66-64-64-72",
-          "toPar": "-18",
-          "fedexPoints": 700
+          "result": "MC",
+          "roundScores": "71-74",
+          "toPar": "+3",
+          "fedexPoints": null
         },
         {
           "date": "Feb. 15, 2026",
           "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T8",
-          "roundScores": "67-65-68-70",
-          "toPar": "-18",
-          "fedexPoints": 147.5
+          "result": "T37",
+          "roundScores": "64-71-70-72",
+          "toPar": "-11",
+          "fedexPoints": 19.969
         },
         {
           "date": "Feb. 8, 2026",
           "tournamentName": "WM Phoenix Open",
-          "result": "T18",
-          "roundScores": "71-68-69-67",
-          "toPar": "-9",
-          "fedexPoints": 44
+          "result": "1",
+          "roundScores": "63-71-70-64",
+          "toPar": "-16",
+          "fedexPoints": 500
         },
         {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T13",
-          "roundScores": "64-66-69-69",
-          "toPar": "-20",
-          "fedexPoints": 55.2
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T18",
+          "roundScores": "68-70-70-69",
+          "toPar": "-11",
+          "fedexPoints": 46
         },
         {
           "date": "Jan. 18, 2026",
           "tournamentName": "Sony Open in Hawaii",
-          "result": "T4",
-          "roundScores": "69-68-67-64",
-          "toPar": "-12",
-          "fedexPoints": 122.5
+          "result": "1",
+          "roundScores": "63-69-68-64",
+          "toPar": "-16",
+          "fedexPoints": 500
         }
       ],
       "strokesGained": {
         "offTheTee": {
-          "overallRank": 51,
-          "overall": 0.241,
-          "lastFive": 0.354
+          "overallRank": 8,
+          "overall": 0.613,
+          "lastFive": 0.347
         },
         "approach": {
-          "overallRank": 20,
-          "overall": 0.49,
-          "lastFive": 0.002
+          "overallRank": 31,
+          "overall": 0.423,
+          "lastFive": 0.229
         },
         "aroundTheGreen": {
-          "overallRank": 118,
-          "overall": -0.192,
-          "lastFive": -0.253
+          "overallRank": 56,
+          "overall": 0.149,
+          "lastFive": -0.13
         },
         "putting": {
-          "overallRank": 1,
-          "overall": 1.201,
-          "lastFive": 0.892
+          "overallRank": 71,
+          "overall": 0.054,
+          "lastFive": 0.242
         },
         "total": {
-          "overallRank": 4,
-          "overall": 1.74,
-          "lastFive": 0.995
+          "overallRank": 14,
+          "overall": 1.239,
+          "lastFive": 0.687
         }
       },
       "performanceNotes": [
-        "Bridgeman posted a Strokes Gained: Off-the-Tee average of 0.241 (51st) this season, while his average Driving Distance of 306.4 yards ranked 50th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Bridgeman sported a 0.490 mark that ranked 20th on TOUR. He ranked 25th with a 68.89% Greens in Regulation rate.",
-        "On the greens, Bridgeman delivered a 1.201 Strokes Gained: Putting mark this season, which placed him first on TOUR. In addition, he ranked 22nd with a Putts Per Round average of 27.83, and he ranked fifth by breaking par 27.36% of the time.",
-        "Bridgeman has accumulated 1,495 FedExCup Regular Season points, ranking him fifth, and he ranks 14th with a 12.50% Bogey Avoidance rate."
+        "Gotterup posted a Strokes Gained: Off-the-Tee average of 0.613 (eighth) this season, while his average Driving Distance of 320.1 yards ranked fourth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Gotterup sported a 0.423 mark that ranked 31st on TOUR. He ranked 32nd with a 68.27% Greens in Regulation rate.",
+        "On the greens, Gotterup delivered a 0.054 Strokes Gained: Putting mark this season, which placed him 71st on TOUR. In addition, he ranked 83rd with a Putts Per Round average of 28.50, and he ranked 22nd by breaking par 24.85% of the time.",
+        "Gotterup has earned 1,299 FedExCup Regular Season points this season, ranking sixth on TOUR."
       ],
-      "name": "Jacob Bridgeman",
+      "name": "Chris Gotterup",
       "hasProjectedEarnings": true,
       "hasCourseHistory": false,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.6041327750000001,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995.",
-      "recentSummary": "Recent: Last four starts finished 33, 41, 14, 5 with mixed momentum entering this event. Last-five SG Total +0.995, Approach +0.002, Off-the-Tee +0.354.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 19 OWGR and a 0.18 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "score": 0.5624465000000001,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 25, 24, 6, 56. Historical strength index: 0.23. Last-five SG Total: +0.687.",
+      "recentSummary": "Recent: Last four starts finished 25, 24, 6, 56 with mixed momentum entering this event. Last-five SG Total +0.687, Approach +0.229, Off-the-Tee +0.347.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.687, Approach +0.229. Latest starts: RBC Heritage: T25 | Masters Tournament: T24 | Texas Children's Houston Open: T6. Gotterup posted a Strokes Gained: Off-the-Tee average of 0.613 (eighth) this season, while his average Driving Distance of 320.1 yards ranked fourth on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.6041327750000001,
-        "expected": 0.24196514285714285,
-        "leverage": 0.7787929228571429,
-        "preservation": 0.5737871800000001
+        "balanced": 0.5624465000000001,
+        "expected": 0.22504057142857142,
+        "leverage": 0.6471144914285714,
+        "preservation": 0.56695754
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.24196514285714285,
-        "uniqueness": 0.9333333333333333,
-        "futureCost": 0.371366,
-        "recentForm": 0.7675,
-        "historicalStrength": 0.181285,
+        "expected": 0.22504057142857142,
+        "uniqueness": 0.7466666666666666,
+        "futureCost": 0.381698,
+        "recentForm": 0.7224999999999999,
+        "historicalStrength": 0.232185,
         "courseHistory": 0.5,
-        "strokesGained": 0.6502375,
+        "strokesGained": 0.62465,
         "eventHistoryTrend": 0.5,
         "preservePenalty": 0,
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995."
+        "explanation": "Recent form: last 4 finishes 25, 24, 6, 56. Historical strength index: 0.23. Last-five SG Total: +0.687."
       }
     },
     "leverage": {
@@ -1492,8 +1493,8 @@
       "score": 0.604963825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 8, 33, 1, 14. Historical strength index: 0.11. Last-five SG Total: +1.497.",
       "recentSummary": "Recent: Last four starts finished 8, 33, 1, 14 with steady momentum entering this event. Last-five SG Total +1.497, Approach +0.646, Off-the-Tee +0.506.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.497, Approach +0.646. Latest starts: RBC Heritage: T8 | Masters Tournament: T33 | Texas Children's Houston Open: 1. Woodland posted a Strokes Gained: Off-the-Tee average of 0.606 (13th) in 2026, while his average Driving Distance of 323.5 yards ranked second on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -1668,8 +1669,8 @@
       "score": 0.5624883500000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 2, 30, 33. Historical strength index: 0.11. Last-five SG Total: +0.567.",
       "recentSummary": "Recent: Last four starts finished 25, 2, 30, 33 with mixed momentum entering this event. Last-five SG Total +0.567, Approach -0.264, Off-the-Tee -0.235.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 43 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.567, Approach -0.264. Latest starts: RBC Heritage: T25 | Masters Tournament: MC | Valero Texas Open: T2. Kim posted a Strokes Gained: Off-the-Tee average of -0.439 (146th) this season, while his average Driving Distance of 299.7 yards ranked 111th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -1700,6 +1701,22 @@
   },
   "comparisons": [
     {
+      "golfer": "Russell Henley",
+      "scoreGap": 0.045,
+      "strengths": [
+        {
+          "label": "Projected upside",
+          "delta": 0.19026571428571426,
+          "detail": "19 pts more weekly upside"
+        },
+        {
+          "label": "Strokes gained",
+          "delta": 0.18389999999999995,
+          "detail": "18 pts stronger SG profile"
+        }
+      ]
+    },
+    {
       "golfer": "Akshay Bhatia",
       "scoreGap": 0.046,
       "strengths": [
@@ -1728,22 +1745,6 @@
           "label": "Recent form",
           "delta": 0.06000000000000005,
           "detail": "6 pts better recent-form grade"
-        }
-      ]
-    },
-    {
-      "golfer": "Jacob Bridgeman",
-      "scoreGap": 0.059,
-      "strengths": [
-        {
-          "label": "Strokes gained",
-          "delta": 0.16912499999999997,
-          "detail": "17 pts stronger SG profile"
-        },
-        {
-          "label": "Recent form",
-          "delta": 0.15250000000000008,
-          "detail": "15 pts better recent-form grade"
         }
       ]
     }
@@ -1908,8 +1909,8 @@
       "score": 0.663523825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 3, 1, 3. Historical strength index: 0.29. Last-five SG Total: +1.715.",
       "recentSummary": "Recent: Last four starts finished 25, 3, 1, 3 with strong momentum entering this event. Last-five SG Total +1.715, Approach +0.792, Off-the-Tee +0.644.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 4 OWGR and a 0.29 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.715, Approach +0.792. Latest starts: RBC Heritage: T25 | Masters Tournament: T3 | THE PLAYERS Championship: 1. Young posted a Strokes Gained: Off-the-Tee average of 0.611 (10th) this season, while his average Driving Distance of 311.0 yards ranked 32nd on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -1935,6 +1936,183 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 25, 3, 1, 3. Historical strength index: 0.29. Last-five SG Total: +1.715."
+      }
+    },
+    {
+      "golfer": "Russell Henley",
+      "projectedEarnings": 668383,
+      "projectedDupCount": 0.12,
+      "futureValue": 744903,
+      "worldRank": 8,
+      "fedexPoints": 832,
+      "seasonEarnings": 2931317,
+      "inNextTournament": true,
+      "historicalStrength": 0.25042,
+      "last4Finishes": [
+        25,
+        3,
+        13,
+        6
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T25",
+          "roundScores": "68-68-70-70",
+          "toPar": "-8",
+          "fedexPoints": 35.375
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "T3",
+          "roundScores": "73-71-66-68",
+          "toPar": "-10",
+          "fedexPoints": 312.5
+        },
+        {
+          "date": "April 5, 2026",
+          "tournamentName": "Valero Texas Open",
+          "result": "MC",
+          "roundScores": "72-71",
+          "toPar": "-1",
+          "fedexPoints": null
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T13",
+          "roundScores": "68-71-71-72",
+          "toPar": "-6",
+          "fedexPoints": 80.556
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T6",
+          "roundScores": "70-69-71-68",
+          "toPar": "-10",
+          "fedexPoints": 233.333
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "MC",
+          "roundScores": "76-68",
+          "toPar": "+2",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T19",
+          "roundScores": "66-69-71-67",
+          "toPar": "-15",
+          "fedexPoints": 51.8
+        },
+        {
+          "date": "Jan. 25, 2026",
+          "tournamentName": "The American Express",
+          "result": "T8",
+          "roundScores": "65-66-69-67",
+          "toPar": "-21",
+          "fedexPoints": 75
+        },
+        {
+          "date": "Jan. 18, 2026",
+          "tournamentName": "Sony Open in Hawaii",
+          "result": "T19",
+          "roundScores": "65-73-67-67",
+          "toPar": "-8",
+          "fedexPoints": 43
+        },
+        {
+          "date": "Sept. 14, 2025",
+          "tournamentName": "Procore Championship",
+          "result": "T19",
+          "roundScores": "65-68-74-72",
+          "toPar": "-9",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 59,
+          "overall": 0.192,
+          "lastFive": 0.31
+        },
+        "approach": {
+          "overallRank": 65,
+          "overall": 0.131,
+          "lastFive": -0.162
+        },
+        "aroundTheGreen": {
+          "overallRank": 35,
+          "overall": 0.244,
+          "lastFive": 0.389
+        },
+        "putting": {
+          "overallRank": 16,
+          "overall": 0.518,
+          "lastFive": 0.452
+        },
+        "total": {
+          "overallRank": 19,
+          "overall": 1.087,
+          "lastFive": 0.989
+        }
+      },
+      "performanceNotes": [
+        "Henley posted a Strokes Gained: Off-the-Tee average of 0.192 (59th) this season, while his average Driving Distance of 293.1 yards ranked 149th on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Henley sported a 0.131 mark that ranked 65th on TOUR. He ranked 58th with a 66.49% Greens in Regulation rate.",
+        "On the greens, Henley delivered a 0.518 Strokes Gained: Putting mark this season, which placed him 16th on TOUR. In addition, he ranked 11th with a Putts Per Round average of 27.69.",
+        "Henley's overall performance is reflected in his 1.087 Strokes Gained: Total average, ranking 19th on TOUR. He has earned 832 FedExCup Regular Season points, ranking 15th.",
+        "His consistency is highlighted by a second-ranked 10.59% Bogey Avoidance rate and 25th-ranked 24.48% Par Breakers percentage."
+      ],
+      "name": "Russell Henley",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.6187042,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 25, 3, 13, 6. Historical strength index: 0.25. Last-five SG Total: +0.989.",
+      "recentSummary": "Recent: Last four starts finished 25, 3, 13, 6 with strong momentum entering this event. Last-five SG Total +0.989, Approach -0.162, Off-the-Tee +0.310.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.989, Approach -0.162. Latest starts: RBC Heritage: T25 | Masters Tournament: T3 | Valero Texas Open: MC. Henley posted a Strokes Gained: Off-the-Tee average of 0.192 (59th) this season, while his average Driving Distance of 293.1 yards ranked 149th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.6187042,
+        "expected": 0.19096657142857143,
+        "leverage": 0.7933601514285715,
+        "preservation": 0.59045422
+      },
+      "flags": [
+        "Course-history detail missing"
+      ],
+      "rationale": {
+        "expected": 0.19096657142857143,
+        "uniqueness": 0.96,
+        "futureCost": 0.3724515,
+        "recentForm": 0.8825000000000001,
+        "historicalStrength": 0.25042,
+        "courseHistory": 0.5,
+        "strokesGained": 0.6354625,
+        "eventHistoryTrend": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 25, 3, 13, 6. Historical strength index: 0.25. Last-five SG Total: +0.989."
       }
     },
     {
@@ -2084,8 +2262,8 @@
       "score": 0.6178,
       "reasoning": "Reasoning: Recent form: last 4 finishes 16, 13, 1, 16. Historical strength index: 0.17. Last-five SG Total: +1.628.",
       "recentSummary": "Recent: Last four starts finished 16, 13, 1, 16 with strong momentum entering this event. Last-five SG Total +1.628, Approach +0.701, Off-the-Tee +0.003.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 24 OWGR and a 0.17 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.628, Approach +0.701. Latest starts: RBC Heritage: T16 | Masters Tournament: MC | THE PLAYERS Championship: T13. Bhatia posted a Strokes Gained: Off-the-Tee average of -0.059 (100th) this season, while his average Driving Distance of 301.5 yards ranked 97th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -2260,8 +2438,8 @@
       "score": 0.604963825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 8, 33, 1, 14. Historical strength index: 0.11. Last-five SG Total: +1.497.",
       "recentSummary": "Recent: Last four starts finished 8, 33, 1, 14 with steady momentum entering this event. Last-five SG Total +1.497, Approach +0.646, Off-the-Tee +0.506.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.497, Approach +0.646. Latest starts: RBC Heritage: T8 | Masters Tournament: T33 | Texas Children's Houston Open: 1. Woodland posted a Strokes Gained: Off-the-Tee average of 0.606 (13th) in 2026, while his average Driving Distance of 323.5 yards ranked second on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -2287,182 +2465,6 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 8, 33, 1, 14. Historical strength index: 0.11. Last-five SG Total: +1.497."
-      }
-    },
-    {
-      "golfer": "Jacob Bridgeman",
-      "projectedEarnings": 846878,
-      "projectedDupCount": 0.2,
-      "futureValue": 742732,
-      "worldRank": 19,
-      "fedexPoints": 1495,
-      "seasonEarnings": 6740179,
-      "inNextTournament": true,
-      "historicalStrength": 0.181285,
-      "last4Finishes": [
-        33,
-        41,
-        14,
-        5
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [],
-      "recentResults": [
-        {
-          "date": "April 19, 2026",
-          "tournamentName": "RBC Heritage",
-          "result": "T33",
-          "roundScores": "75-65-66-71",
-          "toPar": "-7",
-          "fedexPoints": 23.25
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T41",
-          "roundScores": "71-74-69-76",
-          "toPar": "+2",
-          "fedexPoints": 19.5
-        },
-        {
-          "date": "March 22, 2026",
-          "tournamentName": "Valspar Championship",
-          "result": "T14",
-          "roundScores": "68-70-72-69",
-          "toPar": "-5",
-          "fedexPoints": 54
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T5",
-          "roundScores": "70-68-71-70",
-          "toPar": "-9",
-          "fedexPoints": 275
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T18",
-          "roundScores": "75-69-69-72",
-          "toPar": "-3",
-          "fedexPoints": 54
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "1",
-          "roundScores": "66-64-64-72",
-          "toPar": "-18",
-          "fedexPoints": 700
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T8",
-          "roundScores": "67-65-68-70",
-          "toPar": "-18",
-          "fedexPoints": 147.5
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "T18",
-          "roundScores": "71-68-69-67",
-          "toPar": "-9",
-          "fedexPoints": 44
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "T13",
-          "roundScores": "64-66-69-69",
-          "toPar": "-20",
-          "fedexPoints": 55.2
-        },
-        {
-          "date": "Jan. 18, 2026",
-          "tournamentName": "Sony Open in Hawaii",
-          "result": "T4",
-          "roundScores": "69-68-67-64",
-          "toPar": "-12",
-          "fedexPoints": 122.5
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 51,
-          "overall": 0.241,
-          "lastFive": 0.354
-        },
-        "approach": {
-          "overallRank": 20,
-          "overall": 0.49,
-          "lastFive": 0.002
-        },
-        "aroundTheGreen": {
-          "overallRank": 118,
-          "overall": -0.192,
-          "lastFive": -0.253
-        },
-        "putting": {
-          "overallRank": 1,
-          "overall": 1.201,
-          "lastFive": 0.892
-        },
-        "total": {
-          "overallRank": 4,
-          "overall": 1.74,
-          "lastFive": 0.995
-        }
-      },
-      "performanceNotes": [
-        "Bridgeman posted a Strokes Gained: Off-the-Tee average of 0.241 (51st) this season, while his average Driving Distance of 306.4 yards ranked 50th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Bridgeman sported a 0.490 mark that ranked 20th on TOUR. He ranked 25th with a 68.89% Greens in Regulation rate.",
-        "On the greens, Bridgeman delivered a 1.201 Strokes Gained: Putting mark this season, which placed him first on TOUR. In addition, he ranked 22nd with a Putts Per Round average of 27.83, and he ranked fifth by breaking par 27.36% of the time.",
-        "Bridgeman has accumulated 1,495 FedExCup Regular Season points, ranking him fifth, and he ranks 14th with a 12.50% Bogey Avoidance rate."
-      ],
-      "name": "Jacob Bridgeman",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.6041327750000001,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995.",
-      "recentSummary": "Recent: Last four starts finished 33, 41, 14, 5 with mixed momentum entering this event. Last-five SG Total +0.995, Approach +0.002, Off-the-Tee +0.354.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 19 OWGR and a 0.18 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.6041327750000001,
-        "expected": 0.24196514285714285,
-        "leverage": 0.7787929228571429,
-        "preservation": 0.5737871800000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.24196514285714285,
-        "uniqueness": 0.9333333333333333,
-        "futureCost": 0.371366,
-        "recentForm": 0.7675,
-        "historicalStrength": 0.181285,
-        "courseHistory": 0.5,
-        "strokesGained": 0.6502375,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 33, 41, 14, 5. Historical strength index: 0.18. Last-five SG Total: +0.995."
       }
     },
     {
@@ -2612,8 +2614,8 @@
       "score": 0.59407465,
       "reasoning": "Reasoning: Recent form: last 4 finishes 3, 13, 37, 1. Historical strength index: 0.27. Last-five SG Total: -0.082.",
       "recentSummary": "Recent: Last four starts finished 3, 13, 37, 1 with steady momentum entering this event. Last-five SG Total -0.082, Approach +0.364, Off-the-Tee -0.431.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 5 OWGR and a 0.27 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total -0.082, Approach +0.364. Latest starts: Masters Tournament: T3 | THE PLAYERS Championship: T13 | Arnold Palmer Invitational presented by Mastercard: MC. Rose ranks first on TOUR this season with a 71.98% Greens in Regulation Percentage and posted a Strokes Gained: Approach the Green average of 0.755 (seventh).",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -2788,8 +2790,8 @@
       "score": 0.5914973750000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 16, 7, 21, 13. Historical strength index: 0.15. Last-five SG Total: +0.669.",
       "recentSummary": "Recent: Last four starts finished 16, 7, 21, 13 with steady momentum entering this event. Last-five SG Total +0.669, Approach -0.080, Off-the-Tee +0.118.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 29 OWGR and a 0.15 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.669, Approach -0.080. Latest starts: RBC Heritage: T16 | Masters Tournament: T7 | Texas Children's Houston Open: T21. Burns posted a Strokes Gained: Off-the-Tee average of 0.152 (63rd) this season, while his average Driving Distance of 312.2 yards ranked 24th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -2964,8 +2966,8 @@
       "score": 0.58641385,
       "reasoning": "Reasoning: Recent form: last 4 finishes 60, 3, 32, 6. Historical strength index: 0.14. Last-five SG Total: +1.208.",
       "recentSummary": "Recent: Last four starts finished 60, 3, 32, 6 with mixed momentum entering this event. Last-five SG Total +1.208, Approach +0.513, Off-the-Tee +0.488.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 32 OWGR and a 0.14 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +1.208, Approach +0.513. Latest starts: RBC Heritage: T60 | Masters Tournament: MC | Texas Children's Houston Open: T3. Lee posted a Strokes Gained: Off-the-Tee average of 0.610 (11th) this season, while his average Driving Distance of 316.1 yards ranked 12th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -3140,8 +3142,8 @@
       "score": 0.5832347500000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 42, 41, 8, 13. Historical strength index: 0.20. Last-five SG Total: +0.655.",
       "recentSummary": "Recent: Last four starts finished 42, 41, 8, 13 with mixed momentum entering this event. Last-five SG Total +0.655, Approach +0.399, Off-the-Tee +0.079.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 13 OWGR and a 0.20 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.655, Approach +0.399. Latest starts: RBC Heritage: T42 | Masters Tournament: T41 | Valero Texas Open: MC. Straka posted a Strokes Gained: Off-the-Tee average of 0.138 (65th) this season, while his average Driving Distance of 302.5 yards ranked 85th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -3317,8 +3319,8 @@
       "score": 0.5827771,
       "reasoning": "Reasoning: Recent form: last 4 finishes 52, 33, 10, 8. Historical strength index: 0.25. Last-five SG Total: +0.443.",
       "recentSummary": "Recent: Last four starts finished 52, 33, 10, 8 with mixed momentum entering this event. Last-five SG Total +0.443, Approach +0.302, Off-the-Tee +0.248.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 7 OWGR and a 0.25 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.443, Approach +0.302. Latest starts: RBC Heritage: T52 | Masters Tournament: T33 | Valero Texas Open: T10. Fleetwood has posted a Strokes Gained: Off-the-Tee average of 0.351 (37th) this season, while his average Driving Distance of 299.1 yards ranks 121st on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -3493,8 +3495,8 @@
       "score": 0.57723955,
       "reasoning": "Reasoning: Recent form: last 4 finishes 4, 30, 21, 24. Historical strength index: 0.18. Last-five SG Total: +0.478.",
       "recentSummary": "Recent: Last four starts finished 4, 30, 21, 24 with steady momentum entering this event. Last-five SG Total +0.478, Approach -0.312, Off-the-Tee +0.000.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 18 OWGR and a 0.18 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.478, Approach -0.312. Latest starts: RBC Heritage: T4 | Masters Tournament: T30 | Texas Children's Houston Open: T21. English posted a Strokes Gained: Off-the-Tee average of 0.380 (35th) this season, while his average Driving Distance of 302.8 yards ranked 81st on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -3669,8 +3671,8 @@
       "score": 0.5738722500000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 74, 11, 6, 6. Historical strength index: 0.13. Last-five SG Total: +0.464.",
       "recentSummary": "Recent: Last four starts finished 74, 11, 6, 6 with mixed momentum entering this event. Last-five SG Total +0.464, Approach +0.474, Off-the-Tee -0.192.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 37 OWGR and a 0.13 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.464, Approach +0.474. Latest starts: RBC Heritage: T74 | Masters Tournament: 11 | Texas Children's Houston Open: T6. Knapp posted a Strokes Gained: Off-the-Tee average of 0.207 (54th) in 2026, while his average Driving Distance of 319.8 yards ranked sixth on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -3845,8 +3847,8 @@
       "score": 0.5624883500000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 2, 30, 33. Historical strength index: 0.11. Last-five SG Total: +0.567.",
       "recentSummary": "Recent: Last four starts finished 25, 2, 30, 33 with mixed momentum entering this event. Last-five SG Total +0.567, Approach -0.264, Off-the-Tee -0.235.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 43 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.567, Approach -0.264. Latest starts: RBC Heritage: T25 | Masters Tournament: MC | Valero Texas Open: T2. Kim posted a Strokes Gained: Off-the-Tee average of -0.439 (146th) this season, while his average Driving Distance of 299.7 yards ranked 111th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4021,8 +4023,8 @@
       "score": 0.5624465000000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 24, 6, 56. Historical strength index: 0.23. Last-five SG Total: +0.687.",
       "recentSummary": "Recent: Last four starts finished 25, 24, 6, 56 with mixed momentum entering this event. Last-five SG Total +0.687, Approach +0.229, Off-the-Tee +0.347.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 11 OWGR and a 0.23 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.687, Approach +0.229. Latest starts: RBC Heritage: T25 | Masters Tournament: T24 | Texas Children's Houston Open: T6. Gotterup posted a Strokes Gained: Off-the-Tee average of 0.613 (eighth) this season, while his average Driving Distance of 320.1 yards ranked fourth on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4197,8 +4199,8 @@
       "score": 0.5610505250000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 10, 12, 24, 39. Historical strength index: 0.11. Last-five SG Total: -0.122.",
       "recentSummary": "Recent: Last four starts finished 10, 12, 24, 39 with steady momentum entering this event. Last-five SG Total -0.122, Approach +0.042, Off-the-Tee +0.108.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 47 OWGR and a 0.11 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total -0.122, Approach +0.042. Latest starts: Zurich Classic of New Orleans: T10 | RBC Heritage: T12 | Masters Tournament: T24. McCarty posted a Strokes Gained: Off-the-Tee average of 0.056 (78th) this season, while his average Driving Distance of 297.5 yards ranked 131st on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4373,8 +4375,8 @@
       "score": 0.5559520750000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 55, 2, 55, 27. Historical strength index: 0.12. Last-five SG Total: +0.894.",
       "recentSummary": "Recent: Last four starts finished 55, 2, 55, 27 with mixed momentum entering this event. Last-five SG Total +0.894, Approach +0.517, Off-the-Tee +0.006.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 36 OWGR and a 0.12 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.894, Approach +0.517. Latest starts: RBC Heritage: T55 | Masters Tournament: MC | Texas Children's Houston Open: 2. Højgaard posted a Strokes Gained: Off-the-Tee average of 0.298 (44th) this season, while his average Driving Distance of 317.1 yards ranked tenth on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4549,8 +4551,8 @@
       "score": 0.5504272000000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 34, 33, 38, 27. Historical strength index: 0.14. Last-five SG Total: +0.238.",
       "recentSummary": "Recent: Last four starts finished 34, 33, 38, 27 with mixed momentum entering this event. Last-five SG Total +0.238, Approach -0.012, Off-the-Tee +0.182.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 33 OWGR and a 0.14 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.238, Approach -0.012. Latest starts: Zurich Classic of New Orleans: 34 | RBC Heritage: T33 | Masters Tournament: T38. Gerard posted a Strokes Gained: Off-the-Tee average of 0.300 (43rd) this season, while his average Driving Distance of 302.2 yards ranked 90th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4725,8 +4727,8 @@
       "score": 0.54845045,
       "reasoning": "Reasoning: Recent form: last 4 finishes 25, 33, 39, 11. Historical strength index: 0.10. Last-five SG Total: +0.043.",
       "recentSummary": "Recent: Last four starts finished 25, 33, 39, 11 with mixed momentum entering this event. Last-five SG Total +0.043, Approach +0.173, Off-the-Tee -0.314.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 50 OWGR and a 0.10 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.043, Approach +0.173. Latest starts: RBC Heritage: T25 | Masters Tournament: T33 | Valero Texas Open: T39. Harman has posted a Strokes Gained: Off-the-Tee average of -0.310 (135th) this season, while his average Driving Distance of 292.1 yards ranked 153rd on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -4901,8 +4903,8 @@
       "score": 0.5475221250000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 8, 51, 60, 18. Historical strength index: 0.14. Last-five SG Total: +0.089.",
       "recentSummary": "Recent: Last four starts finished 8, 51, 60, 18 with mixed momentum entering this event. Last-five SG Total +0.089, Approach +0.510, Off-the-Tee -0.126.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 34 OWGR and a 0.14 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.089, Approach +0.510. Latest starts: RBC Heritage: T8 | Masters Tournament: 51 | Texas Children's Houston Open: T60. Kitayama has posted a Strokes Gained: Off-the-Tee average of 0.204 (55th) this season, while his average Driving Distance of 311.3 yards ranks 31st on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -5077,8 +5079,8 @@
       "score": 0.546607925,
       "reasoning": "Reasoning: Recent form: last 4 finishes 42, 12, 6, 59. Historical strength index: 0.12. Last-five SG Total: +0.225.",
       "recentSummary": "Recent: Last four starts finished 42, 12, 6, 59 with mixed momentum entering this event. Last-five SG Total +0.225, Approach -0.366, Off-the-Tee -0.021.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 38 OWGR and a 0.12 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.225, Approach -0.366. Latest starts: RBC Heritage: T42 | Masters Tournament: T12 | Texas Children's Houston Open: T6. Day posted a Strokes Gained: Off-the-Tee average of -0.020 (91st) this season, while his average Driving Distance of 300.1 yards ranked 108th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -5254,8 +5256,8 @@
       "score": 0.535458125,
       "reasoning": "Reasoning: Recent form: last 4 finishes 12, 21, 55, 50. Historical strength index: 0.15. Last-five SG Total: +0.011.",
       "recentSummary": "Recent: Last four starts finished 12, 21, 55, 50 with mixed momentum entering this event. Last-five SG Total +0.011, Approach -0.242, Off-the-Tee +0.017.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 27 OWGR and a 0.15 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.011, Approach -0.242. Latest starts: RBC Heritage: T12 | Masters Tournament: T21 | Valspar Championship: T55. Bradley posted a Strokes Gained: Off-the-Tee average of 0.131 (68th) this season, while his average Driving Distance of 306.3 yards ranked 55th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -5430,8 +5432,8 @@
       "score": 0.5319956250000001,
       "reasoning": "Reasoning: Recent form: last 4 finishes 65, 30, 30, 32. Historical strength index: 0.17. Last-five SG Total: +0.193.",
       "recentSummary": "Recent: Last four starts finished 65, 30, 30, 32 with mixed momentum entering this event. Last-five SG Total +0.193, Approach -0.082, Off-the-Tee -0.132.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 21 OWGR and a 0.17 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.193, Approach -0.082. Latest starts: RBC Heritage: T65 | Masters Tournament: T30 | Valero Texas Open: T30. Noren has posted a Strokes Gained: Off-the-Tee average of -0.178 (119th) this season, while his average Driving Distance of 290.7 yards ranks 155th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -5606,8 +5608,8 @@
       "score": 0.52359825,
       "reasoning": "Reasoning: Recent form: last 4 finishes 77, 41, 30, 8. Historical strength index: 0.18. Last-five SG Total: -0.544.",
       "recentSummary": "Recent: Last four starts finished 77, 41, 30, 8 with mixed momentum entering this event. Last-five SG Total -0.544, Approach -0.158, Off-the-Tee -0.273.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 17 OWGR and a 0.18 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total -0.544, Approach -0.158. Latest starts: RBC Heritage: T77 | Masters Tournament: T41 | Valspar Championship: T30. Thomas posted a Strokes Gained: Off-the-Tee average of -0.316 (137th) this season, while his average Driving Distance of 304.9 yards ranked 66th on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
       "confidenceScore": 0.9400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
@@ -5660,7 +5662,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 2 OWGR, 1226 FedExCup points, $6.7M in season earnings. Historical strength index: 0.50. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 2 OWGR, 1226 FedExCup points, and $6.7M earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 2 OWGR and a 0.50 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 2 OWGR and a 0.50 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5717,7 +5719,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 3 OWGR, 2394 FedExCup points, $10.6M in season earnings. Historical strength index: 0.31. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 3 OWGR, 2394 FedExCup points, and $10.6M earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 3 OWGR and a 0.31 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 3 OWGR and a 0.31 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5774,7 +5776,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 12 OWGR, 796 FedExCup points, $3.0M in season earnings. Historical strength index: 0.23. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 12 OWGR, 796 FedExCup points, and $3.0M earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 12 OWGR and a 0.23 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 12 OWGR and a 0.23 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5829,7 +5831,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 20 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 20 OWGR, 0 FedExCup points, and $0 earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 20 OWGR and a 0.18 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 20 OWGR and a 0.18 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5884,7 +5886,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 22 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.17. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 22 OWGR, 0 FedExCup points, and $0 earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 22 OWGR and a 0.17 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 22 OWGR and a 0.17 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5939,7 +5941,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 23 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.17. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 23 OWGR, 0 FedExCup points, and $0 earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 23 OWGR and a 0.17 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 23 OWGR and a 0.17 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -5994,7 +5996,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 28 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.15. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 28 OWGR, 0 FedExCup points, and $0 earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 28 OWGR and a 0.15 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 28 OWGR and a 0.15 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -6173,7 +6175,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 8, 12, 7, 32. Historical strength index: 0.14. Last-five SG Total: +0.734. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 8, 12, 7, 32 with steady momentum entering this event. Last-five SG Total +0.734, Approach -0.004, Off-the-Tee +0.557.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 31 OWGR and a 0.14 historical-strength signal.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.734, Approach -0.004. Latest starts: RBC Heritage: T8 | Masters Tournament: T12 | Valspar Championship: T7. Cantlay posted a Strokes Gained: Off-the-Tee average of 0.491 (22nd) this season, while his average Driving Distance of 299.5 yards ranked 114th on TOUR.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.19,
       "confidenceLabel": "Low",
@@ -6230,7 +6232,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 39 OWGR, 251 FedExCup points, $943K in season earnings. Historical strength index: 0.12. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 39 OWGR, 251 FedExCup points, and $943K earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 39 OWGR and a 0.12 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 39 OWGR and a 0.12 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -6287,7 +6289,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 41 OWGR, 102 FedExCup points, $357K in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 41 OWGR, 102 FedExCup points, and $357K earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 41 OWGR and a 0.11 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 41 OWGR and a 0.11 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -6463,7 +6465,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 81, 66, 44, 1. Historical strength index: 0.11. Last-five SG Total: -1.365. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Last four starts finished 81, 66, 44, 1 with mixed momentum entering this event. Last-five SG Total -1.365, Approach -0.555, Off-the-Tee -0.402.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 42 OWGR and a 0.11 historical-strength signal.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total -1.365, Approach -0.555. Latest starts: RBC Heritage: 81 | Masters Tournament: MC | Texas Children's Houston Open: MC. Echavarria has posted a Strokes Gained: Off-the-Tee average of -0.228 (127th) this season, while his average Driving Distance of 290.5 yards ranks 156th on TOUR.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.19,
       "confidenceLabel": "Low",
@@ -6518,7 +6520,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 46 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 46 OWGR, 0 FedExCup points, and $0 earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 46 OWGR and a 0.11 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 46 OWGR and a 0.11 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -6575,7 +6577,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 48 OWGR, 309 FedExCup points, $1.1M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 48 OWGR, 309 FedExCup points, and $1.1M earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 48 OWGR and a 0.10 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 48 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
@@ -6632,7 +6634,7 @@
       "score": 0,
       "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 49 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 49 OWGR, 127 FedExCup points, and $445K earned this season.",
-      "historicalSummary": "Historical: Detailed event-history rows were not loaded for this golfer. Current fit is inferred from broader profile strength, including No. 49 OWGR and a 0.10 historical-strength signal.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 49 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
       "confidenceLabel": "Low",
