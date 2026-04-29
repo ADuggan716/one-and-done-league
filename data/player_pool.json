@@ -22,7 +22,8 @@
         "Ben Griffin",
         "Maverick McNealy",
         "Xander Schauffele",
-        "Christopher Gotterup"
+        "Christopher Gotterup",
+        "Straka"
       ],
       "available": [
         "Rory McIlroy",
@@ -33,7 +34,6 @@
         "Russell Henley",
         "Chris Gotterup",
         "Robert MacIntyre",
-        "Sepp Straka",
         "Justin Thomas",
         "Harris English",
         "Jacob Bridgeman",
@@ -451,7 +451,7 @@
       "worldRank": 31,
       "fedexPoints": 536,
       "seasonEarnings": 1991903,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "Min Woo Lee",
@@ -609,7 +609,6 @@
     "Keegan Bradley",
     "Sam Burns",
     "Maverick McNealy",
-    "Patrick Cantlay",
     "Min Woo Lee",
     "Ryan Gerard",
     "Kurt Kitayama",
@@ -631,5 +630,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-04-27T14:00:22.378Z"
+  "updatedAt": "2026-04-29T00:55:37.027Z"
 }

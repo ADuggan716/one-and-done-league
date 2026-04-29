@@ -469,6 +469,7 @@ export function generateRecommendations(availableGolfers, projections, options =
   if (leverageView) usedViewNames.add(leverageView.golfer);
   const preservationView = pickDistinctCandidate(byPreservation, usedViewNames);
   const warnings = summarizeWarnings(scored, options.sourceNotes || [], options.nextTournamentField?.length || 0);
+  const seasonPickStatus = options.seasonPickStatus || {};
 
   return {
     generatedAt: new Date().toISOString(),
@@ -486,6 +487,10 @@ export function generateRecommendations(availableGolfers, projections, options =
       eligibleCount: scored.filter((candidate) => candidate.eligible).length,
       projectedCount: scored.filter((candidate) => candidate.hasProjectedEarnings).length,
       nextTournamentFieldCount: options.nextTournamentField?.length || 0,
+      picksUsed: seasonPickStatus.picksUsed ?? null,
+      picksRemaining: seasonPickStatus.picksRemaining ?? null,
+      picksRemainingAfterThisWeek: seasonPickStatus.picksRemainingAfterThisWeek ?? null,
+      seasonWindowLabel: seasonPickStatus.seasonWindowLabel || null,
       confidenceLabel: labelConfidence(
         rankedPool.length ? rankedPool.reduce((sum, candidate) => sum + candidate.confidenceScore, 0) / rankedPool.length : 0
       ),

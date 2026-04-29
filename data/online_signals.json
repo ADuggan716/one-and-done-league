@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-04-27T14:00:27.661Z",
+  "fetchedAt": "2026-04-29T00:55:42.462Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 201 golfer records loaded",
+    "PGA TOUR FedExCup: 202 golfer records loaded",
     "PGA TOUR Official Money: 198 golfer records loaded",
     "OWGR: 100 golfer records loaded"
   ],
@@ -1187,6 +1187,13 @@
       ],
       "fedexPoints": 22,
       "seasonEarnings": 51142
+    },
+    {
+      "golfer": "Alex Fitzpatrick",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Alex Smalley",

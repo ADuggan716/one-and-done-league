@@ -92,24 +92,16 @@
     "name": "Manage Entries",
     "totalEntrants": 150,
     "yourRank": 126,
-    "latestEventId": "rbc-heritage",
+    "latestEventId": "miami-championship",
     "yourPercentile": 16.10738255033557
   },
   "subgroupStandings": [
     {
       "member": "Dakota",
       "seasonEarnings": 8450569,
-      "weeklyEarnings": 555000,
-      "avgEarnings": 563371.2666666667,
+      "weeklyEarnings": 0,
+      "avgEarnings": 528160.5625,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "87",
-          "pick": "Sepp Straka"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -133,6 +125,14 @@
           "earnings": 555000,
           "finish": "8",
           "pick": "Patrick Cantlay"
+        },
+        {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
         }
       ],
       "history": [
@@ -257,6 +257,14 @@
           "pick": "Patrick Cantlay"
         },
         {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        },
+        {
           "eventId": "cadillac-championship",
           "eventName": "Cadillac Championship",
           "tier": "signature",
@@ -272,17 +280,9 @@
     {
       "member": "Mike",
       "seasonEarnings": 4494521,
-      "weeklyEarnings": 823333,
-      "avgEarnings": 299634.73333333334,
+      "weeklyEarnings": 0,
+      "avgEarnings": 280907.5625,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "71",
-          "pick": "Russell Henley"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -306,6 +306,14 @@
           "earnings": 823333,
           "finish": "4",
           "pick": "Ludvig Aberg"
+        },
+        {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
         }
       ],
       "history": [
@@ -430,6 +438,14 @@
           "pick": "Ludvig Aberg"
         },
         {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        },
+        {
           "eventId": "cadillac-championship",
           "eventName": "Cadillac Championship",
           "tier": "signature",
@@ -445,17 +461,9 @@
     {
       "member": "Paul",
       "seasonEarnings": 2961100,
-      "weeklyEarnings": 399250,
-      "avgEarnings": 197406.66666666666,
+      "weeklyEarnings": 0,
+      "avgEarnings": 185068.75,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 237650,
-          "finish": "10",
-          "pick": "Tommy Fleetwood"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -479,6 +487,14 @@
           "earnings": 399250,
           "finish": "12",
           "pick": "Xander Schauffele"
+        },
+        {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
         }
       ],
       "history": [
@@ -603,6 +619,14 @@
           "pick": "Xander Schauffele"
         },
         {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": null
+        },
+        {
           "eventId": "cadillac-championship",
           "eventName": "Cadillac Championship",
           "tier": "signature",
@@ -618,17 +642,9 @@
     {
       "member": "Andrew",
       "seasonEarnings": 2861810,
-      "weeklyEarnings": 142750,
-      "avgEarnings": 190787.33333333334,
+      "weeklyEarnings": 0,
+      "avgEarnings": 178863.125,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 95550,
-          "finish": "21",
-          "pick": "Maverick McNealy"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -652,6 +668,14 @@
           "earnings": 142750,
           "finish": "25",
           "pick": "Christopher Gotterup"
+        },
+        {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": "Straka"
         }
       ],
       "history": [
@@ -776,6 +800,14 @@
           "pick": "Christopher Gotterup"
         },
         {
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": null,
+          "pick": "Straka"
+        },
+        {
           "eventId": "cadillac-championship",
           "eventName": "Cadillac Championship",
           "tier": "signature",
@@ -797,7 +829,7 @@
         "Dakota"
       ],
       "seasonEarnings": 11312379,
-      "weeklyEarnings": 697750,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 5656189.5,
       "rank": 1,
       "toLeader": 0
@@ -809,7 +841,7 @@
         "Paul"
       ],
       "seasonEarnings": 7455621,
-      "weeklyEarnings": 1222583,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 3727810.5,
       "rank": 2,
       "toLeader": 3856758
@@ -1698,6 +1730,65 @@
           "finish": "25",
           "pick": "Christopher Gotterup",
           "leagueRank": 126
+        }
+      ]
+    },
+    {
+      "eventId": "miami-championship",
+      "eventName": "Miami Championship",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Andrew",
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": "Straka",
+          "leagueRank": 126
+        },
+        {
+          "member": "Dakota",
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": 13
+        },
+        {
+          "member": "Mike",
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": 85
+        },
+        {
+          "member": "Paul",
+          "eventId": "miami-championship",
+          "eventName": "Miami Championship",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": null,
+          "pick": null,
+          "leagueRank": 131
         }
       ]
     },
@@ -4894,9 +4985,7 @@
       "rows": []
     }
   ],
-  "whoGainedThisWeek": [
-    "Mike"
-  ],
+  "whoGainedThisWeek": [],
   "projections": [
     {
       "golfer": "Scottie Scheffler",
@@ -5393,19 +5482,18 @@
     },
     {
       "golfer": "Patrick Cantlay",
-      "projectedEarnings": 369552,
-      "projectedDupCount": 0.02,
-      "futureValue": 516051,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 586666,
       "worldRank": 31,
       "fedexPoints": 536,
       "seasonEarnings": 1991903,
-      "inNextTournament": true,
+      "inNextTournament": false,
       "historicalStrength": 0.143645,
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis"
+        "OWGR"
       ]
     },
     {
@@ -5651,8 +5739,131 @@
       "seasonEarnings": 0,
       "inNextTournament": false,
       "historicalStrength": 0.108235,
+      "last4Finishes": [
+        13,
+        65,
+        24,
+        5
+      ],
       "sourceRefs": [
-        "OWGR"
+        "OWGR",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "April 26, 2026",
+          "tournamentName": "Zurich Classic of New Orleans",
+          "result": "T13",
+          "roundScores": "60-70-64-69",
+          "toPar": "-25",
+          "fedexPoints": 30.25
+        },
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T65",
+          "roundScores": "70-69-68-75",
+          "toPar": "-2",
+          "fedexPoints": 6.625
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "T24",
+          "roundScores": "72-74-70-70",
+          "toPar": "-2",
+          "fedexPoints": 44
+        },
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "5",
+          "roundScores": "67-65-67-67",
+          "toPar": "-14",
+          "fedexPoints": 110
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "58",
+          "roundScores": "72-72-72-75",
+          "toPar": "+3",
+          "fedexPoints": 10
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "MC",
+          "roundScores": "74-76",
+          "toPar": "+6",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "T16",
+          "roundScores": "74-68-67-65",
+          "toPar": "-10",
+          "fedexPoints": 68.75
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T55",
+          "roundScores": "69-72-68-72",
+          "toPar": "-7",
+          "fedexPoints": 10
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "T35",
+          "roundScores": "66-70-72-70",
+          "toPar": "-6",
+          "fedexPoints": 18.5
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T30",
+          "roundScores": "68-72-71-69",
+          "toPar": "-8",
+          "fedexPoints": 23.125
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 31,
+          "overall": 0.385,
+          "lastFive": 0.195
+        },
+        "approach": {
+          "overallRank": 46,
+          "overall": 0.293,
+          "lastFive": 0.35
+        },
+        "aroundTheGreen": {
+          "overallRank": 93,
+          "overall": -0.047,
+          "lastFive": -0.182
+        },
+        "putting": {
+          "overallRank": 105,
+          "overall": -0.165,
+          "lastFive": -0.069
+        },
+        "total": {
+          "overallRank": 45,
+          "overall": 0.465,
+          "lastFive": 0.294
+        }
+      },
+      "performanceNotes": [
+        "Stevens posted a Strokes Gained: Off-the-Tee average of 0.385 (31st) this season, while his average Driving Distance of 307.7 yards ranked 43rd on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Stevens sported a 0.293 mark that ranked 46th on TOUR. He ranked 26th with a 68.78% Greens in Regulation rate.",
+        "On the greens, Stevens delivered a -0.165 Strokes Gained: Putting mark this season, which placed him 105th on TOUR. In addition, he ranked 102nd with a Putts Per Round average of 28.71, and he ranked 28th by breaking par 24.21% of the time.",
+        "Stevens has earned 438 FedExCup Regular Season points this season, ranking 43rd."
       ]
     },
     {
@@ -5874,18 +6085,19 @@
     },
     {
       "golfer": "Michael Thorbjornsen",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 448530,
+      "projectedEarnings": 249184,
+      "projectedDupCount": 0.04,
+      "futureValue": 397763,
       "worldRank": 60,
       "fedexPoints": 358,
       "seasonEarnings": 1316892,
-      "inNextTournament": false,
+      "inNextTournament": true,
       "historicalStrength": 0.09052,
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR",
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -6609,6 +6821,20 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
+      ]
+    },
+    {
+      "golfer": "Alex Fitzpatrick",
+      "projectedEarnings": 132480,
+      "projectedDupCount": 0.06,
+      "futureValue": 204054,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -8141,21 +8367,22 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 15",
     "Splash parsed history rows: 56",
-    "Splash mapping: Andrew: rank=126, season=2719060, pick=-, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
-    "Online signals refreshed at 2026-04-27T14:00:27.661Z.",
-    "PGA TOUR FedExCup: 201 golfer records loaded",
+    "Splash mapping: Andrew: rank=126, season=2719060, pick=Straka, week=0, finish=- | Paul: rank=131, season=2561850, pick=-, week=0, finish=- | Dakota: rank=13, season=7895569, pick=-, week=0, finish=- | Mike: rank=85, season=3671188, pick=-, week=0, finish=-",
+    "Online signals refreshed at 2026-04-29T00:55:42.462Z.",
+    "PGA TOUR FedExCup: 202 golfer records loaded",
     "PGA TOUR Official Money: 198 golfer records loaded",
     "OWGR: 100 golfer records loaded",
     "PGA TOUR schedule resolved next tournament: Cadillac Championship",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/cadillac-championship/R2026556/field",
     "PGA TOUR field entries: 72",
-    "Opened next-tournament view for Cadillac Championship after finalizing RBC Heritage.",
-    "Weekly projection synthesis: 71 field golfers received modeled payout estimates",
+    "Opened next-tournament view for Cadillac Championship after finalizing Miami Championship.",
+    "Weekly projection synthesis: 72 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Scottie Scheffler, Cameron Young, Collin Morikawa, Jacob Bridgeman, Chris Gotterup",
-    "PGA TOUR betting profiles: failed (Betting profile preview: player profile list not found)"
+    "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-cadillac-championship-2026",
+    "PGA TOUR betting profiles matched: 1/36"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-04-27T14:00:22.378Z"
+  "updatedAt": "2026-04-29T00:55:37.027Z"
 }

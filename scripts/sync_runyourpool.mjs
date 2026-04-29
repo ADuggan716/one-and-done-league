@@ -36,6 +36,26 @@ const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
 const root = path.resolve(__dirname, "..");
 const execFileAsync = promisify(execFile);
+const LEAGUE_SEASON_SCHEDULE_FALLBACK = [
+  "Miami Championship",
+  "Truist Championship",
+  "PGA Championship",
+  "The CJ Cup Byron Nelson",
+  "Charles Schwab Challenge",
+  "The Memorial Tournament",
+  "RBC Canadian Open",
+  "U.S. Open Championship",
+  "Travelers Championship",
+  "John Deere Classic",
+  "Genesis Scottish Open",
+  "British Open Championship",
+  "3M Open",
+  "Rocket Mortgage Classic",
+  "Wyndham Championship",
+  "FedEx St. Jude Championship",
+  "BMW Championship",
+  "TOUR Championship",
+];
 
 async function captureChromeHtml(targetUrl) {
   const normalizedTargetUrl = String(targetUrl).trim();
@@ -802,6 +822,7 @@ async function run() {
   const cookie = await loadCookie(path.join(root, config.cookiePath));
 
   let upstream;
+  let scheduleTournaments = [];
   try {
     if ((config.provider || "splash") === "splash") {
       if (process.env.SPLASH_SOURCE === "chrome") {
@@ -898,9 +919,9 @@ async function run() {
 
   try {
     const upstreamEventName = normalized.nextTournament?.name || normalized.events.at(-1)?.name;
-    const tournaments = await fetchPgaTourSchedule();
+    scheduleTournaments = await fetchPgaTourSchedule();
     normalized.nextTournament = resolveNextTournamentFromSchedule(
-      tournaments,
+      scheduleTournaments,
       upstreamEventName,
       {
         currentEventCompleted: normalized.events.at(-1)?.countsTowardSeasonTotals !== false,
@@ -1035,6 +1056,27 @@ async function run() {
   };
 
   const andrewAvailable = playerPool.members[config.me]?.available || [];
+  const seasonSchedule = Array.isArray(snapshot.seasonSchedule)
+    ? snapshot.seasonSchedule.filter((item) => item?.label && !item.disabled)
+    : [];
+  const selectedScheduleIndex = seasonSchedule.findIndex((item) => item.selected);
+  const picksRemaining = selectedScheduleIndex >= 0
+    ? seasonSchedule.length - selectedScheduleIndex
+    : fallbackSeasonPicksRemaining(snapshot.nextTournament || snapshot.event);
+  const seasonPickStatus = {
+    picksUsed: playerPool.members[config.me]?.used?.length ?? null,
+    picksRemaining,
+    picksRemainingAfterThisWeek:
+      Number.isInteger(picksRemaining) && picksRemaining > 0
+        ? picksRemaining - 1
+        : picksRemaining === 0
+          ? 0
+          : null,
+    seasonWindowLabel:
+      picksRemaining && recommendationsEventLabel(snapshot.nextTournament || snapshot.event)
+        ? `Including ${recommendationsEventLabel(snapshot.nextTournament || snapshot.event)}`
+        : null,
+  };
   const recommendations = {
     currentEvent: snapshot.event,
     event: snapshot.nextTournament || snapshot.event,
@@ -1046,6 +1088,7 @@ async function run() {
       nextTournamentField: playerPool.nextTournamentField || [],
       playerPoolGolfers: playerPool.golfers || [],
       sourceNotes: snapshot.sourceNotes || [],
+      seasonPickStatus,
     }),
     warnings: snapshot.warnings,
   };
@@ -1059,6 +1102,29 @@ async function run() {
   await fs.appendFile(path.join(root, "logs/sync.log"), `${logMessage}\n`, "utf8");
 
   console.log(logMessage);
+}
+
+function recommendationsEventLabel(event) {
+  return String(event?.name || "").trim() || null;
+}
+
+function normalizeSeasonEventName(name) {
+  const normalized = String(name || "")
+    .normalize("NFKD")
+    .replace(/[\u0300-\u036f]/g, "")
+    .replace(/[.'’]/g, "")
+    .replace(/\s+/g, " ")
+    .trim()
+    .toLowerCase();
+  if (normalized === "cadillac championship") return "miami championship";
+  return normalized;
+}
+
+function fallbackSeasonPicksRemaining(event) {
+  const eventName = normalizeSeasonEventName(event?.name || event);
+  if (!eventName) return null;
+  const index = LEAGUE_SEASON_SCHEDULE_FALLBACK.findIndex((label) => normalizeSeasonEventName(label) === eventName);
+  return index >= 0 ? LEAGUE_SEASON_SCHEDULE_FALLBACK.length - index : null;
 }
 
 run().catch(async (error) => {

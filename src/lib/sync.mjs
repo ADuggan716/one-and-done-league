@@ -1035,6 +1035,7 @@ export function parseSplashSportsHtml({
       countsTowardSeasonTotals: false,
     })]
     : [];
+  const seasonSchedule = standingsHtml ? parseTournamentOptionsFromStandingsHtml(standingsHtml) : [];
   const pickHistory = Object.fromEntries(
     Object.entries(pickHistoryByMember || {}).map(([member, html]) => [member, parsePickHistoryHtml(html, member)])
   );
@@ -1057,6 +1058,7 @@ export function parseSplashSportsHtml({
     leagueWideHistory,
     pickHistory,
     subgroupMembers,
+    seasonSchedule,
   });
 }
 
@@ -1072,6 +1074,7 @@ export function buildSplashSnapshot({
   leagueWideHistory = [],
   pickHistory = {},
   subgroupMembers,
+  seasonSchedule = [],
 }) {
   const canonicalCurrentEventName = canonicalizeEventName(eventName);
   const eventMeta = lookupEventMetadata(canonicalCurrentEventName);
@@ -1230,6 +1233,12 @@ export function buildSplashSnapshot({
       firstPrize: eventMeta.firstPrize,
       lastYearWinner: eventMeta.lastYearWinner,
     },
+    seasonSchedule: (seasonSchedule || []).map((item) => ({
+      value: item?.value || null,
+      label: canonicalizeEventName(item?.label || ""),
+      selected: Boolean(item?.selected),
+      disabled: Boolean(item?.disabled),
+    })),
     projections: [],
     leagueWideHistory,
     sourceNotes: [
@@ -1375,6 +1384,12 @@ export function normalizeSnapshot(raw, subgroupMembers) {
       latestEventId: raw.league?.latestEventId || normalizedEvents.at(-1)?.id || null,
     },
     events: normalizedEvents,
+    seasonSchedule: (raw.seasonSchedule || []).map((item) => ({
+      value: item?.value || null,
+      label: canonicalizeEventName(item?.label || ""),
+      selected: Boolean(item?.selected),
+      disabled: Boolean(item?.disabled),
+    })),
     leagueWideHistory: leagueWideHistory.map((event) => ({
       eventId: normalizeEventId(event.eventId || event.eventName || event.name),
       eventName: canonicalizeEventName(event.eventName || event.name),

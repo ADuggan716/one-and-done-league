@@ -221,6 +221,11 @@ function renderSummary(recs) {
   const summary = recs.summary || {};
   const eventName = recs.event?.name || "Unknown event";
   const updated = new Date(recs.generatedAt || Date.now()).toLocaleString();
+  const picksRemaining = Number.isInteger(summary.picksRemaining) ? summary.picksRemaining : null;
+  const picksRemainingAfterThisWeek = Number.isInteger(summary.picksRemainingAfterThisWeek)
+    ? summary.picksRemainingAfterThisWeek
+    : null;
+  const picksUsed = Number.isInteger(summary.picksUsed) ? summary.picksUsed : null;
   const dataState = {
     fieldPending: missingFieldData(recs),
     projectionPending: Number(summary.projectedCount || 0) === 0,
@@ -253,9 +258,23 @@ function renderSummary(recs) {
       <p>Golfers still unused in your pool.</p>
     </div>
     <div class="summary-stat">
+      <span>Season picks left</span>
+      <strong>${picksRemaining ?? "N/A"}</strong>
+      <p>${
+        picksRemaining === null
+          ? "Season schedule count was not available in this refresh."
+          : `${summary.seasonWindowLabel || "Including this decision event"}. ${picksRemainingAfterThisWeek ?? 0} left after you use this week’s pick.`
+      }</p>
+    </div>
+    <div class="summary-stat">
       <span>Confirmed field</span>
       <strong>${summary.eligibleCount ?? 0}</strong>
       <p>Available golfers confirmed for the upcoming event.</p>
+    </div>
+    <div class="summary-stat">
+      <span>Picks used</span>
+      <strong>${picksUsed ?? "N/A"}</strong>
+      <p>${picksUsed === null ? "Used-pick history was not available in this refresh." : "Completed one-and-done bullets already spent this season."}</p>
     </div>
     <div class="summary-stat">
       <span>Projected payouts</span>
