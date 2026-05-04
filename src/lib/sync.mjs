@@ -184,6 +184,9 @@ function canonicalizeEventName(value) {
   if (key === "themasters" || key === "masterstournament" || key === "masters") {
     return "Masters Tournament";
   }
+  if (key === "miami" || key === "miamichampionship" || key === "cadillacchampionship") {
+    return "Miami Championship";
+  }
 
   return raw;
 }

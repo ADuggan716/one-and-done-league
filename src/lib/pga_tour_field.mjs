@@ -18,7 +18,9 @@ function extractNextData(html, label) {
 }
 
 function normalizeTournamentName(name) {
-  return normalizeGolferName(name).replace(/^the\s+/, "");
+  const normalized = normalizeGolferName(name).replace(/^the\s+/, "");
+  if (normalized === "cadillac championship") return "miami championship";
+  return normalized;
 }
 
 function slugifyTournamentName(name) {
@@ -81,7 +83,7 @@ export function resolveNextTournamentFromSchedule(tournaments, currentEventName,
 
   if (currentIndex !== -1) {
     const current = list[currentIndex];
-    if (current?.status === "IN_PROGRESS" || current?.status === "UPCOMING") {
+    if (!currentEventCompleted && (current?.status === "IN_PROGRESS" || current?.status === "UPCOMING")) {
       return {
         id: current.tournamentId,
         name: current.name,

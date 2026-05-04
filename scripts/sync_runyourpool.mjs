@@ -153,6 +153,9 @@ function snapshotHasSeasonData(snapshot) {
 function canonicalHistoricalEventName(name) {
   const raw = String(name || "").trim();
   const key = raw.toLowerCase().replace(/[^a-z0-9]/g, "");
+  if (key === "miami" || key === "miamichampionship" || key === "cadillacchampionship") {
+    return "Miami Championship";
+  }
   if (key === "players" || key === "playerschampionship" || key === "theplayers" || key === "theplayerschampionship") {
     return "Players Championship";
   }
@@ -184,10 +187,12 @@ function eventHasMeaningfulData(event) {
 }
 
 function normalizeEventKey(value) {
-  return String(value || "")
+  const normalized = String(value || "")
     .trim()
     .toLowerCase()
     .replace(/[^a-z0-9]/g, "");
+  if (normalized === "miami" || normalized === "cadillacchampionship") return "miamichampionship";
+  return normalized;
 }
 
 function eventIdFromName(name) {
