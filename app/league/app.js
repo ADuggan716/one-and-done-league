@@ -123,7 +123,9 @@ function isCurrentEventWindow(snapshot, eventName) {
   const currentName = snapshot?.event?.name || snapshot?.nextTournament?.name;
   if (!currentName || !eventName) return false;
   if (canonicalDisplayEventKey(currentName) !== canonicalDisplayEventKey(eventName)) return false;
-  return snapshot?.nextTournament?.status !== "COMPLETED";
+  const status = String(snapshot?.nextTournament?.status || "").toUpperCase();
+  if (status) return status === "IN_PROGRESS";
+  return snapshot?.event?.countsTowardSeasonTotals === false && snapshot?.event?.isUpcoming !== true;
 }
 
 function sortHeader(label, key, sortState) {

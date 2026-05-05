@@ -634,12 +634,24 @@ function latestCompletedEvent(events) {
   return completed.at(-1) || null;
 }
 
+function latestLeagueRanksByMember(events) {
+  const ranks = new Map();
+  for (const event of [...(events || [])].reverse()) {
+    for (const row of event?.subgroupResults || []) {
+      if (ranks.has(row.member)) continue;
+      if (row.leagueRank === null || row.leagueRank === undefined) continue;
+      ranks.set(row.member, row.leagueRank);
+    }
+  }
+  return ranks;
+}
+
 function buildLeagueSnapshot(normalized, config) {
   const dedupedEvents = dedupeEventsById(normalized.events);
   const standings = computeSubgroupStandings(config.subgroupMembers, dedupedEvents);
   const liveEvent = [...dedupedEvents].reverse().find((event) => event?.countsTowardSeasonTotals === false) || null;
   const displayEvent = liveEvent || latestCompletedEvent(dedupedEvents) || dedupedEvents.at(-1) || null;
-  const latestRanks = new Map((displayEvent?.subgroupResults || []).map((r) => [r.member, r.leagueRank ?? null]));
+  const latestRanks = latestLeagueRanksByMember(dedupedEvents);
   const standingsWithLeagueRank = standings.map((row) => ({
     ...row,
     leagueRank: latestRanks.get(row.member) ?? null,
