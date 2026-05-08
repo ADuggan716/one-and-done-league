@@ -2,78 +2,78 @@
   "currentEvent": {
     "id": "truist-championship",
     "name": "Truist Championship",
-    "tier": "signature",
-    "startDate": "May 7 - 10",
+    "tier": "regular",
+    "startDate": null,
     "isUpcoming": true,
     "countsTowardSeasonTotals": false,
-    "totalPurse": 20000000,
-    "firstPrize": 3600000,
+    "totalPurse": 0,
+    "firstPrize": 0,
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Justin Rose",
+        "earnings": 93250,
+        "seasonEarnings": 2758143,
+        "finish": "33",
+        "leagueRank": 137
       },
       {
         "member": "Paul",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Rory McIlroy",
+        "earnings": 133000,
+        "seasonEarnings": 6161850,
+        "finish": "30",
+        "leagueRank": 53
       },
       {
         "member": "Dakota",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Xander Schauffele",
+        "earnings": 198200,
+        "seasonEarnings": 7967751,
+        "finish": "20",
+        "leagueRank": 29
       },
       {
         "member": "Mike",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Harris English",
+        "earnings": 352000,
+        "seasonEarnings": 7271188,
+        "finish": "13",
+        "leagueRank": 33
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Justin Rose",
+        "earnings": 93250,
+        "seasonEarnings": 2758143,
+        "finish": "33",
+        "leagueRank": 137
       },
       {
         "member": "Paul",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Rory McIlroy",
+        "earnings": 133000,
+        "seasonEarnings": 6161850,
+        "finish": "30",
+        "leagueRank": 53
       },
       {
         "member": "Dakota",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Xander Schauffele",
+        "earnings": 198200,
+        "seasonEarnings": 7967751,
+        "finish": "20",
+        "leagueRank": 29
       },
       {
         "member": "Mike",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Harris English",
+        "earnings": 352000,
+        "seasonEarnings": 7271188,
+        "finish": "13",
+        "leagueRank": 33
       }
     ]
   },
@@ -85,31 +85,30 @@
     "totalPurse": 20000000,
     "firstPrize": 3600000,
     "lastYearWinner": "Sepp Straka",
-    "status": "UPCOMING"
+    "status": "IN_PROGRESS"
   },
   "strategy": "balanced-weekly-pick-with-tradeoffs",
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 1",
+    "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 16",
-    "Splash parsed history rows: 60",
-    "Splash mapping: Andrew: rank=137, season=2758143, pick=-, week=0, finish=- | Paul: rank=53, season=6161850, pick=-, week=0, finish=- | Dakota: rank=29, season=7967751, pick=-, week=0, finish=- | Mike: rank=33, season=7271188, pick=-, week=0, finish=-",
-    "Online signals refreshed at 2026-05-05T00:21:47.311Z.",
-    "PGA TOUR FedExCup: 202 golfer records loaded",
+    "Splash parsed history rows: 64",
+    "Splash mapping: Andrew: rank=137, season=2758143, pick=Justin Rose, week=93250, finish=33 | Paul: rank=53, season=6161850, pick=Rory McIlroy, week=133000, finish=30 | Dakota: rank=29, season=7967751, pick=Xander Schauffele, week=198200, finish=20 | Mike: rank=33, season=7271188, pick=Harris English, week=352000, finish=13",
+    "Online signals refreshed at 2026-05-08T00:32:47.305Z.",
+    "PGA TOUR FedExCup: 204 golfer records loaded",
     "PGA TOUR Official Money: 199 golfer records loaded",
     "OWGR: 100 golfer records loaded",
     "PGA TOUR schedule resolved next tournament: Truist Championship",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/truist-championship/R2026480/field",
     "PGA TOUR field entries: 72",
-    "Opened next-tournament view for Truist Championship after finalizing Miami Championship.",
     "Weekly projection synthesis: 72 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Matt Fitzpatrick, Cameron Young, Rory McIlroy, Justin Rose, Jacob Bridgeman",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-truist-championship-2026",
-    "PGA TOUR betting profiles matched: 26/36"
+    "PGA TOUR betting profiles matched: 25/35"
   ],
-  "generatedAt": "2026-05-05T00:21:49.665Z",
+  "generatedAt": "2026-05-08T00:32:53.029Z",
   "primary": {
     "golfer": "Cameron Young",
     "projectedEarnings": 1524658,
@@ -317,7 +316,7 @@
     {
       "golfer": "Rory McIlroy",
       "projectedEarnings": 1220148,
-      "projectedDupCount": 0.54,
+      "projectedDupCount": 0.27,
       "futureValue": 1013792,
       "worldRank": 2,
       "fedexPoints": 1226,
@@ -491,7 +490,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.6863263573170731,
+      "score": 0.6998263573170732,
       "reasoning": "Reasoning: Recent form: last 4 finishes 1, 46, 2, 14. Historical strength index: 0.49. Last-five SG Total: +0.904. Course history score: 0.81.",
       "recentSummary": "Recent: Last four starts finished 1, 46, 2, 14 with steady momentum entering this event. Last-five SG Total +0.904, Approach +0.620, Off-the-Tee +0.578.",
       "historicalSummary": "Historical: 2025: T7 | 2024: 1 | 2023: T47. Overall, historical performance at this event/course has been strong.",
@@ -499,15 +498,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.6863263573170731,
+        "balanced": 0.6998263573170732,
         "expected": 0.3486137142857143,
-        "leverage": 0.7306251942857143,
+        "leverage": 0.7900251942857143,
         "preservation": 0.6055752873170731
       },
       "flags": [],
       "rationale": {
         "expected": 0.3486137142857143,
-        "uniqueness": 0.82,
+        "uniqueness": 0.91,
         "futureCost": 0.506896,
         "recentForm": 0.8425,
         "historicalStrength": 0.492415,
@@ -1937,7 +1936,7 @@
   "comparisons": [
     {
       "golfer": "Rory McIlroy",
-      "scoreGap": 0.052,
+      "scoreGap": 0.038,
       "strengths": [
         {
           "label": "Strokes gained",
@@ -1946,8 +1945,8 @@
         },
         {
           "label": "Leverage",
-          "delta": 0.15818445714285723,
-          "detail": "16 pts cleaner leverage"
+          "delta": 0.09878445714285722,
+          "detail": "10 pts cleaner leverage"
         }
       ]
     },
@@ -1985,11 +1984,11 @@
     }
   ],
   "summary": {
-    "totalAvailable": 36,
-    "eligibleCount": 26,
-    "projectedCount": 26,
-    "nextTournamentFieldCount": 37,
-    "picksUsed": 15,
+    "totalAvailable": 35,
+    "eligibleCount": 24,
+    "projectedCount": 24,
+    "nextTournamentFieldCount": 36,
+    "picksUsed": 16,
     "picksRemaining": 17,
     "picksRemainingAfterThisWeek": 16,
     "seasonWindowLabel": "Including Truist Championship",
@@ -2203,7 +2202,7 @@
     {
       "golfer": "Rory McIlroy",
       "projectedEarnings": 1220148,
-      "projectedDupCount": 0.54,
+      "projectedDupCount": 0.27,
       "futureValue": 1013792,
       "worldRank": 2,
       "fedexPoints": 1226,
@@ -2377,7 +2376,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.6863263573170731,
+      "score": 0.6998263573170732,
       "reasoning": "Reasoning: Recent form: last 4 finishes 1, 46, 2, 14. Historical strength index: 0.49. Last-five SG Total: +0.904. Course history score: 0.81.",
       "recentSummary": "Recent: Last four starts finished 1, 46, 2, 14 with steady momentum entering this event. Last-five SG Total +0.904, Approach +0.620, Off-the-Tee +0.578.",
       "historicalSummary": "Historical: 2025: T7 | 2024: 1 | 2023: T47. Overall, historical performance at this event/course has been strong.",
@@ -2385,15 +2384,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.6863263573170731,
+        "balanced": 0.6998263573170732,
         "expected": 0.3486137142857143,
-        "leverage": 0.7306251942857143,
+        "leverage": 0.7900251942857143,
         "preservation": 0.6055752873170731
       },
       "flags": [],
       "rationale": {
         "expected": 0.3486137142857143,
-        "uniqueness": 0.82,
+        "uniqueness": 0.91,
         "futureCost": 0.506896,
         "recentForm": 0.8425,
         "historicalStrength": 0.492415,
@@ -3575,7 +3574,7 @@
     {
       "golfer": "Akshay Bhatia",
       "projectedEarnings": 616274,
-      "projectedDupCount": 0.27,
+      "projectedDupCount": 0.32,
       "futureValue": 644792,
       "worldRank": 24,
       "fedexPoints": 1322,
@@ -3742,7 +3741,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.5827129664634146,
+      "score": 0.5802129664634146,
       "reasoning": "Reasoning: Recent form: last 4 finishes 23, 16, 13, 1. Historical strength index: 0.17. Last-five SG Total: +1.451. Course history score: 0.25.",
       "recentSummary": "Recent: Last four starts finished 23, 16, 13, 1 with steady momentum entering this event. Last-five SG Total +1.451, Approach +0.383, Off-the-Tee -0.290.",
       "historicalSummary": "Historical: 2025: T46 | 2024: 42 | 2023: T43. Overall, historical performance at this event/course has been solid.",
@@ -3750,15 +3749,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.5827129664634146,
+        "balanced": 0.5802129664634146,
         "expected": 0.17607828571428571,
-        "leverage": 0.7669060257142858,
+        "leverage": 0.7559060257142858,
         "preservation": 0.5642354214634147
       },
       "flags": [],
       "rationale": {
         "expected": 0.17607828571428571,
-        "uniqueness": 0.91,
+        "uniqueness": 0.8933333333333333,
         "futureCost": 0.322396,
         "recentForm": 0.8674999999999999,
         "historicalStrength": 0.16936,
@@ -3967,185 +3966,9 @@
       }
     },
     {
-      "golfer": "Chris Gotterup",
-      "projectedEarnings": 688577,
-      "projectedDupCount": 0.45,
-      "futureValue": 728965,
-      "worldRank": 11,
-      "fedexPoints": 1317,
-      "seasonEarnings": 4615544,
-      "inNextTournament": true,
-      "historicalStrength": 0.23032,
-      "last4Finishes": [
-        38,
-        25,
-        24,
-        6
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [],
-      "recentResults": [
-        {
-          "date": "May 3, 2026",
-          "tournamentName": "Cadillac Championship",
-          "result": "T38",
-          "roundScores": "73-71-69-71",
-          "toPar": "-4",
-          "fedexPoints": 18.023
-        },
-        {
-          "date": "April 19, 2026",
-          "tournamentName": "RBC Heritage",
-          "result": "T25",
-          "roundScores": "70-72-69-65",
-          "toPar": "-8",
-          "fedexPoints": 35.375
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T24",
-          "roundScores": "72-69-72-73",
-          "toPar": "-2",
-          "fedexPoints": 44
-        },
-        {
-          "date": "March 29, 2026",
-          "tournamentName": "Texas Children's Houston Open",
-          "result": "T6",
-          "roundScores": "68-69-65-65",
-          "toPar": "-13",
-          "fedexPoints": 88.75
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T56",
-          "roundScores": "71-73-68-78",
-          "toPar": "+2",
-          "fedexPoints": 10.75
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "T18",
-          "roundScores": "69-71-69-76",
-          "toPar": "-3",
-          "fedexPoints": 54
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "MC",
-          "roundScores": "71-74",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T37",
-          "roundScores": "64-71-70-72",
-          "toPar": "-11",
-          "fedexPoints": 19.969
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "P1",
-          "roundScores": "63-71-70-64",
-          "toPar": "-16",
-          "fedexPoints": 500
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "T18",
-          "roundScores": "68-70-70-69",
-          "toPar": "-11",
-          "fedexPoints": 46
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 10,
-          "overall": 0.592,
-          "lastFive": 0.445
-        },
-        "approach": {
-          "overallRank": 51,
-          "overall": 0.21,
-          "lastFive": -0.147
-        },
-        "aroundTheGreen": {
-          "overallRank": 54,
-          "overall": 0.131,
-          "lastFive": -0.156
-        },
-        "putting": {
-          "overallRank": 59,
-          "overall": 0.155,
-          "lastFive": 0.423
-        },
-        "total": {
-          "overallRank": 15,
-          "overall": 1.089,
-          "lastFive": 0.565
-        }
-      },
-      "performanceNotes": [
-        "Gotterup posted a Strokes Gained: Off-the-Tee average of 0.592 (10th) this season, while his average Driving Distance of 320.7 yards ranked fourth on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Gotterup sported a 0.210 mark that ranked 51st on TOUR. He ranked 41st with a 67.59% Greens in Regulation rate.",
-        "On the greens, Gotterup delivered a 0.155 Strokes Gained: Putting mark this season, which placed him 59th on TOUR. In addition, he ranked 67th with a Putts Per Round average of 28.40, and he ranked 20th by breaking par 24.60% of the time.",
-        "Gotterup has earned 1,317 FedExCup Regular Season points, ranking eighth on TOUR."
-      ],
-      "name": "Chris Gotterup",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.575718825,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 38, 25, 24, 6. Historical strength index: 0.23. Last-five SG Total: +0.565.",
-      "recentSummary": "Recent: Last four starts finished 38, 25, 24, 6 with mixed momentum entering this event. Last-five SG Total +0.565, Approach -0.147, Off-the-Tee +0.445.",
-      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.565, Approach -0.147. Latest starts: Cadillac Championship: T38 | RBC Heritage: T25 | Masters Tournament: T24. Gotterup posted a Strokes Gained: Off-the-Tee average of 0.592 (10th) this season, while his average Driving Distance of 320.7 yards ranked fourth on TOUR.",
-      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
-      "confidenceScore": 0.9400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.575718825,
-        "expected": 0.19673628571428572,
-        "leverage": 0.7085298057142858,
-        "preservation": 0.5769191000000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.19673628571428572,
-        "uniqueness": 0.85,
-        "futureCost": 0.3644825,
-        "recentForm": 0.7675,
-        "historicalStrength": 0.23032,
-        "courseHistory": 0.5,
-        "strokesGained": 0.58335,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 38, 25, 24, 6. Historical strength index: 0.23. Last-five SG Total: +0.565."
-      }
-    },
-    {
       "golfer": "Harris English",
       "projectedEarnings": 410896,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.04,
       "futureValue": 576781,
       "worldRank": 18,
       "fedexPoints": 594,
@@ -4312,7 +4135,7 @@
       "hasCourseHistory": true,
       "hasRecentForm": true,
       "eligible": true,
-      "score": 0.574470799390244,
+      "score": 0.575470799390244,
       "reasoning": "Reasoning: Recent form: last 4 finishes 55, 4, 30, 21. Historical strength index: 0.18. Last-five SG Total: +0.231. Course history score: 0.66.",
       "recentSummary": "Recent: Last four starts finished 55, 4, 30, 21 with mixed momentum entering this event. Last-five SG Total +0.231, Approach -0.471, Off-the-Tee +0.045.",
       "historicalSummary": "Historical: 2025: T11 | 2024: T34 | 2023: T3. Overall, historical performance at this event/course has been solid.",
@@ -4320,15 +4143,15 @@
       "confidenceScore": 1,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.574470799390244,
+        "balanced": 0.575470799390244,
         "expected": 0.11739885714285714,
-        "leverage": 0.7688588171428572,
+        "leverage": 0.7732588171428572,
         "preservation": 0.631325464390244
       },
       "flags": [],
       "rationale": {
         "expected": 0.11739885714285714,
-        "uniqueness": 0.98,
+        "uniqueness": 0.9866666666666667,
         "futureCost": 0.2883905,
         "recentForm": 0.725,
         "historicalStrength": 0.175195,
@@ -4516,6 +4339,182 @@
         "projectionPenalty": 0,
         "dataPenalty": 0,
         "explanation": "Recent form: last 4 finishes 14, 2, 41, 10. Historical strength index: 0.11. Last-five SG Total: +0.281."
+      }
+    },
+    {
+      "golfer": "Chris Gotterup",
+      "projectedEarnings": 688577,
+      "projectedDupCount": 0.51,
+      "futureValue": 728965,
+      "worldRank": 11,
+      "fedexPoints": 1317,
+      "seasonEarnings": 4615544,
+      "inNextTournament": true,
+      "historicalStrength": 0.23032,
+      "last4Finishes": [
+        38,
+        25,
+        24,
+        6
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR",
+        "Weekly projection synthesis",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [],
+      "recentResults": [
+        {
+          "date": "May 3, 2026",
+          "tournamentName": "Cadillac Championship",
+          "result": "T38",
+          "roundScores": "73-71-69-71",
+          "toPar": "-4",
+          "fedexPoints": 18.023
+        },
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T25",
+          "roundScores": "70-72-69-65",
+          "toPar": "-8",
+          "fedexPoints": 35.375
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "T24",
+          "roundScores": "72-69-72-73",
+          "toPar": "-2",
+          "fedexPoints": 44
+        },
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "T6",
+          "roundScores": "68-69-65-65",
+          "toPar": "-13",
+          "fedexPoints": 88.75
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "T56",
+          "roundScores": "71-73-68-78",
+          "toPar": "+2",
+          "fedexPoints": 10.75
+        },
+        {
+          "date": "March 8, 2026",
+          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
+          "result": "T18",
+          "roundScores": "69-71-69-76",
+          "toPar": "-3",
+          "fedexPoints": 54
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "MC",
+          "roundScores": "71-74",
+          "toPar": "+3",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T37",
+          "roundScores": "64-71-70-72",
+          "toPar": "-11",
+          "fedexPoints": 19.969
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "P1",
+          "roundScores": "63-71-70-64",
+          "toPar": "-16",
+          "fedexPoints": 500
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T18",
+          "roundScores": "68-70-70-69",
+          "toPar": "-11",
+          "fedexPoints": 46
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 10,
+          "overall": 0.592,
+          "lastFive": 0.445
+        },
+        "approach": {
+          "overallRank": 51,
+          "overall": 0.21,
+          "lastFive": -0.147
+        },
+        "aroundTheGreen": {
+          "overallRank": 54,
+          "overall": 0.131,
+          "lastFive": -0.156
+        },
+        "putting": {
+          "overallRank": 59,
+          "overall": 0.155,
+          "lastFive": 0.423
+        },
+        "total": {
+          "overallRank": 15,
+          "overall": 1.089,
+          "lastFive": 0.565
+        }
+      },
+      "performanceNotes": [
+        "Gotterup posted a Strokes Gained: Off-the-Tee average of 0.592 (10th) this season, while his average Driving Distance of 320.7 yards ranked fourth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Gotterup sported a 0.210 mark that ranked 51st on TOUR. He ranked 41st with a 67.59% Greens in Regulation rate.",
+        "On the greens, Gotterup delivered a 0.155 Strokes Gained: Putting mark this season, which placed him 59th on TOUR. In addition, he ranked 67th with a Putts Per Round average of 28.40, and he ranked 20th by breaking par 24.60% of the time.",
+        "Gotterup has earned 1,317 FedExCup Regular Season points, ranking eighth on TOUR."
+      ],
+      "name": "Chris Gotterup",
+      "hasProjectedEarnings": true,
+      "hasCourseHistory": false,
+      "hasRecentForm": true,
+      "eligible": true,
+      "score": 0.572718825,
+      "reasoning": "Reasoning: Recent form: last 4 finishes 38, 25, 24, 6. Historical strength index: 0.23. Last-five SG Total: +0.565.",
+      "recentSummary": "Recent: Last four starts finished 38, 25, 24, 6 with mixed momentum entering this event. Last-five SG Total +0.565, Approach -0.147, Off-the-Tee +0.445.",
+      "historicalSummary": "Historical: Recent fit signals are still useful here, with last-five SG Total +0.565, Approach -0.147. Latest starts: Cadillac Championship: T38 | RBC Heritage: T25 | Masters Tournament: T24. Gotterup posted a Strokes Gained: Off-the-Tee average of 0.592 (10th) this season, while his average Driving Distance of 320.7 yards ranked fourth on TOUR.",
+      "cautionSummary": "Caution: course-history detail is still thin, so trust this more as a current-form and ball-striking play than a proven course-fit play.",
+      "confidenceScore": 0.9400000000000001,
+      "confidenceLabel": "High",
+      "decisionScores": {
+        "balanced": 0.572718825,
+        "expected": 0.19673628571428572,
+        "leverage": 0.6953298057142857,
+        "preservation": 0.5769191000000001
+      },
+      "flags": [
+        "Course-history detail missing"
+      ],
+      "rationale": {
+        "expected": 0.19673628571428572,
+        "uniqueness": 0.83,
+        "futureCost": 0.3644825,
+        "recentForm": 0.7675,
+        "historicalStrength": 0.23032,
+        "courseHistory": 0.5,
+        "strokesGained": 0.58335,
+        "eventHistoryTrend": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0,
+        "projectionPenalty": 0,
+        "dataPenalty": 0,
+        "explanation": "Recent form: last 4 finishes 38, 25, 24, 6. Historical strength index: 0.23. Last-five SG Total: +0.565."
       }
     },
     {
@@ -6261,188 +6260,6 @@
       }
     },
     {
-      "golfer": "Jake Knapp",
-      "projectedEarnings": 391334,
-      "projectedDupCount": 0.04,
-      "futureValue": 516290,
-      "worldRank": 36,
-      "fedexPoints": 928,
-      "seasonEarnings": 3083713,
-      "inNextTournament": true,
-      "historicalStrength": 0.12667,
-      "courseHistoryScore": 0.05,
-      "last4Finishes": [
-        74,
-        11,
-        6,
-        6
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2024",
-          "finish": "T58",
-          "roundScores": "71-75-71-76",
-          "toPar": "+9"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "April 19, 2026",
-          "tournamentName": "RBC Heritage",
-          "result": "T74",
-          "roundScores": "71-75-69-71",
-          "toPar": "+2",
-          "fedexPoints": 4.5
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "11",
-          "roundScores": "73-69-69-70",
-          "toPar": "-7",
-          "fedexPoints": 155
-        },
-        {
-          "date": "March 29, 2026",
-          "tournamentName": "Texas Children's Houston Open",
-          "result": "T6",
-          "roundScores": "69-65-71-62",
-          "toPar": "-13",
-          "fedexPoints": 88.75
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "MC",
-          "roundScores": "75-72",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "6",
-          "roundScores": "73-65-67-66",
-          "toPar": "-13",
-          "fedexPoints": 275
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T8",
-          "roundScores": "66-67-66-71",
-          "toPar": "-18",
-          "fedexPoints": 147.5
-        },
-        {
-          "date": "Feb. 8, 2026",
-          "tournamentName": "WM Phoenix Open",
-          "result": "8",
-          "roundScores": "67-69-66-68",
-          "toPar": "-14",
-          "fedexPoints": 85
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "T5",
-          "roundScores": "66-70-70-67",
-          "toPar": "-15",
-          "fedexPoints": 105
-        },
-        {
-          "date": "Jan. 18, 2026",
-          "tournamentName": "Sony Open in Hawaii",
-          "result": "T11",
-          "roundScores": "66-68-70-66",
-          "toPar": "-10",
-          "fedexPoints": 67.5
-        },
-        {
-          "date": "Aug. 10, 2025",
-          "tournamentName": "FedEx St. Jude Championship",
-          "result": "T62",
-          "roundScores": "72-70-70-73",
-          "toPar": "+5",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 52,
-          "overall": 0.207,
-          "lastFive": -0.192
-        },
-        "approach": {
-          "overallRank": 23,
-          "overall": 0.448,
-          "lastFive": 0.474
-        },
-        "aroundTheGreen": {
-          "overallRank": 72,
-          "overall": 0.057,
-          "lastFive": -0.145
-        },
-        "putting": {
-          "overallRank": 6,
-          "overall": 0.744,
-          "lastFive": 0.327
-        },
-        "total": {
-          "overallRank": 5,
-          "overall": 1.456,
-          "lastFive": 0.464
-        }
-      },
-      "performanceNotes": [
-        "Knapp posted a Strokes Gained: Off-the-Tee average of 0.207 (52nd) this season, while his average Driving Distance of 319.8 yards ranked sixth on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Knapp sported a 0.448 mark that ranked 23rd on TOUR. He ranked 74th with a 66.01% Greens in Regulation rate.",
-        "On the greens, Knapp delivered a 0.744 Strokes Gained: Putting mark this season, which placed him sixth on TOUR. In addition, he ranked 13th with a Putts Per Round average of 27.74, and he ranked ninth by breaking par 25.98% of the time.",
-        "Knapp has earned 928 FedExCup Regular Season points this season, ranking 14th on TOUR."
-      ],
-      "name": "Jake Knapp",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.52137215,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 74, 11, 6, 6. Historical strength index: 0.13. Last-five SG Total: +0.464. Course history score: 0.05.",
-      "recentSummary": "Recent: Last four starts finished 74, 11, 6, 6 with mixed momentum entering this event. Last-five SG Total +0.464, Approach +0.474, Off-the-Tee -0.192.",
-      "historicalSummary": "Historical: 2024: T58. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.52137215,
-        "expected": 0.11180971428571429,
-        "leverage": 0.7855975542857142,
-        "preservation": 0.5315536
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.11180971428571429,
-        "uniqueness": 0.9866666666666667,
-        "futureCost": 0.258145,
-        "recentForm": 0.7575000000000001,
-        "historicalStrength": 0.12667,
-        "courseHistory": 0.05,
-        "strokesGained": 0.59215,
-        "eventHistoryTrend": 0.050000000000000044,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 74, 11, 6, 6. Historical strength index: 0.13. Last-five SG Total: +0.464. Course history score: 0.05."
-      }
-    },
-    {
       "golfer": "Ryan Gerard",
       "projectedEarnings": 370412,
       "projectedDupCount": 0.04,
@@ -6631,197 +6448,9 @@
       }
     },
     {
-      "golfer": "Justin Rose",
-      "projectedEarnings": 709594,
-      "projectedDupCount": 0.46,
-      "futureValue": 794234,
-      "worldRank": 5,
-      "fedexPoints": 919,
-      "seasonEarnings": 3334486,
-      "inNextTournament": true,
-      "historicalStrength": 0.254875,
-      "courseHistoryScore": 0.134,
-      "last4Finishes": [
-        65,
-        3,
-        13,
-        37
-      ],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "WD",
-          "roundScores": "70-77",
-          "toPar": "-"
-        },
-        {
-          "year": "2024",
-          "finish": "T52",
-          "roundScores": "74-68-79-71",
-          "toPar": "+8"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "May 3, 2026",
-          "tournamentName": "Cadillac Championship",
-          "result": "T65",
-          "roundScores": "74-75-73-68",
-          "toPar": "+2",
-          "fedexPoints": 6.375
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T3",
-          "roundScores": "70-69-69-70",
-          "toPar": "-10",
-          "fedexPoints": 312.5
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T13",
-          "roundScores": "72-68-70-72",
-          "toPar": "-6",
-          "fedexPoints": 80.556
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "MC",
-          "roundScores": "70-80",
-          "toPar": "+6",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "MC",
-          "roundScores": "74-71",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T37",
-          "roundScores": "69-70-68-70",
-          "toPar": "-11",
-          "fedexPoints": 19.969
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "1",
-          "roundScores": "62-65-68-70",
-          "toPar": "-23",
-          "fedexPoints": 500
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "MC",
-          "roundScores": "72-63-73",
-          "toPar": "-8",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 24, 2025",
-          "tournamentName": "TOUR Championship",
-          "result": "T21",
-          "roundScores": "69-70-69-65",
-          "toPar": "-7",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T30",
-          "roundScores": "71-70-71-72",
-          "toPar": "+4",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 126,
-          "overall": -0.231,
-          "lastFive": -0.332
-        },
-        "approach": {
-          "overallRank": 14,
-          "overall": 0.538,
-          "lastFive": 0.214
-        },
-        "aroundTheGreen": {
-          "overallRank": 133,
-          "overall": -0.281,
-          "lastFive": -0.142
-        },
-        "putting": {
-          "overallRank": 68,
-          "overall": 0.087,
-          "lastFive": -0.33
-        },
-        "total": {
-          "overallRank": 70,
-          "overall": 0.113,
-          "lastFive": -0.59
-        }
-      },
-      "performanceNotes": [
-        "Rose posted a Strokes Gained: Off-the-Tee average of -0.231 (126th) this season, while his average Driving Distance of 304.6 yards ranked 70th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Rose sported a 0.538 mark that ranked 14th on TOUR. He ranked third with a 71.19% Greens in Regulation rate.",
-        "On the greens, Rose delivered a 0.087 Strokes Gained: Putting mark this season, which placed him 68th on TOUR. In addition, he ranked 122nd with a Putts Per Round average of 29.04, and he ranked 23rd by breaking par 24.28% of the time.",
-        "Rose has earned 919 FedExCup Regular Season points (15th) this season and has a Bogey Avoidance percentage of 13.58% (33rd)."
-      ],
-      "name": "Justin Rose",
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": true,
-      "hasRecentForm": true,
-      "eligible": true,
-      "score": 0.5076446531914893,
-      "reasoning": "Reasoning: Recent form: last 4 finishes 65, 3, 13, 37. Historical strength index: 0.25. Last-five SG Total: -0.590. Course history score: 0.13.",
-      "recentSummary": "Recent: Last four starts finished 65, 3, 13, 37 with mixed momentum entering this event. Last-five SG Total -0.590, Approach +0.214, Off-the-Tee -0.332.",
-      "historicalSummary": "Historical: 2025: WD | 2024: T52. Overall, historical performance at this event/course has been solid.",
-      "cautionSummary": "Caution: no major data gaps detected, but this remains a blended estimate rather than a guaranteed edge.",
-      "confidenceScore": 1,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.5076446531914893,
-        "expected": 0.20274114285714287,
-        "leverage": 0.6842355828571429,
-        "preservation": 0.47008721319148944
-      },
-      "flags": [],
-      "rationale": {
-        "expected": 0.20274114285714287,
-        "uniqueness": 0.8466666666666667,
-        "futureCost": 0.397117,
-        "recentForm": 0.7050000000000001,
-        "historicalStrength": 0.254875,
-        "courseHistory": 0.134,
-        "strokesGained": 0.422475,
-        "eventHistoryTrend": 0.13404255319148936,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0,
-        "explanation": "Recent form: last 4 finishes 65, 3, 13, 37. Historical strength index: 0.25. Last-five SG Total: -0.590. Course history score: 0.13."
-      }
-    },
-    {
       "golfer": "Sepp Straka",
       "projectedEarnings": 594561,
-      "projectedDupCount": 0.07,
+      "projectedDupCount": 0.12,
       "futureValue": 681189,
       "worldRank": 13,
       "fedexPoints": 1057,
@@ -6841,7 +6470,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.47583142500000003,
+      "score": 0.473331425,
       "reasoning": "Reasoning: Season profile: No. 13 OWGR, 1057 FedExCup points, $4.0M in season earnings. Historical strength index: 0.21.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 13 OWGR, 1057 FedExCup points, and $4.0M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 13 OWGR and a 0.21 historical-strength signal.",
@@ -6849,9 +6478,9 @@
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.47583142500000003,
+        "balanced": 0.473331425,
         "expected": 0.16987457142857143,
-        "leverage": 0.7617799314285716,
+        "leverage": 0.7507799314285715,
         "preservation": 0.55385536
       },
       "flags": [
@@ -6859,7 +6488,7 @@
       ],
       "rationale": {
         "expected": 0.16987457142857143,
-        "uniqueness": 0.9766666666666667,
+        "uniqueness": 0.96,
         "futureCost": 0.3405945,
         "recentForm": 0.5,
         "historicalStrength": 0.209645,
@@ -7148,6 +6777,191 @@
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
         "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 28 OWGR, 0 FedExCup points, $0 in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Jake Knapp",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 555386,
+      "worldRank": 36,
+      "fedexPoints": 928,
+      "seasonEarnings": 3083713,
+      "inNextTournament": false,
+      "historicalStrength": 0.12667,
+      "courseHistoryScore": 0.05,
+      "last4Finishes": [
+        74,
+        11,
+        6,
+        6
+      ],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR",
+        "PGA TOUR betting profile"
+      ],
+      "courseHistoryResults": [
+        {
+          "year": "2024",
+          "finish": "T58",
+          "roundScores": "71-75-71-76",
+          "toPar": "+9"
+        }
+      ],
+      "recentResults": [
+        {
+          "date": "April 19, 2026",
+          "tournamentName": "RBC Heritage",
+          "result": "T74",
+          "roundScores": "71-75-69-71",
+          "toPar": "+2",
+          "fedexPoints": 4.5
+        },
+        {
+          "date": "April 12, 2026",
+          "tournamentName": "Masters Tournament",
+          "result": "11",
+          "roundScores": "73-69-69-70",
+          "toPar": "-7",
+          "fedexPoints": 155
+        },
+        {
+          "date": "March 29, 2026",
+          "tournamentName": "Texas Children's Houston Open",
+          "result": "T6",
+          "roundScores": "69-65-71-62",
+          "toPar": "-13",
+          "fedexPoints": 88.75
+        },
+        {
+          "date": "March 15, 2026",
+          "tournamentName": "THE PLAYERS Championship",
+          "result": "MC",
+          "roundScores": "75-72",
+          "toPar": "+3",
+          "fedexPoints": null
+        },
+        {
+          "date": "Feb. 22, 2026",
+          "tournamentName": "The Genesis Invitational",
+          "result": "6",
+          "roundScores": "73-65-67-66",
+          "toPar": "-13",
+          "fedexPoints": 275
+        },
+        {
+          "date": "Feb. 15, 2026",
+          "tournamentName": "AT&T Pebble Beach Pro-Am",
+          "result": "T8",
+          "roundScores": "66-67-66-71",
+          "toPar": "-18",
+          "fedexPoints": 147.5
+        },
+        {
+          "date": "Feb. 8, 2026",
+          "tournamentName": "WM Phoenix Open",
+          "result": "8",
+          "roundScores": "67-69-66-68",
+          "toPar": "-14",
+          "fedexPoints": 85
+        },
+        {
+          "date": "Feb. 1, 2026",
+          "tournamentName": "Farmers Insurance Open",
+          "result": "T5",
+          "roundScores": "66-70-70-67",
+          "toPar": "-15",
+          "fedexPoints": 105
+        },
+        {
+          "date": "Jan. 18, 2026",
+          "tournamentName": "Sony Open in Hawaii",
+          "result": "T11",
+          "roundScores": "66-68-70-66",
+          "toPar": "-10",
+          "fedexPoints": 67.5
+        },
+        {
+          "date": "Aug. 10, 2025",
+          "tournamentName": "FedEx St. Jude Championship",
+          "result": "T62",
+          "roundScores": "72-70-70-73",
+          "toPar": "+5",
+          "fedexPoints": null
+        }
+      ],
+      "strokesGained": {
+        "offTheTee": {
+          "overallRank": 52,
+          "overall": 0.207,
+          "lastFive": -0.192
+        },
+        "approach": {
+          "overallRank": 23,
+          "overall": 0.448,
+          "lastFive": 0.474
+        },
+        "aroundTheGreen": {
+          "overallRank": 72,
+          "overall": 0.057,
+          "lastFive": -0.145
+        },
+        "putting": {
+          "overallRank": 6,
+          "overall": 0.744,
+          "lastFive": 0.327
+        },
+        "total": {
+          "overallRank": 5,
+          "overall": 1.456,
+          "lastFive": 0.464
+        }
+      },
+      "performanceNotes": [
+        "Knapp posted a Strokes Gained: Off-the-Tee average of 0.207 (52nd) this season, while his average Driving Distance of 319.8 yards ranked sixth on TOUR.",
+        "In terms of Strokes Gained: Approach the Green this season, Knapp sported a 0.448 mark that ranked 23rd on TOUR. He ranked 74th with a 66.01% Greens in Regulation rate.",
+        "On the greens, Knapp delivered a 0.744 Strokes Gained: Putting mark this season, which placed him sixth on TOUR. In addition, he ranked 13th with a Putts Per Round average of 27.74, and he ranked ninth by breaking par 25.98% of the time.",
+        "Knapp has earned 928 FedExCup Regular Season points this season, ranking 14th on TOUR."
+      ],
+      "name": "Jake Knapp",
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": true,
+      "hasRecentForm": true,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 74, 11, 6, 6. Historical strength index: 0.13. Last-five SG Total: +0.464. Course history score: 0.05. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Last four starts finished 74, 11, 6, 6 with mixed momentum entering this event. Last-five SG Total +0.464, Approach +0.474, Off-the-Tee -0.192.",
+      "historicalSummary": "Historical: 2024: T58. Overall, historical performance at this event/course has been solid.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.25,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8565079999999999,
+        "preservation": 0.52138864
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.277693,
+        "recentForm": 0.7575000000000001,
+        "historicalStrength": 0.12667,
+        "courseHistory": 0.05,
+        "strokesGained": 0.59215,
+        "eventHistoryTrend": 0.050000000000000044,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Recent form: last 4 finishes 74, 11, 6, 6. Historical strength index: 0.13. Last-five SG Total: +0.464. Course history score: 0.05. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {

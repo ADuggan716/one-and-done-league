@@ -2,78 +2,78 @@
   "event": {
     "id": "truist-championship",
     "name": "Truist Championship",
-    "tier": "signature",
-    "startDate": "May 7 - 10",
+    "tier": "regular",
+    "startDate": null,
     "isUpcoming": true,
     "countsTowardSeasonTotals": false,
-    "totalPurse": 20000000,
-    "firstPrize": 3600000,
+    "totalPurse": 0,
+    "firstPrize": 0,
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Justin Rose",
+        "earnings": 93250,
+        "seasonEarnings": 2758143,
+        "finish": "33",
+        "leagueRank": 137
       },
       {
         "member": "Paul",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Rory McIlroy",
+        "earnings": 133000,
+        "seasonEarnings": 6161850,
+        "finish": "30",
+        "leagueRank": 53
       },
       {
         "member": "Dakota",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Xander Schauffele",
+        "earnings": 198200,
+        "seasonEarnings": 7967751,
+        "finish": "20",
+        "leagueRank": 29
       },
       {
         "member": "Mike",
-        "pick": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "pick": "Harris English",
+        "earnings": 352000,
+        "seasonEarnings": 7271188,
+        "finish": "13",
+        "leagueRank": 33
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Justin Rose",
+        "earnings": 93250,
+        "seasonEarnings": 2758143,
+        "finish": "33",
+        "leagueRank": 137
       },
       {
         "member": "Paul",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Rory McIlroy",
+        "earnings": 133000,
+        "seasonEarnings": 6161850,
+        "finish": "30",
+        "leagueRank": 53
       },
       {
         "member": "Dakota",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Xander Schauffele",
+        "earnings": 198200,
+        "seasonEarnings": 7967751,
+        "finish": "20",
+        "leagueRank": 29
       },
       {
         "member": "Mike",
-        "golfer": null,
-        "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "golfer": "Harris English",
+        "earnings": 352000,
+        "seasonEarnings": 7271188,
+        "finish": "13",
+        "leagueRank": 33
       }
     ]
   },
@@ -85,31 +85,23 @@
     "totalPurse": 20000000,
     "firstPrize": 3600000,
     "lastYearWinner": "Sepp Straka",
-    "status": "UPCOMING"
+    "status": "IN_PROGRESS"
   },
   "league": {
     "id": "/Golf/PickX/multiple_entries.cfm",
     "name": "Manage Entries",
     "totalEntrants": 150,
     "yourRank": 137,
-    "latestEventId": "miami-championship",
+    "latestEventId": "truist-championship",
     "yourPercentile": 8.724832214765101
   },
   "subgroupStandings": [
     {
       "member": "Dakota",
       "seasonEarnings": 7967751,
-      "weeklyEarnings": 72182,
-      "avgEarnings": 531183.4,
+      "weeklyEarnings": 0,
+      "avgEarnings": 497984.4375,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "87",
-          "pick": "Sepp Straka"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -133,6 +125,14 @@
           "earnings": 72182,
           "finish": "38",
           "pick": "Christopher Gotterup"
+        },
+        {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "20",
+          "pick": "Xander Schauffele"
         }
       ],
       "history": [
@@ -257,12 +257,20 @@
           "pick": "Christopher Gotterup"
         },
         {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "20",
+          "pick": "Xander Schauffele"
+        },
+        {
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "earnings": 0,
-          "finish": null,
-          "pick": null
+          "tier": "regular",
+          "earnings": 198200,
+          "finish": "20",
+          "pick": "Xander Schauffele"
         }
       ],
       "groupRank": 1,
@@ -272,17 +280,9 @@
     {
       "member": "Mike",
       "seasonEarnings": 7271188,
-      "weeklyEarnings": 3600000,
-      "avgEarnings": 484745.86666666664,
+      "weeklyEarnings": 0,
+      "avgEarnings": 454449.25,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "71",
-          "pick": "Russell Henley"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -306,6 +306,14 @@
           "earnings": 3600000,
           "finish": "1",
           "pick": "Cameron Young"
+        },
+        {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "13",
+          "pick": "Harris English"
         }
       ],
       "history": [
@@ -430,12 +438,20 @@
           "pick": "Cameron Young"
         },
         {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "13",
+          "pick": "Harris English"
+        },
+        {
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "earnings": 0,
-          "finish": null,
-          "pick": null
+          "tier": "regular",
+          "earnings": 352000,
+          "finish": "13",
+          "pick": "Harris English"
         }
       ],
       "groupRank": 2,
@@ -445,17 +461,9 @@
     {
       "member": "Paul",
       "seasonEarnings": 6161850,
-      "weeklyEarnings": 3600000,
-      "avgEarnings": 410790,
+      "weeklyEarnings": 0,
+      "avgEarnings": 385115.625,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 237650,
-          "finish": "10",
-          "pick": "Tommy Fleetwood"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -479,6 +487,14 @@
           "earnings": 3600000,
           "finish": "1",
           "pick": "Cameron Young"
+        },
+        {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "30",
+          "pick": "Rory McIlroy"
         }
       ],
       "history": [
@@ -603,12 +619,20 @@
           "pick": "Cameron Young"
         },
         {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "30",
+          "pick": "Rory McIlroy"
+        },
+        {
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "earnings": 0,
-          "finish": null,
-          "pick": null
+          "tier": "regular",
+          "earnings": 133000,
+          "finish": "30",
+          "pick": "Rory McIlroy"
         }
       ],
       "groupRank": 3,
@@ -618,17 +642,9 @@
     {
       "member": "Andrew",
       "seasonEarnings": 2758143,
-      "weeklyEarnings": 39083,
-      "avgEarnings": 183876.2,
+      "weeklyEarnings": 0,
+      "avgEarnings": 172383.9375,
       "lastFour": [
-        {
-          "eventId": "valero-texas-open",
-          "eventName": "Valero Texas Open",
-          "tier": "regular",
-          "earnings": 95550,
-          "finish": "21",
-          "pick": "Maverick McNealy"
-        },
         {
           "eventId": "masters-tournament",
           "eventName": "Masters Tournament",
@@ -652,6 +668,14 @@
           "earnings": 39083,
           "finish": "65",
           "pick": "Jacob Bridgeman"
+        },
+        {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "33",
+          "pick": "Justin Rose"
         }
       ],
       "history": [
@@ -776,12 +800,20 @@
           "pick": "Jacob Bridgeman"
         },
         {
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "33",
+          "pick": "Justin Rose"
+        },
+        {
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "earnings": 0,
-          "finish": null,
-          "pick": null
+          "tier": "regular",
+          "earnings": 93250,
+          "finish": "33",
+          "pick": "Justin Rose"
         }
       ],
       "groupRank": 4,
@@ -797,7 +829,7 @@
         "Paul"
       ],
       "seasonEarnings": 13433038,
-      "weeklyEarnings": 7200000,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 6716519,
       "rank": 1,
       "toLeader": 0
@@ -809,7 +841,7 @@
         "Dakota"
       ],
       "seasonEarnings": 10725894,
-      "weeklyEarnings": 111265,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 5362947,
       "rank": 2,
       "toLeader": 2707144
@@ -1661,7 +1693,7 @@
           "earnings": 3600000,
           "finish": "1",
           "pick": "Cameron Young",
-          "leagueRank": 33
+          "leagueRank": null
         },
         {
           "member": "Paul",
@@ -1673,7 +1705,7 @@
           "earnings": 3600000,
           "finish": "1",
           "pick": "Cameron Young",
-          "leagueRank": 53
+          "leagueRank": null
         },
         {
           "member": "Dakota",
@@ -1685,7 +1717,7 @@
           "earnings": 72182,
           "finish": "38",
           "pick": "Christopher Gotterup",
-          "leagueRank": 29
+          "leagueRank": null
         },
         {
           "member": "Andrew",
@@ -1697,66 +1729,125 @@
           "earnings": 39083,
           "finish": "65",
           "pick": "Jacob Bridgeman",
-          "leagueRank": 137
+          "leagueRank": null
+        }
+      ]
+    },
+    {
+      "eventId": "truist",
+      "eventName": "Truist",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Andrew",
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "33",
+          "pick": "Justin Rose",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "20",
+          "pick": "Xander Schauffele",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "13",
+          "pick": "Harris English",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "truist",
+          "eventName": "Truist",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "30",
+          "pick": "Rory McIlroy",
+          "leagueRank": null
         }
       ]
     },
     {
       "eventId": "truist-championship",
       "eventName": "Truist Championship",
-      "tier": "signature",
-      "startDate": "May 7 - 10",
+      "tier": "regular",
+      "startDate": null,
       "countsTowardSeasonTotals": false,
-      "totalPurse": 20000000,
-      "firstPrize": 3600000,
+      "totalPurse": 0,
+      "firstPrize": 0,
       "rows": [
         {
-          "member": "Andrew",
+          "member": "Mike",
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "totalPurse": 20000000,
-          "firstPrize": 3600000,
-          "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 352000,
+          "finish": "13",
+          "pick": "Harris English",
+          "leagueRank": 33
         },
         {
           "member": "Dakota",
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "totalPurse": 20000000,
-          "firstPrize": 3600000,
-          "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
-        },
-        {
-          "member": "Mike",
-          "eventId": "truist-championship",
-          "eventName": "Truist Championship",
-          "tier": "signature",
-          "totalPurse": 20000000,
-          "firstPrize": 3600000,
-          "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 198200,
+          "finish": "20",
+          "pick": "Xander Schauffele",
+          "leagueRank": 29
         },
         {
           "member": "Paul",
           "eventId": "truist-championship",
           "eventName": "Truist Championship",
-          "tier": "signature",
-          "totalPurse": 20000000,
-          "firstPrize": 3600000,
-          "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 133000,
+          "finish": "30",
+          "pick": "Rory McIlroy",
+          "leagueRank": 53
+        },
+        {
+          "member": "Andrew",
+          "eventId": "truist-championship",
+          "eventName": "Truist Championship",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 93250,
+          "finish": "33",
+          "pick": "Justin Rose",
+          "leagueRank": 137
         }
       ]
     }
@@ -5136,14 +5227,222 @@
       "countsTowardSeasonTotals": false,
       "totalPurse": 0,
       "firstPrize": 0,
-      "totalEntrants": 0,
-      "rows": []
+      "totalEntrants": 163,
+      "rows": [
+        {
+          "golfer": "Rory McIlroy",
+          "pickCount": 31,
+          "finish": "30",
+          "earnings": 133000
+        },
+        {
+          "golfer": "Xander Schauffele",
+          "pickCount": 26,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Ludvig Aberg",
+          "pickCount": 18,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Matthew Fitzpatrick",
+          "pickCount": 11,
+          "finish": "64",
+          "earnings": 36500
+        },
+        {
+          "golfer": "Ben Griffin",
+          "pickCount": 8,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Tommy Fleetwood",
+          "pickCount": 6,
+          "finish": "8",
+          "earnings": 557600
+        },
+        {
+          "golfer": "Si Woo Kim",
+          "pickCount": 6,
+          "finish": "13",
+          "earnings": 352000
+        },
+        {
+          "golfer": "Adam Scott",
+          "pickCount": 5,
+          "finish": "72",
+          "earnings": 0
+        },
+        {
+          "golfer": "Sepp Straka",
+          "pickCount": 4,
+          "finish": "3",
+          "earnings": 940000
+        },
+        {
+          "golfer": "J.J. Spaun",
+          "pickCount": 4,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Justin Rose",
+          "pickCount": 4,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Christopher Gotterup",
+          "pickCount": 4,
+          "finish": "52",
+          "earnings": 44500
+        },
+        {
+          "golfer": "Cameron Young",
+          "pickCount": 3,
+          "finish": "13",
+          "earnings": 352000
+        },
+        {
+          "golfer": "Alex Noren",
+          "pickCount": 3,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Harris English",
+          "pickCount": 2,
+          "finish": "13",
+          "earnings": 352000
+        },
+        {
+          "golfer": "Justin Thomas",
+          "pickCount": 2,
+          "finish": "13",
+          "earnings": 352000
+        },
+        {
+          "golfer": "Keegan Bradley",
+          "pickCount": 2,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Viktor Hovland",
+          "pickCount": 2,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Gary Woodland",
+          "pickCount": 2,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Matt Wallace",
+          "pickCount": 2,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Ryan Gerard",
+          "pickCount": 2,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Robert MacIntyre",
+          "pickCount": 2,
+          "finish": "52",
+          "earnings": 44500
+        },
+        {
+          "golfer": "Jason Day",
+          "pickCount": 2,
+          "finish": "68",
+          "earnings": 24750
+        },
+        {
+          "golfer": "Matthew McCarty",
+          "pickCount": 1,
+          "finish": "1",
+          "earnings": 4000000
+        },
+        {
+          "golfer": "Sungjae Im",
+          "pickCount": 1,
+          "finish": "2",
+          "earnings": 2200000
+        },
+        {
+          "golfer": "David Lipsky",
+          "pickCount": 1,
+          "finish": "8",
+          "earnings": 557600
+        },
+        {
+          "golfer": "Jacob Bridgeman",
+          "pickCount": 1,
+          "finish": "20",
+          "earnings": 198200
+        },
+        {
+          "golfer": "Sahith Theegala",
+          "pickCount": 1,
+          "finish": "30",
+          "earnings": 133000
+        },
+        {
+          "golfer": "Jordan Spieth",
+          "pickCount": 1,
+          "finish": "33",
+          "earnings": 93250
+        },
+        {
+          "golfer": "Bud Cauley",
+          "pickCount": 1,
+          "finish": "45",
+          "earnings": 57000
+        },
+        {
+          "golfer": "Sam Burns",
+          "pickCount": 1,
+          "finish": "45",
+          "earnings": 57000
+        },
+        {
+          "golfer": "Aldrich Potgieter",
+          "pickCount": 1,
+          "finish": "52",
+          "earnings": 44500
+        },
+        {
+          "golfer": "Ryan Fox",
+          "pickCount": 1,
+          "finish": "52",
+          "earnings": 44500
+        },
+        {
+          "golfer": "Ryo Hisatsune",
+          "pickCount": 1,
+          "finish": "52",
+          "earnings": 44500
+        },
+        {
+          "golfer": "Rickie Fowler",
+          "pickCount": 1,
+          "finish": "64",
+          "earnings": 36500
+        }
+      ]
     }
   ],
-  "whoGainedThisWeek": [
-    "Mike",
-    "Paul"
-  ],
+  "whoGainedThisWeek": [],
   "projections": [
     {
       "golfer": "Scottie Scheffler",
@@ -5164,7 +5463,7 @@
     {
       "golfer": "Rory McIlroy",
       "projectedEarnings": 1220148,
-      "projectedDupCount": 0.54,
+      "projectedDupCount": 0.27,
       "futureValue": 1013792,
       "worldRank": 2,
       "fedexPoints": 1226,
@@ -5670,155 +5969,18 @@
     {
       "golfer": "Justin Rose",
       "projectedEarnings": 709594,
-      "projectedDupCount": 0.46,
+      "projectedDupCount": 0.53,
       "futureValue": 794234,
       "worldRank": 5,
       "fedexPoints": 919,
       "seasonEarnings": 3334486,
       "inNextTournament": true,
       "historicalStrength": 0.254875,
-      "courseHistoryScore": 0.134,
-      "last4Finishes": [
-        65,
-        3,
-        13,
-        37
-      ],
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
         "OWGR",
-        "Weekly projection synthesis",
-        "PGA TOUR betting profile"
-      ],
-      "courseHistoryResults": [
-        {
-          "year": "2025",
-          "finish": "WD",
-          "roundScores": "70-77",
-          "toPar": "-"
-        },
-        {
-          "year": "2024",
-          "finish": "T52",
-          "roundScores": "74-68-79-71",
-          "toPar": "+8"
-        }
-      ],
-      "recentResults": [
-        {
-          "date": "May 3, 2026",
-          "tournamentName": "Cadillac Championship",
-          "result": "T65",
-          "roundScores": "74-75-73-68",
-          "toPar": "+2",
-          "fedexPoints": 6.375
-        },
-        {
-          "date": "April 12, 2026",
-          "tournamentName": "Masters Tournament",
-          "result": "T3",
-          "roundScores": "70-69-69-70",
-          "toPar": "-10",
-          "fedexPoints": 312.5
-        },
-        {
-          "date": "March 15, 2026",
-          "tournamentName": "THE PLAYERS Championship",
-          "result": "T13",
-          "roundScores": "72-68-70-72",
-          "toPar": "-6",
-          "fedexPoints": 80.556
-        },
-        {
-          "date": "March 8, 2026",
-          "tournamentName": "Arnold Palmer Invitational presented by Mastercard",
-          "result": "MC",
-          "roundScores": "70-80",
-          "toPar": "+6",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 22, 2026",
-          "tournamentName": "The Genesis Invitational",
-          "result": "MC",
-          "roundScores": "74-71",
-          "toPar": "+3",
-          "fedexPoints": null
-        },
-        {
-          "date": "Feb. 15, 2026",
-          "tournamentName": "AT&T Pebble Beach Pro-Am",
-          "result": "T37",
-          "roundScores": "69-70-68-70",
-          "toPar": "-11",
-          "fedexPoints": 19.969
-        },
-        {
-          "date": "Feb. 1, 2026",
-          "tournamentName": "Farmers Insurance Open",
-          "result": "1",
-          "roundScores": "62-65-68-70",
-          "toPar": "-23",
-          "fedexPoints": 500
-        },
-        {
-          "date": "Jan. 25, 2026",
-          "tournamentName": "The American Express",
-          "result": "MC",
-          "roundScores": "72-63-73",
-          "toPar": "-8",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 24, 2025",
-          "tournamentName": "TOUR Championship",
-          "result": "T21",
-          "roundScores": "69-70-69-65",
-          "toPar": "-7",
-          "fedexPoints": null
-        },
-        {
-          "date": "Aug. 17, 2025",
-          "tournamentName": "BMW Championship",
-          "result": "T30",
-          "roundScores": "71-70-71-72",
-          "toPar": "+4",
-          "fedexPoints": null
-        }
-      ],
-      "strokesGained": {
-        "offTheTee": {
-          "overallRank": 126,
-          "overall": -0.231,
-          "lastFive": -0.332
-        },
-        "approach": {
-          "overallRank": 14,
-          "overall": 0.538,
-          "lastFive": 0.214
-        },
-        "aroundTheGreen": {
-          "overallRank": 133,
-          "overall": -0.281,
-          "lastFive": -0.142
-        },
-        "putting": {
-          "overallRank": 68,
-          "overall": 0.087,
-          "lastFive": -0.33
-        },
-        "total": {
-          "overallRank": 70,
-          "overall": 0.113,
-          "lastFive": -0.59
-        }
-      },
-      "performanceNotes": [
-        "Rose posted a Strokes Gained: Off-the-Tee average of -0.231 (126th) this season, while his average Driving Distance of 304.6 yards ranked 70th on TOUR.",
-        "In terms of Strokes Gained: Approach the Green this season, Rose sported a 0.538 mark that ranked 14th on TOUR. He ranked third with a 71.19% Greens in Regulation rate.",
-        "On the greens, Rose delivered a 0.087 Strokes Gained: Putting mark this season, which placed him 68th on TOUR. In addition, he ranked 122nd with a Putts Per Round average of 29.04, and he ranked 23rd by breaking par 24.28% of the time.",
-        "Rose has earned 919 FedExCup Regular Season points (15th) this season and has a Bogey Avoidance percentage of 13.58% (33rd)."
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -6023,7 +6185,7 @@
     {
       "golfer": "Xander Schauffele",
       "projectedEarnings": 662056,
-      "projectedDupCount": 0.26,
+      "projectedDupCount": 0.13,
       "futureValue": 733940,
       "worldRank": 9,
       "fedexPoints": 1034,
@@ -6057,7 +6219,7 @@
     {
       "golfer": "Chris Gotterup",
       "projectedEarnings": 688577,
-      "projectedDupCount": 0.45,
+      "projectedDupCount": 0.51,
       "futureValue": 728965,
       "worldRank": 11,
       "fedexPoints": 1317,
@@ -6345,7 +6507,7 @@
     {
       "golfer": "Sepp Straka",
       "projectedEarnings": 594561,
-      "projectedDupCount": 0.07,
+      "projectedDupCount": 0.12,
       "futureValue": 681189,
       "worldRank": 13,
       "fedexPoints": 1057,
@@ -6379,7 +6541,7 @@
     {
       "golfer": "Hideki Matsuyama",
       "projectedEarnings": 494803,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.14,
       "futureValue": 629122,
       "worldRank": 15,
       "fedexPoints": 800,
@@ -6580,7 +6742,7 @@
     {
       "golfer": "Harris English",
       "projectedEarnings": 410896,
-      "projectedDupCount": 0.06,
+      "projectedDupCount": 0.04,
       "futureValue": 576781,
       "worldRank": 18,
       "fedexPoints": 594,
@@ -6965,7 +7127,7 @@
     {
       "golfer": "Akshay Bhatia",
       "projectedEarnings": 616274,
-      "projectedDupCount": 0.27,
+      "projectedDupCount": 0.32,
       "futureValue": 644792,
       "worldRank": 24,
       "fedexPoints": 1322,
@@ -8172,13 +8334,13 @@
     },
     {
       "golfer": "Jake Knapp",
-      "projectedEarnings": 391334,
-      "projectedDupCount": 0.04,
-      "futureValue": 516290,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 555386,
       "worldRank": 36,
       "fedexPoints": 928,
       "seasonEarnings": 3083713,
-      "inNextTournament": true,
+      "inNextTournament": false,
       "historicalStrength": 0.12667,
       "courseHistoryScore": 0.05,
       "last4Finishes": [
@@ -8191,7 +8353,6 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
         "OWGR",
-        "Weekly projection synthesis",
         "PGA TOUR betting profile"
       ],
       "courseHistoryResults": [
@@ -10219,18 +10380,19 @@
     },
     {
       "golfer": "Austin Smotherman",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 370805,
+      "projectedEarnings": 206244,
+      "projectedDupCount": 0.06,
+      "futureValue": 341072,
       "worldRank": 87,
       "fedexPoints": 396,
       "seasonEarnings": 1509301,
-      "inNextTournament": false,
+      "inNextTournament": true,
       "historicalStrength": 0.06901,
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR"
+        "OWGR",
+        "Weekly projection synthesis"
       ]
     },
     {
@@ -10455,6 +10617,19 @@
       ]
     },
     {
+      "golfer": "Aaron Wise",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ]
+    },
+    {
       "golfer": "Adam Hadwin",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -10635,6 +10810,19 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
+      ]
+    },
+    {
+      "golfer": "Brendon Todd",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": false,
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
       ]
     },
     {
@@ -12066,26 +12254,25 @@
   "sourceNotes": [
     "Splash entries source: https://sm.app.splashsports.com/Golf/PickX/multiple_entries.cfm",
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
-    "Splash parsed picks: 1",
+    "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 16",
-    "Splash parsed history rows: 60",
-    "Splash mapping: Andrew: rank=137, season=2758143, pick=-, week=0, finish=- | Paul: rank=53, season=6161850, pick=-, week=0, finish=- | Dakota: rank=29, season=7967751, pick=-, week=0, finish=- | Mike: rank=33, season=7271188, pick=-, week=0, finish=-",
-    "Online signals refreshed at 2026-05-05T00:21:47.311Z.",
-    "PGA TOUR FedExCup: 202 golfer records loaded",
+    "Splash parsed history rows: 64",
+    "Splash mapping: Andrew: rank=137, season=2758143, pick=Justin Rose, week=93250, finish=33 | Paul: rank=53, season=6161850, pick=Rory McIlroy, week=133000, finish=30 | Dakota: rank=29, season=7967751, pick=Xander Schauffele, week=198200, finish=20 | Mike: rank=33, season=7271188, pick=Harris English, week=352000, finish=13",
+    "Online signals refreshed at 2026-05-08T00:32:47.305Z.",
+    "PGA TOUR FedExCup: 204 golfer records loaded",
     "PGA TOUR Official Money: 199 golfer records loaded",
     "OWGR: 100 golfer records loaded",
     "PGA TOUR schedule resolved next tournament: Truist Championship",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/truist-championship/R2026480/field",
     "PGA TOUR field entries: 72",
-    "Opened next-tournament view for Truist Championship after finalizing Miami Championship.",
     "Weekly projection synthesis: 72 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Matt Fitzpatrick, Cameron Young, Rory McIlroy, Justin Rose, Jacob Bridgeman",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-truist-championship-2026",
-    "PGA TOUR betting profiles matched: 26/36"
+    "PGA TOUR betting profiles matched: 25/35"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-05-05T00:21:41.187Z"
+  "updatedAt": "2026-05-08T00:32:40.798Z"
 }

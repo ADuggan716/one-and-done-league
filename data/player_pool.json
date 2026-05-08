@@ -1,10 +1,10 @@
 {
   "eventId": "truist-championship",
   "tournamentName": "Truist Championship",
-  "eventTier": "signature",
+  "eventTier": "regular",
   "currentEventMeta": {
-    "totalPurse": 20000000,
-    "firstPrize": 3600000
+    "totalPurse": 0,
+    "firstPrize": 0
   },
   "members": {
     "Andrew": {
@@ -23,13 +23,13 @@
         "Maverick McNealy",
         "Xander Schauffele",
         "Christopher Gotterup",
-        "Jacob Bridgeman"
+        "Jacob Bridgeman",
+        "Justin Rose"
       ],
       "available": [
         "Rory McIlroy",
         "Matt Fitzpatrick",
         "Cameron Young",
-        "Justin Rose",
         "Tommy Fleetwood",
         "Russell Henley",
         "Chris Gotterup",
@@ -80,10 +80,10 @@
         "Tommy Fleetwood",
         "Jon Rahm",
         "Xander Schauffele",
-        "Cameron Young"
+        "Cameron Young",
+        "Rory McIlroy"
       ],
       "available": [
-        "Rory McIlroy",
         "Matt Fitzpatrick",
         "Justin Rose",
         "Russell Henley",
@@ -137,13 +137,13 @@
         "Sepp Straka",
         "Scottie Scheffler",
         "Patrick Cantlay",
-        "Christopher Gotterup"
+        "Christopher Gotterup",
+        "Xander Schauffele"
       ],
       "available": [
         "Matt Fitzpatrick",
         "Justin Rose",
         "Tommy Fleetwood",
-        "Xander Schauffele",
         "J.J. Spaun",
         "Chris Gotterup",
         "Robert MacIntyre",
@@ -194,7 +194,8 @@
         "Russell Henley",
         "Jon Rahm",
         "Ludvig Aberg",
-        "Cameron Young"
+        "Cameron Young",
+        "Harris English"
       ],
       "available": [
         "Rory McIlroy",
@@ -206,7 +207,6 @@
         "Hideki Matsuyama",
         "Ben Griffin",
         "Justin Thomas",
-        "Harris English",
         "Jacob Bridgeman",
         "PATRICK REED",
         "Alex Noren",
@@ -487,7 +487,7 @@
       "worldRank": 36,
       "fedexPoints": 928,
       "seasonEarnings": 3083713,
-      "inNextTournament": true
+      "inNextTournament": false
     },
     {
       "name": "NICOLAI HOJGAARD",
@@ -616,7 +616,6 @@
     "Patrick Cantlay",
     "Ryan Gerard",
     "Kurt Kitayama",
-    "Jake Knapp",
     "NICOLAI HOJGAARD",
     "Jason Day",
     "Daniel Berger",
@@ -634,5 +633,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-05-05T00:21:41.187Z"
+  "updatedAt": "2026-05-08T00:32:40.798Z"
 }
