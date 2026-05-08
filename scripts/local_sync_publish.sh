@@ -39,7 +39,7 @@ echo "==> Branch: $BRANCH"
 echo "==> Splash source: $SPLASH_SOURCE"
 
 echo "==> Updating runner code from origin/$BRANCH"
-git pull --rebase origin "$BRANCH"
+git pull --rebase --autostash origin "$BRANCH"
 
 run_sync_once() {
   if [[ "$SPLASH_SOURCE" == "chrome" ]]; then
