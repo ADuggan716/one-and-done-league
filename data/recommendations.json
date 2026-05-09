@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Justin Rose",
-        "earnings": 93250,
+        "earnings": 136500,
         "seasonEarnings": 2758143,
-        "finish": "33",
+        "finish": "29",
         "leagueRank": 137
       },
       {
         "member": "Paul",
         "pick": "Rory McIlroy",
-        "earnings": 133000,
+        "earnings": 579000,
         "seasonEarnings": 6161850,
-        "finish": "30",
+        "finish": "8",
         "leagueRank": 53
       },
       {
         "member": "Dakota",
         "pick": "Xander Schauffele",
-        "earnings": 198200,
+        "earnings": 97500,
         "seasonEarnings": 7967751,
-        "finish": "20",
+        "finish": "33",
         "leagueRank": 29
       },
       {
         "member": "Mike",
         "pick": "Harris English",
-        "earnings": 352000,
+        "earnings": 579000,
         "seasonEarnings": 7271188,
-        "finish": "13",
+        "finish": "8",
         "leagueRank": 33
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Justin Rose",
-        "earnings": 93250,
+        "earnings": 136500,
         "seasonEarnings": 2758143,
-        "finish": "33",
+        "finish": "29",
         "leagueRank": 137
       },
       {
         "member": "Paul",
         "golfer": "Rory McIlroy",
-        "earnings": 133000,
+        "earnings": 579000,
         "seasonEarnings": 6161850,
-        "finish": "30",
+        "finish": "8",
         "leagueRank": 53
       },
       {
         "member": "Dakota",
         "golfer": "Xander Schauffele",
-        "earnings": 198200,
+        "earnings": 97500,
         "seasonEarnings": 7967751,
-        "finish": "20",
+        "finish": "33",
         "leagueRank": 29
       },
       {
         "member": "Mike",
         "golfer": "Harris English",
-        "earnings": 352000,
+        "earnings": 579000,
         "seasonEarnings": 7271188,
-        "finish": "13",
+        "finish": "8",
         "leagueRank": 33
       }
     ]
@@ -95,9 +95,9 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 16",
     "Splash parsed history rows: 64",
-    "Splash mapping: Andrew: rank=137, season=2758143, pick=Justin Rose, week=93250, finish=33 | Paul: rank=53, season=6161850, pick=Rory McIlroy, week=133000, finish=30 | Dakota: rank=29, season=7967751, pick=Xander Schauffele, week=198200, finish=20 | Mike: rank=33, season=7271188, pick=Harris English, week=352000, finish=13",
-    "Online signals refreshed at 2026-05-08T00:34:36.242Z.",
-    "PGA TOUR FedExCup: 204 golfer records loaded",
+    "Splash mapping: Andrew: rank=137, season=2758143, pick=Justin Rose, week=136500, finish=29 | Paul: rank=53, season=6161850, pick=Rory McIlroy, week=579000, finish=8 | Dakota: rank=29, season=7967751, pick=Xander Schauffele, week=97500, finish=33 | Mike: rank=33, season=7271188, pick=Harris English, week=579000, finish=8",
+    "Online signals refreshed at 2026-05-09T00:00:17.296Z.",
+    "PGA TOUR FedExCup: 203 golfer records loaded",
     "PGA TOUR Official Money: 199 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Truist Championship",
@@ -108,7 +108,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-truist-championship-2026",
     "PGA TOUR betting profiles matched: 25/36"
   ],
-  "generatedAt": "2026-05-08T00:34:37.998Z",
+  "generatedAt": "2026-05-09T00:00:30.417Z",
   "primary": {
     "golfer": "Cameron Young",
     "projectedEarnings": 1050669,

@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-05-08T00:34:36.242Z",
+  "fetchedAt": "2026-05-09T00:00:17.296Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 204 golfer records loaded",
+    "PGA TOUR FedExCup: 203 golfer records loaded",
     "PGA TOUR Official Money: 199 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1134,13 +1134,6 @@
       ],
       "fedexPoints": 219,
       "seasonEarnings": 629801
-    },
-    {
-      "golfer": "Aaron Wise",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Adam Hadwin",
