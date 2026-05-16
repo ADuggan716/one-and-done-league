@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-05-15T00:00:15.503Z",
+  "fetchedAt": "2026-05-16T00:00:16.925Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 206 golfer records loaded",
+    "PGA TOUR FedExCup: 204 golfer records loaded",
     "PGA TOUR Official Money: 200 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1627,13 +1627,6 @@
       "seasonEarnings": 172964
     },
     {
-      "golfer": "Jimmy Walker",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Joe Highsmith",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1778,13 +1771,6 @@
       "seasonEarnings": 218506
     },
     {
-      "golfer": "Luke Donald",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Mac Meissner",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1900,6 +1886,13 @@
       ],
       "fedexPoints": 1059,
       "seasonEarnings": 4258570
+    },
+    {
+      "golfer": "Padraig Harrington",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Patrick Fishburn",
@@ -2188,13 +2181,6 @@
       ],
       "fedexPoints": 168,
       "seasonEarnings": 657518
-    },
-    {
-      "golfer": "Y.E. Yang",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Zac Blair",
