@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-05-16T00:00:16.925Z",
+  "fetchedAt": "2026-05-17T00:00:13.839Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 204 golfer records loaded",
+    "PGA TOUR FedExCup: 205 golfer records loaded",
     "PGA TOUR Official Money: 200 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1769,6 +1769,13 @@
       ],
       "fedexPoints": 75,
       "seasonEarnings": 218506
+    },
+    {
+      "golfer": "Luke Donald",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Mac Meissner",
