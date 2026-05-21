@@ -1,79 +1,79 @@
 {
   "currentEvent": {
     "id": "the-cj-cup-byron-nelson",
-    "name": "THE CJ CUP Byron Nelson",
+    "name": "The CJ Cup Byron Nelson",
     "tier": "regular",
-    "startDate": "May 21 - 24",
+    "startDate": null,
     "isUpcoming": true,
     "countsTowardSeasonTotals": false,
-    "totalPurse": 10300000,
-    "firstPrize": 1782000,
+    "totalPurse": 0,
+    "firstPrize": 0,
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
+        "pick": "Rasmus Hojgaard",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 2943666,
+        "finish": "$0",
+        "leagueRank": 143
       },
       {
         "member": "Paul",
-        "pick": null,
+        "pick": "Jordan Spieth",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 6433168,
+        "finish": "$0",
+        "leagueRank": 59
       },
       {
         "member": "Dakota",
-        "pick": null,
+        "pick": "Michael Brennan",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 8375014,
+        "finish": "$0",
+        "leagueRank": 30
       },
       {
         "member": "Mike",
-        "pick": null,
+        "pick": "Si Woo Kim",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 7427831,
+        "finish": "$0",
+        "leagueRank": 42
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
+        "golfer": "Rasmus Hojgaard",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 2943666,
+        "finish": "$0",
+        "leagueRank": 143
       },
       {
         "member": "Paul",
-        "golfer": null,
+        "golfer": "Jordan Spieth",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 6433168,
+        "finish": "$0",
+        "leagueRank": 59
       },
       {
         "member": "Dakota",
-        "golfer": null,
+        "golfer": "Michael Brennan",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 8375014,
+        "finish": "$0",
+        "leagueRank": 30
       },
       {
         "member": "Mike",
-        "golfer": null,
+        "golfer": "Si Woo Kim",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 7427831,
+        "finish": "$0",
+        "leagueRank": 42
       }
     ]
   },
@@ -85,7 +85,7 @@
     "totalPurse": 10300000,
     "firstPrize": 1782000,
     "lastYearWinner": "Scottie Scheffler",
-    "status": "UPCOMING"
+    "status": "IN_PROGRESS"
   },
   "strategy": "balanced-weekly-pick-with-tradeoffs",
   "sourceNotes": [
@@ -93,32 +93,32 @@
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
-    "Splash parsed league-wide event summaries: 17",
+    "Splash parsed league-wide event summaries: 18",
     "Splash parsed history rows: 68",
-    "Splash mapping: Andrew: rank=140, season=2818143, pick=Cameron Young, week=133000, finish=26 | Paul: rank=55, season=6403950, pick=Rickie Fowler, week=41990, finish=60 | Dakota: rank=32, season=8010251, pick=Matthew Fitzpatrick, week=337250, finish=14 | Mike: rank=36, season=7427831, pick=Bryson DeChambeau, week=0, finish=112",
-    "Online signals refreshed at 2026-05-18T00:00:16.572Z.",
-    "PGA TOUR FedExCup: 205 golfer records loaded",
-    "PGA TOUR Official Money: 200 golfer records loaded",
+    "Splash mapping: Andrew: rank=143, season=2943666, pick=Rasmus Hojgaard, week=0, finish=$0 | Paul: rank=59, season=6433168, pick=Jordan Spieth, week=0, finish=$0 | Dakota: rank=30, season=8375014, pick=Michael Brennan, week=0, finish=$0 | Mike: rank=42, season=7427831, pick=Si Woo Kim, week=0, finish=$0",
+    "Online signals refreshed at 2026-05-21T12:00:18.593Z.",
+    "PGA TOUR FedExCup: 220 golfer records loaded",
+    "PGA TOUR Official Money: 202 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: THE CJ CUP Byron Nelson",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/the-cj-cup-byron-nelson/R2026019/field",
-    "PGA TOUR field entries: 141",
-    "Opened next-tournament view for THE CJ CUP Byron Nelson after finalizing PGA Championship.",
-    "Weekly projection synthesis: 126 field golfers received modeled payout estimates",
-    "Weekly projection synthesis top field: Scottie Scheffler, Si Woo Kim, Pierceson Coody, Ryo Hisatsune, Aaron Rai",
-    "PGA TOUR betting profiles: failed (Betting profile preview: player profile list not found)"
+    "PGA TOUR field entries: 147",
+    "Weekly projection synthesis: 136 field golfers received modeled payout estimates",
+    "Weekly projection synthesis top field: Scottie Scheffler, Si Woo Kim, Pierceson Coody, Ryo Hisatsune, Jordan Spieth",
+    "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-the-cj-cup-byron-nelson-2026",
+    "PGA TOUR betting profiles matched: 0/34"
   ],
-  "generatedAt": "2026-05-18T00:00:17.868Z",
+  "generatedAt": "2026-05-21T12:00:18.959Z",
   "primary": {
-    "golfer": "Aaron Rai",
-    "projectedEarnings": 133442,
-    "projectedDupCount": 0.13,
-    "futureValue": 420855,
-    "worldRank": 33,
-    "fedexPoints": 167,
-    "seasonEarnings": 521334,
+    "golfer": "Michael Brennan",
+    "projectedEarnings": 115168,
+    "projectedDupCount": 0.14,
+    "futureValue": 378771,
+    "worldRank": 45,
+    "fedexPoints": 130,
+    "seasonEarnings": 468955,
     "inNextTournament": true,
-    "historicalStrength": 0.12401,
+    "historicalStrength": 0.10496000000000001,
     "last4Finishes": [],
     "sourceRefs": [
       "PGA TOUR FedExCup",
@@ -126,34 +126,34 @@
       "OWGR fallback",
       "Weekly projection synthesis"
     ],
-    "name": "Aaron Rai",
+    "name": "Michael Brennan",
     "courseHistoryResults": [],
     "hasProjectedEarnings": true,
     "hasCourseHistory": false,
     "hasRecentForm": false,
     "eligible": true,
-    "score": 0.42268107499999996,
-    "reasoning": "Reasoning: Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12.",
-    "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 33 OWGR, 167 FedExCup points, and $521K earned this season.",
-    "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 33 OWGR and a 0.12 historical-strength signal.",
+    "score": 0.421604975,
+    "reasoning": "Reasoning: Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10.",
+    "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 130 FedExCup points, and $469K earned this season.",
+    "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
     "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
     "confidenceScore": 0.8400000000000001,
     "confidenceLabel": "High",
     "decisionScores": {
-      "balanced": 0.42268107499999996,
-      "expected": 0.03812628571428572,
-      "leverage": 0.7275002057142859,
-      "preservation": 0.6129787000000001
+      "balanced": 0.421604975,
+      "expected": 0.032905142857142855,
+      "leverage": 0.7244648228571429,
+      "preservation": 0.62201554
     },
     "flags": [
       "Course-history detail missing"
     ],
     "rationale": {
-      "expected": 0.03812628571428572,
-      "uniqueness": 0.9566666666666667,
-      "futureCost": 0.2104275,
+      "expected": 0.032905142857142855,
+      "uniqueness": 0.9533333333333334,
+      "futureCost": 0.1893855,
       "recentForm": 0.5,
-      "historicalStrength": 0.12401,
+      "historicalStrength": 0.10496000000000001,
       "courseHistory": 0.5,
       "strokesGained": 0.5,
       "eventHistoryTrend": 0.5,
@@ -161,125 +161,15 @@
       "fieldPenalty": 0,
       "projectionPenalty": 0,
       "dataPenalty": 0.05,
-      "explanation": "Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12."
+      "explanation": "Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10."
     }
   },
   "alternates": [
     {
-      "golfer": "Michael Brennan",
-      "projectedEarnings": 115132,
-      "projectedDupCount": 0.16,
-      "futureValue": 378726,
-      "worldRank": 45,
-      "fedexPoints": 127,
-      "seasonEarnings": 445045,
-      "inNextTournament": true,
-      "historicalStrength": 0.10496000000000001,
-      "last4Finishes": [],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis"
-      ],
-      "name": "Michael Brennan",
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": false,
-      "eligible": true,
-      "score": 0.42060475,
-      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 127 FedExCup points, and $445K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.8400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.42060475,
-        "expected": 0.03289485714285714,
-        "leverage": 0.7200631771428572,
-        "preservation": 0.6220272400000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.03289485714285714,
-        "uniqueness": 0.9466666666666667,
-        "futureCost": 0.189363,
-        "recentForm": 0.5,
-        "historicalStrength": 0.10496000000000001,
-        "courseHistory": 0.5,
-        "strokesGained": 0.5,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10."
-      }
-    },
-    {
-      "golfer": "RASMUS HOJGAARD",
-      "projectedEarnings": 116472,
-      "projectedDupCount": 0.21,
-      "futureValue": 376065,
-      "worldRank": 48,
-      "fedexPoints": 199,
-      "seasonEarnings": 579214,
-      "inNextTournament": true,
-      "historicalStrength": 0.10134000000000001,
-      "last4Finishes": [],
-      "sourceRefs": [
-        "OWGR fallback",
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "Weekly projection synthesis"
-      ],
-      "name": "RASMUS HOJGAARD",
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": false,
-      "eligible": true,
-      "score": 0.418076325,
-      "reasoning": "Reasoning: Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 48 OWGR, 199 FedExCup points, and $579K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 48 OWGR and a 0.10 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.8400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.418076325,
-        "expected": 0.033277714285714285,
-        "leverage": 0.7091244342857144,
-        "preservation": 0.6223571
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.033277714285714285,
-        "uniqueness": 0.93,
-        "futureCost": 0.1880325,
-        "recentForm": 0.5,
-        "historicalStrength": 0.10134000000000001,
-        "courseHistory": 0.5,
-        "strokesGained": 0.5,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10."
-      }
-    },
-    {
       "golfer": "Pierceson Coody",
-      "projectedEarnings": 154112,
-      "projectedDupCount": 1.01,
-      "futureValue": 419679,
+      "projectedEarnings": 152161,
+      "projectedDupCount": 1.11,
+      "futureValue": 417643,
       "worldRank": 47,
       "fedexPoints": 577,
       "seasonEarnings": 2123874,
@@ -298,7 +188,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.37867577500000005,
+      "score": 0.37363337500000005,
       "reasoning": "Reasoning: Season profile: No. 47 OWGR, 577 FedExCup points, $2.1M in season earnings. Historical strength index: 0.10.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 47 OWGR, 577 FedExCup points, and $2.1M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 47 OWGR and a 0.10 historical-strength signal.",
@@ -306,18 +196,18 @@
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.37867577500000005,
-        "expected": 0.044032,
-        "leverage": 0.53484512,
-        "preservation": 0.61112396
+        "balanced": 0.37363337500000005,
+        "expected": 0.04347457142857143,
+        "leverage": 0.5127559314285715,
+        "preservation": 0.6116533200000001
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.044032,
-        "uniqueness": 0.6633333333333333,
-        "futureCost": 0.2098395,
+        "expected": 0.04347457142857143,
+        "uniqueness": 0.6299999999999999,
+        "futureCost": 0.2088215,
         "recentForm": 0.5,
         "historicalStrength": 0.102405,
         "courseHistory": 0.5,
@@ -333,15 +223,15 @@
   ],
   "views": {
     "balanced": {
-      "golfer": "Aaron Rai",
-      "projectedEarnings": 133442,
-      "projectedDupCount": 0.13,
-      "futureValue": 420855,
-      "worldRank": 33,
-      "fedexPoints": 167,
-      "seasonEarnings": 521334,
+      "golfer": "Michael Brennan",
+      "projectedEarnings": 115168,
+      "projectedDupCount": 0.14,
+      "futureValue": 378771,
+      "worldRank": 45,
+      "fedexPoints": 130,
+      "seasonEarnings": 468955,
       "inNextTournament": true,
-      "historicalStrength": 0.12401,
+      "historicalStrength": 0.10496000000000001,
       "last4Finishes": [],
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -349,34 +239,34 @@
         "OWGR fallback",
         "Weekly projection synthesis"
       ],
-      "name": "Aaron Rai",
+      "name": "Michael Brennan",
       "courseHistoryResults": [],
       "hasProjectedEarnings": true,
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.42268107499999996,
-      "reasoning": "Reasoning: Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 33 OWGR, 167 FedExCup points, and $521K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 33 OWGR and a 0.12 historical-strength signal.",
+      "score": 0.421604975,
+      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 130 FedExCup points, and $469K earned this season.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.42268107499999996,
-        "expected": 0.03812628571428572,
-        "leverage": 0.7275002057142859,
-        "preservation": 0.6129787000000001
+        "balanced": 0.421604975,
+        "expected": 0.032905142857142855,
+        "leverage": 0.7244648228571429,
+        "preservation": 0.62201554
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.03812628571428572,
-        "uniqueness": 0.9566666666666667,
-        "futureCost": 0.2104275,
+        "expected": 0.032905142857142855,
+        "uniqueness": 0.9533333333333334,
+        "futureCost": 0.1893855,
         "recentForm": 0.5,
-        "historicalStrength": 0.12401,
+        "historicalStrength": 0.10496000000000001,
         "courseHistory": 0.5,
         "strokesGained": 0.5,
         "eventHistoryTrend": 0.5,
@@ -384,14 +274,14 @@
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12."
+        "explanation": "Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10."
       }
     },
     "expected": {
       "golfer": "Pierceson Coody",
-      "projectedEarnings": 154112,
-      "projectedDupCount": 1.01,
-      "futureValue": 419679,
+      "projectedEarnings": 152161,
+      "projectedDupCount": 1.11,
+      "futureValue": 417643,
       "worldRank": 47,
       "fedexPoints": 577,
       "seasonEarnings": 2123874,
@@ -410,7 +300,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.37867577500000005,
+      "score": 0.37363337500000005,
       "reasoning": "Reasoning: Season profile: No. 47 OWGR, 577 FedExCup points, $2.1M in season earnings. Historical strength index: 0.10.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 47 OWGR, 577 FedExCup points, and $2.1M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 47 OWGR and a 0.10 historical-strength signal.",
@@ -418,18 +308,18 @@
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.37867577500000005,
-        "expected": 0.044032,
-        "leverage": 0.53484512,
-        "preservation": 0.61112396
+        "balanced": 0.37363337500000005,
+        "expected": 0.04347457142857143,
+        "leverage": 0.5127559314285715,
+        "preservation": 0.6116533200000001
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.044032,
-        "uniqueness": 0.6633333333333333,
-        "futureCost": 0.2098395,
+        "expected": 0.04347457142857143,
+        "uniqueness": 0.6299999999999999,
+        "futureCost": 0.2088215,
         "recentForm": 0.5,
         "historicalStrength": 0.102405,
         "courseHistory": 0.5,
@@ -444,12 +334,12 @@
     },
     "leverage": {
       "golfer": "Michael Brennan",
-      "projectedEarnings": 115132,
-      "projectedDupCount": 0.16,
-      "futureValue": 378726,
+      "projectedEarnings": 115168,
+      "projectedDupCount": 0.14,
+      "futureValue": 378771,
       "worldRank": 45,
-      "fedexPoints": 127,
-      "seasonEarnings": 445045,
+      "fedexPoints": 130,
+      "seasonEarnings": 468955,
       "inNextTournament": true,
       "historicalStrength": 0.10496000000000001,
       "last4Finishes": [],
@@ -465,26 +355,26 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.42060475,
-      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 127 FedExCup points, and $445K earned this season.",
+      "score": 0.421604975,
+      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 130 FedExCup points, and $469K earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.42060475,
-        "expected": 0.03289485714285714,
-        "leverage": 0.7200631771428572,
-        "preservation": 0.6220272400000001
+        "balanced": 0.421604975,
+        "expected": 0.032905142857142855,
+        "leverage": 0.7244648228571429,
+        "preservation": 0.62201554
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.03289485714285714,
-        "uniqueness": 0.9466666666666667,
-        "futureCost": 0.189363,
+        "expected": 0.032905142857142855,
+        "uniqueness": 0.9533333333333334,
+        "futureCost": 0.1893855,
         "recentForm": 0.5,
         "historicalStrength": 0.10496000000000001,
         "courseHistory": 0.5,
@@ -494,54 +384,54 @@
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10."
+        "explanation": "Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10."
       }
     },
     "preservation": {
-      "golfer": "RASMUS HOJGAARD",
-      "projectedEarnings": 116472,
-      "projectedDupCount": 0.21,
-      "futureValue": 376065,
-      "worldRank": 48,
-      "fedexPoints": 199,
-      "seasonEarnings": 579214,
+      "golfer": "Michael Brennan",
+      "projectedEarnings": 115168,
+      "projectedDupCount": 0.14,
+      "futureValue": 378771,
+      "worldRank": 45,
+      "fedexPoints": 130,
+      "seasonEarnings": 468955,
       "inNextTournament": true,
-      "historicalStrength": 0.10134000000000001,
+      "historicalStrength": 0.10496000000000001,
       "last4Finishes": [],
       "sourceRefs": [
-        "OWGR fallback",
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
+        "OWGR fallback",
         "Weekly projection synthesis"
       ],
-      "name": "RASMUS HOJGAARD",
+      "name": "Michael Brennan",
       "courseHistoryResults": [],
       "hasProjectedEarnings": true,
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.418076325,
-      "reasoning": "Reasoning: Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 48 OWGR, 199 FedExCup points, and $579K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 48 OWGR and a 0.10 historical-strength signal.",
+      "score": 0.421604975,
+      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 130 FedExCup points, and $469K earned this season.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.418076325,
-        "expected": 0.033277714285714285,
-        "leverage": 0.7091244342857144,
-        "preservation": 0.6223571
+        "balanced": 0.421604975,
+        "expected": 0.032905142857142855,
+        "leverage": 0.7244648228571429,
+        "preservation": 0.62201554
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.033277714285714285,
-        "uniqueness": 0.93,
-        "futureCost": 0.1880325,
+        "expected": 0.032905142857142855,
+        "uniqueness": 0.9533333333333334,
+        "futureCost": 0.1893855,
         "recentForm": 0.5,
-        "historicalStrength": 0.10134000000000001,
+        "historicalStrength": 0.10496000000000001,
         "courseHistory": 0.5,
         "strokesGained": 0.5,
         "eventHistoryTrend": 0.5,
@@ -549,66 +439,34 @@
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10."
+        "explanation": "Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10."
       }
     }
   },
   "comparisons": [
     {
-      "golfer": "Michael Brennan",
-      "scoreGap": 0.002,
-      "strengths": [
-        {
-          "label": "Leverage",
-          "delta": 0.007437028571428694,
-          "detail": "1 pts cleaner leverage"
-        },
-        {
-          "label": "Projected upside",
-          "delta": 0.005231428571428574,
-          "detail": "1 pts more weekly upside"
-        }
-      ]
-    },
-    {
-      "golfer": "RASMUS HOJGAARD",
-      "scoreGap": 0.005,
-      "strengths": [
-        {
-          "label": "Leverage",
-          "delta": 0.018375771428571497,
-          "detail": "2 pts cleaner leverage"
-        },
-        {
-          "label": "Projected upside",
-          "delta": 0.004848571428571431,
-          "detail": "0 pts more weekly upside"
-        }
-      ]
-    },
-    {
       "golfer": "Pierceson Coody",
-      "scoreGap": 0.044,
+      "scoreGap": 0.048,
       "strengths": [
         {
           "label": "Leverage",
-          "delta": 0.1926550857142859,
-          "detail": "19 pts cleaner leverage"
+          "delta": 0.2117088914285714,
+          "detail": "21 pts cleaner leverage"
         },
         {
           "label": "Future preservation",
-          "delta": 0.0018547400000000769,
-          "detail": "0 pts lower-regret spend"
+          "delta": 0.010362219999999978,
+          "detail": "1 pts lower-regret spend"
         }
       ]
     }
   ],
   "summary": {
-    "totalAvailable": 35,
-    "eligibleCount": 4,
-    "projectedCount": 4,
-    "nextTournamentFieldCount": 6,
-    "picksUsed": 17,
+    "totalAvailable": 34,
+    "eligibleCount": 2,
+    "projectedCount": 2,
+    "nextTournamentFieldCount": 5,
+    "picksUsed": 18,
     "picksRemaining": 15,
     "picksRemainingAfterThisWeek": 14,
     "seasonWindowLabel": "Including THE CJ CUP Byron Nelson",
@@ -617,68 +475,13 @@
   },
   "scored": [
     {
-      "golfer": "Aaron Rai",
-      "projectedEarnings": 133442,
-      "projectedDupCount": 0.13,
-      "futureValue": 420855,
-      "worldRank": 33,
-      "fedexPoints": 167,
-      "seasonEarnings": 521334,
-      "inNextTournament": true,
-      "historicalStrength": 0.12401,
-      "last4Finishes": [],
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis"
-      ],
-      "name": "Aaron Rai",
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": false,
-      "eligible": true,
-      "score": 0.42268107499999996,
-      "reasoning": "Reasoning: Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 33 OWGR, 167 FedExCup points, and $521K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 33 OWGR and a 0.12 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.8400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.42268107499999996,
-        "expected": 0.03812628571428572,
-        "leverage": 0.7275002057142859,
-        "preservation": 0.6129787000000001
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.03812628571428572,
-        "uniqueness": 0.9566666666666667,
-        "futureCost": 0.2104275,
-        "recentForm": 0.5,
-        "historicalStrength": 0.12401,
-        "courseHistory": 0.5,
-        "strokesGained": 0.5,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 33 OWGR, 167 FedExCup points, $521K in season earnings. Historical strength index: 0.12."
-      }
-    },
-    {
       "golfer": "Michael Brennan",
-      "projectedEarnings": 115132,
-      "projectedDupCount": 0.16,
-      "futureValue": 378726,
+      "projectedEarnings": 115168,
+      "projectedDupCount": 0.14,
+      "futureValue": 378771,
       "worldRank": 45,
-      "fedexPoints": 127,
-      "seasonEarnings": 445045,
+      "fedexPoints": 130,
+      "seasonEarnings": 468955,
       "inNextTournament": true,
       "historicalStrength": 0.10496000000000001,
       "last4Finishes": [],
@@ -694,26 +497,26 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.42060475,
-      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 127 FedExCup points, and $445K earned this season.",
+      "score": 0.421604975,
+      "reasoning": "Reasoning: Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 45 OWGR, 130 FedExCup points, and $469K earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 45 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.42060475,
-        "expected": 0.03289485714285714,
-        "leverage": 0.7200631771428572,
-        "preservation": 0.6220272400000001
+        "balanced": 0.421604975,
+        "expected": 0.032905142857142855,
+        "leverage": 0.7244648228571429,
+        "preservation": 0.62201554
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.03289485714285714,
-        "uniqueness": 0.9466666666666667,
-        "futureCost": 0.189363,
+        "expected": 0.032905142857142855,
+        "uniqueness": 0.9533333333333334,
+        "futureCost": 0.1893855,
         "recentForm": 0.5,
         "historicalStrength": 0.10496000000000001,
         "courseHistory": 0.5,
@@ -723,69 +526,14 @@
         "fieldPenalty": 0,
         "projectionPenalty": 0,
         "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 45 OWGR, 127 FedExCup points, $445K in season earnings. Historical strength index: 0.10."
-      }
-    },
-    {
-      "golfer": "RASMUS HOJGAARD",
-      "projectedEarnings": 116472,
-      "projectedDupCount": 0.21,
-      "futureValue": 376065,
-      "worldRank": 48,
-      "fedexPoints": 199,
-      "seasonEarnings": 579214,
-      "inNextTournament": true,
-      "historicalStrength": 0.10134000000000001,
-      "last4Finishes": [],
-      "sourceRefs": [
-        "OWGR fallback",
-        "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "Weekly projection synthesis"
-      ],
-      "name": "RASMUS HOJGAARD",
-      "courseHistoryResults": [],
-      "hasProjectedEarnings": true,
-      "hasCourseHistory": false,
-      "hasRecentForm": false,
-      "eligible": true,
-      "score": 0.418076325,
-      "reasoning": "Reasoning: Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 48 OWGR, 199 FedExCup points, and $579K earned this season.",
-      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 48 OWGR and a 0.10 historical-strength signal.",
-      "cautionSummary": "Caution: event-specific history detail is missing, so this relies more on season-long strength, rank, and payout projection than course-specific evidence.",
-      "confidenceScore": 0.8400000000000001,
-      "confidenceLabel": "High",
-      "decisionScores": {
-        "balanced": 0.418076325,
-        "expected": 0.033277714285714285,
-        "leverage": 0.7091244342857144,
-        "preservation": 0.6223571
-      },
-      "flags": [
-        "Course-history detail missing"
-      ],
-      "rationale": {
-        "expected": 0.033277714285714285,
-        "uniqueness": 0.93,
-        "futureCost": 0.1880325,
-        "recentForm": 0.5,
-        "historicalStrength": 0.10134000000000001,
-        "courseHistory": 0.5,
-        "strokesGained": 0.5,
-        "eventHistoryTrend": 0.5,
-        "preservePenalty": 0,
-        "fieldPenalty": 0,
-        "projectionPenalty": 0,
-        "dataPenalty": 0.05,
-        "explanation": "Season profile: No. 48 OWGR, 199 FedExCup points, $579K in season earnings. Historical strength index: 0.10."
+        "explanation": "Season profile: No. 45 OWGR, 130 FedExCup points, $469K in season earnings. Historical strength index: 0.10."
       }
     },
     {
       "golfer": "Pierceson Coody",
-      "projectedEarnings": 154112,
-      "projectedDupCount": 1.01,
-      "futureValue": 419679,
+      "projectedEarnings": 152161,
+      "projectedDupCount": 1.11,
+      "futureValue": 417643,
       "worldRank": 47,
       "fedexPoints": 577,
       "seasonEarnings": 2123874,
@@ -804,7 +552,7 @@
       "hasCourseHistory": false,
       "hasRecentForm": false,
       "eligible": true,
-      "score": 0.37867577500000005,
+      "score": 0.37363337500000005,
       "reasoning": "Reasoning: Season profile: No. 47 OWGR, 577 FedExCup points, $2.1M in season earnings. Historical strength index: 0.10.",
       "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 47 OWGR, 577 FedExCup points, and $2.1M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 47 OWGR and a 0.10 historical-strength signal.",
@@ -812,18 +560,18 @@
       "confidenceScore": 0.8400000000000001,
       "confidenceLabel": "High",
       "decisionScores": {
-        "balanced": 0.37867577500000005,
-        "expected": 0.044032,
-        "leverage": 0.53484512,
-        "preservation": 0.61112396
+        "balanced": 0.37363337500000005,
+        "expected": 0.04347457142857143,
+        "leverage": 0.5127559314285715,
+        "preservation": 0.6116533200000001
       },
       "flags": [
         "Course-history detail missing"
       ],
       "rationale": {
-        "expected": 0.044032,
-        "uniqueness": 0.6633333333333333,
-        "futureCost": 0.2098395,
+        "expected": 0.04347457142857143,
+        "uniqueness": 0.6299999999999999,
+        "futureCost": 0.2088215,
         "recentForm": 0.5,
         "historicalStrength": 0.102405,
         "courseHistory": 0.5,
@@ -842,8 +590,8 @@
       "projectedDupCount": 0,
       "futureValue": 1068186,
       "worldRank": 2,
-      "fedexPoints": 1278,
-      "seasonEarnings": 6956975,
+      "fedexPoints": 1503,
+      "seasonEarnings": 7594025,
       "inNextTournament": false,
       "historicalStrength": 0.42661499999999997,
       "last4Finishes": [],
@@ -859,8 +607,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 2 OWGR, 1278 FedExCup points, $7.0M in season earnings. Historical strength index: 0.43. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 2 OWGR, 1278 FedExCup points, and $7.0M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 2 OWGR, 1503 FedExCup points, $7.6M in season earnings. Historical strength index: 0.43. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 2 OWGR, 1503 FedExCup points, and $7.6M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 2 OWGR and a 0.43 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -890,7 +638,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 2 OWGR, 1278 FedExCup points, $7.0M in season earnings. Historical strength index: 0.43. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 2 OWGR, 1503 FedExCup points, $7.6M in season earnings. Historical strength index: 0.43. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -956,8 +704,8 @@
       "projectedDupCount": 0,
       "futureValue": 859266,
       "worldRank": 6,
-      "fedexPoints": 1407,
-      "seasonEarnings": 4975544,
+      "fedexPoints": 1552,
+      "seasonEarnings": 5472252,
       "inNextTournament": false,
       "historicalStrength": 0.229845,
       "last4Finishes": [],
@@ -973,8 +721,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 6 OWGR, 1407 FedExCup points, $5.0M in season earnings. Historical strength index: 0.23. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 6 OWGR, 1407 FedExCup points, and $5.0M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 6 OWGR, 1552 FedExCup points, $5.5M in season earnings. Historical strength index: 0.23. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 6 OWGR, 1552 FedExCup points, and $5.5M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 6 OWGR and a 0.23 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1004,7 +752,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 6 OWGR, 1407 FedExCup points, $5.0M in season earnings. Historical strength index: 0.23. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 6 OWGR, 1552 FedExCup points, $5.5M in season earnings. Historical strength index: 0.23. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1184,8 +932,8 @@
       "projectedDupCount": 0,
       "futureValue": 698138,
       "worldRank": 14,
-      "fedexPoints": 395,
-      "seasonEarnings": 1483785,
+      "fedexPoints": 695,
+      "seasonEarnings": 2327652,
       "inNextTournament": false,
       "historicalStrength": 0.192165,
       "last4Finishes": [],
@@ -1201,8 +949,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 14 OWGR, 395 FedExCup points, $1.5M in season earnings. Historical strength index: 0.19. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 14 OWGR, 395 FedExCup points, and $1.5M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 14 OWGR, 695 FedExCup points, $2.3M in season earnings. Historical strength index: 0.19. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 14 OWGR, 695 FedExCup points, and $2.3M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 14 OWGR and a 0.19 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1232,7 +980,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 14 OWGR, 395 FedExCup points, $1.5M in season earnings. Historical strength index: 0.19. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 14 OWGR, 695 FedExCup points, $2.3M in season earnings. Historical strength index: 0.19. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1241,8 +989,8 @@
       "projectedDupCount": 0,
       "futureValue": 685018,
       "worldRank": 15,
-      "fedexPoints": 632,
-      "seasonEarnings": 2024258,
+      "fedexPoints": 689,
+      "seasonEarnings": 2253387,
       "inNextTournament": false,
       "historicalStrength": 0.18028,
       "last4Finishes": [],
@@ -1258,8 +1006,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 15 OWGR, 632 FedExCup points, $2.0M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 15 OWGR, 632 FedExCup points, and $2.0M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 15 OWGR, 689 FedExCup points, $2.3M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 15 OWGR, 689 FedExCup points, and $2.3M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 15 OWGR and a 0.18 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1289,7 +1037,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 15 OWGR, 632 FedExCup points, $2.0M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 15 OWGR, 689 FedExCup points, $2.3M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1298,8 +1046,8 @@
       "projectedDupCount": 0,
       "futureValue": 672745,
       "worldRank": 16,
-      "fedexPoints": 504,
-      "seasonEarnings": 1825392,
+      "fedexPoints": 541,
+      "seasonEarnings": 1950915,
       "inNextTournament": false,
       "historicalStrength": 0.17915,
       "last4Finishes": [],
@@ -1315,8 +1063,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 16 OWGR, 504 FedExCup points, $1.8M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 16 OWGR, 504 FedExCup points, and $1.8M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 16 OWGR, 541 FedExCup points, $2.0M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 16 OWGR, 541 FedExCup points, and $2.0M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 16 OWGR and a 0.18 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1346,7 +1094,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 16 OWGR, 504 FedExCup points, $1.8M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 16 OWGR, 541 FedExCup points, $2.0M in season earnings. Historical strength index: 0.18. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1467,8 +1215,8 @@
       "projectedDupCount": 0,
       "futureValue": 612186,
       "worldRank": 22,
-      "fedexPoints": 2404,
-      "seasonEarnings": 10595426,
+      "fedexPoints": 2494,
+      "seasonEarnings": 10960188,
       "inNextTournament": false,
       "historicalStrength": 0.15303,
       "last4Finishes": [],
@@ -1484,8 +1232,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 22 OWGR, 2404 FedExCup points, $10.6M in season earnings. Historical strength index: 0.15. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 22 OWGR, 2404 FedExCup points, and $10.6M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 22 OWGR, 2494 FedExCup points, $11.0M in season earnings. Historical strength index: 0.15. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 22 OWGR, 2494 FedExCup points, and $11.0M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 22 OWGR and a 0.15 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1515,7 +1263,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 22 OWGR, 2404 FedExCup points, $10.6M in season earnings. Historical strength index: 0.15. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 22 OWGR, 2494 FedExCup points, $11.0M in season earnings. Historical strength index: 0.15. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1579,8 +1327,8 @@
       "projectedDupCount": 0,
       "futureValue": 580417,
       "worldRank": 26,
-      "fedexPoints": 746,
-      "seasonEarnings": 2619223,
+      "fedexPoints": 751,
+      "seasonEarnings": 2644293,
       "inNextTournament": false,
       "historicalStrength": 0.144795,
       "last4Finishes": [],
@@ -1596,8 +1344,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 26 OWGR, 746 FedExCup points, $2.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 26 OWGR, 746 FedExCup points, and $2.6M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 26 OWGR, 751 FedExCup points, $2.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 26 OWGR, 751 FedExCup points, and $2.6M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 26 OWGR and a 0.14 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1627,7 +1375,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 26 OWGR, 746 FedExCup points, $2.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 26 OWGR, 751 FedExCup points, $2.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1636,8 +1384,8 @@
       "projectedDupCount": 0,
       "futureValue": 559651,
       "worldRank": 29,
-      "fedexPoints": 726,
-      "seasonEarnings": 2390160,
+      "fedexPoints": 763,
+      "seasonEarnings": 2515683,
       "inNextTournament": false,
       "historicalStrength": 0.13157000000000002,
       "last4Finishes": [],
@@ -1653,8 +1401,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 29 OWGR, 726 FedExCup points, $2.4M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 29 OWGR, 726 FedExCup points, and $2.4M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 29 OWGR, 763 FedExCup points, $2.5M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 29 OWGR, 763 FedExCup points, and $2.5M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 29 OWGR and a 0.13 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1684,7 +1432,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 29 OWGR, 726 FedExCup points, $2.4M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 29 OWGR, 763 FedExCup points, $2.5M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1693,8 +1441,8 @@
       "projectedDupCount": 0,
       "futureValue": 553204,
       "worldRank": 30,
-      "fedexPoints": 860,
-      "seasonEarnings": 3598421,
+      "fedexPoints": 1005,
+      "seasonEarnings": 4095129,
       "inNextTournament": false,
       "historicalStrength": 0.13591999999999999,
       "last4Finishes": [],
@@ -1710,8 +1458,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 30 OWGR, 860 FedExCup points, $3.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 30 OWGR, 860 FedExCup points, and $3.6M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 30 OWGR, 1005 FedExCup points, $4.1M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 30 OWGR, 1005 FedExCup points, and $4.1M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 30 OWGR and a 0.14 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1741,7 +1489,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 30 OWGR, 860 FedExCup points, $3.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 30 OWGR, 1005 FedExCup points, $4.1M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1750,8 +1498,8 @@
       "projectedDupCount": 0,
       "futureValue": 546969,
       "worldRank": 31,
-      "fedexPoints": 669,
-      "seasonEarnings": 2491903,
+      "fedexPoints": 692,
+      "seasonEarnings": 2570708,
       "inNextTournament": false,
       "historicalStrength": 0.12712,
       "last4Finishes": [],
@@ -1767,8 +1515,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 31 OWGR, 669 FedExCup points, $2.5M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 31 OWGR, 669 FedExCup points, and $2.5M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 31 OWGR, 692 FedExCup points, $2.6M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 31 OWGR, 692 FedExCup points, and $2.6M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 31 OWGR and a 0.13 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1798,7 +1546,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 31 OWGR, 669 FedExCup points, $2.5M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 31 OWGR, 692 FedExCup points, $2.6M in season earnings. Historical strength index: 0.13. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -1807,8 +1555,8 @@
       "projectedDupCount": 0,
       "futureValue": 540931,
       "worldRank": 32,
-      "fedexPoints": 1097,
-      "seasonEarnings": 4348499,
+      "fedexPoints": 1154,
+      "seasonEarnings": 4577627,
       "inNextTournament": false,
       "historicalStrength": 0.137715,
       "last4Finishes": [],
@@ -1824,8 +1572,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 32 OWGR, 1097 FedExCup points, $4.3M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 32 OWGR, 1097 FedExCup points, and $4.3M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 32 OWGR, 1154 FedExCup points, $4.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 32 OWGR, 1154 FedExCup points, and $4.6M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 32 OWGR and a 0.14 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -1855,7 +1603,64 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 32 OWGR, 1097 FedExCup points, $4.3M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 32 OWGR, 1154 FedExCup points, $4.6M in season earnings. Historical strength index: 0.14. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+      }
+    },
+    {
+      "golfer": "Aaron Rai",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 535079,
+      "worldRank": 33,
+      "fedexPoints": 917,
+      "seasonEarnings": 4211334,
+      "inNextTournament": false,
+      "historicalStrength": 0.12401,
+      "last4Finishes": [],
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money",
+        "OWGR fallback"
+      ],
+      "name": "Aaron Rai",
+      "courseHistoryResults": [],
+      "hasProjectedEarnings": false,
+      "hasCourseHistory": false,
+      "hasRecentForm": false,
+      "eligible": false,
+      "score": 0,
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 33 OWGR, 917 FedExCup points, $4.2M in season earnings. Historical strength index: 0.12. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 33 OWGR, 917 FedExCup points, and $4.2M earned this season.",
+      "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 33 OWGR and a 0.12 historical-strength signal.",
+      "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
+      "confidenceScore": 0.09,
+      "confidenceLabel": "Low",
+      "decisionScores": {
+        "balanced": 0,
+        "expected": 0,
+        "leverage": 0.8300000000000001,
+        "preservation": 0.5832804600000001
+      },
+      "flags": [
+        "Out of field",
+        "Missing payout projection",
+        "Course-history detail missing",
+        "Projected unique"
+      ],
+      "rationale": {
+        "expected": 0,
+        "uniqueness": 1,
+        "futureCost": 0.2675395,
+        "recentForm": 0.5,
+        "historicalStrength": 0.12401,
+        "courseHistory": 0.5,
+        "strokesGained": 0.5,
+        "eventHistoryTrend": 0.5,
+        "preservePenalty": 0,
+        "fieldPenalty": 0.45,
+        "projectionPenalty": 0.12,
+        "dataPenalty": 0.05,
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 33 OWGR, 917 FedExCup points, $4.2M in season earnings. Historical strength index: 0.12. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2031,8 +1836,8 @@
       "projectedDupCount": 0,
       "futureValue": 513322,
       "worldRank": 37,
-      "fedexPoints": 479,
-      "seasonEarnings": 1793379,
+      "fedexPoints": 486,
+      "seasonEarnings": 1820279,
       "inNextTournament": false,
       "historicalStrength": 0.10964499999999999,
       "last4Finishes": [],
@@ -2048,8 +1853,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 37 OWGR, 479 FedExCup points, $1.8M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 37 OWGR, 479 FedExCup points, and $1.8M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 37 OWGR, 486 FedExCup points, $1.8M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 37 OWGR, 486 FedExCup points, and $1.8M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 37 OWGR and a 0.11 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2079,7 +1884,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 37 OWGR, 479 FedExCup points, $1.8M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 37 OWGR, 486 FedExCup points, $1.8M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2259,8 +2064,8 @@
       "projectedDupCount": 0,
       "futureValue": 489218,
       "worldRank": 42,
-      "fedexPoints": 334,
-      "seasonEarnings": 1242673,
+      "fedexPoints": 371,
+      "seasonEarnings": 1368197,
       "inNextTournament": false,
       "historicalStrength": 0.10378499999999999,
       "last4Finishes": [],
@@ -2276,8 +2081,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 42 OWGR, 334 FedExCup points, $1.2M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 42 OWGR, 334 FedExCup points, and $1.2M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 42 OWGR, 371 FedExCup points, $1.4M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 42 OWGR, 371 FedExCup points, and $1.4M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 42 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2307,7 +2112,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 42 OWGR, 334 FedExCup points, $1.2M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 42 OWGR, 371 FedExCup points, $1.4M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2316,8 +2121,8 @@
       "projectedDupCount": 0,
       "futureValue": 484744,
       "worldRank": 43,
-      "fedexPoints": 1094,
-      "seasonEarnings": 5009729,
+      "fedexPoints": 1109,
+      "seasonEarnings": 5060077,
       "inNextTournament": false,
       "historicalStrength": 0.10405500000000001,
       "last4Finishes": [],
@@ -2333,8 +2138,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 43 OWGR, 1094 FedExCup points, $5.0M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 43 OWGR, 1094 FedExCup points, and $5.0M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 43 OWGR, 1109 FedExCup points, $5.1M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 43 OWGR, 1109 FedExCup points, and $5.1M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 43 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2364,7 +2169,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 43 OWGR, 1094 FedExCup points, $5.0M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 43 OWGR, 1109 FedExCup points, $5.1M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2373,8 +2178,8 @@
       "projectedDupCount": 0,
       "futureValue": 480372,
       "worldRank": 44,
-      "fedexPoints": 379,
-      "seasonEarnings": 1415339,
+      "fedexPoints": 402,
+      "seasonEarnings": 1494145,
       "inNextTournament": false,
       "historicalStrength": 0.10582499999999999,
       "last4Finishes": [],
@@ -2390,8 +2195,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 44 OWGR, 379 FedExCup points, $1.4M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 44 OWGR, 379 FedExCup points, and $1.4M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 44 OWGR, 402 FedExCup points, $1.5M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 44 OWGR, 402 FedExCup points, and $1.5M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 44 OWGR and a 0.11 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2421,7 +2226,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 44 OWGR, 379 FedExCup points, $1.4M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 44 OWGR, 402 FedExCup points, $1.5M in season earnings. Historical strength index: 0.11. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2485,8 +2290,8 @@
       "projectedDupCount": 0,
       "futureValue": 459904,
       "worldRank": 49,
-      "fedexPoints": 119,
-      "seasonEarnings": 429180,
+      "fedexPoints": 128,
+      "seasonEarnings": 458398,
       "inNextTournament": false,
       "historicalStrength": 0.09829,
       "last4Finishes": [],
@@ -2502,8 +2307,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 49 OWGR, 119 FedExCup points, $429K in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 49 OWGR, 119 FedExCup points, and $429K earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 49 OWGR, 128 FedExCup points, $458K in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 49 OWGR, 128 FedExCup points, and $458K earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 49 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2533,7 +2338,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 49 OWGR, 119 FedExCup points, $429K in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 49 OWGR, 128 FedExCup points, $458K in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     },
     {
@@ -2542,8 +2347,8 @@
       "projectedDupCount": 0,
       "futureValue": 456062,
       "worldRank": 50,
-      "fedexPoints": 1059,
-      "seasonEarnings": 4258570,
+      "fedexPoints": 1074,
+      "seasonEarnings": 4308918,
       "inNextTournament": false,
       "historicalStrength": 0.10018,
       "last4Finishes": [],
@@ -2559,8 +2364,8 @@
       "hasRecentForm": false,
       "eligible": false,
       "score": 0,
-      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 50 OWGR, 1059 FedExCup points, $4.3M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
-      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 50 OWGR, 1059 FedExCup points, and $4.3M earned this season.",
+      "reasoning": "Reasoning: Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 50 OWGR, 1074 FedExCup points, $4.3M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike.",
+      "recentSummary": "Recent: Recent-start finish data was not loaded, so this card is leaning on season indicators instead: No. 50 OWGR, 1074 FedExCup points, and $4.3M earned this season.",
       "historicalSummary": "Historical: Current fit is inferred from broader profile strength, including No. 50 OWGR and a 0.10 historical-strength signal.",
       "cautionSummary": "Caution: not confirmed in the next-tournament field. Keep this off the shortlist unless field data changes.",
       "confidenceScore": 0.09,
@@ -2590,7 +2395,7 @@
         "fieldPenalty": 0.45,
         "projectionPenalty": 0.12,
         "dataPenalty": 0.05,
-        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 50 OWGR, 1059 FedExCup points, $4.3M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
+        "explanation": "Not currently confirmed in the upcoming field, so this is not a recommended click-unless-needed option. Season profile: No. 50 OWGR, 1074 FedExCup points, $4.3M in season earnings. Historical strength index: 0.10. Leverage edge: projected to be unique against Paul, Dakota, and Mike."
       }
     }
   ],

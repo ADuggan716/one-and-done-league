@@ -1,79 +1,79 @@
 {
   "event": {
     "id": "the-cj-cup-byron-nelson",
-    "name": "THE CJ CUP Byron Nelson",
+    "name": "The CJ Cup Byron Nelson",
     "tier": "regular",
-    "startDate": "May 21 - 24",
+    "startDate": null,
     "isUpcoming": true,
     "countsTowardSeasonTotals": false,
-    "totalPurse": 10300000,
-    "firstPrize": 1782000,
+    "totalPurse": 0,
+    "firstPrize": 0,
     "subgroupResults": [
       {
         "member": "Andrew",
-        "pick": null,
+        "pick": "Rasmus Hojgaard",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 2943666,
+        "finish": "$0",
+        "leagueRank": 143
       },
       {
         "member": "Paul",
-        "pick": null,
+        "pick": "Jordan Spieth",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 6433168,
+        "finish": "$0",
+        "leagueRank": 59
       },
       {
         "member": "Dakota",
-        "pick": null,
+        "pick": "Michael Brennan",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 8375014,
+        "finish": "$0",
+        "leagueRank": 30
       },
       {
         "member": "Mike",
-        "pick": null,
+        "pick": "Si Woo Kim",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 7427831,
+        "finish": "$0",
+        "leagueRank": 42
       }
     ],
     "picks": [
       {
         "member": "Andrew",
-        "golfer": null,
+        "golfer": "Rasmus Hojgaard",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 2943666,
+        "finish": "$0",
+        "leagueRank": 143
       },
       {
         "member": "Paul",
-        "golfer": null,
+        "golfer": "Jordan Spieth",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 6433168,
+        "finish": "$0",
+        "leagueRank": 59
       },
       {
         "member": "Dakota",
-        "golfer": null,
+        "golfer": "Michael Brennan",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 8375014,
+        "finish": "$0",
+        "leagueRank": 30
       },
       {
         "member": "Mike",
-        "golfer": null,
+        "golfer": "Si Woo Kim",
         "earnings": 0,
-        "seasonEarnings": 0,
-        "finish": null,
-        "leagueRank": null
+        "seasonEarnings": 7427831,
+        "finish": "$0",
+        "leagueRank": 42
       }
     ]
   },
@@ -85,23 +85,31 @@
     "totalPurse": 10300000,
     "firstPrize": 1782000,
     "lastYearWinner": "Scottie Scheffler",
-    "status": "UPCOMING"
+    "status": "IN_PROGRESS"
   },
   "league": {
     "id": "/Golf/PickX/multiple_entries.cfm",
     "name": "Manage Entries",
     "totalEntrants": 150,
-    "yourRank": 140,
-    "latestEventId": "pga-championship",
-    "yourPercentile": 6.7114093959731544
+    "yourRank": 143,
+    "latestEventId": "the-cj-cup-byron-nelson",
+    "yourPercentile": 4.697986577181208
   },
   "subgroupStandings": [
     {
       "member": "Dakota",
-      "seasonEarnings": 8347501,
-      "weeklyEarnings": 337250,
-      "avgEarnings": 463750.05555555556,
+      "seasonEarnings": 8375014,
+      "weeklyEarnings": 364763,
+      "avgEarnings": 492647.8823529412,
       "lastFour": [
+        {
+          "eventId": "rbc-no-cut",
+          "eventName": "RBC (NO CUT)",
+          "tier": "regular",
+          "earnings": 555000,
+          "finish": "8",
+          "pick": "Patrick Cantlay"
+        },
         {
           "eventId": "miami-championship",
           "eventName": "Miami Championship",
@@ -122,15 +130,7 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "14",
-          "pick": "Matthew Fitzpatrick"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 337250,
+          "earnings": 364763,
           "finish": "14",
           "pick": "Matthew Fitzpatrick"
         }
@@ -268,37 +268,37 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "14",
-          "pick": "Matthew Fitzpatrick"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 337250,
+          "earnings": 364763,
           "finish": "14",
           "pick": "Matthew Fitzpatrick"
         },
         {
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
           "earnings": 0,
-          "finish": null,
-          "pick": null
+          "finish": "$0",
+          "pick": "Michael Brennan"
         }
       ],
       "groupRank": 1,
       "toLeader": 0,
-      "leagueRank": 32
+      "leagueRank": 30
     },
     {
       "member": "Mike",
       "seasonEarnings": 7427831,
       "weeklyEarnings": 0,
-      "avgEarnings": 412657.27777777775,
+      "avgEarnings": 436931.23529411765,
       "lastFour": [
+        {
+          "eventId": "rbc-no-cut",
+          "eventName": "RBC (NO CUT)",
+          "tier": "regular",
+          "earnings": 823333,
+          "finish": "4",
+          "pick": "Ludvig Aberg"
+        },
         {
           "eventId": "miami-championship",
           "eventName": "Miami Championship",
@@ -318,14 +318,6 @@
         {
           "eventId": "pga",
           "eventName": "PGA",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "112",
-          "pick": "Bryson DeChambeau"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
           "tier": "regular",
           "earnings": 0,
           "finish": "112",
@@ -470,32 +462,32 @@
           "pick": "Bryson DeChambeau"
         },
         {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 0,
-          "finish": "112",
-          "pick": "Bryson DeChambeau"
-        },
-        {
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
           "earnings": 0,
-          "finish": null,
-          "pick": null
+          "finish": "$0",
+          "pick": "Si Woo Kim"
         }
       ],
       "groupRank": 2,
-      "toLeader": 919670,
-      "leagueRank": 36
+      "toLeader": 947183,
+      "leagueRank": 42
     },
     {
       "member": "Paul",
-      "seasonEarnings": 6445940,
-      "weeklyEarnings": 41990,
-      "avgEarnings": 358107.77777777775,
+      "seasonEarnings": 6433168,
+      "weeklyEarnings": 29218,
+      "avgEarnings": 378421.64705882355,
       "lastFour": [
+        {
+          "eventId": "rbc-no-cut",
+          "eventName": "RBC (NO CUT)",
+          "tier": "regular",
+          "earnings": 399250,
+          "finish": "12",
+          "pick": "Xander Schauffele"
+        },
         {
           "eventId": "miami-championship",
           "eventName": "Miami Championship",
@@ -516,15 +508,7 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "60",
-          "pick": "Rickie Fowler"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 41990,
+          "earnings": 29218,
           "finish": "60",
           "pick": "Rickie Fowler"
         }
@@ -662,37 +646,37 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "60",
-          "pick": "Rickie Fowler"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 41990,
+          "earnings": 29218,
           "finish": "60",
           "pick": "Rickie Fowler"
         },
         {
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
           "earnings": 0,
-          "finish": null,
-          "pick": null
+          "finish": "$0",
+          "pick": "Jordan Spieth"
         }
       ],
       "groupRank": 3,
-      "toLeader": 1901561,
-      "leagueRank": 55
+      "toLeader": 1941846,
+      "leagueRank": 59
     },
     {
       "member": "Andrew",
-      "seasonEarnings": 2951143,
-      "weeklyEarnings": 133000,
-      "avgEarnings": 163952.38888888888,
+      "seasonEarnings": 2943666,
+      "weeklyEarnings": 125523,
+      "avgEarnings": 173156.82352941178,
       "lastFour": [
+        {
+          "eventId": "rbc-no-cut",
+          "eventName": "RBC (NO CUT)",
+          "tier": "regular",
+          "earnings": 142750,
+          "finish": "25",
+          "pick": "Christopher Gotterup"
+        },
         {
           "eventId": "miami-championship",
           "eventName": "Miami Championship",
@@ -713,15 +697,7 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "26",
-          "pick": "Cameron Young"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 133000,
+          "earnings": 125523,
           "finish": "26",
           "pick": "Cameron Young"
         }
@@ -859,30 +835,22 @@
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "26",
-          "pick": "Cameron Young"
-        },
-        {
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "earnings": 133000,
+          "earnings": 125523,
           "finish": "26",
           "pick": "Cameron Young"
         },
         {
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
           "earnings": 0,
-          "finish": null,
-          "pick": null
+          "finish": "$0",
+          "pick": "Rasmus Hojgaard"
         }
       ],
       "groupRank": 4,
-      "toLeader": 5396358,
-      "leagueRank": 140
+      "toLeader": 5431348,
+      "leagueRank": 143
     }
   ],
   "teams": [
@@ -892,9 +860,9 @@
         "Mike",
         "Paul"
       ],
-      "seasonEarnings": 13873771,
-      "weeklyEarnings": 41990,
-      "avgMemberEarnings": 6936885.5,
+      "seasonEarnings": 13860999,
+      "weeklyEarnings": 29218,
+      "avgMemberEarnings": 6930499.5,
       "rank": 1,
       "toLeader": 0
     },
@@ -904,11 +872,11 @@
         "Andrew",
         "Dakota"
       ],
-      "seasonEarnings": 11298644,
-      "weeklyEarnings": 470250,
-      "avgMemberEarnings": 5649322,
+      "seasonEarnings": 11318680,
+      "weeklyEarnings": 490286,
+      "avgMemberEarnings": 5659340,
       "rank": 2,
-      "toLeader": 2575127
+      "toLeader": 2542319
     }
   ],
   "weeklyComparison": [
@@ -1866,27 +1834,39 @@
       "firstPrize": 0,
       "rows": [
         {
-          "member": "Andrew",
-          "eventId": "pga",
-          "eventName": "PGA",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "26",
-          "pick": "Cameron Young",
-          "leagueRank": null
-        },
-        {
           "member": "Dakota",
           "eventId": "pga",
           "eventName": "PGA",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
+          "earnings": 364763,
           "finish": "14",
           "pick": "Matthew Fitzpatrick",
+          "leagueRank": null
+        },
+        {
+          "member": "Andrew",
+          "eventId": "pga",
+          "eventName": "PGA",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 125523,
+          "finish": "26",
+          "pick": "Cameron Young",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "pga",
+          "eventName": "PGA",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 29218,
+          "finish": "60",
+          "pick": "Rickie Fowler",
           "leagueRank": null
         },
         {
@@ -1900,136 +1880,65 @@
           "finish": "112",
           "pick": "Bryson DeChambeau",
           "leagueRank": null
-        },
-        {
-          "member": "Paul",
-          "eventId": "pga",
-          "eventName": "PGA",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "60",
-          "pick": "Rickie Fowler",
-          "leagueRank": null
-        }
-      ]
-    },
-    {
-      "eventId": "pga-championship",
-      "eventName": "PGA Championship",
-      "tier": "regular",
-      "startDate": null,
-      "countsTowardSeasonTotals": true,
-      "totalPurse": 0,
-      "firstPrize": 0,
-      "rows": [
-        {
-          "member": "Dakota",
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 337250,
-          "finish": "14",
-          "pick": "Matthew Fitzpatrick",
-          "leagueRank": 32
-        },
-        {
-          "member": "Andrew",
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 133000,
-          "finish": "26",
-          "pick": "Cameron Young",
-          "leagueRank": 140
-        },
-        {
-          "member": "Paul",
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 41990,
-          "finish": "60",
-          "pick": "Rickie Fowler",
-          "leagueRank": 55
-        },
-        {
-          "member": "Mike",
-          "eventId": "pga-championship",
-          "eventName": "PGA Championship",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "112",
-          "pick": "Bryson DeChambeau",
-          "leagueRank": 36
         }
       ]
     },
     {
       "eventId": "the-cj-cup-byron-nelson",
-      "eventName": "THE CJ CUP Byron Nelson",
+      "eventName": "The CJ Cup Byron Nelson",
       "tier": "regular",
-      "startDate": "May 21 - 24",
+      "startDate": null,
       "countsTowardSeasonTotals": false,
-      "totalPurse": 10300000,
-      "firstPrize": 1782000,
+      "totalPurse": 0,
+      "firstPrize": 0,
       "rows": [
         {
           "member": "Andrew",
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
-          "totalPurse": 10300000,
-          "firstPrize": 1782000,
+          "totalPurse": 0,
+          "firstPrize": 0,
           "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "finish": "$0",
+          "pick": "Rasmus Hojgaard",
+          "leagueRank": 143
         },
         {
           "member": "Dakota",
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
-          "totalPurse": 10300000,
-          "firstPrize": 1782000,
+          "totalPurse": 0,
+          "firstPrize": 0,
           "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "finish": "$0",
+          "pick": "Michael Brennan",
+          "leagueRank": 30
         },
         {
           "member": "Mike",
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
-          "totalPurse": 10300000,
-          "firstPrize": 1782000,
+          "totalPurse": 0,
+          "firstPrize": 0,
           "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "finish": "$0",
+          "pick": "Si Woo Kim",
+          "leagueRank": 42
         },
         {
           "member": "Paul",
           "eventId": "the-cj-cup-byron-nelson",
-          "eventName": "THE CJ CUP Byron Nelson",
+          "eventName": "The CJ Cup Byron Nelson",
           "tier": "regular",
-          "totalPurse": 10300000,
-          "firstPrize": 1782000,
+          "totalPurse": 0,
+          "firstPrize": 0,
           "earnings": 0,
-          "finish": null,
-          "pick": null,
-          "leagueRank": null
+          "finish": "$0",
+          "pick": "Jordan Spieth",
+          "leagueRank": 59
         }
       ]
     }
@@ -5856,6 +5765,156 @@
           "earnings": 0
         }
       ]
+    },
+    {
+      "eventId": "the-cj-cup-byron-nelson",
+      "eventName": "The CJ Cup Byron Nelson",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": false,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "totalEntrants": 138,
+      "rows": [
+        {
+          "golfer": "Jordan Spieth",
+          "pickCount": 44,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Si Woo Kim",
+          "pickCount": 17,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Ryo Hisatsune",
+          "pickCount": 12,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Brooks Koepka",
+          "pickCount": 8,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Michael Thorbjornsen",
+          "pickCount": 7,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Sungjae Im",
+          "pickCount": 7,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Max Greyserman",
+          "pickCount": 6,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Wyndham Clark",
+          "pickCount": 6,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Pierceson Coody",
+          "pickCount": 4,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Haotong Li",
+          "pickCount": 3,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Michael Brennan",
+          "pickCount": 3,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Rasmus Hojgaard",
+          "pickCount": 3,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Scottie Scheffler",
+          "pickCount": 3,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Chris Kirk",
+          "pickCount": 2,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Christiaan Bezuidenhout",
+          "pickCount": 2,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Davis Thompson",
+          "pickCount": 2,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Stephan Jaeger",
+          "pickCount": 2,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Tony Finau",
+          "pickCount": 2,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Billy Horschel",
+          "pickCount": 1,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Mac Meissner",
+          "pickCount": 1,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Matthias Schmid",
+          "pickCount": 1,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Max McGreevy",
+          "pickCount": 1,
+          "finish": "$0",
+          "earnings": 0
+        },
+        {
+          "golfer": "Tom Hoge",
+          "pickCount": 1,
+          "finish": "$0",
+          "earnings": 0
+        }
+      ]
     }
   ],
   "whoGainedThisWeek": [
@@ -5868,8 +5927,8 @@
       "projectedDupCount": 0,
       "futureValue": 1174617,
       "worldRank": 1,
-      "fedexPoints": 2431,
-      "seasonEarnings": 10566430,
+      "fedexPoints": 2521,
+      "seasonEarnings": 10931193,
       "inNextTournament": true,
       "historicalStrength": 0.79338,
       "sourceRefs": [
@@ -5885,8 +5944,8 @@
       "projectedDupCount": 0,
       "futureValue": 1068186,
       "worldRank": 2,
-      "fedexPoints": 1278,
-      "seasonEarnings": 6956975,
+      "fedexPoints": 1503,
+      "seasonEarnings": 7594025,
       "inNextTournament": false,
       "historicalStrength": 0.42661499999999997,
       "sourceRefs": [
@@ -5917,8 +5976,8 @@
       "projectedDupCount": 0,
       "futureValue": 936372,
       "worldRank": 4,
-      "fedexPoints": 935,
-      "seasonEarnings": 3394486,
+      "fedexPoints": 1080,
+      "seasonEarnings": 3891194,
       "inNextTournament": false,
       "historicalStrength": 0.24250500000000003,
       "sourceRefs": [
@@ -5933,8 +5992,8 @@
       "projectedDupCount": 0,
       "futureValue": 893938,
       "worldRank": 5,
-      "fedexPoints": 1727,
-      "seasonEarnings": 6655930,
+      "fedexPoints": 1737,
+      "seasonEarnings": 6690116,
       "inNextTournament": false,
       "historicalStrength": 0.25088,
       "sourceRefs": [
@@ -5949,8 +6008,8 @@
       "projectedDupCount": 0,
       "futureValue": 859266,
       "worldRank": 6,
-      "fedexPoints": 1407,
-      "seasonEarnings": 4975544,
+      "fedexPoints": 1552,
+      "seasonEarnings": 5472252,
       "inNextTournament": false,
       "historicalStrength": 0.229845,
       "sourceRefs": [
@@ -6013,8 +6072,8 @@
       "projectedDupCount": 0,
       "futureValue": 762124,
       "worldRank": 10,
-      "fedexPoints": 1042,
-      "seasonEarnings": 4208988,
+      "fedexPoints": 1267,
+      "seasonEarnings": 4846038,
       "inNextTournament": false,
       "historicalStrength": 0.20656500000000003,
       "sourceRefs": [
@@ -6029,8 +6088,8 @@
       "projectedDupCount": 0,
       "futureValue": 743999,
       "worldRank": 11,
-      "fedexPoints": 618,
-      "seasonEarnings": 2199898,
+      "fedexPoints": 708,
+      "seasonEarnings": 2564660,
       "inNextTournament": false,
       "historicalStrength": 0.202155,
       "sourceRefs": [
@@ -6045,8 +6104,8 @@
       "projectedDupCount": 0,
       "futureValue": 727453,
       "worldRank": 12,
-      "fedexPoints": 806,
-      "seasonEarnings": 2916770,
+      "fedexPoints": 843,
+      "seasonEarnings": 3042294,
       "inNextTournament": false,
       "historicalStrength": 0.20518999999999998,
       "sourceRefs": [
@@ -6077,8 +6136,8 @@
       "projectedDupCount": 0,
       "futureValue": 698138,
       "worldRank": 14,
-      "fedexPoints": 395,
-      "seasonEarnings": 1483785,
+      "fedexPoints": 695,
+      "seasonEarnings": 2327652,
       "inNextTournament": false,
       "historicalStrength": 0.192165,
       "sourceRefs": [
@@ -6093,8 +6152,8 @@
       "projectedDupCount": 0,
       "futureValue": 685018,
       "worldRank": 15,
-      "fedexPoints": 632,
-      "seasonEarnings": 2024258,
+      "fedexPoints": 689,
+      "seasonEarnings": 2253387,
       "inNextTournament": false,
       "historicalStrength": 0.18028,
       "sourceRefs": [
@@ -6109,8 +6168,8 @@
       "projectedDupCount": 0,
       "futureValue": 672745,
       "worldRank": 16,
-      "fedexPoints": 504,
-      "seasonEarnings": 1825392,
+      "fedexPoints": 541,
+      "seasonEarnings": 1950915,
       "inNextTournament": false,
       "historicalStrength": 0.17915,
       "sourceRefs": [
@@ -6187,8 +6246,8 @@
       "projectedDupCount": 0,
       "futureValue": 621032,
       "worldRank": 21,
-      "fedexPoints": 2504,
-      "seasonEarnings": 11794670,
+      "fedexPoints": 2541,
+      "seasonEarnings": 11920193,
       "inNextTournament": false,
       "historicalStrength": 0.18081,
       "sourceRefs": [
@@ -6203,8 +6262,8 @@
       "projectedDupCount": 0,
       "futureValue": 612186,
       "worldRank": 22,
-      "fedexPoints": 2404,
-      "seasonEarnings": 10595426,
+      "fedexPoints": 2494,
+      "seasonEarnings": 10960188,
       "inNextTournament": false,
       "historicalStrength": 0.15303,
       "sourceRefs": [
@@ -6219,8 +6278,8 @@
       "projectedDupCount": 0,
       "futureValue": 603732,
       "worldRank": 23,
-      "fedexPoints": 1330,
-      "seasonEarnings": 4516733,
+      "fedexPoints": 1630,
+      "seasonEarnings": 5360600,
       "inNextTournament": false,
       "historicalStrength": 0.170845,
       "sourceRefs": [
@@ -6235,8 +6294,8 @@
       "projectedDupCount": 0,
       "futureValue": 595639,
       "worldRank": 24,
-      "fedexPoints": 519,
-      "seasonEarnings": 2012782,
+      "fedexPoints": 576,
+      "seasonEarnings": 2241911,
       "inNextTournament": false,
       "historicalStrength": 0.147945,
       "sourceRefs": [
@@ -6265,8 +6324,8 @@
       "projectedDupCount": 0,
       "futureValue": 580417,
       "worldRank": 26,
-      "fedexPoints": 746,
-      "seasonEarnings": 2619223,
+      "fedexPoints": 751,
+      "seasonEarnings": 2644293,
       "inNextTournament": false,
       "historicalStrength": 0.144795,
       "sourceRefs": [
@@ -6281,8 +6340,8 @@
       "projectedDupCount": 0,
       "futureValue": 573240,
       "worldRank": 27,
-      "fedexPoints": 511,
-      "seasonEarnings": 1847968,
+      "fedexPoints": 526,
+      "seasonEarnings": 1898316,
       "inNextTournament": false,
       "historicalStrength": 0.14218,
       "sourceRefs": [
@@ -6293,12 +6352,12 @@
     },
     {
       "golfer": "Si Woo Kim",
-      "projectedEarnings": 282330,
-      "projectedDupCount": 0.37,
-      "futureValue": 564774,
+      "projectedEarnings": 278909,
+      "projectedDupCount": 0,
+      "futureValue": 562260,
       "worldRank": 28,
-      "fedexPoints": 1380,
-      "seasonEarnings": 4838855,
+      "fedexPoints": 1404,
+      "seasonEarnings": 4917661,
       "inNextTournament": true,
       "historicalStrength": 0.143705,
       "sourceRefs": [
@@ -6314,8 +6373,8 @@
       "projectedDupCount": 0,
       "futureValue": 559651,
       "worldRank": 29,
-      "fedexPoints": 726,
-      "seasonEarnings": 2390160,
+      "fedexPoints": 763,
+      "seasonEarnings": 2515683,
       "inNextTournament": false,
       "historicalStrength": 0.13157000000000002,
       "sourceRefs": [
@@ -6330,8 +6389,8 @@
       "projectedDupCount": 0,
       "futureValue": 553204,
       "worldRank": 30,
-      "fedexPoints": 860,
-      "seasonEarnings": 3598421,
+      "fedexPoints": 1005,
+      "seasonEarnings": 4095129,
       "inNextTournament": false,
       "historicalStrength": 0.13591999999999999,
       "sourceRefs": [
@@ -6346,8 +6405,8 @@
       "projectedDupCount": 0,
       "futureValue": 546969,
       "worldRank": 31,
-      "fedexPoints": 669,
-      "seasonEarnings": 2491903,
+      "fedexPoints": 692,
+      "seasonEarnings": 2570708,
       "inNextTournament": false,
       "historicalStrength": 0.12712,
       "sourceRefs": [
@@ -6362,8 +6421,8 @@
       "projectedDupCount": 0,
       "futureValue": 540931,
       "worldRank": 32,
-      "fedexPoints": 1097,
-      "seasonEarnings": 4348499,
+      "fedexPoints": 1154,
+      "seasonEarnings": 4577627,
       "inNextTournament": false,
       "historicalStrength": 0.137715,
       "sourceRefs": [
@@ -6374,19 +6433,18 @@
     },
     {
       "golfer": "Aaron Rai",
-      "projectedEarnings": 133442,
-      "projectedDupCount": 0.13,
-      "futureValue": 420855,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 535079,
       "worldRank": 33,
-      "fedexPoints": 167,
-      "seasonEarnings": 521334,
-      "inNextTournament": true,
+      "fedexPoints": 917,
+      "seasonEarnings": 4211334,
+      "inNextTournament": false,
       "historicalStrength": 0.12401,
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis"
+        "OWGR fallback"
       ]
     },
     {
@@ -6439,8 +6497,8 @@
       "projectedDupCount": 0,
       "futureValue": 513322,
       "worldRank": 37,
-      "fedexPoints": 479,
-      "seasonEarnings": 1793379,
+      "fedexPoints": 486,
+      "seasonEarnings": 1820279,
       "inNextTournament": false,
       "historicalStrength": 0.10964499999999999,
       "sourceRefs": [
@@ -6455,8 +6513,8 @@
       "projectedDupCount": 0,
       "futureValue": 508251,
       "worldRank": 38,
-      "fedexPoints": 298,
-      "seasonEarnings": 1204894,
+      "fedexPoints": 309,
+      "seasonEarnings": 1239080,
       "inNextTournament": false,
       "historicalStrength": 0.10978000000000002,
       "sourceRefs": [
@@ -6519,8 +6577,8 @@
       "projectedDupCount": 0,
       "futureValue": 489218,
       "worldRank": 42,
-      "fedexPoints": 334,
-      "seasonEarnings": 1242673,
+      "fedexPoints": 371,
+      "seasonEarnings": 1368197,
       "inNextTournament": false,
       "historicalStrength": 0.10378499999999999,
       "sourceRefs": [
@@ -6535,8 +6593,8 @@
       "projectedDupCount": 0,
       "futureValue": 484744,
       "worldRank": 43,
-      "fedexPoints": 1094,
-      "seasonEarnings": 5009729,
+      "fedexPoints": 1109,
+      "seasonEarnings": 5060077,
       "inNextTournament": false,
       "historicalStrength": 0.10405500000000001,
       "sourceRefs": [
@@ -6551,8 +6609,8 @@
       "projectedDupCount": 0,
       "futureValue": 480372,
       "worldRank": 44,
-      "fedexPoints": 379,
-      "seasonEarnings": 1415339,
+      "fedexPoints": 402,
+      "seasonEarnings": 1494145,
       "inNextTournament": false,
       "historicalStrength": 0.10582499999999999,
       "sourceRefs": [
@@ -6563,12 +6621,12 @@
     },
     {
       "golfer": "Michael Brennan",
-      "projectedEarnings": 115132,
-      "projectedDupCount": 0.16,
-      "futureValue": 378726,
+      "projectedEarnings": 115168,
+      "projectedDupCount": 0.14,
+      "futureValue": 378771,
       "worldRank": 45,
-      "fedexPoints": 127,
-      "seasonEarnings": 445045,
+      "fedexPoints": 130,
+      "seasonEarnings": 468955,
       "inNextTournament": true,
       "historicalStrength": 0.10496000000000001,
       "sourceRefs": [
@@ -6594,9 +6652,9 @@
     },
     {
       "golfer": "Pierceson Coody",
-      "projectedEarnings": 154112,
-      "projectedDupCount": 1.01,
-      "futureValue": 419679,
+      "projectedEarnings": 152161,
+      "projectedDupCount": 1.11,
+      "futureValue": 417643,
       "worldRank": 47,
       "fedexPoints": 577,
       "seasonEarnings": 2123874,
@@ -6611,12 +6669,12 @@
     },
     {
       "golfer": "RASMUS HOJGAARD",
-      "projectedEarnings": 116472,
-      "projectedDupCount": 0.21,
-      "futureValue": 376065,
+      "projectedEarnings": 116540,
+      "projectedDupCount": 0.22,
+      "futureValue": 376147,
       "worldRank": 48,
-      "fedexPoints": 199,
-      "seasonEarnings": 579214,
+      "fedexPoints": 206,
+      "seasonEarnings": 606114,
       "inNextTournament": true,
       "historicalStrength": 0.10134000000000001,
       "sourceRefs": [
@@ -6632,8 +6690,8 @@
       "projectedDupCount": 0,
       "futureValue": 459904,
       "worldRank": 49,
-      "fedexPoints": 119,
-      "seasonEarnings": 429180,
+      "fedexPoints": 128,
+      "seasonEarnings": 458398,
       "inNextTournament": false,
       "historicalStrength": 0.09829,
       "sourceRefs": [
@@ -6648,8 +6706,8 @@
       "projectedDupCount": 0,
       "futureValue": 456062,
       "worldRank": 50,
-      "fedexPoints": 1059,
-      "seasonEarnings": 4258570,
+      "fedexPoints": 1074,
+      "seasonEarnings": 4308918,
       "inNextTournament": false,
       "historicalStrength": 0.10018,
       "sourceRefs": [
@@ -6664,8 +6722,8 @@
       "projectedDupCount": 0,
       "futureValue": 452296,
       "worldRank": 51,
-      "fedexPoints": 431,
-      "seasonEarnings": 1561644,
+      "fedexPoints": 446,
+      "seasonEarnings": 1611992,
       "inNextTournament": false,
       "historicalStrength": 0.09802999999999999,
       "sourceRefs": [
@@ -6676,12 +6734,12 @@
     },
     {
       "golfer": "Max Greyserman",
-      "projectedEarnings": 111611,
-      "projectedDupCount": 0.06,
-      "futureValue": 364760,
+      "projectedEarnings": 118814,
+      "projectedDupCount": 0.33,
+      "futureValue": 373567,
       "worldRank": 52,
-      "fedexPoints": 152,
-      "seasonEarnings": 633577,
+      "fedexPoints": 242,
+      "seasonEarnings": 998339,
       "inNextTournament": true,
       "historicalStrength": 0.098195,
       "sourceRefs": [
@@ -6727,8 +6785,8 @@
       "projectedDupCount": 0,
       "futureValue": 437937,
       "worldRank": 55,
-      "fedexPoints": 348,
-      "seasonEarnings": 1453337,
+      "fedexPoints": 356,
+      "seasonEarnings": 1482555,
       "inNextTournament": false,
       "historicalStrength": 0.09448999999999999,
       "sourceRefs": [
@@ -6739,9 +6797,9 @@
     },
     {
       "golfer": "Michael Thorbjornsen",
-      "projectedEarnings": 125670,
-      "projectedDupCount": 0.26,
-      "futureValue": 376749,
+      "projectedEarnings": 124552,
+      "projectedDupCount": 0.32,
+      "futureValue": 375443,
       "worldRank": 56,
       "fedexPoints": 370,
       "seasonEarnings": 1362892,
@@ -6770,12 +6828,12 @@
     },
     {
       "golfer": "Rasmus Neergaard-Petersen",
-      "projectedEarnings": 102400,
+      "projectedEarnings": 102530,
       "projectedDupCount": 0.06,
-      "futureValue": 345764,
+      "futureValue": 345934,
       "worldRank": 58,
-      "fedexPoints": 121,
-      "seasonEarnings": 407415,
+      "fedexPoints": 126,
+      "seasonEarnings": 431607,
       "inNextTournament": true,
       "historicalStrength": 0.08827,
       "sourceRefs": [
@@ -6791,8 +6849,8 @@
       "projectedDupCount": 0,
       "futureValue": 424587,
       "worldRank": 59,
-      "fedexPoints": 502,
-      "seasonEarnings": 1814948,
+      "fedexPoints": 539,
+      "seasonEarnings": 1940472,
       "inNextTournament": false,
       "historicalStrength": 0.08891,
       "sourceRefs": [
@@ -6823,8 +6881,8 @@
       "projectedDupCount": 0,
       "futureValue": 418247,
       "worldRank": 61,
-      "fedexPoints": 648,
-      "seasonEarnings": 3091923,
+      "fedexPoints": 671,
+      "seasonEarnings": 3170728,
       "inNextTournament": false,
       "historicalStrength": 0.12539,
       "sourceRefs": [
@@ -6835,12 +6893,12 @@
     },
     {
       "golfer": "Taylor Pendrith",
-      "projectedEarnings": 107061,
+      "projectedEarnings": 107580,
       "projectedDupCount": 0.06,
-      "futureValue": 347328,
+      "futureValue": 347988,
       "worldRank": 62,
-      "fedexPoints": 208,
-      "seasonEarnings": 804099,
+      "fedexPoints": 223,
+      "seasonEarnings": 854448,
       "inNextTournament": true,
       "historicalStrength": 0.08354500000000001,
       "sourceRefs": [
@@ -6866,12 +6924,12 @@
     },
     {
       "golfer": "Ryo Hisatsune",
-      "projectedEarnings": 148363,
-      "projectedDupCount": 0.73,
-      "futureValue": 393088,
+      "projectedEarnings": 148115,
+      "projectedDupCount": 0.8,
+      "futureValue": 392825,
       "worldRank": 64,
-      "fedexPoints": 691,
-      "seasonEarnings": 2574380,
+      "fedexPoints": 714,
+      "seasonEarnings": 2653185,
       "inNextTournament": true,
       "historicalStrength": 0.08493,
       "sourceRefs": [
@@ -6899,9 +6957,9 @@
     },
     {
       "golfer": "Wyndham Clark",
-      "projectedEarnings": 108136,
+      "projectedEarnings": 107415,
       "projectedDupCount": 0.06,
-      "futureValue": 344531,
+      "futureValue": 343618,
       "worldRank": 66,
       "fedexPoints": 248,
       "seasonEarnings": 990686,
@@ -6920,8 +6978,8 @@
       "projectedDupCount": 0,
       "futureValue": 400406,
       "worldRank": 67,
-      "fedexPoints": 1029,
-      "seasonEarnings": 4096077,
+      "fedexPoints": 1037,
+      "seasonEarnings": 4125295,
       "inNextTournament": false,
       "historicalStrength": 0.09204999999999999,
       "sourceRefs": [
@@ -6932,26 +6990,25 @@
     },
     {
       "golfer": "Aldrich Potgieter",
-      "projectedEarnings": 122028,
-      "projectedDupCount": 0.22,
-      "futureValue": 359548,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 397589,
       "worldRank": 68,
-      "fedexPoints": 479,
-      "seasonEarnings": 1517525,
-      "inNextTournament": true,
+      "fedexPoints": 502,
+      "seasonEarnings": 1596331,
+      "inNextTournament": false,
       "historicalStrength": 0.08054,
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
-        "OWGR fallback",
-        "Weekly projection synthesis"
+        "OWGR fallback"
       ]
     },
     {
       "golfer": "Max McGreevy",
-      "projectedEarnings": 97500,
+      "projectedEarnings": 97105,
       "projectedDupCount": 0.06,
-      "futureValue": 327732,
+      "futureValue": 327202,
       "worldRank": 69,
       "fedexPoints": 162,
       "seasonEarnings": 513036,
@@ -6980,12 +7037,12 @@
     },
     {
       "golfer": "Haotong Li",
-      "projectedEarnings": 98274,
+      "projectedEarnings": 99454,
       "projectedDupCount": 0.06,
-      "futureValue": 326865,
+      "futureValue": 328432,
       "worldRank": 71,
-      "fedexPoints": 185,
-      "seasonEarnings": 620725,
+      "fedexPoints": 208,
+      "seasonEarnings": 699530,
       "inNextTournament": true,
       "historicalStrength": 0.07880000000000001,
       "sourceRefs": [
@@ -6997,9 +7054,9 @@
     },
     {
       "golfer": "Sungjae Im",
-      "projectedEarnings": 114351,
-      "projectedDupCount": 0.07,
-      "futureValue": 346487,
+      "projectedEarnings": 113240,
+      "projectedDupCount": 0.2,
+      "futureValue": 345119,
       "worldRank": 72,
       "fedexPoints": 425,
       "seasonEarnings": 1298971,
@@ -7028,9 +7085,9 @@
     },
     {
       "golfer": "Garrick Higgo",
-      "projectedEarnings": 86420,
+      "projectedEarnings": 86327,
       "projectedDupCount": 0.06,
-      "futureValue": 307761,
+      "futureValue": 307629,
       "worldRank": 74,
       "fedexPoints": 36,
       "seasonEarnings": 142280,
@@ -7045,12 +7102,12 @@
     },
     {
       "golfer": "Jordan Spieth",
-      "projectedEarnings": 132223,
-      "projectedDupCount": 0.51,
-      "futureValue": 364834,
+      "projectedEarnings": 135550,
+      "projectedDupCount": 0.39,
+      "futureValue": 368577,
       "worldRank": 75,
-      "fedexPoints": 580,
-      "seasonEarnings": 2292596,
+      "fedexPoints": 636,
+      "seasonEarnings": 2521725,
       "inNextTournament": true,
       "historicalStrength": 0.085095,
       "sourceRefs": [
@@ -7152,8 +7209,8 @@
       "projectedDupCount": 0,
       "futureValue": 361987,
       "worldRank": 82,
-      "fedexPoints": 439,
-      "seasonEarnings": 1492818,
+      "fedexPoints": 476,
+      "seasonEarnings": 1618342,
       "inNextTournament": false,
       "historicalStrength": 0.075705,
       "sourceRefs": [
@@ -7178,9 +7235,9 @@
     },
     {
       "golfer": "Billy Horschel",
-      "projectedEarnings": 94891,
+      "projectedEarnings": 94317,
       "projectedDupCount": 0.06,
-      "futureValue": 311121,
+      "futureValue": 310340,
       "worldRank": 84,
       "fedexPoints": 222,
       "seasonEarnings": 812070,
@@ -7195,9 +7252,9 @@
     },
     {
       "golfer": "Patrick Rodgers",
-      "projectedEarnings": 123097,
-      "projectedDupCount": 0.33,
-      "futureValue": 345959,
+      "projectedEarnings": 121379,
+      "projectedDupCount": 0.38,
+      "futureValue": 343925,
       "worldRank": 85,
       "fedexPoints": 568,
       "seasonEarnings": 2150814,
@@ -7226,12 +7283,12 @@
     },
     {
       "golfer": "John Parry",
-      "projectedEarnings": 91706,
+      "projectedEarnings": 91659,
       "projectedDupCount": 0.06,
-      "futureValue": 304419,
+      "futureValue": 304354,
       "worldRank": 87,
-      "fedexPoints": 229,
-      "seasonEarnings": 627837,
+      "fedexPoints": 235,
+      "seasonEarnings": 652907,
       "inNextTournament": true,
       "historicalStrength": 0.07413,
       "sourceRefs": [
@@ -7243,9 +7300,9 @@
     },
     {
       "golfer": "Adrien Saddier",
-      "projectedEarnings": 78964,
+      "projectedEarnings": 78898,
       "projectedDupCount": 0.06,
-      "futureValue": 285327,
+      "futureValue": 285228,
       "worldRank": 88,
       "fedexPoints": 28,
       "seasonEarnings": 103341,
@@ -7264,8 +7321,8 @@
       "projectedDupCount": 0,
       "futureValue": 346409,
       "worldRank": 89,
-      "fedexPoints": 191,
-      "seasonEarnings": 663456,
+      "fedexPoints": 206,
+      "seasonEarnings": 713804,
       "inNextTournament": false,
       "historicalStrength": 0.070465,
       "sourceRefs": [
@@ -7276,9 +7333,9 @@
     },
     {
       "golfer": "Jordan Smith",
-      "projectedEarnings": 102669,
+      "projectedEarnings": 101687,
       "projectedDupCount": 0.06,
-      "futureValue": 316871,
+      "futureValue": 315589,
       "worldRank": 90,
       "fedexPoints": 381,
       "seasonEarnings": 1276698,
@@ -7311,8 +7368,8 @@
       "projectedDupCount": 0,
       "futureValue": 340105,
       "worldRank": 92,
-      "fedexPoints": 80,
-      "seasonEarnings": 361460,
+      "fedexPoints": 83,
+      "seasonEarnings": 385360,
       "inNextTournament": false,
       "historicalStrength": 0.069995,
       "sourceRefs": [
@@ -7323,12 +7380,12 @@
     },
     {
       "golfer": "Christiaan Bezuidenhout",
-      "projectedEarnings": 87925,
+      "projectedEarnings": 89019,
       "projectedDupCount": 0.06,
-      "futureValue": 294690,
+      "futureValue": 296232,
       "worldRank": 93,
-      "fedexPoints": 220,
-      "seasonEarnings": 549801,
+      "fedexPoints": 243,
+      "seasonEarnings": 628607,
       "inNextTournament": true,
       "historicalStrength": 0.07218,
       "sourceRefs": [
@@ -7344,8 +7401,8 @@
       "projectedDupCount": 0,
       "futureValue": 336015,
       "worldRank": 94,
-      "fedexPoints": 315,
-      "seasonEarnings": 1142018,
+      "fedexPoints": 330,
+      "seasonEarnings": 1192366,
       "inNextTournament": false,
       "historicalStrength": 0.069135,
       "sourceRefs": [
@@ -7356,12 +7413,12 @@
     },
     {
       "golfer": "Tom Hoge",
-      "projectedEarnings": 92250,
+      "projectedEarnings": 94145,
       "projectedDupCount": 0.06,
-      "futureValue": 299315,
+      "futureValue": 301914,
       "worldRank": 95,
-      "fedexPoints": 253,
-      "seasonEarnings": 959513,
+      "fedexPoints": 290,
+      "seasonEarnings": 1085037,
       "inNextTournament": true,
       "historicalStrength": 0.06798499999999999,
       "sourceRefs": [
@@ -7373,12 +7430,12 @@
     },
     {
       "golfer": "Matti Schmid",
-      "projectedEarnings": 89191,
-      "projectedDupCount": 0.06,
-      "futureValue": 294362,
+      "projectedEarnings": 108080,
+      "projectedDupCount": 0.07,
+      "futureValue": 319522,
       "worldRank": 96,
-      "fedexPoints": 231,
-      "seasonEarnings": 748960,
+      "fedexPoints": 531,
+      "seasonEarnings": 1592827,
       "inNextTournament": true,
       "historicalStrength": 0.07177,
       "sourceRefs": [
@@ -7394,8 +7451,8 @@
       "projectedDupCount": 0,
       "futureValue": 330041,
       "worldRank": 97,
-      "fedexPoints": 690,
-      "seasonEarnings": 2398723,
+      "fedexPoints": 699,
+      "seasonEarnings": 2427941,
       "inNextTournament": false,
       "historicalStrength": 0.077845,
       "sourceRefs": [
@@ -7406,12 +7463,12 @@
     },
     {
       "golfer": "Chris Kirk",
-      "projectedEarnings": 79419,
+      "projectedEarnings": 80146,
       "projectedDupCount": 0.06,
-      "futureValue": 278844,
+      "futureValue": 279927,
       "worldRank": 98,
-      "fedexPoints": 91,
-      "seasonEarnings": 354362,
+      "fedexPoints": 106,
+      "seasonEarnings": 404710,
       "inNextTournament": true,
       "historicalStrength": 0.06745,
       "sourceRefs": [
@@ -7455,9 +7512,9 @@
     },
     {
       "golfer": "A.J. Ewart",
-      "projectedEarnings": 81059,
+      "projectedEarnings": 80596,
       "projectedDupCount": 0.06,
-      "futureValue": 218949,
+      "futureValue": 218263,
       "worldRank": 999,
       "fedexPoints": 219,
       "seasonEarnings": 629801,
@@ -7469,10 +7526,24 @@
       ]
     },
     {
-      "golfer": "Adam Hadwin",
-      "projectedEarnings": 69951,
+      "golfer": "Aaron Wise",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 201908,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Adam Hadwin",
+      "projectedEarnings": 69891,
+      "projectedDupCount": 0.06,
+      "futureValue": 201812,
       "worldRank": 999,
       "fedexPoints": 34,
       "seasonEarnings": 77071,
@@ -7485,9 +7556,9 @@
     },
     {
       "golfer": "Adam Schenk",
-      "projectedEarnings": 74914,
+      "projectedEarnings": 74678,
       "projectedDupCount": 0.06,
-      "futureValue": 209683,
+      "futureValue": 209319,
       "worldRank": 999,
       "fedexPoints": 104,
       "seasonEarnings": 375536,
@@ -7500,9 +7571,9 @@
     },
     {
       "golfer": "Adam Svensson",
-      "projectedEarnings": 71033,
+      "projectedEarnings": 70935,
       "projectedDupCount": 0.06,
-      "futureValue": 203626,
+      "futureValue": 203470,
       "worldRank": 999,
       "fedexPoints": 54,
       "seasonEarnings": 128491,
@@ -7515,9 +7586,9 @@
     },
     {
       "golfer": "Adrien Dumont de Chassart",
-      "projectedEarnings": 80696,
+      "projectedEarnings": 80245,
       "projectedDupCount": 0.06,
-      "futureValue": 218411,
+      "futureValue": 217743,
       "worldRank": 999,
       "fedexPoints": 222,
       "seasonEarnings": 583944,
@@ -7530,9 +7601,9 @@
     },
     {
       "golfer": "Alejandro Tosti",
-      "projectedEarnings": 69352,
+      "projectedEarnings": 69313,
       "projectedDupCount": 0.06,
-      "futureValue": 200950,
+      "futureValue": 200887,
       "worldRank": 999,
       "fedexPoints": 22,
       "seasonEarnings": 51142,
@@ -7549,8 +7620,8 @@
       "projectedDupCount": 0,
       "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 862,
-      "seasonEarnings": 2832750,
+      "fedexPoints": 867,
+      "seasonEarnings": 2856943,
       "inNextTournament": false,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -7563,8 +7634,8 @@
       "projectedDupCount": 0,
       "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 656,
-      "seasonEarnings": 2281550,
+      "fedexPoints": 1081,
+      "seasonEarnings": 4085550,
       "inNextTournament": false,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -7573,24 +7644,37 @@
     },
     {
       "golfer": "Andrew Putnam",
-      "projectedEarnings": 100229,
-      "projectedDupCount": 0.06,
-      "futureValue": 245674,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 455,
-      "seasonEarnings": 1670580,
+      "fedexPoints": 466,
+      "seasonEarnings": 1704766,
+      "inNextTournament": false,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
+      ]
+    },
+    {
+      "golfer": "Austin Cook",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
         "Weekly projection synthesis"
       ]
     },
     {
       "golfer": "Austin Eckroat",
-      "projectedEarnings": 79725,
+      "projectedEarnings": 79312,
       "projectedDupCount": 0.06,
-      "futureValue": 216969,
+      "futureValue": 216352,
       "worldRank": 999,
       "fedexPoints": 192,
       "seasonEarnings": 583260,
@@ -7603,9 +7687,9 @@
     },
     {
       "golfer": "Beau Hossler",
-      "projectedEarnings": 78095,
+      "projectedEarnings": 77741,
       "projectedDupCount": 0.06,
-      "futureValue": 214527,
+      "futureValue": 213993,
       "worldRank": 999,
       "fedexPoints": 181,
       "seasonEarnings": 454251,
@@ -7618,9 +7702,9 @@
     },
     {
       "golfer": "Ben Kohles",
-      "projectedEarnings": 70741,
+      "projectedEarnings": 70653,
       "projectedDupCount": 0.06,
-      "futureValue": 203163,
+      "futureValue": 203023,
       "worldRank": 999,
       "fedexPoints": 51,
       "seasonEarnings": 106978,
@@ -7633,9 +7717,9 @@
     },
     {
       "golfer": "Ben Martin",
-      "projectedEarnings": 73431,
+      "projectedEarnings": 73248,
       "projectedDupCount": 0.06,
-      "futureValue": 207388,
+      "futureValue": 207104,
       "worldRank": 999,
       "fedexPoints": 83,
       "seasonEarnings": 288563,
@@ -7648,9 +7732,9 @@
     },
     {
       "golfer": "Ben Silverman",
-      "projectedEarnings": 70296,
+      "projectedEarnings": 70224,
       "projectedDupCount": 0.06,
-      "futureValue": 202457,
+      "futureValue": 202342,
       "worldRank": 999,
       "fedexPoints": 40,
       "seasonEarnings": 94776,
@@ -7691,9 +7775,9 @@
     },
     {
       "golfer": "Brice Garnett",
-      "projectedEarnings": 71582,
+      "projectedEarnings": 71465,
       "projectedDupCount": 0.06,
-      "futureValue": 204494,
+      "futureValue": 204308,
       "worldRank": 999,
       "fedexPoints": 64,
       "seasonEarnings": 154766,
@@ -7706,12 +7790,12 @@
     },
     {
       "golfer": "Brooks Koepka",
-      "projectedEarnings": 92218,
+      "projectedEarnings": 92016,
       "projectedDupCount": 0.06,
-      "futureValue": 234870,
+      "futureValue": 234591,
       "worldRank": 999,
-      "fedexPoints": 339,
-      "seasonEarnings": 1315994,
+      "fedexPoints": 349,
+      "seasonEarnings": 1350180,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -7721,9 +7805,9 @@
     },
     {
       "golfer": "Cam Davis",
-      "projectedEarnings": 68866,
+      "projectedEarnings": 68844,
       "projectedDupCount": 0.06,
-      "futureValue": 200170,
+      "futureValue": 200135,
       "worldRank": 999,
       "fedexPoints": 7,
       "seasonEarnings": 46856,
@@ -7735,10 +7819,24 @@
       ]
     },
     {
-      "golfer": "Camilo Villegas",
-      "projectedEarnings": 68652,
+      "golfer": "Cameron Champ",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 199825,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Camilo Villegas",
+      "projectedEarnings": 68637,
+      "projectedDupCount": 0.06,
+      "futureValue": 199801,
       "worldRank": 999,
       "fedexPoints": 8,
       "seasonEarnings": 20411,
@@ -7751,9 +7849,9 @@
     },
     {
       "golfer": "Carson Young",
-      "projectedEarnings": 69692,
+      "projectedEarnings": 69641,
       "projectedDupCount": 0.06,
-      "futureValue": 201494,
+      "futureValue": 201413,
       "worldRank": 999,
       "fedexPoints": 23,
       "seasonEarnings": 84544,
@@ -7766,9 +7864,9 @@
     },
     {
       "golfer": "Chad Ramey",
-      "projectedEarnings": 79582,
+      "projectedEarnings": 79175,
       "projectedDupCount": 0.06,
-      "futureValue": 216755,
+      "futureValue": 216147,
       "worldRank": 999,
       "fedexPoints": 182,
       "seasonEarnings": 601021,
@@ -7781,9 +7879,9 @@
     },
     {
       "golfer": "Chan Kim",
-      "projectedEarnings": 69625,
+      "projectedEarnings": 69576,
       "projectedDupCount": 0.06,
-      "futureValue": 201386,
+      "futureValue": 201308,
       "worldRank": 999,
       "fedexPoints": 28,
       "seasonEarnings": 61224,
@@ -7796,12 +7894,12 @@
     },
     {
       "golfer": "Chandler Blanchet",
-      "projectedEarnings": 82828,
+      "projectedEarnings": 83266,
       "projectedDupCount": 0.06,
-      "futureValue": 221546,
+      "futureValue": 222185,
       "worldRank": 999,
-      "fedexPoints": 246,
-      "seasonEarnings": 717922,
+      "fedexPoints": 261,
+      "seasonEarnings": 768270,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -7811,9 +7909,9 @@
     },
     {
       "golfer": "Chandler Phillips",
-      "projectedEarnings": 77526,
+      "projectedEarnings": 77195,
       "projectedDupCount": 0.06,
-      "futureValue": 213669,
+      "futureValue": 213168,
       "worldRank": 999,
       "fedexPoints": 146,
       "seasonEarnings": 508913,
@@ -7825,10 +7923,24 @@
       ]
     },
     {
-      "golfer": "Christo Lamprecht",
-      "projectedEarnings": 69543,
+      "golfer": "Charley Hoffman",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 201256,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Christo Lamprecht",
+      "projectedEarnings": 69498,
+      "projectedDupCount": 0.06,
+      "futureValue": 201183,
       "worldRank": 999,
       "fedexPoints": 23,
       "seasonEarnings": 68538,
@@ -7841,24 +7953,11 @@
     },
     {
       "golfer": "Dan Brown",
-      "projectedEarnings": 0,
-      "projectedDupCount": 0,
-      "futureValue": 150000,
-      "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 269388,
-      "inNextTournament": false,
-      "sourceRefs": [
-        "PGA TOUR Official Money"
-      ]
-    },
-    {
-      "golfer": "Daniel Brown",
       "projectedEarnings": 71456,
       "projectedDupCount": 0.06,
       "futureValue": 204295,
       "worldRank": 999,
-      "fedexPoints": 108,
+      "fedexPoints": 112,
       "seasonEarnings": 0,
       "inNextTournament": true,
       "sourceRefs": [
@@ -7867,10 +7966,23 @@
       ]
     },
     {
+      "golfer": "Daniel Brown",
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 293580,
+      "inNextTournament": false,
+      "sourceRefs": [
+        "PGA TOUR Official Money"
+      ]
+    },
+    {
       "golfer": "Danny Walker",
-      "projectedEarnings": 73971,
+      "projectedEarnings": 73768,
       "projectedDupCount": 0.06,
-      "futureValue": 208226,
+      "futureValue": 207913,
       "worldRank": 999,
       "fedexPoints": 96,
       "seasonEarnings": 303219,
@@ -7883,9 +7995,9 @@
     },
     {
       "golfer": "Danny Willett",
-      "projectedEarnings": 69211,
+      "projectedEarnings": 69177,
       "projectedDupCount": 0.06,
-      "futureValue": 200724,
+      "futureValue": 200669,
       "worldRank": 999,
       "fedexPoints": 18,
       "seasonEarnings": 48781,
@@ -7898,17 +8010,16 @@
     },
     {
       "golfer": "David Ford",
-      "projectedEarnings": 75472,
-      "projectedDupCount": 0.06,
-      "futureValue": 210540,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
       "worldRank": 999,
       "fedexPoints": 128,
       "seasonEarnings": 356125,
-      "inNextTournament": true,
+      "inNextTournament": false,
       "sourceRefs": [
         "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
-        "Weekly projection synthesis"
+        "PGA TOUR Official Money"
       ]
     },
     {
@@ -7927,9 +8038,9 @@
     },
     {
       "golfer": "David Skinns",
-      "projectedEarnings": 72311,
+      "projectedEarnings": 72167,
       "projectedDupCount": 0.06,
-      "futureValue": 205640,
+      "futureValue": 205414,
       "worldRank": 999,
       "fedexPoints": 80,
       "seasonEarnings": 180499,
@@ -7942,9 +8053,9 @@
     },
     {
       "golfer": "Davis Chatfield",
-      "projectedEarnings": 70678,
+      "projectedEarnings": 70592,
       "projectedDupCount": 0.06,
-      "futureValue": 203063,
+      "futureValue": 202927,
       "worldRank": 999,
       "fedexPoints": 45,
       "seasonEarnings": 119515,
@@ -7957,9 +8068,9 @@
     },
     {
       "golfer": "Davis Riley",
-      "projectedEarnings": 75632,
+      "projectedEarnings": 75370,
       "projectedDupCount": 0.06,
-      "futureValue": 210786,
+      "futureValue": 210384,
       "worldRank": 999,
       "fedexPoints": 122,
       "seasonEarnings": 391979,
@@ -7972,9 +8083,9 @@
     },
     {
       "golfer": "Davis Thompson",
-      "projectedEarnings": 82855,
+      "projectedEarnings": 82324,
       "projectedDupCount": 0.06,
-      "futureValue": 221585,
+      "futureValue": 220809,
       "worldRank": 999,
       "fedexPoints": 248,
       "seasonEarnings": 714119,
@@ -7987,9 +8098,9 @@
     },
     {
       "golfer": "Doug Ghim",
-      "projectedEarnings": 76550,
+      "projectedEarnings": 76253,
       "projectedDupCount": 0.06,
-      "futureValue": 212187,
+      "futureValue": 211735,
       "worldRank": 999,
       "fedexPoints": 149,
       "seasonEarnings": 399540,
@@ -8002,9 +8113,9 @@
     },
     {
       "golfer": "Dylan Wu",
-      "projectedEarnings": 71957,
+      "projectedEarnings": 71825,
       "projectedDupCount": 0.06,
-      "futureValue": 205083,
+      "futureValue": 204877,
       "worldRank": 999,
       "fedexPoints": 70,
       "seasonEarnings": 175136,
@@ -8017,9 +8128,9 @@
     },
     {
       "golfer": "Emiliano Grillo",
-      "projectedEarnings": 75429,
+      "projectedEarnings": 75175,
       "projectedDupCount": 0.06,
-      "futureValue": 210475,
+      "futureValue": 210084,
       "worldRank": 999,
       "fedexPoints": 114,
       "seasonEarnings": 396748,
@@ -8046,9 +8157,9 @@
     },
     {
       "golfer": "Eric Cole",
-      "projectedEarnings": 84558,
+      "projectedEarnings": 83962,
       "projectedDupCount": 0.06,
-      "futureValue": 224059,
+      "futureValue": 223197,
       "worldRank": 999,
       "fedexPoints": 271,
       "seasonEarnings": 806726,
@@ -8061,9 +8172,9 @@
     },
     {
       "golfer": "Erik van Rooyen",
-      "projectedEarnings": 70608,
+      "projectedEarnings": 70525,
       "projectedDupCount": 0.06,
-      "futureValue": 202953,
+      "futureValue": 202820,
       "worldRank": 999,
       "fedexPoints": 44,
       "seasonEarnings": 115275,
@@ -8071,6 +8182,20 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Fabián Gómez",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
         "Weekly projection synthesis"
       ]
     },
@@ -8104,9 +8229,9 @@
     },
     {
       "golfer": "Gordon Sargent",
-      "projectedEarnings": 71731,
+      "projectedEarnings": 71608,
       "projectedDupCount": 0.06,
-      "futureValue": 204728,
+      "futureValue": 204534,
       "worldRank": 999,
       "fedexPoints": 64,
       "seasonEarnings": 170526,
@@ -8119,9 +8244,9 @@
     },
     {
       "golfer": "Hank Lebioda",
-      "projectedEarnings": 76522,
+      "projectedEarnings": 76227,
       "projectedDupCount": 0.06,
-      "futureValue": 212144,
+      "futureValue": 211695,
       "worldRank": 999,
       "fedexPoints": 136,
       "seasonEarnings": 438417,
@@ -8133,10 +8258,24 @@
       ]
     },
     {
-      "golfer": "Hayden Springer",
-      "projectedEarnings": 78459,
+      "golfer": "Harry Higgs",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 215074,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Hayden Springer",
+      "projectedEarnings": 78093,
+      "projectedDupCount": 0.06,
+      "futureValue": 214523,
       "worldRank": 999,
       "fedexPoints": 171,
       "seasonEarnings": 523212,
@@ -8149,9 +8288,9 @@
     },
     {
       "golfer": "Henrik Norlander",
-      "projectedEarnings": 68663,
+      "projectedEarnings": 68648,
       "projectedDupCount": 0.06,
-      "futureValue": 199843,
+      "futureValue": 199818,
       "worldRank": 999,
       "fedexPoints": 6,
       "seasonEarnings": 28015,
@@ -8178,9 +8317,9 @@
     },
     {
       "golfer": "Jackson Suber",
-      "projectedEarnings": 71347,
+      "projectedEarnings": 71237,
       "projectedDupCount": 0.06,
-      "futureValue": 204122,
+      "futureValue": 203949,
       "worldRank": 999,
       "fedexPoints": 58,
       "seasonEarnings": 149009,
@@ -8193,9 +8332,9 @@
     },
     {
       "golfer": "James Hahn",
-      "projectedEarnings": 68398,
+      "projectedEarnings": 68392,
       "projectedDupCount": 0.06,
-      "futureValue": 199416,
+      "futureValue": 199406,
       "worldRank": 999,
       "fedexPoints": 3,
       "seasonEarnings": 8920,
@@ -8208,9 +8347,9 @@
     },
     {
       "golfer": "Jeffrey Kang",
-      "projectedEarnings": 72823,
+      "projectedEarnings": 72662,
       "projectedDupCount": 0.06,
-      "futureValue": 206441,
+      "futureValue": 206189,
       "worldRank": 999,
       "fedexPoints": 76,
       "seasonEarnings": 247307,
@@ -8223,9 +8362,9 @@
     },
     {
       "golfer": "Jeremy Paul",
-      "projectedEarnings": 70262,
+      "projectedEarnings": 70191,
       "projectedDupCount": 0.06,
-      "futureValue": 202402,
+      "futureValue": 202289,
       "worldRank": 999,
       "fedexPoints": 38,
       "seasonEarnings": 97500,
@@ -8238,9 +8377,9 @@
     },
     {
       "golfer": "Jesper Svensson",
-      "projectedEarnings": 70542,
+      "projectedEarnings": 70462,
       "projectedDupCount": 0.06,
-      "futureValue": 202848,
+      "futureValue": 202720,
       "worldRank": 999,
       "fedexPoints": 41,
       "seasonEarnings": 117894,
@@ -8253,12 +8392,12 @@
     },
     {
       "golfer": "Jhonattan Vegas",
-      "projectedEarnings": 79115,
+      "projectedEarnings": 79672,
       "projectedDupCount": 0.06,
-      "futureValue": 216058,
+      "futureValue": 216890,
       "worldRank": 999,
-      "fedexPoints": 151,
-      "seasonEarnings": 653713,
+      "fedexPoints": 166,
+      "seasonEarnings": 704061,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8268,9 +8407,9 @@
     },
     {
       "golfer": "Jimmy Stanger",
-      "projectedEarnings": 72118,
+      "projectedEarnings": 71981,
       "projectedDupCount": 0.06,
-      "futureValue": 205337,
+      "futureValue": 205122,
       "worldRank": 999,
       "fedexPoints": 76,
       "seasonEarnings": 172964,
@@ -8283,9 +8422,9 @@
     },
     {
       "golfer": "Joe Highsmith",
-      "projectedEarnings": 73058,
+      "projectedEarnings": 72890,
       "projectedDupCount": 0.06,
-      "futureValue": 206808,
+      "futureValue": 206544,
       "worldRank": 999,
       "fedexPoints": 65,
       "seasonEarnings": 307299,
@@ -8298,9 +8437,9 @@
     },
     {
       "golfer": "Joel Dahmen",
-      "projectedEarnings": 80171,
+      "projectedEarnings": 79743,
       "projectedDupCount": 0.06,
-      "futureValue": 217633,
+      "futureValue": 216995,
       "worldRank": 999,
       "fedexPoints": 184,
       "seasonEarnings": 653674,
@@ -8313,9 +8452,9 @@
     },
     {
       "golfer": "John VanDerLaan",
-      "projectedEarnings": 70968,
+      "projectedEarnings": 70872,
       "projectedDupCount": 0.06,
-      "futureValue": 203523,
+      "futureValue": 203371,
       "worldRank": 999,
       "fedexPoints": 51,
       "seasonEarnings": 131171,
@@ -8328,12 +8467,12 @@
     },
     {
       "golfer": "Johnny Keefer",
-      "projectedEarnings": 83134,
+      "projectedEarnings": 82955,
       "projectedDupCount": 0.06,
-      "futureValue": 221993,
+      "futureValue": 221732,
       "worldRank": 999,
-      "fedexPoints": 235,
-      "seasonEarnings": 783302,
+      "fedexPoints": 239,
+      "seasonEarnings": 807272,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8342,10 +8481,24 @@
       ]
     },
     {
-      "golfer": "Justin Lower",
-      "projectedEarnings": 70363,
+      "golfer": "Jonathan Byrd",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 202564,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Justin Lower",
+      "projectedEarnings": 70289,
+      "projectedDupCount": 0.06,
+      "futureValue": 202445,
       "worldRank": 999,
       "fedexPoints": 38,
       "seasonEarnings": 108393,
@@ -8357,10 +8510,24 @@
       ]
     },
     {
-      "golfer": "Karl Vilips",
-      "projectedEarnings": 78729,
+      "golfer": "K.H. Lee",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 215480,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Karl Vilips",
+      "projectedEarnings": 78352,
+      "projectedDupCount": 0.06,
+      "futureValue": 214914,
       "worldRank": 999,
       "fedexPoints": 184,
       "seasonEarnings": 508760,
@@ -8373,9 +8540,9 @@
     },
     {
       "golfer": "Keita Nakajima",
-      "projectedEarnings": 70437,
+      "projectedEarnings": 70360,
       "projectedDupCount": 0.06,
-      "futureValue": 202682,
+      "futureValue": 202559,
       "worldRank": 999,
       "fedexPoints": 38,
       "seasonEarnings": 116320,
@@ -8388,12 +8555,12 @@
     },
     {
       "golfer": "Keith Mitchell",
-      "projectedEarnings": 87969,
+      "projectedEarnings": 87743,
       "projectedDupCount": 0.06,
-      "futureValue": 228934,
+      "futureValue": 228616,
       "worldRank": 999,
-      "fedexPoints": 295,
-      "seasonEarnings": 1057800,
+      "fedexPoints": 302,
+      "seasonEarnings": 1084700,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8403,9 +8570,9 @@
     },
     {
       "golfer": "Kensei Hirata",
-      "projectedEarnings": 71142,
+      "projectedEarnings": 71040,
       "projectedDupCount": 0.06,
-      "futureValue": 203798,
+      "futureValue": 203637,
       "worldRank": 999,
       "fedexPoints": 52,
       "seasonEarnings": 146494,
@@ -8418,9 +8585,9 @@
     },
     {
       "golfer": "Kevin Roy",
-      "projectedEarnings": 85200,
+      "projectedEarnings": 84580,
       "projectedDupCount": 0.06,
-      "futureValue": 224985,
+      "futureValue": 224091,
       "worldRank": 999,
       "fedexPoints": 280,
       "seasonEarnings": 840158,
@@ -8433,9 +8600,9 @@
     },
     {
       "golfer": "Kevin Streelman",
-      "projectedEarnings": 72439,
+      "projectedEarnings": 72291,
       "projectedDupCount": 0.06,
-      "futureValue": 205839,
+      "futureValue": 205607,
       "worldRank": 999,
       "fedexPoints": 76,
       "seasonEarnings": 206780,
@@ -8448,9 +8615,9 @@
     },
     {
       "golfer": "Kevin Yu",
-      "projectedEarnings": 75929,
+      "projectedEarnings": 75656,
       "projectedDupCount": 0.06,
-      "futureValue": 211240,
+      "futureValue": 210823,
       "worldRank": 999,
       "fedexPoints": 121,
       "seasonEarnings": 425747,
@@ -8463,9 +8630,9 @@
     },
     {
       "golfer": "Kris Ventura",
-      "projectedEarnings": 78787,
+      "projectedEarnings": 78409,
       "projectedDupCount": 0.06,
-      "futureValue": 215567,
+      "futureValue": 214999,
       "worldRank": 999,
       "fedexPoints": 171,
       "seasonEarnings": 556359,
@@ -8478,9 +8645,9 @@
     },
     {
       "golfer": "Lanto Griffin",
-      "projectedEarnings": 71404,
+      "projectedEarnings": 71293,
       "projectedDupCount": 0.06,
-      "futureValue": 204213,
+      "futureValue": 204037,
       "worldRank": 999,
       "fedexPoints": 61,
       "seasonEarnings": 145493,
@@ -8493,9 +8660,9 @@
     },
     {
       "golfer": "Lee Hodges",
-      "projectedEarnings": 78355,
+      "projectedEarnings": 77993,
       "projectedDupCount": 0.06,
-      "futureValue": 214918,
+      "futureValue": 214374,
       "worldRank": 999,
       "fedexPoints": 163,
       "seasonEarnings": 538423,
@@ -8508,9 +8675,9 @@
     },
     {
       "golfer": "Luke Clanton",
-      "projectedEarnings": 72519,
+      "projectedEarnings": 72369,
       "projectedDupCount": 0.06,
-      "futureValue": 205966,
+      "futureValue": 205730,
       "worldRank": 999,
       "fedexPoints": 75,
       "seasonEarnings": 218506,
@@ -8527,18 +8694,33 @@
       "projectedDupCount": 0,
       "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
+      "fedexPoints": 6,
+      "seasonEarnings": 25070,
       "inNextTournament": false,
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
+      ]
+    },
+    {
+      "golfer": "Luke List",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
       ]
     },
     {
       "golfer": "Mac Meissner",
-      "projectedEarnings": 79578,
+      "projectedEarnings": 79170,
       "projectedDupCount": 0.06,
-      "futureValue": 216750,
+      "futureValue": 216140,
       "worldRank": 999,
       "fedexPoints": 200,
       "seasonEarnings": 542816,
@@ -8551,9 +8733,9 @@
     },
     {
       "golfer": "Mackenzie Hughes",
-      "projectedEarnings": 74524,
+      "projectedEarnings": 74302,
       "projectedDupCount": 0.06,
-      "futureValue": 209082,
+      "futureValue": 208739,
       "worldRank": 999,
       "fedexPoints": 105,
       "seasonEarnings": 331897,
@@ -8566,9 +8748,9 @@
     },
     {
       "golfer": "Marcelo Rozo",
-      "projectedEarnings": 68880,
+      "projectedEarnings": 68857,
       "projectedDupCount": 0.06,
-      "futureValue": 200192,
+      "futureValue": 200156,
       "worldRank": 999,
       "fedexPoints": 10,
       "seasonEarnings": 38672,
@@ -8581,9 +8763,9 @@
     },
     {
       "golfer": "Mark Hubbard",
-      "projectedEarnings": 80512,
+      "projectedEarnings": 80069,
       "projectedDupCount": 0.06,
-      "futureValue": 218139,
+      "futureValue": 217481,
       "worldRank": 999,
       "fedexPoints": 215,
       "seasonEarnings": 588154,
@@ -8596,9 +8778,9 @@
     },
     {
       "golfer": "Martin Laird",
-      "projectedEarnings": 68571,
+      "projectedEarnings": 68559,
       "projectedDupCount": 0.06,
-      "futureValue": 199695,
+      "futureValue": 199676,
       "worldRank": 999,
       "fedexPoints": 6,
       "seasonEarnings": 18080,
@@ -8611,9 +8793,9 @@
     },
     {
       "golfer": "Matt Kuchar",
-      "projectedEarnings": 70009,
+      "projectedEarnings": 69946,
       "projectedDupCount": 0.06,
-      "futureValue": 201999,
+      "futureValue": 201900,
       "worldRank": 999,
       "fedexPoints": 35,
       "seasonEarnings": 80004,
@@ -8626,9 +8808,9 @@
     },
     {
       "golfer": "Matthieu Pavon",
-      "projectedEarnings": 79059,
+      "projectedEarnings": 78670,
       "projectedDupCount": 0.06,
-      "futureValue": 215974,
+      "futureValue": 215392,
       "worldRank": 999,
       "fedexPoints": 185,
       "seasonEarnings": 538821,
@@ -8655,9 +8837,9 @@
     },
     {
       "golfer": "Neal Shipley",
-      "projectedEarnings": 68949,
+      "projectedEarnings": 68923,
       "projectedDupCount": 0.06,
-      "futureValue": 200302,
+      "futureValue": 200262,
       "worldRank": 999,
       "fedexPoints": 13,
       "seasonEarnings": 36472,
@@ -8670,9 +8852,9 @@
     },
     {
       "golfer": "Nick Dunlap",
-      "projectedEarnings": 70514,
+      "projectedEarnings": 70434,
       "projectedDupCount": 0.06,
-      "futureValue": 202803,
+      "futureValue": 202675,
       "worldRank": 999,
       "fedexPoints": 45,
       "seasonEarnings": 101978,
@@ -8685,9 +8867,9 @@
     },
     {
       "golfer": "Nick Hardy",
-      "projectedEarnings": 68975,
+      "projectedEarnings": 68949,
       "projectedDupCount": 0.06,
-      "futureValue": 200344,
+      "futureValue": 200303,
       "worldRank": 999,
       "fedexPoints": 14,
       "seasonEarnings": 36100,
@@ -8713,23 +8895,38 @@
       ]
     },
     {
+      "golfer": "Noah Goodwin",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
       "golfer": "Padraig Harrington",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
       "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
+      "fedexPoints": 56,
+      "seasonEarnings": 229129,
       "inNextTournament": false,
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ]
     },
     {
       "golfer": "Patrick Fishburn",
-      "projectedEarnings": 70572,
+      "projectedEarnings": 70490,
       "projectedDupCount": 0.06,
-      "futureValue": 202896,
+      "futureValue": 202766,
       "worldRank": 999,
       "fedexPoints": 46,
       "seasonEarnings": 105051,
@@ -8742,9 +8939,9 @@
     },
     {
       "golfer": "Patton Kizzire",
-      "projectedEarnings": 73570,
+      "projectedEarnings": 73382,
       "projectedDupCount": 0.06,
-      "futureValue": 207604,
+      "futureValue": 207311,
       "worldRank": 999,
       "fedexPoints": 92,
       "seasonEarnings": 274171,
@@ -8757,9 +8954,9 @@
     },
     {
       "golfer": "Paul Peterson",
-      "projectedEarnings": 73414,
+      "projectedEarnings": 73231,
       "projectedDupCount": 0.06,
-      "futureValue": 207362,
+      "futureValue": 207077,
       "worldRank": 999,
       "fedexPoints": 96,
       "seasonEarnings": 245000,
@@ -8786,9 +8983,9 @@
     },
     {
       "golfer": "Peter Malnati",
-      "projectedEarnings": 69795,
+      "projectedEarnings": 69741,
       "projectedDupCount": 0.06,
-      "futureValue": 201658,
+      "futureValue": 201571,
       "worldRank": 999,
       "fedexPoints": 28,
       "seasonEarnings": 79567,
@@ -8801,9 +8998,9 @@
     },
     {
       "golfer": "Pontus Nyholm",
-      "projectedEarnings": 77030,
+      "projectedEarnings": 76716,
       "projectedDupCount": 0.06,
-      "futureValue": 212917,
+      "futureValue": 212441,
       "worldRank": 999,
       "fedexPoints": 152,
       "seasonEarnings": 439061,
@@ -8816,9 +9013,9 @@
     },
     {
       "golfer": "Rafael Campos",
-      "projectedEarnings": 70176,
+      "projectedEarnings": 70108,
       "projectedDupCount": 0.06,
-      "futureValue": 202267,
+      "futureValue": 202158,
       "worldRank": 999,
       "fedexPoints": 38,
       "seasonEarnings": 88377,
@@ -8831,12 +9028,12 @@
     },
     {
       "golfer": "Rico Hoey",
-      "projectedEarnings": 76306,
+      "projectedEarnings": 76535,
       "projectedDupCount": 0.06,
-      "futureValue": 211816,
+      "futureValue": 212165,
       "worldRank": 999,
-      "fedexPoints": 138,
-      "seasonEarnings": 409885,
+      "fedexPoints": 146,
+      "seasonEarnings": 439103,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8846,9 +9043,9 @@
     },
     {
       "golfer": "Robert Streb",
-      "projectedEarnings": 68402,
+      "projectedEarnings": 68396,
       "projectedDupCount": 0.06,
-      "futureValue": 199422,
+      "futureValue": 199412,
       "worldRank": 999,
       "fedexPoints": 3,
       "seasonEarnings": 9360,
@@ -8861,9 +9058,9 @@
     },
     {
       "golfer": "Ryan Brehm",
-      "projectedEarnings": 68986,
+      "projectedEarnings": 68959,
       "projectedDupCount": 0.06,
-      "futureValue": 200362,
+      "futureValue": 200319,
       "worldRank": 999,
       "fedexPoints": 17,
       "seasonEarnings": 27636,
@@ -8871,6 +9068,20 @@
       "sourceRefs": [
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Ryan Palmer",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
         "Weekly projection synthesis"
       ]
     },
@@ -8903,10 +9114,24 @@
       ]
     },
     {
-      "golfer": "Sam Ryder",
-      "projectedEarnings": 74019,
+      "golfer": "S.Y. Noh",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 208301,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Sam Ryder",
+      "projectedEarnings": 73814,
+      "projectedDupCount": 0.06,
+      "futureValue": 207984,
       "worldRank": 999,
       "fedexPoints": 105,
       "seasonEarnings": 279325,
@@ -8923,8 +9148,8 @@
       "projectedDupCount": 0,
       "futureValue": 150000,
       "worldRank": 999,
-      "fedexPoints": 499,
-      "seasonEarnings": 1883221,
+      "fedexPoints": 506,
+      "seasonEarnings": 1910121,
       "inNextTournament": false,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8932,10 +9157,24 @@
       ]
     },
     {
-      "golfer": "Seamus Power",
-      "projectedEarnings": 78096,
+      "golfer": "Scott Piercy",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 214529,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Seamus Power",
+      "projectedEarnings": 77744,
+      "projectedDupCount": 0.06,
+      "futureValue": 213997,
       "worldRank": 999,
       "fedexPoints": 164,
       "seasonEarnings": 508995,
@@ -8948,12 +9187,12 @@
     },
     {
       "golfer": "Stephan Jaeger",
-      "projectedEarnings": 84864,
+      "projectedEarnings": 88364,
       "projectedDupCount": 0.06,
-      "futureValue": 224500,
+      "futureValue": 229493,
       "worldRank": 999,
-      "fedexPoints": 257,
-      "seasonEarnings": 881419,
+      "fedexPoints": 313,
+      "seasonEarnings": 1110548,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -8963,9 +9202,9 @@
     },
     {
       "golfer": "Steven Fisk",
-      "projectedEarnings": 78999,
+      "projectedEarnings": 78614,
       "projectedDupCount": 0.06,
-      "futureValue": 215885,
+      "futureValue": 215308,
       "worldRank": 999,
       "fedexPoints": 163,
       "seasonEarnings": 603467,
@@ -8992,9 +9231,9 @@
     },
     {
       "golfer": "Takumi Kanaya",
-      "projectedEarnings": 74974,
+      "projectedEarnings": 74736,
       "projectedDupCount": 0.06,
-      "futureValue": 209776,
+      "futureValue": 209409,
       "worldRank": 999,
       "fedexPoints": 111,
       "seasonEarnings": 359324,
@@ -9006,10 +9245,24 @@
       ]
     },
     {
-      "golfer": "Taylor Moore",
-      "projectedEarnings": 88079,
+      "golfer": "Taylor Montgomery",
+      "projectedEarnings": 68227,
       "projectedDupCount": 0.06,
-      "futureValue": 229091,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
+      "inNextTournament": true,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "Weekly projection synthesis"
+      ]
+    },
+    {
+      "golfer": "Taylor Moore",
+      "projectedEarnings": 87350,
+      "projectedDupCount": 0.06,
+      "futureValue": 228058,
       "worldRank": 999,
       "fedexPoints": 306,
       "seasonEarnings": 1033016,
@@ -9022,9 +9275,9 @@
     },
     {
       "golfer": "Thorbjørn Olesen",
-      "projectedEarnings": 72511,
+      "projectedEarnings": 72360,
       "projectedDupCount": 0.06,
-      "futureValue": 205952,
+      "futureValue": 205717,
       "worldRank": 999,
       "fedexPoints": 72,
       "seasonEarnings": 227227,
@@ -9037,9 +9290,9 @@
     },
     {
       "golfer": "Tom Kim",
-      "projectedEarnings": 78584,
+      "projectedEarnings": 78213,
       "projectedDupCount": 0.06,
-      "futureValue": 215262,
+      "futureValue": 214705,
       "worldRank": 999,
       "fedexPoints": 175,
       "seasonEarnings": 523033,
@@ -9052,9 +9305,9 @@
     },
     {
       "golfer": "Tony Finau",
-      "projectedEarnings": 85994,
+      "projectedEarnings": 85347,
       "projectedDupCount": 0.06,
-      "futureValue": 226124,
+      "futureValue": 225195,
       "worldRank": 999,
       "fedexPoints": 257,
       "seasonEarnings": 990747,
@@ -9067,9 +9320,9 @@
     },
     {
       "golfer": "Trace Crowe",
-      "projectedEarnings": 73542,
+      "projectedEarnings": 73355,
       "projectedDupCount": 0.06,
-      "futureValue": 207560,
+      "futureValue": 207270,
       "worldRank": 999,
       "fedexPoints": 84,
       "seasonEarnings": 296923,
@@ -9082,9 +9335,9 @@
     },
     {
       "golfer": "Troy Merritt",
-      "projectedEarnings": 68499,
+      "projectedEarnings": 68489,
       "projectedDupCount": 0.06,
-      "futureValue": 199578,
+      "futureValue": 199563,
       "worldRank": 999,
       "fedexPoints": 4,
       "seasonEarnings": 16640,
@@ -9097,9 +9350,9 @@
     },
     {
       "golfer": "Tyler Duncan",
-      "projectedEarnings": 68440,
+      "projectedEarnings": 68432,
       "projectedDupCount": 0.06,
-      "futureValue": 199483,
+      "futureValue": 199471,
       "worldRank": 999,
       "fedexPoints": 4,
       "seasonEarnings": 10253,
@@ -9126,9 +9379,9 @@
     },
     {
       "golfer": "Vince Whaley",
-      "projectedEarnings": 71543,
+      "projectedEarnings": 71427,
       "projectedDupCount": 0.06,
-      "futureValue": 204432,
+      "futureValue": 204249,
       "worldRank": 999,
       "fedexPoints": 61,
       "seasonEarnings": 160273,
@@ -9141,16 +9394,29 @@
     },
     {
       "golfer": "Webb Simpson",
-      "projectedEarnings": 71722,
-      "projectedDupCount": 0.06,
-      "futureValue": 204714,
+      "projectedEarnings": 0,
+      "projectedDupCount": 0,
+      "futureValue": 150000,
       "worldRank": 999,
       "fedexPoints": 61,
       "seasonEarnings": 179220,
+      "inNextTournament": false,
+      "sourceRefs": [
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
+      ]
+    },
+    {
+      "golfer": "Will Gordon",
+      "projectedEarnings": 68227,
+      "projectedDupCount": 0.06,
+      "futureValue": 199140,
+      "worldRank": 999,
+      "fedexPoints": 0,
+      "seasonEarnings": 0,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
-        "PGA TOUR Official Money",
         "Weekly projection synthesis"
       ]
     },
@@ -9170,12 +9436,12 @@
     },
     {
       "golfer": "William Mouw",
-      "projectedEarnings": 79696,
+      "projectedEarnings": 79712,
       "projectedDupCount": 0.06,
-      "futureValue": 216926,
+      "futureValue": 216950,
       "worldRank": 999,
-      "fedexPoints": 168,
-      "seasonEarnings": 657518,
+      "fedexPoints": 174,
+      "seasonEarnings": 682588,
       "inNextTournament": true,
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -9185,9 +9451,9 @@
     },
     {
       "golfer": "Zac Blair",
-      "projectedEarnings": 70856,
+      "projectedEarnings": 70764,
       "projectedDupCount": 0.06,
-      "futureValue": 203346,
+      "futureValue": 203200,
       "worldRank": 999,
       "fedexPoints": 48,
       "seasonEarnings": 128904,
@@ -9200,9 +9466,9 @@
     },
     {
       "golfer": "Zach Bauchou",
-      "projectedEarnings": 80772,
+      "projectedEarnings": 80319,
       "projectedDupCount": 0.06,
-      "futureValue": 218524,
+      "futureValue": 217852,
       "worldRank": 999,
       "fedexPoints": 222,
       "seasonEarnings": 591560,
@@ -9229,9 +9495,9 @@
     },
     {
       "golfer": "Zecheng Dou",
-      "projectedEarnings": 79509,
+      "projectedEarnings": 79104,
       "projectedDupCount": 0.06,
-      "futureValue": 216648,
+      "futureValue": 216042,
       "worldRank": 999,
       "fedexPoints": 191,
       "seasonEarnings": 564862,
@@ -9248,23 +9514,23 @@
     "Splash standings source: https://sm.app.splashsports.com/Golf/PickX/reports/pickone/standings_v2.cfm",
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
-    "Splash parsed league-wide event summaries: 17",
+    "Splash parsed league-wide event summaries: 18",
     "Splash parsed history rows: 68",
-    "Splash mapping: Andrew: rank=140, season=2818143, pick=Cameron Young, week=133000, finish=26 | Paul: rank=55, season=6403950, pick=Rickie Fowler, week=41990, finish=60 | Dakota: rank=32, season=8010251, pick=Matthew Fitzpatrick, week=337250, finish=14 | Mike: rank=36, season=7427831, pick=Bryson DeChambeau, week=0, finish=112",
-    "Online signals refreshed at 2026-05-18T00:00:16.572Z.",
-    "PGA TOUR FedExCup: 205 golfer records loaded",
-    "PGA TOUR Official Money: 200 golfer records loaded",
+    "Splash mapping: Andrew: rank=143, season=2943666, pick=Rasmus Hojgaard, week=0, finish=$0 | Paul: rank=59, season=6433168, pick=Jordan Spieth, week=0, finish=$0 | Dakota: rank=30, season=8375014, pick=Michael Brennan, week=0, finish=$0 | Mike: rank=42, season=7427831, pick=Si Woo Kim, week=0, finish=$0",
+    "Online signals refreshed at 2026-05-21T12:00:18.593Z.",
+    "PGA TOUR FedExCup: 220 golfer records loaded",
+    "PGA TOUR Official Money: 202 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: THE CJ CUP Byron Nelson",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/the-cj-cup-byron-nelson/R2026019/field",
-    "PGA TOUR field entries: 141",
-    "Opened next-tournament view for THE CJ CUP Byron Nelson after finalizing PGA Championship.",
-    "Weekly projection synthesis: 126 field golfers received modeled payout estimates",
-    "Weekly projection synthesis top field: Scottie Scheffler, Si Woo Kim, Pierceson Coody, Ryo Hisatsune, Aaron Rai",
-    "PGA TOUR betting profiles: failed (Betting profile preview: player profile list not found)"
+    "PGA TOUR field entries: 147",
+    "Weekly projection synthesis: 136 field golfers received modeled payout estimates",
+    "Weekly projection synthesis top field: Scottie Scheffler, Si Woo Kim, Pierceson Coody, Ryo Hisatsune, Jordan Spieth",
+    "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-the-cj-cup-byron-nelson-2026",
+    "PGA TOUR betting profiles matched: 0/34"
   ],
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-05-18T00:00:16.196Z"
+  "updatedAt": "2026-05-21T12:00:18.331Z"
 }
