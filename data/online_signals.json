@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-05-21T12:00:18.593Z",
+  "fetchedAt": "2026-05-22T00:00:15.416Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 220 golfer records loaded",
+    "PGA TOUR FedExCup: 210 golfer records loaded",
     "PGA TOUR Official Money: 202 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1136,13 +1136,6 @@
       "seasonEarnings": 629801
     },
     {
-      "golfer": "Aaron Wise",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Adam Hadwin",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1213,13 +1206,6 @@
       ],
       "fedexPoints": 466,
       "seasonEarnings": 1704766
-    },
-    {
-      "golfer": "Austin Cook",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Austin Eckroat",
@@ -1310,13 +1296,6 @@
       ],
       "fedexPoints": 7,
       "seasonEarnings": 46856
-    },
-    {
-      "golfer": "Cameron Champ",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Camilo Villegas",
@@ -1572,13 +1551,6 @@
       "seasonEarnings": 438417
     },
     {
-      "golfer": "Harry Higgs",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Hayden Springer",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -1719,13 +1691,6 @@
       ],
       "fedexPoints": 38,
       "seasonEarnings": 108393
-    },
-    {
-      "golfer": "K.H. Lee",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Karl Vilips",
@@ -1960,13 +1925,6 @@
       "seasonEarnings": 4308918
     },
     {
-      "golfer": "Noah Goodwin",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "Padraig Harrington",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -2075,13 +2033,6 @@
       "seasonEarnings": 27636
     },
     {
-      "golfer": "Ryan Palmer",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
-    },
-    {
       "golfer": "S.H. Kim",
       "sourceRefs": [
         "PGA TOUR FedExCup",
@@ -2123,13 +2074,6 @@
       ],
       "fedexPoints": 506,
       "seasonEarnings": 1910121
-    },
-    {
-      "golfer": "Scott Piercy",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Seamus Power",
@@ -2175,13 +2119,6 @@
       ],
       "fedexPoints": 111,
       "seasonEarnings": 359324
-    },
-    {
-      "golfer": "Taylor Montgomery",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Taylor Moore",
@@ -2272,13 +2209,6 @@
       ],
       "fedexPoints": 61,
       "seasonEarnings": 179220
-    },
-    {
-      "golfer": "Will Gordon",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Will Zalatoris",
