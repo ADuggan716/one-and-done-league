@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Rasmus Hojgaard",
-        "earnings": 0,
+        "earnings": 24293,
         "seasonEarnings": 2943666,
-        "finish": "91",
+        "finish": "52",
         "leagueRank": 143
       },
       {
         "member": "Paul",
         "pick": "Jordan Spieth",
-        "earnings": 24440,
+        "earnings": 314150,
         "seasonEarnings": 6433168,
-        "finish": "45",
+        "finish": "6",
         "leagueRank": 59
       },
       {
         "member": "Dakota",
         "pick": "Michael Brennan",
-        "earnings": 24440,
+        "earnings": 19673,
         "seasonEarnings": 8375014,
-        "finish": "45",
+        "finish": "73",
         "leagueRank": 30
       },
       {
         "member": "Mike",
         "pick": "Si Woo Kim",
-        "earnings": 364546,
+        "earnings": 1854000,
         "seasonEarnings": 7427831,
-        "finish": "4",
+        "finish": "1",
         "leagueRank": 42
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Rasmus Hojgaard",
-        "earnings": 0,
+        "earnings": 24293,
         "seasonEarnings": 2943666,
-        "finish": "91",
+        "finish": "52",
         "leagueRank": 143
       },
       {
         "member": "Paul",
         "golfer": "Jordan Spieth",
-        "earnings": 24440,
+        "earnings": 314150,
         "seasonEarnings": 6433168,
-        "finish": "45",
+        "finish": "6",
         "leagueRank": 59
       },
       {
         "member": "Dakota",
         "golfer": "Michael Brennan",
-        "earnings": 24440,
+        "earnings": 19673,
         "seasonEarnings": 8375014,
-        "finish": "45",
+        "finish": "73",
         "leagueRank": 30
       },
       {
         "member": "Mike",
         "golfer": "Si Woo Kim",
-        "earnings": 364546,
+        "earnings": 1854000,
         "seasonEarnings": 7427831,
-        "finish": "4",
+        "finish": "1",
         "leagueRank": 42
       }
     ]
@@ -95,8 +95,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 18",
     "Splash parsed history rows: 72",
-    "Splash mapping: Andrew: rank=143, season=2943666, pick=Rasmus Hojgaard, week=0, finish=91 | Paul: rank=59, season=6433168, pick=Jordan Spieth, week=24440, finish=45 | Dakota: rank=30, season=8375014, pick=Michael Brennan, week=24440, finish=45 | Mike: rank=42, season=7427831, pick=Si Woo Kim, week=364546, finish=4",
-    "Online signals refreshed at 2026-05-22T00:00:15.416Z.",
+    "Splash mapping: Andrew: rank=143, season=2943666, pick=Rasmus Hojgaard, week=24293, finish=52 | Paul: rank=59, season=6433168, pick=Jordan Spieth, week=314150, finish=6 | Dakota: rank=30, season=8375014, pick=Michael Brennan, week=19673, finish=73 | Mike: rank=42, season=7427831, pick=Si Woo Kim, week=1854000, finish=1",
+    "Online signals refreshed at 2026-05-23T00:00:17.466Z.",
     "PGA TOUR FedExCup: 210 golfer records loaded",
     "PGA TOUR Official Money: 202 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -108,7 +108,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-the-cj-cup-byron-nelson-2026",
     "PGA TOUR betting profiles matched: 0/34"
   ],
-  "generatedAt": "2026-05-22T00:00:15.836Z",
+  "generatedAt": "2026-05-23T00:00:17.936Z",
   "primary": {
     "golfer": "Michael Brennan",
     "projectedEarnings": 115168,
