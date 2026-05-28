@@ -3,8 +3,8 @@
   "tournamentName": "Charles Schwab Challenge",
   "eventTier": "regular",
   "currentEventMeta": {
-    "totalPurse": 9900000,
-    "firstPrize": 1710000
+    "totalPurse": 0,
+    "firstPrize": 0
   },
   "members": {
     "Andrew": {
@@ -26,7 +26,8 @@
         "Jacob Bridgeman",
         "Justin Rose",
         "Cameron Young",
-        "Rasmus Hojgaard"
+        "Rasmus Hojgaard",
+        "Justin Thomas"
       ],
       "available": [
         "Rory McIlroy",
@@ -35,7 +36,6 @@
         "Russell Henley",
         "Robert MacIntyre",
         "Sepp Straka",
-        "Justin Thomas",
         "Harris English",
         "Alex Noren",
         "PATRICK REED",
@@ -84,7 +84,8 @@
         "Cameron Young",
         "Rory McIlroy",
         "Rickie Fowler",
-        "Jordan Spieth"
+        "Jordan Spieth",
+        "Akshay Bhatia"
       ],
       "available": [
         "Justin Rose",
@@ -113,7 +114,6 @@
         "BRYSON DECHAMBEAU",
         "Jason Day",
         "Corey Conners",
-        "Akshay Bhatia",
         "Matt McCarty",
         "Andrew Novak",
         "Kristoffer Reitan",
@@ -143,7 +143,8 @@
         "Christopher Gotterup",
         "Xander Schauffele",
         "Matthew Fitzpatrick",
-        "Michael Brennan"
+        "Michael Brennan",
+        "Justin Thomas"
       ],
       "available": [
         "Tommy Fleetwood",
@@ -153,7 +154,6 @@
         "J.J. Spaun",
         "Ben Griffin",
         "Hideki Matsuyama",
-        "Justin Thomas",
         "Harris English",
         "Alex Noren",
         "Viktor Hovland",
@@ -200,7 +200,8 @@
         "Cameron Young",
         "Harris English",
         "Bryson DeChambeau",
-        "Si Woo Kim"
+        "Si Woo Kim",
+        "Justin Thomas"
       ],
       "available": [
         "Rory McIlroy",
@@ -211,7 +212,6 @@
         "Xander Schauffele",
         "Ben Griffin",
         "Hideki Matsuyama",
-        "Justin Thomas",
         "Alex Noren",
         "PATRICK REED",
         "Jacob Bridgeman",
@@ -244,8 +244,8 @@
     {
       "name": "Scottie Scheffler",
       "worldRank": 1,
-      "fedexPoints": 2521,
-      "seasonEarnings": 10931193,
+      "fedexPoints": 2711,
+      "seasonEarnings": 11641893,
       "inNextTournament": false
     },
     {
@@ -433,8 +433,8 @@
     {
       "name": "Si Woo Kim",
       "worldRank": 28,
-      "fedexPoints": 1404,
-      "seasonEarnings": 4917661,
+      "fedexPoints": 1704,
+      "seasonEarnings": 6040361,
       "inNextTournament": false
     },
     {
@@ -566,15 +566,15 @@
     {
       "name": "Pierceson Coody",
       "worldRank": 47,
-      "fedexPoints": 577,
-      "seasonEarnings": 2123874,
+      "fedexPoints": 614,
+      "seasonEarnings": 2224471,
       "inNextTournament": true
     },
     {
       "name": "RASMUS HOJGAARD",
       "worldRank": 48,
-      "fedexPoints": 206,
-      "seasonEarnings": 606114,
+      "fedexPoints": 210,
+      "seasonEarnings": 628568,
       "inNextTournament": true
     },
     {
@@ -616,5 +616,5 @@
       "regular"
     ]
   },
-  "updatedAt": "2026-05-25T00:00:18.516Z"
+  "updatedAt": "2026-05-28T12:00:17.560Z"
 }

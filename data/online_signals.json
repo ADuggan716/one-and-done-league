@@ -1,8 +1,8 @@
 {
-  "fetchedAt": "2026-05-25T00:00:18.818Z",
+  "fetchedAt": "2026-05-28T12:00:17.845Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 210 golfer records loaded",
-    "PGA TOUR Official Money: 202 golfer records loaded",
+    "PGA TOUR FedExCup: 212 golfer records loaded",
+    "PGA TOUR Official Money: 207 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
   "signals": [
@@ -13,8 +13,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 2521,
-      "seasonEarnings": 10931193,
+      "fedexPoints": 2711,
+      "seasonEarnings": 11641893,
       "worldRank": 1,
       "historicalStrength": 0.79338
     },
@@ -329,8 +329,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 1404,
-      "seasonEarnings": 4917661,
+      "fedexPoints": 1704,
+      "seasonEarnings": 6040361,
       "worldRank": 28,
       "historicalStrength": 0.143705
     },
@@ -545,8 +545,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 577,
-      "seasonEarnings": 2123874,
+      "fedexPoints": 614,
+      "seasonEarnings": 2224471,
       "worldRank": 47,
       "historicalStrength": 0.102405
     },
@@ -597,8 +597,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 242,
-      "seasonEarnings": 998339,
+      "fedexPoints": 312,
+      "seasonEarnings": 1258414,
       "worldRank": 52,
       "historicalStrength": 0.098195
     },
@@ -661,8 +661,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 126,
-      "seasonEarnings": 431607,
+      "fedexPoints": 162,
+      "seasonEarnings": 532204,
       "worldRank": 58,
       "historicalStrength": 0.08827
     },
@@ -709,8 +709,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 223,
-      "seasonEarnings": 854448,
+      "fedexPoints": 231,
+      "seasonEarnings": 881419,
       "worldRank": 62,
       "historicalStrength": 0.08354500000000001
     },
@@ -729,8 +729,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 714,
-      "seasonEarnings": 2653185,
+      "fedexPoints": 751,
+      "seasonEarnings": 2753782,
       "worldRank": 64,
       "historicalStrength": 0.08493
     },
@@ -753,8 +753,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 248,
-      "seasonEarnings": 990686,
+      "fedexPoints": 748,
+      "seasonEarnings": 2844686,
       "worldRank": 66,
       "historicalStrength": 0.08297
     },
@@ -821,8 +821,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 425,
-      "seasonEarnings": 1298971,
+      "fedexPoints": 495,
+      "seasonEarnings": 1559046,
       "worldRank": 72,
       "historicalStrength": 0.07675499999999999
     },
@@ -841,8 +841,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 36,
-      "seasonEarnings": 142280,
+      "fedexPoints": 73,
+      "seasonEarnings": 242877,
       "worldRank": 74,
       "historicalStrength": 0.07894999999999999
     },
@@ -853,8 +853,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 636,
-      "seasonEarnings": 2521725,
+      "fedexPoints": 673,
+      "seasonEarnings": 2622321,
       "worldRank": 75,
       "historicalStrength": 0.085095
     },
@@ -949,8 +949,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 568,
-      "seasonEarnings": 2150814,
+      "fedexPoints": 576,
+      "seasonEarnings": 2177786,
       "worldRank": 85,
       "historicalStrength": 0.073965
     },
@@ -969,8 +969,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 235,
-      "seasonEarnings": 652907,
+      "fedexPoints": 243,
+      "seasonEarnings": 679879,
       "worldRank": 87,
       "historicalStrength": 0.07413
     },
@@ -981,8 +981,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 28,
-      "seasonEarnings": 103341,
+      "fedexPoints": 41,
+      "seasonEarnings": 141966,
       "worldRank": 88,
       "historicalStrength": 0.071255
     },
@@ -1005,8 +1005,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 381,
-      "seasonEarnings": 1276698,
+      "fedexPoints": 386,
+      "seasonEarnings": 1299873,
       "worldRank": 90,
       "historicalStrength": 0.070665
     },
@@ -1061,8 +1061,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 290,
-      "seasonEarnings": 1085037,
+      "fedexPoints": 382,
+      "seasonEarnings": 1432662,
       "worldRank": 95,
       "historicalStrength": 0.06798499999999999
     },
@@ -1097,8 +1097,8 @@
         "PGA TOUR Official Money",
         "OWGR fallback"
       ],
-      "fedexPoints": 106,
-      "seasonEarnings": 404710,
+      "fedexPoints": 129,
+      "seasonEarnings": 463640,
       "worldRank": 98,
       "historicalStrength": 0.06745
     },
@@ -1132,8 +1132,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 219,
-      "seasonEarnings": 629801
+      "fedexPoints": 255,
+      "seasonEarnings": 730398
     },
     {
       "golfer": "Adam Hadwin",
@@ -1159,8 +1159,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 54,
-      "seasonEarnings": 128491
+      "fedexPoints": 59,
+      "seasonEarnings": 152490
     },
     {
       "golfer": "Adrien Dumont de Chassart",
@@ -1213,8 +1213,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 192,
-      "seasonEarnings": 583260
+      "fedexPoints": 205,
+      "seasonEarnings": 621885
     },
     {
       "golfer": "Beau Hossler",
@@ -1249,8 +1249,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 40,
-      "seasonEarnings": 94776
+      "fedexPoints": 91,
+      "seasonEarnings": 262151
     },
     {
       "golfer": "Brandt Snedeker",
@@ -1285,8 +1285,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 349,
-      "seasonEarnings": 1350180
+      "fedexPoints": 404,
+      "seasonEarnings": 1538155
     },
     {
       "golfer": "Cam Davis",
@@ -1303,8 +1303,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 8,
-      "seasonEarnings": 20411
+      "fedexPoints": 22,
+      "seasonEarnings": 59036
     },
     {
       "golfer": "Carson Young",
@@ -1321,8 +1321,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 182,
-      "seasonEarnings": 601021
+      "fedexPoints": 187,
+      "seasonEarnings": 624196
     },
     {
       "golfer": "Chan Kim",
@@ -1330,8 +1330,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 28,
-      "seasonEarnings": 61224
+      "fedexPoints": 45,
+      "seasonEarnings": 109119
     },
     {
       "golfer": "Chandler Blanchet",
@@ -1354,9 +1354,11 @@
     {
       "golfer": "Charley Hoffman",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ],
-      "fedexPoints": 0
+      "fedexPoints": 6,
+      "seasonEarnings": 23999
     },
     {
       "golfer": "Christo Lamprecht",
@@ -1370,16 +1372,11 @@
     {
       "golfer": "Dan Brown",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 112
-    },
-    {
-      "golfer": "Daniel Brown",
-      "sourceRefs": [
+        "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "seasonEarnings": 293580
+      "fedexPoints": 121,
+      "seasonEarnings": 320551
     },
     {
       "golfer": "Danny Walker",
@@ -1396,8 +1393,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 18,
-      "seasonEarnings": 48781
+      "fedexPoints": 21,
+      "seasonEarnings": 69896
     },
     {
       "golfer": "David Ford",
@@ -1459,8 +1456,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 149,
-      "seasonEarnings": 399540
+      "fedexPoints": 171,
+      "seasonEarnings": 458471
     },
     {
       "golfer": "Dylan Wu",
@@ -1477,8 +1474,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 114,
-      "seasonEarnings": 396748
+      "fedexPoints": 131,
+      "seasonEarnings": 444643
     },
     {
       "golfer": "Emilio Gonzalez",
@@ -1495,8 +1492,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 271,
-      "seasonEarnings": 806726
+      "fedexPoints": 293,
+      "seasonEarnings": 865657
     },
     {
       "golfer": "Erik van Rooyen",
@@ -1504,15 +1501,17 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 44,
-      "seasonEarnings": 115275
+      "fedexPoints": 81,
+      "seasonEarnings": 215871
     },
     {
       "golfer": "Fabián Gómez",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ],
-      "fedexPoints": 0
+      "fedexPoints": 9,
+      "seasonEarnings": 26971
     },
     {
       "golfer": "Frankie Capan III",
@@ -1547,8 +1546,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 136,
-      "seasonEarnings": 438417
+      "fedexPoints": 141,
+      "seasonEarnings": 460871
     },
     {
       "golfer": "Hayden Springer",
@@ -1583,8 +1582,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 58,
-      "seasonEarnings": 149009
+      "fedexPoints": 193,
+      "seasonEarnings": 653709
     },
     {
       "golfer": "James Hahn",
@@ -1601,8 +1600,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 76,
-      "seasonEarnings": 247307
+      "fedexPoints": 82,
+      "seasonEarnings": 271306
     },
     {
       "golfer": "Jeremy Paul",
@@ -1619,8 +1618,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 41,
-      "seasonEarnings": 117894
+      "fedexPoints": 111,
+      "seasonEarnings": 377969
     },
     {
       "golfer": "Jhonattan Vegas",
@@ -1664,8 +1663,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 51,
-      "seasonEarnings": 131171
+      "fedexPoints": 55,
+      "seasonEarnings": 152801
     },
     {
       "golfer": "Johnny Keefer",
@@ -1673,15 +1672,17 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 239,
-      "seasonEarnings": 807272
+      "fedexPoints": 309,
+      "seasonEarnings": 1067347
     },
     {
       "golfer": "Jonathan Byrd",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ],
-      "fedexPoints": 0
+      "fedexPoints": 5,
+      "seasonEarnings": 23175
     },
     {
       "golfer": "Justin Lower",
@@ -1689,8 +1690,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 38,
-      "seasonEarnings": 108393
+      "fedexPoints": 47,
+      "seasonEarnings": 135365
     },
     {
       "golfer": "Karl Vilips",
@@ -1716,8 +1717,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 302,
-      "seasonEarnings": 1084700
+      "fedexPoints": 412,
+      "seasonEarnings": 1507000
     },
     {
       "golfer": "Kensei Hirata",
@@ -1725,8 +1726,15 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 52,
-      "seasonEarnings": 146494
+      "fedexPoints": 89,
+      "seasonEarnings": 247091
+    },
+    {
+      "golfer": "Kevin Kisner",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "Kevin Roy",
@@ -1770,8 +1778,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 61,
-      "seasonEarnings": 145493
+      "fedexPoints": 65,
+      "seasonEarnings": 167123
     },
     {
       "golfer": "Lee Hodges",
@@ -1788,8 +1796,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 75,
-      "seasonEarnings": 218506
+      "fedexPoints": 97,
+      "seasonEarnings": 277437
     },
     {
       "golfer": "Luke Donald",
@@ -1803,9 +1811,11 @@
     {
       "golfer": "Luke List",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ],
-      "fedexPoints": 0
+      "fedexPoints": 13,
+      "seasonEarnings": 38625
     },
     {
       "golfer": "Mac Meissner",
@@ -1813,8 +1823,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 200,
-      "seasonEarnings": 542816
+      "fedexPoints": 223,
+      "seasonEarnings": 601746
     },
     {
       "golfer": "Mackenzie Hughes",
@@ -1822,8 +1832,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 105,
-      "seasonEarnings": 331897
+      "fedexPoints": 108,
+      "seasonEarnings": 353836
     },
     {
       "golfer": "Marcelo Rozo",
@@ -1840,8 +1850,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 215,
-      "seasonEarnings": 588154
+      "fedexPoints": 238,
+      "seasonEarnings": 647085
     },
     {
       "golfer": "Martin Laird",
@@ -1867,8 +1877,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 185,
-      "seasonEarnings": 538821
+      "fedexPoints": 198,
+      "seasonEarnings": 577446
     },
     {
       "golfer": "Max Homa",
@@ -1885,8 +1895,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 13,
-      "seasonEarnings": 36472
+      "fedexPoints": 26,
+      "seasonEarnings": 75097
     },
     {
       "golfer": "Nick Dunlap",
@@ -1939,8 +1949,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 46,
-      "seasonEarnings": 105051
+      "fedexPoints": 55,
+      "seasonEarnings": 132022
     },
     {
       "golfer": "Patton Kizzire",
@@ -1975,8 +1985,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 28,
-      "seasonEarnings": 79567
+      "fedexPoints": 65,
+      "seasonEarnings": 180164
     },
     {
       "golfer": "Pontus Nyholm",
@@ -2002,8 +2012,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 206,
-      "seasonEarnings": 606114
+      "fedexPoints": 210,
+      "seasonEarnings": 628568
     },
     {
       "golfer": "Rico Hoey",
@@ -2011,8 +2021,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 146,
-      "seasonEarnings": 439103
+      "fedexPoints": 183,
+      "seasonEarnings": 539700
     },
     {
       "golfer": "Robert Streb",
@@ -2031,6 +2041,13 @@
       ],
       "fedexPoints": 17,
       "seasonEarnings": 27636
+    },
+    {
+      "golfer": "Ryan Palmer",
+      "sourceRefs": [
+        "PGA TOUR FedExCup"
+      ],
+      "fedexPoints": 0
     },
     {
       "golfer": "S.H. Kim",
@@ -2053,9 +2070,11 @@
     {
       "golfer": "S.Y. Noh",
       "sourceRefs": [
-        "PGA TOUR FedExCup"
+        "PGA TOUR FedExCup",
+        "PGA TOUR Official Money"
       ],
-      "fedexPoints": 0
+      "fedexPoints": 49,
+      "seasonEarnings": 157075
     },
     {
       "golfer": "Sam Ryder",
@@ -2063,8 +2082,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 105,
-      "seasonEarnings": 279325
+      "fedexPoints": 128,
+      "seasonEarnings": 338256
     },
     {
       "golfer": "Sam Stevens",
@@ -2081,8 +2100,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 164,
-      "seasonEarnings": 508995
+      "fedexPoints": 200,
+      "seasonEarnings": 609591
     },
     {
       "golfer": "Stephan Jaeger",
@@ -2090,8 +2109,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 313,
-      "seasonEarnings": 1110548
+      "fedexPoints": 383,
+      "seasonEarnings": 1370623
     },
     {
       "golfer": "Steven Fisk",
@@ -2099,8 +2118,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 163,
-      "seasonEarnings": 603467
+      "fedexPoints": 200,
+      "seasonEarnings": 704064
     },
     {
       "golfer": "Sudarshan Yellamaraju",
@@ -2126,8 +2145,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 306,
-      "seasonEarnings": 1033016
+      "fedexPoints": 361,
+      "seasonEarnings": 1220991
     },
     {
       "golfer": "Thorbjørn Olesen",
@@ -2135,8 +2154,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 72,
-      "seasonEarnings": 227227
+      "fedexPoints": 77,
+      "seasonEarnings": 249681
     },
     {
       "golfer": "Tom Kim",
@@ -2144,8 +2163,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 175,
-      "seasonEarnings": 523033
+      "fedexPoints": 181,
+      "seasonEarnings": 547032
     },
     {
       "golfer": "Tony Finau",
@@ -2153,8 +2172,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 257,
-      "seasonEarnings": 990747
+      "fedexPoints": 348,
+      "seasonEarnings": 1338372
     },
     {
       "golfer": "Trace Crowe",
@@ -2171,8 +2190,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 4,
-      "seasonEarnings": 16640
+      "fedexPoints": 10,
+      "seasonEarnings": 40639
     },
     {
       "golfer": "Tyler Duncan",
@@ -2180,8 +2199,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 4,
-      "seasonEarnings": 10253
+      "fedexPoints": 17,
+      "seasonEarnings": 48878
     },
     {
       "golfer": "Vijay Singh",
@@ -2234,8 +2253,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 48,
-      "seasonEarnings": 128904
+      "fedexPoints": 51,
+      "seasonEarnings": 150225
     },
     {
       "golfer": "Zach Bauchou",
@@ -2243,8 +2262,8 @@
         "PGA TOUR FedExCup",
         "PGA TOUR Official Money"
       ],
-      "fedexPoints": 222,
-      "seasonEarnings": 591560
+      "fedexPoints": 313,
+      "seasonEarnings": 939185
     },
     {
       "golfer": "Zach Johnson",
