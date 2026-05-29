@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 2966120,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "pick": "Akshay Bhatia",
-        "earnings": 0,
+        "earnings": 31866,
         "seasonEarnings": 6533765,
-        "finish": "$0",
+        "finish": "39",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8375014,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8550531,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 33
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 2966120,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "golfer": "Akshay Bhatia",
-        "earnings": 0,
+        "earnings": 31866,
         "seasonEarnings": 6533765,
-        "finish": "$0",
+        "finish": "39",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8375014,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8550531,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 33
       }
     ]
@@ -99,17 +99,9 @@
     {
       "member": "Mike",
       "seasonEarnings": 8550531,
-      "weeklyEarnings": 1122700,
-      "avgEarnings": 475029.5,
+      "weeklyEarnings": 0,
+      "avgEarnings": 450027.94736842107,
       "lastFour": [
-        {
-          "eventId": "miami-championship",
-          "eventName": "Miami Championship",
-          "tier": "regular",
-          "earnings": 3600000,
-          "finish": "1",
-          "pick": "Cameron Young"
-        },
         {
           "eventId": "truist",
           "eventName": "Truist",
@@ -133,6 +125,14 @@
           "earnings": 1122700,
           "finish": "2",
           "pick": "Si Woo Kim"
+        },
+        {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
         }
       ],
       "history": [
@@ -281,11 +281,19 @@
           "pick": "Si Woo Kim"
         },
         {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
+        },
+        {
           "eventId": "charles-schwab-challenge",
           "eventName": "Charles Schwab Challenge",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas"
         }
       ],
@@ -297,16 +305,8 @@
       "member": "Dakota",
       "seasonEarnings": 8375014,
       "weeklyEarnings": 0,
-      "avgEarnings": 465278.55555555556,
+      "avgEarnings": 440790.2105263158,
       "lastFour": [
-        {
-          "eventId": "miami-championship",
-          "eventName": "Miami Championship",
-          "tier": "regular",
-          "earnings": 72182,
-          "finish": "38",
-          "pick": "Christopher Gotterup"
-        },
         {
           "eventId": "truist",
           "eventName": "Truist",
@@ -330,6 +330,14 @@
           "earnings": 0,
           "finish": "71",
           "pick": "Michael Brennan"
+        },
+        {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
         }
       ],
       "history": [
@@ -478,11 +486,19 @@
           "pick": "Michael Brennan"
         },
         {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
+        },
+        {
           "eventId": "charles-schwab-challenge",
           "eventName": "Charles Schwab Challenge",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas"
         }
       ],
@@ -493,17 +509,9 @@
     {
       "member": "Paul",
       "seasonEarnings": 6533765,
-      "weeklyEarnings": 100597,
-      "avgEarnings": 362986.94444444444,
+      "weeklyEarnings": 0,
+      "avgEarnings": 343882.36842105264,
       "lastFour": [
-        {
-          "eventId": "miami-championship",
-          "eventName": "Miami Championship",
-          "tier": "regular",
-          "earnings": 3600000,
-          "finish": "1",
-          "pick": "Cameron Young"
-        },
         {
           "eventId": "truist",
           "eventName": "Truist",
@@ -527,6 +535,14 @@
           "earnings": 100597,
           "finish": "19",
           "pick": "Jordan Spieth"
+        },
+        {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "39",
+          "pick": "Akshay Bhatia"
         }
       ],
       "history": [
@@ -675,11 +691,19 @@
           "pick": "Jordan Spieth"
         },
         {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "39",
+          "pick": "Akshay Bhatia"
+        },
+        {
           "eventId": "charles-schwab-challenge",
           "eventName": "Charles Schwab Challenge",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 31866,
+          "finish": "39",
           "pick": "Akshay Bhatia"
         }
       ],
@@ -690,17 +714,9 @@
     {
       "member": "Andrew",
       "seasonEarnings": 2966120,
-      "weeklyEarnings": 22454,
-      "avgEarnings": 164784.44444444444,
+      "weeklyEarnings": 0,
+      "avgEarnings": 156111.57894736843,
       "lastFour": [
-        {
-          "eventId": "miami-championship",
-          "eventName": "Miami Championship",
-          "tier": "regular",
-          "earnings": 39083,
-          "finish": "65",
-          "pick": "Jacob Bridgeman"
-        },
         {
           "eventId": "truist",
           "eventName": "Truist",
@@ -724,6 +740,14 @@
           "earnings": 22454,
           "finish": "62",
           "pick": "Rasmus Hojgaard"
+        },
+        {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
         }
       ],
       "history": [
@@ -872,11 +896,19 @@
           "pick": "Rasmus Hojgaard"
         },
         {
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas"
+        },
+        {
           "eventId": "charles-schwab-challenge",
           "eventName": "Charles Schwab Challenge",
           "tier": "regular",
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas"
         }
       ],
@@ -893,7 +925,7 @@
         "Paul"
       ],
       "seasonEarnings": 15084296,
-      "weeklyEarnings": 1223297,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 7542148,
       "rank": 1,
       "toLeader": 0
@@ -905,7 +937,7 @@
         "Dakota"
       ],
       "seasonEarnings": 11341134,
-      "weeklyEarnings": 22454,
+      "weeklyEarnings": 0,
       "avgMemberEarnings": 5670567,
       "rank": 2,
       "toLeader": 3743162
@@ -1975,6 +2007,65 @@
       ]
     },
     {
+      "eventId": "schwab",
+      "eventName": "Schwab",
+      "tier": "regular",
+      "startDate": null,
+      "countsTowardSeasonTotals": true,
+      "totalPurse": 0,
+      "firstPrize": 0,
+      "rows": [
+        {
+          "member": "Andrew",
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas",
+          "leagueRank": null
+        },
+        {
+          "member": "Dakota",
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas",
+          "leagueRank": null
+        },
+        {
+          "member": "Mike",
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "55",
+          "pick": "Justin Thomas",
+          "leagueRank": null
+        },
+        {
+          "member": "Paul",
+          "eventId": "schwab",
+          "eventName": "Schwab",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 0,
+          "finish": "39",
+          "pick": "Akshay Bhatia",
+          "leagueRank": null
+        }
+      ]
+    },
+    {
       "eventId": "charles-schwab-challenge",
       "eventName": "Charles Schwab Challenge",
       "tier": "regular",
@@ -1984,14 +2075,26 @@
       "firstPrize": 0,
       "rows": [
         {
+          "member": "Paul",
+          "eventId": "charles-schwab-challenge",
+          "eventName": "Charles Schwab Challenge",
+          "tier": "regular",
+          "totalPurse": 0,
+          "firstPrize": 0,
+          "earnings": 31866,
+          "finish": "39",
+          "pick": "Akshay Bhatia",
+          "leagueRank": 66
+        },
+        {
           "member": "Andrew",
           "eventId": "charles-schwab-challenge",
           "eventName": "Charles Schwab Challenge",
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas",
           "leagueRank": 146
         },
@@ -2002,8 +2105,8 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas",
           "leagueRank": 36
         },
@@ -2014,22 +2117,10 @@
           "tier": "regular",
           "totalPurse": 0,
           "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
+          "earnings": 20790,
+          "finish": "55",
           "pick": "Justin Thomas",
           "leagueRank": 33
-        },
-        {
-          "member": "Paul",
-          "eventId": "charles-schwab-challenge",
-          "eventName": "Charles Schwab Challenge",
-          "tier": "regular",
-          "totalPurse": 0,
-          "firstPrize": 0,
-          "earnings": 0,
-          "finish": "$0",
-          "pick": "Akshay Bhatia",
-          "leagueRank": 66
         }
       ]
     }
@@ -6051,146 +6142,192 @@
       "countsTowardSeasonTotals": false,
       "totalPurse": 0,
       "firstPrize": 0,
-      "totalEntrants": 131,
+      "totalEntrants": 163,
       "rows": [
         {
           "golfer": "Justin Thomas",
-          "pickCount": 24,
-          "finish": "$0",
-          "earnings": 0
+          "pickCount": 25,
+          "finish": "55",
+          "earnings": 20790
         },
         {
           "golfer": "Rickie Fowler",
-          "pickCount": 15,
-          "finish": "$0",
-          "earnings": 0
+          "pickCount": 16,
+          "finish": "81",
+          "earnings": 8203
         },
         {
           "golfer": "Akshay Bhatia",
-          "pickCount": 13,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Ludvig Aberg",
-          "pickCount": 11,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Alex Smalley",
-          "pickCount": 10,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Ben Griffin",
-          "pickCount": 10,
-          "finish": "$0",
-          "earnings": 0
+          "pickCount": 14,
+          "finish": "39",
+          "earnings": 31866
         },
         {
           "golfer": "J.J. Spaun",
-          "pickCount": 10,
-          "finish": "$0",
-          "earnings": 0
+          "pickCount": 12,
+          "finish": "5",
+          "earnings": 258542
+        },
+        {
+          "golfer": "Ludvig Aberg",
+          "pickCount": 12,
+          "finish": "18",
+          "earnings": 100866
+        },
+        {
+          "golfer": "Alex Smalley",
+          "pickCount": 11,
+          "finish": "5",
+          "earnings": 258542
+        },
+        {
+          "golfer": "Ben Griffin",
+          "pickCount": 11,
+          "finish": "39",
+          "earnings": 31866
         },
         {
           "golfer": "Sungjae Im",
-          "pickCount": 9,
-          "finish": "$0",
+          "pickCount": 11,
+          "finish": "81",
+          "earnings": 8203
+        },
+        {
+          "golfer": "Max Greyserman",
+          "pickCount": 6,
+          "finish": "128",
           "earnings": 0
         },
         {
           "golfer": "Hideki Matsuyama",
           "pickCount": 4,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Max Greyserman",
-          "pickCount": 4,
-          "finish": "$0",
-          "earnings": 0
+          "finish": "18",
+          "earnings": 100866
         },
         {
           "golfer": "Russell Henley",
           "pickCount": 4,
-          "finish": "$0",
-          "earnings": 0
+          "finish": "18",
+          "earnings": 100866
+        },
+        {
+          "golfer": "Robert MacIntyre",
+          "pickCount": 4,
+          "finish": "39",
+          "earnings": 31866
+        },
+        {
+          "golfer": "John Keefer",
+          "pickCount": 4,
+          "finish": "81",
+          "earnings": 8203
         },
         {
           "golfer": "Gary Woodland",
           "pickCount": 3,
-          "finish": "$0",
-          "earnings": 0
+          "finish": "5",
+          "earnings": 258542
         },
         {
-          "golfer": "John Keefer",
+          "golfer": "Ryo Hisatsune",
+          "pickCount": 3,
+          "finish": "18",
+          "earnings": 100866
+        },
+        {
+          "golfer": "Michael Brennan",
+          "pickCount": 3,
+          "finish": "31",
+          "earnings": 55440
+        },
+        {
+          "golfer": "Brian Harman",
           "pickCount": 2,
-          "finish": "$0",
+          "finish": "5",
+          "earnings": 258542
+        },
+        {
+          "golfer": "Matthew McCarty",
+          "pickCount": 2,
+          "finish": "5",
+          "earnings": 258542
+        },
+        {
+          "golfer": "Tom Hoge",
+          "pickCount": 2,
+          "finish": "39",
+          "earnings": 31866
+        },
+        {
+          "golfer": "Lucas Glover",
+          "pickCount": 2,
+          "finish": "81",
+          "earnings": 8203
+        },
+        {
+          "golfer": "John Parry",
+          "pickCount": 2,
+          "finish": "124",
           "earnings": 0
         },
         {
           "golfer": "Pierceson Coody",
           "pickCount": 2,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Robert MacIntyre",
-          "pickCount": 2,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Ryo Hisatsune",
-          "pickCount": 2,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Brian Harman",
-          "pickCount": 1,
-          "finish": "$0",
+          "finish": "102",
           "earnings": 0
         },
         {
           "golfer": "Keegan Bradley",
           "pickCount": 1,
-          "finish": "$0",
-          "earnings": 0
+          "finish": "5",
+          "earnings": 258542
         },
         {
           "golfer": "Nicolas Echavarria",
           "pickCount": 1,
-          "finish": "$0",
-          "earnings": 0
+          "finish": "18",
+          "earnings": 100866
         },
         {
           "golfer": "Samuel Stevens",
           "pickCount": 1,
-          "finish": "$0",
+          "finish": "31",
+          "earnings": 55440
+        },
+        {
+          "golfer": "Andrew Novak",
+          "pickCount": 1,
+          "finish": "55",
+          "earnings": 20790
+        },
+        {
+          "golfer": "Michael Kim",
+          "pickCount": 1,
+          "finish": "55",
+          "earnings": 20790
+        },
+        {
+          "golfer": "Chris Kirk",
+          "pickCount": 1,
+          "finish": "81",
+          "earnings": 8203
+        },
+        {
+          "golfer": "Keith Mitchell",
+          "pickCount": 1,
+          "finish": "102",
           "earnings": 0
         },
         {
           "golfer": "Stephan Jaeger",
           "pickCount": 1,
-          "finish": "$0",
-          "earnings": 0
-        },
-        {
-          "golfer": "Tom Hoge",
-          "pickCount": 1,
-          "finish": "$0",
+          "finish": "130",
           "earnings": 0
         }
       ]
     }
   ],
-  "whoGainedThisWeek": [
-    "Mike"
-  ],
+  "whoGainedThisWeek": [],
   "projections": [
     {
       "golfer": "Scottie Scheffler",
@@ -9267,20 +9404,6 @@
       ]
     },
     {
-      "golfer": "Ryan Palmer",
-      "projectedEarnings": 65578,
-      "projectedDupCount": 0.06,
-      "futureValue": 199140,
-      "worldRank": 999,
-      "fedexPoints": 0,
-      "seasonEarnings": 0,
-      "inNextTournament": true,
-      "sourceRefs": [
-        "PGA TOUR FedExCup",
-        "Weekly projection synthesis"
-      ]
-    },
-    {
       "golfer": "S.H. Kim",
       "projectedEarnings": 0,
       "projectedDupCount": 0,
@@ -9669,16 +9792,16 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 19",
-    "Splash parsed history rows: 72",
-    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=0, finish=$0 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=0, finish=$0 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=0, finish=$0 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=0, finish=$0",
-    "Online signals refreshed at 2026-05-28T12:00:17.845Z.",
-    "PGA TOUR FedExCup: 212 golfer records loaded",
+    "Splash parsed history rows: 76",
+    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=20790, finish=55 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=31866, finish=39 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=20790, finish=55 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=20790, finish=55",
+    "Online signals refreshed at 2026-05-29T00:00:16.727Z.",
+    "PGA TOUR FedExCup: 211 golfer records loaded",
     "PGA TOUR Official Money: 207 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Charles Schwab Challenge",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/charles-schwab-challenge/R2026021/field",
     "PGA TOUR field entries: 132",
-    "Weekly projection synthesis: 130 field golfers received modeled payout estimates",
+    "Weekly projection synthesis: 129 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Ludvig Åberg, Akshay Bhatia, Russell Henley, J.J. Spaun, Robert MacIntyre",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-charles-schwab-challenge-2026",
     "PGA TOUR betting profiles matched: 0/33"
@@ -9686,5 +9809,5 @@
   "warnings": [
     "No projections returned. Recommendation engine will use fallback estimates."
   ],
-  "updatedAt": "2026-05-28T12:00:17.560Z"
+  "updatedAt": "2026-05-29T00:00:16.475Z"
 }

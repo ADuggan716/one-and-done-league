@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 2966120,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "pick": "Akshay Bhatia",
-        "earnings": 0,
+        "earnings": 31866,
         "seasonEarnings": 6533765,
-        "finish": "$0",
+        "finish": "39",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8375014,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "pick": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8550531,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 33
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 2966120,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "golfer": "Akshay Bhatia",
-        "earnings": 0,
+        "earnings": 31866,
         "seasonEarnings": 6533765,
-        "finish": "$0",
+        "finish": "39",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8375014,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "golfer": "Justin Thomas",
-        "earnings": 0,
+        "earnings": 20790,
         "seasonEarnings": 8550531,
-        "finish": "$0",
+        "finish": "55",
         "leagueRank": 33
       }
     ]
@@ -94,21 +94,21 @@
     "Splash parsed picks: 4",
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 19",
-    "Splash parsed history rows: 72",
-    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=0, finish=$0 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=0, finish=$0 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=0, finish=$0 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=0, finish=$0",
-    "Online signals refreshed at 2026-05-28T12:00:17.845Z.",
-    "PGA TOUR FedExCup: 212 golfer records loaded",
+    "Splash parsed history rows: 76",
+    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=20790, finish=55 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=31866, finish=39 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=20790, finish=55 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=20790, finish=55",
+    "Online signals refreshed at 2026-05-29T00:00:16.727Z.",
+    "PGA TOUR FedExCup: 211 golfer records loaded",
     "PGA TOUR Official Money: 207 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
     "PGA TOUR schedule resolved next tournament: Charles Schwab Challenge",
     "PGA TOUR field source: https://www.pgatour.com/tournaments/2026/charles-schwab-challenge/R2026021/field",
     "PGA TOUR field entries: 132",
-    "Weekly projection synthesis: 130 field golfers received modeled payout estimates",
+    "Weekly projection synthesis: 129 field golfers received modeled payout estimates",
     "Weekly projection synthesis top field: Ludvig Åberg, Akshay Bhatia, Russell Henley, J.J. Spaun, Robert MacIntyre",
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-charles-schwab-challenge-2026",
     "PGA TOUR betting profiles matched: 0/33"
   ],
-  "generatedAt": "2026-05-28T12:00:18.368Z",
+  "generatedAt": "2026-05-29T00:00:17.517Z",
   "primary": {
     "golfer": "Keegan Bradley",
     "projectedEarnings": 189158,
