@@ -1,7 +1,7 @@
 {
-  "fetchedAt": "2026-05-29T00:00:16.727Z",
+  "fetchedAt": "2026-05-30T00:00:18.490Z",
   "sourceNotes": [
-    "PGA TOUR FedExCup: 211 golfer records loaded",
+    "PGA TOUR FedExCup: 210 golfer records loaded",
     "PGA TOUR Official Money: 207 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks"
   ],
@@ -1728,13 +1728,6 @@
       ],
       "fedexPoints": 89,
       "seasonEarnings": 247091
-    },
-    {
-      "golfer": "Kevin Kisner",
-      "sourceRefs": [
-        "PGA TOUR FedExCup"
-      ],
-      "fedexPoints": 0
     },
     {
       "golfer": "Kevin Roy",
