@@ -12,33 +12,33 @@
       {
         "member": "Andrew",
         "pick": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 2966120,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "pick": "Akshay Bhatia",
-        "earnings": 312345,
+        "earnings": 184918,
         "seasonEarnings": 6533765,
-        "finish": "6",
+        "finish": "12",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "pick": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 8375014,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "pick": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 8550531,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 33
       }
     ],
@@ -46,33 +46,33 @@
       {
         "member": "Andrew",
         "golfer": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 2966120,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 146
       },
       {
         "member": "Paul",
         "golfer": "Akshay Bhatia",
-        "earnings": 312345,
+        "earnings": 184918,
         "seasonEarnings": 6533765,
-        "finish": "6",
+        "finish": "12",
         "leagueRank": 66
       },
       {
         "member": "Dakota",
         "golfer": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 8375014,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 36
       },
       {
         "member": "Mike",
         "golfer": "Justin Thomas",
-        "earnings": 43293,
+        "earnings": 184918,
         "seasonEarnings": 8550531,
-        "finish": "34",
+        "finish": "12",
         "leagueRank": 33
       }
     ]
@@ -95,8 +95,8 @@
     "Splash parsed standings rows: 4",
     "Splash parsed league-wide event summaries: 19",
     "Splash parsed history rows: 76",
-    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=43293, finish=34 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=312345, finish=6 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=43293, finish=34 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=43293, finish=34",
-    "Online signals refreshed at 2026-05-30T00:00:18.490Z.",
+    "Splash mapping: Andrew: rank=146, season=2966120, pick=Justin Thomas, week=184918, finish=12 | Paul: rank=66, season=6533765, pick=Akshay Bhatia, week=184918, finish=12 | Dakota: rank=36, season=8375014, pick=Justin Thomas, week=184918, finish=12 | Mike: rank=33, season=8550531, pick=Justin Thomas, week=184918, finish=12",
+    "Online signals refreshed at 2026-05-31T00:00:21.559Z.",
     "PGA TOUR FedExCup: 210 golfer records loaded",
     "PGA TOUR Official Money: 207 golfer records loaded",
     "OWGR: failed (spawn osascript ENOENT); fallback restored 100 world ranks",
@@ -108,7 +108,7 @@
     "PGA TOUR betting profile preview: https://www.pgatour.com/article/news/betting-dfs/2026/betting-profile/pga-tour-betting-odds-stats-charles-schwab-challenge-2026",
     "PGA TOUR betting profiles matched: 0/33"
   ],
-  "generatedAt": "2026-05-30T00:00:19.793Z",
+  "generatedAt": "2026-05-31T00:00:21.948Z",
   "primary": {
     "golfer": "Keegan Bradley",
     "projectedEarnings": 189158,
